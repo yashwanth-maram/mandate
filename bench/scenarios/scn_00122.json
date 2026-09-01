@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00122",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00122",
+    "created_at": "2026-09-02T21:40:00Z",
+    "expires_at": "2026-09-03T03:40:00Z",
+    "user_id": "usr_3449",
+    "agent_id": "agt_661",
+    "block": {
+      "block_id": "blk_00122",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-14T21:40:00Z",
+      "expires_at": "2026-10-18T21:40:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 8970,
+      "max_total_paise": 8970,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "aashirvaad",
+      "variant": "whole_wheat",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1kg Aashirvaad atta from Swiggy Instamart, keep it under 89 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "13425d59c79a1ae98836b56e9475fa965b9550e6f61015f8d1a10846c93ee9cc",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00122",
+    "obligation_hash": "13425d59c79a1ae98836b56e9475fa965b9550e6f61015f8d1a10846c93ee9cc",
+    "items": [
+      {
+        "item_id": "env_00122-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "agt_661",
+        "emitted_at": "2026-09-02T21:40:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "926b28f81b01fe6d5f2ba38673fbbfd5f8ca60047c0bf85bc9652dd4eaaa7af1"
+      },
+      {
+        "item_id": "env_00122-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00122",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:40:20Z",
+        "evidence_class": 2,
+        "prev_hash": "926b28f81b01fe6d5f2ba38673fbbfd5f8ca60047c0bf85bc9652dd4eaaa7af1",
+        "content_hash": "50d1f84be042ae9f57cf368855b854c19c765b413f3c331a66cf31144f525ff3"
+      },
+      {
+        "item_id": "env_00122-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00122",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:54:00Z",
+        "evidence_class": 2,
+        "prev_hash": "50d1f84be042ae9f57cf368855b854c19c765b413f3c331a66cf31144f525ff3",
+        "content_hash": "56e3e225e503b8a408e3b79e2711faa03c746ae961b59e485a94a20378561295"
+      },
+      {
+        "item_id": "env_00122-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00122",
+          "amount_paise": 7800,
+          "currency": "INR",
+          "receipt": "zep_00122"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:40:25Z",
+        "evidence_class": 3,
+        "prev_hash": "56e3e225e503b8a408e3b79e2711faa03c746ae961b59e485a94a20378561295",
+        "content_hash": "ca920e2b13d7cf48960fdc1c388fa604024d03dfe59f090f6c0dbc43d2149048"
+      },
+      {
+        "item_id": "env_00122-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00122",
+          "order_id": "order_00122",
+          "amount_paise": 7800,
+          "status": "captured",
+          "block_id": "blk_00122",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:40:30Z",
+        "evidence_class": 3,
+        "prev_hash": "ca920e2b13d7cf48960fdc1c388fa604024d03dfe59f090f6c0dbc43d2149048",
+        "content_hash": "6778688d3dda7589dd01829e28ff1d849c060f5475237a005cdac09d222ba0bf"
+      },
+      {
+        "item_id": "env_00122-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_661",
+        "emitted_at": "2026-09-02T21:55:00Z",
+        "evidence_class": 0,
+        "prev_hash": "6778688d3dda7589dd01829e28ff1d849c060f5475237a005cdac09d222ba0bf",
+        "content_hash": "2ac6441c5e2b18382b988dc0691f88ee0665dedb09c2f9243666555aec8065e6"
+      },
+      {
+        "item_id": "env_00122-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T00:40:00Z"
+        },
+        "emitted_by": "usr_3449",
+        "emitted_at": "2026-09-03T00:40:00Z",
+        "evidence_class": 0,
+        "prev_hash": "2ac6441c5e2b18382b988dc0691f88ee0665dedb09c2f9243666555aec8065e6",
+        "content_hash": "bc8ed1be320725e939a1c7d78b31030a79bd89f0da7844a62ae6fa8902d20089"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-whole_wheat-1000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-1000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 7800,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

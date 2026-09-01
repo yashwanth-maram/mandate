@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00377",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00377",
+    "created_at": "2026-09-02T20:28:00Z",
+    "expires_at": "2026-09-03T02:28:00Z",
+    "user_id": "usr_1869",
+    "agent_id": "agt_786",
+    "block": {
+      "block_id": "blk_00377",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T20:28:00Z",
+      "expires_at": "2026-10-08T20:28:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "harvest",
+      "variant": "white",
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "I need 400g Harvest white bread, use Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "e7c40e2fdeca45b9a73f13c0aa30cff41a534bed932cd1eeb05679f565e36ed7",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00377",
+    "obligation_hash": "e7c40e2fdeca45b9a73f13c0aa30cff41a534bed932cd1eeb05679f565e36ed7",
+    "items": [
+      {
+        "item_id": "env_00377-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "agt_786",
+        "emitted_at": "2026-09-02T20:28:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "08864f28e327f3e5408643206f6ed1b4cea24a8d5e0f45e7cf2e32a479a14735"
+      },
+      {
+        "item_id": "env_00377-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00377",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T20:28:20Z",
+        "evidence_class": 2,
+        "prev_hash": "08864f28e327f3e5408643206f6ed1b4cea24a8d5e0f45e7cf2e32a479a14735",
+        "content_hash": "36023d9e1a2dbde45c8f0585ae96c4fc964078a94f3290ef8ecc93df997e700d"
+      },
+      {
+        "item_id": "env_00377-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00377",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T20:42:00Z",
+        "evidence_class": 2,
+        "prev_hash": "36023d9e1a2dbde45c8f0585ae96c4fc964078a94f3290ef8ecc93df997e700d",
+        "content_hash": "d1e68df0fdaba8516cab78766e360c782006199c28ea31ee1e30883cc0429127"
+      },
+      {
+        "item_id": "env_00377-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00377",
+          "amount_paise": 4200,
+          "currency": "INR",
+          "receipt": "zep_00377"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:28:25Z",
+        "evidence_class": 3,
+        "prev_hash": "d1e68df0fdaba8516cab78766e360c782006199c28ea31ee1e30883cc0429127",
+        "content_hash": "08ddf86b7954d81ecd6a8483620b193d8a6c2941e646461dd5fd21115cdf7e3d"
+      },
+      {
+        "item_id": "env_00377-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00377",
+          "order_id": "order_00377",
+          "amount_paise": 4200,
+          "status": "captured",
+          "block_id": "blk_00377",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:28:30Z",
+        "evidence_class": 3,
+        "prev_hash": "08ddf86b7954d81ecd6a8483620b193d8a6c2941e646461dd5fd21115cdf7e3d",
+        "content_hash": "110c34732691042cfd778a29eadadd94dbf5ace16e675fa1fd3259ce79c6609e"
+      },
+      {
+        "item_id": "env_00377-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_786",
+        "emitted_at": "2026-09-02T20:43:00Z",
+        "evidence_class": 0,
+        "prev_hash": "110c34732691042cfd778a29eadadd94dbf5ace16e675fa1fd3259ce79c6609e",
+        "content_hash": "009e29c859a7922eabaaca32897a07a3bfeae4ac5aa6e431242d53696efaa180"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

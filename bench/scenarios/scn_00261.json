@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00261",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00261",
+    "created_at": "2026-09-02T18:12:00Z",
+    "expires_at": "2026-09-03T00:12:00Z",
+    "user_id": "usr_6916",
+    "agent_id": "agt_424",
+    "block": {
+      "block_id": "blk_00261",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-29T18:12:00Z",
+      "expires_at": "2026-10-14T18:12:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 5979,
+      "max_total_paise": 5979,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "tata",
+      "variant": "rock",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1kg Tata rock salt from Blinkit, keep it under 59 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "9943cfbc225f023319a04634a246f56c20efc223d05f409c43685194b22a8773",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00261",
+    "obligation_hash": "9943cfbc225f023319a04634a246f56c20efc223d05f409c43685194b22a8773",
+    "items": [
+      {
+        "item_id": "env_00261-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-rock-1000",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "agt_424",
+        "emitted_at": "2026-09-02T18:12:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "3be24408adf4a79cf587410f9f602e7d76b026abc271a837d6be07549d673b21"
+      },
+      {
+        "item_id": "env_00261-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00261",
+          "lines": [
+            {
+              "sku": "tata-salt-rock-1000",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:12:20Z",
+        "evidence_class": 2,
+        "prev_hash": "3be24408adf4a79cf587410f9f602e7d76b026abc271a837d6be07549d673b21",
+        "content_hash": "70dac7e277442631925238df4c44e35e08c4a27a18ba6dcf3d2db0157fb0485b"
+      },
+      {
+        "item_id": "env_00261-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00261",
+          "lines": [
+            {
+              "sku": "tata-salt-rock-1000",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:26:00Z",
+        "evidence_class": 2,
+        "prev_hash": "70dac7e277442631925238df4c44e35e08c4a27a18ba6dcf3d2db0157fb0485b",
+        "content_hash": "e19ae724d33c41a6fa426f60b566a5cddcb86d960559b692550ac768db96f2f4"
+      },
+      {
+        "item_id": "env_00261-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00261",
+          "amount_paise": 7196,
+          "currency": "INR",
+          "receipt": "zep_00261"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:12:25Z",
+        "evidence_class": 3,
+        "prev_hash": "e19ae724d33c41a6fa426f60b566a5cddcb86d960559b692550ac768db96f2f4",
+        "content_hash": "7b5c153059e1ee69d861b27ae7a9a8a52804af5910cb974c13c3be959037a873"
+      },
+      {
+        "item_id": "env_00261-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00261",
+          "order_id": "order_00261",
+          "amount_paise": 7196,
+          "status": "captured",
+          "block_id": "blk_00261",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:12:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7b5c153059e1ee69d861b27ae7a9a8a52804af5910cb974c13c3be959037a873",
+        "content_hash": "c05ac1074cfc283f4d991651be44903c2b3272c61b07ceb968bb345245e20eb5"
+      },
+      {
+        "item_id": "env_00261-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata rock salt. Payment complete.",
+          "claimed_sku": "tata-salt-rock-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_424",
+        "emitted_at": "2026-09-02T18:27:00Z",
+        "evidence_class": 0,
+        "prev_hash": "c05ac1074cfc283f4d991651be44903c2b3272c61b07ceb968bb345245e20eb5",
+        "content_hash": "4f5508dbd9fca48cef6e3647a1f2153729827c405ae6cba150b68b7a2fe737ad"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "tata-salt-rock-1000",
+    "ordered_sku": "tata-salt-rock-1000",
+    "delivered_sku": "tata-salt-rock-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 1996,
+    "rationale": "Correct item, unreconcilable debit. Debited 7196 paise against an order worth 5200 paise."
+  }
+}

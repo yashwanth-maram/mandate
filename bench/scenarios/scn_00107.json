@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00107",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00107",
+    "created_at": "2026-09-02T23:46:00Z",
+    "expires_at": "2026-09-03T05:46:00Z",
+    "user_id": "usr_1857",
+    "agent_id": "agt_908",
+    "block": {
+      "block_id": "blk_00107",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-13T23:46:00Z",
+      "expires_at": "2026-10-22T23:46:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 14719,
+      "max_total_paise": 14719,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "daawat",
+      "variant": "basmati",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg Daawat basmati rice, use Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "fd1d723d199fdc8d665781d3acfe678f430dc1a6f50d07597d933ae58033f7d3",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00107",
+    "obligation_hash": "fd1d723d199fdc8d665781d3acfe678f430dc1a6f50d07597d933ae58033f7d3",
+    "items": [
+      {
+        "item_id": "env_00107-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
+        },
+        "emitted_by": "agt_908",
+        "emitted_at": "2026-09-02T23:46:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "e2453ea5b7ad872cf96b5ad405804397917b1ddb2fd30f3ff7caf22cfe9ff1dc"
+      },
+      {
+        "item_id": "env_00107-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00107",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:46:20Z",
+        "evidence_class": 2,
+        "prev_hash": "e2453ea5b7ad872cf96b5ad405804397917b1ddb2fd30f3ff7caf22cfe9ff1dc",
+        "content_hash": "d638a9dc54657f994911e3dca3d9f90b8382aafe23ca1c057337046dd1ed0156"
+      },
+      {
+        "item_id": "env_00107-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00107",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:00:00Z",
+        "evidence_class": 2,
+        "prev_hash": "d638a9dc54657f994911e3dca3d9f90b8382aafe23ca1c057337046dd1ed0156",
+        "content_hash": "56b97505807baac8234b4724f2a4a34ea80d9754beb3db61d7440110a4374bf9"
+      },
+      {
+        "item_id": "env_00107-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00107",
+          "amount_paise": 13569,
+          "currency": "INR",
+          "receipt": "zep_00107"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:46:25Z",
+        "evidence_class": 3,
+        "prev_hash": "56b97505807baac8234b4724f2a4a34ea80d9754beb3db61d7440110a4374bf9",
+        "content_hash": "1e3fcc1b9fca8356d5f082529cf8b0f80b4f56b6a913b9dc5d61be8c9d73f209"
+      },
+      {
+        "item_id": "env_00107-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00107",
+          "order_id": "order_00107",
+          "amount_paise": 13569,
+          "status": "captured",
+          "block_id": "blk_00107",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:46:30Z",
+        "evidence_class": 3,
+        "prev_hash": "1e3fcc1b9fca8356d5f082529cf8b0f80b4f56b6a913b9dc5d61be8c9d73f209",
+        "content_hash": "a6e15fcd5b635fb2c8c381c3ba0a529e1a8301445a91bad2ab736747df890282"
+      },
+      {
+        "item_id": "env_00107-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
+          "claimed_sku": "daawat-rice-basmati-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_908",
+        "emitted_at": "2026-09-03T00:01:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a6e15fcd5b635fb2c8c381c3ba0a529e1a8301445a91bad2ab736747df890282",
+        "content_hash": "c3b9de21cd9e1f88d75b9122b569bff39c0b9f91c903f4de46d5875860b672b5"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "daawat-rice-basmati-1000",
+    "ordered_sku": "daawat-rice-basmati-1000",
+    "delivered_sku": "daawat-rice-basmati-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 769,
+    "rationale": "Correct item, unreconcilable debit. Debited 13569 paise against an order worth 12800 paise."
+  }
+}

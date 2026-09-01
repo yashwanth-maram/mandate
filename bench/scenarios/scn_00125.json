@@ -1,0 +1,191 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00125",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00125",
+    "created_at": "2026-09-02T19:27:00Z",
+    "expires_at": "2026-09-03T01:27:00Z",
+    "user_id": "usr_9576",
+    "agent_id": "agt_469",
+    "block": {
+      "block_id": "blk_00125",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-31T19:27:00Z",
+      "expires_at": "2026-11-01T19:27:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 6784,
+      "max_total_paise": 6784,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "amul",
+      "variant": "double_toned",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1L Amul double toned milk from Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "857f4f2a61505cfbe9b2ffa79ad82aad3f8e3b61d6dd2a99d8d399cdc1e70bd9",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00125",
+    "obligation_hash": "857f4f2a61505cfbe9b2ffa79ad82aad3f8e3b61d6dd2a99d8d399cdc1e70bd9",
+    "items": [
+      {
+        "item_id": "env_00125-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5900
+            }
+          ]
+        },
+        "emitted_by": "agt_469",
+        "emitted_at": "2026-09-02T19:27:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "238f4c04a85deba3dcd63e28bca7035c0236acadaa8f5892d73b20336ef91db7"
+      },
+      {
+        "item_id": "env_00125-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00125",
+          "lines": [
+            {
+              "sku": "amul-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5900
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:27:20Z",
+        "evidence_class": 2,
+        "prev_hash": "238f4c04a85deba3dcd63e28bca7035c0236acadaa8f5892d73b20336ef91db7",
+        "content_hash": "0154d9a4dfc2174bf48c0cdd03fb2cddb6af5459a55a6f2b37d31889db346036"
+      },
+      {
+        "item_id": "env_00125-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00125",
+          "lines": [
+            {
+              "sku": "amul-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5900
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:41:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0154d9a4dfc2174bf48c0cdd03fb2cddb6af5459a55a6f2b37d31889db346036",
+        "content_hash": "5f910ed6508eee5727ead0ae50cb9264549c80462187551de443b8f799e18bf1"
+      },
+      {
+        "item_id": "env_00125-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00125",
+          "amount_paise": 5900,
+          "currency": "INR",
+          "receipt": "zep_00125"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:27:25Z",
+        "evidence_class": 3,
+        "prev_hash": "5f910ed6508eee5727ead0ae50cb9264549c80462187551de443b8f799e18bf1",
+        "content_hash": "576c6c0bb15c7d37c149be6bc0e0fdb3b061fa25c7f86ae6d1939fce19dbdee6"
+      },
+      {
+        "item_id": "env_00125-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00125",
+          "order_id": "order_00125",
+          "amount_paise": 5900,
+          "status": "captured",
+          "block_id": "blk_00125",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:27:30Z",
+        "evidence_class": 3,
+        "prev_hash": "576c6c0bb15c7d37c149be6bc0e0fdb3b061fa25c7f86ae6d1939fce19dbdee6",
+        "content_hash": "558f013929abefac3266c388c37737fba79e56d8070f41429737a81a51b9f4a9"
+      },
+      {
+        "item_id": "env_00125-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00125b",
+          "order_id": "order_00125",
+          "amount_paise": 5900,
+          "status": "captured",
+          "block_id": "blk_00125",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:27:34Z",
+        "evidence_class": 3,
+        "prev_hash": "558f013929abefac3266c388c37737fba79e56d8070f41429737a81a51b9f4a9",
+        "content_hash": "877784cfe089c814dd50375994bdc50dfb8f6bc390e5c8d9e61efe9ea05072d0"
+      },
+      {
+        "item_id": "env_00125-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Amul double toned milk. Payment complete.",
+          "claimed_sku": "amul-milk-double_toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_469",
+        "emitted_at": "2026-09-02T19:42:00Z",
+        "evidence_class": 0,
+        "prev_hash": "877784cfe089c814dd50375994bdc50dfb8f6bc390e5c8d9e61efe9ea05072d0",
+        "content_hash": "a5eca5e703b9172cc327ebb0f5319ab496871e38f8ffc56f0f7561c24a35bc88"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-milk-double_toned-1000",
+    "ordered_sku": "amul-milk-double_toned-1000",
+    "delivered_sku": "amul-milk-double_toned-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 5900,
+    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+  }
+}

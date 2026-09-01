@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00385",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00385",
+    "created_at": "2026-09-02T19:09:00Z",
+    "expires_at": "2026-09-03T01:09:00Z",
+    "user_id": "usr_9276",
+    "agent_id": "agt_263",
+    "block": {
+      "block_id": "blk_00385",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-20T19:09:00Z",
+      "expires_at": "2026-10-19T19:09:00Z"
+    },
+    "hard": {
+      "category": "noodles",
+      "max_unit_price_paise": 10350,
+      "max_total_paise": 10350,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "yippee",
+      "variant": "masala",
+      "pack_size_g": 560
+    },
+    "intent": {
+      "text": "buy 560g Yippee masala noodles from Blinkit, keep it under 103 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "1861aa4d08cb298d6f91310f22781687c6635fd2a614d24bf49255e0748b71ea",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00385",
+    "obligation_hash": "1861aa4d08cb298d6f91310f22781687c6635fd2a614d24bf49255e0748b71ea",
+    "items": [
+      {
+        "item_id": "env_00385-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ]
+        },
+        "emitted_by": "agt_263",
+        "emitted_at": "2026-09-02T19:09:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "824e819c7c155982f0a0ae57ef99b18f0980a36ecf730b05248b1c8a68386395"
+      },
+      {
+        "item_id": "env_00385-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00385",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:09:20Z",
+        "evidence_class": 2,
+        "prev_hash": "824e819c7c155982f0a0ae57ef99b18f0980a36ecf730b05248b1c8a68386395",
+        "content_hash": "3e2b0078748d76871fca991503e6b86c8666bf7d2166c61b94b435bed20f0b57"
+      },
+      {
+        "item_id": "env_00385-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00385",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:23:00Z",
+        "evidence_class": 2,
+        "prev_hash": "3e2b0078748d76871fca991503e6b86c8666bf7d2166c61b94b435bed20f0b57",
+        "content_hash": "410cbae416d25a6413ae9cd1009e5d33af3727a5f31df1d643c850c92a113baa"
+      },
+      {
+        "item_id": "env_00385-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00385",
+          "amount_paise": 9000,
+          "currency": "INR",
+          "receipt": "zep_00385"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:09:25Z",
+        "evidence_class": 3,
+        "prev_hash": "410cbae416d25a6413ae9cd1009e5d33af3727a5f31df1d643c850c92a113baa",
+        "content_hash": "eabdb941df910bce14861a23b07d3f5ae4ab06676ed738f3f63e2eafc5da53c8"
+      },
+      {
+        "item_id": "env_00385-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00385",
+          "order_id": "order_00385",
+          "amount_paise": 9000,
+          "status": "captured",
+          "block_id": "blk_00385",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:09:30Z",
+        "evidence_class": 3,
+        "prev_hash": "eabdb941df910bce14861a23b07d3f5ae4ab06676ed738f3f63e2eafc5da53c8",
+        "content_hash": "32a31ac5501b9eebb01ba6855debfc23a4b16d4416608de0d9a58ec261ba715b"
+      },
+      {
+        "item_id": "env_00385-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
+          "claimed_sku": "yippee-noodles-masala-560",
+          "claims_success": true
+        },
+        "emitted_by": "agt_263",
+        "emitted_at": "2026-09-02T19:24:00Z",
+        "evidence_class": 0,
+        "prev_hash": "32a31ac5501b9eebb01ba6855debfc23a4b16d4416608de0d9a58ec261ba715b",
+        "content_hash": "32bcfa05736c8e08b583483d12e3e65a4f2c1626b3f7ce1a3399467440aed439"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "yippee-noodles-masala-560",
+    "ordered_sku": "yippee-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 9000,
+    "rationale": "Order names yippee; fulfilment shipped maggi. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

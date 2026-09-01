@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00381",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00381",
+    "created_at": "2026-09-03T00:16:00Z",
+    "expires_at": "2026-09-03T06:16:00Z",
+    "user_id": "usr_9955",
+    "agent_id": "agt_856",
+    "block": {
+      "block_id": "blk_00381",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-15T00:16:00Z",
+      "expires_at": "2026-10-09T00:16:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "mother_dairy",
+      "variant": "full_cream",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Mother Dairy full cream milk on Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "e5f8b5eb64496a91e2f4e33ff14ae95dd0be8bc6b1ed1da6f4d30582383745ee",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00381",
+    "obligation_hash": "e5f8b5eb64496a91e2f4e33ff14ae95dd0be8bc6b1ed1da6f4d30582383745ee",
+    "items": [
+      {
+        "item_id": "env_00381-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "agt_856",
+        "emitted_at": "2026-09-03T00:16:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "d3d69cd88dcd30f18d2513435e517e64d6a649088c57a41a2e0522ea12fadd59"
+      },
+      {
+        "item_id": "env_00381-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00381",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:16:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d3d69cd88dcd30f18d2513435e517e64d6a649088c57a41a2e0522ea12fadd59",
+        "content_hash": "9d3083cd864947b16d30616eafcb87eae0a05d8543fe0bb43a695845a67de068"
+      },
+      {
+        "item_id": "env_00381-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00381",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:30:00Z",
+        "evidence_class": 2,
+        "prev_hash": "9d3083cd864947b16d30616eafcb87eae0a05d8543fe0bb43a695845a67de068",
+        "content_hash": "2c5f15a2bc3486c70bd46a70aa9c19f8b8dd99d68a5b56ddc63f54ae9c0b8827"
+      },
+      {
+        "item_id": "env_00381-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00381",
+          "amount_paise": 7500,
+          "currency": "INR",
+          "receipt": "zep_00381"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:16:25Z",
+        "evidence_class": 3,
+        "prev_hash": "2c5f15a2bc3486c70bd46a70aa9c19f8b8dd99d68a5b56ddc63f54ae9c0b8827",
+        "content_hash": "f3d788511f5264a2d0c2415ce288146d1ec132d0f704082dc68c91046f6adffb"
+      },
+      {
+        "item_id": "env_00381-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00381",
+          "order_id": "order_00381",
+          "amount_paise": 7500,
+          "status": "captured",
+          "block_id": "blk_00381",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:16:30Z",
+        "evidence_class": 3,
+        "prev_hash": "f3d788511f5264a2d0c2415ce288146d1ec132d0f704082dc68c91046f6adffb",
+        "content_hash": "c83607ed815bbd8e844c83d4164be617b6973b038eb7b478e00c0fe20506ee8a"
+      },
+      {
+        "item_id": "env_00381-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_856",
+        "emitted_at": "2026-09-03T00:31:00Z",
+        "evidence_class": 0,
+        "prev_hash": "c83607ed815bbd8e844c83d4164be617b6973b038eb7b478e00c0fe20506ee8a",
+        "content_hash": "5fb7da3cb90098b48acb58ab66f19268d62a60782a3a519830b6d9926ba69426"
+      },
+      {
+        "item_id": "env_00381-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "This isn't what I wanted, the agent got it wrong.",
+          "raised_at": "2026-09-03T03:16:00Z"
+        },
+        "emitted_by": "usr_9955",
+        "emitted_at": "2026-09-03T03:16:00Z",
+        "evidence_class": 0,
+        "prev_hash": "5fb7da3cb90098b48acb58ab66f19268d62a60782a3a519830b6d9926ba69426",
+        "content_hash": "2ee4ce097ccf9c7937787be3d5e8e9bff6564c341b5c4fad43b9b09dc71157dc"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 7500,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

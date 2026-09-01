@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00060",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00060",
+    "created_at": "2026-09-03T03:19:00Z",
+    "expires_at": "2026-09-03T09:19:00Z",
+    "user_id": "usr_3588",
+    "agent_id": "agt_175",
+    "block": {
+      "block_id": "blk_00060",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-20T03:19:00Z",
+      "expires_at": "2026-11-02T03:19:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 7500,
+      "max_total_paise": 7500,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "harvest",
+      "variant": null,
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "I need 400g Harvest white bread, use Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "d3242df3defb2594368376c4c60913445741a6a7c9eb2d805c27aae7da4ee069",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00060",
+    "obligation_hash": "d3242df3defb2594368376c4c60913445741a6a7c9eb2d805c27aae7da4ee069",
+    "items": [
+      {
+        "item_id": "env_00060-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
+        },
+        "emitted_by": "agt_175",
+        "emitted_at": "2026-09-03T03:19:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "3e6410b344435baf2d9da71e3d6c59e6ca7159460857508016e789a8888c058b"
+      },
+      {
+        "item_id": "env_00060-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00060",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:19:20Z",
+        "evidence_class": 2,
+        "prev_hash": "3e6410b344435baf2d9da71e3d6c59e6ca7159460857508016e789a8888c058b",
+        "content_hash": "1f3fea6a5723a011496994764f5e0dae43591db0a2e53c2853cc2b01ed442fa6"
+      },
+      {
+        "item_id": "env_00060-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00060",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:33:00Z",
+        "evidence_class": 2,
+        "prev_hash": "1f3fea6a5723a011496994764f5e0dae43591db0a2e53c2853cc2b01ed442fa6",
+        "content_hash": "9825e1e2850fb4b66eaa61769c15df86826598d57fede17915f2ed9f1c199c76"
+      },
+      {
+        "item_id": "env_00060-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00060",
+          "amount_paise": 5000,
+          "currency": "INR",
+          "receipt": "zep_00060"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:19:25Z",
+        "evidence_class": 3,
+        "prev_hash": "9825e1e2850fb4b66eaa61769c15df86826598d57fede17915f2ed9f1c199c76",
+        "content_hash": "d2797c498abb7e3ca0e0cadd3b9b6aa8da3cc5a24887dd93816ee4dc8a2c9919"
+      },
+      {
+        "item_id": "env_00060-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00060",
+          "order_id": "order_00060",
+          "amount_paise": 5000,
+          "status": "captured",
+          "block_id": "blk_00060",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:19:30Z",
+        "evidence_class": 3,
+        "prev_hash": "d2797c498abb7e3ca0e0cadd3b9b6aa8da3cc5a24887dd93816ee4dc8a2c9919",
+        "content_hash": "3d0f16e93e047b3d2dca7768c2a32b999dae57cd16c59547319b14a6f8659f6b"
+      },
+      {
+        "item_id": "env_00060-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Harvest brown bread. Payment complete.",
+          "claimed_sku": "harvest-bread-brown-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_175",
+        "emitted_at": "2026-09-03T03:34:00Z",
+        "evidence_class": 0,
+        "prev_hash": "3d0f16e93e047b3d2dca7768c2a32b999dae57cd16c59547319b14a6f8659f6b",
+        "content_hash": "bde537496a37c9717aa1ed911867f2baabdf8d1231fb2ebe41d7c382d50a11ea"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "INTENT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-brown-400",
+    "delivered_sku": "harvest-bread-brown-400",
+    "is_hard_pair": true,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 5000,
+    "rationale": "User asked for white; agent ordered brown. Same brand, same pack, Rs 8.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+  }
+}

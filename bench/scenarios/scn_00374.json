@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00374",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00374",
+    "created_at": "2026-09-03T03:26:00Z",
+    "expires_at": "2026-09-03T09:26:00Z",
+    "user_id": "usr_4560",
+    "agent_id": "agt_305",
+    "block": {
+      "block_id": "blk_00374",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T03:26:00Z",
+      "expires_at": "2026-10-22T03:26:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "aashirvaad",
+      "variant": "iodised",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg Aashirvaad iodised salt, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "9dd29b002714f567ed80a215475f0bd3e3a33b1900a517d380551a3111cf0618",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00374",
+    "obligation_hash": "9dd29b002714f567ed80a215475f0bd3e3a33b1900a517d380551a3111cf0618",
+    "items": [
+      {
+        "item_id": "env_00374-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "agt_305",
+        "emitted_at": "2026-09-03T03:26:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "d81deabed8e80026d26c8d6bdd7927a5c40b12225022e9d301c2873f24295e34"
+      },
+      {
+        "item_id": "env_00374-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00374",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:26:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d81deabed8e80026d26c8d6bdd7927a5c40b12225022e9d301c2873f24295e34",
+        "content_hash": "27427e2940b3902c801942d27c4de77d7d39b9a4427d1738821662e504ad87e5"
+      },
+      {
+        "item_id": "env_00374-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00374",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:40:00Z",
+        "evidence_class": 2,
+        "prev_hash": "27427e2940b3902c801942d27c4de77d7d39b9a4427d1738821662e504ad87e5",
+        "content_hash": "99377a4aa0034cdf8a511e6a9bad3958e844539de072fb02d7b6cc097d5ab3e5"
+      },
+      {
+        "item_id": "env_00374-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00374",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00374"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:26:25Z",
+        "evidence_class": 3,
+        "prev_hash": "99377a4aa0034cdf8a511e6a9bad3958e844539de072fb02d7b6cc097d5ab3e5",
+        "content_hash": "5210b9f3adc9eee3e86c985e11e217f695d94f99498a50cdd69745962f8cc975"
+      },
+      {
+        "item_id": "env_00374-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00374",
+          "order_id": "order_00374",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00374",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:26:30Z",
+        "evidence_class": 3,
+        "prev_hash": "5210b9f3adc9eee3e86c985e11e217f695d94f99498a50cdd69745962f8cc975",
+        "content_hash": "20d42339da345e0572e5ff1b55e4883392c3d4b8f74e9853f6f38194c4e2b739"
+      },
+      {
+        "item_id": "env_00374-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_305",
+        "emitted_at": "2026-09-03T03:41:00Z",
+        "evidence_class": 0,
+        "prev_hash": "20d42339da345e0572e5ff1b55e4883392c3d4b8f74e9853f6f38194c4e2b739",
+        "content_hash": "06eeba4ffdd651993b47763253ac956487bd6aec278cfbd97a985424afee810d"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 3000,
+    "rationale": "Order names aashirvaad; fulfilment shipped tata. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

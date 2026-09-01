@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00302",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00302",
+    "created_at": "2026-09-02T23:14:00Z",
+    "expires_at": "2026-09-03T05:14:00Z",
+    "user_id": "usr_5825",
+    "agent_id": "agt_230",
+    "block": {
+      "block_id": "blk_00302",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T23:14:00Z",
+      "expires_at": "2026-10-25T23:14:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "aashirvaad",
+      "variant": "gram",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1kg Aashirvaad besan from Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "a2fac1d3982d2d07b7a5f493db1a1657189d2b790a153c4f38751801a221daf1",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00302",
+    "obligation_hash": "a2fac1d3982d2d07b7a5f493db1a1657189d2b790a153c4f38751801a221daf1",
+    "items": [
+      {
+        "item_id": "env_00302-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "agt_230",
+        "emitted_at": "2026-09-02T23:14:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "4d84298c1399c68a56c579abc46f627068f100e93c27f73318ea14afaf9e30a7"
+      },
+      {
+        "item_id": "env_00302-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00302",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:14:20Z",
+        "evidence_class": 2,
+        "prev_hash": "4d84298c1399c68a56c579abc46f627068f100e93c27f73318ea14afaf9e30a7",
+        "content_hash": "0c1b6674a58446a941d6559bbfe73ba4b2e173616139bf188cc0a9639057233a"
+      },
+      {
+        "item_id": "env_00302-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00302",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:28:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0c1b6674a58446a941d6559bbfe73ba4b2e173616139bf188cc0a9639057233a",
+        "content_hash": "410189b11253d68ef4a3b52f43d16aa84715554fbe31967fd97ee552ff64be7e"
+      },
+      {
+        "item_id": "env_00302-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00302",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00302"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:14:25Z",
+        "evidence_class": 3,
+        "prev_hash": "410189b11253d68ef4a3b52f43d16aa84715554fbe31967fd97ee552ff64be7e",
+        "content_hash": "5af88511546d0a1a6e7c3f87b6c6bd9709d9bbccfe8438342852dc33af9a5ea5"
+      },
+      {
+        "item_id": "env_00302-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00302",
+          "order_id": "order_00302",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00302",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:14:30Z",
+        "evidence_class": 3,
+        "prev_hash": "5af88511546d0a1a6e7c3f87b6c6bd9709d9bbccfe8438342852dc33af9a5ea5",
+        "content_hash": "bcd35160bef2c90f23333254691ae359d2da4bf017dcf5ef2d2d971d59996129"
+      },
+      {
+        "item_id": "env_00302-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-gram-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_230",
+        "emitted_at": "2026-09-02T23:29:00Z",
+        "evidence_class": 0,
+        "prev_hash": "bcd35160bef2c90f23333254691ae359d2da4bf017dcf5ef2d2d971d59996129",
+        "content_hash": "4a447e5a67c9173c4098433c4eca67f43aeed874e36d306ad8d706aa0d429f0c"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-gram-1000",
+    "ordered_sku": "aashirvaad-flour-gram-1000",
+    "delivered_sku": "fortune-flour-gram-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 9600,
+    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00488",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00488",
+    "created_at": "2026-09-02T21:41:00Z",
+    "expires_at": "2026-09-03T03:41:00Z",
+    "user_id": "usr_9511",
+    "agent_id": "agt_199",
+    "block": {
+      "block_id": "blk_00488",
+      "blocked_paise": 56925,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-30T21:41:00Z",
+      "expires_at": "2026-10-25T21:41:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 18975,
+      "max_total_paise": 18975,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "fortune",
+      "variant": "mustard",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Fortune kachi ghani mustard oil on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "6eae8e33bed37d5dd00162b2b1f1de580fc6ed4eed24dd0cf9c8ea1c0c9eb6ba",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00488",
+    "obligation_hash": "6eae8e33bed37d5dd00162b2b1f1de580fc6ed4eed24dd0cf9c8ea1c0c9eb6ba",
+    "items": [
+      {
+        "item_id": "env_00488-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
+        },
+        "emitted_by": "agt_199",
+        "emitted_at": "2026-09-02T21:41:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "5758e204fb33244d758acb485a08d33ad9a1b568c84d10eb2c6637407bee3246"
+      },
+      {
+        "item_id": "env_00488-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00488",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:41:20Z",
+        "evidence_class": 2,
+        "prev_hash": "5758e204fb33244d758acb485a08d33ad9a1b568c84d10eb2c6637407bee3246",
+        "content_hash": "b0c87eb0d3401f08f75f56eb4a6f403fdccd8864c591904a361bc4163e41b244"
+      },
+      {
+        "item_id": "env_00488-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00488",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:55:00Z",
+        "evidence_class": 2,
+        "prev_hash": "b0c87eb0d3401f08f75f56eb4a6f403fdccd8864c591904a361bc4163e41b244",
+        "content_hash": "3948cccb8c2be1bfdc9e65d0e34ce5a82e71a0ad868f7808621a8e9e5f4675b5"
+      },
+      {
+        "item_id": "env_00488-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00488",
+          "amount_paise": 16500,
+          "currency": "INR",
+          "receipt": "zep_00488"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:41:25Z",
+        "evidence_class": 3,
+        "prev_hash": "3948cccb8c2be1bfdc9e65d0e34ce5a82e71a0ad868f7808621a8e9e5f4675b5",
+        "content_hash": "969d35d1365c43f4462f020b1e85d463e51e2e89b90baa073634abfc44e5da39"
+      },
+      {
+        "item_id": "env_00488-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00488",
+          "order_id": "order_00488",
+          "amount_paise": 16500,
+          "status": "captured",
+          "block_id": "blk_00488",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:41:30Z",
+        "evidence_class": 3,
+        "prev_hash": "969d35d1365c43f4462f020b1e85d463e51e2e89b90baa073634abfc44e5da39",
+        "content_hash": "82fdc3af4ce61e57828876bbf8db2d20cb9e1ce111bcc32aa30050a31541b635"
+      },
+      {
+        "item_id": "env_00488-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_199",
+        "emitted_at": "2026-09-02T21:56:00Z",
+        "evidence_class": 0,
+        "prev_hash": "82fdc3af4ce61e57828876bbf8db2d20cb9e1ce111bcc32aa30050a31541b635",
+        "content_hash": "1cbfc5982368eb90f6abfeba0faa926ac5d78aea8182324d350f21bdaee930df"
+      },
+      {
+        "item_id": "env_00488-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-03T00:41:00Z"
+        },
+        "emitted_by": "usr_9511",
+        "emitted_at": "2026-09-03T00:41:00Z",
+        "evidence_class": 0,
+        "prev_hash": "1cbfc5982368eb90f6abfeba0faa926ac5d78aea8182324d350f21bdaee930df",
+        "content_hash": "7c88e340f1f808cd5e0b4e82bd2586e36a2b89d928bbae66d84c9cece5063afb"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-edible_oil-mustard-1000",
+    "ordered_sku": "fortune-edible_oil-mustard-1000",
+    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 16500,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

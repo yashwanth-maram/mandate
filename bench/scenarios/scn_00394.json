@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00394",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00394",
+    "created_at": "2026-09-02T19:28:00Z",
+    "expires_at": "2026-09-03T01:28:00Z",
+    "user_id": "usr_5612",
+    "agent_id": "agt_883",
+    "block": {
+      "block_id": "blk_00394",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-19T19:28:00Z",
+      "expires_at": "2026-10-14T19:28:00Z"
+    },
+    "hard": {
+      "category": "noodles",
+      "max_unit_price_paise": 10350,
+      "max_total_paise": 10350,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "yippee",
+      "variant": "masala",
+      "pack_size_g": 560
+    },
+    "intent": {
+      "text": "buy 560g Yippee masala noodles from Swiggy Instamart, keep it under 103 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "3a8578aa768b989af45175d6c8fab6372be8837978852ad130d106d8446a7687",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00394",
+    "obligation_hash": "3a8578aa768b989af45175d6c8fab6372be8837978852ad130d106d8446a7687",
+    "items": [
+      {
+        "item_id": "env_00394-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ]
+        },
+        "emitted_by": "agt_883",
+        "emitted_at": "2026-09-02T19:28:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "ea3b058b372db9902c744329331193cec843b6681fdd78fe481d66ba57a2b03b"
+      },
+      {
+        "item_id": "env_00394-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00394",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:28:20Z",
+        "evidence_class": 2,
+        "prev_hash": "ea3b058b372db9902c744329331193cec843b6681fdd78fe481d66ba57a2b03b",
+        "content_hash": "9acd8e6225a60262795dc7829bce43c6a95aee726d09654416be51a787f98afb"
+      },
+      {
+        "item_id": "env_00394-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00394",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:42:00Z",
+        "evidence_class": 2,
+        "prev_hash": "9acd8e6225a60262795dc7829bce43c6a95aee726d09654416be51a787f98afb",
+        "content_hash": "334934472061626642e5def9bac0970a4eaf19605d9d1501294d2d47b3d5acb9"
+      },
+      {
+        "item_id": "env_00394-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00394",
+          "amount_paise": 9000,
+          "currency": "INR",
+          "receipt": "zep_00394"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:28:25Z",
+        "evidence_class": 3,
+        "prev_hash": "334934472061626642e5def9bac0970a4eaf19605d9d1501294d2d47b3d5acb9",
+        "content_hash": "ea9ade305667cbfefe37bae491b3de06cbc83990799bc66bedab4ab2a8eb60e6"
+      },
+      {
+        "item_id": "env_00394-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00394",
+          "order_id": "order_00394",
+          "amount_paise": 9000,
+          "status": "captured",
+          "block_id": "blk_00394",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:28:30Z",
+        "evidence_class": 3,
+        "prev_hash": "ea9ade305667cbfefe37bae491b3de06cbc83990799bc66bedab4ab2a8eb60e6",
+        "content_hash": "98009be086591b76e3a53709b2213ee2e3f849b0fa1715883393bf29a428373a"
+      },
+      {
+        "item_id": "env_00394-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
+          "claimed_sku": "yippee-noodles-masala-560",
+          "claims_success": true
+        },
+        "emitted_by": "agt_883",
+        "emitted_at": "2026-09-02T19:43:00Z",
+        "evidence_class": 0,
+        "prev_hash": "98009be086591b76e3a53709b2213ee2e3f849b0fa1715883393bf29a428373a",
+        "content_hash": "d33c593927350dc19a93068a0b63a00b9bd82f5308c6dc810295394d73587471"
+      },
+      {
+        "item_id": "env_00394-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-02T22:28:00Z"
+        },
+        "emitted_by": "usr_5612",
+        "emitted_at": "2026-09-02T22:28:00Z",
+        "evidence_class": 0,
+        "prev_hash": "d33c593927350dc19a93068a0b63a00b9bd82f5308c6dc810295394d73587471",
+        "content_hash": "1a9a4ef055949141a53d5254521e52de677a4d8b92ce4fc760149fed99d88f70"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "yippee-noodles-masala-560",
+    "ordered_sku": "yippee-noodles-masala-560",
+    "delivered_sku": "yippee-noodles-masala-560",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 9000,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

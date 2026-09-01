@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00077",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00077",
+    "created_at": "2026-09-02T18:15:00Z",
+    "expires_at": "2026-09-03T00:15:00Z",
+    "user_id": "usr_6869",
+    "agent_id": "agt_908",
+    "block": {
+      "block_id": "blk_00077",
+      "blocked_paise": 137310,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-26T18:15:00Z",
+      "expires_at": "2026-10-20T18:15:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 45770,
+      "max_total_paise": 45770,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "aashirvaad",
+      "variant": "multigrain",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "I need 5kg Aashirvaad multigrain atta, use Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "aba5bab50fc7080e5b0f97df5c8c5dfc656ae4a8f45539dc7c64380838c200a6",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00077",
+    "obligation_hash": "aba5bab50fc7080e5b0f97df5c8c5dfc656ae4a8f45539dc7c64380838c200a6",
+    "items": [
+      {
+        "item_id": "env_00077-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ]
+        },
+        "emitted_by": "agt_908",
+        "emitted_at": "2026-09-02T18:15:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "353981eff539f0d3b64feb3302097b69ab59f2f7083344bfe811a16ba1fd4999"
+      },
+      {
+        "item_id": "env_00077-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00077",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:15:20Z",
+        "evidence_class": 2,
+        "prev_hash": "353981eff539f0d3b64feb3302097b69ab59f2f7083344bfe811a16ba1fd4999",
+        "content_hash": "fc91262fe9a0bccaa8033ab4bf351f4b51495d0e0e7638be4e2b330fed34afa5"
+      },
+      {
+        "item_id": "env_00077-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00077",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:29:00Z",
+        "evidence_class": 2,
+        "prev_hash": "fc91262fe9a0bccaa8033ab4bf351f4b51495d0e0e7638be4e2b330fed34afa5",
+        "content_hash": "d9702c36779d13b7325a302b6c3b3fd13374e9be8f894b4dec8b58521766a3d9"
+      },
+      {
+        "item_id": "env_00077-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00077",
+          "amount_paise": 39800,
+          "currency": "INR",
+          "receipt": "zep_00077"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:15:25Z",
+        "evidence_class": 3,
+        "prev_hash": "d9702c36779d13b7325a302b6c3b3fd13374e9be8f894b4dec8b58521766a3d9",
+        "content_hash": "c62b72f725141589872537cbeeace0f418598015922776481ac0420dc5ad1729"
+      },
+      {
+        "item_id": "env_00077-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00077",
+          "order_id": "order_00077",
+          "amount_paise": 39800,
+          "status": "captured",
+          "block_id": "blk_00077",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:15:30Z",
+        "evidence_class": 3,
+        "prev_hash": "c62b72f725141589872537cbeeace0f418598015922776481ac0420dc5ad1729",
+        "content_hash": "5b1ee3f1deefdd15c8632499afefbc4a6c58468e830e92f4e66ef0fd6f0469a0"
+      },
+      {
+        "item_id": "env_00077-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-multigrain-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_908",
+        "emitted_at": "2026-09-02T18:30:00Z",
+        "evidence_class": 0,
+        "prev_hash": "5b1ee3f1deefdd15c8632499afefbc4a6c58468e830e92f4e66ef0fd6f0469a0",
+        "content_hash": "5fddf95786bf7fd42786d978eeb4735bb14dcab48968ba3b987d97cd018ec92a"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-multigrain-5000",
+    "ordered_sku": "aashirvaad-flour-multigrain-5000",
+    "delivered_sku": "fortune-flour-multigrain-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 39800,
+    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

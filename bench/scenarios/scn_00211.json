@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00211",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00211",
+    "created_at": "2026-09-03T00:38:00Z",
+    "expires_at": "2026-09-03T06:38:00Z",
+    "user_id": "usr_9856",
+    "agent_id": "agt_439",
+    "block": {
+      "block_id": "blk_00211",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-22T00:38:00Z",
+      "expires_at": "2026-10-27T00:38:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 18975,
+      "max_total_paise": 18975,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "fortune",
+      "variant": "mustard",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Fortune kachi ghani mustard oil on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "483af6c60512f6e913b6ede276ab0a794480cdc2116f9e989f18283fbfdd9f2b",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00211",
+    "obligation_hash": "483af6c60512f6e913b6ede276ab0a794480cdc2116f9e989f18283fbfdd9f2b",
+    "items": [
+      {
+        "item_id": "env_00211-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
+        },
+        "emitted_by": "agt_439",
+        "emitted_at": "2026-09-03T00:38:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "9b1af47d8c2bfc85875f914625271fd8d9ffc027224485736eefc0be12df197d"
+      },
+      {
+        "item_id": "env_00211-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00211",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:38:20Z",
+        "evidence_class": 2,
+        "prev_hash": "9b1af47d8c2bfc85875f914625271fd8d9ffc027224485736eefc0be12df197d",
+        "content_hash": "fd922b2d3797ecb20d0e0e8ead590f0395e6b455fe4774c0295e868f038fd5b8"
+      },
+      {
+        "item_id": "env_00211-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00211",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:52:00Z",
+        "evidence_class": 2,
+        "prev_hash": "fd922b2d3797ecb20d0e0e8ead590f0395e6b455fe4774c0295e868f038fd5b8",
+        "content_hash": "797426af01665254411179cbb83beedddd18cb103242dc33433fd26a2b0ae477"
+      },
+      {
+        "item_id": "env_00211-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00211",
+          "amount_paise": 20237,
+          "currency": "INR",
+          "receipt": "zep_00211"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:38:25Z",
+        "evidence_class": 3,
+        "prev_hash": "797426af01665254411179cbb83beedddd18cb103242dc33433fd26a2b0ae477",
+        "content_hash": "648d9c44472921e923ea0007dbbb17c55c76579552e97398b46a563f6378c2cd"
+      },
+      {
+        "item_id": "env_00211-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00211",
+          "order_id": "order_00211",
+          "amount_paise": 20237,
+          "status": "captured",
+          "block_id": "blk_00211",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:38:30Z",
+        "evidence_class": 3,
+        "prev_hash": "648d9c44472921e923ea0007dbbb17c55c76579552e97398b46a563f6378c2cd",
+        "content_hash": "e9b50b76a0e48ae2af5ba1501d601cdbadbda2920bbc0d2dfb464404d5c06347"
+      },
+      {
+        "item_id": "env_00211-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_439",
+        "emitted_at": "2026-09-03T00:53:00Z",
+        "evidence_class": 0,
+        "prev_hash": "e9b50b76a0e48ae2af5ba1501d601cdbadbda2920bbc0d2dfb464404d5c06347",
+        "content_hash": "edc6bef6d2cdcaa11be12b05a2d142a6334519b444ed3ed0493a21b1bc6a0512"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-edible_oil-mustard-1000",
+    "ordered_sku": "fortune-edible_oil-mustard-1000",
+    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 3737,
+    "rationale": "Correct item, unreconcilable debit. Debited 20237 paise against an order worth 16500 paise."
+  }
+}

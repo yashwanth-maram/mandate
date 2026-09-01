@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00456",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00456",
+    "created_at": "2026-09-02T21:08:00Z",
+    "expires_at": "2026-09-03T03:08:00Z",
+    "user_id": "usr_1378",
+    "agent_id": "agt_228",
+    "block": {
+      "block_id": "blk_00456",
+      "blocked_paise": 128340,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-26T21:08:00Z",
+      "expires_at": "2026-10-23T21:08:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 42780,
+      "max_total_paise": 42780,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "daawat",
+      "variant": "sona_masoori",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "I need 5kg Daawat sona masoori rice, use Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "76482f4cd25255940fe690df9a7607004a7ea3983a86cf0072a3c8fcc231bfcb",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00456",
+    "obligation_hash": "76482f4cd25255940fe690df9a7607004a7ea3983a86cf0072a3c8fcc231bfcb",
+    "items": [
+      {
+        "item_id": "env_00456-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
+        },
+        "emitted_by": "agt_228",
+        "emitted_at": "2026-09-02T21:08:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "de0a0f6ad738eb6c7d2d5e7a4a48f8d02021e4622b5a2e1d138c09de9146c3cc"
+      },
+      {
+        "item_id": "env_00456-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00456",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:08:20Z",
+        "evidence_class": 2,
+        "prev_hash": "de0a0f6ad738eb6c7d2d5e7a4a48f8d02021e4622b5a2e1d138c09de9146c3cc",
+        "content_hash": "4c7724caa4a272a933db8817979787cc26aef705465c8db4f0f48792d5479515"
+      },
+      {
+        "item_id": "env_00456-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00456",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:22:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4c7724caa4a272a933db8817979787cc26aef705465c8db4f0f48792d5479515",
+        "content_hash": "5c710e6b3cc53ea2e4482d055085d1440417642736171b0203d51e62ea6928d3"
+      },
+      {
+        "item_id": "env_00456-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00456",
+          "amount_paise": 37200,
+          "currency": "INR",
+          "receipt": "zep_00456"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:08:25Z",
+        "evidence_class": 3,
+        "prev_hash": "5c710e6b3cc53ea2e4482d055085d1440417642736171b0203d51e62ea6928d3",
+        "content_hash": "a3a144ecadfe479e1bdf123da5b098294a95be1bbc82982cc539c2606c314b76"
+      },
+      {
+        "item_id": "env_00456-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00456",
+          "order_id": "order_00456",
+          "amount_paise": 37200,
+          "status": "captured",
+          "block_id": "blk_00456",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:08:30Z",
+        "evidence_class": 3,
+        "prev_hash": "a3a144ecadfe479e1bdf123da5b098294a95be1bbc82982cc539c2606c314b76",
+        "content_hash": "3e88939376f3bebebc3631befd19cb6df9219339fe83023d85b09ec03c1372cd"
+      },
+      {
+        "item_id": "env_00456-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
+          "claimed_sku": "daawat-rice-sona_masoori-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_228",
+        "emitted_at": "2026-09-02T21:23:00Z",
+        "evidence_class": 0,
+        "prev_hash": "3e88939376f3bebebc3631befd19cb6df9219339fe83023d85b09ec03c1372cd",
+        "content_hash": "8075c0f820d8fc9aaa83ace373820967e669d8f9c1af848f856e0e9f5c7e703e"
+      },
+      {
+        "item_id": "env_00456-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-03T00:08:00Z"
+        },
+        "emitted_by": "usr_1378",
+        "emitted_at": "2026-09-03T00:08:00Z",
+        "evidence_class": 0,
+        "prev_hash": "8075c0f820d8fc9aaa83ace373820967e669d8f9c1af848f856e0e9f5c7e703e",
+        "content_hash": "18d8448fd70e37c13c0b2e8fe6820cad5c8d313115def3e4c3262fbd19fa81f5"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "daawat-rice-sona_masoori-5000",
+    "ordered_sku": "daawat-rice-sona_masoori-5000",
+    "delivered_sku": "daawat-rice-sona_masoori-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 37200,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

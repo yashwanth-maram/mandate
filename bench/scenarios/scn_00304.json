@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00304",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00304",
+    "created_at": "2026-09-03T02:28:00Z",
+    "expires_at": "2026-09-03T08:28:00Z",
+    "user_id": "usr_3304",
+    "agent_id": "agt_439",
+    "block": {
+      "block_id": "blk_00304",
+      "blocked_paise": 94872,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T02:28:00Z",
+      "expires_at": "2026-10-10T02:28:00Z"
+    },
+    "hard": {
+      "category": "butter",
+      "max_unit_price_paise": 31624,
+      "max_total_paise": 31624,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "nandini",
+      "variant": "salted",
+      "pack_size_g": 500
+    },
+    "intent": {
+      "text": "I need 500g Nandini salted butter, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "6227078b983caa14773673e7be58df98907bb8cd2e84dc1b66a258243bc557e8",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00304",
+    "obligation_hash": "6227078b983caa14773673e7be58df98907bb8cd2e84dc1b66a258243bc557e8",
+    "items": [
+      {
+        "item_id": "env_00304-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "nandini-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 27500
+            }
+          ]
+        },
+        "emitted_by": "agt_439",
+        "emitted_at": "2026-09-03T02:28:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "c308d4e20c7e7615b79a25ece652aa3f437994657a08efc58dd3a7b6e0c8d4fc"
+      },
+      {
+        "item_id": "env_00304-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00304",
+          "lines": [
+            {
+              "sku": "nandini-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 27500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:28:20Z",
+        "evidence_class": 2,
+        "prev_hash": "c308d4e20c7e7615b79a25ece652aa3f437994657a08efc58dd3a7b6e0c8d4fc",
+        "content_hash": "aa6153e99049d0dc0f5eb7978fa80e7d29faf27a0cb027955d8c60183e962273"
+      },
+      {
+        "item_id": "env_00304-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00304",
+          "lines": [
+            {
+              "sku": "nandini-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 27500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:42:00Z",
+        "evidence_class": 2,
+        "prev_hash": "aa6153e99049d0dc0f5eb7978fa80e7d29faf27a0cb027955d8c60183e962273",
+        "content_hash": "16c062778c5318c7307a4f9152bc9ac84518a5ec0b0d62fe6ff07794e7a714da"
+      },
+      {
+        "item_id": "env_00304-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00304",
+          "amount_paise": 27500,
+          "currency": "INR",
+          "receipt": "zep_00304"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:28:25Z",
+        "evidence_class": 3,
+        "prev_hash": "16c062778c5318c7307a4f9152bc9ac84518a5ec0b0d62fe6ff07794e7a714da",
+        "content_hash": "f3e113f13a878fdc097760b803a62b8f286fc1c132568d021bdf94da8e91d15c"
+      },
+      {
+        "item_id": "env_00304-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00304",
+          "order_id": "order_00304",
+          "amount_paise": 27500,
+          "status": "captured",
+          "block_id": "blk_00304",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:28:30Z",
+        "evidence_class": 3,
+        "prev_hash": "f3e113f13a878fdc097760b803a62b8f286fc1c132568d021bdf94da8e91d15c",
+        "content_hash": "78ae3d937b5ff1635590c471652a738c9580b05c9df296e3d92792427fa18a34"
+      },
+      {
+        "item_id": "env_00304-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 500g Nandini salted butter. Payment complete.",
+          "claimed_sku": "nandini-butter-salted-500",
+          "claims_success": true
+        },
+        "emitted_by": "agt_439",
+        "emitted_at": "2026-09-03T02:43:00Z",
+        "evidence_class": 0,
+        "prev_hash": "78ae3d937b5ff1635590c471652a738c9580b05c9df296e3d92792427fa18a34",
+        "content_hash": "bbff876d4b81622b67ded16ed882bcafc361ee8dd352b343c1fe9fdc425fc806"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "nandini-butter-salted-500",
+    "ordered_sku": "nandini-butter-salted-500",
+    "delivered_sku": "nandini-butter-salted-500",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

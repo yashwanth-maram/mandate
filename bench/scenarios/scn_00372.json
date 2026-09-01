@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00372",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00372",
+    "created_at": "2026-09-03T00:36:00Z",
+    "expires_at": "2026-09-03T06:36:00Z",
+    "user_id": "usr_6273",
+    "agent_id": "agt_616",
+    "block": {
+      "block_id": "blk_00372",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-22T00:36:00Z",
+      "expires_at": "2026-10-16T00:36:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 5175,
+      "max_total_paise": 5175,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "britannia",
+      "variant": "white",
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "order 400g Britannia white bread on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "41c5476d4954ebeb4608cd5b1303eb5a2b149a2ea6f34b3bc60d9d7d0328710d",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00372",
+    "obligation_hash": "41c5476d4954ebeb4608cd5b1303eb5a2b149a2ea6f34b3bc60d9d7d0328710d",
+    "items": [
+      {
+        "item_id": "env_00372-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "britannia-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "agt_616",
+        "emitted_at": "2026-09-03T00:36:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "636dc56ad7e89aa659f04c10a3b4b5679151abf1b065d2087c1fc15c93eca40a"
+      },
+      {
+        "item_id": "env_00372-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00372",
+          "lines": [
+            {
+              "sku": "britannia-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:36:20Z",
+        "evidence_class": 2,
+        "prev_hash": "636dc56ad7e89aa659f04c10a3b4b5679151abf1b065d2087c1fc15c93eca40a",
+        "content_hash": "946ee195654152de8a274536505d1204be949ed14fd83e2857b0cc4076143529"
+      },
+      {
+        "item_id": "env_00372-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00372",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:50:00Z",
+        "evidence_class": 2,
+        "prev_hash": "946ee195654152de8a274536505d1204be949ed14fd83e2857b0cc4076143529",
+        "content_hash": "9de530a3f15113e3f6f1a8fbeb8c272ea99f8f42a155f358f63f3abd595e7d4b"
+      },
+      {
+        "item_id": "env_00372-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00372",
+          "amount_paise": 4500,
+          "currency": "INR",
+          "receipt": "zep_00372"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:36:25Z",
+        "evidence_class": 3,
+        "prev_hash": "9de530a3f15113e3f6f1a8fbeb8c272ea99f8f42a155f358f63f3abd595e7d4b",
+        "content_hash": "0a749efe57a0405897ed5c0014bfc70742efc80cda741d7bc9141d9470231d4d"
+      },
+      {
+        "item_id": "env_00372-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00372",
+          "order_id": "order_00372",
+          "amount_paise": 4500,
+          "status": "captured",
+          "block_id": "blk_00372",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:36:30Z",
+        "evidence_class": 3,
+        "prev_hash": "0a749efe57a0405897ed5c0014bfc70742efc80cda741d7bc9141d9470231d4d",
+        "content_hash": "36f94c9624e66a8dc820d1a837f66f5903aca7bd6f89092a07766fb10729d3db"
+      },
+      {
+        "item_id": "env_00372-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Britannia white bread. Payment complete.",
+          "claimed_sku": "britannia-bread-white-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_616",
+        "emitted_at": "2026-09-03T00:51:00Z",
+        "evidence_class": 0,
+        "prev_hash": "36f94c9624e66a8dc820d1a837f66f5903aca7bd6f89092a07766fb10729d3db",
+        "content_hash": "d4cb4ff190cf1608442b20e9b64e5d6677a22a55e620a1f79bb372ee95bad519"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "britannia-bread-white-400",
+    "ordered_sku": "britannia-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 4500,
+    "rationale": "Order names britannia; fulfilment shipped harvest. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

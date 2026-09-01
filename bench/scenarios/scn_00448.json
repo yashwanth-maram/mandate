@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00448",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00448",
+    "created_at": "2026-09-03T00:30:00Z",
+    "expires_at": "2026-09-03T06:30:00Z",
+    "user_id": "usr_4212",
+    "agent_id": "agt_249",
+    "block": {
+      "block_id": "blk_00448",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-30T00:30:00Z",
+      "expires_at": "2026-10-18T00:30:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 5750,
+      "max_total_paise": 5750,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "harvest",
+      "variant": "brown",
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "get me 400g Harvest brown bread from Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "bfd9b512929ee03862edc53a1145e7b9393507e19a93ece6e555d60936785bd1",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00448",
+    "obligation_hash": "bfd9b512929ee03862edc53a1145e7b9393507e19a93ece6e555d60936785bd1",
+    "items": [
+      {
+        "item_id": "env_00448-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
+        },
+        "emitted_by": "agt_249",
+        "emitted_at": "2026-09-03T00:30:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "48aa031fb1789b8e54c129f3997d9bd83e03331de568d68ff9748d86e38a843f"
+      },
+      {
+        "item_id": "env_00448-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00448",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:30:20Z",
+        "evidence_class": 2,
+        "prev_hash": "48aa031fb1789b8e54c129f3997d9bd83e03331de568d68ff9748d86e38a843f",
+        "content_hash": "93f98ea01c717c3436e8ab4c369f65e25d5b07061c4023bcc880840349c543a8"
+      },
+      {
+        "item_id": "env_00448-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00448",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:44:00Z",
+        "evidence_class": 2,
+        "prev_hash": "93f98ea01c717c3436e8ab4c369f65e25d5b07061c4023bcc880840349c543a8",
+        "content_hash": "82c6dc10122578394b3faa92a5bebbf99d683708932f8a905862fd4f57aab100"
+      },
+      {
+        "item_id": "env_00448-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00448",
+          "amount_paise": 5000,
+          "currency": "INR",
+          "receipt": "zep_00448"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:30:25Z",
+        "evidence_class": 3,
+        "prev_hash": "82c6dc10122578394b3faa92a5bebbf99d683708932f8a905862fd4f57aab100",
+        "content_hash": "6f9ca48ddae96fc6a7715ef4ae9b0ce5f1bb70faf2c92fe0449b11ce5d7bc2cb"
+      },
+      {
+        "item_id": "env_00448-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00448",
+          "order_id": "order_00448",
+          "amount_paise": 5000,
+          "status": "captured",
+          "block_id": "blk_00448",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:30:30Z",
+        "evidence_class": 3,
+        "prev_hash": "6f9ca48ddae96fc6a7715ef4ae9b0ce5f1bb70faf2c92fe0449b11ce5d7bc2cb",
+        "content_hash": "caf169e21c76470d41308f0827bdcb025b6a61e75809f6b55dc2d778b8774f7f"
+      },
+      {
+        "item_id": "env_00448-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Harvest brown bread. Payment complete.",
+          "claimed_sku": "harvest-bread-brown-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_249",
+        "emitted_at": "2026-09-03T00:45:00Z",
+        "evidence_class": 0,
+        "prev_hash": "caf169e21c76470d41308f0827bdcb025b6a61e75809f6b55dc2d778b8774f7f",
+        "content_hash": "78850da7dcbd4519cca2cd67f8c6392bb7b955e74d399265ba7520a5b17d82b3"
+      },
+      {
+        "item_id": "env_00448-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T03:30:00Z"
+        },
+        "emitted_by": "usr_4212",
+        "emitted_at": "2026-09-03T03:30:00Z",
+        "evidence_class": 0,
+        "prev_hash": "78850da7dcbd4519cca2cd67f8c6392bb7b955e74d399265ba7520a5b17d82b3",
+        "content_hash": "8ee1c59878241c76ce2fb0add6784052c2679d834a65f9812893cb5c9dde470f"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "harvest-bread-brown-400",
+    "ordered_sku": "harvest-bread-brown-400",
+    "delivered_sku": "harvest-bread-brown-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 5000,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

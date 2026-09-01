@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00346",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00346",
+    "created_at": "2026-09-03T02:21:00Z",
+    "expires_at": "2026-09-03T08:21:00Z",
+    "user_id": "usr_6885",
+    "agent_id": "agt_868",
+    "block": {
+      "block_id": "blk_00346",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T02:21:00Z",
+      "expires_at": "2026-10-08T02:21:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 13569,
+      "max_total_paise": 13569,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "india_gate",
+      "variant": "brown",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1kg India Gate brown rice from Blinkit, keep it under 135 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "0688b01dac0e3507d058d0b3b0d5d19529981f722b4eb004a4201395ae510b2b",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00346",
+    "obligation_hash": "0688b01dac0e3507d058d0b3b0d5d19529981f722b4eb004a4201395ae510b2b",
+    "items": [
+      {
+        "item_id": "env_00346-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
+        },
+        "emitted_by": "agt_868",
+        "emitted_at": "2026-09-03T02:21:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "dff40b6d5f52b4724f5e1c3841a3e0a6d3de959ca91ed1876969841438865bf5"
+      },
+      {
+        "item_id": "env_00346-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00346",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:21:20Z",
+        "evidence_class": 2,
+        "prev_hash": "dff40b6d5f52b4724f5e1c3841a3e0a6d3de959ca91ed1876969841438865bf5",
+        "content_hash": "528e27cfeb8c55538891d37787bff78b0240cb6e9aa2ea94b76358d7c7eff5a5"
+      },
+      {
+        "item_id": "env_00346-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00346",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:35:00Z",
+        "evidence_class": 2,
+        "prev_hash": "528e27cfeb8c55538891d37787bff78b0240cb6e9aa2ea94b76358d7c7eff5a5",
+        "content_hash": "1fdc6dc132b4945db0c4ebdb9371298f49057b7c4de851295e7682336889563a"
+      },
+      {
+        "item_id": "env_00346-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00346",
+          "amount_paise": 12378,
+          "currency": "INR",
+          "receipt": "zep_00346"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:21:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1fdc6dc132b4945db0c4ebdb9371298f49057b7c4de851295e7682336889563a",
+        "content_hash": "e8f5d3b189d772971f8e2b6a234444c2caf06938634da1fad7dfcd94a06f68d8"
+      },
+      {
+        "item_id": "env_00346-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00346",
+          "order_id": "order_00346",
+          "amount_paise": 12378,
+          "status": "captured",
+          "block_id": "blk_00346",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:21:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e8f5d3b189d772971f8e2b6a234444c2caf06938634da1fad7dfcd94a06f68d8",
+        "content_hash": "7e6dec4da59badc68d3bb92fa0e87b6706a63e7123e18a65f1786e63b6b356cb"
+      },
+      {
+        "item_id": "env_00346-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-brown-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_868",
+        "emitted_at": "2026-09-03T02:36:00Z",
+        "evidence_class": 0,
+        "prev_hash": "7e6dec4da59badc68d3bb92fa0e87b6706a63e7123e18a65f1786e63b6b356cb",
+        "content_hash": "11f36c10fc6606cd0b10270a08847b33473655b91c881f6af3a6f7ea12204fab"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "india_gate-rice-brown-1000",
+    "ordered_sku": "india_gate-rice-brown-1000",
+    "delivered_sku": "india_gate-rice-brown-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 578,
+    "rationale": "Correct item, unreconcilable debit. Debited 12378 paise against an order worth 11800 paise."
+  }
+}

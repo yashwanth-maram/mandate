@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00421",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00421",
+    "created_at": "2026-09-03T02:08:00Z",
+    "expires_at": "2026-09-03T08:08:00Z",
+    "user_id": "usr_4809",
+    "agent_id": "agt_979",
+    "block": {
+      "block_id": "blk_00421",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T02:08:00Z",
+      "expires_at": "2026-10-12T02:08:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 6784,
+      "max_total_paise": 6784,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "amul",
+      "variant": "double_toned",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1L Amul double toned milk from Swiggy Instamart, keep it under 67 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "0102d0318ec6e36c510450a95cfb011ef98fde46d634188b172e535444dfd424",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00421",
+    "obligation_hash": "0102d0318ec6e36c510450a95cfb011ef98fde46d634188b172e535444dfd424",
+    "items": [
+      {
+        "item_id": "env_00421-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "amul-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5900
+            }
+          ]
+        },
+        "emitted_by": "agt_979",
+        "emitted_at": "2026-09-03T02:08:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "890dddf5ff40732cf8cbb366ea3e42981e57e41a45ddc4fc179e7f468bbb0d02"
+      },
+      {
+        "item_id": "env_00421-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00421",
+          "lines": [
+            {
+              "sku": "amul-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5900
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:08:20Z",
+        "evidence_class": 2,
+        "prev_hash": "890dddf5ff40732cf8cbb366ea3e42981e57e41a45ddc4fc179e7f468bbb0d02",
+        "content_hash": "b63519009f8778a99168ec08685c5264c1a4f535453c59cc041534e1a24b6f4c"
+      },
+      {
+        "item_id": "env_00421-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00421",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:22:00Z",
+        "evidence_class": 2,
+        "prev_hash": "b63519009f8778a99168ec08685c5264c1a4f535453c59cc041534e1a24b6f4c",
+        "content_hash": "9a0a02017ac54531a20a0a8a6457007433c9dca4eb73fb6aa284053f64922b81"
+      },
+      {
+        "item_id": "env_00421-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00421",
+          "amount_paise": 5900,
+          "currency": "INR",
+          "receipt": "zep_00421"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:08:25Z",
+        "evidence_class": 3,
+        "prev_hash": "9a0a02017ac54531a20a0a8a6457007433c9dca4eb73fb6aa284053f64922b81",
+        "content_hash": "3ebe1ca6897a7caf2680efe70627cebab433deb5eebecba7908fd06a3d52ebba"
+      },
+      {
+        "item_id": "env_00421-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00421",
+          "order_id": "order_00421",
+          "amount_paise": 5900,
+          "status": "captured",
+          "block_id": "blk_00421",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:08:30Z",
+        "evidence_class": 3,
+        "prev_hash": "3ebe1ca6897a7caf2680efe70627cebab433deb5eebecba7908fd06a3d52ebba",
+        "content_hash": "a9c74116dff41cc289294264f016923b6b80aba3dbd15604729d9f5e71d28731"
+      },
+      {
+        "item_id": "env_00421-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Amul double toned milk. Payment complete.",
+          "claimed_sku": "amul-milk-double_toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_979",
+        "emitted_at": "2026-09-03T02:23:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a9c74116dff41cc289294264f016923b6b80aba3dbd15604729d9f5e71d28731",
+        "content_hash": "ec68b5993881a98425da4e585b232489be5e4e25c132af897c5b0447c93c10a6"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-milk-double_toned-1000",
+    "ordered_sku": "amul-milk-double_toned-1000",
+    "delivered_sku": "mother_dairy-milk-double_toned-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 5900,
+    "rationale": "Order names amul; fulfilment shipped mother_dairy. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

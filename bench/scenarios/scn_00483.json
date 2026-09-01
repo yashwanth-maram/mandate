@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00483",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00483",
+    "created_at": "2026-09-02T23:29:00Z",
+    "expires_at": "2026-09-03T05:29:00Z",
+    "user_id": "usr_2809",
+    "agent_id": "agt_198",
+    "block": {
+      "block_id": "blk_00483",
+      "blocked_paise": 59400,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-17T23:29:00Z",
+      "expires_at": "2026-10-23T23:29:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 19800,
+      "max_total_paise": 19800,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "saffola",
+      "variant": "sunflower_refined",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1L Saffola refined sunflower oil from Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "027e0dff14d69405dd2071f73a69f952e3f130166ea7d2e71af79899610831e9",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00483",
+    "obligation_hash": "027e0dff14d69405dd2071f73a69f952e3f130166ea7d2e71af79899610831e9",
+    "items": [
+      {
+        "item_id": "env_00483-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ]
+        },
+        "emitted_by": "agt_198",
+        "emitted_at": "2026-09-02T23:29:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "751781ef8463ad52535532f3c87cb4364b76b3dbfe28ad1a23296b7544e0efdd"
+      },
+      {
+        "item_id": "env_00483-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00483",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:29:20Z",
+        "evidence_class": 2,
+        "prev_hash": "751781ef8463ad52535532f3c87cb4364b76b3dbfe28ad1a23296b7544e0efdd",
+        "content_hash": "39a56be2610b0fe5ca9110992a0c0e79d576918b2922be7fa68ef9dcc243a73e"
+      },
+      {
+        "item_id": "env_00483-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00483",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:43:00Z",
+        "evidence_class": 2,
+        "prev_hash": "39a56be2610b0fe5ca9110992a0c0e79d576918b2922be7fa68ef9dcc243a73e",
+        "content_hash": "db28354d96c6409d9cedab07a9b3e26dabca4baccd6d71119b33656ae4d29ec3"
+      },
+      {
+        "item_id": "env_00483-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00483",
+          "amount_paise": 15200,
+          "currency": "INR",
+          "receipt": "zep_00483"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:29:25Z",
+        "evidence_class": 3,
+        "prev_hash": "db28354d96c6409d9cedab07a9b3e26dabca4baccd6d71119b33656ae4d29ec3",
+        "content_hash": "038ba5fbcf29638b49382e9f5b67f3f52c88128c45123326ecfe0fd4efd946d5"
+      },
+      {
+        "item_id": "env_00483-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00483",
+          "order_id": "order_00483",
+          "amount_paise": 15200,
+          "status": "captured",
+          "block_id": "blk_00483",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:29:30Z",
+        "evidence_class": 3,
+        "prev_hash": "038ba5fbcf29638b49382e9f5b67f3f52c88128c45123326ecfe0fd4efd946d5",
+        "content_hash": "58cc647b324be1e921877fc07fbb9bb46b3205f3d0fccd7dafb46c61d06ea30e"
+      },
+      {
+        "item_id": "env_00483-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune refined sunflower oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-sunflower_refined-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_198",
+        "emitted_at": "2026-09-02T23:44:00Z",
+        "evidence_class": 0,
+        "prev_hash": "58cc647b324be1e921877fc07fbb9bb46b3205f3d0fccd7dafb46c61d06ea30e",
+        "content_hash": "1d8220b2668981fbb1ce2772bccd75f3db1f9664960d039396acd1d39647ccc4"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "CART_DRIFT",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "ordered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "delivered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 15200,
+    "rationale": "Hard constraint violated, detectable without a model. Obligation captured brand 'saffola'; agent ordered 'fortune'."
+  }
+}

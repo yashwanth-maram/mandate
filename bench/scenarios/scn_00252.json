@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00252",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00252",
+    "created_at": "2026-09-02T18:49:00Z",
+    "expires_at": "2026-09-03T00:49:00Z",
+    "user_id": "usr_1752",
+    "agent_id": "agt_201",
+    "block": {
+      "block_id": "blk_00252",
+      "blocked_paise": 65205,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-13T18:49:00Z",
+      "expires_at": "2026-10-27T18:49:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 21735,
+      "max_total_paise": 21735,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "fortune",
+      "variant": "groundnut",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1L Fortune groundnut oil from Blinkit, keep it under 217 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "2aa89dd1cc21a0421a58edb1b4bde1557d142df4c4f7a172f595439004f7d7e3",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00252",
+    "obligation_hash": "2aa89dd1cc21a0421a58edb1b4bde1557d142df4c4f7a172f595439004f7d7e3",
+    "items": [
+      {
+        "item_id": "env_00252-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "agt_201",
+        "emitted_at": "2026-09-02T18:49:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "ad36de964a221f8be6ec11b32d695420b7380bda2a7dfaf3bf350ea5007a2259"
+      },
+      {
+        "item_id": "env_00252-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00252",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:49:20Z",
+        "evidence_class": 2,
+        "prev_hash": "ad36de964a221f8be6ec11b32d695420b7380bda2a7dfaf3bf350ea5007a2259",
+        "content_hash": "f59c6c97101211b1fe63879887288f59f5fc2a5b94b539c22f906f580d1d7f34"
+      },
+      {
+        "item_id": "env_00252-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00252",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f59c6c97101211b1fe63879887288f59f5fc2a5b94b539c22f906f580d1d7f34",
+        "content_hash": "a94c49ab6e2fc1d1019c302bb211ae2be5d9b6c6b5e8afb182ee374de3887cf0"
+      },
+      {
+        "item_id": "env_00252-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00252",
+          "amount_paise": 18900,
+          "currency": "INR",
+          "receipt": "zep_00252"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "a94c49ab6e2fc1d1019c302bb211ae2be5d9b6c6b5e8afb182ee374de3887cf0",
+        "content_hash": "ff7bd296c1495b96e73632f22ddbc93cbb12f7fe843ecd787ee957b5dd45a67b"
+      },
+      {
+        "item_id": "env_00252-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00252",
+          "order_id": "order_00252",
+          "amount_paise": 18900,
+          "status": "captured",
+          "block_id": "blk_00252",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "ff7bd296c1495b96e73632f22ddbc93cbb12f7fe843ecd787ee957b5dd45a67b",
+        "content_hash": "44c5bfe1b4998fe347fbedf5f5e586ab6b2895ec907498721e51d4c9f34f9b12"
+      },
+      {
+        "item_id": "env_00252-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-groundnut-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_201",
+        "emitted_at": "2026-09-02T19:04:00Z",
+        "evidence_class": 0,
+        "prev_hash": "44c5bfe1b4998fe347fbedf5f5e586ab6b2895ec907498721e51d4c9f34f9b12",
+        "content_hash": "a61a29bf85ef8d9579255711dc58be3bc52f3337819544cdf5d9d32c95bf03b1"
+      },
+      {
+        "item_id": "env_00252-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-02T21:49:00Z"
+        },
+        "emitted_by": "usr_1752",
+        "emitted_at": "2026-09-02T21:49:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a61a29bf85ef8d9579255711dc58be3bc52f3337819544cdf5d9d32c95bf03b1",
+        "content_hash": "d5f6737e6778f674a0bc103cfeccc3022c2e130a4a23ea2ed36ef9bc20f81dbd"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-edible_oil-groundnut-1000",
+    "ordered_sku": "fortune-edible_oil-groundnut-1000",
+    "delivered_sku": "fortune-edible_oil-groundnut-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 18900,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

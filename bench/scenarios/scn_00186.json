@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00186",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00186",
+    "created_at": "2026-09-02T22:13:00Z",
+    "expires_at": "2026-09-03T04:13:00Z",
+    "user_id": "usr_8546",
+    "agent_id": "agt_454",
+    "block": {
+      "block_id": "blk_00186",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-29T22:13:00Z",
+      "expires_at": "2026-10-10T22:13:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 5979,
+      "max_total_paise": 5979,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "britannia",
+      "variant": null,
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "order 400g Britannia brown bread on Swiggy Instamart",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "e3acf42ab7239c5cb76cedc630fe733820fd44e1bdadc661378170643b797ce8",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00186",
+    "obligation_hash": "e3acf42ab7239c5cb76cedc630fe733820fd44e1bdadc661378170643b797ce8",
+    "items": [
+      {
+        "item_id": "env_00186-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "agt_454",
+        "emitted_at": "2026-09-02T22:13:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "5fd6c8da5b5561d32034ff1db5853a1b05791ab6876b6617cd39c6c49c230631"
+      },
+      {
+        "item_id": "env_00186-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00186",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:13:20Z",
+        "evidence_class": 2,
+        "prev_hash": "5fd6c8da5b5561d32034ff1db5853a1b05791ab6876b6617cd39c6c49c230631",
+        "content_hash": "045b081d0bc13d7eea7d57782a4b1c2205140d7dd8710a892c7eb5b9e35f4e3c"
+      },
+      {
+        "item_id": "env_00186-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00186",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:27:00Z",
+        "evidence_class": 2,
+        "prev_hash": "045b081d0bc13d7eea7d57782a4b1c2205140d7dd8710a892c7eb5b9e35f4e3c",
+        "content_hash": "f2f4f13449ecd4f0ec1ede79fd348d383035b1c1b1b1539c8ecadcbe5f0ac7ea"
+      },
+      {
+        "item_id": "env_00186-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00186",
+          "amount_paise": 5200,
+          "currency": "INR",
+          "receipt": "zep_00186"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:13:25Z",
+        "evidence_class": 3,
+        "prev_hash": "f2f4f13449ecd4f0ec1ede79fd348d383035b1c1b1b1539c8ecadcbe5f0ac7ea",
+        "content_hash": "c4ebef61440986dce8478253ed77a747c155a1157dcf136eb9b83c8b8cc17ed7"
+      },
+      {
+        "item_id": "env_00186-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00186",
+          "order_id": "order_00186",
+          "amount_paise": 5200,
+          "status": "captured",
+          "block_id": "blk_00186",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:13:30Z",
+        "evidence_class": 3,
+        "prev_hash": "c4ebef61440986dce8478253ed77a747c155a1157dcf136eb9b83c8b8cc17ed7",
+        "content_hash": "6866c8d20500005b5764ab54b366dc4d21a8b06bfbdb233b70adfbfe54469cfc"
+      },
+      {
+        "item_id": "env_00186-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Britannia brown bread. Payment complete.",
+          "claimed_sku": "britannia-bread-brown-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_454",
+        "emitted_at": "2026-09-02T22:28:00Z",
+        "evidence_class": 0,
+        "prev_hash": "6866c8d20500005b5764ab54b366dc4d21a8b06bfbdb233b70adfbfe54469cfc",
+        "content_hash": "75c8244bf08d4fc1d85dc5465b3276635256985c873d4114535e60c099ebe89c"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "britannia-bread-brown-400",
+    "ordered_sku": "britannia-bread-brown-400",
+    "delivered_sku": "britannia-bread-brown-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

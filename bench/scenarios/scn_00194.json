@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00194",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00194",
+    "created_at": "2026-09-02T21:15:00Z",
+    "expires_at": "2026-09-03T03:15:00Z",
+    "user_id": "usr_1844",
+    "agent_id": "agt_374",
+    "block": {
+      "block_id": "blk_00194",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-21T21:15:00Z",
+      "expires_at": "2026-10-23T21:15:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 7000,
+      "max_total_paise": 7000,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "tata",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1kg Tata low sodium salt from Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "1894da0d75a2b77c316f6844182a6f61ae0017fd5d495700d27fd3aa409f2aa1",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00194",
+    "obligation_hash": "1894da0d75a2b77c316f6844182a6f61ae0017fd5d495700d27fd3aa409f2aa1",
+    "items": [
+      {
+        "item_id": "env_00194-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "agt_374",
+        "emitted_at": "2026-09-02T21:15:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "e942018596210821087365fecc345c061165f02807f12237f0dc9767adb5c2df"
+      },
+      {
+        "item_id": "env_00194-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00194",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:15:20Z",
+        "evidence_class": 2,
+        "prev_hash": "e942018596210821087365fecc345c061165f02807f12237f0dc9767adb5c2df",
+        "content_hash": "beae64c471f701429637d5be5e89f31a375a0972a30820721f2c2fcc509d11f7"
+      },
+      {
+        "item_id": "env_00194-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00194",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:29:00Z",
+        "evidence_class": 2,
+        "prev_hash": "beae64c471f701429637d5be5e89f31a375a0972a30820721f2c2fcc509d11f7",
+        "content_hash": "465fd3e81a9e594f570e3fedb14852051b030ca7323133e790b025fe452f658a"
+      },
+      {
+        "item_id": "env_00194-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00194",
+          "amount_paise": 2800,
+          "currency": "INR",
+          "receipt": "zep_00194"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:15:25Z",
+        "evidence_class": 3,
+        "prev_hash": "465fd3e81a9e594f570e3fedb14852051b030ca7323133e790b025fe452f658a",
+        "content_hash": "031bcbe1b7ac976bd702411011961a4d882de10c9a6e6030aaa54049b46aa9ca"
+      },
+      {
+        "item_id": "env_00194-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00194",
+          "order_id": "order_00194",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00194",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:15:30Z",
+        "evidence_class": 3,
+        "prev_hash": "031bcbe1b7ac976bd702411011961a4d882de10c9a6e6030aaa54049b46aa9ca",
+        "content_hash": "93cc400d5ebdd9368b9552a3d995280c6339d1aa128d0b76c6a2ba122342747d"
+      },
+      {
+        "item_id": "env_00194-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_374",
+        "emitted_at": "2026-09-02T21:30:00Z",
+        "evidence_class": 0,
+        "prev_hash": "93cc400d5ebdd9368b9552a3d995280c6339d1aa128d0b76c6a2ba122342747d",
+        "content_hash": "d90d954bf7a42ac132cacfb6a38086993d3aad5892107283d774c454b48e8a69"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "INTENT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "tata-salt-low_sodium-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
+    "is_hard_pair": true,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 2800,
+    "rationale": "User asked for low sodium salt; agent ordered iodised salt. Same brand, same pack, Rs 17.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+  }
+}

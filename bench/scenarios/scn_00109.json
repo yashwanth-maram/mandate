@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00109",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00109",
+    "created_at": "2026-09-03T00:41:00Z",
+    "expires_at": "2026-09-03T06:41:00Z",
+    "user_id": "usr_3112",
+    "agent_id": "agt_709",
+    "block": {
+      "block_id": "blk_00109",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T00:41:00Z",
+      "expires_at": "2026-10-12T00:41:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 15179,
+      "max_total_paise": 15179,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "india_gate",
+      "variant": "basmati",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1kg India Gate basmati rice from Swiggy Instamart, keep it under 151 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "15094dae2b5ad7f155c6f428278202a03058d975e3a6918efafa5acd4e8c5092",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00109",
+    "obligation_hash": "15094dae2b5ad7f155c6f428278202a03058d975e3a6918efafa5acd4e8c5092",
+    "items": [
+      {
+        "item_id": "env_00109-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 13200
+            }
+          ]
+        },
+        "emitted_by": "agt_709",
+        "emitted_at": "2026-09-03T00:41:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "1956084eebcc70ccffe571284e2e747faca67115503988369442f066d83d5b21"
+      },
+      {
+        "item_id": "env_00109-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00109",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 13200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:41:20Z",
+        "evidence_class": 2,
+        "prev_hash": "1956084eebcc70ccffe571284e2e747faca67115503988369442f066d83d5b21",
+        "content_hash": "83208175b9ce9e6c95b532ca5e9eafa8d75b84697b657a7a45fed7fc368d8316"
+      },
+      {
+        "item_id": "env_00109-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00109",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 13200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:55:00Z",
+        "evidence_class": 2,
+        "prev_hash": "83208175b9ce9e6c95b532ca5e9eafa8d75b84697b657a7a45fed7fc368d8316",
+        "content_hash": "7633e31a85f956ffc672e92a4582c71dc95b84c669abec83c92d6408748687f6"
+      },
+      {
+        "item_id": "env_00109-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00109",
+          "amount_paise": 13200,
+          "currency": "INR",
+          "receipt": "zep_00109"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:41:25Z",
+        "evidence_class": 3,
+        "prev_hash": "7633e31a85f956ffc672e92a4582c71dc95b84c669abec83c92d6408748687f6",
+        "content_hash": "7ad7cf81662c1233ca2a66caf6d54e9fe5bf50adec0a3c0a015051982992d6f3"
+      },
+      {
+        "item_id": "env_00109-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00109",
+          "order_id": "order_00109",
+          "amount_paise": 13200,
+          "status": "captured",
+          "block_id": "blk_00109",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T07:11:00Z",
+        "evidence_class": 3,
+        "prev_hash": "7ad7cf81662c1233ca2a66caf6d54e9fe5bf50adec0a3c0a015051982992d6f3",
+        "content_hash": "f203c5de1e01da16db51d924c29017a9adf209399f133bd997019b8f576be2b1"
+      },
+      {
+        "item_id": "env_00109-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg India Gate basmati rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-basmati-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_709",
+        "emitted_at": "2026-09-03T00:56:00Z",
+        "evidence_class": 0,
+        "prev_hash": "f203c5de1e01da16db51d924c29017a9adf209399f133bd997019b8f576be2b1",
+        "content_hash": "4772ca33897f1b735a57d44cc5021ea2d8f9e9df5294150604eadba32f2c2c18"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MANDATE_BREACH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "india_gate-rice-basmati-1000",
+    "ordered_sku": "india_gate-rice-basmati-1000",
+    "delivered_sku": "india_gate-rice-basmati-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 13200,
+    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+  }
+}

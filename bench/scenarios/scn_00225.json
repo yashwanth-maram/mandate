@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00225",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00225",
+    "created_at": "2026-09-03T01:39:00Z",
+    "expires_at": "2026-09-03T07:39:00Z",
+    "user_id": "usr_8851",
+    "agent_id": "agt_696",
+    "block": {
+      "block_id": "blk_00225",
+      "blocked_paise": 220800,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-22T01:39:00Z",
+      "expires_at": "2026-10-20T01:39:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 73600,
+      "max_total_paise": 73600,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "india_gate",
+      "variant": "basmati",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "buy 5kg India Gate basmati rice from Zepto, keep it under 736 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "ea7b4bd1ab462f8a3f172b83e623d8c306ba1e09f77cc86df8f6b4812772ec8d",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00225",
+    "obligation_hash": "ea7b4bd1ab462f8a3f172b83e623d8c306ba1e09f77cc86df8f6b4812772ec8d",
+    "items": [
+      {
+        "item_id": "env_00225-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-5000",
+              "quantity": 1,
+              "unit_price_paise": 64000
+            }
+          ]
+        },
+        "emitted_by": "agt_696",
+        "emitted_at": "2026-09-03T01:39:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "31924f84df135d7ea38e8c26998f17c6ae414431c0253d65b6cd46cfac885413"
+      },
+      {
+        "item_id": "env_00225-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00225",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-5000",
+              "quantity": 1,
+              "unit_price_paise": 64000
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:39:20Z",
+        "evidence_class": 2,
+        "prev_hash": "31924f84df135d7ea38e8c26998f17c6ae414431c0253d65b6cd46cfac885413",
+        "content_hash": "d931eb03659a9e6b001bd2433fad9314840a0693ce328a90ef052459c2753e51"
+      },
+      {
+        "item_id": "env_00225-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00225",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-5000",
+              "quantity": 1,
+              "unit_price_paise": 64000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:53:00Z",
+        "evidence_class": 2,
+        "prev_hash": "d931eb03659a9e6b001bd2433fad9314840a0693ce328a90ef052459c2753e51",
+        "content_hash": "780f2928116812c1c0fb0a56b223898d154b5292917a7d008b9b9e48c10c4e6d"
+      },
+      {
+        "item_id": "env_00225-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00225",
+          "amount_paise": 64000,
+          "currency": "INR",
+          "receipt": "zep_00225"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:39:25Z",
+        "evidence_class": 3,
+        "prev_hash": "780f2928116812c1c0fb0a56b223898d154b5292917a7d008b9b9e48c10c4e6d",
+        "content_hash": "f4e580d9c67ab6783d072eec3123485fdcdf6324ef22a3ed04e552937e484045"
+      },
+      {
+        "item_id": "env_00225-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00225",
+          "order_id": "order_00225",
+          "amount_paise": 64000,
+          "status": "captured",
+          "block_id": "blk_00225",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:39:30Z",
+        "evidence_class": 3,
+        "prev_hash": "f4e580d9c67ab6783d072eec3123485fdcdf6324ef22a3ed04e552937e484045",
+        "content_hash": "e2bec0445323b6c6ac07d162c067130af7a87b108637cc666b5829d8ed534716"
+      },
+      {
+        "item_id": "env_00225-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg India Gate basmati rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-basmati-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_696",
+        "emitted_at": "2026-09-03T01:54:00Z",
+        "evidence_class": 0,
+        "prev_hash": "e2bec0445323b6c6ac07d162c067130af7a87b108637cc666b5829d8ed534716",
+        "content_hash": "a3b859e3d6a522e880ad5e27d14ab9b08ecc9a66f7803f701821478019d932fb"
+      },
+      {
+        "item_id": "env_00225-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-03T04:39:00Z"
+        },
+        "emitted_by": "usr_8851",
+        "emitted_at": "2026-09-03T04:39:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a3b859e3d6a522e880ad5e27d14ab9b08ecc9a66f7803f701821478019d932fb",
+        "content_hash": "f0a97545c1d88bffa7733283cf7c968a88c4ba739e6705bc89000f5c9f940e3d"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "india_gate-rice-basmati-5000",
+    "ordered_sku": "india_gate-rice-basmati-5000",
+    "delivered_sku": "india_gate-rice-basmati-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 64000,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00095",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00095",
+    "created_at": "2026-09-03T01:20:00Z",
+    "expires_at": "2026-09-03T07:20:00Z",
+    "user_id": "usr_3878",
+    "agent_id": "agt_232",
+    "block": {
+      "block_id": "blk_00095",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-22T01:20:00Z",
+      "expires_at": "2026-10-20T01:20:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 6669,
+      "max_total_paise": 6669,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "fortune",
+      "variant": "refined",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1kg Fortune maida on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "e5e8f105f45ea0005e2c2e283a9a10ac860eae24ace18431f87666fb38291bbc",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00095",
+    "obligation_hash": "e5e8f105f45ea0005e2c2e283a9a10ac860eae24ace18431f87666fb38291bbc",
+    "items": [
+      {
+        "item_id": "env_00095-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ]
+        },
+        "emitted_by": "agt_232",
+        "emitted_at": "2026-09-03T01:20:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "f3f272994c9397615d932d28e85986743b01dd4a3aca832ddf567e31eedce30f"
+      },
+      {
+        "item_id": "env_00095-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00095",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:20:20Z",
+        "evidence_class": 2,
+        "prev_hash": "f3f272994c9397615d932d28e85986743b01dd4a3aca832ddf567e31eedce30f",
+        "content_hash": "301c1fd610c3e8fb93902f7cb36cc414846dceb50168b352df737d3bca29fc52"
+      },
+      {
+        "item_id": "env_00095-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00095",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:34:00Z",
+        "evidence_class": 2,
+        "prev_hash": "301c1fd610c3e8fb93902f7cb36cc414846dceb50168b352df737d3bca29fc52",
+        "content_hash": "07589fb84db219351a4b21cab50407e9da4bd27d99f8d5513f9c8385b393069c"
+      },
+      {
+        "item_id": "env_00095-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00095",
+          "amount_paise": 5800,
+          "currency": "INR",
+          "receipt": "zep_00095"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:20:25Z",
+        "evidence_class": 3,
+        "prev_hash": "07589fb84db219351a4b21cab50407e9da4bd27d99f8d5513f9c8385b393069c",
+        "content_hash": "71be7dd151d2beeb2c4589b7a5cf012c177696e5007021e2723f3482c023f1d9"
+      },
+      {
+        "item_id": "env_00095-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00095",
+          "order_id": "order_00095",
+          "amount_paise": 5800,
+          "status": "captured",
+          "block_id": "blk_00095",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:20:30Z",
+        "evidence_class": 3,
+        "prev_hash": "71be7dd151d2beeb2c4589b7a5cf012c177696e5007021e2723f3482c023f1d9",
+        "content_hash": "592e1b4d94c7c34ce66f0c732789447b3487349f3a718b6fe39953e31505c50e"
+      },
+      {
+        "item_id": "env_00095-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Fortune maida. Payment complete.",
+          "claimed_sku": "fortune-flour-refined-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_232",
+        "emitted_at": "2026-09-03T01:35:00Z",
+        "evidence_class": 0,
+        "prev_hash": "592e1b4d94c7c34ce66f0c732789447b3487349f3a718b6fe39953e31505c50e",
+        "content_hash": "b489af46a1edc283b27fc37e116ce0b2804d87b36d4eabe6fec14f0da0bdff4d"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-flour-refined-1000",
+    "ordered_sku": "fortune-flour-refined-1000",
+    "delivered_sku": "fortune-flour-refined-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

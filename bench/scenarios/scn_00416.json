@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00416",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00416",
+    "created_at": "2026-09-02T19:27:00Z",
+    "expires_at": "2026-09-03T01:27:00Z",
+    "user_id": "usr_4548",
+    "agent_id": "agt_559",
+    "block": {
+      "block_id": "blk_00416",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-14T19:27:00Z",
+      "expires_at": "2026-10-17T19:27:00Z"
+    },
+    "hard": {
+      "category": "noodles",
+      "max_unit_price_paise": 12419,
+      "max_total_paise": 12419,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "maggi",
+      "variant": "atta",
+      "pack_size_g": 560
+    },
+    "intent": {
+      "text": "buy 560g Maggi atta noodles from Swiggy Instamart, keep it under 124 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "e6da85d85e965f55c88a51cfab03ef64973ca348d047c436a33d3cfb5acefac3",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00416",
+    "obligation_hash": "e6da85d85e965f55c88a51cfab03ef64973ca348d047c436a33d3cfb5acefac3",
+    "items": [
+      {
+        "item_id": "env_00416-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ]
+        },
+        "emitted_by": "agt_559",
+        "emitted_at": "2026-09-02T19:27:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "83b4e7aa9c220998b11afb50cd36d6a5421afb89829417a7ab3eca3f2ed82e42"
+      },
+      {
+        "item_id": "env_00416-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00416",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:27:20Z",
+        "evidence_class": 2,
+        "prev_hash": "83b4e7aa9c220998b11afb50cd36d6a5421afb89829417a7ab3eca3f2ed82e42",
+        "content_hash": "8a706755c9201314f6b2edef3423f42aa5a0a3f0f23a4773442bc027779cc10b"
+      },
+      {
+        "item_id": "env_00416-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00416",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:41:00Z",
+        "evidence_class": 2,
+        "prev_hash": "8a706755c9201314f6b2edef3423f42aa5a0a3f0f23a4773442bc027779cc10b",
+        "content_hash": "7769959a2461b8b2c642bb6cc7bc23a25eda50bb59d876365e76ca411f83e991"
+      },
+      {
+        "item_id": "env_00416-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00416",
+          "amount_paise": 10800,
+          "currency": "INR",
+          "receipt": "zep_00416"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:27:25Z",
+        "evidence_class": 3,
+        "prev_hash": "7769959a2461b8b2c642bb6cc7bc23a25eda50bb59d876365e76ca411f83e991",
+        "content_hash": "4f7fc3f07cf093707fe34bb35a0d63a298b29053280751425cb420d420829005"
+      },
+      {
+        "item_id": "env_00416-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00416",
+          "order_id": "order_00416",
+          "amount_paise": 10800,
+          "status": "captured",
+          "block_id": "blk_00416",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:27:30Z",
+        "evidence_class": 3,
+        "prev_hash": "4f7fc3f07cf093707fe34bb35a0d63a298b29053280751425cb420d420829005",
+        "content_hash": "076ad96c97638c86c0c1456fc059c71a19cdbf9f10a0f747097cbc6e18b3cdb3"
+      },
+      {
+        "item_id": "env_00416-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 560g Maggi atta noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-atta-560",
+          "claims_success": true
+        },
+        "emitted_by": "agt_559",
+        "emitted_at": "2026-09-02T19:42:00Z",
+        "evidence_class": 0,
+        "prev_hash": "076ad96c97638c86c0c1456fc059c71a19cdbf9f10a0f747097cbc6e18b3cdb3",
+        "content_hash": "d3f95e2c0eaa806dee5a488438a8bbccd0862b1d222094c2ebd3a3cd66fb98e3"
+      },
+      {
+        "item_id": "env_00416-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-02T22:27:00Z"
+        },
+        "emitted_by": "usr_4548",
+        "emitted_at": "2026-09-02T22:27:00Z",
+        "evidence_class": 0,
+        "prev_hash": "d3f95e2c0eaa806dee5a488438a8bbccd0862b1d222094c2ebd3a3cd66fb98e3",
+        "content_hash": "caed6966e90299a158d0ff480e177c3fd55f91054cf4636b19526c3951e6b3ef"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "maggi-noodles-atta-560",
+    "ordered_sku": "maggi-noodles-atta-560",
+    "delivered_sku": "maggi-noodles-atta-560",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 10800,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

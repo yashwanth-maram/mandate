@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00389",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00389",
+    "created_at": "2026-09-03T03:10:00Z",
+    "expires_at": "2026-09-03T09:10:00Z",
+    "user_id": "usr_9736",
+    "agent_id": "agt_107",
+    "block": {
+      "block_id": "blk_00389",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-14T03:10:00Z",
+      "expires_at": "2026-10-05T03:10:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "aashirvaad",
+      "variant": "refined",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1kg Aashirvaad maida on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "3d5e74be5b49e316150545583ed0651c0db7d091f0807d81015d8685d0cd0572",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00389",
+    "obligation_hash": "3d5e74be5b49e316150545583ed0651c0db7d091f0807d81015d8685d0cd0572",
+    "items": [
+      {
+        "item_id": "env_00389-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_107",
+        "emitted_at": "2026-09-03T03:10:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "c47374380ab9cd4d957ed53bc1316831fd5476a5812416e2fa47ba6e8d91ad09"
+      },
+      {
+        "item_id": "env_00389-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00389",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:10:20Z",
+        "evidence_class": 2,
+        "prev_hash": "c47374380ab9cd4d957ed53bc1316831fd5476a5812416e2fa47ba6e8d91ad09",
+        "content_hash": "b135cfea83fb16292960d62ecfb6dfd3466481eab9cd64e61241f518cb9bfe95"
+      },
+      {
+        "item_id": "env_00389-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00389",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:24:00Z",
+        "evidence_class": 2,
+        "prev_hash": "b135cfea83fb16292960d62ecfb6dfd3466481eab9cd64e61241f518cb9bfe95",
+        "content_hash": "9d718e58b9b76ee8a788fc27184003a3d1bdb61712c63c9cfa3c9c4cfa39deb9"
+      },
+      {
+        "item_id": "env_00389-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00389",
+          "amount_paise": 6200,
+          "currency": "INR",
+          "receipt": "zep_00389"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:10:25Z",
+        "evidence_class": 3,
+        "prev_hash": "9d718e58b9b76ee8a788fc27184003a3d1bdb61712c63c9cfa3c9c4cfa39deb9",
+        "content_hash": "03f00c189692177fd83d129fa86d4f838c9cfb51f84ef2d450df1fda37a29f09"
+      },
+      {
+        "item_id": "env_00389-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00389",
+          "order_id": "order_00389",
+          "amount_paise": 6200,
+          "status": "captured",
+          "block_id": "blk_00389",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:10:30Z",
+        "evidence_class": 3,
+        "prev_hash": "03f00c189692177fd83d129fa86d4f838c9cfb51f84ef2d450df1fda37a29f09",
+        "content_hash": "3dd1537e1c36622acbf5874b5a774fa682a0cd20ca52c8058d80831664dc1b5b"
+      },
+      {
+        "item_id": "env_00389-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-refined-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_107",
+        "emitted_at": "2026-09-03T03:25:00Z",
+        "evidence_class": 0,
+        "prev_hash": "3dd1537e1c36622acbf5874b5a774fa682a0cd20ca52c8058d80831664dc1b5b",
+        "content_hash": "d9f2a260684bbb997ee4431ff3a409a9241151d8b5f5b0f391e0239820474fc1"
+      },
+      {
+        "item_id": "env_00389-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-03T06:10:00Z"
+        },
+        "emitted_by": "usr_9736",
+        "emitted_at": "2026-09-03T06:10:00Z",
+        "evidence_class": 0,
+        "prev_hash": "d9f2a260684bbb997ee4431ff3a409a9241151d8b5f5b0f391e0239820474fc1",
+        "content_hash": "13a7b51c449163a650909c3c0f122cac781e4ad8588b8499befdf854b75d9f31"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-refined-1000",
+    "ordered_sku": "aashirvaad-flour-refined-1000",
+    "delivered_sku": "aashirvaad-flour-refined-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 6200,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

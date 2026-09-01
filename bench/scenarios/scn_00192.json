@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00192",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00192",
+    "created_at": "2026-09-02T20:32:00Z",
+    "expires_at": "2026-09-03T02:32:00Z",
+    "user_id": "usr_5913",
+    "agent_id": "agt_485",
+    "block": {
+      "block_id": "blk_00192",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T20:32:00Z",
+      "expires_at": "2026-10-26T20:32:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "harvest",
+      "variant": "white",
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "buy 400g Harvest white bread from Swiggy Instamart, keep it under 48 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "29097eccbf6b4f470e1abedf3822ecbad4368602de0864f8871b0afba2274e9f",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00192",
+    "obligation_hash": "29097eccbf6b4f470e1abedf3822ecbad4368602de0864f8871b0afba2274e9f",
+    "items": [
+      {
+        "item_id": "env_00192-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "agt_485",
+        "emitted_at": "2026-09-02T20:32:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "3762e32f99b2beef8aa083ef02a47da14f931eb2730dc736a175a7541e9c2ac7"
+      },
+      {
+        "item_id": "env_00192-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00192",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T20:32:20Z",
+        "evidence_class": 2,
+        "prev_hash": "3762e32f99b2beef8aa083ef02a47da14f931eb2730dc736a175a7541e9c2ac7",
+        "content_hash": "45cb7f9a9d84ec873122c1f3b036ca7542eac278b034586211a46ae4a543541d"
+      },
+      {
+        "item_id": "env_00192-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00192",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T20:46:00Z",
+        "evidence_class": 2,
+        "prev_hash": "45cb7f9a9d84ec873122c1f3b036ca7542eac278b034586211a46ae4a543541d",
+        "content_hash": "12798ca35123bc4fd3234526d82c8400f202b97482fa9d33f76695d3ee041f79"
+      },
+      {
+        "item_id": "env_00192-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00192",
+          "amount_paise": 4200,
+          "currency": "INR",
+          "receipt": "zep_00192"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:32:25Z",
+        "evidence_class": 3,
+        "prev_hash": "12798ca35123bc4fd3234526d82c8400f202b97482fa9d33f76695d3ee041f79",
+        "content_hash": "9b2a5bdbae8cbd2b89a8cd14095a663a00fcce1e1fca578b50fa7ec3f1bd84e7"
+      },
+      {
+        "item_id": "env_00192-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00192",
+          "order_id": "order_00192",
+          "amount_paise": 4200,
+          "status": "captured",
+          "block_id": "blk_00192",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:02:00Z",
+        "evidence_class": 3,
+        "prev_hash": "9b2a5bdbae8cbd2b89a8cd14095a663a00fcce1e1fca578b50fa7ec3f1bd84e7",
+        "content_hash": "6b4f149273c7dff66ff67a7fd32403702105faff36f960bd498464085c5010f9"
+      },
+      {
+        "item_id": "env_00192-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_485",
+        "emitted_at": "2026-09-02T20:47:00Z",
+        "evidence_class": 0,
+        "prev_hash": "6b4f149273c7dff66ff67a7fd32403702105faff36f960bd498464085c5010f9",
+        "content_hash": "f7a03a6dc6f5cbbf4fd64a9d4111dbf6f13174765e76a9cacb49a03dc4967cd7"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MANDATE_BREACH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 4200,
+    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+  }
+}

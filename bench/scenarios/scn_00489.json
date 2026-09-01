@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00489",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00489",
+    "created_at": "2026-09-03T02:58:00Z",
+    "expires_at": "2026-09-03T08:58:00Z",
+    "user_id": "usr_5075",
+    "agent_id": "agt_683",
+    "block": {
+      "block_id": "blk_00489",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-14T02:58:00Z",
+      "expires_at": "2026-11-02T02:58:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "mother_dairy",
+      "variant": "full_cream",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Mother Dairy full cream milk on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "daf3842b40e6e8ff5ede0c7ac744acb3231d8ff1d637b93180f6a2490dd1b5c6",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00489",
+    "obligation_hash": "daf3842b40e6e8ff5ede0c7ac744acb3231d8ff1d637b93180f6a2490dd1b5c6",
+    "items": [
+      {
+        "item_id": "env_00489-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "agt_683",
+        "emitted_at": "2026-09-03T02:58:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "56a0c31f2f0f73b8b7a8b198c3a813b2a6bf5824f63e1af9f019092cafd75e57"
+      },
+      {
+        "item_id": "env_00489-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00489",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:58:20Z",
+        "evidence_class": 2,
+        "prev_hash": "56a0c31f2f0f73b8b7a8b198c3a813b2a6bf5824f63e1af9f019092cafd75e57",
+        "content_hash": "29645eed4978887f0afdba01d00c2746e6ad4b01114168977229d67b488802de"
+      },
+      {
+        "item_id": "env_00489-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00489",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:12:00Z",
+        "evidence_class": 2,
+        "prev_hash": "29645eed4978887f0afdba01d00c2746e6ad4b01114168977229d67b488802de",
+        "content_hash": "084ddf12ab867377289654392958975c8f79a0e4a091eb330cc312bc7dea8fc7"
+      },
+      {
+        "item_id": "env_00489-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00489",
+          "amount_paise": 7500,
+          "currency": "INR",
+          "receipt": "zep_00489"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:58:25Z",
+        "evidence_class": 3,
+        "prev_hash": "084ddf12ab867377289654392958975c8f79a0e4a091eb330cc312bc7dea8fc7",
+        "content_hash": "62706901b52d736f9bd5072113781ff40da4cf5d85cdbeed643cb2c9b58dfa81"
+      },
+      {
+        "item_id": "env_00489-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00489",
+          "order_id": "order_00489",
+          "amount_paise": 7500,
+          "status": "captured",
+          "block_id": "blk_00489",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:58:30Z",
+        "evidence_class": 3,
+        "prev_hash": "62706901b52d736f9bd5072113781ff40da4cf5d85cdbeed643cb2c9b58dfa81",
+        "content_hash": "bc8842dc352cd95ddcb67eea6670c41b5a071a6a5bf2d20c8786051c76e949e5"
+      },
+      {
+        "item_id": "env_00489-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_683",
+        "emitted_at": "2026-09-03T03:13:00Z",
+        "evidence_class": 0,
+        "prev_hash": "bc8842dc352cd95ddcb67eea6670c41b5a071a6a5bf2d20c8786051c76e949e5",
+        "content_hash": "aff692ff1ab95b2c57e948ecf56da5d5270447e7e23f1d652a69170311f5af93"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "amul-milk-full_cream-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 7500,
+    "rationale": "Order names mother_dairy; fulfilment shipped amul. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

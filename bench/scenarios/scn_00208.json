@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00208",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00208",
+    "created_at": "2026-09-02T23:39:00Z",
+    "expires_at": "2026-09-03T05:39:00Z",
+    "user_id": "usr_2562",
+    "agent_id": "agt_640",
+    "block": {
+      "block_id": "blk_00208",
+      "blocked_paise": 128400,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T23:39:00Z",
+      "expires_at": "2026-10-09T23:39:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 42800,
+      "max_total_paise": 42800,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "fortune",
+      "variant": "multigrain",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "order 5kg Fortune multigrain atta on Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "65ae134f9bdfbd58ddeb3c39df66e866241ce0bd50e7cdd99619d24a96e945d5",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00208",
+    "obligation_hash": "65ae134f9bdfbd58ddeb3c39df66e866241ce0bd50e7cdd99619d24a96e945d5",
+    "items": [
+      {
+        "item_id": "env_00208-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ]
+        },
+        "emitted_by": "agt_640",
+        "emitted_at": "2026-09-02T23:39:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "2ad6b040a5e8d879980bca211e1deb4b236a89ce0ef09b4b9e5c5e9c477a5027"
+      },
+      {
+        "item_id": "env_00208-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00208",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:39:20Z",
+        "evidence_class": 2,
+        "prev_hash": "2ad6b040a5e8d879980bca211e1deb4b236a89ce0ef09b4b9e5c5e9c477a5027",
+        "content_hash": "cac7f1dfd51ee2863f9ea106a185c67b83ec859742143fcb212378f1bcea6017"
+      },
+      {
+        "item_id": "env_00208-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00208",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:53:00Z",
+        "evidence_class": 2,
+        "prev_hash": "cac7f1dfd51ee2863f9ea106a185c67b83ec859742143fcb212378f1bcea6017",
+        "content_hash": "4dc5976d4c7d36fe393de1e181b4e081b00737ae013ca9ea2fcecc0c80a87404"
+      },
+      {
+        "item_id": "env_00208-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00208",
+          "amount_paise": 39800,
+          "currency": "INR",
+          "receipt": "zep_00208"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:39:25Z",
+        "evidence_class": 3,
+        "prev_hash": "4dc5976d4c7d36fe393de1e181b4e081b00737ae013ca9ea2fcecc0c80a87404",
+        "content_hash": "91c1cedeef805ae5015c0b55c1ca29842d288264bb548ef1c871cfdc2fb4c382"
+      },
+      {
+        "item_id": "env_00208-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00208",
+          "order_id": "order_00208",
+          "amount_paise": 39800,
+          "status": "captured",
+          "block_id": "blk_00208",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:39:30Z",
+        "evidence_class": 3,
+        "prev_hash": "91c1cedeef805ae5015c0b55c1ca29842d288264bb548ef1c871cfdc2fb4c382",
+        "content_hash": "68e3cca904654790ecc23d3fc926b784052ef33082fb39e2650d5e994d97ce24"
+      },
+      {
+        "item_id": "env_00208-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-multigrain-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_640",
+        "emitted_at": "2026-09-02T23:54:00Z",
+        "evidence_class": 0,
+        "prev_hash": "68e3cca904654790ecc23d3fc926b784052ef33082fb39e2650d5e994d97ce24",
+        "content_hash": "cc78b454c93efdb27314bdeb4e2773641e802bee349750e84702a8dec3258c62"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "CART_DRIFT",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-flour-multigrain-5000",
+    "ordered_sku": "aashirvaad-flour-multigrain-5000",
+    "delivered_sku": "aashirvaad-flour-multigrain-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 39800,
+    "rationale": "Hard constraint violated, detectable without a model. Obligation captured brand 'fortune'; agent ordered 'aashirvaad'."
+  }
+}

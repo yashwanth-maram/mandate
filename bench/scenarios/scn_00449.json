@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00449",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00449",
+    "created_at": "2026-09-02T20:17:00Z",
+    "expires_at": "2026-09-03T02:17:00Z",
+    "user_id": "usr_9470",
+    "agent_id": "agt_646",
+    "block": {
+      "block_id": "blk_00449",
+      "blocked_paise": 128340,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-23T20:17:00Z",
+      "expires_at": "2026-10-27T20:17:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 42780,
+      "max_total_paise": 42780,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "daawat",
+      "variant": "sona_masoori",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "buy 5kg Daawat sona masoori rice from Swiggy Instamart, keep it under 427 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "73521122857c30d2c1402758530fb47c811a679433159acea54ce10bef2cab3b",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00449",
+    "obligation_hash": "73521122857c30d2c1402758530fb47c811a679433159acea54ce10bef2cab3b",
+    "items": [
+      {
+        "item_id": "env_00449-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
+        },
+        "emitted_by": "agt_646",
+        "emitted_at": "2026-09-02T20:17:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "234ecae7ec990e6ab8d7aa2110b5c0dbdb6e9e9b1e618f84eec56c9f6142ab62"
+      },
+      {
+        "item_id": "env_00449-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00449",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T20:17:20Z",
+        "evidence_class": 2,
+        "prev_hash": "234ecae7ec990e6ab8d7aa2110b5c0dbdb6e9e9b1e618f84eec56c9f6142ab62",
+        "content_hash": "6ba82b2d74c300db053dcc1a2f453319d864f035952888db5d4890bb99e70d50"
+      },
+      {
+        "item_id": "env_00449-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00449",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T20:31:00Z",
+        "evidence_class": 2,
+        "prev_hash": "6ba82b2d74c300db053dcc1a2f453319d864f035952888db5d4890bb99e70d50",
+        "content_hash": "e141b267503c84bdc6609e211afed9ed815cd16679aaa71c03260dadfcc9ac7a"
+      },
+      {
+        "item_id": "env_00449-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00449",
+          "amount_paise": 37200,
+          "currency": "INR",
+          "receipt": "zep_00449"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:17:25Z",
+        "evidence_class": 3,
+        "prev_hash": "e141b267503c84bdc6609e211afed9ed815cd16679aaa71c03260dadfcc9ac7a",
+        "content_hash": "cb1639ccb97ae13c86be3785ab82f2172030c58282f0ce78ed37063721530842"
+      },
+      {
+        "item_id": "env_00449-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00449",
+          "order_id": "order_00449",
+          "amount_paise": 37200,
+          "status": "captured",
+          "block_id": "blk_00449",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:17:30Z",
+        "evidence_class": 3,
+        "prev_hash": "cb1639ccb97ae13c86be3785ab82f2172030c58282f0ce78ed37063721530842",
+        "content_hash": "f80899f002d588d4ebc235f09c432c2dcd3b014ce83bbea81e69c9511c40d9e8"
+      },
+      {
+        "item_id": "env_00449-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
+          "claimed_sku": "daawat-rice-sona_masoori-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_646",
+        "emitted_at": "2026-09-02T20:32:00Z",
+        "evidence_class": 0,
+        "prev_hash": "f80899f002d588d4ebc235f09c432c2dcd3b014ce83bbea81e69c9511c40d9e8",
+        "content_hash": "5dfd102a1819cb41f5a26b3ac022734c6e08ef079107c6e2688fb8d40be77a4b"
+      },
+      {
+        "item_id": "env_00449-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "This isn't what I wanted, the agent got it wrong.",
+          "raised_at": "2026-09-02T23:17:00Z"
+        },
+        "emitted_by": "usr_9470",
+        "emitted_at": "2026-09-02T23:17:00Z",
+        "evidence_class": 0,
+        "prev_hash": "5dfd102a1819cb41f5a26b3ac022734c6e08ef079107c6e2688fb8d40be77a4b",
+        "content_hash": "65e59237715c7e1fa35d1d63f8a41b92bee58697fbcd4118ea73ef92bd1e0571"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "daawat-rice-sona_masoori-5000",
+    "ordered_sku": "daawat-rice-sona_masoori-5000",
+    "delivered_sku": "daawat-rice-sona_masoori-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 37200,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

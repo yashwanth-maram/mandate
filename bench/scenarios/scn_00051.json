@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00051",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00051",
+    "created_at": "2026-09-02T20:19:00Z",
+    "expires_at": "2026-09-03T02:19:00Z",
+    "user_id": "usr_2143",
+    "agent_id": "agt_382",
+    "block": {
+      "block_id": "blk_00051",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-20T20:19:00Z",
+      "expires_at": "2026-10-12T20:19:00Z"
+    },
+    "hard": {
+      "category": "butter",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "amul",
+      "variant": null,
+      "pack_size_g": 100
+    },
+    "intent": {
+      "text": "I need 100g Amul salted butter, use Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "f18d2270a90aa0c8f8d39ed4f10285dfa5305a0856185ef7ecaaeee35f67284d",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00051",
+    "obligation_hash": "f18d2270a90aa0c8f8d39ed4f10285dfa5305a0856185ef7ecaaeee35f67284d",
+    "items": [
+      {
+        "item_id": "env_00051-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_382",
+        "emitted_at": "2026-09-02T20:19:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "3d41f7493e3d48f7c583c98f2291f271d371e373f29c7eff2aa5b34ff7306350"
+      },
+      {
+        "item_id": "env_00051-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00051",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:19:20Z",
+        "evidence_class": 2,
+        "prev_hash": "3d41f7493e3d48f7c583c98f2291f271d371e373f29c7eff2aa5b34ff7306350",
+        "content_hash": "7e20166e4e150191aae9d37253a0b86c7b2bbc04ceb0687705e411fde356337c"
+      },
+      {
+        "item_id": "env_00051-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00051",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:33:00Z",
+        "evidence_class": 2,
+        "prev_hash": "7e20166e4e150191aae9d37253a0b86c7b2bbc04ceb0687705e411fde356337c",
+        "content_hash": "0ae44fa97c619f0a86b5c5622046749970c48ab2171d8a496161224ecf703ffb"
+      },
+      {
+        "item_id": "env_00051-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00051",
+          "amount_paise": 6200,
+          "currency": "INR",
+          "receipt": "zep_00051"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:19:25Z",
+        "evidence_class": 3,
+        "prev_hash": "0ae44fa97c619f0a86b5c5622046749970c48ab2171d8a496161224ecf703ffb",
+        "content_hash": "da265368a0d1b4aba5f41a022704557013e2330cc94e483d9a1df5ebe8cff823"
+      },
+      {
+        "item_id": "env_00051-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00051",
+          "order_id": "order_00051",
+          "amount_paise": 6200,
+          "status": "captured",
+          "block_id": "blk_00051",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:19:30Z",
+        "evidence_class": 3,
+        "prev_hash": "da265368a0d1b4aba5f41a022704557013e2330cc94e483d9a1df5ebe8cff823",
+        "content_hash": "1927935454d8c30cd490a4e4f2c32a369886df2b7fcfea0ce8114cc499b8c22f"
+      },
+      {
+        "item_id": "env_00051-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 100g Amul salted butter. Payment complete.",
+          "claimed_sku": "amul-butter-salted-100",
+          "claims_success": true
+        },
+        "emitted_by": "agt_382",
+        "emitted_at": "2026-09-02T20:34:00Z",
+        "evidence_class": 0,
+        "prev_hash": "1927935454d8c30cd490a4e4f2c32a369886df2b7fcfea0ce8114cc499b8c22f",
+        "content_hash": "d1d5a581cd245c7a4b46962f0e2dbaa1d22178e6db58281c07239fdda5d1e1b0"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-butter-salted-100",
+    "ordered_sku": "amul-butter-salted-100",
+    "delivered_sku": "amul-butter-salted-100",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

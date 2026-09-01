@@ -1,0 +1,191 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00233",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00233",
+    "created_at": "2026-09-02T18:04:00Z",
+    "expires_at": "2026-09-03T00:04:00Z",
+    "user_id": "usr_4519",
+    "agent_id": "agt_310",
+    "block": {
+      "block_id": "blk_00233",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-25T18:04:00Z",
+      "expires_at": "2026-10-26T18:04:00Z"
+    },
+    "hard": {
+      "category": "butter",
+      "max_unit_price_paise": 33580,
+      "max_total_paise": 33580,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "amul",
+      "variant": "unsalted",
+      "pack_size_g": 500
+    },
+    "intent": {
+      "text": "get me 500g Amul unsalted butter from Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "a2d0b45ce5c9c0810f79b0ba72a24710f77c3217c54cb48fd0052ddb478f8d53",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00233",
+    "obligation_hash": "a2d0b45ce5c9c0810f79b0ba72a24710f77c3217c54cb48fd0052ddb478f8d53",
+    "items": [
+      {
+        "item_id": "env_00233-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ]
+        },
+        "emitted_by": "agt_310",
+        "emitted_at": "2026-09-02T18:04:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "840102d1d4ab0ce3314e825c1b9b4a26fbcfa9f278d6c9160b135206ba2398d4"
+      },
+      {
+        "item_id": "env_00233-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00233",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:04:20Z",
+        "evidence_class": 2,
+        "prev_hash": "840102d1d4ab0ce3314e825c1b9b4a26fbcfa9f278d6c9160b135206ba2398d4",
+        "content_hash": "a8e93e84f143efc297cb40b444b9d1ef35578e0fbf432ca4d2cde2eed453a693"
+      },
+      {
+        "item_id": "env_00233-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00233",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:18:00Z",
+        "evidence_class": 2,
+        "prev_hash": "a8e93e84f143efc297cb40b444b9d1ef35578e0fbf432ca4d2cde2eed453a693",
+        "content_hash": "b6353ee6ba9778f28eecc28b30ff753a8b5ac9e29856d2becd76b81fd0e29a27"
+      },
+      {
+        "item_id": "env_00233-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00233",
+          "amount_paise": 29200,
+          "currency": "INR",
+          "receipt": "zep_00233"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:04:25Z",
+        "evidence_class": 3,
+        "prev_hash": "b6353ee6ba9778f28eecc28b30ff753a8b5ac9e29856d2becd76b81fd0e29a27",
+        "content_hash": "36c6cf8457e5cfe40fdfb8f95a6ffe7070a4a0599b1ce01b4d7f9117debb974a"
+      },
+      {
+        "item_id": "env_00233-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00233",
+          "order_id": "order_00233",
+          "amount_paise": 29200,
+          "status": "captured",
+          "block_id": "blk_00233",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:04:30Z",
+        "evidence_class": 3,
+        "prev_hash": "36c6cf8457e5cfe40fdfb8f95a6ffe7070a4a0599b1ce01b4d7f9117debb974a",
+        "content_hash": "c66c9d9969f467995265ed2e95b964ff476605fb9d203dac446e137ed3e11333"
+      },
+      {
+        "item_id": "env_00233-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00233b",
+          "order_id": "order_00233",
+          "amount_paise": 29200,
+          "status": "captured",
+          "block_id": "blk_00233",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:04:34Z",
+        "evidence_class": 3,
+        "prev_hash": "c66c9d9969f467995265ed2e95b964ff476605fb9d203dac446e137ed3e11333",
+        "content_hash": "fc1ffb42f2b66a4a9bc8feec78d5ca5d7927827090112096fc4ce7112cc210fa"
+      },
+      {
+        "item_id": "env_00233-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
+          "claimed_sku": "amul-butter-unsalted-500",
+          "claims_success": true
+        },
+        "emitted_by": "agt_310",
+        "emitted_at": "2026-09-02T18:19:00Z",
+        "evidence_class": 0,
+        "prev_hash": "fc1ffb42f2b66a4a9bc8feec78d5ca5d7927827090112096fc4ce7112cc210fa",
+        "content_hash": "7e872aa55395a388327f160ad13ab1afee8ecd62fa5f8751c958ec15bb62221c"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-butter-unsalted-500",
+    "ordered_sku": "amul-butter-unsalted-500",
+    "delivered_sku": "amul-butter-unsalted-500",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 29200,
+    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+  }
+}

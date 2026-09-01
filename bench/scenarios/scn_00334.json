@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00334",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00334",
+    "created_at": "2026-09-02T22:06:00Z",
+    "expires_at": "2026-09-03T04:06:00Z",
+    "user_id": "usr_1930",
+    "agent_id": "agt_924",
+    "block": {
+      "block_id": "blk_00334",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-14T22:06:00Z",
+      "expires_at": "2026-10-14T22:06:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 7359,
+      "max_total_paise": 7359,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "mother_dairy",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1L Mother Dairy toned milk, use Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "4ccbfba77025f6cea28f0717557726f103bd0169e06eb685ad615c9ccf7184b1",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00334",
+    "obligation_hash": "4ccbfba77025f6cea28f0717557726f103bd0169e06eb685ad615c9ccf7184b1",
+    "items": [
+      {
+        "item_id": "env_00334-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ]
+        },
+        "emitted_by": "agt_924",
+        "emitted_at": "2026-09-02T22:06:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "64650e723214dc6a810a1c9bf24b7a3701bd74f4390de8a863a6cad65bfeb940"
+      },
+      {
+        "item_id": "env_00334-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00334",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:06:20Z",
+        "evidence_class": 2,
+        "prev_hash": "64650e723214dc6a810a1c9bf24b7a3701bd74f4390de8a863a6cad65bfeb940",
+        "content_hash": "62a2156a99c5fb51fe923e969e79aa5274b16a5c979adefe27b0b78daec952d4"
+      },
+      {
+        "item_id": "env_00334-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00334",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:20:00Z",
+        "evidence_class": 2,
+        "prev_hash": "62a2156a99c5fb51fe923e969e79aa5274b16a5c979adefe27b0b78daec952d4",
+        "content_hash": "cd68d3c33dbeacbdcdbac9b3909602e95c017c1ba3b16b4c7d0e311339a7190f"
+      },
+      {
+        "item_id": "env_00334-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00334",
+          "amount_paise": 6400,
+          "currency": "INR",
+          "receipt": "zep_00334"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:06:25Z",
+        "evidence_class": 3,
+        "prev_hash": "cd68d3c33dbeacbdcdbac9b3909602e95c017c1ba3b16b4c7d0e311339a7190f",
+        "content_hash": "a2feebf160a19a49524c6aea0d5c912faf8205fae4d7c71b680c1b7f1f83c823"
+      },
+      {
+        "item_id": "env_00334-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00334",
+          "order_id": "order_00334",
+          "amount_paise": 6400,
+          "status": "captured",
+          "block_id": "blk_00334",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:06:30Z",
+        "evidence_class": 3,
+        "prev_hash": "a2feebf160a19a49524c6aea0d5c912faf8205fae4d7c71b680c1b7f1f83c823",
+        "content_hash": "5c80723dafbe9efb1bf54d89238ceb2f8d5da38e6bed957be940aaba852f7fbe"
+      },
+      {
+        "item_id": "env_00334-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Mother Dairy toned milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_924",
+        "emitted_at": "2026-09-02T22:21:00Z",
+        "evidence_class": 0,
+        "prev_hash": "5c80723dafbe9efb1bf54d89238ceb2f8d5da38e6bed957be940aaba852f7fbe",
+        "content_hash": "eeff46e0b95ef476046e93e5a4f249fd6bcdb161f2a52f4403377b7ac4b6a2f0"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "mother_dairy-milk-toned-1000",
+    "ordered_sku": "mother_dairy-milk-toned-1000",
+    "delivered_sku": "mother_dairy-milk-toned-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

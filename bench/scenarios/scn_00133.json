@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00133",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00133",
+    "created_at": "2026-09-03T01:20:00Z",
+    "expires_at": "2026-09-03T07:20:00Z",
+    "user_id": "usr_3956",
+    "agent_id": "agt_658",
+    "block": {
+      "block_id": "blk_00133",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-25T01:20:00Z",
+      "expires_at": "2026-10-13T01:20:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 13569,
+      "max_total_paise": 13569,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "india_gate",
+      "variant": "brown",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1kg India Gate brown rice from Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "2f80c3b13191b964a56177a19355915afe4f5b7829ad4aff654eb340bb9ffaa7",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00133",
+    "obligation_hash": "2f80c3b13191b964a56177a19355915afe4f5b7829ad4aff654eb340bb9ffaa7",
+    "items": [
+      {
+        "item_id": "env_00133-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
+        },
+        "emitted_by": "agt_658",
+        "emitted_at": "2026-09-03T01:20:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "0a84ce50857cfca31d288f07d607ee499ce233463dbf766cb7c0e8f61930e6cf"
+      },
+      {
+        "item_id": "env_00133-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00133",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:20:20Z",
+        "evidence_class": 2,
+        "prev_hash": "0a84ce50857cfca31d288f07d607ee499ce233463dbf766cb7c0e8f61930e6cf",
+        "content_hash": "ce1e01c8bf7dc38d1c1631d9d3360bf5a929e08b913c19d583a05eca0414b1f1"
+      },
+      {
+        "item_id": "env_00133-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00133",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:34:00Z",
+        "evidence_class": 2,
+        "prev_hash": "ce1e01c8bf7dc38d1c1631d9d3360bf5a929e08b913c19d583a05eca0414b1f1",
+        "content_hash": "8e1b249177ab39428bdd9e00ce8081b9865890175bfbd3671aee80ffd120de00"
+      },
+      {
+        "item_id": "env_00133-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00133",
+          "amount_paise": 11800,
+          "currency": "INR",
+          "receipt": "zep_00133"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:20:25Z",
+        "evidence_class": 3,
+        "prev_hash": "8e1b249177ab39428bdd9e00ce8081b9865890175bfbd3671aee80ffd120de00",
+        "content_hash": "56b62630bf89abebc4522b4287442dc10c94e6c6e231bbf9e08343611194c3c8"
+      },
+      {
+        "item_id": "env_00133-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00133",
+          "order_id": "order_00133",
+          "amount_paise": 11800,
+          "status": "captured",
+          "block_id": "blk_00133",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:20:30Z",
+        "evidence_class": 3,
+        "prev_hash": "56b62630bf89abebc4522b4287442dc10c94e6c6e231bbf9e08343611194c3c8",
+        "content_hash": "f451cb4f5913c876df4162dd530a6dcab1e2b09205480048da3dca99f28dfa8e"
+      },
+      {
+        "item_id": "env_00133-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-brown-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_658",
+        "emitted_at": "2026-09-03T01:35:00Z",
+        "evidence_class": 0,
+        "prev_hash": "f451cb4f5913c876df4162dd530a6dcab1e2b09205480048da3dca99f28dfa8e",
+        "content_hash": "5f1c41ef236ae35ba76714ba28e8015422e7551e409d5d16ca521940fc443793"
+      },
+      {
+        "item_id": "env_00133-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T04:20:00Z"
+        },
+        "emitted_by": "usr_3956",
+        "emitted_at": "2026-09-03T04:20:00Z",
+        "evidence_class": 0,
+        "prev_hash": "5f1c41ef236ae35ba76714ba28e8015422e7551e409d5d16ca521940fc443793",
+        "content_hash": "8b29c28c67e4e12020b7647872bd7dfa73340cdea2ebadd52d412efe2061f5be"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "india_gate-rice-brown-1000",
+    "ordered_sku": "india_gate-rice-brown-1000",
+    "delivered_sku": "india_gate-rice-brown-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 11800,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

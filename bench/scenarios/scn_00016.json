@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00016",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00016",
+    "created_at": "2026-09-03T00:39:00Z",
+    "expires_at": "2026-09-03T06:39:00Z",
+    "user_id": "usr_7865",
+    "agent_id": "agt_651",
+    "block": {
+      "block_id": "blk_00016",
+      "blocked_paise": 122475,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-17T00:39:00Z",
+      "expires_at": "2026-10-28T00:39:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 40825,
+      "max_total_paise": 40825,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "aashirvaad",
+      "variant": "whole_wheat",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "order 5kg Aashirvaad atta on Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "b3543b90a5d27748ca58fee557cd0d4d5cf5f57d3450a6b3543565bd8feda458",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00016",
+    "obligation_hash": "b3543b90a5d27748ca58fee557cd0d4d5cf5f57d3450a6b3543565bd8feda458",
+    "items": [
+      {
+        "item_id": "env_00016-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ]
+        },
+        "emitted_by": "agt_651",
+        "emitted_at": "2026-09-03T00:39:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "7b7dc55e61975ffeb85c0ab852c67a94ef018079a8d29b6bb5726f05f3db6f43"
+      },
+      {
+        "item_id": "env_00016-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00016",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:39:20Z",
+        "evidence_class": 2,
+        "prev_hash": "7b7dc55e61975ffeb85c0ab852c67a94ef018079a8d29b6bb5726f05f3db6f43",
+        "content_hash": "1c9617bf21b2c0ac3a05310f48deffc24fc0619efd093516489b4724f46e11e1"
+      },
+      {
+        "item_id": "env_00016-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00016",
+          "lines": [
+            {
+              "sku": "pillsbury-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34900
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:53:00Z",
+        "evidence_class": 2,
+        "prev_hash": "1c9617bf21b2c0ac3a05310f48deffc24fc0619efd093516489b4724f46e11e1",
+        "content_hash": "c2a218951ce33524e37a10074bc144b2c195c6efa6ffa5d2d30619fb5c63a9a9"
+      },
+      {
+        "item_id": "env_00016-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00016",
+          "amount_paise": 35500,
+          "currency": "INR",
+          "receipt": "zep_00016"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:39:25Z",
+        "evidence_class": 3,
+        "prev_hash": "c2a218951ce33524e37a10074bc144b2c195c6efa6ffa5d2d30619fb5c63a9a9",
+        "content_hash": "01f972b4ff41e70df125de8c5299c3d2fc332caa2e2232203d080252824b9cf4"
+      },
+      {
+        "item_id": "env_00016-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00016",
+          "order_id": "order_00016",
+          "amount_paise": 35500,
+          "status": "captured",
+          "block_id": "blk_00016",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:39:30Z",
+        "evidence_class": 3,
+        "prev_hash": "01f972b4ff41e70df125de8c5299c3d2fc332caa2e2232203d080252824b9cf4",
+        "content_hash": "46e2affab3f78ac54a113037a20c635bae5c6a333c101b8aa2cffe5c15069e29"
+      },
+      {
+        "item_id": "env_00016-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_651",
+        "emitted_at": "2026-09-03T00:54:00Z",
+        "evidence_class": 0,
+        "prev_hash": "46e2affab3f78ac54a113037a20c635bae5c6a333c101b8aa2cffe5c15069e29",
+        "content_hash": "5b6efe27ba241dff5aedf1e62bb345a0f952441ba51da8c1e1bf177818cea5ab"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-whole_wheat-5000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "delivered_sku": "pillsbury-flour-whole_wheat-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 35500,
+    "rationale": "Order names aashirvaad; fulfilment shipped pillsbury. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

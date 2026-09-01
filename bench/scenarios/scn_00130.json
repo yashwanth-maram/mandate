@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00130",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00130",
+    "created_at": "2026-09-02T21:15:00Z",
+    "expires_at": "2026-09-03T03:15:00Z",
+    "user_id": "usr_5687",
+    "agent_id": "agt_465",
+    "block": {
+      "block_id": "blk_00130",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T21:15:00Z",
+      "expires_at": "2026-10-29T21:15:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 10580,
+      "max_total_paise": 10580,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "fortune",
+      "variant": "gram",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg Fortune besan, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "10b470bb61dc469aa095146e5a7a7abd86e1bff16f6c44b6e14b11ce69c066c4",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00130",
+    "obligation_hash": "10b470bb61dc469aa095146e5a7a7abd86e1bff16f6c44b6e14b11ce69c066c4",
+    "items": [
+      {
+        "item_id": "env_00130-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
+        },
+        "emitted_by": "agt_465",
+        "emitted_at": "2026-09-02T21:15:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "36f888fcf3323b3d5355cd09fa391cfa15f97de80129fc301cff1fc2c56b5464"
+      },
+      {
+        "item_id": "env_00130-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00130",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:15:20Z",
+        "evidence_class": 2,
+        "prev_hash": "36f888fcf3323b3d5355cd09fa391cfa15f97de80129fc301cff1fc2c56b5464",
+        "content_hash": "8d5d425344c512cba93fd29860c54f4e0fa6ac4ccfcd152c2ed327e29217a1c7"
+      },
+      {
+        "item_id": "env_00130-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00130",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:29:00Z",
+        "evidence_class": 2,
+        "prev_hash": "8d5d425344c512cba93fd29860c54f4e0fa6ac4ccfcd152c2ed327e29217a1c7",
+        "content_hash": "f59dd682d14b80b70355857afdf77cfa16be987cc14a2be1b578d1106d65f5cb"
+      },
+      {
+        "item_id": "env_00130-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00130",
+          "amount_paise": 9200,
+          "currency": "INR",
+          "receipt": "zep_00130"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:15:25Z",
+        "evidence_class": 3,
+        "prev_hash": "f59dd682d14b80b70355857afdf77cfa16be987cc14a2be1b578d1106d65f5cb",
+        "content_hash": "59944276316b6c676cabc60b1b566d6c1eaca4a073750e82b9980a51f7294dc7"
+      },
+      {
+        "item_id": "env_00130-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00130",
+          "order_id": "order_00130",
+          "amount_paise": 9200,
+          "status": "captured",
+          "block_id": "blk_00130",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:15:30Z",
+        "evidence_class": 3,
+        "prev_hash": "59944276316b6c676cabc60b1b566d6c1eaca4a073750e82b9980a51f7294dc7",
+        "content_hash": "c9a2698f680ae84d01a0e678bc6eb0de9f0f6f2c5537200ffdd90a94b68cad9a"
+      },
+      {
+        "item_id": "env_00130-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Fortune besan. Payment complete.",
+          "claimed_sku": "fortune-flour-gram-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_465",
+        "emitted_at": "2026-09-02T21:30:00Z",
+        "evidence_class": 0,
+        "prev_hash": "c9a2698f680ae84d01a0e678bc6eb0de9f0f6f2c5537200ffdd90a94b68cad9a",
+        "content_hash": "90b10995ccb1d31ebd68e0c84d08659f8f673f4477eaec268b46ef091ae52326"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-flour-gram-1000",
+    "ordered_sku": "fortune-flour-gram-1000",
+    "delivered_sku": "aashirvaad-flour-gram-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 9200,
+    "rationale": "Order names fortune; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

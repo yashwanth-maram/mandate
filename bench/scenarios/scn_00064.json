@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00064",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00064",
+    "created_at": "2026-09-02T21:44:00Z",
+    "expires_at": "2026-09-03T03:44:00Z",
+    "user_id": "usr_4115",
+    "agent_id": "agt_735",
+    "block": {
+      "block_id": "blk_00064",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-25T21:44:00Z",
+      "expires_at": "2026-10-23T21:44:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "mother_dairy",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Mother Dairy full cream milk on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "5d590dd3ff1190b28fd3e06da5aba532a414dbc7c27928c38bcae0904e567924",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00064",
+    "obligation_hash": "5d590dd3ff1190b28fd3e06da5aba532a414dbc7c27928c38bcae0904e567924",
+    "items": [
+      {
+        "item_id": "env_00064-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "agt_735",
+        "emitted_at": "2026-09-02T21:44:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "03d32124beaa589af731295f61cda55754286699302d475e8fe6b98575e9089f"
+      },
+      {
+        "item_id": "env_00064-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00064",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:44:20Z",
+        "evidence_class": 2,
+        "prev_hash": "03d32124beaa589af731295f61cda55754286699302d475e8fe6b98575e9089f",
+        "content_hash": "7e9c41924ec05e8fff030655d2fb5b0df28399799c310b97f04081d54a4a9a17"
+      },
+      {
+        "item_id": "env_00064-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00064",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:58:00Z",
+        "evidence_class": 2,
+        "prev_hash": "7e9c41924ec05e8fff030655d2fb5b0df28399799c310b97f04081d54a4a9a17",
+        "content_hash": "02063c250b3ebded3c5c738b919431d15b60d8ef9cf1bdc9e9e9c068f8eb5934"
+      },
+      {
+        "item_id": "env_00064-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00064",
+          "amount_paise": 7500,
+          "currency": "INR",
+          "receipt": "zep_00064"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:44:25Z",
+        "evidence_class": 3,
+        "prev_hash": "02063c250b3ebded3c5c738b919431d15b60d8ef9cf1bdc9e9e9c068f8eb5934",
+        "content_hash": "33cc5db9e7b548360ca817d28feeffa0d86c7b65487458fd183f807303c387da"
+      },
+      {
+        "item_id": "env_00064-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00064",
+          "order_id": "order_00064",
+          "amount_paise": 7500,
+          "status": "captured",
+          "block_id": "blk_00064",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:44:30Z",
+        "evidence_class": 3,
+        "prev_hash": "33cc5db9e7b548360ca817d28feeffa0d86c7b65487458fd183f807303c387da",
+        "content_hash": "7d46071da883ec6ba7eb5285bb84ddc84194066e95e57225d8f81f3f29eaaec7"
+      },
+      {
+        "item_id": "env_00064-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_735",
+        "emitted_at": "2026-09-02T21:59:00Z",
+        "evidence_class": 0,
+        "prev_hash": "7d46071da883ec6ba7eb5285bb84ddc84194066e95e57225d8f81f3f29eaaec7",
+        "content_hash": "1f04b03e2096a3f5cb6c59c6e1fee5d78ef2895b22637e72bb728211d9d1c9fb"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

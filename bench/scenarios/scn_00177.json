@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00177",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00177",
+    "created_at": "2026-09-02T22:01:00Z",
+    "expires_at": "2026-09-03T04:01:00Z",
+    "user_id": "usr_2017",
+    "agent_id": "agt_783",
+    "block": {
+      "block_id": "blk_00177",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-30T22:01:00Z",
+      "expires_at": "2026-10-16T22:01:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 6554,
+      "max_total_paise": 6554,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "mother_dairy",
+      "variant": "double_toned",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1L Mother Dairy double toned milk, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "c310646c5bef530934d5fb9788d0266566567047344b975db79a03f0a9c54269",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00177",
+    "obligation_hash": "c310646c5bef530934d5fb9788d0266566567047344b975db79a03f0a9c54269",
+    "items": [
+      {
+        "item_id": "env_00177-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ]
+        },
+        "emitted_by": "agt_783",
+        "emitted_at": "2026-09-02T22:01:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "df15fad486d7b0f9fb9e6ed7a5fd121b8800692cda66a96e3cd11bb0532c94c0"
+      },
+      {
+        "item_id": "env_00177-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00177",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:01:20Z",
+        "evidence_class": 2,
+        "prev_hash": "df15fad486d7b0f9fb9e6ed7a5fd121b8800692cda66a96e3cd11bb0532c94c0",
+        "content_hash": "93f79b69f67add60bcc94d534d8392e7b6a00d2727e98b22ae661785cfd7cb7b"
+      },
+      {
+        "item_id": "env_00177-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00177",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:15:00Z",
+        "evidence_class": 2,
+        "prev_hash": "93f79b69f67add60bcc94d534d8392e7b6a00d2727e98b22ae661785cfd7cb7b",
+        "content_hash": "33a242249db97f8a41b8ec5c8a2cd022ce2e5017eee3fe4534ff9b25fe0d7b9f"
+      },
+      {
+        "item_id": "env_00177-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00177",
+          "amount_paise": 5700,
+          "currency": "INR",
+          "receipt": "zep_00177"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:01:25Z",
+        "evidence_class": 3,
+        "prev_hash": "33a242249db97f8a41b8ec5c8a2cd022ce2e5017eee3fe4534ff9b25fe0d7b9f",
+        "content_hash": "58f187c09b0fa3bf7ee98d58aed3f42b44834088d25a901e21fac75388eb3cc9"
+      },
+      {
+        "item_id": "env_00177-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00177",
+          "order_id": "order_00177",
+          "amount_paise": 5700,
+          "status": "captured",
+          "block_id": "blk_00177",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:01:30Z",
+        "evidence_class": 3,
+        "prev_hash": "58f187c09b0fa3bf7ee98d58aed3f42b44834088d25a901e21fac75388eb3cc9",
+        "content_hash": "72012b9c13e08fe9f993344487776bda170cbfb8f817db08c46f3570ffa854f3"
+      },
+      {
+        "item_id": "env_00177-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Mother Dairy double toned milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-double_toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_783",
+        "emitted_at": "2026-09-02T22:16:00Z",
+        "evidence_class": 0,
+        "prev_hash": "72012b9c13e08fe9f993344487776bda170cbfb8f817db08c46f3570ffa854f3",
+        "content_hash": "3f612e7c91994f19e5dfadec48ea0bac668f2459e170f502734d4383e2948f5e"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "mother_dairy-milk-double_toned-1000",
+    "ordered_sku": "mother_dairy-milk-double_toned-1000",
+    "delivered_sku": "mother_dairy-milk-double_toned-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

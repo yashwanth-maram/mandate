@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00407",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00407",
+    "created_at": "2026-09-02T20:43:00Z",
+    "expires_at": "2026-09-03T02:43:00Z",
+    "user_id": "usr_3935",
+    "agent_id": "agt_679",
+    "block": {
+      "block_id": "blk_00407",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-15T20:43:00Z",
+      "expires_at": "2026-10-23T20:43:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 10200,
+      "max_total_paise": 10200,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "amul",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Amul toned milk on Swiggy Instamart",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "60dfcdc8830d332d0da10520080efde810f42ef1f5b89a78475a03a0caf04ae9",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00407",
+    "obligation_hash": "60dfcdc8830d332d0da10520080efde810f42ef1f5b89a78475a03a0caf04ae9",
+    "items": [
+      {
+        "item_id": "env_00407-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ]
+        },
+        "emitted_by": "agt_679",
+        "emitted_at": "2026-09-02T20:43:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "130eb4073e782be2ef76e6e4d278bfee97dbbf2caec31a5db09c48b6d1deec41"
+      },
+      {
+        "item_id": "env_00407-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00407",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T20:43:20Z",
+        "evidence_class": 2,
+        "prev_hash": "130eb4073e782be2ef76e6e4d278bfee97dbbf2caec31a5db09c48b6d1deec41",
+        "content_hash": "ffe3a1748cddb6d13b7fdc462d1416664b38fce1092be0565e84867242c5d5ec"
+      },
+      {
+        "item_id": "env_00407-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00407",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T20:57:00Z",
+        "evidence_class": 2,
+        "prev_hash": "ffe3a1748cddb6d13b7fdc462d1416664b38fce1092be0565e84867242c5d5ec",
+        "content_hash": "d9bf6fe2e274c510395528a230a7a8012d632db9ed233ae85c96c61a65a2a207"
+      },
+      {
+        "item_id": "env_00407-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00407",
+          "amount_paise": 7700,
+          "currency": "INR",
+          "receipt": "zep_00407"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:43:25Z",
+        "evidence_class": 3,
+        "prev_hash": "d9bf6fe2e274c510395528a230a7a8012d632db9ed233ae85c96c61a65a2a207",
+        "content_hash": "3d913c513258cf5bc0c76d3e36889cbad2ff6cf99c18b10615f6c4e00cd1cb93"
+      },
+      {
+        "item_id": "env_00407-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00407",
+          "order_id": "order_00407",
+          "amount_paise": 7700,
+          "status": "captured",
+          "block_id": "blk_00407",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:43:30Z",
+        "evidence_class": 3,
+        "prev_hash": "3d913c513258cf5bc0c76d3e36889cbad2ff6cf99c18b10615f6c4e00cd1cb93",
+        "content_hash": "fc482162c35f8d897616b0c20236029e8c39e4564a8a390f47b88ca1843a4319"
+      },
+      {
+        "item_id": "env_00407-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Amul full cream milk. Payment complete.",
+          "claimed_sku": "amul-milk-full_cream-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_679",
+        "emitted_at": "2026-09-02T20:58:00Z",
+        "evidence_class": 0,
+        "prev_hash": "fc482162c35f8d897616b0c20236029e8c39e4564a8a390f47b88ca1843a4319",
+        "content_hash": "60a055976fb7e02ca05a5d86d8c817458fdf155e07289432bf87aefca6c81db9"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "INTENT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-milk-toned-1000",
+    "ordered_sku": "amul-milk-full_cream-1000",
+    "delivered_sku": "amul-milk-full_cream-1000",
+    "is_hard_pair": true,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 7700,
+    "rationale": "User asked for toned; agent ordered full cream. Same brand, same pack, Rs 11.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+  }
+}

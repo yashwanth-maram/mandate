@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00328",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00328",
+    "created_at": "2026-09-03T01:36:00Z",
+    "expires_at": "2026-09-03T07:36:00Z",
+    "user_id": "usr_3909",
+    "agent_id": "agt_991",
+    "block": {
+      "block_id": "blk_00328",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-19T01:36:00Z",
+      "expires_at": "2026-10-21T01:36:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 5979,
+      "max_total_paise": 5979,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "tata",
+      "variant": "rock",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg Tata rock salt, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "2f23adfd27bee5c59e49df63709fb8d232b4f097f5bbb0e23acc55f354bb0bfc",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00328",
+    "obligation_hash": "2f23adfd27bee5c59e49df63709fb8d232b4f097f5bbb0e23acc55f354bb0bfc",
+    "items": [
+      {
+        "item_id": "env_00328-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-rock-1000",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "agt_991",
+        "emitted_at": "2026-09-03T01:36:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "8bb1e0ead1032c859925a4264f93a6b1a9236c4969bdcab734eeef2a0e9e99ec"
+      },
+      {
+        "item_id": "env_00328-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00328",
+          "lines": [
+            {
+              "sku": "tata-salt-rock-1000",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T01:36:20Z",
+        "evidence_class": 2,
+        "prev_hash": "8bb1e0ead1032c859925a4264f93a6b1a9236c4969bdcab734eeef2a0e9e99ec",
+        "content_hash": "4741acf174b1fc066b532c74ba3788c12edfe649493910fb5d8801fe391ea365"
+      },
+      {
+        "item_id": "env_00328-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00328",
+          "lines": [
+            {
+              "sku": "tata-salt-rock-1000",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T01:50:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4741acf174b1fc066b532c74ba3788c12edfe649493910fb5d8801fe391ea365",
+        "content_hash": "6d7c19bc7b53aca623c6843387de360b33f27bb320543903faf001df57f1c903"
+      },
+      {
+        "item_id": "env_00328-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00328",
+          "amount_paise": 5200,
+          "currency": "INR",
+          "receipt": "zep_00328"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:36:25Z",
+        "evidence_class": 3,
+        "prev_hash": "6d7c19bc7b53aca623c6843387de360b33f27bb320543903faf001df57f1c903",
+        "content_hash": "1034ad1141dbc87313e63ebdc92585d0c965f9b1b915674ad87d87469820c75d"
+      },
+      {
+        "item_id": "env_00328-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00328",
+          "order_id": "order_00328",
+          "amount_paise": 5200,
+          "status": "captured",
+          "block_id": "blk_00328",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:36:30Z",
+        "evidence_class": 3,
+        "prev_hash": "1034ad1141dbc87313e63ebdc92585d0c965f9b1b915674ad87d87469820c75d",
+        "content_hash": "f2ef3ad84354ec87582d84d2de652c80e1c98f6461deae1da0bd10814d2b76fe"
+      },
+      {
+        "item_id": "env_00328-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata rock salt. Payment complete.",
+          "claimed_sku": "tata-salt-rock-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_991",
+        "emitted_at": "2026-09-03T01:51:00Z",
+        "evidence_class": 0,
+        "prev_hash": "f2ef3ad84354ec87582d84d2de652c80e1c98f6461deae1da0bd10814d2b76fe",
+        "content_hash": "a027ec4cca04311b4fba35ba0eb6a5eb4e1b406c3eebad184e8cf7f15625f4bf"
+      },
+      {
+        "item_id": "env_00328-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "This isn't what I wanted, the agent got it wrong.",
+          "raised_at": "2026-09-03T04:36:00Z"
+        },
+        "emitted_by": "usr_3909",
+        "emitted_at": "2026-09-03T04:36:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a027ec4cca04311b4fba35ba0eb6a5eb4e1b406c3eebad184e8cf7f15625f4bf",
+        "content_hash": "2f15b30b548f00b51602bfa7fbc28bb7e57aee25d404fdf542ae18cbddee4bbd"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "tata-salt-rock-1000",
+    "ordered_sku": "tata-salt-rock-1000",
+    "delivered_sku": "tata-salt-rock-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 5200,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00207",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00207",
+    "created_at": "2026-09-02T19:35:00Z",
+    "expires_at": "2026-09-03T01:35:00Z",
+    "user_id": "usr_7640",
+    "agent_id": "agt_488",
+    "block": {
+      "block_id": "blk_00207",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-21T19:35:00Z",
+      "expires_at": "2026-10-19T19:35:00Z"
+    },
+    "hard": {
+      "category": "noodles",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "maggi",
+      "variant": null,
+      "pack_size_g": 560
+    },
+    "intent": {
+      "text": "buy 560g Maggi masala noodles from Blinkit, keep it under 110 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "0d20aee26bbdcda784fd11317b99a4327e9c8be5301dc10916f3f6f137b82ff5",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00207",
+    "obligation_hash": "0d20aee26bbdcda784fd11317b99a4327e9c8be5301dc10916f3f6f137b82ff5",
+    "items": [
+      {
+        "item_id": "env_00207-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "agt_488",
+        "emitted_at": "2026-09-02T19:35:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "a9d84b2a72702650667a0683ba9898f8a8fb9fa112efd465b758b66548dc3f99"
+      },
+      {
+        "item_id": "env_00207-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00207",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:35:20Z",
+        "evidence_class": 2,
+        "prev_hash": "a9d84b2a72702650667a0683ba9898f8a8fb9fa112efd465b758b66548dc3f99",
+        "content_hash": "392b16f03b29ea5b7bceb438e3b30e0cd9be935983a9012b4f52ebfc61b42546"
+      },
+      {
+        "item_id": "env_00207-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00207",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:49:00Z",
+        "evidence_class": 2,
+        "prev_hash": "392b16f03b29ea5b7bceb438e3b30e0cd9be935983a9012b4f52ebfc61b42546",
+        "content_hash": "62451f66338e6112c2d386b4a2c44992f6c33c586f84b1052497e65115c4f59d"
+      },
+      {
+        "item_id": "env_00207-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00207",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00207"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:35:25Z",
+        "evidence_class": 3,
+        "prev_hash": "62451f66338e6112c2d386b4a2c44992f6c33c586f84b1052497e65115c4f59d",
+        "content_hash": "7413dc7feaa707bbecb193edb66e7c0a1eee87017fe0804667e67a7da697f3f0"
+      },
+      {
+        "item_id": "env_00207-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00207",
+          "order_id": "order_00207",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00207",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:35:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7413dc7feaa707bbecb193edb66e7c0a1eee87017fe0804667e67a7da697f3f0",
+        "content_hash": "3ff38b8b1fe6954baa4b09c819c0ff5197d58e6ce8fbb8f109c3e4b49501e2fb"
+      },
+      {
+        "item_id": "env_00207-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-masala-560",
+          "claims_success": true
+        },
+        "emitted_by": "agt_488",
+        "emitted_at": "2026-09-02T19:50:00Z",
+        "evidence_class": 0,
+        "prev_hash": "3ff38b8b1fe6954baa4b09c819c0ff5197d58e6ce8fbb8f109c3e4b49501e2fb",
+        "content_hash": "56787436c771ba8aa1e1ef87a8cf8482768b521dc3fffee1605ba63bd7203679"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "maggi-noodles-masala-560",
+    "ordered_sku": "maggi-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

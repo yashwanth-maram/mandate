@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00024",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00024",
+    "created_at": "2026-09-02T20:03:00Z",
+    "expires_at": "2026-09-03T02:03:00Z",
+    "user_id": "usr_1672",
+    "agent_id": "agt_455",
+    "block": {
+      "block_id": "blk_00024",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-16T20:03:00Z",
+      "expires_at": "2026-10-15T20:03:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "aashirvaad",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg Aashirvaad maida, use Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "7b4260a713941f62f5deb778fa7eba6c5b7072338c992bd20100f7442e546b06",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00024",
+    "obligation_hash": "7b4260a713941f62f5deb778fa7eba6c5b7072338c992bd20100f7442e546b06",
+    "items": [
+      {
+        "item_id": "env_00024-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_455",
+        "emitted_at": "2026-09-02T20:03:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "68534b49fd38d9b46459ae6d6e47ae18bf3567a99816a04fd38cc430acccbadf"
+      },
+      {
+        "item_id": "env_00024-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00024",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:03:20Z",
+        "evidence_class": 2,
+        "prev_hash": "68534b49fd38d9b46459ae6d6e47ae18bf3567a99816a04fd38cc430acccbadf",
+        "content_hash": "04e48583d52fcbdc6ec84a9346d14fb2fd94f9e9b6eefb22777b605cf9bb267d"
+      },
+      {
+        "item_id": "env_00024-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00024",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:17:00Z",
+        "evidence_class": 2,
+        "prev_hash": "04e48583d52fcbdc6ec84a9346d14fb2fd94f9e9b6eefb22777b605cf9bb267d",
+        "content_hash": "88b3ce2fb1b3c9c241899dd3dc1c7b4ad6aab6a6c84ae4ef1efd430dad9a9690"
+      },
+      {
+        "item_id": "env_00024-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00024",
+          "amount_paise": 6200,
+          "currency": "INR",
+          "receipt": "zep_00024"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:03:25Z",
+        "evidence_class": 3,
+        "prev_hash": "88b3ce2fb1b3c9c241899dd3dc1c7b4ad6aab6a6c84ae4ef1efd430dad9a9690",
+        "content_hash": "ac60d3041c739e213be77082b66df363c095b99388695f15723ef9fb2b5ecec1"
+      },
+      {
+        "item_id": "env_00024-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00024",
+          "order_id": "order_00024",
+          "amount_paise": 6200,
+          "status": "captured",
+          "block_id": "blk_00024",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:03:30Z",
+        "evidence_class": 3,
+        "prev_hash": "ac60d3041c739e213be77082b66df363c095b99388695f15723ef9fb2b5ecec1",
+        "content_hash": "35ec12fd9d81db1328401d3b03fb9363c65cee56ab7938bbff5d91b3a3e62ba3"
+      },
+      {
+        "item_id": "env_00024-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-refined-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_455",
+        "emitted_at": "2026-09-02T20:18:00Z",
+        "evidence_class": 0,
+        "prev_hash": "35ec12fd9d81db1328401d3b03fb9363c65cee56ab7938bbff5d91b3a3e62ba3",
+        "content_hash": "cbaffbbd8812bbc7dc74070e5b6001f2c2a600250508a5f1a396712fcca0c2e3"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-refined-1000",
+    "ordered_sku": "aashirvaad-flour-refined-1000",
+    "delivered_sku": "aashirvaad-flour-refined-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

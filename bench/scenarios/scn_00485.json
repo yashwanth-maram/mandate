@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00485",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00485",
+    "created_at": "2026-09-03T02:21:00Z",
+    "expires_at": "2026-09-03T08:21:00Z",
+    "user_id": "usr_9615",
+    "agent_id": "agt_738",
+    "block": {
+      "block_id": "blk_00485",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-16T02:21:00Z",
+      "expires_at": "2026-10-11T02:21:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "britannia",
+      "variant": null,
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "get me 400g Britannia multigrain bread from Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "ebb02c53ee604ac4109d8be417161f0558d958b158e16a6d4f106e51a1ab96b2",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00485",
+    "obligation_hash": "ebb02c53ee604ac4109d8be417161f0558d958b158e16a6d4f106e51a1ab96b2",
+    "items": [
+      {
+        "item_id": "env_00485-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "britannia-bread-multigrain-400",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_738",
+        "emitted_at": "2026-09-03T02:21:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "6dbaab12b070c159962cb28db1c0b7c999498b7dc36898419ea030cb5d9afd61"
+      },
+      {
+        "item_id": "env_00485-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00485",
+          "lines": [
+            {
+              "sku": "britannia-bread-multigrain-400",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:21:20Z",
+        "evidence_class": 2,
+        "prev_hash": "6dbaab12b070c159962cb28db1c0b7c999498b7dc36898419ea030cb5d9afd61",
+        "content_hash": "2ca9eb4c459b0d5b3627f22567cac8ac0ad27d6abf4936f1bd1c96033e1db7bc"
+      },
+      {
+        "item_id": "env_00485-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00485",
+          "lines": [
+            {
+              "sku": "britannia-bread-multigrain-400",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:35:00Z",
+        "evidence_class": 2,
+        "prev_hash": "2ca9eb4c459b0d5b3627f22567cac8ac0ad27d6abf4936f1bd1c96033e1db7bc",
+        "content_hash": "daab0f8b2727474276fdbf36b97ab3b3ad5b362a813704ffe25b8a29d9b9d708"
+      },
+      {
+        "item_id": "env_00485-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00485",
+          "amount_paise": 6200,
+          "currency": "INR",
+          "receipt": "zep_00485"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:21:25Z",
+        "evidence_class": 3,
+        "prev_hash": "daab0f8b2727474276fdbf36b97ab3b3ad5b362a813704ffe25b8a29d9b9d708",
+        "content_hash": "7e04f582c738852db710d5ed513a4d5ff66191efe29c5794106ae60f92e267dd"
+      },
+      {
+        "item_id": "env_00485-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00485",
+          "order_id": "order_00485",
+          "amount_paise": 6200,
+          "status": "captured",
+          "block_id": "blk_00485",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:21:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7e04f582c738852db710d5ed513a4d5ff66191efe29c5794106ae60f92e267dd",
+        "content_hash": "923450bc11f407403b01e5c8c8f8367d11d7b48076498c1799ae9c5f4079b8c2"
+      },
+      {
+        "item_id": "env_00485-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Britannia multigrain bread. Payment complete.",
+          "claimed_sku": "britannia-bread-multigrain-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_738",
+        "emitted_at": "2026-09-03T02:36:00Z",
+        "evidence_class": 0,
+        "prev_hash": "923450bc11f407403b01e5c8c8f8367d11d7b48076498c1799ae9c5f4079b8c2",
+        "content_hash": "8bfc89bd0d537c1bc48e649bb3348375ac2f46396cd65de43dffd7a217da5a74"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "britannia-bread-multigrain-400",
+    "ordered_sku": "britannia-bread-multigrain-400",
+    "delivered_sku": "britannia-bread-multigrain-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00101",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00101",
+    "created_at": "2026-09-02T19:17:00Z",
+    "expires_at": "2026-09-03T01:17:00Z",
+    "user_id": "usr_3902",
+    "agent_id": "agt_891",
+    "block": {
+      "block_id": "blk_00101",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-13T19:17:00Z",
+      "expires_at": "2026-10-17T19:17:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 15179,
+      "max_total_paise": 15179,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "india_gate",
+      "variant": "basmati",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1kg India Gate basmati rice from Blinkit, keep it under 151 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "0084379d735d56f9e10dbec632df72e5ef7059cb553189bfddcc0003d8341f36",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00101",
+    "obligation_hash": "0084379d735d56f9e10dbec632df72e5ef7059cb553189bfddcc0003d8341f36",
+    "items": [
+      {
+        "item_id": "env_00101-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 13200
+            }
+          ]
+        },
+        "emitted_by": "agt_891",
+        "emitted_at": "2026-09-02T19:17:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "aad83364123a94f004a70181f4b389a564458555f36155d04a8ea99f301c67ce"
+      },
+      {
+        "item_id": "env_00101-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00101",
+          "lines": [
+            {
+              "sku": "india_gate-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 13200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:17:20Z",
+        "evidence_class": 2,
+        "prev_hash": "aad83364123a94f004a70181f4b389a564458555f36155d04a8ea99f301c67ce",
+        "content_hash": "884377ba1a9af95df609d4843a4ee53bb24940d913057698334d6975a0ed5930"
+      },
+      {
+        "item_id": "env_00101-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00101",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:31:00Z",
+        "evidence_class": 2,
+        "prev_hash": "884377ba1a9af95df609d4843a4ee53bb24940d913057698334d6975a0ed5930",
+        "content_hash": "1b4319b88c79adf467fca2e5a105d8265d171588f9b8bdeec398cca2aab5f508"
+      },
+      {
+        "item_id": "env_00101-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00101",
+          "amount_paise": 13200,
+          "currency": "INR",
+          "receipt": "zep_00101"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:17:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1b4319b88c79adf467fca2e5a105d8265d171588f9b8bdeec398cca2aab5f508",
+        "content_hash": "ee277228a816c83f45a0d365202124e1f96f5137f1d21808c122d81cc68a0ec6"
+      },
+      {
+        "item_id": "env_00101-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00101",
+          "order_id": "order_00101",
+          "amount_paise": 13200,
+          "status": "captured",
+          "block_id": "blk_00101",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:17:30Z",
+        "evidence_class": 3,
+        "prev_hash": "ee277228a816c83f45a0d365202124e1f96f5137f1d21808c122d81cc68a0ec6",
+        "content_hash": "344cd6a77987ca88643d935d6309e06ae053f701897035e17b71c0e74b24bce6"
+      },
+      {
+        "item_id": "env_00101-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg India Gate basmati rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-basmati-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_891",
+        "emitted_at": "2026-09-02T19:32:00Z",
+        "evidence_class": 0,
+        "prev_hash": "344cd6a77987ca88643d935d6309e06ae053f701897035e17b71c0e74b24bce6",
+        "content_hash": "bbd8da4ff32f6ff4fc6487a1aeaeea199df3c1cedb345b379042cc154e8fbbf5"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "india_gate-rice-basmati-1000",
+    "ordered_sku": "india_gate-rice-basmati-1000",
+    "delivered_sku": "daawat-rice-basmati-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 13200,
+    "rationale": "Order names india_gate; fulfilment shipped daawat. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

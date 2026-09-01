@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00075",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00075",
+    "created_at": "2026-09-02T21:30:00Z",
+    "expires_at": "2026-09-03T03:30:00Z",
+    "user_id": "usr_2124",
+    "agent_id": "agt_949",
+    "block": {
+      "block_id": "blk_00075",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-16T21:30:00Z",
+      "expires_at": "2026-10-08T21:30:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 21735,
+      "max_total_paise": 21735,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "fortune",
+      "variant": "groundnut",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Fortune groundnut oil on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "1bc6baa9343f019e3dfd36da189184919d04b7227ab66cb0a12ab372adfc307b",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00075",
+    "obligation_hash": "1bc6baa9343f019e3dfd36da189184919d04b7227ab66cb0a12ab372adfc307b",
+    "items": [
+      {
+        "item_id": "env_00075-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "agt_949",
+        "emitted_at": "2026-09-02T21:30:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "254b8d0948d80788549a5fb62ae65133b57f8efd1afa7b315e4782be28b1a29a"
+      },
+      {
+        "item_id": "env_00075-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00075",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:30:20Z",
+        "evidence_class": 2,
+        "prev_hash": "254b8d0948d80788549a5fb62ae65133b57f8efd1afa7b315e4782be28b1a29a",
+        "content_hash": "7c69e386a690cc82850410e27685c719d7794809fe4f23ee4620b2e82013ae55"
+      },
+      {
+        "item_id": "env_00075-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00075",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:44:00Z",
+        "evidence_class": 2,
+        "prev_hash": "7c69e386a690cc82850410e27685c719d7794809fe4f23ee4620b2e82013ae55",
+        "content_hash": "005a48a9843bc7dbd05a2e7561220aa1dda3736a45c94feeac229f4dadb6f6ec"
+      },
+      {
+        "item_id": "env_00075-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00075",
+          "amount_paise": 22730,
+          "currency": "INR",
+          "receipt": "zep_00075"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:30:25Z",
+        "evidence_class": 3,
+        "prev_hash": "005a48a9843bc7dbd05a2e7561220aa1dda3736a45c94feeac229f4dadb6f6ec",
+        "content_hash": "d22e2bd41950c7d15df58548a5bbc7786c67f9b757aa721801f93838d7795062"
+      },
+      {
+        "item_id": "env_00075-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00075",
+          "order_id": "order_00075",
+          "amount_paise": 22730,
+          "status": "captured",
+          "block_id": "blk_00075",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:30:30Z",
+        "evidence_class": 3,
+        "prev_hash": "d22e2bd41950c7d15df58548a5bbc7786c67f9b757aa721801f93838d7795062",
+        "content_hash": "07416ae7234c5b3f9f901c4b12d08789f4319de3a8aa1a23b14d30ad2a5d9680"
+      },
+      {
+        "item_id": "env_00075-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-groundnut-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_949",
+        "emitted_at": "2026-09-02T21:45:00Z",
+        "evidence_class": 0,
+        "prev_hash": "07416ae7234c5b3f9f901c4b12d08789f4319de3a8aa1a23b14d30ad2a5d9680",
+        "content_hash": "8091e9c7ccc4556ad2f538ebcb2ae9ba729eae15547179da6deebcfa6b28ef23"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-edible_oil-groundnut-1000",
+    "ordered_sku": "fortune-edible_oil-groundnut-1000",
+    "delivered_sku": "fortune-edible_oil-groundnut-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 3830,
+    "rationale": "Correct item, unreconcilable debit. Debited 22730 paise against an order worth 18900 paise."
+  }
+}

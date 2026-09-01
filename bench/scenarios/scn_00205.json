@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00205",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00205",
+    "created_at": "2026-09-02T19:38:00Z",
+    "expires_at": "2026-09-03T01:38:00Z",
+    "user_id": "usr_9591",
+    "agent_id": "agt_252",
+    "block": {
+      "block_id": "blk_00205",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-26T19:38:00Z",
+      "expires_at": "2026-10-08T19:38:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 7589,
+      "max_total_paise": 7589,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "amul",
+      "variant": "toned",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1L Amul toned milk, use Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "196fafe06680ed9598c43b3e249eb7596eafbc3333f34da84ce23f5b47ea166c",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00205",
+    "obligation_hash": "196fafe06680ed9598c43b3e249eb7596eafbc3333f34da84ce23f5b47ea166c",
+    "items": [
+      {
+        "item_id": "env_00205-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "amul-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6600
+            }
+          ]
+        },
+        "emitted_by": "agt_252",
+        "emitted_at": "2026-09-02T19:38:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "e4596b32dd9d52aa93bd6f614ed29cd169b5f3e125b47798b5d2e607bf78ee9c"
+      },
+      {
+        "item_id": "env_00205-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00205",
+          "lines": [
+            {
+              "sku": "amul-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6600
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:38:20Z",
+        "evidence_class": 2,
+        "prev_hash": "e4596b32dd9d52aa93bd6f614ed29cd169b5f3e125b47798b5d2e607bf78ee9c",
+        "content_hash": "6351782eb6da1b3fc95f2c7042948e763bafe305c8df953e8ec5d6a0e62a7be7"
+      },
+      {
+        "item_id": "env_00205-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00205",
+          "lines": [
+            {
+              "sku": "amul-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:52:00Z",
+        "evidence_class": 2,
+        "prev_hash": "6351782eb6da1b3fc95f2c7042948e763bafe305c8df953e8ec5d6a0e62a7be7",
+        "content_hash": "5363528659c80510a28928b6814519b30b7d62d433ff6d7f3596185659ec088c"
+      },
+      {
+        "item_id": "env_00205-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00205",
+          "amount_paise": 6600,
+          "currency": "INR",
+          "receipt": "zep_00205"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:38:25Z",
+        "evidence_class": 3,
+        "prev_hash": "5363528659c80510a28928b6814519b30b7d62d433ff6d7f3596185659ec088c",
+        "content_hash": "49a2b3e7ec2fb3d76980e1b109da3427aac68d95ac1bb59eb3e86fdb35f63160"
+      },
+      {
+        "item_id": "env_00205-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00205",
+          "order_id": "order_00205",
+          "amount_paise": 6600,
+          "status": "captured",
+          "block_id": "blk_00205",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:38:30Z",
+        "evidence_class": 3,
+        "prev_hash": "49a2b3e7ec2fb3d76980e1b109da3427aac68d95ac1bb59eb3e86fdb35f63160",
+        "content_hash": "5d395cdecf1384e9a81dbc53803531a6c90729593f551aede57e011048399502"
+      },
+      {
+        "item_id": "env_00205-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Amul toned milk. Payment complete.",
+          "claimed_sku": "amul-milk-toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_252",
+        "emitted_at": "2026-09-02T19:53:00Z",
+        "evidence_class": 0,
+        "prev_hash": "5d395cdecf1384e9a81dbc53803531a6c90729593f551aede57e011048399502",
+        "content_hash": "0fc4523a09fcba534cb3b5fd9e3e1dcbffb8c554e4675e2e6bc107546757c4c0"
+      },
+      {
+        "item_id": "env_00205-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "This isn't what I wanted, the agent got it wrong.",
+          "raised_at": "2026-09-02T22:38:00Z"
+        },
+        "emitted_by": "usr_9591",
+        "emitted_at": "2026-09-02T22:38:00Z",
+        "evidence_class": 0,
+        "prev_hash": "0fc4523a09fcba534cb3b5fd9e3e1dcbffb8c554e4675e2e6bc107546757c4c0",
+        "content_hash": "c4c00797c284100a97db900e311ff3b6aa12c848ef4f5d9c692a08541a8893e8"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-milk-toned-1000",
+    "ordered_sku": "amul-milk-toned-1000",
+    "delivered_sku": "amul-milk-toned-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 6600,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

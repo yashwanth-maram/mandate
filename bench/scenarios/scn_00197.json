@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00197",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00197",
+    "created_at": "2026-09-02T22:49:00Z",
+    "expires_at": "2026-09-03T04:49:00Z",
+    "user_id": "usr_7236",
+    "agent_id": "agt_577",
+    "block": {
+      "block_id": "blk_00197",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-16T22:49:00Z",
+      "expires_at": "2026-10-22T22:49:00Z"
+    },
+    "hard": {
+      "category": "rice",
+      "max_unit_price_paise": 8970,
+      "max_total_paise": 8970,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "india_gate",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg India Gate sona masoori rice, use Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "1b2c14fad1b0f1db1ea75a5f64d10dcbb302be80291b5596dc4bb3088cbbda31",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00197",
+    "obligation_hash": "1b2c14fad1b0f1db1ea75a5f64d10dcbb302be80291b5596dc4bb3088cbbda31",
+    "items": [
+      {
+        "item_id": "env_00197-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "india_gate-rice-sona_masoori-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "agt_577",
+        "emitted_at": "2026-09-02T22:49:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "529fd22ddcce7d038d10fc07322c4d7fa73ae14708f12a92ac122c76a754ec88"
+      },
+      {
+        "item_id": "env_00197-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00197",
+          "lines": [
+            {
+              "sku": "india_gate-rice-sona_masoori-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:49:20Z",
+        "evidence_class": 2,
+        "prev_hash": "529fd22ddcce7d038d10fc07322c4d7fa73ae14708f12a92ac122c76a754ec88",
+        "content_hash": "26b12abdc5aac2eb6b56e49b9c0c9e00414d09005a9afc91d2fca3c1eee6b359"
+      },
+      {
+        "item_id": "env_00197-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00197",
+          "lines": [
+            {
+              "sku": "india_gate-rice-sona_masoori-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T23:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "26b12abdc5aac2eb6b56e49b9c0c9e00414d09005a9afc91d2fca3c1eee6b359",
+        "content_hash": "2ee4b713aa7ebcbf2cf37f6b86e27f5abc6b8767556476c03e235456008ed03e"
+      },
+      {
+        "item_id": "env_00197-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00197",
+          "amount_paise": 7800,
+          "currency": "INR",
+          "receipt": "zep_00197"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "2ee4b713aa7ebcbf2cf37f6b86e27f5abc6b8767556476c03e235456008ed03e",
+        "content_hash": "5d277492a55c2bec899305035c43d511edf8cffe0b363555ed00981f489aa028"
+      },
+      {
+        "item_id": "env_00197-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00197",
+          "order_id": "order_00197",
+          "amount_paise": 7800,
+          "status": "captured",
+          "block_id": "blk_00197",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "5d277492a55c2bec899305035c43d511edf8cffe0b363555ed00981f489aa028",
+        "content_hash": "c0c4a46f7cb6bdad19b9380b40e0ebf1a24b9b2535c21fc1ad3b0e4b2fce27a3"
+      },
+      {
+        "item_id": "env_00197-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg India Gate sona masoori rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-sona_masoori-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_577",
+        "emitted_at": "2026-09-02T23:04:00Z",
+        "evidence_class": 0,
+        "prev_hash": "c0c4a46f7cb6bdad19b9380b40e0ebf1a24b9b2535c21fc1ad3b0e4b2fce27a3",
+        "content_hash": "7da078103e43eaa3be1fece3d860477a19bbb327034a06b9e3fa65b3babf3ae9"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "india_gate-rice-sona_masoori-1000",
+    "ordered_sku": "india_gate-rice-sona_masoori-1000",
+    "delivered_sku": "india_gate-rice-sona_masoori-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

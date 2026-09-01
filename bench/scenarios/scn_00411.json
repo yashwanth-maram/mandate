@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00411",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00411",
+    "created_at": "2026-09-02T22:17:00Z",
+    "expires_at": "2026-09-03T04:17:00Z",
+    "user_id": "usr_7165",
+    "agent_id": "agt_328",
+    "block": {
+      "block_id": "blk_00411",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-17T22:17:00Z",
+      "expires_at": "2026-10-14T22:17:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 8855,
+      "max_total_paise": 8855,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "amul",
+      "variant": "full_cream",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1L Amul full cream milk, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "e2949d0d726b8a802a594af84be174661cf38290afc0b35d57d0e925f382ca30",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00411",
+    "obligation_hash": "e2949d0d726b8a802a594af84be174661cf38290afc0b35d57d0e925f382ca30",
+    "items": [
+      {
+        "item_id": "env_00411-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ]
+        },
+        "emitted_by": "agt_328",
+        "emitted_at": "2026-09-02T22:17:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "a7f4f8d5513d61a0fb2e8a808adaf837f5572848c010868379724999c9a3c8c3"
+      },
+      {
+        "item_id": "env_00411-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00411",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:17:20Z",
+        "evidence_class": 2,
+        "prev_hash": "a7f4f8d5513d61a0fb2e8a808adaf837f5572848c010868379724999c9a3c8c3",
+        "content_hash": "2e0d5c1cbb19b78cdcc5fd5a914a7b4c434a85193e38bcd3123df5ae8cd25739"
+      },
+      {
+        "item_id": "env_00411-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00411",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:31:00Z",
+        "evidence_class": 2,
+        "prev_hash": "2e0d5c1cbb19b78cdcc5fd5a914a7b4c434a85193e38bcd3123df5ae8cd25739",
+        "content_hash": "6c0f5b6ca938526311b690bb083981e005b36d9880d20ccd26f9d1abc72a6d91"
+      },
+      {
+        "item_id": "env_00411-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00411",
+          "amount_paise": 7700,
+          "currency": "INR",
+          "receipt": "zep_00411"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:17:25Z",
+        "evidence_class": 3,
+        "prev_hash": "6c0f5b6ca938526311b690bb083981e005b36d9880d20ccd26f9d1abc72a6d91",
+        "content_hash": "f6572c60015e8963c56bbc796f1b1c889684176ca9e4ac6e190504220d0ffcc7"
+      },
+      {
+        "item_id": "env_00411-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00411",
+          "order_id": "order_00411",
+          "amount_paise": 7700,
+          "status": "captured",
+          "block_id": "blk_00411",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:17:30Z",
+        "evidence_class": 3,
+        "prev_hash": "f6572c60015e8963c56bbc796f1b1c889684176ca9e4ac6e190504220d0ffcc7",
+        "content_hash": "b79e558472722aba9d70de25766cf943d0034f895f841426f94d9253255482b8"
+      },
+      {
+        "item_id": "env_00411-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Amul full cream milk. Payment complete.",
+          "claimed_sku": "amul-milk-full_cream-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_328",
+        "emitted_at": "2026-09-02T22:32:00Z",
+        "evidence_class": 0,
+        "prev_hash": "b79e558472722aba9d70de25766cf943d0034f895f841426f94d9253255482b8",
+        "content_hash": "799e1bae0c69639e488cfa2c7e2b9e9528daf313e833b57ca662473bdbc5f9af"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "amul-milk-full_cream-1000",
+    "ordered_sku": "amul-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 7700,
+    "rationale": "Order names amul; fulfilment shipped mother_dairy. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00028",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00028",
+    "created_at": "2026-09-03T00:56:00Z",
+    "expires_at": "2026-09-03T06:56:00Z",
+    "user_id": "usr_9004",
+    "agent_id": "agt_668",
+    "block": {
+      "block_id": "blk_00028",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-27T00:56:00Z",
+      "expires_at": "2026-10-25T00:56:00Z"
+    },
+    "hard": {
+      "category": "milk",
+      "max_unit_price_paise": 9600,
+      "max_total_paise": 9600,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "mother_dairy",
+      "variant": "toned",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1L Mother Dairy toned milk from Zepto, keep it under 96 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "d63147334122a0a2201eb27f158669ccbc17e867971a9e89ff94e27a855ce4e2",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00028",
+    "obligation_hash": "d63147334122a0a2201eb27f158669ccbc17e867971a9e89ff94e27a855ce4e2",
+    "items": [
+      {
+        "item_id": "env_00028-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "amul-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6600
+            }
+          ]
+        },
+        "emitted_by": "agt_668",
+        "emitted_at": "2026-09-03T00:56:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "237a006ea136768bf0a7363832f548d6286834b3bd596eba5a2ad7bf742edd88"
+      },
+      {
+        "item_id": "env_00028-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00028",
+          "lines": [
+            {
+              "sku": "amul-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6600
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:56:20Z",
+        "evidence_class": 2,
+        "prev_hash": "237a006ea136768bf0a7363832f548d6286834b3bd596eba5a2ad7bf742edd88",
+        "content_hash": "cc9c88ea90bbfa176c0f741c9f7fa1cb6c2467544bf1f70d89da94f917ee47ab"
+      },
+      {
+        "item_id": "env_00028-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00028",
+          "lines": [
+            {
+              "sku": "amul-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:10:00Z",
+        "evidence_class": 2,
+        "prev_hash": "cc9c88ea90bbfa176c0f741c9f7fa1cb6c2467544bf1f70d89da94f917ee47ab",
+        "content_hash": "987fd27725c217a0325213b09b43437ed058ef1aa0ebae933dc361632567c2da"
+      },
+      {
+        "item_id": "env_00028-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00028",
+          "amount_paise": 6600,
+          "currency": "INR",
+          "receipt": "zep_00028"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:56:25Z",
+        "evidence_class": 3,
+        "prev_hash": "987fd27725c217a0325213b09b43437ed058ef1aa0ebae933dc361632567c2da",
+        "content_hash": "9d53b268c394e064872927ce24a7717d59d39e37dc18aa477c34e6bb6eaacb50"
+      },
+      {
+        "item_id": "env_00028-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00028",
+          "order_id": "order_00028",
+          "amount_paise": 6600,
+          "status": "captured",
+          "block_id": "blk_00028",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:56:30Z",
+        "evidence_class": 3,
+        "prev_hash": "9d53b268c394e064872927ce24a7717d59d39e37dc18aa477c34e6bb6eaacb50",
+        "content_hash": "036f1bbf75d8290f54da1bde3eb46904a8bf9385b48636fda2df243585d59cd2"
+      },
+      {
+        "item_id": "env_00028-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Amul toned milk. Payment complete.",
+          "claimed_sku": "amul-milk-toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_668",
+        "emitted_at": "2026-09-03T01:11:00Z",
+        "evidence_class": 0,
+        "prev_hash": "036f1bbf75d8290f54da1bde3eb46904a8bf9385b48636fda2df243585d59cd2",
+        "content_hash": "d8dbf0de6df43236f698a1919714a0e6bbd12934ffd411299a0beab96aaf5e11"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "CART_DRIFT",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "mother_dairy-milk-toned-1000",
+    "ordered_sku": "amul-milk-toned-1000",
+    "delivered_sku": "amul-milk-toned-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 6600,
+    "rationale": "Hard constraint violated, detectable without a model. Obligation captured brand 'mother_dairy'; agent ordered 'amul'."
+  }
+}

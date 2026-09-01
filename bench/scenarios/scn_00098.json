@@ -1,0 +1,191 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00098",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00098",
+    "created_at": "2026-09-03T00:10:00Z",
+    "expires_at": "2026-09-03T06:10:00Z",
+    "user_id": "usr_2443",
+    "agent_id": "agt_547",
+    "block": {
+      "block_id": "blk_00098",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-31T00:10:00Z",
+      "expires_at": "2026-10-10T00:10:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 7819,
+      "max_total_paise": 7819,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "aashirvaad",
+      "variant": "semolina",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1kg Aashirvaad sooji from Blinkit, keep it under 78 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "fa75250976ec7e215532dbc634ef1479732d1b8fe7ba5f67d011a44384b376e2",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00098",
+    "obligation_hash": "fa75250976ec7e215532dbc634ef1479732d1b8fe7ba5f67d011a44384b376e2",
+    "items": [
+      {
+        "item_id": "env_00098-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-semolina-1000",
+              "quantity": 1,
+              "unit_price_paise": 6800
+            }
+          ]
+        },
+        "emitted_by": "agt_547",
+        "emitted_at": "2026-09-03T00:10:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "e1810bad0f334f48159a17068b05586b0a1f70884d5860af8f695ad046b97e73"
+      },
+      {
+        "item_id": "env_00098-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00098",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-semolina-1000",
+              "quantity": 1,
+              "unit_price_paise": 6800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:10:20Z",
+        "evidence_class": 2,
+        "prev_hash": "e1810bad0f334f48159a17068b05586b0a1f70884d5860af8f695ad046b97e73",
+        "content_hash": "63ee5110d13aedf7ba10c4cfa783e1aa4a4ad9269cc85b48dc50d78ae07fb36f"
+      },
+      {
+        "item_id": "env_00098-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00098",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-semolina-1000",
+              "quantity": 1,
+              "unit_price_paise": 6800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:24:00Z",
+        "evidence_class": 2,
+        "prev_hash": "63ee5110d13aedf7ba10c4cfa783e1aa4a4ad9269cc85b48dc50d78ae07fb36f",
+        "content_hash": "729b5fbf30a1fc65f5d75563de2973c20d0a3b73ad95dd0bd68cbf0df6887bd7"
+      },
+      {
+        "item_id": "env_00098-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00098",
+          "amount_paise": 6800,
+          "currency": "INR",
+          "receipt": "zep_00098"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:10:25Z",
+        "evidence_class": 3,
+        "prev_hash": "729b5fbf30a1fc65f5d75563de2973c20d0a3b73ad95dd0bd68cbf0df6887bd7",
+        "content_hash": "935de005d71280d25f55ebcf87ebada77edd8025d7da4b7ca7cf1b3617ded05d"
+      },
+      {
+        "item_id": "env_00098-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00098",
+          "order_id": "order_00098",
+          "amount_paise": 6800,
+          "status": "captured",
+          "block_id": "blk_00098",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:10:30Z",
+        "evidence_class": 3,
+        "prev_hash": "935de005d71280d25f55ebcf87ebada77edd8025d7da4b7ca7cf1b3617ded05d",
+        "content_hash": "e0e63083c131fbf904783877b17ec9dac50cd413748f13fa2c1e8d525011270e"
+      },
+      {
+        "item_id": "env_00098-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00098b",
+          "order_id": "order_00098",
+          "amount_paise": 6800,
+          "status": "captured",
+          "block_id": "blk_00098",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:10:34Z",
+        "evidence_class": 3,
+        "prev_hash": "e0e63083c131fbf904783877b17ec9dac50cd413748f13fa2c1e8d525011270e",
+        "content_hash": "b92af59a9524eb51dc906c056df70563bb646ec5402d32082de985d1f5647546"
+      },
+      {
+        "item_id": "env_00098-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad sooji. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-semolina-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_547",
+        "emitted_at": "2026-09-03T00:25:00Z",
+        "evidence_class": 0,
+        "prev_hash": "b92af59a9524eb51dc906c056df70563bb646ec5402d32082de985d1f5647546",
+        "content_hash": "61a05e5278202c3cb4cacc35412ed7c24ad796faa58bf7ba8341371c21025f9d"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-semolina-1000",
+    "ordered_sku": "aashirvaad-flour-semolina-1000",
+    "delivered_sku": "aashirvaad-flour-semolina-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 6800,
+    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+  }
+}

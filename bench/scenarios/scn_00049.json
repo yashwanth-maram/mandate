@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00049",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00049",
+    "created_at": "2026-09-02T20:37:00Z",
+    "expires_at": "2026-09-03T02:37:00Z",
+    "user_id": "usr_9165",
+    "agent_id": "agt_833",
+    "block": {
+      "block_id": "blk_00049",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-24T20:37:00Z",
+      "expires_at": "2026-10-18T20:37:00Z"
+    },
+    "hard": {
+      "category": "bread",
+      "max_unit_price_paise": 8700,
+      "max_total_paise": 8700,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "britannia",
+      "variant": null,
+      "pack_size_g": 400
+    },
+    "intent": {
+      "text": "I need 400g Britannia multigrain bread, use Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "e2dae80eeee5b5de3412da80a2fd6f7d60b4f76efe036f2237803098c7d23068",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00049",
+    "obligation_hash": "e2dae80eeee5b5de3412da80a2fd6f7d60b4f76efe036f2237803098c7d23068",
+    "items": [
+      {
+        "item_id": "env_00049-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "britannia-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "agt_833",
+        "emitted_at": "2026-09-02T20:37:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "cd576f0e9040f89f0f17ded664e9e1786daa757d53b5cd1a21ffe6d10a221e08"
+      },
+      {
+        "item_id": "env_00049-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00049",
+          "lines": [
+            {
+              "sku": "britannia-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:37:20Z",
+        "evidence_class": 2,
+        "prev_hash": "cd576f0e9040f89f0f17ded664e9e1786daa757d53b5cd1a21ffe6d10a221e08",
+        "content_hash": "56049ea36482707269bb737ffdeb0f84ac068be02439312cb58ccce8834b5e5d"
+      },
+      {
+        "item_id": "env_00049-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00049",
+          "lines": [
+            {
+              "sku": "britannia-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:51:00Z",
+        "evidence_class": 2,
+        "prev_hash": "56049ea36482707269bb737ffdeb0f84ac068be02439312cb58ccce8834b5e5d",
+        "content_hash": "c5596b6504cc84adcbd8b1de7b22cd092cf87076753401c5094b9620f8f361e5"
+      },
+      {
+        "item_id": "env_00049-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00049",
+          "amount_paise": 4500,
+          "currency": "INR",
+          "receipt": "zep_00049"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:37:25Z",
+        "evidence_class": 3,
+        "prev_hash": "c5596b6504cc84adcbd8b1de7b22cd092cf87076753401c5094b9620f8f361e5",
+        "content_hash": "24c909caa234807070caf7a228118a7adacc6e10ec309c200e7795a2b5a3c966"
+      },
+      {
+        "item_id": "env_00049-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00049",
+          "order_id": "order_00049",
+          "amount_paise": 4500,
+          "status": "captured",
+          "block_id": "blk_00049",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:37:30Z",
+        "evidence_class": 3,
+        "prev_hash": "24c909caa234807070caf7a228118a7adacc6e10ec309c200e7795a2b5a3c966",
+        "content_hash": "ba3f44a11b4e5e6bd51dcf6e31cc8e2dc688dd2679700cb8ab12c83b89c1afbb"
+      },
+      {
+        "item_id": "env_00049-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 400g Britannia white bread. Payment complete.",
+          "claimed_sku": "britannia-bread-white-400",
+          "claims_success": true
+        },
+        "emitted_by": "agt_833",
+        "emitted_at": "2026-09-02T20:52:00Z",
+        "evidence_class": 0,
+        "prev_hash": "ba3f44a11b4e5e6bd51dcf6e31cc8e2dc688dd2679700cb8ab12c83b89c1afbb",
+        "content_hash": "6e6247985b54373e34213f739e4ed9e502194f5bfcec8335a1b5d02bf83c6580"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "INTENT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "britannia-bread-multigrain-400",
+    "ordered_sku": "britannia-bread-white-400",
+    "delivered_sku": "britannia-bread-white-400",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 4500,
+    "rationale": "User asked for multigrain; agent ordered white. Same brand, same pack, Rs 17.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+  }
+}

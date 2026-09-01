@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00096",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00096",
+    "created_at": "2026-09-02T18:43:00Z",
+    "expires_at": "2026-09-03T00:43:00Z",
+    "user_id": "usr_8147",
+    "agent_id": "agt_119",
+    "block": {
+      "block_id": "blk_00096",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-19T18:43:00Z",
+      "expires_at": "2026-10-31T18:43:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 7000,
+      "max_total_paise": 7000,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "tata",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1kg Tata iodised salt from Swiggy Instamart",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "8193a73830f4ad258190939fcf38986729fd118db5149f401f9f9fe3da914e06",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00096",
+    "obligation_hash": "8193a73830f4ad258190939fcf38986729fd118db5149f401f9f9fe3da914e06",
+    "items": [
+      {
+        "item_id": "env_00096-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "agt_119",
+        "emitted_at": "2026-09-02T18:43:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "773914a1cebe27b456be7f40aef8a9e94b2040d232e62bc040c7de7fca43bf33"
+      },
+      {
+        "item_id": "env_00096-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00096",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:43:20Z",
+        "evidence_class": 2,
+        "prev_hash": "773914a1cebe27b456be7f40aef8a9e94b2040d232e62bc040c7de7fca43bf33",
+        "content_hash": "cdd48043f807e39fc5901c457122cc6d07691b37393de9c05c84983d5c14f7b5"
+      },
+      {
+        "item_id": "env_00096-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00096",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:57:00Z",
+        "evidence_class": 2,
+        "prev_hash": "cdd48043f807e39fc5901c457122cc6d07691b37393de9c05c84983d5c14f7b5",
+        "content_hash": "514f2c2f354e245fe4d2fb6fcef09221337c4f1dbf91ff19759080620709fbd8"
+      },
+      {
+        "item_id": "env_00096-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00096",
+          "amount_paise": 4500,
+          "currency": "INR",
+          "receipt": "zep_00096"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:43:25Z",
+        "evidence_class": 3,
+        "prev_hash": "514f2c2f354e245fe4d2fb6fcef09221337c4f1dbf91ff19759080620709fbd8",
+        "content_hash": "8f3c3bbc8f916375c91864934be01a6ee1fac72ff2d02ed0b2345269de3a92bd"
+      },
+      {
+        "item_id": "env_00096-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00096",
+          "order_id": "order_00096",
+          "amount_paise": 4500,
+          "status": "captured",
+          "block_id": "blk_00096",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:43:30Z",
+        "evidence_class": 3,
+        "prev_hash": "8f3c3bbc8f916375c91864934be01a6ee1fac72ff2d02ed0b2345269de3a92bd",
+        "content_hash": "233077f34690a946bde474447ab066857aa6966d1d521e13185115f0524ecabe"
+      },
+      {
+        "item_id": "env_00096-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata low sodium salt. Payment complete.",
+          "claimed_sku": "tata-salt-low_sodium-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_119",
+        "emitted_at": "2026-09-02T18:58:00Z",
+        "evidence_class": 0,
+        "prev_hash": "233077f34690a946bde474447ab066857aa6966d1d521e13185115f0524ecabe",
+        "content_hash": "688efdd9573e626fe1659339e545f7810863f35f15554ebb88512a2c039a3b81"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "INTENT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-low_sodium-1000",
+    "delivered_sku": "tata-salt-low_sodium-1000",
+    "is_hard_pair": true,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 4500,
+    "rationale": "User asked for iodised salt; agent ordered low sodium salt. Same brand, same pack, Rs 17.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+  }
+}

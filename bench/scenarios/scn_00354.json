@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00354",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00354",
+    "created_at": "2026-09-03T03:47:00Z",
+    "expires_at": "2026-09-03T09:47:00Z",
+    "user_id": "usr_9095",
+    "agent_id": "agt_252",
+    "block": {
+      "block_id": "blk_00354",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T03:47:00Z",
+      "expires_at": "2026-10-27T03:47:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 40825,
+      "max_total_paise": 40825,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "aashirvaad",
+      "variant": "whole_wheat",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "get me 5kg Aashirvaad atta from Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "5c2dd747a5122df7cd93d055300add3c0f33924683f2b1d71f06a5e766cecde0",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00354",
+    "obligation_hash": "5c2dd747a5122df7cd93d055300add3c0f33924683f2b1d71f06a5e766cecde0",
+    "items": [
+      {
+        "item_id": "env_00354-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ]
+        },
+        "emitted_by": "agt_252",
+        "emitted_at": "2026-09-03T03:47:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "b2a1fe4afa3ac6834039bfde6c8448f602383f232889e33b94fe5af3f7621024"
+      },
+      {
+        "item_id": "env_00354-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00354",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:47:20Z",
+        "evidence_class": 2,
+        "prev_hash": "b2a1fe4afa3ac6834039bfde6c8448f602383f232889e33b94fe5af3f7621024",
+        "content_hash": "2d8a21f1d294f41297fe1508849ea456ad70ae165cf3fb29a35331d167a361fd"
+      },
+      {
+        "item_id": "env_00354-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00354",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T04:01:00Z",
+        "evidence_class": 2,
+        "prev_hash": "2d8a21f1d294f41297fe1508849ea456ad70ae165cf3fb29a35331d167a361fd",
+        "content_hash": "1ab0973f89d2878c2339d1fc9cbce93fd2f1488ebecb6a645480e836c6dbd127"
+      },
+      {
+        "item_id": "env_00354-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00354",
+          "amount_paise": 38963,
+          "currency": "INR",
+          "receipt": "zep_00354"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:47:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1ab0973f89d2878c2339d1fc9cbce93fd2f1488ebecb6a645480e836c6dbd127",
+        "content_hash": "72e27681cbf39c47b927b3341373512604fee0d4eb42f53c884a33a31a64b30b"
+      },
+      {
+        "item_id": "env_00354-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00354",
+          "order_id": "order_00354",
+          "amount_paise": 38963,
+          "status": "captured",
+          "block_id": "blk_00354",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:47:30Z",
+        "evidence_class": 3,
+        "prev_hash": "72e27681cbf39c47b927b3341373512604fee0d4eb42f53c884a33a31a64b30b",
+        "content_hash": "6f8acbdefc3f83d6a6d955fc9100e271ac6824f0ab336156a249eae661d5576f"
+      },
+      {
+        "item_id": "env_00354-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_252",
+        "emitted_at": "2026-09-03T04:02:00Z",
+        "evidence_class": 0,
+        "prev_hash": "6f8acbdefc3f83d6a6d955fc9100e271ac6824f0ab336156a249eae661d5576f",
+        "content_hash": "58560c1c8560167d0d2ba9131c35008e6b9f40fdc24971e7fca2c4b0f13dc1fe"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-flour-whole_wheat-5000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 3463,
+    "rationale": "Correct item, unreconcilable debit. Debited 38963 paise against an order worth 35500 paise."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00184",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00184",
+    "created_at": "2026-09-02T20:16:00Z",
+    "expires_at": "2026-09-03T02:16:00Z",
+    "user_id": "usr_6697",
+    "agent_id": "agt_221",
+    "block": {
+      "block_id": "blk_00184",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T20:16:00Z",
+      "expires_at": "2026-10-19T20:16:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 44275,
+      "max_total_paise": 44275,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "fortune",
+      "variant": "multigrain",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "buy 5kg Fortune multigrain atta from Blinkit, keep it under 442 rupees",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "24202521b96fb7d8c0e66449fe2578846caeb4439c45fa8137e0b8e8e04a1595",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00184",
+    "obligation_hash": "24202521b96fb7d8c0e66449fe2578846caeb4439c45fa8137e0b8e8e04a1595",
+    "items": [
+      {
+        "item_id": "env_00184-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
+        },
+        "emitted_by": "agt_221",
+        "emitted_at": "2026-09-02T20:16:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "1af76a32fe793fd35a4ba905dc437a637333cb6f1cf23021dbbb5c502ba4663a"
+      },
+      {
+        "item_id": "env_00184-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00184",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:16:20Z",
+        "evidence_class": 2,
+        "prev_hash": "1af76a32fe793fd35a4ba905dc437a637333cb6f1cf23021dbbb5c502ba4663a",
+        "content_hash": "4f7046d2e913cef67899da969bf546e1a232c5f136d037314f891d1da735f24b"
+      },
+      {
+        "item_id": "env_00184-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00184",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:30:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4f7046d2e913cef67899da969bf546e1a232c5f136d037314f891d1da735f24b",
+        "content_hash": "c5469da90dafef101793a9dc0a430c5d2cb17c3cb04365a170b9719b4fb252ce"
+      },
+      {
+        "item_id": "env_00184-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00184",
+          "amount_paise": 41166,
+          "currency": "INR",
+          "receipt": "zep_00184"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:16:25Z",
+        "evidence_class": 3,
+        "prev_hash": "c5469da90dafef101793a9dc0a430c5d2cb17c3cb04365a170b9719b4fb252ce",
+        "content_hash": "565f15762406e8adbdc62c3bf429b722b2c8a9d451755a77e32ef50f5f381fdc"
+      },
+      {
+        "item_id": "env_00184-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00184",
+          "order_id": "order_00184",
+          "amount_paise": 41166,
+          "status": "captured",
+          "block_id": "blk_00184",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:16:30Z",
+        "evidence_class": 3,
+        "prev_hash": "565f15762406e8adbdc62c3bf429b722b2c8a9d451755a77e32ef50f5f381fdc",
+        "content_hash": "b0665de0dec48f09bfd72c34e573aaa57647c00b44f522c34b624694199c391b"
+      },
+      {
+        "item_id": "env_00184-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Fortune multigrain atta. Payment complete.",
+          "claimed_sku": "fortune-flour-multigrain-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_221",
+        "emitted_at": "2026-09-02T20:31:00Z",
+        "evidence_class": 0,
+        "prev_hash": "b0665de0dec48f09bfd72c34e573aaa57647c00b44f522c34b624694199c391b",
+        "content_hash": "42c076748dc6672fe78c11c6347b0fbd1a4b61107d5b4a70d9761c525d26eacd"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-flour-multigrain-5000",
+    "ordered_sku": "fortune-flour-multigrain-5000",
+    "delivered_sku": "fortune-flour-multigrain-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 2666,
+    "rationale": "Correct item, unreconcilable debit. Debited 41166 paise against an order worth 38500 paise."
+  }
+}

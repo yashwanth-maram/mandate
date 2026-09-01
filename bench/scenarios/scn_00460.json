@@ -1,0 +1,191 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00460",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00460",
+    "created_at": "2026-09-02T20:54:00Z",
+    "expires_at": "2026-09-03T02:54:00Z",
+    "user_id": "usr_1468",
+    "agent_id": "agt_135",
+    "block": {
+      "block_id": "blk_00460",
+      "blocked_paise": 1000000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-22T20:54:00Z",
+      "expires_at": "2026-10-29T20:54:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "tata",
+      "variant": "iodised",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "I need 1kg Tata iodised salt, use Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "5b58ef6eb86eb583076c5f495e6efe7c2d1c3c39bf0f0c23f80cb6e0494601ae",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00460",
+    "obligation_hash": "5b58ef6eb86eb583076c5f495e6efe7c2d1c3c39bf0f0c23f80cb6e0494601ae",
+    "items": [
+      {
+        "item_id": "env_00460-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "agt_135",
+        "emitted_at": "2026-09-02T20:54:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "1b47214d502f9f20eade728a9fa985f8310954cddcba54bc076c41a044a01035"
+      },
+      {
+        "item_id": "env_00460-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00460",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:54:20Z",
+        "evidence_class": 2,
+        "prev_hash": "1b47214d502f9f20eade728a9fa985f8310954cddcba54bc076c41a044a01035",
+        "content_hash": "3415eb7780571695241e7f8e7bf7bba6286aef19df8ba75cdce1f6dbe73064b0"
+      },
+      {
+        "item_id": "env_00460-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00460",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:08:00Z",
+        "evidence_class": 2,
+        "prev_hash": "3415eb7780571695241e7f8e7bf7bba6286aef19df8ba75cdce1f6dbe73064b0",
+        "content_hash": "0f8940a82252f12a935fa4f4914715ed64863f5eb924f6c4aa438e5b560552ec"
+      },
+      {
+        "item_id": "env_00460-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00460",
+          "amount_paise": 2800,
+          "currency": "INR",
+          "receipt": "zep_00460"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:54:25Z",
+        "evidence_class": 3,
+        "prev_hash": "0f8940a82252f12a935fa4f4914715ed64863f5eb924f6c4aa438e5b560552ec",
+        "content_hash": "e8535946e671a9198b410e3e5b00354a0cf5aa2a0a92d44018bfe579883e065d"
+      },
+      {
+        "item_id": "env_00460-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00460",
+          "order_id": "order_00460",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00460",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:54:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e8535946e671a9198b410e3e5b00354a0cf5aa2a0a92d44018bfe579883e065d",
+        "content_hash": "af24afae62cd16205c44b2e3929173285186352238b3be6efb5b84205f34631b"
+      },
+      {
+        "item_id": "env_00460-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00460b",
+          "order_id": "order_00460",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00460",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:54:34Z",
+        "evidence_class": 3,
+        "prev_hash": "af24afae62cd16205c44b2e3929173285186352238b3be6efb5b84205f34631b",
+        "content_hash": "0b94af192765325e5b9a2b4270bc1283271f2fa0032f2af6851a3481203211cd"
+      },
+      {
+        "item_id": "env_00460-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_135",
+        "emitted_at": "2026-09-02T21:09:00Z",
+        "evidence_class": 0,
+        "prev_hash": "0b94af192765325e5b9a2b4270bc1283271f2fa0032f2af6851a3481203211cd",
+        "content_hash": "6eac759909c7a16b770012f9fbe247ea9c6f24f6e8217381d0a52843f9e11e63"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "DEBIT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 2800,
+    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+  }
+}

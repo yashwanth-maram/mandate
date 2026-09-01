@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00138",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00138",
+    "created_at": "2026-09-03T00:15:00Z",
+    "expires_at": "2026-09-03T06:15:00Z",
+    "user_id": "usr_7521",
+    "agent_id": "agt_421",
+    "block": {
+      "block_id": "blk_00138",
+      "blocked_paise": 54510,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-14T00:15:00Z",
+      "expires_at": "2026-10-11T00:15:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 18170,
+      "max_total_paise": 18170,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "blinkit"
+      ],
+      "brand": "dhara",
+      "variant": "mustard",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1L Dhara kachi ghani mustard oil on Blinkit",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "02a83b3fe5c1f23a982dd26d72898c46ba7481646b3ffab9706ca7bc1cfc5a64",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00138",
+    "obligation_hash": "02a83b3fe5c1f23a982dd26d72898c46ba7481646b3ffab9706ca7bc1cfc5a64",
+    "items": [
+      {
+        "item_id": "env_00138-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "dhara-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 15800
+            }
+          ]
+        },
+        "emitted_by": "agt_421",
+        "emitted_at": "2026-09-03T00:15:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "ee0bfeeebd6eeabbece06281df3fa0e8f133b927f43decf1bdfa4ea40a2d9204"
+      },
+      {
+        "item_id": "env_00138-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00138",
+          "lines": [
+            {
+              "sku": "dhara-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 15800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:15:20Z",
+        "evidence_class": 2,
+        "prev_hash": "ee0bfeeebd6eeabbece06281df3fa0e8f133b927f43decf1bdfa4ea40a2d9204",
+        "content_hash": "010b4270af4d428c7cf07f70335f5b46946591474640b061283145104ddfb214"
+      },
+      {
+        "item_id": "env_00138-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00138",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:29:00Z",
+        "evidence_class": 2,
+        "prev_hash": "010b4270af4d428c7cf07f70335f5b46946591474640b061283145104ddfb214",
+        "content_hash": "09ef6c665b382579ab5af5787a613b5597da0094e9d0dc6070640978a72417de"
+      },
+      {
+        "item_id": "env_00138-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00138",
+          "amount_paise": 15800,
+          "currency": "INR",
+          "receipt": "zep_00138"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:15:25Z",
+        "evidence_class": 3,
+        "prev_hash": "09ef6c665b382579ab5af5787a613b5597da0094e9d0dc6070640978a72417de",
+        "content_hash": "c3c51d0fdf21a42de88ac18075326bc7f9a9fca8fcb668dacc2a47daa9f48a14"
+      },
+      {
+        "item_id": "env_00138-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00138",
+          "order_id": "order_00138",
+          "amount_paise": 15800,
+          "status": "captured",
+          "block_id": "blk_00138",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:15:30Z",
+        "evidence_class": 3,
+        "prev_hash": "c3c51d0fdf21a42de88ac18075326bc7f9a9fca8fcb668dacc2a47daa9f48a14",
+        "content_hash": "4c130c74ad8326f2194c33638540c4ea7efd0126f6e9dc69f23dc90ff3770aec"
+      },
+      {
+        "item_id": "env_00138-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "dhara-edible_oil-mustard-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_421",
+        "emitted_at": "2026-09-03T00:30:00Z",
+        "evidence_class": 0,
+        "prev_hash": "4c130c74ad8326f2194c33638540c4ea7efd0126f6e9dc69f23dc90ff3770aec",
+        "content_hash": "574be80c72dc5d36dfd6415f85dc203e87f6bc919ade15f5c6efecc6c82df09d"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "dhara-edible_oil-mustard-1000",
+    "ordered_sku": "dhara-edible_oil-mustard-1000",
+    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 15800,
+    "rationale": "Order names dhara; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

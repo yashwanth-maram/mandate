@@ -1,0 +1,187 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00115",
+  "seed": 42,
+  "split": "heldout",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00115",
+    "created_at": "2026-09-03T03:06:00Z",
+    "expires_at": "2026-09-03T09:06:00Z",
+    "user_id": "usr_4918",
+    "agent_id": "agt_416",
+    "block": {
+      "block_id": "blk_00115",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-19T03:06:00Z",
+      "expires_at": "2026-10-31T03:06:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "tata",
+      "variant": "iodised",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "order 1kg Tata iodised salt on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "8de3772bfc4c96732ae2bd7f0035f0ed8633b2dd23de4834e52c804671345e56",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00115",
+    "obligation_hash": "8de3772bfc4c96732ae2bd7f0035f0ed8633b2dd23de4834e52c804671345e56",
+    "items": [
+      {
+        "item_id": "env_00115-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "agt_416",
+        "emitted_at": "2026-09-03T03:06:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "67abd4f3f34f53804539466d6d4eaa5a64c64d562caffe463fa58d439f2fe511"
+      },
+      {
+        "item_id": "env_00115-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00115",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:06:20Z",
+        "evidence_class": 2,
+        "prev_hash": "67abd4f3f34f53804539466d6d4eaa5a64c64d562caffe463fa58d439f2fe511",
+        "content_hash": "b8985fe7b0e15f9912431d8e0570f0f458f5261200c90041348d5fe8f3c509c0"
+      },
+      {
+        "item_id": "env_00115-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00115",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:20:00Z",
+        "evidence_class": 2,
+        "prev_hash": "b8985fe7b0e15f9912431d8e0570f0f458f5261200c90041348d5fe8f3c509c0",
+        "content_hash": "3fea977017da7d2f479ddafb8e324bb141317616daf7c1770941a4b072eb96c2"
+      },
+      {
+        "item_id": "env_00115-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00115",
+          "amount_paise": 2800,
+          "currency": "INR",
+          "receipt": "zep_00115"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:06:25Z",
+        "evidence_class": 3,
+        "prev_hash": "3fea977017da7d2f479ddafb8e324bb141317616daf7c1770941a4b072eb96c2",
+        "content_hash": "6d1fb1c14107c290c7a90ef361055c3869c89044b44f4eaeba60414d7040939e"
+      },
+      {
+        "item_id": "env_00115-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00115",
+          "order_id": "order_00115",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00115",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:06:30Z",
+        "evidence_class": 3,
+        "prev_hash": "6d1fb1c14107c290c7a90ef361055c3869c89044b44f4eaeba60414d7040939e",
+        "content_hash": "d0870cf664b580f0e6d56078c2d05584ce95ba6d6477f718a06829a4979e410e"
+      },
+      {
+        "item_id": "env_00115-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_416",
+        "emitted_at": "2026-09-03T03:21:00Z",
+        "evidence_class": 0,
+        "prev_hash": "d0870cf664b580f0e6d56078c2d05584ce95ba6d6477f718a06829a4979e410e",
+        "content_hash": "6276a9cbe66c34ed62dfcc8785d253d391010aadd75af285372f2591db378666"
+      },
+      {
+        "item_id": "env_00115-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "This isn't what I wanted, the agent got it wrong.",
+          "raised_at": "2026-09-03T06:06:00Z"
+        },
+        "emitted_by": "usr_4918",
+        "emitted_at": "2026-09-03T06:06:00Z",
+        "evidence_class": 0,
+        "prev_hash": "6276a9cbe66c34ed62dfcc8785d253d391010aadd75af285372f2591db378666",
+        "content_hash": "9bf0bcc7d162605d53859410af4a0cbe9476b8dd9265ffc17ccc92a28f92cf36"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "USER_REGRET",
+    "liable_party": "USER",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 2800,
+    "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
+  }
+}

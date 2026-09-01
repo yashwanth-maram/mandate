@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00188",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00188",
+    "created_at": "2026-09-02T18:49:00Z",
+    "expires_at": "2026-09-03T00:49:00Z",
+    "user_id": "usr_5009",
+    "agent_id": "agt_858",
+    "block": {
+      "block_id": "blk_00188",
+      "blocked_paise": 117300,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-01T18:49:00Z",
+      "expires_at": "2026-10-14T18:49:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 39100,
+      "max_total_paise": 39100,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "fortune",
+      "variant": null,
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "buy 5kg Fortune atta from Swiggy Instamart, keep it under 391 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "8e988976fec12b306b1f0bc70ebc4dede3f4341d9e953c9ab736e009539d27f9",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00188",
+    "obligation_hash": "8e988976fec12b306b1f0bc70ebc4dede3f4341d9e953c9ab736e009539d27f9",
+    "items": [
+      {
+        "item_id": "env_00188-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34000
+            }
+          ]
+        },
+        "emitted_by": "agt_858",
+        "emitted_at": "2026-09-02T18:49:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "5d042d6934d59c97681fe5da857650aeea6051612fb52136a10e3213726bd694"
+      },
+      {
+        "item_id": "env_00188-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00188",
+          "lines": [
+            {
+              "sku": "fortune-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:49:20Z",
+        "evidence_class": 2,
+        "prev_hash": "5d042d6934d59c97681fe5da857650aeea6051612fb52136a10e3213726bd694",
+        "content_hash": "0f8e9c45450342105bc234477229cc00e0d4d1f9eb15843637801e454370587a"
+      },
+      {
+        "item_id": "env_00188-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00188",
+          "lines": [
+            {
+              "sku": "fortune-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0f8e9c45450342105bc234477229cc00e0d4d1f9eb15843637801e454370587a",
+        "content_hash": "a025551b04318574c48dfc0b12caf7569542565d53c80602bb93892ca8f08aba"
+      },
+      {
+        "item_id": "env_00188-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00188",
+          "amount_paise": 34000,
+          "currency": "INR",
+          "receipt": "zep_00188"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "a025551b04318574c48dfc0b12caf7569542565d53c80602bb93892ca8f08aba",
+        "content_hash": "0dff9c81adf3a823628a83a19f7497a35468d4a76f0a32e3e9e889adcf1f664e"
+      },
+      {
+        "item_id": "env_00188-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00188",
+          "order_id": "order_00188",
+          "amount_paise": 34000,
+          "status": "captured",
+          "block_id": "blk_00188",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "0dff9c81adf3a823628a83a19f7497a35468d4a76f0a32e3e9e889adcf1f664e",
+        "content_hash": "cf1d1e2ed6c782bbb5b12c36db08a16ddc9cc0c01056478d152755a82fd9120f"
+      },
+      {
+        "item_id": "env_00188-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Fortune atta. Payment complete.",
+          "claimed_sku": "fortune-flour-whole_wheat-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_858",
+        "emitted_at": "2026-09-02T19:04:00Z",
+        "evidence_class": 0,
+        "prev_hash": "cf1d1e2ed6c782bbb5b12c36db08a16ddc9cc0c01056478d152755a82fd9120f",
+        "content_hash": "a9726d601e6b874eb66a402cccd57bb0f72a3c1c8176941db7b0d668d33bfcb9"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-flour-whole_wheat-5000",
+    "ordered_sku": "fortune-flour-whole_wheat-5000",
+    "delivered_sku": "fortune-flour-whole_wheat-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

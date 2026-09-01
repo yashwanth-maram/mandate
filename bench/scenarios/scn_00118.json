@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00118",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00118",
+    "created_at": "2026-09-02T22:39:00Z",
+    "expires_at": "2026-09-03T04:39:00Z",
+    "user_id": "usr_8361",
+    "agent_id": "agt_625",
+    "block": {
+      "block_id": "blk_00118",
+      "blocked_paise": 57960,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-29T22:39:00Z",
+      "expires_at": "2026-10-28T22:39:00Z"
+    },
+    "hard": {
+      "category": "edible_oil",
+      "max_unit_price_paise": 19320,
+      "max_total_paise": 19320,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "saffola",
+      "variant": null,
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "buy 1L Saffola refined sunflower oil from Zepto, keep it under 193 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "f1b45576649ca603469e3f4a3d42cfb2f9212415fe54e37a9eb5c44034bf2924",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00118",
+    "obligation_hash": "f1b45576649ca603469e3f4a3d42cfb2f9212415fe54e37a9eb5c44034bf2924",
+    "items": [
+      {
+        "item_id": "env_00118-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 16800
+            }
+          ]
+        },
+        "emitted_by": "agt_625",
+        "emitted_at": "2026-09-02T22:39:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "31f97e5068b3b462bdcf35a2bde4a360c924ca6ca0e6d7cf4104f9cc4cd0a8cf"
+      },
+      {
+        "item_id": "env_00118-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00118",
+          "lines": [
+            {
+              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 16800
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:39:20Z",
+        "evidence_class": 2,
+        "prev_hash": "31f97e5068b3b462bdcf35a2bde4a360c924ca6ca0e6d7cf4104f9cc4cd0a8cf",
+        "content_hash": "e214618217599479c1af38e98c263a47c48c2643daa7c86817437b0b58fcb858"
+      },
+      {
+        "item_id": "env_00118-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00118",
+          "lines": [
+            {
+              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 16800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:53:00Z",
+        "evidence_class": 2,
+        "prev_hash": "e214618217599479c1af38e98c263a47c48c2643daa7c86817437b0b58fcb858",
+        "content_hash": "1c8a1c9e32c778ae1e1ee225937272360fff03e1276c6d4d6010f5c047cb9928"
+      },
+      {
+        "item_id": "env_00118-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00118",
+          "amount_paise": 16800,
+          "currency": "INR",
+          "receipt": "zep_00118"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:39:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1c8a1c9e32c778ae1e1ee225937272360fff03e1276c6d4d6010f5c047cb9928",
+        "content_hash": "2373e0afea9df6f32ce7fb27790c78a4f50c72ee5a1fcb8c7f2c2af0bed2e578"
+      },
+      {
+        "item_id": "env_00118-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00118",
+          "order_id": "order_00118",
+          "amount_paise": 16800,
+          "status": "captured",
+          "block_id": "blk_00118",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:39:30Z",
+        "evidence_class": 3,
+        "prev_hash": "2373e0afea9df6f32ce7fb27790c78a4f50c72ee5a1fcb8c7f2c2af0bed2e578",
+        "content_hash": "fa5ccf0a6331085e8ecd49d15d49cfb59900c76c5c587e43a774bde598559764"
+      },
+      {
+        "item_id": "env_00118-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Saffola refined sunflower oil. Payment complete.",
+          "claimed_sku": "saffola-edible_oil-sunflower_refined-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_625",
+        "emitted_at": "2026-09-02T22:54:00Z",
+        "evidence_class": 0,
+        "prev_hash": "fa5ccf0a6331085e8ecd49d15d49cfb59900c76c5c587e43a774bde598559764",
+        "content_hash": "04718b92de9c31afca97c28b7120bebeec70651cb6ceb337c0855225b38619e0"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "ordered_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "delivered_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}

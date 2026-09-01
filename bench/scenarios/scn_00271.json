@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00271",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00271",
+    "created_at": "2026-09-02T18:47:00Z",
+    "expires_at": "2026-09-03T00:47:00Z",
+    "user_id": "usr_8729",
+    "agent_id": "agt_472",
+    "block": {
+      "block_id": "blk_00271",
+      "blocked_paise": 117300,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-21T18:47:00Z",
+      "expires_at": "2026-10-31T18:47:00Z"
+    },
+    "hard": {
+      "category": "flour",
+      "max_unit_price_paise": 39100,
+      "max_total_paise": 39100,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "fortune",
+      "variant": "whole_wheat",
+      "pack_size_g": 5000
+    },
+    "intent": {
+      "text": "order 5kg Fortune atta on Zepto",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "63595e1112e3b9bf1cd613bbf724780973242831058996db5edaf5eeb9527051",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00271",
+    "obligation_hash": "63595e1112e3b9bf1cd613bbf724780973242831058996db5edaf5eeb9527051",
+    "items": [
+      {
+        "item_id": "env_00271-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34000
+            }
+          ]
+        },
+        "emitted_by": "agt_472",
+        "emitted_at": "2026-09-02T18:47:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "3f39de6f3158d255363d2a299c0bb97c270765c626dfb1818652a69bf270a2ab"
+      },
+      {
+        "item_id": "env_00271-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00271",
+          "lines": [
+            {
+              "sku": "fortune-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34000
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:47:20Z",
+        "evidence_class": 2,
+        "prev_hash": "3f39de6f3158d255363d2a299c0bb97c270765c626dfb1818652a69bf270a2ab",
+        "content_hash": "53376fc497552d0b0085f11803220e4ca09fb87eec2fcf61f8c9a93dec141f5e"
+      },
+      {
+        "item_id": "env_00271-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00271",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:01:00Z",
+        "evidence_class": 2,
+        "prev_hash": "53376fc497552d0b0085f11803220e4ca09fb87eec2fcf61f8c9a93dec141f5e",
+        "content_hash": "a680a7bd26d031a385f4e4eba6ba4775e35cd1d05c41948442683ba329261f2e"
+      },
+      {
+        "item_id": "env_00271-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00271",
+          "amount_paise": 34000,
+          "currency": "INR",
+          "receipt": "zep_00271"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:47:25Z",
+        "evidence_class": 3,
+        "prev_hash": "a680a7bd26d031a385f4e4eba6ba4775e35cd1d05c41948442683ba329261f2e",
+        "content_hash": "9973cbe00964df6b27c9bf1ad78b97cc4d744c96f2afe4fc8dcd0b92907c6852"
+      },
+      {
+        "item_id": "env_00271-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00271",
+          "order_id": "order_00271",
+          "amount_paise": 34000,
+          "status": "captured",
+          "block_id": "blk_00271",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:47:30Z",
+        "evidence_class": 3,
+        "prev_hash": "9973cbe00964df6b27c9bf1ad78b97cc4d744c96f2afe4fc8dcd0b92907c6852",
+        "content_hash": "a8689c764994b8a82489eff393276e34f6be4ea6f779f299b9a66508e097c172"
+      },
+      {
+        "item_id": "env_00271-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 5kg Fortune atta. Payment complete.",
+          "claimed_sku": "fortune-flour-whole_wheat-5000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_472",
+        "emitted_at": "2026-09-02T19:02:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a8689c764994b8a82489eff393276e34f6be4ea6f779f299b9a66508e097c172",
+        "content_hash": "c902d51eb06d1b33a0cfeec96a96c364e2ce4607fb4b02154220798a9c51e4ac"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "MERCHANT_SUBSTITUTION",
+    "liable_party": "MERCHANT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "fortune-flour-whole_wheat-5000",
+    "ordered_sku": "fortune-flour-whole_wheat-5000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": false,
+    "loss_paise": 34000,
+    "rationale": "Order names fortune; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+  }
+}

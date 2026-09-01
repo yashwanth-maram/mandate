@@ -1,0 +1,175 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00420",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00420",
+    "created_at": "2026-09-03T02:13:00Z",
+    "expires_at": "2026-09-03T08:13:00Z",
+    "user_id": "usr_7246",
+    "agent_id": "agt_458",
+    "block": {
+      "block_id": "blk_00420",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-16T02:13:00Z",
+      "expires_at": "2026-10-28T02:13:00Z"
+    },
+    "hard": {
+      "category": "noodles",
+      "max_unit_price_paise": 13300,
+      "max_total_paise": 13300,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "zepto"
+      ],
+      "brand": "maggi",
+      "variant": null,
+      "pack_size_g": 560
+    },
+    "intent": {
+      "text": "get me 560g Maggi atta noodles from Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
+    },
+    "content_hash": "7c5c4552a281fdf09de7e0618e9b5320e2fb1989905d9f05e193a51cba0c1da9",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00420",
+    "obligation_hash": "7c5c4552a281fdf09de7e0618e9b5320e2fb1989905d9f05e193a51cba0c1da9",
+    "items": [
+      {
+        "item_id": "env_00420-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "agt_458",
+        "emitted_at": "2026-09-03T02:13:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "366cb1a3b68f12c7a4db8072d390c7b76647a89db1f6bda5b169be82d013bad7"
+      },
+      {
+        "item_id": "env_00420-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00420",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:13:20Z",
+        "evidence_class": 2,
+        "prev_hash": "366cb1a3b68f12c7a4db8072d390c7b76647a89db1f6bda5b169be82d013bad7",
+        "content_hash": "3464afbe49d901181efe75f7c62f4718c40e9e0c5d060a20e462f5e1091602e6"
+      },
+      {
+        "item_id": "env_00420-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00420",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:27:00Z",
+        "evidence_class": 2,
+        "prev_hash": "3464afbe49d901181efe75f7c62f4718c40e9e0c5d060a20e462f5e1091602e6",
+        "content_hash": "751ba22aab3396c6a4d6e4ec3401feb3a775cd42596ac9194fb6e2fe7b73ccd1"
+      },
+      {
+        "item_id": "env_00420-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00420",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00420"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:13:25Z",
+        "evidence_class": 3,
+        "prev_hash": "751ba22aab3396c6a4d6e4ec3401feb3a775cd42596ac9194fb6e2fe7b73ccd1",
+        "content_hash": "1bcdfe235739f7be0512651a2c32d4d12f1c8e946f0dc2a16f74d7383c69a9b0"
+      },
+      {
+        "item_id": "env_00420-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00420",
+          "order_id": "order_00420",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00420",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:13:30Z",
+        "evidence_class": 3,
+        "prev_hash": "1bcdfe235739f7be0512651a2c32d4d12f1c8e946f0dc2a16f74d7383c69a9b0",
+        "content_hash": "969f93326b66b0f44bbc0591018484150d5f52b2ce802561e75fa922b99f56ad"
+      },
+      {
+        "item_id": "env_00420-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-masala-560",
+          "claims_success": true
+        },
+        "emitted_by": "agt_458",
+        "emitted_at": "2026-09-03T02:28:00Z",
+        "evidence_class": 0,
+        "prev_hash": "969f93326b66b0f44bbc0591018484150d5f52b2ce802561e75fa922b99f56ad",
+        "content_hash": "8c1d0eb5197de62281a21bfbc6574151ba3c4f498832585aea35737a0bfc9bca"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "INTENT_MISMATCH",
+    "liable_party": "AGENT",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "maggi-noodles-atta-560",
+    "ordered_sku": "maggi-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
+    "is_hard_pair": true,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "BLOCK",
+    "gate_detectable": true,
+    "loss_paise": 9600,
+    "rationale": "User asked for atta; agent ordered masala. Same brand, same pack, Rs 12.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+  }
+}

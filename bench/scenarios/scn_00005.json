@@ -1,0 +1,173 @@
+{
+  "schema_version": "scenario/1.0",
+  "scenario_id": "scn_00005",
+  "seed": 42,
+  "split": "train",
+  "obligation": {
+    "schema_version": "obligation/1.0",
+    "obligation_id": "obl_00005",
+    "created_at": "2026-09-02T21:38:00Z",
+    "expires_at": "2026-09-03T03:38:00Z",
+    "user_id": "usr_9375",
+    "agent_id": "agt_584",
+    "block": {
+      "block_id": "blk_00005",
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T21:38:00Z",
+      "expires_at": "2026-10-23T21:38:00Z"
+    },
+    "hard": {
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
+      "quantity": 1,
+      "merchant_allowlist": [
+        "swiggy_instamart"
+      ],
+      "brand": "aashirvaad",
+      "variant": "iodised",
+      "pack_size_g": 1000
+    },
+    "intent": {
+      "text": "get me 1kg Aashirvaad iodised salt from Swiggy Instamart",
+      "uncaptured_attributes": []
+    },
+    "content_hash": "7d3665d0b2dbdf4415d21dce1e964ee7bffeb4bc5965ef2a81ea072a78b16dc0",
+    "signature": null,
+    "signer_key_id": null
+  },
+  "envelope": {
+    "schema_version": "evidence/1.0",
+    "envelope_id": "env_00005",
+    "obligation_hash": "7d3665d0b2dbdf4415d21dce1e964ee7bffeb4bc5965ef2a81ea072a78b16dc0",
+    "items": [
+      {
+        "item_id": "env_00005-e000",
+        "seq": 0,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "agt_584",
+        "emitted_at": "2026-09-02T21:38:00Z",
+        "evidence_class": 1,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "4fa8e7dbd47ba98ca29d0654b1796d8f095874fb6e4eabd9b5f44c81dd4c625b"
+      },
+      {
+        "item_id": "env_00005-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00005",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:38:20Z",
+        "evidence_class": 2,
+        "prev_hash": "4fa8e7dbd47ba98ca29d0654b1796d8f095874fb6e4eabd9b5f44c81dd4c625b",
+        "content_hash": "a407016f6b06ca24a987b6480b01d063e4fdfc7a2c1d20ff3a2bef08960ba993"
+      },
+      {
+        "item_id": "env_00005-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00005",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:52:00Z",
+        "evidence_class": 2,
+        "prev_hash": "a407016f6b06ca24a987b6480b01d063e4fdfc7a2c1d20ff3a2bef08960ba993",
+        "content_hash": "8a997557b39a0014b387821d52d79d968c3c3bbf384d96c6cb968fedc8071ffb"
+      },
+      {
+        "item_id": "env_00005-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00005",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00005"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:38:25Z",
+        "evidence_class": 3,
+        "prev_hash": "8a997557b39a0014b387821d52d79d968c3c3bbf384d96c6cb968fedc8071ffb",
+        "content_hash": "82216a392cae5a6291a90121115fbd86d6d0eff261c6683b6bc11f29ba6824cf"
+      },
+      {
+        "item_id": "env_00005-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00005",
+          "order_id": "order_00005",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00005",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:38:30Z",
+        "evidence_class": 3,
+        "prev_hash": "82216a392cae5a6291a90121115fbd86d6d0eff261c6683b6bc11f29ba6824cf",
+        "content_hash": "c5bf361b5491b5b83509c2e5fba340b45033cd9f1cdded53268e0e24dd868544"
+      },
+      {
+        "item_id": "env_00005-e005",
+        "seq": 5,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_584",
+        "emitted_at": "2026-09-02T21:53:00Z",
+        "evidence_class": 0,
+        "prev_hash": "c5bf361b5491b5b83509c2e5fba340b45033cd9f1cdded53268e0e24dd868544",
+        "content_hash": "27946d459a92e6d3ca5e156ed04d171cc75cae5eb75a6908467ad8254418c929"
+      }
+    ]
+  },
+  "truth": {
+    "fault_class": "NO_FAULT",
+    "liable_party": "NONE",
+    "secondary_fault": null,
+    "secondary_party": null,
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
+    "is_hard_pair": false,
+    "agent_report_truthful": true,
+    "expected_gate_verdict": "ALLOW",
+    "gate_detectable": true,
+    "loss_paise": 0,
+    "rationale": "Agent ordered the requested item at an allowed merchant, within the unit and total ceilings and inside the block. Merchant delivered what was ordered and the debit reconciles against it."
+  }
+}
