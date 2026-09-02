@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00492",
-    "created_at": "2026-09-03T00:00:00Z",
-    "expires_at": "2026-09-03T06:00:00Z",
-    "user_id": "usr_6163",
-    "agent_id": "agt_663",
+    "created_at": "2026-09-02T23:43:00Z",
+    "expires_at": "2026-09-03T05:43:00Z",
+    "user_id": "usr_3792",
+    "agent_id": "agt_685",
     "block": {
       "block_id": "blk_00492",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-24T00:00:00Z",
-      "expires_at": "2026-10-30T00:00:00Z"
+      "blocked_at": "2026-08-20T23:43:00Z",
+      "expires_at": "2026-10-09T23:43:00Z"
     },
     "hard": {
       "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "britannia",
-      "variant": "brown",
+      "brand": "harvest",
+      "variant": null,
       "pack_size_g": 400
     },
     "intent": {
-      "text": "I need 400g Britannia brown bread, use Blinkit",
-      "uncaptured_attributes": []
+      "text": "buy 400g Harvest white bread from Blinkit, keep it under 48 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "11932ae2ce5b73b57dd71812132a756bf9d4c434446d1c7b5d5d380d17fb6add",
+    "content_hash": "4afb714e140a80c8633641dc9f26630dc558af1a8039b47c54d04bc2f5530265",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00492",
-    "obligation_hash": "11932ae2ce5b73b57dd71812132a756bf9d4c434446d1c7b5d5d380d17fb6add",
+    "obligation_hash": "4afb714e140a80c8633641dc9f26630dc558af1a8039b47c54d04bc2f5530265",
     "items": [
       {
         "item_id": "env_00492-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "agt_663",
-        "emitted_at": "2026-09-03T00:00:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "b614597cc1de3d73871abb472b22cfab8207830d5dbfdd457190225e90932e2a"
+        "content_hash": "c166af30ab5d17e143c8817e85da87807f43bef655da9b360f2c13f56a739f3b"
       },
       {
         "item_id": "env_00492-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Bestseller in this category this week.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:04Z",
+        "evidence_class": 2,
+        "prev_hash": "c166af30ab5d17e143c8817e85da87807f43bef655da9b360f2c13f56a739f3b",
+        "content_hash": "4ff832fef78ec14693b71458168276c8c722b5847e3e3c3bffb300bb6dce6442"
+      },
+      {
+        "item_id": "env_00492-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:05Z",
+        "evidence_class": 2,
+        "prev_hash": "4ff832fef78ec14693b71458168276c8c722b5847e3e3c3bffb300bb6dce6442",
+        "content_hash": "38f2b3cf5cdac93686f3e75d5cbe8bf0752182888e65926b5c871c0929ae8d52"
+      },
+      {
+        "item_id": "env_00492-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Bestseller in this category this week.",
+          "listed_price_paise": 4200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:06Z",
+        "evidence_class": 2,
+        "prev_hash": "38f2b3cf5cdac93686f3e75d5cbe8bf0752182888e65926b5c871c0929ae8d52",
+        "content_hash": "c4bcf8db62689347810577a58ba88b109ee9a256b90cc928b68c21ffdb8f4880"
+      },
+      {
+        "item_id": "env_00492-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "agt_685",
+        "emitted_at": "2026-09-02T23:43:12Z",
+        "evidence_class": 1,
+        "prev_hash": "c4bcf8db62689347810577a58ba88b109ee9a256b90cc928b68c21ffdb8f4880",
+        "content_hash": "8bf02ab8669725761b9e9cb6fa772454501315d44b95e718a4eba9dc1c942df9"
+      },
+      {
+        "item_id": "env_00492-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00492",
           "lines": [
             {
-              "sku": "britannia-bread-brown-400",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 4200
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:00:20Z",
+        "emitted_at": "2026-09-02T23:43:20Z",
         "evidence_class": 2,
-        "prev_hash": "b614597cc1de3d73871abb472b22cfab8207830d5dbfdd457190225e90932e2a",
-        "content_hash": "35c6166e6a58e80edbfedf4c5b38ace1a920b3258b6278db297dd4909f11e3ac"
+        "prev_hash": "8bf02ab8669725761b9e9cb6fa772454501315d44b95e718a4eba9dc1c942df9",
+        "content_hash": "c3ea04ceaaa969d20eb086cf164547d002824287f74092f87369826bec474da4"
       },
       {
-        "item_id": "env_00492-e002",
-        "seq": 2,
+        "item_id": "env_00492-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00492",
           "lines": [
             {
-              "sku": "britannia-bread-brown-400",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 4200
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:14:00Z",
+        "emitted_at": "2026-09-02T23:57:00Z",
         "evidence_class": 2,
-        "prev_hash": "35c6166e6a58e80edbfedf4c5b38ace1a920b3258b6278db297dd4909f11e3ac",
-        "content_hash": "09e31df14599d9b6477484594588c741c0de8080f77f6b697984b19570300e12"
+        "prev_hash": "c3ea04ceaaa969d20eb086cf164547d002824287f74092f87369826bec474da4",
+        "content_hash": "997a7efe9ce64dd2ed6751b20aae768d3dfc57407b844cc4ea955324aa1321d1"
       },
       {
-        "item_id": "env_00492-e003",
-        "seq": 3,
+        "item_id": "env_00492-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00492",
-          "amount_paise": 5200,
+          "amount_paise": 4200,
           "currency": "INR",
           "receipt": "zep_00492"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:00:25Z",
+        "emitted_at": "2026-09-02T23:43:25Z",
         "evidence_class": 3,
-        "prev_hash": "09e31df14599d9b6477484594588c741c0de8080f77f6b697984b19570300e12",
-        "content_hash": "1c59c0100f055d1f8d1e442ae01c590877eab96316c86aad9210cec7e3cf0c4c"
+        "prev_hash": "997a7efe9ce64dd2ed6751b20aae768d3dfc57407b844cc4ea955324aa1321d1",
+        "content_hash": "3df20448b2dddf221b08a90413226ff88ca20cd9b5e33e77bb1e971dfdc3ddad"
       },
       {
-        "item_id": "env_00492-e004",
-        "seq": 4,
+        "item_id": "env_00492-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00492",
           "order_id": "order_00492",
-          "amount_paise": 5200,
+          "amount_paise": 4200,
           "status": "captured",
           "block_id": "blk_00492",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:00:30Z",
+        "emitted_at": "2026-09-02T23:43:30Z",
         "evidence_class": 3,
-        "prev_hash": "1c59c0100f055d1f8d1e442ae01c590877eab96316c86aad9210cec7e3cf0c4c",
-        "content_hash": "5af9820ca03f5a79b0d20f323aa1336063d7b11f9d0a3d62781f88daa36ebb90"
+        "prev_hash": "3df20448b2dddf221b08a90413226ff88ca20cd9b5e33e77bb1e971dfdc3ddad",
+        "content_hash": "1e6674911cc0cb85decdb1783b4ff557a86bec4518d4c68e79a22a27d018484c"
       },
       {
-        "item_id": "env_00492-e005",
-        "seq": 5,
+        "item_id": "env_00492-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
           "claims_success": true
         },
-        "emitted_by": "agt_663",
-        "emitted_at": "2026-09-03T00:15:00Z",
+        "emitted_by": "agt_685",
+        "emitted_at": "2026-09-02T23:58:00Z",
         "evidence_class": 0,
-        "prev_hash": "5af9820ca03f5a79b0d20f323aa1336063d7b11f9d0a3d62781f88daa36ebb90",
-        "content_hash": "281a48e38be3bd1bdcaa0f0b826cba097d16056c4c95ccd85a49cb13d2907e83"
+        "prev_hash": "1e6674911cc0cb85decdb1783b4ff557a86bec4518d4c68e79a22a27d018484c",
+        "content_hash": "6fdfd27d75afc77a3a4da02dbd009b17a14250c00982bdeaa7ab8e6098fba056"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "britannia-bread-brown-400",
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

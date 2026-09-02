@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00282",
-    "created_at": "2026-09-03T01:54:00Z",
-    "expires_at": "2026-09-03T07:54:00Z",
-    "user_id": "usr_5341",
-    "agent_id": "agt_972",
+    "created_at": "2026-09-02T22:43:00Z",
+    "expires_at": "2026-09-03T04:43:00Z",
+    "user_id": "usr_7995",
+    "agent_id": "agt_808",
     "block": {
       "block_id": "blk_00282",
       "blocked_paise": 20000,
-      "consumed_paise": 17400,
-      "blocked_at": "2026-08-31T01:54:00Z",
-      "expires_at": "2026-10-05T01:54:00Z"
+      "consumed_paise": 18500,
+      "blocked_at": "2026-08-23T22:43:00Z",
+      "expires_at": "2026-10-10T22:43:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "britannia",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "aashirvaad",
+      "variant": "iodised",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 400g Britannia brown bread on Swiggy Instamart",
+      "text": "order 1kg Aashirvaad iodised salt on Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "4810cc435c17bd816745a4f727bcde86b3cf07fb56bd75106f61caef3bfc6e1f",
+    "content_hash": "41b7b0227dd29827527532046f33fca45cc5a3bc102a9aaf985c2d5884343b5f",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00282",
-    "obligation_hash": "4810cc435c17bd816745a4f727bcde86b3cf07fb56bd75106f61caef3bfc6e1f",
+    "obligation_hash": "41b7b0227dd29827527532046f33fca45cc5a3bc102a9aaf985c2d5884343b5f",
     "items": [
       {
         "item_id": "env_00282-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "agt_972",
-        "emitted_at": "2026-09-03T01:54:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:43:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0d68a698f83e1558159b56533be4ec08dfe4a1d8f1b623b567d08487f6605c5b"
+        "content_hash": "2640c2bc1613babbe7f1046873a9ce449b4e132f328313b7dd08e57486891d3d"
       },
       {
         "item_id": "env_00282-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00282",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:54:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:43:04Z",
         "evidence_class": 2,
-        "prev_hash": "0d68a698f83e1558159b56533be4ec08dfe4a1d8f1b623b567d08487f6605c5b",
-        "content_hash": "89a0f7e5f62b7a72ce512a40069c53a53ee9c46cf3a6c7b5b7b2e497805edcf4"
+        "prev_hash": "2640c2bc1613babbe7f1046873a9ce449b4e132f328313b7dd08e57486891d3d",
+        "content_hash": "c1ce63aa5c8b7cd9ef4709f29e3420b0ad80588c1cf509c2b4eba03729242b84"
       },
       {
         "item_id": "env_00282-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00282",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:08:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:43:05Z",
         "evidence_class": 2,
-        "prev_hash": "89a0f7e5f62b7a72ce512a40069c53a53ee9c46cf3a6c7b5b7b2e497805edcf4",
-        "content_hash": "b70c14b12b99738a666270c8a8542ea49dd96b339e1fcb974cc75b577cf52a01"
+        "prev_hash": "c1ce63aa5c8b7cd9ef4709f29e3420b0ad80588c1cf509c2b4eba03729242b84",
+        "content_hash": "53c7633ae3aae2943b124816affefc6b5b708189e20035b4e39e266344154ce7"
       },
       {
         "item_id": "env_00282-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00282",
-          "amount_paise": 5200,
-          "currency": "INR",
-          "receipt": "zep_00282"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:54:25Z",
-        "evidence_class": 3,
-        "prev_hash": "b70c14b12b99738a666270c8a8542ea49dd96b339e1fcb974cc75b577cf52a01",
-        "content_hash": "7a039c2e7fd7066841d31ad99b763e98e4ca94bf1e090d0ef8e0e6410363a27d"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:43:06Z",
+        "evidence_class": 2,
+        "prev_hash": "53c7633ae3aae2943b124816affefc6b5b708189e20035b4e39e266344154ce7",
+        "content_hash": "a707e80cdd0ac70c215ea1fefbd7b8242771bbd3c62beaafcbec1d5e30b66620"
       },
       {
         "item_id": "env_00282-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00282",
-          "order_id": "order_00282",
-          "amount_paise": 5200,
-          "status": "captured",
-          "block_id": "blk_00282",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:54:30Z",
-        "evidence_class": 3,
-        "prev_hash": "7a039c2e7fd7066841d31ad99b763e98e4ca94bf1e090d0ef8e0e6410363a27d",
-        "content_hash": "8d5f3a621222d30e47664f66b79264050c226f812d0ff8daa7d3c125719b013a"
+        "emitted_by": "agt_808",
+        "emitted_at": "2026-09-02T22:43:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a707e80cdd0ac70c215ea1fefbd7b8242771bbd3c62beaafcbec1d5e30b66620",
+        "content_hash": "4bb834b9579a88cf0e44ed2976a842bf5a5acc2f85a72cd6e8030f1d57aeaecc"
       },
       {
         "item_id": "env_00282-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00282",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:43:20Z",
+        "evidence_class": 2,
+        "prev_hash": "4bb834b9579a88cf0e44ed2976a842bf5a5acc2f85a72cd6e8030f1d57aeaecc",
+        "content_hash": "bc1317d142cce9da6d60dd99433a98ece967c8b6567d731d49a6c122464db0e7"
+      },
+      {
+        "item_id": "env_00282-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00282",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:57:00Z",
+        "evidence_class": 2,
+        "prev_hash": "bc1317d142cce9da6d60dd99433a98ece967c8b6567d731d49a6c122464db0e7",
+        "content_hash": "7bc40ea3baa48dedbaa602eb2eda24bc0fe99efacb9053900664a78109ce9110"
+      },
+      {
+        "item_id": "env_00282-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00282",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00282"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:43:25Z",
+        "evidence_class": 3,
+        "prev_hash": "7bc40ea3baa48dedbaa602eb2eda24bc0fe99efacb9053900664a78109ce9110",
+        "content_hash": "e7070434eed1733c91652c27a4de443e895286cc95852cbeddc4d2aa36c8e3c3"
+      },
+      {
+        "item_id": "env_00282-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00282",
+          "order_id": "order_00282",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00282",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:43:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e7070434eed1733c91652c27a4de443e895286cc95852cbeddc4d2aa36c8e3c3",
+        "content_hash": "cf6d06ff8de5e8a8b96b1a222a3a3efdfc19dc5ad5420e8185576c47ede5cd25"
+      },
+      {
+        "item_id": "env_00282-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_972",
-        "emitted_at": "2026-09-03T02:09:00Z",
+        "emitted_by": "agt_808",
+        "emitted_at": "2026-09-02T22:58:00Z",
         "evidence_class": 0,
-        "prev_hash": "8d5f3a621222d30e47664f66b79264050c226f812d0ff8daa7d3c125719b013a",
-        "content_hash": "e209fc9128548a51802fe1c3f9548c495c7ef17f68c7692ede69a7e1ac808718"
+        "prev_hash": "cf6d06ff8de5e8a8b96b1a222a3a3efdfc19dc5ad5420e8185576c47ede5cd25",
+        "content_hash": "59ef4f6ce828005ab060d9ada00bf42768cd6f4411f209099b020094e27a7667"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "britannia-bread-brown-400",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 2600,
-    "rationale": "Item was correct; the mandate was not honoured. Debit of 5200 paise exceeds the 2600 paise remaining on block blk_00282."
+    "loss_paise": 1500,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 3000 paise exceeds the 1500 paise remaining on block blk_00282."
   }
 }

@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00357",
-    "created_at": "2026-09-03T01:28:00Z",
-    "expires_at": "2026-09-03T07:28:00Z",
-    "user_id": "usr_5395",
-    "agent_id": "agt_999",
+    "created_at": "2026-09-02T23:47:00Z",
+    "expires_at": "2026-09-03T05:47:00Z",
+    "user_id": "usr_8675",
+    "agent_id": "agt_234",
     "block": {
       "block_id": "blk_00357",
-      "blocked_paise": 21600,
-      "consumed_paise": 16200,
-      "blocked_at": "2026-09-01T01:28:00Z",
-      "expires_at": "2026-10-14T01:28:00Z"
+      "blocked_paise": 20000,
+      "consumed_paise": 16250,
+      "blocked_at": "2026-08-24T23:47:00Z",
+      "expires_at": "2026-10-25T23:47:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 12419,
-      "max_total_paise": 12419,
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "maggi",
-      "variant": "atta",
-      "pack_size_g": 560
+      "brand": "mother_dairy",
+      "variant": "full_cream",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 560g Maggi atta noodles, use Blinkit",
+      "text": "buy 1L Mother Dairy full cream milk from Blinkit, keep it under 86 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "70b68f84dacee8c54c27b94c393a582a485169f59858b3c1ca28b354ac052c2e",
+    "content_hash": "0577eb73a31394cb142bff5618b84b33f3ab88c2dbd5baba35b68bffb2ecd3d1",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00357",
-    "obligation_hash": "70b68f84dacee8c54c27b94c393a582a485169f59858b3c1ca28b354ac052c2e",
+    "obligation_hash": "0577eb73a31394cb142bff5618b84b33f3ab88c2dbd5baba35b68bffb2ecd3d1",
     "items": [
       {
         "item_id": "env_00357-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "maggi-noodles-atta-560",
-              "quantity": 1,
-              "unit_price_paise": 10800
-            }
-          ]
+          "sku": "amul-milk-toned-1000",
+          "display_name": "Amul Taaza Toned Milk 1L",
+          "description": "Amul Taaza Toned Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6600
         },
-        "emitted_by": "agt_999",
-        "emitted_at": "2026-09-03T01:28:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:47:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0cf005cf6b2ef289731d12e709dfec88c34f724c6c71e4a36a870a46f34c6ccf"
+        "content_hash": "2bb6f11995b25e0d7d782de4d1c62783c2b091c3ab2537f7aaeb75d2b6fa9b23"
       },
       {
         "item_id": "env_00357-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 7500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:47:04Z",
+        "evidence_class": 2,
+        "prev_hash": "2bb6f11995b25e0d7d782de4d1c62783c2b091c3ab2537f7aaeb75d2b6fa9b23",
+        "content_hash": "c95a715efc2b84176ce7dbc9e1fb095e872b7ea8e0ca64169b0851449120c5e0"
+      },
+      {
+        "item_id": "env_00357-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6400
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:47:05Z",
+        "evidence_class": 2,
+        "prev_hash": "c95a715efc2b84176ce7dbc9e1fb095e872b7ea8e0ca64169b0851449120c5e0",
+        "content_hash": "9e98eed64b4cda7b1d148331eaa7c07c12f8abcf4171b64f2cd3ac9743bd8ff2"
+      },
+      {
+        "item_id": "env_00357-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 5700
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:47:06Z",
+        "evidence_class": 2,
+        "prev_hash": "9e98eed64b4cda7b1d148331eaa7c07c12f8abcf4171b64f2cd3ac9743bd8ff2",
+        "content_hash": "5f3d8c4f3ccf71e87560efa1684cef05f72649879f4348e9d89b6536d92b4fa5"
+      },
+      {
+        "item_id": "env_00357-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "agt_234",
+        "emitted_at": "2026-09-02T23:47:12Z",
+        "evidence_class": 1,
+        "prev_hash": "5f3d8c4f3ccf71e87560efa1684cef05f72649879f4348e9d89b6536d92b4fa5",
+        "content_hash": "aa208db5b2afe6543b4d660c2ffb7edc537f3de6ff88d1f8dd9ef79af8e92090"
+      },
+      {
+        "item_id": "env_00357-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00357",
           "lines": [
             {
-              "sku": "maggi-noodles-atta-560",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 10800
+              "unit_price_paise": 7500
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T01:28:20Z",
+        "emitted_at": "2026-09-02T23:47:20Z",
         "evidence_class": 2,
-        "prev_hash": "0cf005cf6b2ef289731d12e709dfec88c34f724c6c71e4a36a870a46f34c6ccf",
-        "content_hash": "8b4e5896802d1ef163d7c1450ed72aac9ae970531f7d20af963db4b365377010"
+        "prev_hash": "aa208db5b2afe6543b4d660c2ffb7edc537f3de6ff88d1f8dd9ef79af8e92090",
+        "content_hash": "da2ac7d2bf33d8945c8c2ba27463dbe9809a99bdd0a0e785617028c4ec0dabb3"
       },
       {
-        "item_id": "env_00357-e002",
-        "seq": 2,
+        "item_id": "env_00357-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00357",
           "lines": [
             {
-              "sku": "maggi-noodles-atta-560",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 10800
+              "unit_price_paise": 7500
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T01:42:00Z",
+        "emitted_at": "2026-09-03T00:01:00Z",
         "evidence_class": 2,
-        "prev_hash": "8b4e5896802d1ef163d7c1450ed72aac9ae970531f7d20af963db4b365377010",
-        "content_hash": "a5fd85d66f33c625ee0821bd5e95dab0ff24663be5bdb0babe9858e6d67a0c86"
+        "prev_hash": "da2ac7d2bf33d8945c8c2ba27463dbe9809a99bdd0a0e785617028c4ec0dabb3",
+        "content_hash": "0736d9480a16206bb5ccc7080dc72d27022f855591978eb63215ac042df1add7"
       },
       {
-        "item_id": "env_00357-e003",
-        "seq": 3,
+        "item_id": "env_00357-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00357",
-          "amount_paise": 10800,
+          "amount_paise": 7500,
           "currency": "INR",
           "receipt": "zep_00357"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:28:25Z",
+        "emitted_at": "2026-09-02T23:47:25Z",
         "evidence_class": 3,
-        "prev_hash": "a5fd85d66f33c625ee0821bd5e95dab0ff24663be5bdb0babe9858e6d67a0c86",
-        "content_hash": "73ce66c3b920f237322a946b3addd1e65fc0bf6dae09af7e02731a591d1cfb1c"
+        "prev_hash": "0736d9480a16206bb5ccc7080dc72d27022f855591978eb63215ac042df1add7",
+        "content_hash": "744e622dc231fc81fb7e60850e1ca37d0a33ad065c717b0d2abd4a4b10825b4c"
       },
       {
-        "item_id": "env_00357-e004",
-        "seq": 4,
+        "item_id": "env_00357-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00357",
           "order_id": "order_00357",
-          "amount_paise": 10800,
+          "amount_paise": 7500,
           "status": "captured",
           "block_id": "blk_00357",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:28:30Z",
+        "emitted_at": "2026-09-02T23:47:30Z",
         "evidence_class": 3,
-        "prev_hash": "73ce66c3b920f237322a946b3addd1e65fc0bf6dae09af7e02731a591d1cfb1c",
-        "content_hash": "1d27aa4c80564475e1ae79d8a9af958ec2219929fdb2319cb1648eb1cf27c63c"
+        "prev_hash": "744e622dc231fc81fb7e60850e1ca37d0a33ad065c717b0d2abd4a4b10825b4c",
+        "content_hash": "a3eefd254b909416bc86d3928083849ba9280f278e2f84fb3239249c203eb91f"
       },
       {
-        "item_id": "env_00357-e005",
-        "seq": 5,
+        "item_id": "env_00357-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Maggi atta noodles. Payment complete.",
-          "claimed_sku": "maggi-noodles-atta-560",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_999",
-        "emitted_at": "2026-09-03T01:43:00Z",
+        "emitted_by": "agt_234",
+        "emitted_at": "2026-09-03T00:02:00Z",
         "evidence_class": 0,
-        "prev_hash": "1d27aa4c80564475e1ae79d8a9af958ec2219929fdb2319cb1648eb1cf27c63c",
-        "content_hash": "1a362a73e31d444c496208776f9222c735c2c8536c8f3cc1752331edd0d8d836"
+        "prev_hash": "a3eefd254b909416bc86d3928083849ba9280f278e2f84fb3239249c203eb91f",
+        "content_hash": "6718b60a51ba61eeb86274a4b94c2855f5406c4bd9f9968481be7aceda3c5e35"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "maggi-noodles-atta-560",
-    "ordered_sku": "maggi-noodles-atta-560",
-    "delivered_sku": "maggi-noodles-atta-560",
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 5400,
-    "rationale": "Item was correct; the mandate was not honoured. Debit of 10800 paise exceeds the 5400 paise remaining on block blk_00357."
+    "loss_paise": 3750,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 7500 paise exceeds the 3750 paise remaining on block blk_00357."
   }
 }

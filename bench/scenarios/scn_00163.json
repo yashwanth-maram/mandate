@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00163",
-    "created_at": "2026-09-02T20:57:00Z",
-    "expires_at": "2026-09-03T02:57:00Z",
-    "user_id": "usr_8531",
-    "agent_id": "agt_645",
+    "created_at": "2026-09-02T21:04:00Z",
+    "expires_at": "2026-09-03T03:04:00Z",
+    "user_id": "usr_2324",
+    "agent_id": "agt_599",
     "block": {
       "block_id": "blk_00163",
-      "blocked_paise": 50000,
-      "consumed_paise": 0,
-      "blocked_at": "2026-08-23T20:57:00Z",
-      "expires_at": "2026-10-19T20:57:00Z"
+      "blocked_paise": 20000,
+      "consumed_paise": 16900,
+      "blocked_at": "2026-08-23T21:04:00Z",
+      "expires_at": "2026-10-22T21:04:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 12419,
-      "max_total_paise": 12419,
+      "category": "bread",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "maggi",
-      "variant": "atta",
-      "pack_size_g": 560
+      "brand": "britannia",
+      "variant": "multigrain",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "I need 560g Maggi atta noodles, use Swiggy Instamart",
+      "text": "order 400g Britannia multigrain bread on Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "4e0ff3d56dbb4fb7d1d83dc1fafbb91a60412189b640435694bc7c9db2e54c63",
+    "content_hash": "d8dac6396ad3368b55ac0989e44cc1b0b2a753c9f7dc47884c73396dcda8e955",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00163",
-    "obligation_hash": "4e0ff3d56dbb4fb7d1d83dc1fafbb91a60412189b640435694bc7c9db2e54c63",
+    "obligation_hash": "d8dac6396ad3368b55ac0989e44cc1b0b2a753c9f7dc47884c73396dcda8e955",
     "items": [
       {
         "item_id": "env_00163-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "maggi-noodles-atta-560",
-              "quantity": 1,
-              "unit_price_paise": 10800
-            }
-          ]
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "agt_645",
-        "emitted_at": "2026-09-02T20:57:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "bda28e568bf3d1ad8300989fd26b016a8f38162ceece36fbbad439f010d6cf7d"
+        "content_hash": "fc31614b8469e3672ee969d3357d656601fb0fbe9ffd2178aa774d8940c59aa3"
       },
       {
         "item_id": "env_00163-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:04Z",
+        "evidence_class": 2,
+        "prev_hash": "fc31614b8469e3672ee969d3357d656601fb0fbe9ffd2178aa774d8940c59aa3",
+        "content_hash": "e8367719772f78715a831635117aafb5521ce5c9bfca633e62e3f3a07a79cbf0"
+      },
+      {
+        "item_id": "env_00163-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 4200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:05Z",
+        "evidence_class": 2,
+        "prev_hash": "e8367719772f78715a831635117aafb5521ce5c9bfca633e62e3f3a07a79cbf0",
+        "content_hash": "08944395bb5d4193fcbbc7afb48a41d58fc5a920410e3f4e547e2bba1b2dd76c"
+      },
+      {
+        "item_id": "env_00163-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:06Z",
+        "evidence_class": 2,
+        "prev_hash": "08944395bb5d4193fcbbc7afb48a41d58fc5a920410e3f4e547e2bba1b2dd76c",
+        "content_hash": "99c153e698c6ed035b37485cb84b106f0ed0b4b68a00a1819811b4cb29789306"
+      },
+      {
+        "item_id": "env_00163-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "britannia-bread-multigrain-400",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_599",
+        "emitted_at": "2026-09-02T21:04:12Z",
+        "evidence_class": 1,
+        "prev_hash": "99c153e698c6ed035b37485cb84b106f0ed0b4b68a00a1819811b4cb29789306",
+        "content_hash": "91058092540a01f5332c331f16dc30c9a2219f300e2a7bc287444e40ebecb450"
+      },
+      {
+        "item_id": "env_00163-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00163",
           "lines": [
             {
-              "sku": "maggi-noodles-atta-560",
+              "sku": "britannia-bread-multigrain-400",
               "quantity": 1,
-              "unit_price_paise": 10800
+              "unit_price_paise": 6200
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:57:20Z",
+        "emitted_at": "2026-09-02T21:04:20Z",
         "evidence_class": 2,
-        "prev_hash": "bda28e568bf3d1ad8300989fd26b016a8f38162ceece36fbbad439f010d6cf7d",
-        "content_hash": "8c78c560ca5e0b8739132884d38716e8dd354ed9f3e831df0f16205a8487fdf0"
+        "prev_hash": "91058092540a01f5332c331f16dc30c9a2219f300e2a7bc287444e40ebecb450",
+        "content_hash": "7aa28a2c0249bed48a19ef85bf73a114ed61944ba74ac933196219552e3760cd"
       },
       {
-        "item_id": "env_00163-e002",
-        "seq": 2,
+        "item_id": "env_00163-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00163",
           "lines": [
             {
-              "sku": "maggi-noodles-atta-560",
+              "sku": "britannia-bread-multigrain-400",
               "quantity": 1,
-              "unit_price_paise": 10800
+              "unit_price_paise": 6200
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T21:11:00Z",
+        "emitted_at": "2026-09-02T21:18:00Z",
         "evidence_class": 2,
-        "prev_hash": "8c78c560ca5e0b8739132884d38716e8dd354ed9f3e831df0f16205a8487fdf0",
-        "content_hash": "7afec7ec85821af3d2e6214a05c4ae7a693b122d1825190069655b22947867a8"
+        "prev_hash": "7aa28a2c0249bed48a19ef85bf73a114ed61944ba74ac933196219552e3760cd",
+        "content_hash": "6a07e464a832b80d84e9cffd3993c2a0e5a1f8fcb6cd6beeb0e588b71a3ee12b"
       },
       {
-        "item_id": "env_00163-e003",
-        "seq": 3,
+        "item_id": "env_00163-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00163",
-          "amount_paise": 10800,
+          "amount_paise": 6200,
           "currency": "INR",
           "receipt": "zep_00163"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:57:25Z",
+        "emitted_at": "2026-09-02T21:04:25Z",
         "evidence_class": 3,
-        "prev_hash": "7afec7ec85821af3d2e6214a05c4ae7a693b122d1825190069655b22947867a8",
-        "content_hash": "3d665b35135b31229d83ded247696a27786aca371570e5544dbd19b9a2efd55f"
+        "prev_hash": "6a07e464a832b80d84e9cffd3993c2a0e5a1f8fcb6cd6beeb0e588b71a3ee12b",
+        "content_hash": "224ab3a67b099d8f6f2da9610fa05b0accca64d904bf7600cd3c1fc009aefcf8"
       },
       {
-        "item_id": "env_00163-e004",
-        "seq": 4,
+        "item_id": "env_00163-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00163",
           "order_id": "order_00163",
-          "amount_paise": 10800,
+          "amount_paise": 6200,
           "status": "captured",
           "block_id": "blk_00163",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:27:00Z",
+        "emitted_at": "2026-09-02T21:04:30Z",
         "evidence_class": 3,
-        "prev_hash": "3d665b35135b31229d83ded247696a27786aca371570e5544dbd19b9a2efd55f",
-        "content_hash": "3c3bcd827c8db33a1d79093aa840cbdf0c11583400c9112e6c8af429804be388"
+        "prev_hash": "224ab3a67b099d8f6f2da9610fa05b0accca64d904bf7600cd3c1fc009aefcf8",
+        "content_hash": "fe2adf89c209c0e049787e698cad8ff5b44b17123ea51b9d2d46d7029d4e334b"
       },
       {
-        "item_id": "env_00163-e005",
-        "seq": 5,
+        "item_id": "env_00163-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Maggi atta noodles. Payment complete.",
-          "claimed_sku": "maggi-noodles-atta-560",
+          "text": "Ordered 400g Britannia multigrain bread. Payment complete.",
+          "claimed_sku": "britannia-bread-multigrain-400",
           "claims_success": true
         },
-        "emitted_by": "agt_645",
-        "emitted_at": "2026-09-02T21:12:00Z",
+        "emitted_by": "agt_599",
+        "emitted_at": "2026-09-02T21:19:00Z",
         "evidence_class": 0,
-        "prev_hash": "3c3bcd827c8db33a1d79093aa840cbdf0c11583400c9112e6c8af429804be388",
-        "content_hash": "90e19243ed42a74d9eb050b4dcd9652578c4a2ab71f2d722dd31336685b4c4d1"
+        "prev_hash": "fe2adf89c209c0e049787e698cad8ff5b44b17123ea51b9d2d46d7029d4e334b",
+        "content_hash": "cc4a568b263c592c5bce05f746392782909d3837a2e3a6eb92fe324dd080f4a6"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "maggi-noodles-atta-560",
-    "ordered_sku": "maggi-noodles-atta-560",
-    "delivered_sku": "maggi-noodles-atta-560",
+    "requested_sku": "britannia-bread-multigrain-400",
+    "ordered_sku": "britannia-bread-multigrain-400",
+    "delivered_sku": "britannia-bread-multigrain-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 10800,
-    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+    "loss_paise": 3100,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 6200 paise exceeds the 3100 paise remaining on block blk_00163."
   }
 }

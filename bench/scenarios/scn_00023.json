@@ -6,170 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00023",
-    "created_at": "2026-09-03T00:24:00Z",
-    "expires_at": "2026-09-03T06:24:00Z",
-    "user_id": "usr_7498",
-    "agent_id": "agt_832",
+    "created_at": "2026-09-02T22:05:00Z",
+    "expires_at": "2026-09-03T04:05:00Z",
+    "user_id": "usr_3594",
+    "agent_id": "agt_418",
     "block": {
       "block_id": "blk_00023",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-28T00:24:00Z",
-      "expires_at": "2026-10-05T00:24:00Z"
+      "blocked_at": "2026-08-16T22:05:00Z",
+      "expires_at": "2026-10-02T22:05:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 7129,
-      "max_total_paise": 7129,
+      "max_unit_price_paise": 6669,
+      "max_total_paise": 6669,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "aashirvaad",
+      "brand": "fortune",
       "variant": "refined",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1kg Aashirvaad maida on Blinkit",
+      "text": "buy 1kg Fortune maida from Zepto, keep it under 66 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "eed68133c2374786465dad8083d6fec2bf81b7687c77e4873b5c6a7c2973eac0",
+    "content_hash": "3b4f91b7ea5dced98b42400fc064435daabc89b17d370ad7593523e012f73b87",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00023",
-    "obligation_hash": "eed68133c2374786465dad8083d6fec2bf81b7687c77e4873b5c6a7c2973eac0",
+    "obligation_hash": "3b4f91b7ea5dced98b42400fc064435daabc89b17d370ad7593523e012f73b87",
     "items": [
       {
         "item_id": "env_00023-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "agt_832",
-        "emitted_at": "2026-09-03T00:24:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:05:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8e5b1a08f363834c85271127c4a085effa9b6cc58c1535bae235655c24797ff8"
+        "content_hash": "cc2548bbec8f24d8f560d412c66c7029ed522f6dafb8759a3fa7f80df10120cb"
       },
       {
         "item_id": "env_00023-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00023",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 34000
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:24:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:05:04Z",
         "evidence_class": 2,
-        "prev_hash": "8e5b1a08f363834c85271127c4a085effa9b6cc58c1535bae235655c24797ff8",
-        "content_hash": "2740ea8d68dfdbcdb8a37417191c9ab126b8b0f55afd3d21d0f8d8d4d6bef453"
+        "prev_hash": "cc2548bbec8f24d8f560d412c66c7029ed522f6dafb8759a3fa7f80df10120cb",
+        "content_hash": "6634cf9e4c902cde455b0cc68bff4d75b44f9afb9a33ca78fe0ee49412a8e996"
       },
       {
         "item_id": "env_00023-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00023",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 38500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:38:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:05:05Z",
         "evidence_class": 2,
-        "prev_hash": "2740ea8d68dfdbcdb8a37417191c9ab126b8b0f55afd3d21d0f8d8d4d6bef453",
-        "content_hash": "f3bb2b90a74b4d3b46cc1ef872ddfdc11c9e8e72b04570d0850c64c616ebadc0"
+        "prev_hash": "6634cf9e4c902cde455b0cc68bff4d75b44f9afb9a33ca78fe0ee49412a8e996",
+        "content_hash": "2193252629fd5cccf986e6aad378ab785c074303497aa51dcf806e220d718968"
       },
       {
         "item_id": "env_00023-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00023",
-          "amount_paise": 6200,
-          "currency": "INR",
-          "receipt": "zep_00023"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 39800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:24:25Z",
-        "evidence_class": 3,
-        "prev_hash": "f3bb2b90a74b4d3b46cc1ef872ddfdc11c9e8e72b04570d0850c64c616ebadc0",
-        "content_hash": "1c8fc8399864f8eb8245d00b69840bce6ea23414cc553c5a0fc7295e9a9e5304"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:05:06Z",
+        "evidence_class": 2,
+        "prev_hash": "2193252629fd5cccf986e6aad378ab785c074303497aa51dcf806e220d718968",
+        "content_hash": "7374661389f3fad963bbcbab9a483528eabf881ddbf6812765a6e02b3191ebe2"
       },
       {
         "item_id": "env_00023-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00023",
-          "order_id": "order_00023",
-          "amount_paise": 6200,
-          "status": "captured",
-          "block_id": "blk_00023",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:24:30Z",
-        "evidence_class": 3,
-        "prev_hash": "1c8fc8399864f8eb8245d00b69840bce6ea23414cc553c5a0fc7295e9a9e5304",
-        "content_hash": "8013355d6fb8f9486ac7eb7742ffbaf33580d25d0dd415b329378670236b3d20"
+        "emitted_by": "agt_418",
+        "emitted_at": "2026-09-02T22:05:12Z",
+        "evidence_class": 1,
+        "prev_hash": "7374661389f3fad963bbcbab9a483528eabf881ddbf6812765a6e02b3191ebe2",
+        "content_hash": "79cf9a4ee3d613f78b7a76416034ec30eb780ffe863a42000169bfcd81b6797b"
       },
       {
         "item_id": "env_00023-e005",
         "seq": 5,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00023b",
-          "order_id": "order_00023",
-          "amount_paise": 6200,
-          "status": "captured",
-          "block_id": "blk_00023",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00023",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:24:34Z",
-        "evidence_class": 3,
-        "prev_hash": "8013355d6fb8f9486ac7eb7742ffbaf33580d25d0dd415b329378670236b3d20",
-        "content_hash": "eddc4dd50dd3dfe0d44562c8628ee344b3e4def0dd308f574fb1664dbd49d32d"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:05:20Z",
+        "evidence_class": 2,
+        "prev_hash": "79cf9a4ee3d613f78b7a76416034ec30eb780ffe863a42000169bfcd81b6797b",
+        "content_hash": "db9085c3e0d9cca5f155b627a438a70e83fcf4655cd8854240e59d034180d715"
       },
       {
         "item_id": "env_00023-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00023",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:19:00Z",
+        "evidence_class": 2,
+        "prev_hash": "db9085c3e0d9cca5f155b627a438a70e83fcf4655cd8854240e59d034180d715",
+        "content_hash": "d5a6c5924b5489b46f09cd1ea67d2b72b2d32a72e68e686c96dcac08ff0551d4"
+      },
+      {
+        "item_id": "env_00023-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00023",
+          "amount_paise": 7871,
+          "currency": "INR",
+          "receipt": "zep_00023"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:05:25Z",
+        "evidence_class": 3,
+        "prev_hash": "d5a6c5924b5489b46f09cd1ea67d2b72b2d32a72e68e686c96dcac08ff0551d4",
+        "content_hash": "e4a5656b1600e09fc4a20decac66696e89d630c42327e94294f1d97cef2083a0"
+      },
+      {
+        "item_id": "env_00023-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00023",
+          "order_id": "order_00023",
+          "amount_paise": 7871,
+          "status": "captured",
+          "block_id": "blk_00023",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:05:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e4a5656b1600e09fc4a20decac66696e89d630c42327e94294f1d97cef2083a0",
+        "content_hash": "a76ca00234e08395e65e8aabfe30638889477eb60fb973339ec6c95d6e62df0b"
+      },
+      {
+        "item_id": "env_00023-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-refined-1000",
+          "text": "Ordered 1kg Fortune maida. Payment complete.",
+          "claimed_sku": "fortune-flour-refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_832",
-        "emitted_at": "2026-09-03T00:39:00Z",
+        "emitted_by": "agt_418",
+        "emitted_at": "2026-09-02T22:20:00Z",
         "evidence_class": 0,
-        "prev_hash": "eddc4dd50dd3dfe0d44562c8628ee344b3e4def0dd308f574fb1664dbd49d32d",
-        "content_hash": "c1dc361fe660951785c32432261851d2eb3a418d91936b7d0793decad957e382"
+        "prev_hash": "a76ca00234e08395e65e8aabfe30638889477eb60fb973339ec6c95d6e62df0b",
+        "content_hash": "ac3b6e61ff6cb9fa27a018910fdc0c4e5e0764cd8115db6f2eb9bcca7f507873"
       }
     ]
   },
@@ -178,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-refined-1000",
-    "ordered_sku": "aashirvaad-flour-refined-1000",
-    "delivered_sku": "aashirvaad-flour-refined-1000",
+    "requested_sku": "fortune-flour-refined-1000",
+    "ordered_sku": "fortune-flour-refined-1000",
+    "delivered_sku": "fortune-flour-refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 6200,
-    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+    "loss_paise": 2071,
+    "rationale": "Correct item, unreconcilable debit. Debited 7871 paise against an order worth 5800 paise."
   }
 }

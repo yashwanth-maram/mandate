@@ -6,152 +6,203 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00227",
-    "created_at": "2026-09-03T00:49:00Z",
-    "expires_at": "2026-09-03T06:49:00Z",
-    "user_id": "usr_6432",
-    "agent_id": "agt_915",
+    "created_at": "2026-09-03T01:24:00Z",
+    "expires_at": "2026-09-03T07:24:00Z",
+    "user_id": "usr_6316",
+    "agent_id": "agt_115",
     "block": {
       "block_id": "blk_00227",
-      "blocked_paise": 50000,
-      "consumed_paise": 0,
-      "blocked_at": "2026-08-21T00:49:00Z",
-      "expires_at": "2026-10-06T00:49:00Z"
+      "blocked_paise": 21600,
+      "consumed_paise": 16200,
+      "blocked_at": "2026-08-29T01:24:00Z",
+      "expires_at": "2026-10-28T01:24:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 7819,
-      "max_total_paise": 7819,
+      "category": "noodles",
+      "max_unit_price_paise": 12419,
+      "max_total_paise": 12419,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "aashirvaad",
-      "variant": "semolina",
-      "pack_size_g": 1000
+      "brand": "maggi",
+      "variant": "atta",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "get me 1kg Aashirvaad sooji from Blinkit",
+      "text": "I need 560g Maggi atta noodles, use Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "94cc3c890bbdead983226b93b9ad2bc56c0afd7bd5f9a30880187bd046fee0b8",
+    "content_hash": "2bc6b49b2c456d80d932b9977fb3e1e1a2500c90f44b415fa8b962e8d9c4f7e4",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00227",
-    "obligation_hash": "94cc3c890bbdead983226b93b9ad2bc56c0afd7bd5f9a30880187bd046fee0b8",
+    "obligation_hash": "2bc6b49b2c456d80d932b9977fb3e1e1a2500c90f44b415fa8b962e8d9c4f7e4",
     "items": [
       {
         "item_id": "env_00227-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "agt_915",
-        "emitted_at": "2026-09-03T00:49:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "5c93f3088097069aa596f1ad4131aaa11505a95bf43930c9cd6e70cfc70b9e9f"
+        "content_hash": "5ac91f6855790364862fbc18b3a1c26847dc6a398f6dfd9c3f1b5c2544cec645"
       },
       {
         "item_id": "env_00227-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00227",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 10800
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:49:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:04Z",
         "evidence_class": 2,
-        "prev_hash": "5c93f3088097069aa596f1ad4131aaa11505a95bf43930c9cd6e70cfc70b9e9f",
-        "content_hash": "2aeabadc5e755771a78c913c915bdf5f0d5dd8e7ae2d01a33d8dd578b2f36136"
+        "prev_hash": "5ac91f6855790364862fbc18b3a1c26847dc6a398f6dfd9c3f1b5c2544cec645",
+        "content_hash": "93ea27d98e71827f4c757f3dd44c29e443453ea117a5d28d6ddfde5e8c937e88"
       },
       {
         "item_id": "env_00227-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00227",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9000
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T01:03:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:05Z",
         "evidence_class": 2,
-        "prev_hash": "2aeabadc5e755771a78c913c915bdf5f0d5dd8e7ae2d01a33d8dd578b2f36136",
-        "content_hash": "0c1471bc84f8aed9c2a584d14f066a793a4131290f29f8bea37083062c943b5c"
+        "prev_hash": "93ea27d98e71827f4c757f3dd44c29e443453ea117a5d28d6ddfde5e8c937e88",
+        "content_hash": "2b762fdbebdf454614349c624c940d3905c7471b4366fc81c37f14dac8c48d8b"
       },
       {
         "item_id": "env_00227-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00227",
-          "amount_paise": 6800,
-          "currency": "INR",
-          "receipt": "zep_00227"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:49:25Z",
-        "evidence_class": 3,
-        "prev_hash": "0c1471bc84f8aed9c2a584d14f066a793a4131290f29f8bea37083062c943b5c",
-        "content_hash": "c74119b1c27731e0d299c5629c7363d20ba944a8bc66a4b32f1fde860ce7c591"
+        "emitted_by": "agt_115",
+        "emitted_at": "2026-09-03T01:24:12Z",
+        "evidence_class": 1,
+        "prev_hash": "2b762fdbebdf454614349c624c940d3905c7471b4366fc81c37f14dac8c48d8b",
+        "content_hash": "21e964c17aaa0abae5a363058ae61d20521b9f0fb80710f9dab6304a2b987a29"
       },
       {
         "item_id": "env_00227-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00227",
-          "order_id": "order_00227",
-          "amount_paise": 6800,
-          "status": "captured",
-          "block_id": "blk_00227",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00227",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T07:19:00Z",
-        "evidence_class": 3,
-        "prev_hash": "c74119b1c27731e0d299c5629c7363d20ba944a8bc66a4b32f1fde860ce7c591",
-        "content_hash": "b99870f5e9beeed93788254e859e8d80339ede1453cb0183d2d0ca823f7aaa5b"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:20Z",
+        "evidence_class": 2,
+        "prev_hash": "21e964c17aaa0abae5a363058ae61d20521b9f0fb80710f9dab6304a2b987a29",
+        "content_hash": "0772083f814352a637cc802d87a77177c14d3bb0bccfaf8516242c5cd1ace9c1"
       },
       {
         "item_id": "env_00227-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00227",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:38:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0772083f814352a637cc802d87a77177c14d3bb0bccfaf8516242c5cd1ace9c1",
+        "content_hash": "ad55f391b0bdae5d9189e1a73a53af52d35867842cb00c9cb8b20b183cfc0a8e"
+      },
+      {
+        "item_id": "env_00227-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00227",
+          "amount_paise": 10800,
+          "currency": "INR",
+          "receipt": "zep_00227"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:24:25Z",
+        "evidence_class": 3,
+        "prev_hash": "ad55f391b0bdae5d9189e1a73a53af52d35867842cb00c9cb8b20b183cfc0a8e",
+        "content_hash": "7f0d9aa5d6cf5464bfb00f12e73c709d364d61d848578fe5f2dfd86c9b0fd630"
+      },
+      {
+        "item_id": "env_00227-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00227",
+          "order_id": "order_00227",
+          "amount_paise": 10800,
+          "status": "captured",
+          "block_id": "blk_00227",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:24:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7f0d9aa5d6cf5464bfb00f12e73c709d364d61d848578fe5f2dfd86c9b0fd630",
+        "content_hash": "842226843fe436ca504fd5b09774bbe1430bbee52d0d8ff15d877a5c6f1d9d39"
+      },
+      {
+        "item_id": "env_00227-e008",
+        "seq": 8,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered the 1kg Aashirvaad sooji you asked for. All good.",
-          "claimed_sku": "aashirvaad-flour-semolina-1000",
+          "text": "Ordered the 560g Maggi atta noodles you asked for. All good.",
+          "claimed_sku": "maggi-noodles-atta-560",
           "claims_success": true
         },
-        "emitted_by": "agt_915",
-        "emitted_at": "2026-09-03T01:04:00Z",
+        "emitted_by": "agt_115",
+        "emitted_at": "2026-09-03T01:39:00Z",
         "evidence_class": 0,
-        "prev_hash": "b99870f5e9beeed93788254e859e8d80339ede1453cb0183d2d0ca823f7aaa5b",
-        "content_hash": "8cc4c50b569535b164d41adefe4a93f902499e4077fb9b4e7ce7da1e88126a67"
+        "prev_hash": "842226843fe436ca504fd5b09774bbe1430bbee52d0d8ff15d877a5c6f1d9d39",
+        "content_hash": "943304e27cd499ab0b1ff98a3f4e9818adec8a72a9d0af57cab0dbf30c606251"
       }
     ]
   },
@@ -160,14 +211,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-semolina-1000",
-    "ordered_sku": "aashirvaad-flour-semolina-1000",
-    "delivered_sku": "aashirvaad-flour-semolina-1000",
+    "requested_sku": "maggi-noodles-atta-560",
+    "ordered_sku": "maggi-noodles-atta-560",
+    "delivered_sku": "maggi-noodles-atta-560",
     "is_hard_pair": false,
     "agent_report_truthful": false,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 6800,
-    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+    "loss_paise": 5400,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 10800 paise exceeds the 5400 paise remaining on block blk_00227."
   }
 }

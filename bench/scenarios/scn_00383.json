@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00383",
-    "created_at": "2026-09-03T03:58:00Z",
-    "expires_at": "2026-09-03T09:58:00Z",
-    "user_id": "usr_5178",
-    "agent_id": "agt_105",
+    "created_at": "2026-09-02T21:49:00Z",
+    "expires_at": "2026-09-03T03:49:00Z",
+    "user_id": "usr_1769",
+    "agent_id": "agt_384",
     "block": {
       "block_id": "blk_00383",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-24T03:58:00Z",
-      "expires_at": "2026-10-17T03:58:00Z"
+      "blocked_at": "2026-08-20T21:49:00Z",
+      "expires_at": "2026-10-19T21:49:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5750,
-      "max_total_paise": 5750,
+      "category": "rice",
+      "max_unit_price_paise": 14719,
+      "max_total_paise": 14719,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "harvest",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "daawat",
+      "variant": null,
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 400g Harvest brown bread on Swiggy Instamart",
-      "uncaptured_attributes": []
+      "text": "buy 1kg Daawat basmati rice from Blinkit, keep it under 147 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "785cc8dd05a7c80236024e541f4debc3b9c06fa91acf75845d4cf51f3b6c17c8",
+    "content_hash": "5402eb08d175bf3f0e9d42e1abf8d57722e9dcffdda8b5f8459efd4b9e0b9493",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00383",
-    "obligation_hash": "785cc8dd05a7c80236024e541f4debc3b9c06fa91acf75845d4cf51f3b6c17c8",
+    "obligation_hash": "5402eb08d175bf3f0e9d42e1abf8d57722e9dcffdda8b5f8459efd4b9e0b9493",
     "items": [
       {
         "item_id": "env_00383-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-brown-1000",
+          "display_name": "India Gate Brown Basmati Rice 1kg",
+          "description": "India Gate Brown Basmati Rice 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 11800
         },
-        "emitted_by": "agt_105",
-        "emitted_at": "2026-09-03T03:58:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:49:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "a63efec982cb76c315682901f137c858ec4446e4bd3b7200f5597e3e89dedcb0"
+        "content_hash": "df2ca9a0f6329a1e26d69407f9fbc30016d18220fa89506365a47ccd0907e630"
       },
       {
         "item_id": "env_00383-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00383",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:58:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:49:04Z",
         "evidence_class": 2,
-        "prev_hash": "a63efec982cb76c315682901f137c858ec4446e4bd3b7200f5597e3e89dedcb0",
-        "content_hash": "5e8f77c12243f64c06577cf0917823e5a7697981be73b428312d26e564b7993c"
+        "prev_hash": "df2ca9a0f6329a1e26d69407f9fbc30016d18220fa89506365a47ccd0907e630",
+        "content_hash": "fa0c47b05f0cdfc72ece7417773a84b44f3e88a3458fddf754edd3a8d43c97d0"
       },
       {
         "item_id": "env_00383-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00383",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 12800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T04:12:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:49:05Z",
         "evidence_class": 2,
-        "prev_hash": "5e8f77c12243f64c06577cf0917823e5a7697981be73b428312d26e564b7993c",
-        "content_hash": "80fc2d9cbd127ca9acba97a833d41f8fd764ebccaab25631dc3e87dd97586a12"
+        "prev_hash": "fa0c47b05f0cdfc72ece7417773a84b44f3e88a3458fddf754edd3a8d43c97d0",
+        "content_hash": "b67e2e58bf899da3feb96035208acd504ef2413614f876daaffca791db2ab61f"
       },
       {
         "item_id": "env_00383-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00383",
-          "amount_paise": 5000,
-          "currency": "INR",
-          "receipt": "zep_00383"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:58:25Z",
-        "evidence_class": 3,
-        "prev_hash": "80fc2d9cbd127ca9acba97a833d41f8fd764ebccaab25631dc3e87dd97586a12",
-        "content_hash": "c6322f4beb265fe65ddf89b99b4eda73f02eea6c0555bf2236a9c382d4e638a0"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:49:06Z",
+        "evidence_class": 2,
+        "prev_hash": "b67e2e58bf899da3feb96035208acd504ef2413614f876daaffca791db2ab61f",
+        "content_hash": "f047d9d377bac7d744f0e1972b1a4cc01e1f7f30e2cda7b5bd4be980f7dfd8a6"
       },
       {
         "item_id": "env_00383-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00383",
-          "order_id": "order_00383",
-          "amount_paise": 5000,
-          "status": "captured",
-          "block_id": "blk_00383",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:58:30Z",
-        "evidence_class": 3,
-        "prev_hash": "c6322f4beb265fe65ddf89b99b4eda73f02eea6c0555bf2236a9c382d4e638a0",
-        "content_hash": "52930cce18d9481209af1d3af5ce9d1334aa3de00cd88950e92d7d2826a2c6b9"
+        "emitted_by": "agt_384",
+        "emitted_at": "2026-09-02T21:49:12Z",
+        "evidence_class": 1,
+        "prev_hash": "f047d9d377bac7d744f0e1972b1a4cc01e1f7f30e2cda7b5bd4be980f7dfd8a6",
+        "content_hash": "471bffc810d993b6354d56583e49de1761349f2ba30db7d37965fac45ae7ca04"
       },
       {
         "item_id": "env_00383-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00383",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:49:20Z",
+        "evidence_class": 2,
+        "prev_hash": "471bffc810d993b6354d56583e49de1761349f2ba30db7d37965fac45ae7ca04",
+        "content_hash": "f536f631c1dcb60aa3301aecec1c177f5f0c8981b7907da050317d029be33710"
+      },
+      {
+        "item_id": "env_00383-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00383",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f536f631c1dcb60aa3301aecec1c177f5f0c8981b7907da050317d029be33710",
+        "content_hash": "8ba0e4fc2c8bf0796c2a8a229711dba3f927590ddff23375bf96454d6f830301"
+      },
+      {
+        "item_id": "env_00383-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00383",
+          "amount_paise": 12800,
+          "currency": "INR",
+          "receipt": "zep_00383"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "8ba0e4fc2c8bf0796c2a8a229711dba3f927590ddff23375bf96454d6f830301",
+        "content_hash": "52e8dbe69dcb42235ee11be9463ef31e527ec0818ccde12581bffb31bfd3e606"
+      },
+      {
+        "item_id": "env_00383-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00383",
+          "order_id": "order_00383",
+          "amount_paise": 12800,
+          "status": "captured",
+          "block_id": "blk_00383",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "52e8dbe69dcb42235ee11be9463ef31e527ec0818ccde12581bffb31bfd3e606",
+        "content_hash": "cd8918e29539f73dd3b15bfd18f5e12a5df83b851ea804623d0a4b08afb8d428"
+      },
+      {
+        "item_id": "env_00383-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Harvest brown bread. Payment complete.",
-          "claimed_sku": "harvest-bread-brown-400",
+          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
+          "claimed_sku": "daawat-rice-basmati-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_105",
-        "emitted_at": "2026-09-03T04:13:00Z",
+        "emitted_by": "agt_384",
+        "emitted_at": "2026-09-02T22:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "52930cce18d9481209af1d3af5ce9d1334aa3de00cd88950e92d7d2826a2c6b9",
-        "content_hash": "3f3ce5a58ab6c4a6f9872dc9df6fa3b4ae9b1634ea1288d15e42304e53e03965"
+        "prev_hash": "cd8918e29539f73dd3b15bfd18f5e12a5df83b851ea804623d0a4b08afb8d428",
+        "content_hash": "d72603bde44e02eae0fb4f78abf11b0dcc74b93f8ac12c226ad23901f65e71d6"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "harvest-bread-brown-400",
-    "ordered_sku": "harvest-bread-brown-400",
-    "delivered_sku": "harvest-bread-brown-400",
+    "requested_sku": "daawat-rice-basmati-1000",
+    "ordered_sku": "daawat-rice-basmati-1000",
+    "delivered_sku": "daawat-rice-basmati-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00062",
-    "created_at": "2026-09-03T03:45:00Z",
-    "expires_at": "2026-09-03T09:45:00Z",
-    "user_id": "usr_6881",
-    "agent_id": "agt_688",
+    "created_at": "2026-09-02T18:58:00Z",
+    "expires_at": "2026-09-03T00:58:00Z",
+    "user_id": "usr_2229",
+    "agent_id": "agt_787",
     "block": {
       "block_id": "blk_00062",
-      "blocked_paise": 50000,
+      "blocked_paise": 100740,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-25T03:45:00Z",
-      "expires_at": "2026-10-25T03:45:00Z"
+      "blocked_at": "2026-08-13T18:58:00Z",
+      "expires_at": "2026-10-14T18:58:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 5175,
-      "max_total_paise": 5175,
+      "category": "butter",
+      "max_unit_price_paise": 33580,
+      "max_total_paise": 33580,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "tata",
-      "variant": "low_sodium",
-      "pack_size_g": 1000
+      "brand": "amul",
+      "variant": "unsalted",
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "I need 1kg Tata low sodium salt, use Zepto",
+      "text": "I need 500g Amul unsalted butter, use Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "b494e1d929e5ff3d51885b16e3f1c77d7b2d24b9ed551b0226e7372fbd73f40a",
+    "content_hash": "3b1b251872a78cd84c6739e533c168dc0656d28cff6cd66c3b58bcc582998d7f",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00062",
-    "obligation_hash": "b494e1d929e5ff3d51885b16e3f1c77d7b2d24b9ed551b0226e7372fbd73f40a",
+    "obligation_hash": "3b1b251872a78cd84c6739e533c168dc0656d28cff6cd66c3b58bcc582998d7f",
     "items": [
       {
         "item_id": "env_00062-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "tata-salt-low_sodium-1000",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 28500
         },
-        "emitted_by": "agt_688",
-        "emitted_at": "2026-09-03T03:45:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:58:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "34024df1e32aa9ff62f6b8e882eb808f44e7286e0bd7d50864c376cca262ffe2"
+        "content_hash": "260fef4296e81dae88ff91a42eb5630b396386fcb9855b1e59d7aaf656b54420"
       },
       {
         "item_id": "env_00062-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00062",
-          "lines": [
-            {
-              "sku": "tata-salt-low_sodium-1000",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:45:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:58:04Z",
         "evidence_class": 2,
-        "prev_hash": "34024df1e32aa9ff62f6b8e882eb808f44e7286e0bd7d50864c376cca262ffe2",
-        "content_hash": "e262767d337476e2545dd8c97f65f1d06ffc6e0fe1321717bd5f75493b29ff7c"
+        "prev_hash": "260fef4296e81dae88ff91a42eb5630b396386fcb9855b1e59d7aaf656b54420",
+        "content_hash": "62dd25099f05ab4c8d26192cb913a022a9a8493cfaac7f6a9eb7cffc7df6417d"
       },
       {
         "item_id": "env_00062-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00062",
-          "lines": [
-            {
-              "sku": "tata-salt-low_sodium-1000",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:59:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:58:05Z",
         "evidence_class": 2,
-        "prev_hash": "e262767d337476e2545dd8c97f65f1d06ffc6e0fe1321717bd5f75493b29ff7c",
-        "content_hash": "221d5de9f411bcd0ea20d4cdf408666a9a77f9b377070e5860f3a9d92066b3ca"
+        "prev_hash": "62dd25099f05ab4c8d26192cb913a022a9a8493cfaac7f6a9eb7cffc7df6417d",
+        "content_hash": "ae6db9d05ec7a30b964c326478e47cb072d977f9ca00e9ec928241fecc7da164"
       },
       {
         "item_id": "env_00062-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00062",
-          "amount_paise": 4500,
-          "currency": "INR",
-          "receipt": "zep_00062"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Best before 6 months from packaging date.",
+          "listed_price_paise": 29200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:45:25Z",
-        "evidence_class": 3,
-        "prev_hash": "221d5de9f411bcd0ea20d4cdf408666a9a77f9b377070e5860f3a9d92066b3ca",
-        "content_hash": "fd687ac7319b4ce80e3aed74f7ed3a861dc4d34301cf7918798ef06045a275ee"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:58:06Z",
+        "evidence_class": 2,
+        "prev_hash": "ae6db9d05ec7a30b964c326478e47cb072d977f9ca00e9ec928241fecc7da164",
+        "content_hash": "f0464927c729f548834150f14afe18bac87f7fe92b494fac9af147869b22c598"
       },
       {
         "item_id": "env_00062-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00062",
-          "order_id": "order_00062",
-          "amount_paise": 4500,
-          "status": "captured",
-          "block_id": "blk_00062",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:45:30Z",
-        "evidence_class": 3,
-        "prev_hash": "fd687ac7319b4ce80e3aed74f7ed3a861dc4d34301cf7918798ef06045a275ee",
-        "content_hash": "b001ca9737f6094e93277d9567146b205222007bd5f1f538a2db41efbbddb46a"
+        "emitted_by": "agt_787",
+        "emitted_at": "2026-09-02T18:58:12Z",
+        "evidence_class": 1,
+        "prev_hash": "f0464927c729f548834150f14afe18bac87f7fe92b494fac9af147869b22c598",
+        "content_hash": "d67473c8549fb13200e159a5e2c25d755c49bf2434c5b72ee88e4890cf1d40c2"
       },
       {
         "item_id": "env_00062-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00062",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:58:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d67473c8549fb13200e159a5e2c25d755c49bf2434c5b72ee88e4890cf1d40c2",
+        "content_hash": "4c9869b956dbcf5fe535cf3e7c314dadf0e58d140c8395e4e6dc50b0028ba26f"
+      },
+      {
+        "item_id": "env_00062-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00062",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:12:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4c9869b956dbcf5fe535cf3e7c314dadf0e58d140c8395e4e6dc50b0028ba26f",
+        "content_hash": "d1b214d5a1ad8fb6f08872c4c057714edb1bf2b90d70b267292d982431dc5279"
+      },
+      {
+        "item_id": "env_00062-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00062",
+          "amount_paise": 29200,
+          "currency": "INR",
+          "receipt": "zep_00062"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:58:25Z",
+        "evidence_class": 3,
+        "prev_hash": "d1b214d5a1ad8fb6f08872c4c057714edb1bf2b90d70b267292d982431dc5279",
+        "content_hash": "98dde1fdae35914258de480f2fb84f140fe864d5710f1b5ad0091d599c3142d5"
+      },
+      {
+        "item_id": "env_00062-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00062",
+          "order_id": "order_00062",
+          "amount_paise": 29200,
+          "status": "captured",
+          "block_id": "blk_00062",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:58:30Z",
+        "evidence_class": 3,
+        "prev_hash": "98dde1fdae35914258de480f2fb84f140fe864d5710f1b5ad0091d599c3142d5",
+        "content_hash": "07ec50789ed25c376960d86bfe219a3c9b8cb7f7c1284acc12651b9006da0710"
+      },
+      {
+        "item_id": "env_00062-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Tata low sodium salt. Payment complete.",
-          "claimed_sku": "tata-salt-low_sodium-1000",
+          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
+          "claimed_sku": "amul-butter-unsalted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_688",
-        "emitted_at": "2026-09-03T04:00:00Z",
+        "emitted_by": "agt_787",
+        "emitted_at": "2026-09-02T19:13:00Z",
         "evidence_class": 0,
-        "prev_hash": "b001ca9737f6094e93277d9567146b205222007bd5f1f538a2db41efbbddb46a",
-        "content_hash": "72cc19b4795a819a340087772f72c83d077a2877f032a0a34f97e524d4834eec"
+        "prev_hash": "07ec50789ed25c376960d86bfe219a3c9b8cb7f7c1284acc12651b9006da0710",
+        "content_hash": "608c567c529c0723d8d1ade74a597563c60c36a499c15b4033888bfdb2e6ca43"
       }
     ]
   },
@@ -160,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "tata-salt-low_sodium-1000",
-    "ordered_sku": "tata-salt-low_sodium-1000",
-    "delivered_sku": "tata-salt-low_sodium-1000",
+    "requested_sku": "amul-butter-unsalted-500",
+    "ordered_sku": "amul-butter-unsalted-500",
+    "delivered_sku": "amul-butter-unsalted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

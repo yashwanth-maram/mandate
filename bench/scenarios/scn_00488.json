@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00488",
-    "created_at": "2026-09-02T21:41:00Z",
-    "expires_at": "2026-09-03T03:41:00Z",
-    "user_id": "usr_9511",
-    "agent_id": "agt_199",
+    "created_at": "2026-09-03T03:50:00Z",
+    "expires_at": "2026-09-03T09:50:00Z",
+    "user_id": "usr_1235",
+    "agent_id": "agt_479",
     "block": {
       "block_id": "blk_00488",
-      "blocked_paise": 56925,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-30T21:41:00Z",
-      "expires_at": "2026-10-25T21:41:00Z"
+      "blocked_at": "2026-08-23T03:50:00Z",
+      "expires_at": "2026-10-03T03:50:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18975,
-      "max_total_paise": 18975,
+      "category": "milk",
+      "max_unit_price_paise": 7359,
+      "max_total_paise": 7359,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "mustard",
+      "brand": "mother_dairy",
+      "variant": "toned",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1L Fortune kachi ghani mustard oil on Zepto",
+      "text": "I need 1L Mother Dairy toned milk, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "6eae8e33bed37d5dd00162b2b1f1de580fc6ed4eed24dd0cf9c8ea1c0c9eb6ba",
+    "content_hash": "9e4030013ce96397efe38ed6bafeaaec0d9a7433998ba93339e63b3187e856d3",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00488",
-    "obligation_hash": "6eae8e33bed37d5dd00162b2b1f1de580fc6ed4eed24dd0cf9c8ea1c0c9eb6ba",
+    "obligation_hash": "9e4030013ce96397efe38ed6bafeaaec0d9a7433998ba93339e63b3187e856d3",
     "items": [
       {
         "item_id": "env_00488-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 6400
         },
-        "emitted_by": "agt_199",
-        "emitted_at": "2026-09-02T21:41:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:50:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "5758e204fb33244d758acb485a08d33ad9a1b568c84d10eb2c6637407bee3246"
+        "content_hash": "d61223d8a91692beae756a828555fd5fcc33dbd593eeea39cb027b2d1449bc39"
       },
       {
         "item_id": "env_00488-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00488",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-milk-full_cream-1000",
+          "display_name": "Amul Gold Full Cream Milk 1L",
+          "description": "Amul Gold Full Cream Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 7700
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T21:41:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:50:04Z",
         "evidence_class": 2,
-        "prev_hash": "5758e204fb33244d758acb485a08d33ad9a1b568c84d10eb2c6637407bee3246",
-        "content_hash": "b0c87eb0d3401f08f75f56eb4a6f403fdccd8864c591904a361bc4163e41b244"
+        "prev_hash": "d61223d8a91692beae756a828555fd5fcc33dbd593eeea39cb027b2d1449bc39",
+        "content_hash": "69a722628875b2f62671f5ac3ff5d308b88ea3d05845488d66265d6e5fb64820"
       },
       {
         "item_id": "env_00488-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00488",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-milk-double_toned-1000",
+          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
+          "description": "Amul Slim n Trim Double Toned Milk 1L. Bestseller in this category this week.",
+          "listed_price_paise": 5900
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T21:55:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:50:05Z",
         "evidence_class": 2,
-        "prev_hash": "b0c87eb0d3401f08f75f56eb4a6f403fdccd8864c591904a361bc4163e41b244",
-        "content_hash": "3948cccb8c2be1bfdc9e65d0e34ce5a82e71a0ad868f7808621a8e9e5f4675b5"
+        "prev_hash": "69a722628875b2f62671f5ac3ff5d308b88ea3d05845488d66265d6e5fb64820",
+        "content_hash": "7743e59f11c2e052ba0c3386095714b86ecf656f9daaec93d4df0fe21cc964b1"
       },
       {
         "item_id": "env_00488-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00488",
-          "amount_paise": 16500,
-          "currency": "INR",
-          "receipt": "zep_00488"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T21:41:25Z",
-        "evidence_class": 3,
-        "prev_hash": "3948cccb8c2be1bfdc9e65d0e34ce5a82e71a0ad868f7808621a8e9e5f4675b5",
-        "content_hash": "969d35d1365c43f4462f020b1e85d463e51e2e89b90baa073634abfc44e5da39"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:50:06Z",
+        "evidence_class": 2,
+        "prev_hash": "7743e59f11c2e052ba0c3386095714b86ecf656f9daaec93d4df0fe21cc964b1",
+        "content_hash": "8519a7f6b03ff2da24a1e78cf37148b9a1749fd2cc4abd75fe4f06ad4000ad25"
       },
       {
         "item_id": "env_00488-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00488",
-          "order_id": "order_00488",
-          "amount_paise": 16500,
-          "status": "captured",
-          "block_id": "blk_00488",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T21:41:30Z",
-        "evidence_class": 3,
-        "prev_hash": "969d35d1365c43f4462f020b1e85d463e51e2e89b90baa073634abfc44e5da39",
-        "content_hash": "82fdc3af4ce61e57828876bbf8db2d20cb9e1ce111bcc32aa30050a31541b635"
+        "emitted_by": "agt_479",
+        "emitted_at": "2026-09-03T03:50:12Z",
+        "evidence_class": 1,
+        "prev_hash": "8519a7f6b03ff2da24a1e78cf37148b9a1749fd2cc4abd75fe4f06ad4000ad25",
+        "content_hash": "f29c31790b55e2538c656e5faa21b6cf770dc00c3a28f41031bba53445c946e5"
       },
       {
         "item_id": "env_00488-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-mustard-1000",
-          "claims_success": true
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00488",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ]
         },
-        "emitted_by": "agt_199",
-        "emitted_at": "2026-09-02T21:56:00Z",
-        "evidence_class": 0,
-        "prev_hash": "82fdc3af4ce61e57828876bbf8db2d20cb9e1ce111bcc32aa30050a31541b635",
-        "content_hash": "1cbfc5982368eb90f6abfeba0faa926ac5d78aea8182324d350f21bdaee930df"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T03:50:20Z",
+        "evidence_class": 2,
+        "prev_hash": "f29c31790b55e2538c656e5faa21b6cf770dc00c3a28f41031bba53445c946e5",
+        "content_hash": "00dd14bb37f7a84e41b0ae1a4bb24a1c2955bb65542aa8a3e829d64c464bee3c"
       },
       {
         "item_id": "env_00488-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "Didn't order this. Please reverse the payment.",
-          "raised_at": "2026-09-03T00:41:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00488",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_9511",
-        "emitted_at": "2026-09-03T00:41:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T04:04:00Z",
+        "evidence_class": 2,
+        "prev_hash": "00dd14bb37f7a84e41b0ae1a4bb24a1c2955bb65542aa8a3e829d64c464bee3c",
+        "content_hash": "c90c4cd1b1a9ba24869cc2da22f9191abb1124a2443c449dffc77fde10466054"
+      },
+      {
+        "item_id": "env_00488-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00488",
+          "amount_paise": 6400,
+          "currency": "INR",
+          "receipt": "zep_00488"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:50:25Z",
+        "evidence_class": 3,
+        "prev_hash": "c90c4cd1b1a9ba24869cc2da22f9191abb1124a2443c449dffc77fde10466054",
+        "content_hash": "49043ca1c901ccace79bd2b58d1e0a58e633f46a6729e553baa1080c4609e596"
+      },
+      {
+        "item_id": "env_00488-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00488",
+          "order_id": "order_00488",
+          "amount_paise": 6400,
+          "status": "captured",
+          "block_id": "blk_00488",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:50:30Z",
+        "evidence_class": 3,
+        "prev_hash": "49043ca1c901ccace79bd2b58d1e0a58e633f46a6729e553baa1080c4609e596",
+        "content_hash": "56d8dbb2c321463086f02fc88c74d994c1e0511f95e3167bd6cbb123c0f66933"
+      },
+      {
+        "item_id": "env_00488-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Mother Dairy toned milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-toned-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_479",
+        "emitted_at": "2026-09-03T04:05:00Z",
         "evidence_class": 0,
-        "prev_hash": "1cbfc5982368eb90f6abfeba0faa926ac5d78aea8182324d350f21bdaee930df",
-        "content_hash": "7c88e340f1f808cd5e0b4e82bd2586e36a2b89d928bbae66d84c9cece5063afb"
+        "prev_hash": "56d8dbb2c321463086f02fc88c74d994c1e0511f95e3167bd6cbb123c0f66933",
+        "content_hash": "392bfb26a65e53bffbbff11e9a40ea761371cf1f03e64388d675b8c983299edf"
+      },
+      {
+        "item_id": "env_00488-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T06:50:00Z"
+        },
+        "emitted_by": "usr_1235",
+        "emitted_at": "2026-09-03T06:50:00Z",
+        "evidence_class": 0,
+        "prev_hash": "392bfb26a65e53bffbbff11e9a40ea761371cf1f03e64388d675b8c983299edf",
+        "content_hash": "2401519d10269428980ba642795b297a5d5f17f0d093f06c6e6925cb60ea5960"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-mustard-1000",
-    "ordered_sku": "fortune-edible_oil-mustard-1000",
-    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "requested_sku": "mother_dairy-milk-toned-1000",
+    "ordered_sku": "mother_dairy-milk-toned-1000",
+    "delivered_sku": "mother_dairy-milk-toned-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 16500,
+    "loss_paise": 6400,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00164",
-    "created_at": "2026-09-03T02:15:00Z",
-    "expires_at": "2026-09-03T08:15:00Z",
-    "user_id": "usr_4150",
-    "agent_id": "agt_352",
+    "created_at": "2026-09-03T01:24:00Z",
+    "expires_at": "2026-09-03T07:24:00Z",
+    "user_id": "usr_8035",
+    "agent_id": "agt_513",
     "block": {
       "block_id": "blk_00164",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-26T02:15:00Z",
-      "expires_at": "2026-10-20T02:15:00Z"
+      "blocked_at": "2026-08-21T01:24:00Z",
+      "expires_at": "2026-11-02T01:24:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3219,
-      "max_total_paise": 3219,
+      "category": "bread",
+      "max_unit_price_paise": 5979,
+      "max_total_paise": 5979,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "tata",
-      "variant": "iodised",
-      "pack_size_g": 1000
+      "brand": "britannia",
+      "variant": "brown",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "I need 1kg Tata iodised salt, use Blinkit",
+      "text": "buy 400g Britannia brown bread from Zepto, keep it under 59 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "bd418f5b4d8e0dfbfcc22872d323e75278bdbf7c0d93237e586a76373c31fe5d",
+    "content_hash": "5021b81bda36dd3862f6664361162ea9a11b53af4c41e445e1da279c55df51ed",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00164",
-    "obligation_hash": "bd418f5b4d8e0dfbfcc22872d323e75278bdbf7c0d93237e586a76373c31fe5d",
+    "obligation_hash": "5021b81bda36dd3862f6664361162ea9a11b53af4c41e445e1da279c55df51ed",
     "items": [
       {
         "item_id": "env_00164-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "tata-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 2800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "agt_352",
-        "emitted_at": "2026-09-03T02:15:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "3ce03eec73525796e4da174374e2c987556242f7cc1516e4f4d33f001e1fdbd8"
+        "content_hash": "290a45f34c94c413eab8d01bf0d0e0d37aabd8459051e5fedf28ec1b7cbf6c83"
       },
       {
         "item_id": "env_00164-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00164",
-          "lines": [
-            {
-              "sku": "tata-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 2800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:15:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:04Z",
         "evidence_class": 2,
-        "prev_hash": "3ce03eec73525796e4da174374e2c987556242f7cc1516e4f4d33f001e1fdbd8",
-        "content_hash": "6708f9d8343741349559c1740d2a08ac6475c77c8dd410a3208f04c1e86a992a"
+        "prev_hash": "290a45f34c94c413eab8d01bf0d0e0d37aabd8459051e5fedf28ec1b7cbf6c83",
+        "content_hash": "77f3a112108b33a7d54e482dfcf74ccbafe6d3ba956c8749103ccbba452b01fe"
       },
       {
         "item_id": "env_00164-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00164",
-          "lines": [
-            {
-              "sku": "aashirvaad-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 3000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:29:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:05Z",
         "evidence_class": 2,
-        "prev_hash": "6708f9d8343741349559c1740d2a08ac6475c77c8dd410a3208f04c1e86a992a",
-        "content_hash": "f8a5945bbc264907b10545f85d61c6e89fbcf4b85a30b99672e09232a0341f71"
+        "prev_hash": "77f3a112108b33a7d54e482dfcf74ccbafe6d3ba956c8749103ccbba452b01fe",
+        "content_hash": "2161179b65a8a23b65bc729238a1810bfb624f7d17340990c09b77efd82ceb26"
       },
       {
         "item_id": "env_00164-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00164",
-          "amount_paise": 2800,
-          "currency": "INR",
-          "receipt": "zep_00164"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:15:25Z",
-        "evidence_class": 3,
-        "prev_hash": "f8a5945bbc264907b10545f85d61c6e89fbcf4b85a30b99672e09232a0341f71",
-        "content_hash": "9736223f0e42d13c37282c7a35c1e9237e8b0f1fef972c9870d7c3fb41d11659"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:06Z",
+        "evidence_class": 2,
+        "prev_hash": "2161179b65a8a23b65bc729238a1810bfb624f7d17340990c09b77efd82ceb26",
+        "content_hash": "4185c0d24ace5d3fead375197b0cb6009dd4745285ed129a34cbeb30f219ce68"
       },
       {
         "item_id": "env_00164-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00164",
-          "order_id": "order_00164",
-          "amount_paise": 2800,
-          "status": "captured",
-          "block_id": "blk_00164",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:15:30Z",
-        "evidence_class": 3,
-        "prev_hash": "9736223f0e42d13c37282c7a35c1e9237e8b0f1fef972c9870d7c3fb41d11659",
-        "content_hash": "f9b9cf4cc9a49d756ae1296f11d46a9cd2eb743574c54d550446e0522241c42a"
+        "emitted_by": "agt_513",
+        "emitted_at": "2026-09-03T01:24:12Z",
+        "evidence_class": 1,
+        "prev_hash": "4185c0d24ace5d3fead375197b0cb6009dd4745285ed129a34cbeb30f219ce68",
+        "content_hash": "cb288950fe89c46cb07653cb1641cba0424e5cd5ef484eaccabe67b488e47646"
       },
       {
         "item_id": "env_00164-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00164",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:24:20Z",
+        "evidence_class": 2,
+        "prev_hash": "cb288950fe89c46cb07653cb1641cba0424e5cd5ef484eaccabe67b488e47646",
+        "content_hash": "71bfb0200f5068bab5d190563b75b4efcfbf59c629c598385e71fc7ed50ec4b5"
+      },
+      {
+        "item_id": "env_00164-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00164",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:38:00Z",
+        "evidence_class": 2,
+        "prev_hash": "71bfb0200f5068bab5d190563b75b4efcfbf59c629c598385e71fc7ed50ec4b5",
+        "content_hash": "0c78ecffef607deecb1d2946319eea1990f6cbbcc841e1525eea4d84c2520bb6"
+      },
+      {
+        "item_id": "env_00164-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00164",
+          "amount_paise": 5200,
+          "currency": "INR",
+          "receipt": "zep_00164"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:24:25Z",
+        "evidence_class": 3,
+        "prev_hash": "0c78ecffef607deecb1d2946319eea1990f6cbbcc841e1525eea4d84c2520bb6",
+        "content_hash": "426fccfe2fc75d7197757593620fd4abc485d60ec1e99bef3fe5a6e53a23ebe7"
+      },
+      {
+        "item_id": "env_00164-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00164",
+          "order_id": "order_00164",
+          "amount_paise": 5200,
+          "status": "captured",
+          "block_id": "blk_00164",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:24:30Z",
+        "evidence_class": 3,
+        "prev_hash": "426fccfe2fc75d7197757593620fd4abc485d60ec1e99bef3fe5a6e53a23ebe7",
+        "content_hash": "76cbe48ed6f755209bf3b42bcde6c311576b14f0bdc087ba19e08fc521339d9b"
+      },
+      {
+        "item_id": "env_00164-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
-          "claimed_sku": "tata-salt-iodised-1000",
+          "text": "Ordered 400g Britannia brown bread. Payment complete.",
+          "claimed_sku": "britannia-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_352",
-        "emitted_at": "2026-09-03T02:30:00Z",
+        "emitted_by": "agt_513",
+        "emitted_at": "2026-09-03T01:39:00Z",
         "evidence_class": 0,
-        "prev_hash": "f9b9cf4cc9a49d756ae1296f11d46a9cd2eb743574c54d550446e0522241c42a",
-        "content_hash": "b97ed41444f9a7756766f0dcb7ffa50700f30e2eac588533b5e52a92a5bf5e70"
+        "prev_hash": "76cbe48ed6f755209bf3b42bcde6c311576b14f0bdc087ba19e08fc521339d9b",
+        "content_hash": "0a503706d73fe6f378b1c79a85732e38c9a455ddfe732927d4148d6c294814c6"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "tata-salt-iodised-1000",
-    "ordered_sku": "tata-salt-iodised-1000",
-    "delivered_sku": "aashirvaad-salt-iodised-1000",
+    "requested_sku": "britannia-bread-brown-400",
+    "ordered_sku": "britannia-bread-brown-400",
+    "delivered_sku": "harvest-bread-brown-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 2800,
-    "rationale": "Order names tata; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 5200,
+    "rationale": "Order names britannia; fulfilment shipped harvest. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

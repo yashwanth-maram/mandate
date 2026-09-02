@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00162",
-    "created_at": "2026-09-02T19:03:00Z",
-    "expires_at": "2026-09-03T01:03:00Z",
-    "user_id": "usr_3262",
-    "agent_id": "agt_631",
+    "created_at": "2026-09-02T19:12:00Z",
+    "expires_at": "2026-09-03T01:12:00Z",
+    "user_id": "usr_8736",
+    "agent_id": "agt_299",
     "block": {
       "block_id": "blk_00162",
-      "blocked_paise": 128340,
+      "blocked_paise": 94872,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-27T19:03:00Z",
-      "expires_at": "2026-10-19T19:03:00Z"
+      "blocked_at": "2026-08-17T19:12:00Z",
+      "expires_at": "2026-10-05T19:12:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 42780,
-      "max_total_paise": 42780,
+      "category": "butter",
+      "max_unit_price_paise": 31624,
+      "max_total_paise": 31624,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "daawat",
-      "variant": "sona_masoori",
-      "pack_size_g": 5000
+      "brand": "nandini",
+      "variant": "salted",
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "I need 5kg Daawat sona masoori rice, use Blinkit",
+      "text": "buy 500g Nandini salted butter from Blinkit, keep it under 316 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "8087b1cd044fa2f248eda8529d83a2c951b3d6fa1096f7edcd0bda3044652246",
+    "content_hash": "9c9b763a5d67327234a3b378456b5af83c6cb3da9f8c32447a22e2314ab20605",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00162",
-    "obligation_hash": "8087b1cd044fa2f248eda8529d83a2c951b3d6fa1096f7edcd0bda3044652246",
+    "obligation_hash": "9c9b763a5d67327234a3b378456b5af83c6cb3da9f8c32447a22e2314ab20605",
     "items": [
       {
         "item_id": "env_00162-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "daawat-rice-sona_masoori-5000",
-              "quantity": 1,
-              "unit_price_paise": 37200
-            }
-          ]
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 28500
         },
-        "emitted_by": "agt_631",
-        "emitted_at": "2026-09-02T19:03:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:12:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "dee19e715a774beb323d68c079fa4fc984b19f58aca67048a9987affd84869d4"
+        "content_hash": "59499b99482763fc127fe2b54207a0a526e51373476259c52af6d73fb93497c2"
       },
       {
         "item_id": "env_00162-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Best before 6 months from packaging date.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:12:04Z",
+        "evidence_class": 2,
+        "prev_hash": "59499b99482763fc127fe2b54207a0a526e51373476259c52af6d73fb93497c2",
+        "content_hash": "a4481ea2752aa67f2cf6bf5c67ee1d59fbc1201e9256971e31c99faa5517e409"
+      },
+      {
+        "item_id": "env_00162-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 27500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:12:05Z",
+        "evidence_class": 2,
+        "prev_hash": "a4481ea2752aa67f2cf6bf5c67ee1d59fbc1201e9256971e31c99faa5517e409",
+        "content_hash": "e13a3ef9cdbeffd5acabbf3031dd73cd8cf22fd499a3cc281bce85c5e89c6ad4"
+      },
+      {
+        "item_id": "env_00162-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Bestseller in this category this week.",
+          "listed_price_paise": 29200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:12:06Z",
+        "evidence_class": 2,
+        "prev_hash": "e13a3ef9cdbeffd5acabbf3031dd73cd8cf22fd499a3cc281bce85c5e89c6ad4",
+        "content_hash": "2b3cd0f6ec79e962a21175dc90c687732b6ec37ab0893a57ce7d5f1e08497da9"
+      },
+      {
+        "item_id": "env_00162-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "nandini-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 27500
+            }
+          ]
+        },
+        "emitted_by": "agt_299",
+        "emitted_at": "2026-09-02T19:12:12Z",
+        "evidence_class": 1,
+        "prev_hash": "2b3cd0f6ec79e962a21175dc90c687732b6ec37ab0893a57ce7d5f1e08497da9",
+        "content_hash": "6e46803d5758fd8ff64bfb9145297f23eb6ac14f7f90776f8e887ad99145bb07"
+      },
+      {
+        "item_id": "env_00162-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00162",
           "lines": [
             {
-              "sku": "daawat-rice-sona_masoori-5000",
+              "sku": "nandini-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 37200
+              "unit_price_paise": 27500
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:03:20Z",
+        "emitted_at": "2026-09-02T19:12:20Z",
         "evidence_class": 2,
-        "prev_hash": "dee19e715a774beb323d68c079fa4fc984b19f58aca67048a9987affd84869d4",
-        "content_hash": "76967efa6e1de95a27e80b6b12a91e7e5b90975997364e8abe40a57abb792a15"
+        "prev_hash": "6e46803d5758fd8ff64bfb9145297f23eb6ac14f7f90776f8e887ad99145bb07",
+        "content_hash": "4071037144368494c0d74d815ae1193bef7951d3223bdf6732e1690c7d4481e3"
       },
       {
-        "item_id": "env_00162-e002",
-        "seq": 2,
+        "item_id": "env_00162-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00162",
           "lines": [
             {
-              "sku": "daawat-rice-sona_masoori-5000",
+              "sku": "nandini-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 37200
+              "unit_price_paise": 27500
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:17:00Z",
+        "emitted_at": "2026-09-02T19:26:00Z",
         "evidence_class": 2,
-        "prev_hash": "76967efa6e1de95a27e80b6b12a91e7e5b90975997364e8abe40a57abb792a15",
-        "content_hash": "dd58c4ea05ea76fe3ef8e35900bcfe20d867abe72846983890b24953b2df9156"
+        "prev_hash": "4071037144368494c0d74d815ae1193bef7951d3223bdf6732e1690c7d4481e3",
+        "content_hash": "e48520328c88e29639fd08d29346ab07e3481cfc8f34751bce4b5a51700e6640"
       },
       {
-        "item_id": "env_00162-e003",
-        "seq": 3,
+        "item_id": "env_00162-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00162",
-          "amount_paise": 37200,
+          "amount_paise": 27500,
           "currency": "INR",
           "receipt": "zep_00162"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:03:25Z",
+        "emitted_at": "2026-09-02T19:12:25Z",
         "evidence_class": 3,
-        "prev_hash": "dd58c4ea05ea76fe3ef8e35900bcfe20d867abe72846983890b24953b2df9156",
-        "content_hash": "d49fb71707253b7e634559ff911085fd435d44f1eb6fcf62cbb0a15cb337f2b1"
+        "prev_hash": "e48520328c88e29639fd08d29346ab07e3481cfc8f34751bce4b5a51700e6640",
+        "content_hash": "30affcf313e673130deb7dff10a8b73cfee6184bd71786509ddf5546caa5dcbd"
       },
       {
-        "item_id": "env_00162-e004",
-        "seq": 4,
+        "item_id": "env_00162-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00162",
           "order_id": "order_00162",
-          "amount_paise": 37200,
+          "amount_paise": 27500,
           "status": "captured",
           "block_id": "blk_00162",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:33:00Z",
+        "emitted_at": "2026-09-03T01:42:00Z",
         "evidence_class": 3,
-        "prev_hash": "d49fb71707253b7e634559ff911085fd435d44f1eb6fcf62cbb0a15cb337f2b1",
-        "content_hash": "48a353e089992647a98db2108f0cd843507c0e593c3164298582c596adf344da"
+        "prev_hash": "30affcf313e673130deb7dff10a8b73cfee6184bd71786509ddf5546caa5dcbd",
+        "content_hash": "0d61f1b05aa4423ea2caeae7add357ccff8c65b99174346f61883a318811ba8d"
       },
       {
-        "item_id": "env_00162-e005",
-        "seq": 5,
+        "item_id": "env_00162-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
-          "claimed_sku": "daawat-rice-sona_masoori-5000",
+          "text": "Ordered 500g Nandini salted butter. Payment complete.",
+          "claimed_sku": "nandini-butter-salted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_631",
-        "emitted_at": "2026-09-02T19:18:00Z",
+        "emitted_by": "agt_299",
+        "emitted_at": "2026-09-02T19:27:00Z",
         "evidence_class": 0,
-        "prev_hash": "48a353e089992647a98db2108f0cd843507c0e593c3164298582c596adf344da",
-        "content_hash": "8acf3a1a80c5627303338f394c44a3af6412a5cc827f092e0ef83130e3ce43f4"
+        "prev_hash": "0d61f1b05aa4423ea2caeae7add357ccff8c65b99174346f61883a318811ba8d",
+        "content_hash": "c4e00bf1de1075c0d616f43686c9cf52c54185ad48431a6f0bffbd17aa6dd368"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "daawat-rice-sona_masoori-5000",
-    "ordered_sku": "daawat-rice-sona_masoori-5000",
-    "delivered_sku": "daawat-rice-sona_masoori-5000",
+    "requested_sku": "nandini-butter-salted-500",
+    "ordered_sku": "nandini-butter-salted-500",
+    "delivered_sku": "nandini-butter-salted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 37200,
+    "loss_paise": 27500,
     "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
   }
 }

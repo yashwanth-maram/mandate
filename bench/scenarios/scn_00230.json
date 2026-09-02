@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00230",
-    "created_at": "2026-09-02T19:39:00Z",
-    "expires_at": "2026-09-03T01:39:00Z",
-    "user_id": "usr_8178",
-    "agent_id": "agt_839",
+    "created_at": "2026-09-02T22:29:00Z",
+    "expires_at": "2026-09-03T04:29:00Z",
+    "user_id": "usr_9873",
+    "agent_id": "agt_475",
     "block": {
       "block_id": "blk_00230",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T19:39:00Z",
-      "expires_at": "2026-10-12T19:39:00Z"
+      "blocked_at": "2026-08-19T22:29:00Z",
+      "expires_at": "2026-10-02T22:29:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 15179,
-      "max_total_paise": 15179,
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "india_gate",
-      "variant": "basmati",
+      "brand": "tata",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg India Gate basmati rice from Swiggy Instamart",
+      "text": "buy 1kg Tata iodised salt from Swiggy Instamart, keep it under 32 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "31dc94cb29c5e74188ba08f8777feb78e9f5b6968f3f8102357c50f1d9c23f51",
+    "content_hash": "de7ec0a399a0bd90f9ab66ad1e56d969b7e0137e9d0ae4998254b6d2a52667ce",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00230",
-    "obligation_hash": "31dc94cb29c5e74188ba08f8777feb78e9f5b6968f3f8102357c50f1d9c23f51",
+    "obligation_hash": "de7ec0a399a0bd90f9ab66ad1e56d969b7e0137e9d0ae4998254b6d2a52667ce",
     "items": [
       {
         "item_id": "env_00230-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "india_gate-rice-basmati-1000",
-              "quantity": 1,
-              "unit_price_paise": 13200
-            }
-          ]
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "agt_839",
-        "emitted_at": "2026-09-02T19:39:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:29:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "77fffeb8938c6fd19fd622ec8ba37c0f693170e44767f36fef343014641699cc"
+        "content_hash": "b06bdd5c2514290a05d636e64e109b7aa1960b8c795c22cd732cf6339070b842"
       },
       {
         "item_id": "env_00230-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:29:04Z",
+        "evidence_class": 2,
+        "prev_hash": "b06bdd5c2514290a05d636e64e109b7aa1960b8c795c22cd732cf6339070b842",
+        "content_hash": "5961d6594d43f206135412344510e75a5a4014d9994bef236f70d504b92af2b6"
+      },
+      {
+        "item_id": "env_00230-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 3000
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:29:05Z",
+        "evidence_class": 2,
+        "prev_hash": "5961d6594d43f206135412344510e75a5a4014d9994bef236f70d504b92af2b6",
+        "content_hash": "f96374c1fbe6c24ff641d6b4c1ffd54e90edd321ffa0a1c54137f0ec43105501"
+      },
+      {
+        "item_id": "env_00230-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 2800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:29:06Z",
+        "evidence_class": 2,
+        "prev_hash": "f96374c1fbe6c24ff641d6b4c1ffd54e90edd321ffa0a1c54137f0ec43105501",
+        "content_hash": "30c6910e6cf7872ce7b80b1c356ab0af297d92a1426d3b9b56934c8ddedc4015"
+      },
+      {
+        "item_id": "env_00230-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "agt_475",
+        "emitted_at": "2026-09-02T22:29:12Z",
+        "evidence_class": 1,
+        "prev_hash": "30c6910e6cf7872ce7b80b1c356ab0af297d92a1426d3b9b56934c8ddedc4015",
+        "content_hash": "a129189a0e155bf947d05be2c2212755eb46de5eb45b5218e08fd132c53e7e91"
+      },
+      {
+        "item_id": "env_00230-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00230",
           "lines": [
             {
-              "sku": "india_gate-rice-basmati-1000",
+              "sku": "tata-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 13200
+              "unit_price_paise": 2800
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:39:20Z",
+        "emitted_at": "2026-09-02T22:29:20Z",
         "evidence_class": 2,
-        "prev_hash": "77fffeb8938c6fd19fd622ec8ba37c0f693170e44767f36fef343014641699cc",
-        "content_hash": "6788db4040247b15f6a063c75a0efa77abe295556cfe6e31eb083b8fcc3fb945"
-      },
-      {
-        "item_id": "env_00230-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00230",
-          "lines": [
-            {
-              "sku": "india_gate-rice-basmati-1000",
-              "quantity": 1,
-              "unit_price_paise": 13200
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:53:00Z",
-        "evidence_class": 2,
-        "prev_hash": "6788db4040247b15f6a063c75a0efa77abe295556cfe6e31eb083b8fcc3fb945",
-        "content_hash": "a5efb707cdd3fbafb9cf4cbdebb8f15f7f754ea2d0911da61df5b5b22a3fce80"
-      },
-      {
-        "item_id": "env_00230-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00230",
-          "amount_paise": 13200,
-          "currency": "INR",
-          "receipt": "zep_00230"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:39:25Z",
-        "evidence_class": 3,
-        "prev_hash": "a5efb707cdd3fbafb9cf4cbdebb8f15f7f754ea2d0911da61df5b5b22a3fce80",
-        "content_hash": "17feb9265090b6f6fc572087cfe5fb3d74af7a220e37c6808d9c9741c20fef67"
-      },
-      {
-        "item_id": "env_00230-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00230",
-          "order_id": "order_00230",
-          "amount_paise": 13200,
-          "status": "captured",
-          "block_id": "blk_00230",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:39:30Z",
-        "evidence_class": 3,
-        "prev_hash": "17feb9265090b6f6fc572087cfe5fb3d74af7a220e37c6808d9c9741c20fef67",
-        "content_hash": "47e6f525e68dc3050754272a235ba6dc8770e7b274b77f622028ad6cc8a0c07a"
-      },
-      {
-        "item_id": "env_00230-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate basmati rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-basmati-1000",
-          "claims_success": true
-        },
-        "emitted_by": "agt_839",
-        "emitted_at": "2026-09-02T19:54:00Z",
-        "evidence_class": 0,
-        "prev_hash": "47e6f525e68dc3050754272a235ba6dc8770e7b274b77f622028ad6cc8a0c07a",
-        "content_hash": "b3706343e5957b7fec4e6dfb11f46c86310f3b35033c6d8c59123a188a6f9595"
+        "prev_hash": "a129189a0e155bf947d05be2c2212755eb46de5eb45b5218e08fd132c53e7e91",
+        "content_hash": "2f1f8dadb20f09491ebeafe83d230a10a99aeb39a044be9f2bb6e5126a7f08b0"
       },
       {
         "item_id": "env_00230-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "This isn't what I wanted, the agent got it wrong.",
-          "raised_at": "2026-09-02T22:39:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00230",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_8178",
-        "emitted_at": "2026-09-02T22:39:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:43:00Z",
+        "evidence_class": 2,
+        "prev_hash": "2f1f8dadb20f09491ebeafe83d230a10a99aeb39a044be9f2bb6e5126a7f08b0",
+        "content_hash": "3187490c2ca68265343d5b99c6e2efaa4fac90af8722cd3e8a0b39d80a9ca4a3"
+      },
+      {
+        "item_id": "env_00230-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00230",
+          "amount_paise": 2800,
+          "currency": "INR",
+          "receipt": "zep_00230"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:29:25Z",
+        "evidence_class": 3,
+        "prev_hash": "3187490c2ca68265343d5b99c6e2efaa4fac90af8722cd3e8a0b39d80a9ca4a3",
+        "content_hash": "7d8a3e8bc4a8e076b0ecf172c1c97d69528b2623d8e5056b983a8f0b00c90ced"
+      },
+      {
+        "item_id": "env_00230-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00230",
+          "order_id": "order_00230",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00230",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:29:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7d8a3e8bc4a8e076b0ecf172c1c97d69528b2623d8e5056b983a8f0b00c90ced",
+        "content_hash": "a8d610e5730b0aebbdc6b0e02fc8830cc06f89656561ec4fae50ceaafb9c0426"
+      },
+      {
+        "item_id": "env_00230-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_475",
+        "emitted_at": "2026-09-02T22:44:00Z",
         "evidence_class": 0,
-        "prev_hash": "b3706343e5957b7fec4e6dfb11f46c86310f3b35033c6d8c59123a188a6f9595",
-        "content_hash": "af7ff3c570e5cd7e77697b483baf455f563cdb5bdc1dd1a4e99ae6fc920195f3"
+        "prev_hash": "a8d610e5730b0aebbdc6b0e02fc8830cc06f89656561ec4fae50ceaafb9c0426",
+        "content_hash": "0ad8594c4fd66f369f7d4a306976176d33ca2e8b07100d1f03964070f0903f8a"
+      },
+      {
+        "item_id": "env_00230-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T01:29:00Z"
+        },
+        "emitted_by": "usr_9873",
+        "emitted_at": "2026-09-03T01:29:00Z",
+        "evidence_class": 0,
+        "prev_hash": "0ad8594c4fd66f369f7d4a306976176d33ca2e8b07100d1f03964070f0903f8a",
+        "content_hash": "adc4909961bf1e2261c1769c96ede68a9008ffbb54bf0fd98b5b720bbb54f965"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-basmati-1000",
-    "ordered_sku": "india_gate-rice-basmati-1000",
-    "delivered_sku": "india_gate-rice-basmati-1000",
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 13200,
+    "loss_paise": 2800,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

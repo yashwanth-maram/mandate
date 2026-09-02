@@ -6,152 +6,203 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00374",
-    "created_at": "2026-09-03T03:26:00Z",
-    "expires_at": "2026-09-03T09:26:00Z",
-    "user_id": "usr_4560",
-    "agent_id": "agt_305",
+    "created_at": "2026-09-02T20:53:00Z",
+    "expires_at": "2026-09-03T02:53:00Z",
+    "user_id": "usr_1965",
+    "agent_id": "agt_729",
     "block": {
       "block_id": "blk_00374",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-28T03:26:00Z",
-      "expires_at": "2026-10-22T03:26:00Z"
+      "blocked_at": "2026-08-23T20:53:00Z",
+      "expires_at": "2026-10-07T20:53:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3449,
-      "max_total_paise": 3449,
+      "category": "noodles",
+      "max_unit_price_paise": 10350,
+      "max_total_paise": 10350,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "iodised",
-      "pack_size_g": 1000
+      "brand": "yippee",
+      "variant": "masala",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "I need 1kg Aashirvaad iodised salt, use Blinkit",
+      "text": "get me 560g Yippee masala noodles from Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "9dd29b002714f567ed80a215475f0bd3e3a33b1900a517d380551a3111cf0618",
+    "content_hash": "80056b1df1586f79f970a47cda19bffb5c118bafaba293189dc6684d31ed2d27",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00374",
-    "obligation_hash": "9dd29b002714f567ed80a215475f0bd3e3a33b1900a517d380551a3111cf0618",
+    "obligation_hash": "80056b1df1586f79f970a47cda19bffb5c118bafaba293189dc6684d31ed2d27",
     "items": [
       {
         "item_id": "env_00374-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "aashirvaad-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 3000
-            }
-          ]
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9000
         },
-        "emitted_by": "agt_305",
-        "emitted_at": "2026-09-03T03:26:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:53:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "d81deabed8e80026d26c8d6bdd7927a5c40b12225022e9d301c2873f24295e34"
+        "content_hash": "3f135d81cff440d90d0e23fb373801b16ae9cf5812b4ab9ccad1fadc00c7fd02"
       },
       {
         "item_id": "env_00374-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:53:04Z",
+        "evidence_class": 2,
+        "prev_hash": "3f135d81cff440d90d0e23fb373801b16ae9cf5812b4ab9ccad1fadc00c7fd02",
+        "content_hash": "14ddf2609562f1b1681a23a8cc7e8d7aa1c6b0da67fa32bb4091719f3ff4a728"
+      },
+      {
+        "item_id": "env_00374-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 10800
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:53:05Z",
+        "evidence_class": 2,
+        "prev_hash": "14ddf2609562f1b1681a23a8cc7e8d7aa1c6b0da67fa32bb4091719f3ff4a728",
+        "content_hash": "19e66832e2fb8a1c7faefb8723e258a7bc9587c20a850737e68e91301f75f366"
+      },
+      {
+        "item_id": "env_00374-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ]
+        },
+        "emitted_by": "agt_729",
+        "emitted_at": "2026-09-02T20:53:12Z",
+        "evidence_class": 1,
+        "prev_hash": "19e66832e2fb8a1c7faefb8723e258a7bc9587c20a850737e68e91301f75f366",
+        "content_hash": "dbd4dc4059ca9eb6016b52461b40f66babd3e6948a6c1af3502da214a611bc0f"
+      },
+      {
+        "item_id": "env_00374-e004",
+        "seq": 4,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00374",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "yippee-noodles-masala-560",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 9000
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:26:20Z",
+        "emitted_at": "2026-09-02T20:53:20Z",
         "evidence_class": 2,
-        "prev_hash": "d81deabed8e80026d26c8d6bdd7927a5c40b12225022e9d301c2873f24295e34",
-        "content_hash": "27427e2940b3902c801942d27c4de77d7d39b9a4427d1738821662e504ad87e5"
-      },
-      {
-        "item_id": "env_00374-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00374",
-          "lines": [
-            {
-              "sku": "tata-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 2800
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:40:00Z",
-        "evidence_class": 2,
-        "prev_hash": "27427e2940b3902c801942d27c4de77d7d39b9a4427d1738821662e504ad87e5",
-        "content_hash": "99377a4aa0034cdf8a511e6a9bad3958e844539de072fb02d7b6cc097d5ab3e5"
-      },
-      {
-        "item_id": "env_00374-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00374",
-          "amount_paise": 3000,
-          "currency": "INR",
-          "receipt": "zep_00374"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:26:25Z",
-        "evidence_class": 3,
-        "prev_hash": "99377a4aa0034cdf8a511e6a9bad3958e844539de072fb02d7b6cc097d5ab3e5",
-        "content_hash": "5210b9f3adc9eee3e86c985e11e217f695d94f99498a50cdd69745962f8cc975"
-      },
-      {
-        "item_id": "env_00374-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00374",
-          "order_id": "order_00374",
-          "amount_paise": 3000,
-          "status": "captured",
-          "block_id": "blk_00374",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:26:30Z",
-        "evidence_class": 3,
-        "prev_hash": "5210b9f3adc9eee3e86c985e11e217f695d94f99498a50cdd69745962f8cc975",
-        "content_hash": "20d42339da345e0572e5ff1b55e4883392c3d4b8f74e9853f6f38194c4e2b739"
+        "prev_hash": "dbd4dc4059ca9eb6016b52461b40f66babd3e6948a6c1af3502da214a611bc0f",
+        "content_hash": "0a93cbe8bd6037252baf1bb3696aacf20d4cd9ddb820e9e44617b32a7838f13c"
       },
       {
         "item_id": "env_00374-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00374",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:07:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0a93cbe8bd6037252baf1bb3696aacf20d4cd9ddb820e9e44617b32a7838f13c",
+        "content_hash": "daa88f1864f534e13c952816b646710c458d1865004ab748cb17e45adf4684e0"
+      },
+      {
+        "item_id": "env_00374-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00374",
+          "amount_paise": 9000,
+          "currency": "INR",
+          "receipt": "zep_00374"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:53:25Z",
+        "evidence_class": 3,
+        "prev_hash": "daa88f1864f534e13c952816b646710c458d1865004ab748cb17e45adf4684e0",
+        "content_hash": "d76109698e0431e2ef7fc52227ca238b76e1fe378cd4d2a5daa65849d9ed1405"
+      },
+      {
+        "item_id": "env_00374-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00374",
+          "order_id": "order_00374",
+          "amount_paise": 9000,
+          "status": "captured",
+          "block_id": "blk_00374",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:53:30Z",
+        "evidence_class": 3,
+        "prev_hash": "d76109698e0431e2ef7fc52227ca238b76e1fe378cd4d2a5daa65849d9ed1405",
+        "content_hash": "0c737c3ef008a842ea271bb6f30d7d3bfa76d1746682939b7d8051fc0ec13096"
+      },
+      {
+        "item_id": "env_00374-e008",
+        "seq": 8,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
-          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
+          "claimed_sku": "yippee-noodles-masala-560",
           "claims_success": true
         },
-        "emitted_by": "agt_305",
-        "emitted_at": "2026-09-03T03:41:00Z",
+        "emitted_by": "agt_729",
+        "emitted_at": "2026-09-02T21:08:00Z",
         "evidence_class": 0,
-        "prev_hash": "20d42339da345e0572e5ff1b55e4883392c3d4b8f74e9853f6f38194c4e2b739",
-        "content_hash": "06eeba4ffdd651993b47763253ac956487bd6aec278cfbd97a985424afee810d"
+        "prev_hash": "0c737c3ef008a842ea271bb6f30d7d3bfa76d1746682939b7d8051fc0ec13096",
+        "content_hash": "79cbd95585bbb8cc3259468b3829f3c248bcbc104133ee5500736ff4987ac98e"
       }
     ]
   },
@@ -160,14 +211,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-salt-iodised-1000",
-    "ordered_sku": "aashirvaad-salt-iodised-1000",
-    "delivered_sku": "tata-salt-iodised-1000",
+    "requested_sku": "yippee-noodles-masala-560",
+    "ordered_sku": "yippee-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 3000,
-    "rationale": "Order names aashirvaad; fulfilment shipped tata. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 9000,
+    "rationale": "Order names yippee; fulfilment shipped maggi. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

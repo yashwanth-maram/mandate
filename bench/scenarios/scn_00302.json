@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00302",
-    "created_at": "2026-09-02T23:14:00Z",
-    "expires_at": "2026-09-03T05:14:00Z",
-    "user_id": "usr_5825",
-    "agent_id": "agt_230",
+    "created_at": "2026-09-03T02:53:00Z",
+    "expires_at": "2026-09-03T08:53:00Z",
+    "user_id": "usr_1371",
+    "agent_id": "agt_400",
     "block": {
       "block_id": "blk_00302",
-      "blocked_paise": 50000,
+      "blocked_paise": 52440,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-28T23:14:00Z",
-      "expires_at": "2026-10-25T23:14:00Z"
+      "blocked_at": "2026-08-21T02:53:00Z",
+      "expires_at": "2026-10-24T02:53:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 11040,
-      "max_total_paise": 11040,
+      "category": "edible_oil",
+      "max_unit_price_paise": 17480,
+      "max_total_paise": 17480,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
-      "brand": "aashirvaad",
-      "variant": "gram",
+      "brand": "fortune",
+      "variant": "sunflower_refined",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg Aashirvaad besan from Swiggy Instamart",
+      "text": "order 1L Fortune refined sunflower oil on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "a2fac1d3982d2d07b7a5f493db1a1657189d2b790a153c4f38751801a221daf1",
+    "content_hash": "bbbb1752fac45ac81587a0a9b97a413a9eb33265fc42ad562bc605d3b29b7fdc",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00302",
-    "obligation_hash": "a2fac1d3982d2d07b7a5f493db1a1657189d2b790a153c4f38751801a221daf1",
+    "obligation_hash": "bbbb1752fac45ac81587a0a9b97a413a9eb33265fc42ad562bc605d3b29b7fdc",
     "items": [
       {
         "item_id": "env_00302-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-gram-1000",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 16800
         },
-        "emitted_by": "agt_230",
-        "emitted_at": "2026-09-02T23:14:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:53:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "4d84298c1399c68a56c579abc46f627068f100e93c27f73318ea14afaf9e30a7"
+        "content_hash": "1ab8b0898041f233542f5ba40a6cc1a69aa59be512b8445e4c408dbb3466bb39"
       },
       {
         "item_id": "env_00302-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00302",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-gram-1000",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 15200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T23:14:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:53:04Z",
         "evidence_class": 2,
-        "prev_hash": "4d84298c1399c68a56c579abc46f627068f100e93c27f73318ea14afaf9e30a7",
-        "content_hash": "0c1b6674a58446a941d6559bbfe73ba4b2e173616139bf188cc0a9639057233a"
+        "prev_hash": "1ab8b0898041f233542f5ba40a6cc1a69aa59be512b8445e4c408dbb3466bb39",
+        "content_hash": "4bf7f7a3fe3eabaf0c2a4f10f8629d494d5410a78d64a24e83ad292c5bea453b"
       },
       {
         "item_id": "env_00302-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00302",
-          "lines": [
-            {
-              "sku": "fortune-flour-gram-1000",
-              "quantity": 1,
-              "unit_price_paise": 9200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 15800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T23:28:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:53:05Z",
         "evidence_class": 2,
-        "prev_hash": "0c1b6674a58446a941d6559bbfe73ba4b2e173616139bf188cc0a9639057233a",
-        "content_hash": "410189b11253d68ef4a3b52f43d16aa84715554fbe31967fd97ee552ff64be7e"
+        "prev_hash": "4bf7f7a3fe3eabaf0c2a4f10f8629d494d5410a78d64a24e83ad292c5bea453b",
+        "content_hash": "29d2403c47ea83fc69d148c61ecbb388ae020b3eda354a2e908c6752cc5c24c5"
       },
       {
         "item_id": "env_00302-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00302",
-          "amount_paise": 9600,
-          "currency": "INR",
-          "receipt": "zep_00302"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 16500
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:14:25Z",
-        "evidence_class": 3,
-        "prev_hash": "410189b11253d68ef4a3b52f43d16aa84715554fbe31967fd97ee552ff64be7e",
-        "content_hash": "5af88511546d0a1a6e7c3f87b6c6bd9709d9bbccfe8438342852dc33af9a5ea5"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:53:06Z",
+        "evidence_class": 2,
+        "prev_hash": "29d2403c47ea83fc69d148c61ecbb388ae020b3eda354a2e908c6752cc5c24c5",
+        "content_hash": "eb9b016be62263d9dd811c4220ad61725a52dd9d029f5eeda97d5867937599c7"
       },
       {
         "item_id": "env_00302-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00302",
-          "order_id": "order_00302",
-          "amount_paise": 9600,
-          "status": "captured",
-          "block_id": "blk_00302",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:14:30Z",
-        "evidence_class": 3,
-        "prev_hash": "5af88511546d0a1a6e7c3f87b6c6bd9709d9bbccfe8438342852dc33af9a5ea5",
-        "content_hash": "bcd35160bef2c90f23333254691ae359d2da4bf017dcf5ef2d2d971d59996129"
+        "emitted_by": "agt_400",
+        "emitted_at": "2026-09-03T02:53:12Z",
+        "evidence_class": 1,
+        "prev_hash": "eb9b016be62263d9dd811c4220ad61725a52dd9d029f5eeda97d5867937599c7",
+        "content_hash": "5b021511ca419923684b588d47c8cbdcf514f6e54b2a7a77830903ce27bd9f2f"
       },
       {
         "item_id": "env_00302-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00302",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:53:20Z",
+        "evidence_class": 2,
+        "prev_hash": "5b021511ca419923684b588d47c8cbdcf514f6e54b2a7a77830903ce27bd9f2f",
+        "content_hash": "89540455987863a10547bcf0c365ddee408466fc35e17a7fb9937430207c7f30"
+      },
+      {
+        "item_id": "env_00302-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00302",
+          "lines": [
+            {
+              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 16800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:07:00Z",
+        "evidence_class": 2,
+        "prev_hash": "89540455987863a10547bcf0c365ddee408466fc35e17a7fb9937430207c7f30",
+        "content_hash": "fd77db4d3121fbfa796f05ba41371a5601c2582b76f22c8c667d11af9f9623bf"
+      },
+      {
+        "item_id": "env_00302-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00302",
+          "amount_paise": 15200,
+          "currency": "INR",
+          "receipt": "zep_00302"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:53:25Z",
+        "evidence_class": 3,
+        "prev_hash": "fd77db4d3121fbfa796f05ba41371a5601c2582b76f22c8c667d11af9f9623bf",
+        "content_hash": "263a50ec9d885d207fd9c4f0a93d59c8eedbb6e4ed8771da0c0fd6aa531aa0c6"
+      },
+      {
+        "item_id": "env_00302-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00302",
+          "order_id": "order_00302",
+          "amount_paise": 15200,
+          "status": "captured",
+          "block_id": "blk_00302",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:53:30Z",
+        "evidence_class": 3,
+        "prev_hash": "263a50ec9d885d207fd9c4f0a93d59c8eedbb6e4ed8771da0c0fd6aa531aa0c6",
+        "content_hash": "d1bd593d4cf00a9d2c024664bd1b19d044fb7029c31314352f77276460788799"
+      },
+      {
+        "item_id": "env_00302-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-gram-1000",
+          "text": "Ordered 1L Fortune refined sunflower oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-sunflower_refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_230",
-        "emitted_at": "2026-09-02T23:29:00Z",
+        "emitted_by": "agt_400",
+        "emitted_at": "2026-09-03T03:08:00Z",
         "evidence_class": 0,
-        "prev_hash": "bcd35160bef2c90f23333254691ae359d2da4bf017dcf5ef2d2d971d59996129",
-        "content_hash": "4a447e5a67c9173c4098433c4eca67f43aeed874e36d306ad8d706aa0d429f0c"
+        "prev_hash": "d1bd593d4cf00a9d2c024664bd1b19d044fb7029c31314352f77276460788799",
+        "content_hash": "6f017e4ee7225cf22c37e8f7a4ed557680a26189e5866f36dcca1a5d3e2afd17"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-gram-1000",
-    "ordered_sku": "aashirvaad-flour-gram-1000",
-    "delivered_sku": "fortune-flour-gram-1000",
+    "requested_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "ordered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "delivered_sku": "saffola-edible_oil-sunflower_refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 9600,
-    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 15200,
+    "rationale": "Order names fortune; fulfilment shipped saffola. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

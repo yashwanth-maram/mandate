@@ -6,16 +6,16 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00472",
-    "created_at": "2026-09-02T20:04:00Z",
-    "expires_at": "2026-09-03T02:04:00Z",
-    "user_id": "usr_5078",
-    "agent_id": "agt_494",
+    "created_at": "2026-09-02T21:35:00Z",
+    "expires_at": "2026-09-03T03:35:00Z",
+    "user_id": "usr_4679",
+    "agent_id": "agt_157",
     "block": {
       "block_id": "blk_00472",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T20:04:00Z",
-      "expires_at": "2026-10-09T20:04:00Z"
+      "blocked_at": "2026-08-29T21:35:00Z",
+      "expires_at": "2026-10-05T21:35:00Z"
     },
     "hard": {
       "category": "bread",
@@ -30,21 +30,89 @@
       "pack_size_g": 400
     },
     "intent": {
-      "text": "get me 400g Harvest brown bread from Zepto",
+      "text": "order 400g Harvest brown bread on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "7bb469c1880e82f1207ab8c207abf6448bc4498f91178647f7e7675b470bb6ee",
+    "content_hash": "2883b7264834856514258d907eae3d20a568b77c2ab7dafab143b9e572f8eb40",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00472",
-    "obligation_hash": "7bb469c1880e82f1207ab8c207abf6448bc4498f91178647f7e7675b470bb6ee",
+    "obligation_hash": "2883b7264834856514258d907eae3d20a568b77c2ab7dafab143b9e572f8eb40",
     "items": [
       {
         "item_id": "env_00472-e000",
         "seq": 0,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:35:03Z",
+        "evidence_class": 2,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "8e8918d003e83702b9abcdb175cf29744eebbc91637dfbcbbd88e509073e3968"
+      },
+      {
+        "item_id": "env_00472-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5000
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:35:04Z",
+        "evidence_class": 2,
+        "prev_hash": "8e8918d003e83702b9abcdb175cf29744eebbc91637dfbcbbd88e509073e3968",
+        "content_hash": "be10467831009423edb627c61062336cda17001e8cdcff2d31853fe6e53f84fa"
+      },
+      {
+        "item_id": "env_00472-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 4200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:35:05Z",
+        "evidence_class": 2,
+        "prev_hash": "be10467831009423edb627c61062336cda17001e8cdcff2d31853fe6e53f84fa",
+        "content_hash": "26350f6abf310157239733133ebae47ecffb08b7c6492fa1f4236974f6d7a9e5"
+      },
+      {
+        "item_id": "env_00472-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:35:06Z",
+        "evidence_class": 2,
+        "prev_hash": "26350f6abf310157239733133ebae47ecffb08b7c6492fa1f4236974f6d7a9e5",
+        "content_hash": "2e09b2bac6a62ca577cc9a438c5602a3b1eb9f94d36dd050e64734e97741ba61"
+      },
+      {
+        "item_id": "env_00472-e004",
+        "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
           "merchant_id": "zepto",
@@ -56,15 +124,15 @@
             }
           ]
         },
-        "emitted_by": "agt_494",
-        "emitted_at": "2026-09-02T20:04:00Z",
+        "emitted_by": "agt_157",
+        "emitted_at": "2026-09-02T21:35:12Z",
         "evidence_class": 1,
-        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "46e500a5a3b8fe327bb02ca7cd43e499056c1e8417e35ea0fe34c680f507309c"
+        "prev_hash": "2e09b2bac6a62ca577cc9a438c5602a3b1eb9f94d36dd050e64734e97741ba61",
+        "content_hash": "0a6a88542d8456f88aa1ef7347c846ccfc42335ffe91096b3d6f6fc3e0d45312"
       },
       {
-        "item_id": "env_00472-e001",
-        "seq": 1,
+        "item_id": "env_00472-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
@@ -78,14 +146,14 @@
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:04:20Z",
+        "emitted_at": "2026-09-02T21:35:20Z",
         "evidence_class": 2,
-        "prev_hash": "46e500a5a3b8fe327bb02ca7cd43e499056c1e8417e35ea0fe34c680f507309c",
-        "content_hash": "f78a7add86af412334216e4caf467fd130a2b4094ae0aa4f293429716abb1ad8"
+        "prev_hash": "0a6a88542d8456f88aa1ef7347c846ccfc42335ffe91096b3d6f6fc3e0d45312",
+        "content_hash": "471283a9e5ba72f39b7047deed680f59126f0d75b68077d2b2ada371074b0f16"
       },
       {
-        "item_id": "env_00472-e002",
-        "seq": 2,
+        "item_id": "env_00472-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00472",
@@ -99,14 +167,14 @@
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:18:00Z",
+        "emitted_at": "2026-09-02T21:49:00Z",
         "evidence_class": 2,
-        "prev_hash": "f78a7add86af412334216e4caf467fd130a2b4094ae0aa4f293429716abb1ad8",
-        "content_hash": "53f41f5d15109d5ad7253886d0a4ebd3c1470f38072817c893b196a63b2cd3f6"
+        "prev_hash": "471283a9e5ba72f39b7047deed680f59126f0d75b68077d2b2ada371074b0f16",
+        "content_hash": "e2ea09eee6c9e96388974b0f7f951b8d67f1d00fc02b9faca1705c37cee7a6b5"
       },
       {
-        "item_id": "env_00472-e003",
-        "seq": 3,
+        "item_id": "env_00472-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00472",
@@ -115,14 +183,14 @@
           "receipt": "zep_00472"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:04:25Z",
+        "emitted_at": "2026-09-02T21:35:25Z",
         "evidence_class": 3,
-        "prev_hash": "53f41f5d15109d5ad7253886d0a4ebd3c1470f38072817c893b196a63b2cd3f6",
-        "content_hash": "6ca0288e2523cd9480ae3c4e8fd2066c734d3e090ac691bc2ea3481b5589856b"
+        "prev_hash": "e2ea09eee6c9e96388974b0f7f951b8d67f1d00fc02b9faca1705c37cee7a6b5",
+        "content_hash": "9242fc77746ed6dab81c48efcab649abd9372c632b609bdac576b4bca2f8e727"
       },
       {
-        "item_id": "env_00472-e004",
-        "seq": 4,
+        "item_id": "env_00472-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00472",
@@ -133,25 +201,25 @@
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:04:30Z",
+        "emitted_at": "2026-09-02T21:35:30Z",
         "evidence_class": 3,
-        "prev_hash": "6ca0288e2523cd9480ae3c4e8fd2066c734d3e090ac691bc2ea3481b5589856b",
-        "content_hash": "6ce045e62bb343d105ad472bda0410aacae6238bff9c6c2061c0da43db618f9a"
+        "prev_hash": "9242fc77746ed6dab81c48efcab649abd9372c632b609bdac576b4bca2f8e727",
+        "content_hash": "4b4a4a3b8456186ba2d2964fe016a1482b9f013eb96304142c738cc91dc184c8"
       },
       {
-        "item_id": "env_00472-e005",
-        "seq": 5,
+        "item_id": "env_00472-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
           "text": "Ordered 400g Harvest brown bread. Payment complete.",
           "claimed_sku": "harvest-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_494",
-        "emitted_at": "2026-09-02T20:19:00Z",
+        "emitted_by": "agt_157",
+        "emitted_at": "2026-09-02T21:50:00Z",
         "evidence_class": 0,
-        "prev_hash": "6ce045e62bb343d105ad472bda0410aacae6238bff9c6c2061c0da43db618f9a",
-        "content_hash": "57918803ce9d9c62b970d370192ce1a591317f3b22a294b48d78a1fbdd0f3119"
+        "prev_hash": "4b4a4a3b8456186ba2d2964fe016a1482b9f013eb96304142c738cc91dc184c8",
+        "content_hash": "848658377e02d96a6548e33343d7417bbf8db1d3fe2b4e6aec34b1d7f5f540f1"
       }
     ]
   },

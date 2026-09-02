@@ -6,152 +6,238 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00296",
-    "created_at": "2026-09-03T03:41:00Z",
-    "expires_at": "2026-09-03T09:41:00Z",
-    "user_id": "usr_3328",
-    "agent_id": "agt_676",
+    "created_at": "2026-09-03T02:04:00Z",
+    "expires_at": "2026-09-03T08:04:00Z",
+    "user_id": "usr_8581",
+    "agent_id": "agt_385",
     "block": {
       "block_id": "blk_00296",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-28T03:41:00Z",
-      "expires_at": "2026-10-29T03:41:00Z"
+      "blocked_at": "2026-09-03T02:04:00Z",
+      "expires_at": "2026-10-26T02:04:00Z"
     },
     "hard": {
-      "category": "butter",
-      "max_unit_price_paise": 32775,
-      "max_total_paise": 32775,
+      "category": "rice",
+      "max_unit_price_paise": 42780,
+      "max_total_paise": 42780,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "amul",
-      "variant": "salted",
-      "pack_size_g": 500
+      "brand": "daawat",
+      "variant": "sona_masoori",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 500g Amul salted butter from Zepto, keep it under 327 rupees",
+      "text": "buy 5kg Daawat sona masoori rice from Blinkit, keep it under 427 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "8f28d23f8557d48c5efc70ffda68dc13042281633765aff45b0638567abdcc7e",
+    "content_hash": "6f66dec03aec14dee891e49a1932044b8d58937a9787beb212972f238ae7a9c9",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00296",
-    "obligation_hash": "8f28d23f8557d48c5efc70ffda68dc13042281633765aff45b0638567abdcc7e",
+    "obligation_hash": "6f66dec03aec14dee891e49a1932044b8d58937a9787beb212972f238ae7a9c9",
     "items": [
       {
         "item_id": "env_00296-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "amul-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 28500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "agt_676",
-        "emitted_at": "2026-09-03T03:41:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:04:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "053a3555f269b1e90c6dc8c269b945d6eeb8d93d66b229fb98767100d8e6c5f0"
+        "content_hash": "87065a567d9e6b09af24e86fdd6122848b6575be34f0d80081521d42ca168888"
       },
       {
         "item_id": "env_00296-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00296",
-          "lines": [
-            {
-              "sku": "amul-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 28500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:41:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:04:04Z",
         "evidence_class": 2,
-        "prev_hash": "053a3555f269b1e90c6dc8c269b945d6eeb8d93d66b229fb98767100d8e6c5f0",
-        "content_hash": "2e4b32316adaea4a456fcc7450823904d78c711853d8cbd2f762a6bda197a773"
+        "prev_hash": "87065a567d9e6b09af24e86fdd6122848b6575be34f0d80081521d42ca168888",
+        "content_hash": "236a79c83691bf7092c0c8d880e55d80e090e91afb8add8d2221a0f4582e83e0"
       },
       {
         "item_id": "env_00296-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00296",
-          "lines": [
-            {
-              "sku": "amul-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 28500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:55:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:04:05Z",
         "evidence_class": 2,
-        "prev_hash": "2e4b32316adaea4a456fcc7450823904d78c711853d8cbd2f762a6bda197a773",
-        "content_hash": "f15fae712bf33bb5b25d8ee84ce5841a479ffc5f6b8f902ebd7a55cdcbfb2c15"
+        "prev_hash": "236a79c83691bf7092c0c8d880e55d80e090e91afb8add8d2221a0f4582e83e0",
+        "content_hash": "214cffa4d5c22de41e7cc26964018662cdc4baf7b9804e21ed3153ee2dfc4941"
       },
       {
         "item_id": "env_00296-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00296",
-          "amount_paise": 31220,
-          "currency": "INR",
-          "receipt": "zep_00296"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 13200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:41:25Z",
-        "evidence_class": 3,
-        "prev_hash": "f15fae712bf33bb5b25d8ee84ce5841a479ffc5f6b8f902ebd7a55cdcbfb2c15",
-        "content_hash": "c4440537d3b5fab9f39366d38b79c60e19d8966dddb60b5f385bdfd0c0fa54dd"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:04:06Z",
+        "evidence_class": 2,
+        "prev_hash": "214cffa4d5c22de41e7cc26964018662cdc4baf7b9804e21ed3153ee2dfc4941",
+        "content_hash": "6c429fa383e971427d8ef72218a80fc2b0f8e9497f97a8c529b2bcf408ac580c"
       },
       {
         "item_id": "env_00296-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00296",
-          "order_id": "order_00296",
-          "amount_paise": 31220,
-          "status": "captured",
-          "block_id": "blk_00296",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:41:30Z",
-        "evidence_class": 3,
-        "prev_hash": "c4440537d3b5fab9f39366d38b79c60e19d8966dddb60b5f385bdfd0c0fa54dd",
-        "content_hash": "b732fff22ce20b050e196d213dbb942ae26121ed525f0b508937c784ea0afea9"
+        "emitted_by": "agt_385",
+        "emitted_at": "2026-09-03T02:04:12Z",
+        "evidence_class": 1,
+        "prev_hash": "6c429fa383e971427d8ef72218a80fc2b0f8e9497f97a8c529b2bcf408ac580c",
+        "content_hash": "4e568451a4d262ac3e62375cb0378ada790ee5fca586200432e4baf4f15d5d46"
       },
       {
         "item_id": "env_00296-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00296",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:04:20Z",
+        "evidence_class": 2,
+        "prev_hash": "4e568451a4d262ac3e62375cb0378ada790ee5fca586200432e4baf4f15d5d46",
+        "content_hash": "9acd2045699594833f6099940fb41fad5bf81522ada03e670ddee8d00cbf260c"
+      },
+      {
+        "item_id": "env_00296-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00296",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:18:00Z",
+        "evidence_class": 2,
+        "prev_hash": "9acd2045699594833f6099940fb41fad5bf81522ada03e670ddee8d00cbf260c",
+        "content_hash": "afb648476c475b0b5b864ec34f01c6d3839fedec6888aaca942504def57238f6"
+      },
+      {
+        "item_id": "env_00296-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00296",
+          "amount_paise": 37200,
+          "currency": "INR",
+          "receipt": "zep_00296"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:04:25Z",
+        "evidence_class": 3,
+        "prev_hash": "afb648476c475b0b5b864ec34f01c6d3839fedec6888aaca942504def57238f6",
+        "content_hash": "8b780b375d0c7bd551f5cceab3e3a0b1dc2181ba3c7e0ff1306da7a300f1a472"
+      },
+      {
+        "item_id": "env_00296-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00296",
+          "order_id": "order_00296",
+          "amount_paise": 37200,
+          "status": "captured",
+          "block_id": "blk_00296",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:04:30Z",
+        "evidence_class": 3,
+        "prev_hash": "8b780b375d0c7bd551f5cceab3e3a0b1dc2181ba3c7e0ff1306da7a300f1a472",
+        "content_hash": "8bea514660c46f8157f1826231f0a0b4035e8871fbfa715dd52caf6f7d362608"
+      },
+      {
+        "item_id": "env_00296-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00296b",
+          "order_id": "order_00296",
+          "amount_paise": 37200,
+          "status": "captured",
+          "block_id": "blk_00296",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:04:34Z",
+        "evidence_class": 3,
+        "prev_hash": "8bea514660c46f8157f1826231f0a0b4035e8871fbfa715dd52caf6f7d362608",
+        "content_hash": "63e55360539fdfa2e7f91620489fd9e66cd1ad1847b732d98ff5e21863efc9cd"
+      },
+      {
+        "item_id": "env_00296-e010",
+        "seq": 10,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 500g Amul salted butter. Payment complete.",
-          "claimed_sku": "amul-butter-salted-500",
+          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
+          "claimed_sku": "daawat-rice-sona_masoori-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_676",
-        "emitted_at": "2026-09-03T03:56:00Z",
+        "emitted_by": "agt_385",
+        "emitted_at": "2026-09-03T02:19:00Z",
         "evidence_class": 0,
-        "prev_hash": "b732fff22ce20b050e196d213dbb942ae26121ed525f0b508937c784ea0afea9",
-        "content_hash": "96dbdc03292e83f594fe8ec2438336ba9454d79461c84058113bd45526c74bf8"
+        "prev_hash": "63e55360539fdfa2e7f91620489fd9e66cd1ad1847b732d98ff5e21863efc9cd",
+        "content_hash": "fc58af0812137df87470cb159ccb45d867e6442dfb378af004d1a0e273c57141"
       }
     ]
   },
@@ -160,14 +246,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-butter-salted-500",
-    "ordered_sku": "amul-butter-salted-500",
-    "delivered_sku": "amul-butter-salted-500",
+    "requested_sku": "daawat-rice-sona_masoori-5000",
+    "ordered_sku": "daawat-rice-sona_masoori-5000",
+    "delivered_sku": "daawat-rice-sona_masoori-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 2720,
-    "rationale": "Correct item, unreconcilable debit. Debited 31220 paise against an order worth 28500 paise."
+    "loss_paise": 37200,
+    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
   }
 }

@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00214",
-    "created_at": "2026-09-02T22:34:00Z",
-    "expires_at": "2026-09-03T04:34:00Z",
-    "user_id": "usr_3526",
-    "agent_id": "agt_489",
+    "created_at": "2026-09-02T21:04:00Z",
+    "expires_at": "2026-09-03T03:04:00Z",
+    "user_id": "usr_3148",
+    "agent_id": "agt_689",
     "block": {
       "block_id": "blk_00214",
-      "blocked_paise": 137310,
+      "blocked_paise": 52440,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-13T22:34:00Z",
-      "expires_at": "2026-10-06T22:34:00Z"
+      "blocked_at": "2026-08-26T21:04:00Z",
+      "expires_at": "2026-10-28T21:04:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 45770,
-      "max_total_paise": 45770,
+      "category": "edible_oil",
+      "max_unit_price_paise": 17480,
+      "max_total_paise": 17480,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "aashirvaad",
-      "variant": "multigrain",
-      "pack_size_g": 5000
+      "brand": "fortune",
+      "variant": "sunflower_refined",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 5kg Aashirvaad multigrain atta from Zepto, keep it under 457 rupees",
+      "text": "get me 1L Fortune refined sunflower oil from Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "6b645991d28a68f6006aad0f27c573597854e36a491350e354745c3ee4a4e061",
+    "content_hash": "4e4d51dc9dfd3ab44f15d49710f3bbecbde922f2546ce077b2c77a6a6677ebb7",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00214",
-    "obligation_hash": "6b645991d28a68f6006aad0f27c573597854e36a491350e354745c3ee4a4e061",
+    "obligation_hash": "4e4d51dc9dfd3ab44f15d49710f3bbecbde922f2546ce077b2c77a6a6677ebb7",
     "items": [
       {
         "item_id": "env_00214-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 18900
         },
-        "emitted_by": "agt_489",
-        "emitted_at": "2026-09-02T22:34:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "398d085719b604e796f3b3a730bdf1c0ad662b6bfc03456044dd0dca90795f9d"
+        "content_hash": "68368789cba00e75aaa2230f60dabe4daba2b921272f2b4df9a159e8ae048b4c"
       },
       {
         "item_id": "env_00214-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00214",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 16500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:34:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:04Z",
         "evidence_class": 2,
-        "prev_hash": "398d085719b604e796f3b3a730bdf1c0ad662b6bfc03456044dd0dca90795f9d",
-        "content_hash": "6bcdd63f955ce81f33b16bf47e5d67cfd749339dd0dd66e04d9a153a601a647b"
+        "prev_hash": "68368789cba00e75aaa2230f60dabe4daba2b921272f2b4df9a159e8ae048b4c",
+        "content_hash": "fae4be2f657c52fa5f14c10075b2af965570b2bbfbc60f33e74be271979f5e08"
       },
       {
         "item_id": "env_00214-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00214",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 15200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:48:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:05Z",
         "evidence_class": 2,
-        "prev_hash": "6bcdd63f955ce81f33b16bf47e5d67cfd749339dd0dd66e04d9a153a601a647b",
-        "content_hash": "9ad5407cc9feffab9d5048a1aa345699e593fca84c51520f211464a6d246eee8"
+        "prev_hash": "fae4be2f657c52fa5f14c10075b2af965570b2bbfbc60f33e74be271979f5e08",
+        "content_hash": "6113a209ca097120816924b9c9d05a7c24ff6277331d376669b3b96131388d29"
       },
       {
         "item_id": "env_00214-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00214",
-          "amount_paise": 39800,
-          "currency": "INR",
-          "receipt": "zep_00214"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 16800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:34:25Z",
-        "evidence_class": 3,
-        "prev_hash": "9ad5407cc9feffab9d5048a1aa345699e593fca84c51520f211464a6d246eee8",
-        "content_hash": "92423686e378cfbecce14bc82c99981f5a2aeef3f8b06a196382418361787387"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:06Z",
+        "evidence_class": 2,
+        "prev_hash": "6113a209ca097120816924b9c9d05a7c24ff6277331d376669b3b96131388d29",
+        "content_hash": "50071e1829ff62628c3128981f015dceabf4a5ae40bffecd96c8942f685626c3"
       },
       {
         "item_id": "env_00214-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00214",
-          "order_id": "order_00214",
-          "amount_paise": 39800,
-          "status": "captured",
-          "block_id": "blk_00214",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:34:30Z",
-        "evidence_class": 3,
-        "prev_hash": "92423686e378cfbecce14bc82c99981f5a2aeef3f8b06a196382418361787387",
-        "content_hash": "7a8e8c7e0672abd71bc0f641c9170d5b354a7616c634ecd673cce5cafe47f372"
+        "emitted_by": "agt_689",
+        "emitted_at": "2026-09-02T21:04:12Z",
+        "evidence_class": 1,
+        "prev_hash": "50071e1829ff62628c3128981f015dceabf4a5ae40bffecd96c8942f685626c3",
+        "content_hash": "274613d8e3757eb754f475905c4236a94044169326175daae9c06e0b6457df93"
       },
       {
         "item_id": "env_00214-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-multigrain-5000",
-          "claims_success": true
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00214",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ]
         },
-        "emitted_by": "agt_489",
-        "emitted_at": "2026-09-02T22:49:00Z",
-        "evidence_class": 0,
-        "prev_hash": "7a8e8c7e0672abd71bc0f641c9170d5b354a7616c634ecd673cce5cafe47f372",
-        "content_hash": "b062245fa6ec3b7fa796900a863ade2b2006815e96d26f493ad305dc062d5d32"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:04:20Z",
+        "evidence_class": 2,
+        "prev_hash": "274613d8e3757eb754f475905c4236a94044169326175daae9c06e0b6457df93",
+        "content_hash": "cc46e3539ae4ab367fb1dc1fe6557516cc82ee738790c60073f590c33ce49e8e"
       },
       {
         "item_id": "env_00214-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00214",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 15200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T21:18:00Z",
+        "evidence_class": 2,
+        "prev_hash": "cc46e3539ae4ab367fb1dc1fe6557516cc82ee738790c60073f590c33ce49e8e",
+        "content_hash": "9d3f24492488cd98823feaa1efc19e142061f7204bbf93426dbea8cad1edef82"
+      },
+      {
+        "item_id": "env_00214-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00214",
+          "amount_paise": 15200,
+          "currency": "INR",
+          "receipt": "zep_00214"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:04:25Z",
+        "evidence_class": 3,
+        "prev_hash": "9d3f24492488cd98823feaa1efc19e142061f7204bbf93426dbea8cad1edef82",
+        "content_hash": "15f572fb621d1f2bcd94d1c10a5f88cca48386eb4f31231ddd5dcd9e2bff23f2"
+      },
+      {
+        "item_id": "env_00214-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00214",
+          "order_id": "order_00214",
+          "amount_paise": 15200,
+          "status": "captured",
+          "block_id": "blk_00214",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:04:30Z",
+        "evidence_class": 3,
+        "prev_hash": "15f572fb621d1f2bcd94d1c10a5f88cca48386eb4f31231ddd5dcd9e2bff23f2",
+        "content_hash": "2c77ef16b78070368d7f4bb7f70b05ea86e632f8ddea5ec091c4d0397bbdb5f2"
+      },
+      {
+        "item_id": "env_00214-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune refined sunflower oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-sunflower_refined-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_689",
+        "emitted_at": "2026-09-02T21:19:00Z",
+        "evidence_class": 0,
+        "prev_hash": "2c77ef16b78070368d7f4bb7f70b05ea86e632f8ddea5ec091c4d0397bbdb5f2",
+        "content_hash": "e6673f462a0b189631098d6ea12bc839f2c5ef989cfbfe36aff113085b6877cd"
+      },
+      {
+        "item_id": "env_00214-e010",
+        "seq": 10,
+        "payload": {
           "kind": "USER_DISPUTE",
           "text": "This isn't what I wanted, the agent got it wrong.",
-          "raised_at": "2026-09-03T01:34:00Z"
+          "raised_at": "2026-09-03T00:04:00Z"
         },
-        "emitted_by": "usr_3526",
-        "emitted_at": "2026-09-03T01:34:00Z",
+        "emitted_by": "usr_3148",
+        "emitted_at": "2026-09-03T00:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "b062245fa6ec3b7fa796900a863ade2b2006815e96d26f493ad305dc062d5d32",
-        "content_hash": "429cfa27e5500f79919c834518707a82ed9da554ba546f6271d7aedeb9158a0c"
+        "prev_hash": "e6673f462a0b189631098d6ea12bc839f2c5ef989cfbfe36aff113085b6877cd",
+        "content_hash": "856f547eee09c590c07f22e1d6ba9cd22b3325858443e67bd4440328ec421152"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-multigrain-5000",
-    "ordered_sku": "aashirvaad-flour-multigrain-5000",
-    "delivered_sku": "aashirvaad-flour-multigrain-5000",
+    "requested_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "ordered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "delivered_sku": "fortune-edible_oil-sunflower_refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 39800,
+    "loss_paise": 15200,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

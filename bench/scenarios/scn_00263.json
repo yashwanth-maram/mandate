@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00263",
-    "created_at": "2026-09-03T00:47:00Z",
-    "expires_at": "2026-09-03T06:47:00Z",
-    "user_id": "usr_9300",
-    "agent_id": "agt_393",
+    "created_at": "2026-09-02T23:35:00Z",
+    "expires_at": "2026-09-03T05:35:00Z",
+    "user_id": "usr_3347",
+    "agent_id": "agt_887",
     "block": {
       "block_id": "blk_00263",
-      "blocked_paise": 20000,
-      "consumed_paise": 17150,
-      "blocked_at": "2026-08-14T00:47:00Z",
-      "expires_at": "2026-10-25T00:47:00Z"
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-30T23:35:00Z",
+      "expires_at": "2026-10-28T23:35:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 6554,
-      "max_total_paise": 6554,
+      "category": "salt",
+      "max_unit_price_paise": 5175,
+      "max_total_paise": 5175,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "mother_dairy",
-      "variant": "double_toned",
+      "brand": "tata",
+      "variant": "low_sodium",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Mother Dairy double toned milk from Zepto, keep it under 65 rupees",
+      "text": "order 1kg Tata low sodium salt on Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "d911ad8ffc8e8c8947d3c6d9632b066f4a2bae6d1215b076101448d5fe021735",
+    "content_hash": "87ff7455d02be9e21067a0ee3adfc0ffe8c055fefaa775cfe45bce74128c4010",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00263",
-    "obligation_hash": "d911ad8ffc8e8c8947d3c6d9632b066f4a2bae6d1215b076101448d5fe021735",
+    "obligation_hash": "87ff7455d02be9e21067a0ee3adfc0ffe8c055fefaa775cfe45bce74128c4010",
     "items": [
       {
         "item_id": "env_00263-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "agt_393",
-        "emitted_at": "2026-09-03T00:47:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:35:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "ea9baf8cfb229b8f5b44f75a78a295b33b7dbf02dae3c4d4391395bdb0566bf1"
+        "content_hash": "e51129a13fbabf2124696bd8b410afa628008c5a40c9f23fbbe8e0d1ada5deca"
       },
       {
         "item_id": "env_00263-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00263",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:47:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:35:04Z",
         "evidence_class": 2,
-        "prev_hash": "ea9baf8cfb229b8f5b44f75a78a295b33b7dbf02dae3c4d4391395bdb0566bf1",
-        "content_hash": "f922e905f7b5da838c877bfe7f898065a9949a3e06cfbb708e8558ce8937287e"
+        "prev_hash": "e51129a13fbabf2124696bd8b410afa628008c5a40c9f23fbbe8e0d1ada5deca",
+        "content_hash": "20bcc25ee19ae64777976f8eaa5fb0c80a95a65a9f590a4346cde60570c12ee9"
       },
       {
         "item_id": "env_00263-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00263",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:01:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:35:05Z",
         "evidence_class": 2,
-        "prev_hash": "f922e905f7b5da838c877bfe7f898065a9949a3e06cfbb708e8558ce8937287e",
-        "content_hash": "607cbe5e8d8648b320dfaf1f4a5e34e0a5c7bad9f20ec44f158634153d4f9175"
+        "prev_hash": "20bcc25ee19ae64777976f8eaa5fb0c80a95a65a9f590a4346cde60570c12ee9",
+        "content_hash": "cfc1a4b65aa489ef3e3d5f8f0034d4b9c75ac51284fe8f422a62acac9d918cca"
       },
       {
         "item_id": "env_00263-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00263",
-          "amount_paise": 5700,
-          "currency": "INR",
-          "receipt": "zep_00263"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:47:25Z",
-        "evidence_class": 3,
-        "prev_hash": "607cbe5e8d8648b320dfaf1f4a5e34e0a5c7bad9f20ec44f158634153d4f9175",
-        "content_hash": "35bfd7a7acf7262faf2f090246ad3df20fb0f0f1e1baebcc4055874f8b39c81d"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:35:06Z",
+        "evidence_class": 2,
+        "prev_hash": "cfc1a4b65aa489ef3e3d5f8f0034d4b9c75ac51284fe8f422a62acac9d918cca",
+        "content_hash": "da3393436cdf6c3893cb32082b8120fc6346f3c1d10bd973e6eb85cbfbc00ea9"
       },
       {
         "item_id": "env_00263-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00263",
-          "order_id": "order_00263",
-          "amount_paise": 5700,
-          "status": "captured",
-          "block_id": "blk_00263",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:47:30Z",
-        "evidence_class": 3,
-        "prev_hash": "35bfd7a7acf7262faf2f090246ad3df20fb0f0f1e1baebcc4055874f8b39c81d",
-        "content_hash": "e737b11025c2847c5c055830190bc8d80568915d13a7ffabe0251345866be008"
+        "emitted_by": "agt_887",
+        "emitted_at": "2026-09-02T23:35:12Z",
+        "evidence_class": 1,
+        "prev_hash": "da3393436cdf6c3893cb32082b8120fc6346f3c1d10bd973e6eb85cbfbc00ea9",
+        "content_hash": "88c13d29aa2dd7c17db641788df29f85e62ef673836687a3d656cb0118d42977"
       },
       {
         "item_id": "env_00263-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00263",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:35:20Z",
+        "evidence_class": 2,
+        "prev_hash": "88c13d29aa2dd7c17db641788df29f85e62ef673836687a3d656cb0118d42977",
+        "content_hash": "ae3d0d29b24a7e0f127ed8aa94a3cab369fc3db09adf49280483cf7d8d7fa560"
+      },
+      {
+        "item_id": "env_00263-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00263",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:49:00Z",
+        "evidence_class": 2,
+        "prev_hash": "ae3d0d29b24a7e0f127ed8aa94a3cab369fc3db09adf49280483cf7d8d7fa560",
+        "content_hash": "4751c168918beb4e54585f7bc3b18a9b4489d0d51fd00b6575c1f23f10e1169a"
+      },
+      {
+        "item_id": "env_00263-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00263",
+          "amount_paise": 4500,
+          "currency": "INR",
+          "receipt": "zep_00263"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:35:25Z",
+        "evidence_class": 3,
+        "prev_hash": "4751c168918beb4e54585f7bc3b18a9b4489d0d51fd00b6575c1f23f10e1169a",
+        "content_hash": "6d2e60eeed6bccc7863d57c1f5ca17aaf43127ab4e4efed95a3c4fbcc08d5fa7"
+      },
+      {
+        "item_id": "env_00263-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00263",
+          "order_id": "order_00263",
+          "amount_paise": 4500,
+          "status": "captured",
+          "block_id": "blk_00263",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T06:05:00Z",
+        "evidence_class": 3,
+        "prev_hash": "6d2e60eeed6bccc7863d57c1f5ca17aaf43127ab4e4efed95a3c4fbcc08d5fa7",
+        "content_hash": "778d67d2dc2afaf1d5bd95db1aab03457092b64fbda40d0a10332c2f1f47d37a"
+      },
+      {
+        "item_id": "env_00263-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy double toned milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-double_toned-1000",
+          "text": "Ordered 1kg Tata low sodium salt. Payment complete.",
+          "claimed_sku": "tata-salt-low_sodium-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_393",
-        "emitted_at": "2026-09-03T01:02:00Z",
+        "emitted_by": "agt_887",
+        "emitted_at": "2026-09-02T23:50:00Z",
         "evidence_class": 0,
-        "prev_hash": "e737b11025c2847c5c055830190bc8d80568915d13a7ffabe0251345866be008",
-        "content_hash": "2a88102674241f441ddf93907962c69bcf14291e075bd6f0471ca81662b5b92b"
+        "prev_hash": "778d67d2dc2afaf1d5bd95db1aab03457092b64fbda40d0a10332c2f1f47d37a",
+        "content_hash": "a7983cb35c5bc3a98d260b00982ee46a752fae07a96d2eb36b26f55e301998dd"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-double_toned-1000",
-    "ordered_sku": "mother_dairy-milk-double_toned-1000",
-    "delivered_sku": "mother_dairy-milk-double_toned-1000",
+    "requested_sku": "tata-salt-low_sodium-1000",
+    "ordered_sku": "tata-salt-low_sodium-1000",
+    "delivered_sku": "tata-salt-low_sodium-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 2850,
-    "rationale": "Item was correct; the mandate was not honoured. Debit of 5700 paise exceeds the 2850 paise remaining on block blk_00263."
+    "loss_paise": 4500,
+    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
   }
 }

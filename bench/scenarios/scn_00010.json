@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00010",
-    "created_at": "2026-09-03T03:32:00Z",
-    "expires_at": "2026-09-03T09:32:00Z",
-    "user_id": "usr_6198",
-    "agent_id": "agt_873",
+    "created_at": "2026-09-03T00:46:00Z",
+    "expires_at": "2026-09-03T06:46:00Z",
+    "user_id": "usr_4249",
+    "agent_id": "agt_177",
     "block": {
       "block_id": "blk_00010",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-20T03:32:00Z",
-      "expires_at": "2026-10-22T03:32:00Z"
+      "blocked_at": "2026-08-16T00:46:00Z",
+      "expires_at": "2026-10-25T00:46:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3449,
-      "max_total_paise": 3449,
+      "category": "edible_oil",
+      "max_unit_price_paise": 18975,
+      "max_total_paise": 18975,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "iodised",
+      "brand": "fortune",
+      "variant": "mustard",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1kg Aashirvaad iodised salt from Zepto, keep it under 34 rupees",
+      "text": "order 1L Fortune kachi ghani mustard oil on Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "0bee24169a14241101cb3df7f27fd613e3fed89ccdda056a6a470ada26f5e1b5",
+    "content_hash": "d1a0daf1575c268e9a8b418fd29bc3bf4b83550fa8e6246cb029b3ce5e9aa13b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00010",
-    "obligation_hash": "0bee24169a14241101cb3df7f27fd613e3fed89ccdda056a6a470ada26f5e1b5",
+    "obligation_hash": "d1a0daf1575c268e9a8b418fd29bc3bf4b83550fa8e6246cb029b3ce5e9aa13b",
     "items": [
       {
         "item_id": "env_00010-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "aashirvaad-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 3000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 18900
         },
-        "emitted_by": "agt_873",
-        "emitted_at": "2026-09-03T03:32:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:46:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "b6ec1636f1278977c59214e0933d5cbbaf3f4b871d991074122c900f977e48f0"
+        "content_hash": "b72f6378ffb7c8c359ba732a245f1f5d16f0b65390f12035d0bfd6bb0894a1e8"
       },
       {
         "item_id": "env_00010-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00010",
-          "lines": [
-            {
-              "sku": "aashirvaad-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 3000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 15800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:32:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:46:04Z",
         "evidence_class": 2,
-        "prev_hash": "b6ec1636f1278977c59214e0933d5cbbaf3f4b871d991074122c900f977e48f0",
-        "content_hash": "b33ee03405f5842ca20feb7878ec6457798dfb9508ecb3ce683282e1d15445e8"
+        "prev_hash": "b72f6378ffb7c8c359ba732a245f1f5d16f0b65390f12035d0bfd6bb0894a1e8",
+        "content_hash": "24aedb877e2a278b617f7cf4d2a529f5046b0edc41de8c6cc968384a97708961"
       },
       {
         "item_id": "env_00010-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00010",
-          "lines": [
-            {
-              "sku": "aashirvaad-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 3000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 16800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:46:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:46:05Z",
         "evidence_class": 2,
-        "prev_hash": "b33ee03405f5842ca20feb7878ec6457798dfb9508ecb3ce683282e1d15445e8",
-        "content_hash": "192791c71fe90c1b9116f1abad431e52e0a1ac74b04aebe8604c4891b203db21"
+        "prev_hash": "24aedb877e2a278b617f7cf4d2a529f5046b0edc41de8c6cc968384a97708961",
+        "content_hash": "799d7d9b37330681a2770280c422223dea57a151ad9108d6e546f1bb616631d9"
       },
       {
         "item_id": "env_00010-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00010",
-          "amount_paise": 6902,
-          "currency": "INR",
-          "receipt": "zep_00010"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 16500
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:32:25Z",
-        "evidence_class": 3,
-        "prev_hash": "192791c71fe90c1b9116f1abad431e52e0a1ac74b04aebe8604c4891b203db21",
-        "content_hash": "a5314fd9bf494b73c3791de02baaebb970680934bcb27cfafc458909921b1592"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:46:06Z",
+        "evidence_class": 2,
+        "prev_hash": "799d7d9b37330681a2770280c422223dea57a151ad9108d6e546f1bb616631d9",
+        "content_hash": "97cd582553670831375ca81eeb9408ce1b874b615a336059a8bc1f78f5c351cc"
       },
       {
         "item_id": "env_00010-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00010",
-          "order_id": "order_00010",
-          "amount_paise": 6902,
-          "status": "captured",
-          "block_id": "blk_00010",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:32:30Z",
-        "evidence_class": 3,
-        "prev_hash": "a5314fd9bf494b73c3791de02baaebb970680934bcb27cfafc458909921b1592",
-        "content_hash": "2cac59e7bfb20e451ad33adde79c1017b4e90bc13a9f5b999a15dfdfe7c9daf7"
+        "emitted_by": "agt_177",
+        "emitted_at": "2026-09-03T00:46:12Z",
+        "evidence_class": 1,
+        "prev_hash": "97cd582553670831375ca81eeb9408ce1b874b615a336059a8bc1f78f5c351cc",
+        "content_hash": "d91b41f4630b0602094e2e7aac43e03edd4a2863900a3be48e6e1c71929f8df4"
       },
       {
         "item_id": "env_00010-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00010",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:46:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d91b41f4630b0602094e2e7aac43e03edd4a2863900a3be48e6e1c71929f8df4",
+        "content_hash": "02a6dfb88c3d08c6d64de8bcc19ae89403ee28fd4fbd3445198f455ece3ee153"
+      },
+      {
+        "item_id": "env_00010-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00010",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T01:00:00Z",
+        "evidence_class": 2,
+        "prev_hash": "02a6dfb88c3d08c6d64de8bcc19ae89403ee28fd4fbd3445198f455ece3ee153",
+        "content_hash": "2b6fc352a96a0a7ab289f7450621cca2a8440cdb30f719a7a7b5f2ba0fd4181d"
+      },
+      {
+        "item_id": "env_00010-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00010",
+          "amount_paise": 19072,
+          "currency": "INR",
+          "receipt": "zep_00010"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:46:25Z",
+        "evidence_class": 3,
+        "prev_hash": "2b6fc352a96a0a7ab289f7450621cca2a8440cdb30f719a7a7b5f2ba0fd4181d",
+        "content_hash": "f30dcb774157c5c15aee8c372acac22315433a1dde7da5b7fbdf03e48fca34da"
+      },
+      {
+        "item_id": "env_00010-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00010",
+          "order_id": "order_00010",
+          "amount_paise": 19072,
+          "status": "captured",
+          "block_id": "blk_00010",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:46:30Z",
+        "evidence_class": 3,
+        "prev_hash": "f30dcb774157c5c15aee8c372acac22315433a1dde7da5b7fbdf03e48fca34da",
+        "content_hash": "9e079601ab95a35141950f61d5b5123228a5412d068d752b235fb24af914568e"
+      },
+      {
+        "item_id": "env_00010-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
-          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-mustard-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_873",
-        "emitted_at": "2026-09-03T03:47:00Z",
+        "emitted_by": "agt_177",
+        "emitted_at": "2026-09-03T01:01:00Z",
         "evidence_class": 0,
-        "prev_hash": "2cac59e7bfb20e451ad33adde79c1017b4e90bc13a9f5b999a15dfdfe7c9daf7",
-        "content_hash": "7908d2eea8cd94ee7b2c3f9f01a5dbb738aa45cde444e72297cc1bfebd374c9b"
+        "prev_hash": "9e079601ab95a35141950f61d5b5123228a5412d068d752b235fb24af914568e",
+        "content_hash": "9d35bc16ca5ce14e5da7bceeb2ce671f038e4cc7f3793a793b2d5a796ce308c7"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-salt-iodised-1000",
-    "ordered_sku": "aashirvaad-salt-iodised-1000",
-    "delivered_sku": "aashirvaad-salt-iodised-1000",
+    "requested_sku": "fortune-edible_oil-mustard-1000",
+    "ordered_sku": "fortune-edible_oil-mustard-1000",
+    "delivered_sku": "fortune-edible_oil-mustard-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 3902,
-    "rationale": "Correct item, unreconcilable debit. Debited 6902 paise against an order worth 3000 paise."
+    "loss_paise": 2572,
+    "rationale": "Correct item, unreconcilable debit. Debited 19072 paise against an order worth 16500 paise."
   }
 }

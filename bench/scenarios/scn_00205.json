@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00205",
-    "created_at": "2026-09-02T19:38:00Z",
-    "expires_at": "2026-09-03T01:38:00Z",
-    "user_id": "usr_9591",
-    "agent_id": "agt_252",
+    "created_at": "2026-09-02T20:01:00Z",
+    "expires_at": "2026-09-03T02:01:00Z",
+    "user_id": "usr_4764",
+    "agent_id": "agt_557",
     "block": {
       "block_id": "blk_00205",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-26T19:38:00Z",
-      "expires_at": "2026-10-08T19:38:00Z"
+      "blocked_at": "2026-08-28T20:01:00Z",
+      "expires_at": "2026-10-05T20:01:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 7589,
-      "max_total_paise": 7589,
+      "category": "flour",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "amul",
-      "variant": "toned",
+      "brand": "aashirvaad",
+      "variant": "gram",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1L Amul toned milk, use Zepto",
+      "text": "order 1kg Aashirvaad besan on Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "196fafe06680ed9598c43b3e249eb7596eafbc3333f34da84ce23f5b47ea166c",
+    "content_hash": "8c97c2f5505ac7e984f1994874349af38669e67f90b64183329c22da480f38fe",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00205",
-    "obligation_hash": "196fafe06680ed9598c43b3e249eb7596eafbc3333f34da84ce23f5b47ea166c",
+    "obligation_hash": "8c97c2f5505ac7e984f1994874349af38669e67f90b64183329c22da480f38fe",
     "items": [
       {
         "item_id": "env_00205-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "amul-milk-toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 6600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 34000
         },
-        "emitted_by": "agt_252",
-        "emitted_at": "2026-09-02T19:38:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:01:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "e4596b32dd9d52aa93bd6f614ed29cd169b5f3e125b47798b5d2e607bf78ee9c"
+        "content_hash": "356e70001f7c4bd6ef63db147a5ac7c3a2f8b0044d180b68fd178c5438090cb9"
       },
       {
         "item_id": "env_00205-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00205",
-          "lines": [
-            {
-              "sku": "amul-milk-toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 6600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:38:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:01:04Z",
         "evidence_class": 2,
-        "prev_hash": "e4596b32dd9d52aa93bd6f614ed29cd169b5f3e125b47798b5d2e607bf78ee9c",
-        "content_hash": "6351782eb6da1b3fc95f2c7042948e763bafe305c8df953e8ec5d6a0e62a7be7"
+        "prev_hash": "356e70001f7c4bd6ef63db147a5ac7c3a2f8b0044d180b68fd178c5438090cb9",
+        "content_hash": "171e088b8a44e60625e11b51f207283625fe59d6b59bd624ce86a65b6cf5e485"
       },
       {
         "item_id": "env_00205-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00205",
-          "lines": [
-            {
-              "sku": "amul-milk-toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 6600
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "pillsbury-flour-whole_wheat-5000",
+          "display_name": "Pillsbury Chakki Fresh Atta 5kg",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 34900
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:52:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:01:05Z",
         "evidence_class": 2,
-        "prev_hash": "6351782eb6da1b3fc95f2c7042948e763bafe305c8df953e8ec5d6a0e62a7be7",
-        "content_hash": "5363528659c80510a28928b6814519b30b7d62d433ff6d7f3596185659ec088c"
+        "prev_hash": "171e088b8a44e60625e11b51f207283625fe59d6b59bd624ce86a65b6cf5e485",
+        "content_hash": "6508a6ab8e09a38ff5e981dc42dc208e15a64602c1fb72f67a12cd8591d37a56"
       },
       {
         "item_id": "env_00205-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00205",
-          "amount_paise": 6600,
-          "currency": "INR",
-          "receipt": "zep_00205"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:38:25Z",
-        "evidence_class": 3,
-        "prev_hash": "5363528659c80510a28928b6814519b30b7d62d433ff6d7f3596185659ec088c",
-        "content_hash": "49a2b3e7ec2fb3d76980e1b109da3427aac68d95ac1bb59eb3e86fdb35f63160"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:01:06Z",
+        "evidence_class": 2,
+        "prev_hash": "6508a6ab8e09a38ff5e981dc42dc208e15a64602c1fb72f67a12cd8591d37a56",
+        "content_hash": "a853cbd65f260feb01999bf49c94d289431d7f3f587e51785760b6b42062c4d9"
       },
       {
         "item_id": "env_00205-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00205",
-          "order_id": "order_00205",
-          "amount_paise": 6600,
-          "status": "captured",
-          "block_id": "blk_00205",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:38:30Z",
-        "evidence_class": 3,
-        "prev_hash": "49a2b3e7ec2fb3d76980e1b109da3427aac68d95ac1bb59eb3e86fdb35f63160",
-        "content_hash": "5d395cdecf1384e9a81dbc53803531a6c90729593f551aede57e011048399502"
+        "emitted_by": "agt_557",
+        "emitted_at": "2026-09-02T20:01:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a853cbd65f260feb01999bf49c94d289431d7f3f587e51785760b6b42062c4d9",
+        "content_hash": "e9b64b9b61b80c5da7afc68750f45a304a2c41c2cc75ff09077584365e5c5e42"
       },
       {
         "item_id": "env_00205-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Amul toned milk. Payment complete.",
-          "claimed_sku": "amul-milk-toned-1000",
-          "claims_success": true
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00205",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "agt_252",
-        "emitted_at": "2026-09-02T19:53:00Z",
-        "evidence_class": 0,
-        "prev_hash": "5d395cdecf1384e9a81dbc53803531a6c90729593f551aede57e011048399502",
-        "content_hash": "0fc4523a09fcba534cb3b5fd9e3e1dcbffb8c554e4675e2e6bc107546757c4c0"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:01:20Z",
+        "evidence_class": 2,
+        "prev_hash": "e9b64b9b61b80c5da7afc68750f45a304a2c41c2cc75ff09077584365e5c5e42",
+        "content_hash": "1ef4be019d3649f92c531a7afd2947728a036e48f3cf09d540411c96272137ea"
       },
       {
         "item_id": "env_00205-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00205",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:15:00Z",
+        "evidence_class": 2,
+        "prev_hash": "1ef4be019d3649f92c531a7afd2947728a036e48f3cf09d540411c96272137ea",
+        "content_hash": "6f26d605eb5c0a81118773ffe7c98a3df01a3923999c42f01c7e76ebadaa1011"
+      },
+      {
+        "item_id": "env_00205-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00205",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00205"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:01:25Z",
+        "evidence_class": 3,
+        "prev_hash": "6f26d605eb5c0a81118773ffe7c98a3df01a3923999c42f01c7e76ebadaa1011",
+        "content_hash": "47746be6fe74f4f085520e236b1430b04e6e2adc396a017b9a61a556ed952673"
+      },
+      {
+        "item_id": "env_00205-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00205",
+          "order_id": "order_00205",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00205",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:01:30Z",
+        "evidence_class": 3,
+        "prev_hash": "47746be6fe74f4f085520e236b1430b04e6e2adc396a017b9a61a556ed952673",
+        "content_hash": "91310807e63c13dd37ce1fb4f015d2bee41b5ad56536d6b823ccf2a84f7ea166"
+      },
+      {
+        "item_id": "env_00205-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-gram-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_557",
+        "emitted_at": "2026-09-02T20:16:00Z",
+        "evidence_class": 0,
+        "prev_hash": "91310807e63c13dd37ce1fb4f015d2bee41b5ad56536d6b823ccf2a84f7ea166",
+        "content_hash": "6b3dcd2fb3578180732cfbc6a4ff9794b4e996d4f42a20734958e6e23255ce53"
+      },
+      {
+        "item_id": "env_00205-e010",
+        "seq": 10,
+        "payload": {
           "kind": "USER_DISPUTE",
           "text": "This isn't what I wanted, the agent got it wrong.",
-          "raised_at": "2026-09-02T22:38:00Z"
+          "raised_at": "2026-09-02T23:01:00Z"
         },
-        "emitted_by": "usr_9591",
-        "emitted_at": "2026-09-02T22:38:00Z",
+        "emitted_by": "usr_4764",
+        "emitted_at": "2026-09-02T23:01:00Z",
         "evidence_class": 0,
-        "prev_hash": "0fc4523a09fcba534cb3b5fd9e3e1dcbffb8c554e4675e2e6bc107546757c4c0",
-        "content_hash": "c4c00797c284100a97db900e311ff3b6aa12c848ef4f5d9c692a08541a8893e8"
+        "prev_hash": "6b3dcd2fb3578180732cfbc6a4ff9794b4e996d4f42a20734958e6e23255ce53",
+        "content_hash": "f41f0bc3803e59db823c7e06e671cbefa0a7e691f0d0fa3c55a30d5a784d49ed"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-milk-toned-1000",
-    "ordered_sku": "amul-milk-toned-1000",
-    "delivered_sku": "amul-milk-toned-1000",
+    "requested_sku": "aashirvaad-flour-gram-1000",
+    "ordered_sku": "aashirvaad-flour-gram-1000",
+    "delivered_sku": "aashirvaad-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 6600,
+    "loss_paise": 9600,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

@@ -6,170 +6,238 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00463",
-    "created_at": "2026-09-02T18:10:00Z",
-    "expires_at": "2026-09-03T00:10:00Z",
-    "user_id": "usr_1001",
-    "agent_id": "agt_635",
+    "created_at": "2026-09-03T00:44:00Z",
+    "expires_at": "2026-09-03T06:44:00Z",
+    "user_id": "usr_3550",
+    "agent_id": "agt_556",
     "block": {
       "block_id": "blk_00463",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-29T18:10:00Z",
-      "expires_at": "2026-10-13T18:10:00Z"
+      "blocked_at": "2026-08-27T00:44:00Z",
+      "expires_at": "2026-10-26T00:44:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18975,
-      "max_total_paise": 18975,
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
-      "brand": "fortune",
-      "variant": "mustard",
+      "brand": "tata",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1L Fortune kachi ghani mustard oil, use Swiggy Instamart",
+      "text": "buy 1kg Tata iodised salt from Zepto, keep it under 32 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "db219d5713ce4fb5dcfc5e870e259a8bed3cad2ffd078c43806c5cc0a5f7f6f2",
+    "content_hash": "857f920a34fdf63f7aa7d3eea981c474c062c61545da6a5eddd25e647ebec862",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00463",
-    "obligation_hash": "db219d5713ce4fb5dcfc5e870e259a8bed3cad2ffd078c43806c5cc0a5f7f6f2",
+    "obligation_hash": "857f920a34fdf63f7aa7d3eea981c474c062c61545da6a5eddd25e647ebec862",
     "items": [
       {
         "item_id": "env_00463-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "agt_635",
-        "emitted_at": "2026-09-02T18:10:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:44:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "270ad1cc21d218da47b668a1533904a5f9c337ebe4874e37aa0736998aae0765"
+        "content_hash": "60d035fddd5273c14b1adcb0edcb593c9f252a8016bf03beff5f119b5b580de2"
       },
       {
         "item_id": "env_00463-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00463",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T18:10:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:44:04Z",
         "evidence_class": 2,
-        "prev_hash": "270ad1cc21d218da47b668a1533904a5f9c337ebe4874e37aa0736998aae0765",
-        "content_hash": "273640969b20489f14957869c6b1c053207dc048ec9a1a6fd12e24631c8487f0"
+        "prev_hash": "60d035fddd5273c14b1adcb0edcb593c9f252a8016bf03beff5f119b5b580de2",
+        "content_hash": "ebcafd8377bb94f3ad62f072c32c70828688034d79205d25059428f2b5bae46f"
       },
       {
         "item_id": "env_00463-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00463",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T18:24:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:44:05Z",
         "evidence_class": 2,
-        "prev_hash": "273640969b20489f14957869c6b1c053207dc048ec9a1a6fd12e24631c8487f0",
-        "content_hash": "13882dbd26878f3e514ff9a228f8d6b2e0a2b6522dcf44410a96827407e47d48"
+        "prev_hash": "ebcafd8377bb94f3ad62f072c32c70828688034d79205d25059428f2b5bae46f",
+        "content_hash": "78be1fcb4095e2a707dbdfececc98a7197295962991072563b82718ece0ea023"
       },
       {
         "item_id": "env_00463-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00463",
-          "amount_paise": 16500,
-          "currency": "INR",
-          "receipt": "zep_00463"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:10:25Z",
-        "evidence_class": 3,
-        "prev_hash": "13882dbd26878f3e514ff9a228f8d6b2e0a2b6522dcf44410a96827407e47d48",
-        "content_hash": "cf4709aaf4e7f6e0aa4af18c3b78b3d862bcd867ddee705b7705a37a6399e722"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:44:06Z",
+        "evidence_class": 2,
+        "prev_hash": "78be1fcb4095e2a707dbdfececc98a7197295962991072563b82718ece0ea023",
+        "content_hash": "15663c78e333e75e616157691a9bef4a7bd60880581d7c338bb8eb8c6f32e78b"
       },
       {
         "item_id": "env_00463-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00463",
-          "order_id": "order_00463",
-          "amount_paise": 16500,
-          "status": "captured",
-          "block_id": "blk_00463",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:10:30Z",
-        "evidence_class": 3,
-        "prev_hash": "cf4709aaf4e7f6e0aa4af18c3b78b3d862bcd867ddee705b7705a37a6399e722",
-        "content_hash": "8250faf25eda9a960d08a857c0bca34b3c79a51bd99c079f7b4859850e74fb43"
+        "emitted_by": "agt_556",
+        "emitted_at": "2026-09-03T00:44:12Z",
+        "evidence_class": 1,
+        "prev_hash": "15663c78e333e75e616157691a9bef4a7bd60880581d7c338bb8eb8c6f32e78b",
+        "content_hash": "7c7b359b05508baf2b97320ec01a809ed2bc761614295eaecbac856cd88f13ed"
       },
       {
         "item_id": "env_00463-e005",
         "seq": 5,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00463b",
-          "order_id": "order_00463",
-          "amount_paise": 16500,
-          "status": "captured",
-          "block_id": "blk_00463",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00463",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:10:34Z",
-        "evidence_class": 3,
-        "prev_hash": "8250faf25eda9a960d08a857c0bca34b3c79a51bd99c079f7b4859850e74fb43",
-        "content_hash": "2abac6075480f4fce49b7da36c5830bf86e337f3cd8541ddf454ecb3c6550cb4"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:44:20Z",
+        "evidence_class": 2,
+        "prev_hash": "7c7b359b05508baf2b97320ec01a809ed2bc761614295eaecbac856cd88f13ed",
+        "content_hash": "22f305c0c44756e781b65da62b02bb3cce87d5fcded81fedc9de89be519ca817"
       },
       {
         "item_id": "env_00463-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00463",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:58:00Z",
+        "evidence_class": 2,
+        "prev_hash": "22f305c0c44756e781b65da62b02bb3cce87d5fcded81fedc9de89be519ca817",
+        "content_hash": "1baecbfc0ac432ada553073e7dfd0f4c9bbb099f8262e72063bc21eb10bb38de"
+      },
+      {
+        "item_id": "env_00463-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00463",
+          "amount_paise": 2800,
+          "currency": "INR",
+          "receipt": "zep_00463"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:44:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1baecbfc0ac432ada553073e7dfd0f4c9bbb099f8262e72063bc21eb10bb38de",
+        "content_hash": "71dc05fc09864c2a381f1eb34bb58875beefa52e149b1c82e5cb7b8708478648"
+      },
+      {
+        "item_id": "env_00463-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00463",
+          "order_id": "order_00463",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00463",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:44:30Z",
+        "evidence_class": 3,
+        "prev_hash": "71dc05fc09864c2a381f1eb34bb58875beefa52e149b1c82e5cb7b8708478648",
+        "content_hash": "2f356b8a246dd58d5f3ead969faa2e9e3b4f2ad91c0a56d244570015bd57b8e8"
+      },
+      {
+        "item_id": "env_00463-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00463b",
+          "order_id": "order_00463",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00463",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:44:34Z",
+        "evidence_class": 3,
+        "prev_hash": "2f356b8a246dd58d5f3ead969faa2e9e3b4f2ad91c0a56d244570015bd57b8e8",
+        "content_hash": "c125004e48a252783069cb8829aea476f96745f923b6629977171a2a93d89eac"
+      },
+      {
+        "item_id": "env_00463-e010",
+        "seq": 10,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered the 1L Fortune kachi ghani mustard oil you asked for. All good.",
-          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "text": "Ordered the 1kg Tata iodised salt you asked for. All good.",
+          "claimed_sku": "tata-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_635",
-        "emitted_at": "2026-09-02T18:25:00Z",
+        "emitted_by": "agt_556",
+        "emitted_at": "2026-09-03T00:59:00Z",
         "evidence_class": 0,
-        "prev_hash": "2abac6075480f4fce49b7da36c5830bf86e337f3cd8541ddf454ecb3c6550cb4",
-        "content_hash": "8d0196a482f4ba3c86bdfce1cef4cf43a1b89ea45819ded2063b332d39f734ce"
+        "prev_hash": "c125004e48a252783069cb8829aea476f96745f923b6629977171a2a93d89eac",
+        "content_hash": "ae65a6cea0b9bde5078e12a6601957683abfe43a856b10b48d8dbf93af22c3c8"
       }
     ]
   },
@@ -178,14 +246,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-mustard-1000",
-    "ordered_sku": "fortune-edible_oil-mustard-1000",
-    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": false,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 16500,
+    "loss_paise": 2800,
     "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
   }
 }

@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00482",
-    "created_at": "2026-09-03T00:12:00Z",
-    "expires_at": "2026-09-03T06:12:00Z",
-    "user_id": "usr_4912",
-    "agent_id": "agt_428",
+    "created_at": "2026-09-03T02:38:00Z",
+    "expires_at": "2026-09-03T08:38:00Z",
+    "user_id": "usr_8374",
+    "agent_id": "agt_369",
     "block": {
       "block_id": "blk_00482",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T00:12:00Z",
-      "expires_at": "2026-10-24T00:12:00Z"
+      "blocked_at": "2026-09-02T02:38:00Z",
+      "expires_at": "2026-10-22T02:38:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 7589,
-      "max_total_paise": 7589,
+      "category": "rice",
+      "max_unit_price_paise": 14719,
+      "max_total_paise": 14719,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "amul",
+      "brand": "daawat",
       "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Amul toned milk from Zepto, keep it under 75 rupees",
+      "text": "get me 1kg Daawat basmati rice from Zepto",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "83be659e794473c2b72727f4c5b118a15a4418f86ee6864c3db72d12cde24ffd",
+    "content_hash": "c366e8439b962800786939faa2dd05d26594d5a16aa85b54cd7f5c3a86f7d627",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00482",
-    "obligation_hash": "83be659e794473c2b72727f4c5b118a15a4418f86ee6864c3db72d12cde24ffd",
+    "obligation_hash": "c366e8439b962800786939faa2dd05d26594d5a16aa85b54cd7f5c3a86f7d627",
     "items": [
       {
         "item_id": "env_00482-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "amul-milk-toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 6600
-            }
-          ]
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "agt_428",
-        "emitted_at": "2026-09-03T00:12:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:38:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "f0546bc125fd17a059a56874244425750bc83506a8118cda709fe37743ae71c9"
+        "content_hash": "f3267f431966c5d31556c434d1c4af93c81cf0bb5acc6126251cdadce198a0b2"
       },
       {
         "item_id": "env_00482-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 12800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:38:04Z",
+        "evidence_class": 2,
+        "prev_hash": "f3267f431966c5d31556c434d1c4af93c81cf0bb5acc6126251cdadce198a0b2",
+        "content_hash": "2640ce757c00a4dd605aeb6a004b4a64e994fee3f0547f36b37efeca88c4ee7b"
+      },
+      {
+        "item_id": "env_00482-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-brown-1000",
+          "display_name": "India Gate Brown Basmati Rice 1kg",
+          "description": "India Gate Brown Basmati Rice 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 11800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:38:05Z",
+        "evidence_class": 2,
+        "prev_hash": "2640ce757c00a4dd605aeb6a004b4a64e994fee3f0547f36b37efeca88c4ee7b",
+        "content_hash": "1ac59331fba3018492aa74f2cde2e2bfe5dc2b8709801e56582e7841438a2219"
+      },
+      {
+        "item_id": "env_00482-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:38:06Z",
+        "evidence_class": 2,
+        "prev_hash": "1ac59331fba3018492aa74f2cde2e2bfe5dc2b8709801e56582e7841438a2219",
+        "content_hash": "0999d6b42c3d16e6daefdbc0cef46960c3519d143731b28749ae76a16fdf1b88"
+      },
+      {
+        "item_id": "env_00482-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
+        },
+        "emitted_by": "agt_369",
+        "emitted_at": "2026-09-03T02:38:12Z",
+        "evidence_class": 1,
+        "prev_hash": "0999d6b42c3d16e6daefdbc0cef46960c3519d143731b28749ae76a16fdf1b88",
+        "content_hash": "36bd99899c37753defd5fca8f01340d8b7eb83f4f5c528d3aa3ff86d44faf6aa"
+      },
+      {
+        "item_id": "env_00482-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00482",
           "lines": [
             {
-              "sku": "amul-milk-toned-1000",
+              "sku": "daawat-rice-basmati-1000",
               "quantity": 1,
-              "unit_price_paise": 6600
+              "unit_price_paise": 12800
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:12:20Z",
+        "emitted_at": "2026-09-03T02:38:20Z",
         "evidence_class": 2,
-        "prev_hash": "f0546bc125fd17a059a56874244425750bc83506a8118cda709fe37743ae71c9",
-        "content_hash": "ce03e946a2d6eadab217abe7f489d647ab2f3b2c31e076a8fea587db7fa17dfd"
+        "prev_hash": "36bd99899c37753defd5fca8f01340d8b7eb83f4f5c528d3aa3ff86d44faf6aa",
+        "content_hash": "9190fc824b8019fe73442ec166281e261f0e23f69e612305209863da1dd57f53"
       },
       {
-        "item_id": "env_00482-e002",
-        "seq": 2,
+        "item_id": "env_00482-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00482",
           "lines": [
             {
-              "sku": "amul-milk-toned-1000",
+              "sku": "daawat-rice-basmati-1000",
               "quantity": 1,
-              "unit_price_paise": 6600
+              "unit_price_paise": 12800
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:26:00Z",
+        "emitted_at": "2026-09-03T02:52:00Z",
         "evidence_class": 2,
-        "prev_hash": "ce03e946a2d6eadab217abe7f489d647ab2f3b2c31e076a8fea587db7fa17dfd",
-        "content_hash": "6fc0935952a0ecfb3a7f61d23f3515c9c1ddc6a0b4a94344ee290953b57ac316"
+        "prev_hash": "9190fc824b8019fe73442ec166281e261f0e23f69e612305209863da1dd57f53",
+        "content_hash": "4ffa44880335bf8e18cedccbd6dfcc04322ceeb4418399e01534d5909039f7b0"
       },
       {
-        "item_id": "env_00482-e003",
-        "seq": 3,
+        "item_id": "env_00482-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00482",
-          "amount_paise": 6600,
+          "amount_paise": 12800,
           "currency": "INR",
           "receipt": "zep_00482"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:12:25Z",
+        "emitted_at": "2026-09-03T02:38:25Z",
         "evidence_class": 3,
-        "prev_hash": "6fc0935952a0ecfb3a7f61d23f3515c9c1ddc6a0b4a94344ee290953b57ac316",
-        "content_hash": "a9a9dade2dee3d08e4b3544a4cf498dba63ab30a5b75055e60b29c4c4e25f228"
+        "prev_hash": "4ffa44880335bf8e18cedccbd6dfcc04322ceeb4418399e01534d5909039f7b0",
+        "content_hash": "8f15799f86d933ec35ffe8f88e36d6d7cabea6210815273a61988f3f0868bece"
       },
       {
-        "item_id": "env_00482-e004",
-        "seq": 4,
+        "item_id": "env_00482-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00482",
           "order_id": "order_00482",
-          "amount_paise": 6600,
+          "amount_paise": 12800,
           "status": "captured",
           "block_id": "blk_00482",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:12:30Z",
+        "emitted_at": "2026-09-03T02:38:30Z",
         "evidence_class": 3,
-        "prev_hash": "a9a9dade2dee3d08e4b3544a4cf498dba63ab30a5b75055e60b29c4c4e25f228",
-        "content_hash": "9f4bc2fa1ba2e4c3e714a99a4e7c936fa03f0bcd6b7e34eedbae02e3591a1034"
+        "prev_hash": "8f15799f86d933ec35ffe8f88e36d6d7cabea6210815273a61988f3f0868bece",
+        "content_hash": "a611108ee7f2d01f9ed08bee237ebd5d7aa4d9d5e9cb751b863a646c0818a1e5"
       },
       {
-        "item_id": "env_00482-e005",
-        "seq": 5,
+        "item_id": "env_00482-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Amul toned milk. Payment complete.",
-          "claimed_sku": "amul-milk-toned-1000",
+          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
+          "claimed_sku": "daawat-rice-basmati-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_428",
-        "emitted_at": "2026-09-03T00:27:00Z",
+        "emitted_by": "agt_369",
+        "emitted_at": "2026-09-03T02:53:00Z",
         "evidence_class": 0,
-        "prev_hash": "9f4bc2fa1ba2e4c3e714a99a4e7c936fa03f0bcd6b7e34eedbae02e3591a1034",
-        "content_hash": "b46978208efb3ee6dfd9b60106f469598ba3e0ab9734f3ec6fa3128842285f27"
+        "prev_hash": "a611108ee7f2d01f9ed08bee237ebd5d7aa4d9d5e9cb751b863a646c0818a1e5",
+        "content_hash": "d2843a45905f35dcc4c23a071764629aa976cfced3701aebf142ccb207d2b041"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-milk-toned-1000",
-    "ordered_sku": "amul-milk-toned-1000",
-    "delivered_sku": "amul-milk-toned-1000",
+    "requested_sku": "daawat-rice-basmati-1000",
+    "ordered_sku": "daawat-rice-basmati-1000",
+    "delivered_sku": "daawat-rice-basmati-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

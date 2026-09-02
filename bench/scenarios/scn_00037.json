@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00037",
-    "created_at": "2026-09-02T22:05:00Z",
-    "expires_at": "2026-09-03T04:05:00Z",
-    "user_id": "usr_3847",
-    "agent_id": "agt_665",
+    "created_at": "2026-09-02T20:09:00Z",
+    "expires_at": "2026-09-03T02:09:00Z",
+    "user_id": "usr_5505",
+    "agent_id": "agt_739",
     "block": {
       "block_id": "blk_00037",
-      "blocked_paise": 50000,
+      "blocked_paise": 54510,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-31T22:05:00Z",
-      "expires_at": "2026-10-07T22:05:00Z"
+      "blocked_at": "2026-08-13T20:09:00Z",
+      "expires_at": "2026-10-20T20:09:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 6554,
-      "max_total_paise": 6554,
+      "category": "edible_oil",
+      "max_unit_price_paise": 18170,
+      "max_total_paise": 18170,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "mother_dairy",
-      "variant": "double_toned",
+      "brand": "dhara",
+      "variant": "mustard",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1L Mother Dairy double toned milk from Blinkit",
+      "text": "I need 1L Dhara kachi ghani mustard oil, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "75b505cf5041eb4dbbacf00dd39c144c9fa17c441f01c093cc47b779b1b386ee",
+    "content_hash": "895fca5f694db3c08afdbecf2ed7612b9980bf125fa08558efbbee744b1a5e96",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00037",
-    "obligation_hash": "75b505cf5041eb4dbbacf00dd39c144c9fa17c441f01c093cc47b779b1b386ee",
+    "obligation_hash": "895fca5f694db3c08afdbecf2ed7612b9980bf125fa08558efbbee744b1a5e96",
     "items": [
       {
         "item_id": "env_00037-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ]
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 15800
         },
-        "emitted_by": "agt_665",
-        "emitted_at": "2026-09-02T22:05:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:09:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "aedc89135b02d5174fc9773d1f9ddfb0f21064a1c773b51ad36b74a5e1dac6b3"
+        "content_hash": "20cdc32c09336e21e889493def2e76036d1b336eb7f352076b5f0efd72b53b87"
       },
       {
         "item_id": "env_00037-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 15200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:09:04Z",
+        "evidence_class": 2,
+        "prev_hash": "20cdc32c09336e21e889493def2e76036d1b336eb7f352076b5f0efd72b53b87",
+        "content_hash": "4bf145bb6734405ec3af49579b61ff753e726ab41e04cc9a9bc055bd8f9f3f00"
+      },
+      {
+        "item_id": "env_00037-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 16800
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:09:05Z",
+        "evidence_class": 2,
+        "prev_hash": "4bf145bb6734405ec3af49579b61ff753e726ab41e04cc9a9bc055bd8f9f3f00",
+        "content_hash": "6cb731dfb675f007190053e067bdf403de981c9634a04f0afbbe8f0e9e95591d"
+      },
+      {
+        "item_id": "env_00037-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 16500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:09:06Z",
+        "evidence_class": 2,
+        "prev_hash": "6cb731dfb675f007190053e067bdf403de981c9634a04f0afbbe8f0e9e95591d",
+        "content_hash": "a97296c399057b73f6d54b376a97fc810a14b2d02c75c001aa72f4ae1646af52"
+      },
+      {
+        "item_id": "env_00037-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "dhara-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 15800
+            }
+          ]
+        },
+        "emitted_by": "agt_739",
+        "emitted_at": "2026-09-02T20:09:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a97296c399057b73f6d54b376a97fc810a14b2d02c75c001aa72f4ae1646af52",
+        "content_hash": "0b8d4f26d4d48a5eae695950a3cc3d395d343e67ca7af1e747691bb5f080ea4d"
+      },
+      {
+        "item_id": "env_00037-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00037",
           "lines": [
             {
-              "sku": "mother_dairy-milk-double_toned-1000",
+              "sku": "dhara-edible_oil-mustard-1000",
               "quantity": 1,
-              "unit_price_paise": 5700
+              "unit_price_paise": 15800
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T22:05:20Z",
+        "emitted_at": "2026-09-02T20:09:20Z",
         "evidence_class": 2,
-        "prev_hash": "aedc89135b02d5174fc9773d1f9ddfb0f21064a1c773b51ad36b74a5e1dac6b3",
-        "content_hash": "25c17d716329a62f54751a9b812f1d949b656d97d80baafe0b853d1075c51221"
+        "prev_hash": "0b8d4f26d4d48a5eae695950a3cc3d395d343e67ca7af1e747691bb5f080ea4d",
+        "content_hash": "5b03598ff7c81ad87edc94e1e9a21263c2628c33890897f5fa7456fd4c01e2b1"
       },
       {
-        "item_id": "env_00037-e002",
-        "seq": 2,
+        "item_id": "env_00037-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00037",
           "lines": [
             {
-              "sku": "mother_dairy-milk-double_toned-1000",
+              "sku": "dhara-edible_oil-mustard-1000",
               "quantity": 1,
-              "unit_price_paise": 5700
+              "unit_price_paise": 15800
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T22:19:00Z",
+        "emitted_at": "2026-09-02T20:23:00Z",
         "evidence_class": 2,
-        "prev_hash": "25c17d716329a62f54751a9b812f1d949b656d97d80baafe0b853d1075c51221",
-        "content_hash": "2d8ac871a28aad46d34cd6578296d2f66ba0f3d6be83d37547b3b6e362b33a3f"
+        "prev_hash": "5b03598ff7c81ad87edc94e1e9a21263c2628c33890897f5fa7456fd4c01e2b1",
+        "content_hash": "04daa3359b29128e4f341fc09142ee083419d10d6f3b2f5b4c90b243c1579597"
       },
       {
-        "item_id": "env_00037-e003",
-        "seq": 3,
+        "item_id": "env_00037-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00037",
-          "amount_paise": 5700,
+          "amount_paise": 15800,
           "currency": "INR",
           "receipt": "zep_00037"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:05:25Z",
+        "emitted_at": "2026-09-02T20:09:25Z",
         "evidence_class": 3,
-        "prev_hash": "2d8ac871a28aad46d34cd6578296d2f66ba0f3d6be83d37547b3b6e362b33a3f",
-        "content_hash": "788ee0e5ee4849281727097e8dd9062d52734276301793d00b827a9ebd1c5ac9"
+        "prev_hash": "04daa3359b29128e4f341fc09142ee083419d10d6f3b2f5b4c90b243c1579597",
+        "content_hash": "53ce98b9607eaad0c3a5941c8d7e050f74a7444c138bd2e0f2207e4f2f90876c"
       },
       {
-        "item_id": "env_00037-e004",
-        "seq": 4,
+        "item_id": "env_00037-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00037",
           "order_id": "order_00037",
-          "amount_paise": 5700,
+          "amount_paise": 15800,
           "status": "captured",
           "block_id": "blk_00037",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:05:30Z",
+        "emitted_at": "2026-09-02T20:09:30Z",
         "evidence_class": 3,
-        "prev_hash": "788ee0e5ee4849281727097e8dd9062d52734276301793d00b827a9ebd1c5ac9",
-        "content_hash": "f3ad4b8bb073908b0b8acbcb0e0aa9e0631f1b739d24cdaa2f8b5bcc333adc69"
+        "prev_hash": "53ce98b9607eaad0c3a5941c8d7e050f74a7444c138bd2e0f2207e4f2f90876c",
+        "content_hash": "a2a57c375c649669c015e6a04de26548e5bf59bbdc7b5521392dd5785dd322da"
       },
       {
-        "item_id": "env_00037-e005",
-        "seq": 5,
+        "item_id": "env_00037-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy double toned milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-double_toned-1000",
+          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "dhara-edible_oil-mustard-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_665",
-        "emitted_at": "2026-09-02T22:20:00Z",
+        "emitted_by": "agt_739",
+        "emitted_at": "2026-09-02T20:24:00Z",
         "evidence_class": 0,
-        "prev_hash": "f3ad4b8bb073908b0b8acbcb0e0aa9e0631f1b739d24cdaa2f8b5bcc333adc69",
-        "content_hash": "e7c9d58a872595449555abfeddb0d3e1fc6cfc3c5d2089bd15f6f82d6d3b6429"
+        "prev_hash": "a2a57c375c649669c015e6a04de26548e5bf59bbdc7b5521392dd5785dd322da",
+        "content_hash": "530e9a0641f98feb52d4aba9e3c9e82a3b87cf985fcb670699a7cad0529237b4"
       }
     ]
   },
@@ -160,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-double_toned-1000",
-    "ordered_sku": "mother_dairy-milk-double_toned-1000",
-    "delivered_sku": "mother_dairy-milk-double_toned-1000",
+    "requested_sku": "dhara-edible_oil-mustard-1000",
+    "ordered_sku": "dhara-edible_oil-mustard-1000",
+    "delivered_sku": "dhara-edible_oil-mustard-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

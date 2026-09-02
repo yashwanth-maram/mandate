@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00253",
-    "created_at": "2026-09-03T01:31:00Z",
-    "expires_at": "2026-09-03T07:31:00Z",
-    "user_id": "usr_8479",
-    "agent_id": "agt_100",
+    "created_at": "2026-09-03T02:56:00Z",
+    "expires_at": "2026-09-03T08:56:00Z",
+    "user_id": "usr_7292",
+    "agent_id": "agt_844",
     "block": {
       "block_id": "blk_00253",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-21T01:31:00Z",
-      "expires_at": "2026-10-09T01:31:00Z"
+      "blocked_at": "2026-08-18T02:56:00Z",
+      "expires_at": "2026-10-22T02:56:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 6669,
-      "max_total_paise": 6669,
+      "category": "rice",
+      "max_unit_price_paise": 14719,
+      "max_total_paise": 14719,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "fortune",
-      "variant": "refined",
+      "brand": "daawat",
+      "variant": "basmati",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1kg Fortune maida on Zepto",
+      "text": "order 1kg Daawat basmati rice on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "fd73c999090d9796e4f3782bfd2565cbaa0c48d46835b6aafff43ee07c31525f",
+    "content_hash": "ece2a26cc41def2662ca47c945797ada77b490a07cb73f123715e0473d71dd5a",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00253",
-    "obligation_hash": "fd73c999090d9796e4f3782bfd2565cbaa0c48d46835b6aafff43ee07c31525f",
+    "obligation_hash": "ece2a26cc41def2662ca47c945797ada77b490a07cb73f123715e0473d71dd5a",
     "items": [
       {
         "item_id": "env_00253-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ]
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "agt_100",
-        "emitted_at": "2026-09-03T01:31:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:56:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "e1007f0ed1fd8fffba8243d48a1d211a3fe90376ea444133dab5863a2834392f"
+        "content_hash": "6630d907e8c6afc7ae4232e3e06eb5e406dd9d35a258211c6c78536830d7df6d"
       },
       {
         "item_id": "env_00253-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 12800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:56:04Z",
+        "evidence_class": 2,
+        "prev_hash": "6630d907e8c6afc7ae4232e3e06eb5e406dd9d35a258211c6c78536830d7df6d",
+        "content_hash": "d21abae2be203e4886ce9e528c1717752e76b97b24a52ee62bbd3d2f823bd448"
+      },
+      {
+        "item_id": "env_00253-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 13200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:56:05Z",
+        "evidence_class": 2,
+        "prev_hash": "d21abae2be203e4886ce9e528c1717752e76b97b24a52ee62bbd3d2f823bd448",
+        "content_hash": "5161b064d2105ce17e755f5d700b0ade4bacfb4e8e019eebea89b85c685cb92b"
+      },
+      {
+        "item_id": "env_00253-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:56:06Z",
+        "evidence_class": 2,
+        "prev_hash": "5161b064d2105ce17e755f5d700b0ade4bacfb4e8e019eebea89b85c685cb92b",
+        "content_hash": "60b6c8f0bce332b0572e9261d0df24e5d95aee603a03e54c96de2b78bdafa612"
+      },
+      {
+        "item_id": "env_00253-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
+        },
+        "emitted_by": "agt_844",
+        "emitted_at": "2026-09-03T02:56:12Z",
+        "evidence_class": 1,
+        "prev_hash": "60b6c8f0bce332b0572e9261d0df24e5d95aee603a03e54c96de2b78bdafa612",
+        "content_hash": "ca8805b080b880e8c650182c157eb1f0821c05d06be6404040e9bcf6ee602af6"
+      },
+      {
+        "item_id": "env_00253-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00253",
           "lines": [
             {
-              "sku": "fortune-flour-refined-1000",
+              "sku": "daawat-rice-basmati-1000",
               "quantity": 1,
-              "unit_price_paise": 5800
+              "unit_price_paise": 12800
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:31:20Z",
+        "emitted_at": "2026-09-03T02:56:20Z",
         "evidence_class": 2,
-        "prev_hash": "e1007f0ed1fd8fffba8243d48a1d211a3fe90376ea444133dab5863a2834392f",
-        "content_hash": "2be4bd12e10fd43653fc6c9baa95549f19262b08a9fcc583f6bb79c050735b0e"
-      },
-      {
-        "item_id": "env_00253-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00253",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:45:00Z",
-        "evidence_class": 2,
-        "prev_hash": "2be4bd12e10fd43653fc6c9baa95549f19262b08a9fcc583f6bb79c050735b0e",
-        "content_hash": "8a864ee22c40dbd00fc3ef1304fa7adca2fc213a29bd32407b1c80370282032d"
-      },
-      {
-        "item_id": "env_00253-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00253",
-          "amount_paise": 5800,
-          "currency": "INR",
-          "receipt": "zep_00253"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:31:25Z",
-        "evidence_class": 3,
-        "prev_hash": "8a864ee22c40dbd00fc3ef1304fa7adca2fc213a29bd32407b1c80370282032d",
-        "content_hash": "9a880e0665b1153a57b352994e85d7f6aa2a2c8bed95418705ee2cd212bd66ad"
-      },
-      {
-        "item_id": "env_00253-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00253",
-          "order_id": "order_00253",
-          "amount_paise": 5800,
-          "status": "captured",
-          "block_id": "blk_00253",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:31:30Z",
-        "evidence_class": 3,
-        "prev_hash": "9a880e0665b1153a57b352994e85d7f6aa2a2c8bed95418705ee2cd212bd66ad",
-        "content_hash": "4fd7ba238864eddff89deb7e9b10d46fab575376b151eba4c37f866d903f72f4"
-      },
-      {
-        "item_id": "env_00253-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Fortune maida. Payment complete.",
-          "claimed_sku": "fortune-flour-refined-1000",
-          "claims_success": true
-        },
-        "emitted_by": "agt_100",
-        "emitted_at": "2026-09-03T01:46:00Z",
-        "evidence_class": 0,
-        "prev_hash": "4fd7ba238864eddff89deb7e9b10d46fab575376b151eba4c37f866d903f72f4",
-        "content_hash": "5c28a42c159eedf93eb036a26669c8c2a40d059d73f1a5de4342aed5550f3e89"
+        "prev_hash": "ca8805b080b880e8c650182c157eb1f0821c05d06be6404040e9bcf6ee602af6",
+        "content_hash": "d872ec52f3a75831c53130218af664ba043fec06f078251f6fa666768d4fd4ec"
       },
       {
         "item_id": "env_00253-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "Didn't order this. Please reverse the payment.",
-          "raised_at": "2026-09-03T04:31:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00253",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_8479",
-        "emitted_at": "2026-09-03T04:31:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:10:00Z",
+        "evidence_class": 2,
+        "prev_hash": "d872ec52f3a75831c53130218af664ba043fec06f078251f6fa666768d4fd4ec",
+        "content_hash": "3f3324bbdff1e910044779344783eb4790d8ecbdaa4d2c8e57799780274b2c1b"
+      },
+      {
+        "item_id": "env_00253-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00253",
+          "amount_paise": 12800,
+          "currency": "INR",
+          "receipt": "zep_00253"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:56:25Z",
+        "evidence_class": 3,
+        "prev_hash": "3f3324bbdff1e910044779344783eb4790d8ecbdaa4d2c8e57799780274b2c1b",
+        "content_hash": "8198301becf527240a9030d68eae15191ebc6338a00c86cfc7bb4c1c3e15136d"
+      },
+      {
+        "item_id": "env_00253-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00253",
+          "order_id": "order_00253",
+          "amount_paise": 12800,
+          "status": "captured",
+          "block_id": "blk_00253",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:56:30Z",
+        "evidence_class": 3,
+        "prev_hash": "8198301becf527240a9030d68eae15191ebc6338a00c86cfc7bb4c1c3e15136d",
+        "content_hash": "6b28ea03e8bd98fb4a5d7fe240a485ef5a6d49484317763889059ee31e787bef"
+      },
+      {
+        "item_id": "env_00253-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
+          "claimed_sku": "daawat-rice-basmati-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_844",
+        "emitted_at": "2026-09-03T03:11:00Z",
         "evidence_class": 0,
-        "prev_hash": "5c28a42c159eedf93eb036a26669c8c2a40d059d73f1a5de4342aed5550f3e89",
-        "content_hash": "dd2a0044789ecb50823931eab22e103178620526cfc51dc25097bd243fc5fdbb"
+        "prev_hash": "6b28ea03e8bd98fb4a5d7fe240a485ef5a6d49484317763889059ee31e787bef",
+        "content_hash": "034d17bfc52987ed7600edfb5c5884a0edcc08e4309abc727ac3510f03d72f5a"
+      },
+      {
+        "item_id": "env_00253-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "This isn't what I wanted, the agent got it wrong.",
+          "raised_at": "2026-09-03T05:56:00Z"
+        },
+        "emitted_by": "usr_7292",
+        "emitted_at": "2026-09-03T05:56:00Z",
+        "evidence_class": 0,
+        "prev_hash": "034d17bfc52987ed7600edfb5c5884a0edcc08e4309abc727ac3510f03d72f5a",
+        "content_hash": "38325b3e2f98150cffbc226b797e0459af02d8b787f7435ae5de30fdd8fd26fc"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-refined-1000",
-    "ordered_sku": "fortune-flour-refined-1000",
-    "delivered_sku": "fortune-flour-refined-1000",
+    "requested_sku": "daawat-rice-basmati-1000",
+    "ordered_sku": "daawat-rice-basmati-1000",
+    "delivered_sku": "daawat-rice-basmati-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 5800,
+    "loss_paise": 12800,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

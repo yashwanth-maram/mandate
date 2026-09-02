@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00283",
-    "created_at": "2026-09-02T18:41:00Z",
-    "expires_at": "2026-09-03T00:41:00Z",
-    "user_id": "usr_4522",
-    "agent_id": "agt_955",
+    "created_at": "2026-09-03T02:23:00Z",
+    "expires_at": "2026-09-03T08:23:00Z",
+    "user_id": "usr_4287",
+    "agent_id": "agt_724",
     "block": {
       "block_id": "blk_00283",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-23T18:41:00Z",
-      "expires_at": "2026-10-06T18:41:00Z"
+      "blocked_at": "2026-08-22T02:23:00Z",
+      "expires_at": "2026-10-08T02:23:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "flour",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "britannia",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "aashirvaad",
+      "variant": "refined",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 400g Britannia brown bread from Blinkit",
+      "text": "buy 1kg Aashirvaad maida from Zepto, keep it under 71 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "6cdaa2c481a7bc4c7540ca16aa91f74a34379b41c89a3f5d77202a962c2db0e0",
+    "content_hash": "30da04d0bc837b8d1eba9629c2af95f65bb722c84943b85927f1bd78ea0f3e0a",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00283",
-    "obligation_hash": "6cdaa2c481a7bc4c7540ca16aa91f74a34379b41c89a3f5d77202a962c2db0e0",
+    "obligation_hash": "30da04d0bc837b8d1eba9629c2af95f65bb722c84943b85927f1bd78ea0f3e0a",
     "items": [
       {
         "item_id": "env_00283-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 38500
         },
-        "emitted_by": "agt_955",
-        "emitted_at": "2026-09-02T18:41:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:23:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "2ade8287b320b61dc8839ae76f029454e07d7551d1d480bd2c339ddbc8553d6b"
+        "content_hash": "cc76c03ca2444a22896bfa60673efc3d000de8f9431a9939f66f508d26f94214"
       },
       {
         "item_id": "env_00283-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00283",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:41:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:23:04Z",
         "evidence_class": 2,
-        "prev_hash": "2ade8287b320b61dc8839ae76f029454e07d7551d1d480bd2c339ddbc8553d6b",
-        "content_hash": "b50fffe32a327fd464067160af67165a944aa5943b7c71c1ae35c64057a04a2d"
+        "prev_hash": "cc76c03ca2444a22896bfa60673efc3d000de8f9431a9939f66f508d26f94214",
+        "content_hash": "75dca13653b6c159a88a6347c3347bd8c422692b4400c7c3a5340151328103a7"
       },
       {
         "item_id": "env_00283-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00283",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:55:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:23:05Z",
         "evidence_class": 2,
-        "prev_hash": "b50fffe32a327fd464067160af67165a944aa5943b7c71c1ae35c64057a04a2d",
-        "content_hash": "cf34369301deb8f6a7917bd8d0bd278f6366bf58c6ce5c21924dad97399ab4ea"
+        "prev_hash": "75dca13653b6c159a88a6347c3347bd8c422692b4400c7c3a5340151328103a7",
+        "content_hash": "d3c51417b40ddc717b49cdda23cb309247b9b411bce185bd145351074721d03f"
       },
       {
         "item_id": "env_00283-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00283",
-          "amount_paise": 5200,
-          "currency": "INR",
-          "receipt": "zep_00283"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:41:25Z",
-        "evidence_class": 3,
-        "prev_hash": "cf34369301deb8f6a7917bd8d0bd278f6366bf58c6ce5c21924dad97399ab4ea",
-        "content_hash": "e2835bdd9935ed586a08ed1719e567b0708427336d005d135fd374cde5237cad"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:23:06Z",
+        "evidence_class": 2,
+        "prev_hash": "d3c51417b40ddc717b49cdda23cb309247b9b411bce185bd145351074721d03f",
+        "content_hash": "d3d290ca2c7855d32ee4aa48348beea0609118e4c2d993fe3859a0650a3d0970"
       },
       {
         "item_id": "env_00283-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00283",
-          "order_id": "order_00283",
-          "amount_paise": 5200,
-          "status": "captured",
-          "block_id": "blk_00283",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:41:30Z",
-        "evidence_class": 3,
-        "prev_hash": "e2835bdd9935ed586a08ed1719e567b0708427336d005d135fd374cde5237cad",
-        "content_hash": "8119b7240093d68805a5daffbaae36c1310445a3b30ebf25fe314b9d2ca3b031"
+        "emitted_by": "agt_724",
+        "emitted_at": "2026-09-03T02:23:12Z",
+        "evidence_class": 1,
+        "prev_hash": "d3d290ca2c7855d32ee4aa48348beea0609118e4c2d993fe3859a0650a3d0970",
+        "content_hash": "1012314774e08a7bda3f23400af6780693c4eb16ff9630b1841c29cd6ab26008"
       },
       {
         "item_id": "env_00283-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00283",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:23:20Z",
+        "evidence_class": 2,
+        "prev_hash": "1012314774e08a7bda3f23400af6780693c4eb16ff9630b1841c29cd6ab26008",
+        "content_hash": "26a211409bc4927add99f0842dbb456567f6d175a709828f3add3f9aba57704f"
+      },
+      {
+        "item_id": "env_00283-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00283",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:37:00Z",
+        "evidence_class": 2,
+        "prev_hash": "26a211409bc4927add99f0842dbb456567f6d175a709828f3add3f9aba57704f",
+        "content_hash": "df80b5d8c628f9103c540c4ad728ded03f8b1b5efd2ef9c79d2ec2ceee82fff2"
+      },
+      {
+        "item_id": "env_00283-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00283",
+          "amount_paise": 6200,
+          "currency": "INR",
+          "receipt": "zep_00283"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:23:25Z",
+        "evidence_class": 3,
+        "prev_hash": "df80b5d8c628f9103c540c4ad728ded03f8b1b5efd2ef9c79d2ec2ceee82fff2",
+        "content_hash": "a3a79761064717db09e8a8ca2daa4b9019f102c4bfe947b7e93380f030b5624a"
+      },
+      {
+        "item_id": "env_00283-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00283",
+          "order_id": "order_00283",
+          "amount_paise": 6200,
+          "status": "captured",
+          "block_id": "blk_00283",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:23:30Z",
+        "evidence_class": 3,
+        "prev_hash": "a3a79761064717db09e8a8ca2daa4b9019f102c4bfe947b7e93380f030b5624a",
+        "content_hash": "819c5c8359e5f35c8d3f09313fdb67a3ac8e21228ec4c23d2bd12762788d5bf1"
+      },
+      {
+        "item_id": "env_00283-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_955",
-        "emitted_at": "2026-09-02T18:56:00Z",
+        "emitted_by": "agt_724",
+        "emitted_at": "2026-09-03T02:38:00Z",
         "evidence_class": 0,
-        "prev_hash": "8119b7240093d68805a5daffbaae36c1310445a3b30ebf25fe314b9d2ca3b031",
-        "content_hash": "8ee4a3fbd7e577dfaf9870adf35fc413fd8578f5d8f3a65ffca2147ba295439f"
+        "prev_hash": "819c5c8359e5f35c8d3f09313fdb67a3ac8e21228ec4c23d2bd12762788d5bf1",
+        "content_hash": "d8094c6a1995dca8290f56c0bc77ea8e6006ffc57a46d4c05ddec68476bf4920"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "harvest-bread-brown-400",
+    "requested_sku": "aashirvaad-flour-refined-1000",
+    "ordered_sku": "aashirvaad-flour-refined-1000",
+    "delivered_sku": "fortune-flour-refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 5200,
-    "rationale": "Order names britannia; fulfilment shipped harvest. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 6200,
+    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

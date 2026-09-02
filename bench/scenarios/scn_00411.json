@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00411",
-    "created_at": "2026-09-02T22:17:00Z",
-    "expires_at": "2026-09-03T04:17:00Z",
-    "user_id": "usr_7165",
-    "agent_id": "agt_328",
+    "created_at": "2026-09-03T00:17:00Z",
+    "expires_at": "2026-09-03T06:17:00Z",
+    "user_id": "usr_1719",
+    "agent_id": "agt_168",
     "block": {
       "block_id": "blk_00411",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-17T22:17:00Z",
-      "expires_at": "2026-10-14T22:17:00Z"
+      "blocked_at": "2026-08-28T00:17:00Z",
+      "expires_at": "2026-10-16T00:17:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 8855,
-      "max_total_paise": 8855,
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "amul",
-      "variant": "full_cream",
+      "brand": "tata",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1L Amul full cream milk, use Blinkit",
+      "text": "I need 1kg Tata iodised salt, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "e2949d0d726b8a802a594af84be174661cf38290afc0b35d57d0e925f382ca30",
+    "content_hash": "68f4374646aa02e92e5e872df44cc719e4e535bcdf1664ecfab63ffc912aabd5",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00411",
-    "obligation_hash": "e2949d0d726b8a802a594af84be174661cf38290afc0b35d57d0e925f382ca30",
+    "obligation_hash": "68f4374646aa02e92e5e872df44cc719e4e535bcdf1664ecfab63ffc912aabd5",
     "items": [
       {
         "item_id": "env_00411-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "amul-milk-full_cream-1000",
-              "quantity": 1,
-              "unit_price_paise": 7700
-            }
-          ]
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "agt_328",
-        "emitted_at": "2026-09-02T22:17:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "a7f4f8d5513d61a0fb2e8a808adaf837f5572848c010868379724999c9a3c8c3"
+        "content_hash": "0f6159773f3d84e0717e9b37537418bbbda94a01a04e9419f888531d46cbdc8a"
       },
       {
         "item_id": "env_00411-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:04Z",
+        "evidence_class": 2,
+        "prev_hash": "0f6159773f3d84e0717e9b37537418bbbda94a01a04e9419f888531d46cbdc8a",
+        "content_hash": "1c3262131750df413c915c4eaf06cd90864df5acf6be411f9af4c3202523d0d0"
+      },
+      {
+        "item_id": "env_00411-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:05Z",
+        "evidence_class": 2,
+        "prev_hash": "1c3262131750df413c915c4eaf06cd90864df5acf6be411f9af4c3202523d0d0",
+        "content_hash": "30476e2e2cd39b077c3012caea9426bd001e406cfde1322e372861e9d70276c8"
+      },
+      {
+        "item_id": "env_00411-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 2800
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:06Z",
+        "evidence_class": 2,
+        "prev_hash": "30476e2e2cd39b077c3012caea9426bd001e406cfde1322e372861e9d70276c8",
+        "content_hash": "c778f27e60fbfc3dff9d3464dfa58d13bea886eb46969f53a619f5384f509716"
+      },
+      {
+        "item_id": "env_00411-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "agt_168",
+        "emitted_at": "2026-09-03T00:17:12Z",
+        "evidence_class": 1,
+        "prev_hash": "c778f27e60fbfc3dff9d3464dfa58d13bea886eb46969f53a619f5384f509716",
+        "content_hash": "7259481a408f88a3315bcc6ad9e436165a166eba24baa5916b2b6b9d51d89737"
+      },
+      {
+        "item_id": "env_00411-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00411",
           "lines": [
             {
-              "sku": "amul-milk-full_cream-1000",
+              "sku": "tata-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 7700
+              "unit_price_paise": 2800
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T22:17:20Z",
+        "emitted_at": "2026-09-03T00:17:20Z",
         "evidence_class": 2,
-        "prev_hash": "a7f4f8d5513d61a0fb2e8a808adaf837f5572848c010868379724999c9a3c8c3",
-        "content_hash": "2e0d5c1cbb19b78cdcc5fd5a914a7b4c434a85193e38bcd3123df5ae8cd25739"
+        "prev_hash": "7259481a408f88a3315bcc6ad9e436165a166eba24baa5916b2b6b9d51d89737",
+        "content_hash": "1aa7c87fdf71634f8fea8fb194bcb0bc39b3943956cd85724120e0811f568e6c"
       },
       {
-        "item_id": "env_00411-e002",
-        "seq": 2,
+        "item_id": "env_00411-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00411",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "aashirvaad-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 3000
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T22:31:00Z",
+        "emitted_at": "2026-09-03T00:31:00Z",
         "evidence_class": 2,
-        "prev_hash": "2e0d5c1cbb19b78cdcc5fd5a914a7b4c434a85193e38bcd3123df5ae8cd25739",
-        "content_hash": "6c0f5b6ca938526311b690bb083981e005b36d9880d20ccd26f9d1abc72a6d91"
+        "prev_hash": "1aa7c87fdf71634f8fea8fb194bcb0bc39b3943956cd85724120e0811f568e6c",
+        "content_hash": "396650d97b31bdd76970bc4101e38c42b09e6a55f56dde8e13d51e13d6ace8b2"
       },
       {
-        "item_id": "env_00411-e003",
-        "seq": 3,
+        "item_id": "env_00411-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00411",
-          "amount_paise": 7700,
+          "amount_paise": 2800,
           "currency": "INR",
           "receipt": "zep_00411"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:17:25Z",
+        "emitted_at": "2026-09-03T00:17:25Z",
         "evidence_class": 3,
-        "prev_hash": "6c0f5b6ca938526311b690bb083981e005b36d9880d20ccd26f9d1abc72a6d91",
-        "content_hash": "f6572c60015e8963c56bbc796f1b1c889684176ca9e4ac6e190504220d0ffcc7"
+        "prev_hash": "396650d97b31bdd76970bc4101e38c42b09e6a55f56dde8e13d51e13d6ace8b2",
+        "content_hash": "14b0bf3d2c095d386e03339750029c40ee31f6391c5a6697dbee6c9443a1ede2"
       },
       {
-        "item_id": "env_00411-e004",
-        "seq": 4,
+        "item_id": "env_00411-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00411",
           "order_id": "order_00411",
-          "amount_paise": 7700,
+          "amount_paise": 2800,
           "status": "captured",
           "block_id": "blk_00411",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:17:30Z",
+        "emitted_at": "2026-09-03T00:17:30Z",
         "evidence_class": 3,
-        "prev_hash": "f6572c60015e8963c56bbc796f1b1c889684176ca9e4ac6e190504220d0ffcc7",
-        "content_hash": "b79e558472722aba9d70de25766cf943d0034f895f841426f94d9253255482b8"
+        "prev_hash": "14b0bf3d2c095d386e03339750029c40ee31f6391c5a6697dbee6c9443a1ede2",
+        "content_hash": "b8f55ce7d6a6c40ebe38540fc36d178200c15d284cb9e5a6583a7aeb76cd904c"
       },
       {
-        "item_id": "env_00411-e005",
-        "seq": 5,
+        "item_id": "env_00411-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Amul full cream milk. Payment complete.",
-          "claimed_sku": "amul-milk-full_cream-1000",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_328",
-        "emitted_at": "2026-09-02T22:32:00Z",
+        "emitted_by": "agt_168",
+        "emitted_at": "2026-09-03T00:32:00Z",
         "evidence_class": 0,
-        "prev_hash": "b79e558472722aba9d70de25766cf943d0034f895f841426f94d9253255482b8",
-        "content_hash": "799e1bae0c69639e488cfa2c7e2b9e9528daf313e833b57ca662473bdbc5f9af"
+        "prev_hash": "b8f55ce7d6a6c40ebe38540fc36d178200c15d284cb9e5a6583a7aeb76cd904c",
+        "content_hash": "b749c0a637d588155650ff6993238fa9eb69c5875cdd22e139fc1ed0dd65b242"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-milk-full_cream-1000",
-    "ordered_sku": "amul-milk-full_cream-1000",
-    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 7700,
-    "rationale": "Order names amul; fulfilment shipped mother_dairy. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 2800,
+    "rationale": "Order names tata; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

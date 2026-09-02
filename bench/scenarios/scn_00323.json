@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00323",
-    "created_at": "2026-09-02T22:35:00Z",
-    "expires_at": "2026-09-03T04:35:00Z",
-    "user_id": "usr_7102",
-    "agent_id": "agt_120",
+    "created_at": "2026-09-03T02:22:00Z",
+    "expires_at": "2026-09-03T08:22:00Z",
+    "user_id": "usr_9270",
+    "agent_id": "agt_367",
     "block": {
       "block_id": "blk_00323",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-23T22:35:00Z",
-      "expires_at": "2026-10-28T22:35:00Z"
+      "blocked_at": "2026-08-17T02:22:00Z",
+      "expires_at": "2026-10-13T02:22:00Z"
     },
     "hard": {
       "category": "milk",
-      "max_unit_price_paise": 6784,
-      "max_total_paise": 6784,
+      "max_unit_price_paise": 7359,
+      "max_total_paise": 7359,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "amul",
+      "brand": "mother_dairy",
       "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1L Amul double toned milk, use Zepto",
+      "text": "get me 1L Mother Dairy toned milk from Swiggy Instamart",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "ee32c254cd57c39680c2dd3644d09b57556a2aaa34be994490dc922b589173ce",
+    "content_hash": "2f26215b620f5710436be0f09ee53ad28be7709f2ff1c77b623bb3515304456d",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00323",
-    "obligation_hash": "ee32c254cd57c39680c2dd3644d09b57556a2aaa34be994490dc922b589173ce",
+    "obligation_hash": "2f26215b620f5710436be0f09ee53ad28be7709f2ff1c77b623bb3515304456d",
     "items": [
       {
         "item_id": "env_00323-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "amul-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6400
         },
-        "emitted_by": "agt_120",
-        "emitted_at": "2026-09-02T22:35:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:22:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0b08f13c33c568d3dd2d8f8d4c646d7bb600595ca738bff6d389c4997ec84ab9"
+        "content_hash": "d8f6b864c233f3c57d5f3a60cbf65b1c34d1d8c1c76e14fbfe8ab0d5c1cb642f"
       },
       {
         "item_id": "env_00323-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00323",
-          "lines": [
-            {
-              "sku": "amul-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-milk-full_cream-1000",
+          "display_name": "Amul Gold Full Cream Milk 1L",
+          "description": "Amul Gold Full Cream Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 7700
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:35:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:22:04Z",
         "evidence_class": 2,
-        "prev_hash": "0b08f13c33c568d3dd2d8f8d4c646d7bb600595ca738bff6d389c4997ec84ab9",
-        "content_hash": "10f762288fc43f6f32705d0d6791568ded22b95c1ac732df617bc41a4603c134"
+        "prev_hash": "d8f6b864c233f3c57d5f3a60cbf65b1c34d1d8c1c76e14fbfe8ab0d5c1cb642f",
+        "content_hash": "f5f0356554e76568f5e8c2eb1a3f7d61c19aff6169f69449d908413f2990bb54"
       },
       {
         "item_id": "env_00323-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00323",
-          "lines": [
-            {
-              "sku": "amul-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5900
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 7500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:49:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:22:05Z",
         "evidence_class": 2,
-        "prev_hash": "10f762288fc43f6f32705d0d6791568ded22b95c1ac732df617bc41a4603c134",
-        "content_hash": "6cda6fd63ee34e91824f42a0e65446c334b0be13340207b2b833e3f558fbb756"
+        "prev_hash": "f5f0356554e76568f5e8c2eb1a3f7d61c19aff6169f69449d908413f2990bb54",
+        "content_hash": "31dfd26f57fb378a96d3f2313b3962853bb40d9b70149325e47572928939bd7b"
       },
       {
         "item_id": "env_00323-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00323",
-          "amount_paise": 5900,
-          "currency": "INR",
-          "receipt": "zep_00323"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:35:25Z",
-        "evidence_class": 3,
-        "prev_hash": "6cda6fd63ee34e91824f42a0e65446c334b0be13340207b2b833e3f558fbb756",
-        "content_hash": "1873a59cb2a40144233d13e82c1973a659f998835970efa15c251d94b80d3921"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:22:06Z",
+        "evidence_class": 2,
+        "prev_hash": "31dfd26f57fb378a96d3f2313b3962853bb40d9b70149325e47572928939bd7b",
+        "content_hash": "04fb8ef600eb5c483e70afafdc1f5cebe326f0942f85dbda6b06caddc56b049c"
       },
       {
         "item_id": "env_00323-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00323",
-          "order_id": "order_00323",
-          "amount_paise": 5900,
-          "status": "captured",
-          "block_id": "blk_00323",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:35:30Z",
-        "evidence_class": 3,
-        "prev_hash": "1873a59cb2a40144233d13e82c1973a659f998835970efa15c251d94b80d3921",
-        "content_hash": "51be548b32735770f5cccd76c56c61859377fd719475800578fbda4f9761e1b7"
+        "emitted_by": "agt_367",
+        "emitted_at": "2026-09-03T02:22:12Z",
+        "evidence_class": 1,
+        "prev_hash": "04fb8ef600eb5c483e70afafdc1f5cebe326f0942f85dbda6b06caddc56b049c",
+        "content_hash": "92d850495853985569aed203566bd1144d0190b9285335073cabae1fcacc6005"
       },
       {
         "item_id": "env_00323-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00323",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:22:20Z",
+        "evidence_class": 2,
+        "prev_hash": "92d850495853985569aed203566bd1144d0190b9285335073cabae1fcacc6005",
+        "content_hash": "8bdd70f95b5a484a38edc6987304b16cd283441a8a2db6b049cb9bf15f20757d"
+      },
+      {
+        "item_id": "env_00323-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00323",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 6400
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:36:00Z",
+        "evidence_class": 2,
+        "prev_hash": "8bdd70f95b5a484a38edc6987304b16cd283441a8a2db6b049cb9bf15f20757d",
+        "content_hash": "7f7b29c7d7adc108a6cafe00e67613cc34b3b4010006eb5fe0e57f03cc513916"
+      },
+      {
+        "item_id": "env_00323-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00323",
+          "amount_paise": 6400,
+          "currency": "INR",
+          "receipt": "zep_00323"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:22:25Z",
+        "evidence_class": 3,
+        "prev_hash": "7f7b29c7d7adc108a6cafe00e67613cc34b3b4010006eb5fe0e57f03cc513916",
+        "content_hash": "d893ac8eb5b2af46527cadb0181a69afad04196475610accaf638cca570f6a19"
+      },
+      {
+        "item_id": "env_00323-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00323",
+          "order_id": "order_00323",
+          "amount_paise": 6400,
+          "status": "captured",
+          "block_id": "blk_00323",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:22:30Z",
+        "evidence_class": 3,
+        "prev_hash": "d893ac8eb5b2af46527cadb0181a69afad04196475610accaf638cca570f6a19",
+        "content_hash": "fd11b901c77985f854e3973e85ee630d32775a4045f4a39a0757cdec446b39d1"
+      },
+      {
+        "item_id": "env_00323-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Amul double toned milk. Payment complete.",
-          "claimed_sku": "amul-milk-double_toned-1000",
+          "text": "Ordered 1L Mother Dairy toned milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-toned-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_120",
-        "emitted_at": "2026-09-02T22:50:00Z",
+        "emitted_by": "agt_367",
+        "emitted_at": "2026-09-03T02:37:00Z",
         "evidence_class": 0,
-        "prev_hash": "51be548b32735770f5cccd76c56c61859377fd719475800578fbda4f9761e1b7",
-        "content_hash": "404ea46986c41798ab01d7c5393fc1403bd67cc4fcb2945936ee339ebbfa4232"
+        "prev_hash": "fd11b901c77985f854e3973e85ee630d32775a4045f4a39a0757cdec446b39d1",
+        "content_hash": "aade0dbf264649351e772d7f1c343d5c54d7eaa7a5ce5889ed7b4f5669dbd61a"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-milk-double_toned-1000",
-    "ordered_sku": "amul-milk-double_toned-1000",
-    "delivered_sku": "amul-milk-double_toned-1000",
+    "requested_sku": "mother_dairy-milk-toned-1000",
+    "ordered_sku": "mother_dairy-milk-toned-1000",
+    "delivered_sku": "mother_dairy-milk-toned-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

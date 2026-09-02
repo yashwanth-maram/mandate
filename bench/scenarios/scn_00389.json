@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00389",
-    "created_at": "2026-09-03T03:10:00Z",
-    "expires_at": "2026-09-03T09:10:00Z",
-    "user_id": "usr_9736",
-    "agent_id": "agt_107",
+    "created_at": "2026-09-02T23:43:00Z",
+    "expires_at": "2026-09-03T05:43:00Z",
+    "user_id": "usr_5909",
+    "agent_id": "agt_528",
     "block": {
       "block_id": "blk_00389",
-      "blocked_paise": 50000,
+      "blocked_paise": 98325,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-14T03:10:00Z",
-      "expires_at": "2026-10-05T03:10:00Z"
+      "blocked_at": "2026-08-23T23:43:00Z",
+      "expires_at": "2026-10-07T23:43:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 7129,
-      "max_total_paise": 7129,
+      "category": "butter",
+      "max_unit_price_paise": 32775,
+      "max_total_paise": 32775,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "refined",
-      "pack_size_g": 1000
+      "brand": "amul",
+      "variant": "salted",
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "order 1kg Aashirvaad maida on Zepto",
+      "text": "get me 500g Amul salted butter from Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "3d5e74be5b49e316150545583ed0651c0db7d091f0807d81015d8685d0cd0572",
+    "content_hash": "4822ec1d39834960d4dc4b29a7daebdbc7d6bb410305e32de93ce9566f46047f",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00389",
-    "obligation_hash": "3d5e74be5b49e316150545583ed0651c0db7d091f0807d81015d8685d0cd0572",
+    "obligation_hash": "4822ec1d39834960d4dc4b29a7daebdbc7d6bb410305e32de93ce9566f46047f",
     "items": [
       {
         "item_id": "env_00389-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Best before 6 months from packaging date.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "agt_107",
-        "emitted_at": "2026-09-03T03:10:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "c47374380ab9cd4d957ed53bc1316831fd5476a5812416e2fa47ba6e8d91ad09"
+        "content_hash": "aa1aee079d4e60af76961eeda954311c5fb91b8ade49b823ff950cd76045a617"
       },
       {
         "item_id": "env_00389-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00389",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Best before 6 months from packaging date.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:10:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:04Z",
         "evidence_class": 2,
-        "prev_hash": "c47374380ab9cd4d957ed53bc1316831fd5476a5812416e2fa47ba6e8d91ad09",
-        "content_hash": "b135cfea83fb16292960d62ecfb6dfd3466481eab9cd64e61241f518cb9bfe95"
+        "prev_hash": "aa1aee079d4e60af76961eeda954311c5fb91b8ade49b823ff950cd76045a617",
+        "content_hash": "2be4859b8463c16889964b21562a5e300fae76ae3dc3ba7a0286c6031e2d7ce0"
       },
       {
         "item_id": "env_00389-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00389",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 28500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:24:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:05Z",
         "evidence_class": 2,
-        "prev_hash": "b135cfea83fb16292960d62ecfb6dfd3466481eab9cd64e61241f518cb9bfe95",
-        "content_hash": "9d718e58b9b76ee8a788fc27184003a3d1bdb61712c63c9cfa3c9c4cfa39deb9"
+        "prev_hash": "2be4859b8463c16889964b21562a5e300fae76ae3dc3ba7a0286c6031e2d7ce0",
+        "content_hash": "cd5ce7cfd833f6b66cb2e9d028f988b93c5cf20568fa1af9ab564e98ea9fd19e"
       },
       {
         "item_id": "env_00389-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00389",
-          "amount_paise": 6200,
-          "currency": "INR",
-          "receipt": "zep_00389"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Best before 6 months from packaging date.",
+          "listed_price_paise": 29200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:10:25Z",
-        "evidence_class": 3,
-        "prev_hash": "9d718e58b9b76ee8a788fc27184003a3d1bdb61712c63c9cfa3c9c4cfa39deb9",
-        "content_hash": "03f00c189692177fd83d129fa86d4f838c9cfb51f84ef2d450df1fda37a29f09"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:06Z",
+        "evidence_class": 2,
+        "prev_hash": "cd5ce7cfd833f6b66cb2e9d028f988b93c5cf20568fa1af9ab564e98ea9fd19e",
+        "content_hash": "422866075725db6fd8699c0019866a93654bdc1e9780fcde69de8f75ff1fb86b"
       },
       {
         "item_id": "env_00389-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00389",
-          "order_id": "order_00389",
-          "amount_paise": 6200,
-          "status": "captured",
-          "block_id": "blk_00389",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:10:30Z",
-        "evidence_class": 3,
-        "prev_hash": "03f00c189692177fd83d129fa86d4f838c9cfb51f84ef2d450df1fda37a29f09",
-        "content_hash": "3dd1537e1c36622acbf5874b5a774fa682a0cd20ca52c8058d80831664dc1b5b"
+        "emitted_by": "agt_528",
+        "emitted_at": "2026-09-02T23:43:12Z",
+        "evidence_class": 1,
+        "prev_hash": "422866075725db6fd8699c0019866a93654bdc1e9780fcde69de8f75ff1fb86b",
+        "content_hash": "69dc8362da6f5db85a154c659210053b9639b9d2e29d882ef2b977793b813ed6"
       },
       {
         "item_id": "env_00389-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-refined-1000",
-          "claims_success": true
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00389",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ]
         },
-        "emitted_by": "agt_107",
-        "emitted_at": "2026-09-03T03:25:00Z",
-        "evidence_class": 0,
-        "prev_hash": "3dd1537e1c36622acbf5874b5a774fa682a0cd20ca52c8058d80831664dc1b5b",
-        "content_hash": "d9f2a260684bbb997ee4431ff3a409a9241151d8b5f5b0f391e0239820474fc1"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:20Z",
+        "evidence_class": 2,
+        "prev_hash": "69dc8362da6f5db85a154c659210053b9639b9d2e29d882ef2b977793b813ed6",
+        "content_hash": "0d8305f5cb3334e2ff7430d4b993f39476550463bf30f82f38cc78f0017f07e9"
       },
       {
         "item_id": "env_00389-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "Didn't order this. Please reverse the payment.",
-          "raised_at": "2026-09-03T06:10:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00389",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_9736",
-        "emitted_at": "2026-09-03T06:10:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:57:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0d8305f5cb3334e2ff7430d4b993f39476550463bf30f82f38cc78f0017f07e9",
+        "content_hash": "bd401651cfa1eb3bce200f25929435d73d14ed76a6a5270b1d28b6de990abb78"
+      },
+      {
+        "item_id": "env_00389-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00389",
+          "amount_paise": 28500,
+          "currency": "INR",
+          "receipt": "zep_00389"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:43:25Z",
+        "evidence_class": 3,
+        "prev_hash": "bd401651cfa1eb3bce200f25929435d73d14ed76a6a5270b1d28b6de990abb78",
+        "content_hash": "f85f1f12e0bda1982dffb97e85c79ccaf001282a75d040b00a487df581314152"
+      },
+      {
+        "item_id": "env_00389-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00389",
+          "order_id": "order_00389",
+          "amount_paise": 28500,
+          "status": "captured",
+          "block_id": "blk_00389",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:43:30Z",
+        "evidence_class": 3,
+        "prev_hash": "f85f1f12e0bda1982dffb97e85c79ccaf001282a75d040b00a487df581314152",
+        "content_hash": "f580a2cade957a1e171d59d194dbaea4e0715e33e7db239f2eccf0708ba22d35"
+      },
+      {
+        "item_id": "env_00389-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 500g Amul salted butter. Payment complete.",
+          "claimed_sku": "amul-butter-salted-500",
+          "claims_success": true
+        },
+        "emitted_by": "agt_528",
+        "emitted_at": "2026-09-02T23:58:00Z",
         "evidence_class": 0,
-        "prev_hash": "d9f2a260684bbb997ee4431ff3a409a9241151d8b5f5b0f391e0239820474fc1",
-        "content_hash": "13a7b51c449163a650909c3c0f122cac781e4ad8588b8499befdf854b75d9f31"
+        "prev_hash": "f580a2cade957a1e171d59d194dbaea4e0715e33e7db239f2eccf0708ba22d35",
+        "content_hash": "bc1b8aa83f365662eb0050d7379d45aa2b1e7d387a73dda9e3183c34af700d27"
+      },
+      {
+        "item_id": "env_00389-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T02:43:00Z"
+        },
+        "emitted_by": "usr_5909",
+        "emitted_at": "2026-09-03T02:43:00Z",
+        "evidence_class": 0,
+        "prev_hash": "bc1b8aa83f365662eb0050d7379d45aa2b1e7d387a73dda9e3183c34af700d27",
+        "content_hash": "9359ccdfd5ec45199a90c1baa5003ee002e4640711e147456a254907002fdb0f"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-refined-1000",
-    "ordered_sku": "aashirvaad-flour-refined-1000",
-    "delivered_sku": "aashirvaad-flour-refined-1000",
+    "requested_sku": "amul-butter-salted-500",
+    "ordered_sku": "amul-butter-salted-500",
+    "delivered_sku": "amul-butter-salted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 6200,
+    "loss_paise": 28500,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

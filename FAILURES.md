@@ -124,3 +124,27 @@ in a different costume, and adopting it one commit after fixing #007 would have
 been incoherent.
 Lesson: a verifier should answer one question. When it answers two, the weaker
 competence window silently governs both.
+
+
+
+### Entry #009 - snapshot presence was a perfect predictor of the label
+Component: bench/generator.py, verifiers/provenance.py
+Observed: found while reading a single line of decisions.jsonl. The reason
+string said provenance had not cleared a scenario, but provenance had returned
+PASS - with an empty basis, which the clearance check rejects.
+Cause: two problems sharing a root. Catalogue snapshots were emitted only for
+INJECTION_INDUCED, so (a) provenance had no evidence to cite on the other 455
+scenarios and could never contribute a clearance, capping coverage regardless
+of what the semantic verifier eventually returns, and (b) "has any snapshot"
+perfectly predicted the injection label. A detector that did nothing but count
+snapshots would also have scored 45/45. My 45/45 was indistinguishable from it.
+Fix: every scenario now records a browse trace of four listings. The 455 benign
+traces are the negative set the detector is scored against, and their copy
+deliberately includes the phrasings a careless detector trips on - "ignore
+minor packaging dents", "contains raising agent E500". Provenance now abstains
+rather than passes when no trace exists: if you cannot see what the agent read,
+you cannot rule out that it was steered, and an absent trace is missing
+instrumentation rather than evidence of safety.
+Lesson: a perfect score should prompt the question "what else would have scored
+this well?" Here the answer was "a one-line function", and the benchmark could
+not tell us apart.

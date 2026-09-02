@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00138",
-    "created_at": "2026-09-03T00:15:00Z",
-    "expires_at": "2026-09-03T06:15:00Z",
-    "user_id": "usr_7521",
-    "agent_id": "agt_421",
+    "created_at": "2026-09-02T18:30:00Z",
+    "expires_at": "2026-09-03T00:30:00Z",
+    "user_id": "usr_7270",
+    "agent_id": "agt_799",
     "block": {
       "block_id": "blk_00138",
-      "blocked_paise": 54510,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-14T00:15:00Z",
-      "expires_at": "2026-10-11T00:15:00Z"
+      "blocked_at": "2026-08-20T18:30:00Z",
+      "expires_at": "2026-10-07T18:30:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18170,
-      "max_total_paise": 18170,
+      "category": "bread",
+      "max_unit_price_paise": 5750,
+      "max_total_paise": 5750,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "swiggy_instamart"
       ],
-      "brand": "dhara",
-      "variant": "mustard",
-      "pack_size_g": 1000
+      "brand": "harvest",
+      "variant": "brown",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "order 1L Dhara kachi ghani mustard oil on Blinkit",
+      "text": "I need 400g Harvest brown bread, use Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "02a83b3fe5c1f23a982dd26d72898c46ba7481646b3ffab9706ca7bc1cfc5a64",
+    "content_hash": "e36cff760f666fa3da0c1b2065b94df2fa5e5b0756d4555e6c0284563df8133b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00138",
-    "obligation_hash": "02a83b3fe5c1f23a982dd26d72898c46ba7481646b3ffab9706ca7bc1cfc5a64",
+    "obligation_hash": "e36cff760f666fa3da0c1b2065b94df2fa5e5b0756d4555e6c0284563df8133b",
     "items": [
       {
         "item_id": "env_00138-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "agt_421",
-        "emitted_at": "2026-09-03T00:15:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:30:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "ee0bfeeebd6eeabbece06281df3fa0e8f133b927f43decf1bdfa4ea40a2d9204"
+        "content_hash": "5886ba9abea7215bb2c32727ede9ea5e0a4d3c6544f4a962fe37c1eb1441fe83"
       },
       {
         "item_id": "env_00138-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00138",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:15:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:30:04Z",
         "evidence_class": 2,
-        "prev_hash": "ee0bfeeebd6eeabbece06281df3fa0e8f133b927f43decf1bdfa4ea40a2d9204",
-        "content_hash": "010b4270af4d428c7cf07f70335f5b46946591474640b061283145104ddfb214"
+        "prev_hash": "5886ba9abea7215bb2c32727ede9ea5e0a4d3c6544f4a962fe37c1eb1441fe83",
+        "content_hash": "9278dbbd9098cd2590730d854d8a09eb8d42a6cc2ca83804fe038b758faecd7b"
       },
       {
         "item_id": "env_00138-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00138",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:29:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:30:05Z",
         "evidence_class": 2,
-        "prev_hash": "010b4270af4d428c7cf07f70335f5b46946591474640b061283145104ddfb214",
-        "content_hash": "09ef6c665b382579ab5af5787a613b5597da0094e9d0dc6070640978a72417de"
+        "prev_hash": "9278dbbd9098cd2590730d854d8a09eb8d42a6cc2ca83804fe038b758faecd7b",
+        "content_hash": "72da0fcae76d472868bd2984d8d7be2834fb131badebce07a6682ee4e6a37a00"
       },
       {
         "item_id": "env_00138-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00138",
-          "amount_paise": 15800,
-          "currency": "INR",
-          "receipt": "zep_00138"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:15:25Z",
-        "evidence_class": 3,
-        "prev_hash": "09ef6c665b382579ab5af5787a613b5597da0094e9d0dc6070640978a72417de",
-        "content_hash": "c3c51d0fdf21a42de88ac18075326bc7f9a9fca8fcb668dacc2a47daa9f48a14"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:30:06Z",
+        "evidence_class": 2,
+        "prev_hash": "72da0fcae76d472868bd2984d8d7be2834fb131badebce07a6682ee4e6a37a00",
+        "content_hash": "72d729067b9cd8d3b453e041d23bc149642eaa1ce4ed59ab7b9bd21562f33da0"
       },
       {
         "item_id": "env_00138-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00138",
-          "order_id": "order_00138",
-          "amount_paise": 15800,
-          "status": "captured",
-          "block_id": "blk_00138",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:15:30Z",
-        "evidence_class": 3,
-        "prev_hash": "c3c51d0fdf21a42de88ac18075326bc7f9a9fca8fcb668dacc2a47daa9f48a14",
-        "content_hash": "4c130c74ad8326f2194c33638540c4ea7efd0126f6e9dc69f23dc90ff3770aec"
+        "emitted_by": "agt_799",
+        "emitted_at": "2026-09-02T18:30:12Z",
+        "evidence_class": 1,
+        "prev_hash": "72d729067b9cd8d3b453e041d23bc149642eaa1ce4ed59ab7b9bd21562f33da0",
+        "content_hash": "656bcd2d2c3a4b47242d72928f263527dc6d71d3592049d1e00088d7322281ef"
       },
       {
         "item_id": "env_00138-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00138",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:30:20Z",
+        "evidence_class": 2,
+        "prev_hash": "656bcd2d2c3a4b47242d72928f263527dc6d71d3592049d1e00088d7322281ef",
+        "content_hash": "6f9b85f827e98d637514438a9fbf68ccd2d0e3a107631b4b297af27302de6955"
+      },
+      {
+        "item_id": "env_00138-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00138",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:44:00Z",
+        "evidence_class": 2,
+        "prev_hash": "6f9b85f827e98d637514438a9fbf68ccd2d0e3a107631b4b297af27302de6955",
+        "content_hash": "0af105d27c056576d99c0ca6e4b41842cfc26e42526f0676b485248d356d641f"
+      },
+      {
+        "item_id": "env_00138-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00138",
+          "amount_paise": 5000,
+          "currency": "INR",
+          "receipt": "zep_00138"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:30:25Z",
+        "evidence_class": 3,
+        "prev_hash": "0af105d27c056576d99c0ca6e4b41842cfc26e42526f0676b485248d356d641f",
+        "content_hash": "6c75584d865baa4ae4d1f333306fbf022547f64dd598e032fe8596f8e9f2aff4"
+      },
+      {
+        "item_id": "env_00138-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00138",
+          "order_id": "order_00138",
+          "amount_paise": 5000,
+          "status": "captured",
+          "block_id": "blk_00138",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:30:30Z",
+        "evidence_class": 3,
+        "prev_hash": "6c75584d865baa4ae4d1f333306fbf022547f64dd598e032fe8596f8e9f2aff4",
+        "content_hash": "aa5d0a5eeaf2bb1d22a60c21683656c4443166787d09083d6473626c4adad988"
+      },
+      {
+        "item_id": "env_00138-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "dhara-edible_oil-mustard-1000",
+          "text": "Ordered 400g Harvest brown bread. Payment complete.",
+          "claimed_sku": "harvest-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_421",
-        "emitted_at": "2026-09-03T00:30:00Z",
+        "emitted_by": "agt_799",
+        "emitted_at": "2026-09-02T18:45:00Z",
         "evidence_class": 0,
-        "prev_hash": "4c130c74ad8326f2194c33638540c4ea7efd0126f6e9dc69f23dc90ff3770aec",
-        "content_hash": "574be80c72dc5d36dfd6415f85dc203e87f6bc919ade15f5c6efecc6c82df09d"
+        "prev_hash": "aa5d0a5eeaf2bb1d22a60c21683656c4443166787d09083d6473626c4adad988",
+        "content_hash": "6596f9627bc73766cd42a500a79675718c5d6e8ab6865a69f64e9aaebf9f624e"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "dhara-edible_oil-mustard-1000",
-    "ordered_sku": "dhara-edible_oil-mustard-1000",
-    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "requested_sku": "harvest-bread-brown-400",
+    "ordered_sku": "harvest-bread-brown-400",
+    "delivered_sku": "britannia-bread-brown-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 15800,
-    "rationale": "Order names dhara; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 5000,
+    "rationale": "Order names harvest; fulfilment shipped britannia. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00425",
-    "created_at": "2026-09-03T01:03:00Z",
-    "expires_at": "2026-09-03T07:03:00Z",
-    "user_id": "usr_8904",
-    "agent_id": "agt_283",
+    "created_at": "2026-09-02T23:51:00Z",
+    "expires_at": "2026-09-03T05:51:00Z",
+    "user_id": "usr_6164",
+    "agent_id": "agt_936",
     "block": {
       "block_id": "blk_00425",
-      "blocked_paise": 50000,
+      "blocked_paise": 65205,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-23T01:03:00Z",
-      "expires_at": "2026-10-20T01:03:00Z"
+      "blocked_at": "2026-08-26T23:51:00Z",
+      "expires_at": "2026-11-01T23:51:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 10350,
-      "max_total_paise": 10350,
+      "category": "edible_oil",
+      "max_unit_price_paise": 21735,
+      "max_total_paise": 21735,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "yippee",
+      "brand": "fortune",
       "variant": null,
-      "pack_size_g": 560
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 560g Yippee masala noodles from Swiggy Instamart, keep it under 103 rupees",
+      "text": "I need 1L Fortune groundnut oil, use Swiggy Instamart",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "afec3c86fbd1b7590f5856fbaecf6a85192f3bdb9b8635cfa47e14131933af1f",
+    "content_hash": "53e4114c9f3f2433a3efd95e86159afe2c9a7d9560ef41e825aef5c103b930eb",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00425",
-    "obligation_hash": "afec3c86fbd1b7590f5856fbaecf6a85192f3bdb9b8635cfa47e14131933af1f",
+    "obligation_hash": "53e4114c9f3f2433a3efd95e86159afe2c9a7d9560ef41e825aef5c103b930eb",
     "items": [
       {
         "item_id": "env_00425-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "yippee-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9000
-            }
-          ]
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 16800
         },
-        "emitted_by": "agt_283",
-        "emitted_at": "2026-09-03T01:03:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:51:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "f930bc1f2944a3f36b0278ce2978cce0859c2aff9a01076cbf1cea6cc241bd81"
+        "content_hash": "463490f824f638d32982ebfc1bd0311ca35f3a74f5fb94d37754d23ec95765d6"
       },
       {
         "item_id": "env_00425-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 18900
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:51:04Z",
+        "evidence_class": 2,
+        "prev_hash": "463490f824f638d32982ebfc1bd0311ca35f3a74f5fb94d37754d23ec95765d6",
+        "content_hash": "04034bba8ccf4376aa905f43e8578db0b2c888889ffb65949cb0ae3d4fe8d541"
+      },
+      {
+        "item_id": "env_00425-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 16500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:51:05Z",
+        "evidence_class": 2,
+        "prev_hash": "04034bba8ccf4376aa905f43e8578db0b2c888889ffb65949cb0ae3d4fe8d541",
+        "content_hash": "0364de0422ffe0b93725178e49b7e5163500679b8ce8670beeffeb42e725e566"
+      },
+      {
+        "item_id": "env_00425-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 15200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:51:06Z",
+        "evidence_class": 2,
+        "prev_hash": "0364de0422ffe0b93725178e49b7e5163500679b8ce8670beeffeb42e725e566",
+        "content_hash": "d1d4c0f5acba6bc24532cd37cfa77b0d47ba3904c065e7c48c19058982df2519"
+      },
+      {
+        "item_id": "env_00425-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "agt_936",
+        "emitted_at": "2026-09-02T23:51:12Z",
+        "evidence_class": 1,
+        "prev_hash": "d1d4c0f5acba6bc24532cd37cfa77b0d47ba3904c065e7c48c19058982df2519",
+        "content_hash": "9b606e149f2af6efe12bc012e32854568dd83e4ba2bd3776342219db3b86ac3e"
+      },
+      {
+        "item_id": "env_00425-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00425",
           "lines": [
             {
-              "sku": "yippee-noodles-masala-560",
+              "sku": "fortune-edible_oil-groundnut-1000",
               "quantity": 1,
-              "unit_price_paise": 9000
+              "unit_price_paise": 18900
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:03:20Z",
+        "emitted_at": "2026-09-02T23:51:20Z",
         "evidence_class": 2,
-        "prev_hash": "f930bc1f2944a3f36b0278ce2978cce0859c2aff9a01076cbf1cea6cc241bd81",
-        "content_hash": "371725b987e5d2f4933fd0714396cca87f5f4914487409ea9d4089dee387d22e"
+        "prev_hash": "9b606e149f2af6efe12bc012e32854568dd83e4ba2bd3776342219db3b86ac3e",
+        "content_hash": "f092a1905c1c57f07624f90f3983237e13683265dff9dfad0e7d3e935adfd011"
       },
       {
-        "item_id": "env_00425-e002",
-        "seq": 2,
+        "item_id": "env_00425-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00425",
           "lines": [
             {
-              "sku": "yippee-noodles-masala-560",
+              "sku": "fortune-edible_oil-groundnut-1000",
               "quantity": 1,
-              "unit_price_paise": 9000
+              "unit_price_paise": 18900
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:17:00Z",
+        "emitted_at": "2026-09-03T00:05:00Z",
         "evidence_class": 2,
-        "prev_hash": "371725b987e5d2f4933fd0714396cca87f5f4914487409ea9d4089dee387d22e",
-        "content_hash": "bdf62ea06437889fa32ee319619e1e500c86a1f44386f2b4174b83629969e4d7"
+        "prev_hash": "f092a1905c1c57f07624f90f3983237e13683265dff9dfad0e7d3e935adfd011",
+        "content_hash": "21bd5c09b0f2ab3826728a6445eef2f51fa5ac3c0ee7cbaaac757393df2b8bc3"
       },
       {
-        "item_id": "env_00425-e003",
-        "seq": 3,
+        "item_id": "env_00425-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00425",
-          "amount_paise": 9000,
+          "amount_paise": 18900,
           "currency": "INR",
           "receipt": "zep_00425"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:03:25Z",
+        "emitted_at": "2026-09-02T23:51:25Z",
         "evidence_class": 3,
-        "prev_hash": "bdf62ea06437889fa32ee319619e1e500c86a1f44386f2b4174b83629969e4d7",
-        "content_hash": "b50a2cba6febe0b74717b4246f626dc3bd2652bb33da5c68ddc1f51399fbbe8f"
+        "prev_hash": "21bd5c09b0f2ab3826728a6445eef2f51fa5ac3c0ee7cbaaac757393df2b8bc3",
+        "content_hash": "27c23cff4f3af2a025ac598491d50e68172dfdd4e3237b1dc7065ca71441cecb"
       },
       {
-        "item_id": "env_00425-e004",
-        "seq": 4,
+        "item_id": "env_00425-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00425",
           "order_id": "order_00425",
-          "amount_paise": 9000,
+          "amount_paise": 18900,
           "status": "captured",
           "block_id": "blk_00425",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:03:30Z",
+        "emitted_at": "2026-09-02T23:51:30Z",
         "evidence_class": 3,
-        "prev_hash": "b50a2cba6febe0b74717b4246f626dc3bd2652bb33da5c68ddc1f51399fbbe8f",
-        "content_hash": "ff24b3aaa216250b09a9df7c7a0f0a690d7234c3f1ac285b68bb3be008230f7c"
+        "prev_hash": "27c23cff4f3af2a025ac598491d50e68172dfdd4e3237b1dc7065ca71441cecb",
+        "content_hash": "810192db3bbfa48c3a55ef6e62aff605c6d7d8703cd51e4be7f2cf699a9ed8e4"
       },
       {
-        "item_id": "env_00425-e005",
-        "seq": 5,
+        "item_id": "env_00425-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
-          "claimed_sku": "yippee-noodles-masala-560",
+          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-groundnut-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_283",
-        "emitted_at": "2026-09-03T01:18:00Z",
+        "emitted_by": "agt_936",
+        "emitted_at": "2026-09-03T00:06:00Z",
         "evidence_class": 0,
-        "prev_hash": "ff24b3aaa216250b09a9df7c7a0f0a690d7234c3f1ac285b68bb3be008230f7c",
-        "content_hash": "40c9f409051d0965abb92715047b330dd17aa78392a3e8c72c7dce0858aca6a5"
+        "prev_hash": "810192db3bbfa48c3a55ef6e62aff605c6d7d8703cd51e4be7f2cf699a9ed8e4",
+        "content_hash": "7cacab0ad3ac696696357dbf8550ca1533513db1d97055bbe7e3ce4b4242d278"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "yippee-noodles-masala-560",
-    "ordered_sku": "yippee-noodles-masala-560",
-    "delivered_sku": "yippee-noodles-masala-560",
+    "requested_sku": "fortune-edible_oil-groundnut-1000",
+    "ordered_sku": "fortune-edible_oil-groundnut-1000",
+    "delivered_sku": "fortune-edible_oil-groundnut-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

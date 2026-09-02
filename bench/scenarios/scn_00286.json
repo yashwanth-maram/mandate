@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00286",
-    "created_at": "2026-09-02T21:47:00Z",
-    "expires_at": "2026-09-03T03:47:00Z",
-    "user_id": "usr_3141",
-    "agent_id": "agt_302",
+    "created_at": "2026-09-02T21:27:00Z",
+    "expires_at": "2026-09-03T03:27:00Z",
+    "user_id": "usr_3893",
+    "agent_id": "agt_667",
     "block": {
       "block_id": "blk_00286",
-      "blocked_paise": 137310,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-21T21:47:00Z",
-      "expires_at": "2026-10-13T21:47:00Z"
+      "blocked_at": "2026-09-01T21:27:00Z",
+      "expires_at": "2026-11-01T21:27:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 45770,
-      "max_total_paise": 45770,
+      "category": "bread",
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "multigrain",
-      "pack_size_g": 5000
+      "brand": "harvest",
+      "variant": "white",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "get me 5kg Aashirvaad multigrain atta from Zepto",
+      "text": "buy 400g Harvest white bread from Blinkit, keep it under 48 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "0382379082aeaa3a4d753be65792ddfd89a7cae14cb6c5af7026536ffbad16b5",
+    "content_hash": "1b2578f1fbb3773d2fff16d953ac21a7a1bcafed395be1cf5d5001522ed4b67f",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00286",
-    "obligation_hash": "0382379082aeaa3a4d753be65792ddfd89a7cae14cb6c5af7026536ffbad16b5",
+    "obligation_hash": "1b2578f1fbb3773d2fff16d953ac21a7a1bcafed395be1cf5d5001522ed4b67f",
     "items": [
       {
         "item_id": "env_00286-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "agt_302",
-        "emitted_at": "2026-09-02T21:47:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:27:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "9d92d4a2740ad9291c13821e76656d0ae1fc350c90e3ce3380d7f8d50ff4ace0"
+        "content_hash": "ec634b9941b0003d20fdc2515ad76cdaed3b72785b1a070e7fbad921a1d75cfb"
       },
       {
         "item_id": "env_00286-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00286",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T21:47:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:27:04Z",
         "evidence_class": 2,
-        "prev_hash": "9d92d4a2740ad9291c13821e76656d0ae1fc350c90e3ce3380d7f8d50ff4ace0",
-        "content_hash": "9a6f89b633fa0783eaac1732c13a98c7322bf8fbc151b2d01e1209e7d56a82ba"
+        "prev_hash": "ec634b9941b0003d20fdc2515ad76cdaed3b72785b1a070e7fbad921a1d75cfb",
+        "content_hash": "f1663693e4b9b71dd0020e7bde41d506c24229fff12576e60cf56c7d51aaae79"
       },
       {
         "item_id": "env_00286-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00286",
-          "lines": [
-            {
-              "sku": "fortune-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 38500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:01:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:27:05Z",
         "evidence_class": 2,
-        "prev_hash": "9a6f89b633fa0783eaac1732c13a98c7322bf8fbc151b2d01e1209e7d56a82ba",
-        "content_hash": "099a9c135695fcf3f91ab40b896e53263060013491decbfaf33a6b56d9407f27"
+        "prev_hash": "f1663693e4b9b71dd0020e7bde41d506c24229fff12576e60cf56c7d51aaae79",
+        "content_hash": "27b71b74f9dcc2eb5dc87cabaa8f1b782172ff42d2360ded2780aa5f1c41a458"
       },
       {
         "item_id": "env_00286-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00286",
-          "amount_paise": 39800,
-          "currency": "INR",
-          "receipt": "zep_00286"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 4200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T21:47:25Z",
-        "evidence_class": 3,
-        "prev_hash": "099a9c135695fcf3f91ab40b896e53263060013491decbfaf33a6b56d9407f27",
-        "content_hash": "adad16c1b1673cf3c7a8b8975b82e246893dce56a3b9cd1d256221a71151b2c3"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:27:06Z",
+        "evidence_class": 2,
+        "prev_hash": "27b71b74f9dcc2eb5dc87cabaa8f1b782172ff42d2360ded2780aa5f1c41a458",
+        "content_hash": "c88b93d67404de931bfc4ea2370d8b69d604cd1aa77c812e9d56986ef7328b03"
       },
       {
         "item_id": "env_00286-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00286",
-          "order_id": "order_00286",
-          "amount_paise": 39800,
-          "status": "captured",
-          "block_id": "blk_00286",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T21:47:30Z",
-        "evidence_class": 3,
-        "prev_hash": "adad16c1b1673cf3c7a8b8975b82e246893dce56a3b9cd1d256221a71151b2c3",
-        "content_hash": "1f1657cbf131539f17a7ce33c13d56015997d24bb4b6045c9806a15bfc12ed61"
+        "emitted_by": "agt_667",
+        "emitted_at": "2026-09-02T21:27:12Z",
+        "evidence_class": 1,
+        "prev_hash": "c88b93d67404de931bfc4ea2370d8b69d604cd1aa77c812e9d56986ef7328b03",
+        "content_hash": "1fa2d4efc8209e34ad19da6cf153b0d8c5e354445e440f7a27f6f21acee148ef"
       },
       {
         "item_id": "env_00286-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00286",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:27:20Z",
+        "evidence_class": 2,
+        "prev_hash": "1fa2d4efc8209e34ad19da6cf153b0d8c5e354445e440f7a27f6f21acee148ef",
+        "content_hash": "56372ae35b2e55affc9580b07108e05c596fc4f13e16c8409637552b5d423c63"
+      },
+      {
+        "item_id": "env_00286-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00286",
+          "lines": [
+            {
+              "sku": "britannia-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:41:00Z",
+        "evidence_class": 2,
+        "prev_hash": "56372ae35b2e55affc9580b07108e05c596fc4f13e16c8409637552b5d423c63",
+        "content_hash": "dfeff98acb0de6e94e51a9ec7fc3510de057c4094c4fa09acabb5f891d2b615b"
+      },
+      {
+        "item_id": "env_00286-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00286",
+          "amount_paise": 4200,
+          "currency": "INR",
+          "receipt": "zep_00286"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:27:25Z",
+        "evidence_class": 3,
+        "prev_hash": "dfeff98acb0de6e94e51a9ec7fc3510de057c4094c4fa09acabb5f891d2b615b",
+        "content_hash": "530ce9e1019bb201bf9dae8fa3ad67a7b4b40af67b6185eb4f43e7773b0cc4fc"
+      },
+      {
+        "item_id": "env_00286-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00286",
+          "order_id": "order_00286",
+          "amount_paise": 4200,
+          "status": "captured",
+          "block_id": "blk_00286",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:27:30Z",
+        "evidence_class": 3,
+        "prev_hash": "530ce9e1019bb201bf9dae8fa3ad67a7b4b40af67b6185eb4f43e7773b0cc4fc",
+        "content_hash": "1327c32b08f42cd61cf5f9aac49a7ce9f0acfe35bb3eafd53a3b39aea60c2381"
+      },
+      {
+        "item_id": "env_00286-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-multigrain-5000",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
           "claims_success": true
         },
-        "emitted_by": "agt_302",
-        "emitted_at": "2026-09-02T22:02:00Z",
+        "emitted_by": "agt_667",
+        "emitted_at": "2026-09-02T21:42:00Z",
         "evidence_class": 0,
-        "prev_hash": "1f1657cbf131539f17a7ce33c13d56015997d24bb4b6045c9806a15bfc12ed61",
-        "content_hash": "3532d183e2c148ad663b9244429fe3df8175385151ecdb8f076a3f7e216b588a"
+        "prev_hash": "1327c32b08f42cd61cf5f9aac49a7ce9f0acfe35bb3eafd53a3b39aea60c2381",
+        "content_hash": "e82b5b136fd5d21ab23940ac1aab46f08631c47c8a87d166b45a25a0989f05d9"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-multigrain-5000",
-    "ordered_sku": "aashirvaad-flour-multigrain-5000",
-    "delivered_sku": "fortune-flour-multigrain-5000",
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "britannia-bread-white-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 39800,
-    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 4200,
+    "rationale": "Order names harvest; fulfilment shipped britannia. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

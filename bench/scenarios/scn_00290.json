@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00290",
-    "created_at": "2026-09-03T03:23:00Z",
-    "expires_at": "2026-09-03T09:23:00Z",
-    "user_id": "usr_8848",
-    "agent_id": "agt_162",
+    "created_at": "2026-09-03T03:26:00Z",
+    "expires_at": "2026-09-03T09:26:00Z",
+    "user_id": "usr_3703",
+    "agent_id": "agt_549",
     "block": {
       "block_id": "blk_00290",
-      "blocked_paise": 50000,
+      "blocked_paise": 128340,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T03:23:00Z",
-      "expires_at": "2026-10-11T03:23:00Z"
+      "blocked_at": "2026-08-27T03:26:00Z",
+      "expires_at": "2026-11-01T03:26:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 11040,
-      "max_total_paise": 11040,
+      "category": "rice",
+      "max_unit_price_paise": 42780,
+      "max_total_paise": 42780,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
-      "brand": "maggi",
-      "variant": "masala",
-      "pack_size_g": 560
+      "brand": "daawat",
+      "variant": null,
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 560g Maggi masala noodles from Swiggy Instamart, keep it under 110 rupees",
-      "uncaptured_attributes": []
+      "text": "get me 5kg Daawat sona masoori rice from Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "7a41385cf67ac1afe77cc52ea161cb9a9ea3aa51d784893f6af75f5a41020b61",
+    "content_hash": "1fc5288938fbcbc3fd45cd3f299ef1440884432d62d1192110ecca646d3f4536",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00290",
-    "obligation_hash": "7a41385cf67ac1afe77cc52ea161cb9a9ea3aa51d784893f6af75f5a41020b61",
+    "obligation_hash": "1fc5288938fbcbc3fd45cd3f299ef1440884432d62d1192110ecca646d3f4536",
     "items": [
       {
         "item_id": "env_00290-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "maggi-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-brown-1000",
+          "display_name": "India Gate Brown Basmati Rice 1kg",
+          "description": "India Gate Brown Basmati Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 11800
         },
-        "emitted_by": "agt_162",
-        "emitted_at": "2026-09-03T03:23:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:26:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "1eb87fe2668735261fba1f3f4353688a73ce0d4c6d9e8970a036ed5ad9a4fec3"
+        "content_hash": "6d839914ad001b516b48b3953461ae34660bd428df420cbcfa92df72f01826a1"
       },
       {
         "item_id": "env_00290-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00290",
-          "lines": [
-            {
-              "sku": "maggi-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:23:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:26:04Z",
         "evidence_class": 2,
-        "prev_hash": "1eb87fe2668735261fba1f3f4353688a73ce0d4c6d9e8970a036ed5ad9a4fec3",
-        "content_hash": "f5fb0737824a915652940906731cdb30f29985d7e84d4271eb9863bc66dc9081"
+        "prev_hash": "6d839914ad001b516b48b3953461ae34660bd428df420cbcfa92df72f01826a1",
+        "content_hash": "1d83a946478989b8222f31e69a8305e8400536e9fe2fce4306bf6ee00348bf2b"
       },
       {
         "item_id": "env_00290-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00290",
-          "lines": [
-            {
-              "sku": "maggi-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:37:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:26:05Z",
         "evidence_class": 2,
-        "prev_hash": "f5fb0737824a915652940906731cdb30f29985d7e84d4271eb9863bc66dc9081",
-        "content_hash": "3f19b4362dc11d00ac7b0f8015b66234a3eea14a19696e5df198912069ae5c22"
+        "prev_hash": "1d83a946478989b8222f31e69a8305e8400536e9fe2fce4306bf6ee00348bf2b",
+        "content_hash": "61451a902508abd2c652f9bb0ce729f100371ff642fe043c6940a741968ab1ba"
       },
       {
         "item_id": "env_00290-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00290",
-          "amount_paise": 9600,
-          "currency": "INR",
-          "receipt": "zep_00290"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:23:25Z",
-        "evidence_class": 3,
-        "prev_hash": "3f19b4362dc11d00ac7b0f8015b66234a3eea14a19696e5df198912069ae5c22",
-        "content_hash": "e5e22b62220655a23e599149d72dba80d9d1554b8218ff97364d32796b5c8a49"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:26:06Z",
+        "evidence_class": 2,
+        "prev_hash": "61451a902508abd2c652f9bb0ce729f100371ff642fe043c6940a741968ab1ba",
+        "content_hash": "2baa6ca97a27176852960ebfd9a44cc4af2256f73b0f84e9e0d548828a7b5f10"
       },
       {
         "item_id": "env_00290-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00290",
-          "order_id": "order_00290",
-          "amount_paise": 9600,
-          "status": "captured",
-          "block_id": "blk_00290",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:23:30Z",
-        "evidence_class": 3,
-        "prev_hash": "e5e22b62220655a23e599149d72dba80d9d1554b8218ff97364d32796b5c8a49",
-        "content_hash": "2c98a49e60735f4608c27ecfaacf05efbf130242cb3a3cbe59c07d9bca55e87b"
+        "emitted_by": "agt_549",
+        "emitted_at": "2026-09-03T03:26:12Z",
+        "evidence_class": 1,
+        "prev_hash": "2baa6ca97a27176852960ebfd9a44cc4af2256f73b0f84e9e0d548828a7b5f10",
+        "content_hash": "a41857013d9f3edef9e9ceca07b56f8c97482eb4542924b57a15298d350617e1"
       },
       {
         "item_id": "env_00290-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00290",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:26:20Z",
+        "evidence_class": 2,
+        "prev_hash": "a41857013d9f3edef9e9ceca07b56f8c97482eb4542924b57a15298d350617e1",
+        "content_hash": "a1dbf105deb25cb3fbf6022b55d19758532d22ebc431c166599b5a81160c30c9"
+      },
+      {
+        "item_id": "env_00290-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00290",
+          "lines": [
+            {
+              "sku": "daawat-rice-sona_masoori-5000",
+              "quantity": 1,
+              "unit_price_paise": 37200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:40:00Z",
+        "evidence_class": 2,
+        "prev_hash": "a1dbf105deb25cb3fbf6022b55d19758532d22ebc431c166599b5a81160c30c9",
+        "content_hash": "632af87ddcdc48b14e8a5e634d02bac8c6e088048ad914b66ec7f07801b77433"
+      },
+      {
+        "item_id": "env_00290-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00290",
+          "amount_paise": 37200,
+          "currency": "INR",
+          "receipt": "zep_00290"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:26:25Z",
+        "evidence_class": 3,
+        "prev_hash": "632af87ddcdc48b14e8a5e634d02bac8c6e088048ad914b66ec7f07801b77433",
+        "content_hash": "fb2dde2f397e54bda79cebacba0a322dbfb135d3cf8d4559955b3fcb5da92831"
+      },
+      {
+        "item_id": "env_00290-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00290",
+          "order_id": "order_00290",
+          "amount_paise": 37200,
+          "status": "captured",
+          "block_id": "blk_00290",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:26:30Z",
+        "evidence_class": 3,
+        "prev_hash": "fb2dde2f397e54bda79cebacba0a322dbfb135d3cf8d4559955b3fcb5da92831",
+        "content_hash": "476c12c1b3c1cd163cddbce7743be91e36a14cd293dba0a9743ba515085a20e5"
+      },
+      {
+        "item_id": "env_00290-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
-          "claimed_sku": "maggi-noodles-masala-560",
+          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
+          "claimed_sku": "daawat-rice-sona_masoori-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_162",
-        "emitted_at": "2026-09-03T03:38:00Z",
+        "emitted_by": "agt_549",
+        "emitted_at": "2026-09-03T03:41:00Z",
         "evidence_class": 0,
-        "prev_hash": "2c98a49e60735f4608c27ecfaacf05efbf130242cb3a3cbe59c07d9bca55e87b",
-        "content_hash": "06fdba57b30d9ffa5a7e5991c4fa84567c92040e33cb48107ec943cfd5b5ae6e"
+        "prev_hash": "476c12c1b3c1cd163cddbce7743be91e36a14cd293dba0a9743ba515085a20e5",
+        "content_hash": "9668b37beb93b33f0a0d43ee7db653c08ee0581a0d1d2f92f5940c4cf3d7d7aa"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "maggi-noodles-masala-560",
-    "ordered_sku": "maggi-noodles-masala-560",
-    "delivered_sku": "maggi-noodles-masala-560",
+    "requested_sku": "daawat-rice-sona_masoori-5000",
+    "ordered_sku": "daawat-rice-sona_masoori-5000",
+    "delivered_sku": "daawat-rice-sona_masoori-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

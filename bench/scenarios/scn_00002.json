@@ -6,154 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00002",
-    "created_at": "2026-09-02T20:07:00Z",
-    "expires_at": "2026-09-03T02:07:00Z",
-    "user_id": "usr_5920",
-    "agent_id": "agt_619",
+    "created_at": "2026-09-03T01:20:00Z",
+    "expires_at": "2026-09-03T07:20:00Z",
+    "user_id": "usr_6279",
+    "agent_id": "agt_576",
     "block": {
       "block_id": "blk_00002",
-      "blocked_paise": 100740,
+      "blocked_paise": 122475,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-24T20:07:00Z",
-      "expires_at": "2026-10-23T20:07:00Z"
+      "blocked_at": "2026-08-20T01:20:00Z",
+      "expires_at": "2026-10-17T01:20:00Z"
     },
     "hard": {
-      "category": "butter",
-      "max_unit_price_paise": 33580,
-      "max_total_paise": 33580,
+      "category": "flour",
+      "max_unit_price_paise": 40825,
+      "max_total_paise": 40825,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "amul",
-      "variant": null,
-      "pack_size_g": 500
+      "brand": "aashirvaad",
+      "variant": "whole_wheat",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 500g Amul unsalted butter from Swiggy Instamart, keep it under 335 rupees",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "order 5kg Aashirvaad atta on Swiggy Instamart",
+      "uncaptured_attributes": []
     },
-    "content_hash": "3112f84e10dda8a570c76595666dbc131b64d91c309abd43bffad0d3e95dad0b",
+    "content_hash": "b45de29754e52487ea7a183fadfa91a028f18a783c189b54f99f5d63322e06af",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00002",
-    "obligation_hash": "3112f84e10dda8a570c76595666dbc131b64d91c309abd43bffad0d3e95dad0b",
+    "obligation_hash": "b45de29754e52487ea7a183fadfa91a028f18a783c189b54f99f5d63322e06af",
     "items": [
       {
         "item_id": "env_00002-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "amul-butter-unsalted-500",
-              "quantity": 1,
-              "unit_price_paise": 29200
-            }
-          ]
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 34000
         },
-        "emitted_by": "agt_619",
-        "emitted_at": "2026-09-02T20:07:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:20:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "d71a7af197f6b9cea58955777fba09335b790931ced1f23b834c1e65d2a32a06"
+        "content_hash": "858baca5b6cfe9db4bc12ae3b0d2de863df05761d1812d1ac8ed0b3140def0ed"
       },
       {
         "item_id": "env_00002-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:20:04Z",
+        "evidence_class": 2,
+        "prev_hash": "858baca5b6cfe9db4bc12ae3b0d2de863df05761d1812d1ac8ed0b3140def0ed",
+        "content_hash": "ac4a708db74a5b77684564000b4ef6a5cdac9872706c84235a4639781f34950b"
+      },
+      {
+        "item_id": "env_00002-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 35500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:20:05Z",
+        "evidence_class": 2,
+        "prev_hash": "ac4a708db74a5b77684564000b4ef6a5cdac9872706c84235a4639781f34950b",
+        "content_hash": "ee8c61acc05e8ba700ea122e3fc6d26b210d720967324432ca05e250ce2b776c"
+      },
+      {
+        "item_id": "env_00002-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 39800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:20:06Z",
+        "evidence_class": 2,
+        "prev_hash": "ee8c61acc05e8ba700ea122e3fc6d26b210d720967324432ca05e250ce2b776c",
+        "content_hash": "2c7d20f7507c265344453527de6fb6ac18217b317a1a614f2a0862ff91c5eecc"
+      },
+      {
+        "item_id": "env_00002-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ]
+        },
+        "emitted_by": "agt_576",
+        "emitted_at": "2026-09-03T01:20:12Z",
+        "evidence_class": 1,
+        "prev_hash": "2c7d20f7507c265344453527de6fb6ac18217b317a1a614f2a0862ff91c5eecc",
+        "content_hash": "e3221d5e47bbac775e413b8a9da86641ca872e08939f08fc835a1e52c3b85c18"
+      },
+      {
+        "item_id": "env_00002-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00002",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 35500
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:07:20Z",
+        "emitted_at": "2026-09-03T01:20:20Z",
         "evidence_class": 2,
-        "prev_hash": "d71a7af197f6b9cea58955777fba09335b790931ced1f23b834c1e65d2a32a06",
-        "content_hash": "b5d542f8394f27f5756cad7f1bae3e46cb35947f0dd9270091a46bf5e2b1705a"
+        "prev_hash": "e3221d5e47bbac775e413b8a9da86641ca872e08939f08fc835a1e52c3b85c18",
+        "content_hash": "1650b8bf6c7f42df9b3c4be1547f63c7f8b18e9d3ff8d96846e7cc5dbe702880"
       },
       {
-        "item_id": "env_00002-e002",
-        "seq": 2,
+        "item_id": "env_00002-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00002",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 35500
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:21:00Z",
+        "emitted_at": "2026-09-03T01:34:00Z",
         "evidence_class": 2,
-        "prev_hash": "b5d542f8394f27f5756cad7f1bae3e46cb35947f0dd9270091a46bf5e2b1705a",
-        "content_hash": "1e4d58aebb59a11ceb1349df97ef8c5add0200336f31d24b559d48a1bd904c6a"
+        "prev_hash": "1650b8bf6c7f42df9b3c4be1547f63c7f8b18e9d3ff8d96846e7cc5dbe702880",
+        "content_hash": "25d768c5ca6f7fbe90a327586dfb8b1f117fa882465853a653cf3358132cb689"
       },
       {
-        "item_id": "env_00002-e003",
-        "seq": 3,
+        "item_id": "env_00002-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00002",
-          "amount_paise": 29200,
+          "amount_paise": 35500,
           "currency": "INR",
           "receipt": "zep_00002"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:07:25Z",
+        "emitted_at": "2026-09-03T01:20:25Z",
         "evidence_class": 3,
-        "prev_hash": "1e4d58aebb59a11ceb1349df97ef8c5add0200336f31d24b559d48a1bd904c6a",
-        "content_hash": "58090ccd2a26d13fa6b20dcf79eb640aefd70e713c8843a14853d2a93b29c7a1"
+        "prev_hash": "25d768c5ca6f7fbe90a327586dfb8b1f117fa882465853a653cf3358132cb689",
+        "content_hash": "ca0132c15621a6d7faf60f6a655fb59f0cf29b91c06cd80ca2efa17b99166a20"
       },
       {
-        "item_id": "env_00002-e004",
-        "seq": 4,
+        "item_id": "env_00002-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00002",
           "order_id": "order_00002",
-          "amount_paise": 29200,
+          "amount_paise": 35500,
           "status": "captured",
           "block_id": "blk_00002",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:07:30Z",
+        "emitted_at": "2026-09-03T01:20:30Z",
         "evidence_class": 3,
-        "prev_hash": "58090ccd2a26d13fa6b20dcf79eb640aefd70e713c8843a14853d2a93b29c7a1",
-        "content_hash": "e7dbde76d92b244bb7018bbc62bb0846797cd987de649a7b75347820442dd536"
+        "prev_hash": "ca0132c15621a6d7faf60f6a655fb59f0cf29b91c06cd80ca2efa17b99166a20",
+        "content_hash": "dbd7fa01d2df36e54f89d4c59e0f88c23a8e73a67a8b07361eb45ccf0139c38b"
       },
       {
-        "item_id": "env_00002-e005",
-        "seq": 5,
+        "item_id": "env_00002-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
-          "claimed_sku": "amul-butter-unsalted-500",
+          "text": "Ordered 5kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_619",
-        "emitted_at": "2026-09-02T20:22:00Z",
+        "emitted_by": "agt_576",
+        "emitted_at": "2026-09-03T01:35:00Z",
         "evidence_class": 0,
-        "prev_hash": "e7dbde76d92b244bb7018bbc62bb0846797cd987de649a7b75347820442dd536",
-        "content_hash": "4651eb974889828177d93f3783d4e5e35553efd04a71fec81c2d3112c5c21441"
+        "prev_hash": "dbd7fa01d2df36e54f89d4c59e0f88c23a8e73a67a8b07361eb45ccf0139c38b",
+        "content_hash": "947f41ade224a2c07ff88c07a213630c45833ffe212a98674f9c9f579a9b2b37"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-butter-unsalted-500",
-    "ordered_sku": "amul-butter-unsalted-500",
-    "delivered_sku": "amul-butter-unsalted-500",
+    "requested_sku": "aashirvaad-flour-whole_wheat-5000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00148",
-    "created_at": "2026-09-03T03:18:00Z",
-    "expires_at": "2026-09-03T09:18:00Z",
-    "user_id": "usr_5745",
-    "agent_id": "agt_757",
+    "created_at": "2026-09-02T20:37:00Z",
+    "expires_at": "2026-09-03T02:37:00Z",
+    "user_id": "usr_1893",
+    "agent_id": "agt_469",
     "block": {
       "block_id": "blk_00148",
-      "blocked_paise": 58400,
-      "consumed_paise": 43800,
-      "blocked_at": "2026-08-25T03:18:00Z",
-      "expires_at": "2026-10-18T03:18:00Z"
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-09-02T20:37:00Z",
+      "expires_at": "2026-10-15T20:37:00Z"
     },
     "hard": {
-      "category": "butter",
-      "max_unit_price_paise": 33580,
-      "max_total_paise": 33580,
+      "category": "flour",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "amul",
-      "variant": "unsalted",
-      "pack_size_g": 500
+      "brand": "aashirvaad",
+      "variant": "refined",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 500g Amul unsalted butter on Blinkit",
+      "text": "get me 1kg Aashirvaad maida from Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "55bdeb587c32829ea0a09862e98d41041016da1b9e403b5f5de06fd6dea26f38",
+    "content_hash": "c3c1c3b241b36bccc7e82a4e3e612e86423953c199a3d155905f08ee866b869c",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00148",
-    "obligation_hash": "55bdeb587c32829ea0a09862e98d41041016da1b9e403b5f5de06fd6dea26f38",
+    "obligation_hash": "c3c1c3b241b36bccc7e82a4e3e612e86423953c199a3d155905f08ee866b869c",
     "items": [
       {
         "item_id": "env_00148-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "amul-butter-unsalted-500",
-              "quantity": 1,
-              "unit_price_paise": 29200
-            }
-          ]
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 9200
         },
-        "emitted_by": "agt_757",
-        "emitted_at": "2026-09-03T03:18:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:37:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "b75f5ec862b1709db543ef27c72fed241c1628f845536694a54e5ad1120f2922"
+        "content_hash": "d18f36005b534302b41dede3624f18aa479a3df1dc32a9eede93798a3e531240"
       },
       {
         "item_id": "env_00148-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 34000
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:37:04Z",
+        "evidence_class": 2,
+        "prev_hash": "d18f36005b534302b41dede3624f18aa479a3df1dc32a9eede93798a3e531240",
+        "content_hash": "08937b012020dbbcf790e47341b81d8e77113d268f458d7515d65df2b97b06f2"
+      },
+      {
+        "item_id": "env_00148-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 38500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:37:05Z",
+        "evidence_class": 2,
+        "prev_hash": "08937b012020dbbcf790e47341b81d8e77113d268f458d7515d65df2b97b06f2",
+        "content_hash": "ee0e5813ee6e20a9138e98b69644b744c5c5bfd896a615c02247971fc4f19194"
+      },
+      {
+        "item_id": "env_00148-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:37:06Z",
+        "evidence_class": 2,
+        "prev_hash": "ee0e5813ee6e20a9138e98b69644b744c5c5bfd896a615c02247971fc4f19194",
+        "content_hash": "6829f519e4f82a3bc21710bf34da5ecaf90c0dd3040e258dc25ebcabdccd73f1"
+      },
+      {
+        "item_id": "env_00148-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_469",
+        "emitted_at": "2026-09-02T20:37:12Z",
+        "evidence_class": 1,
+        "prev_hash": "6829f519e4f82a3bc21710bf34da5ecaf90c0dd3040e258dc25ebcabdccd73f1",
+        "content_hash": "7a43470d998a21fbc2bd041550715226eef8e3e34c05d7cf649ca7f314f523d5"
+      },
+      {
+        "item_id": "env_00148-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00148",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "aashirvaad-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 6200
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:18:20Z",
+        "emitted_at": "2026-09-02T20:37:20Z",
         "evidence_class": 2,
-        "prev_hash": "b75f5ec862b1709db543ef27c72fed241c1628f845536694a54e5ad1120f2922",
-        "content_hash": "d9727f4a290443eb204b62ea644f68babe3278f0b5a251b7b78ca645d5d53e41"
+        "prev_hash": "7a43470d998a21fbc2bd041550715226eef8e3e34c05d7cf649ca7f314f523d5",
+        "content_hash": "ec8c872dd1f5e21fcf036a094ced2e4ce283b08f69966aa4f257bdfed089f047"
       },
       {
-        "item_id": "env_00148-e002",
-        "seq": 2,
+        "item_id": "env_00148-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00148",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "aashirvaad-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 6200
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:32:00Z",
+        "emitted_at": "2026-09-02T20:51:00Z",
         "evidence_class": 2,
-        "prev_hash": "d9727f4a290443eb204b62ea644f68babe3278f0b5a251b7b78ca645d5d53e41",
-        "content_hash": "94426239219b6f5a5b11c3e182d131d4feb61e54db6d2345f70bf228f62ea0ca"
+        "prev_hash": "ec8c872dd1f5e21fcf036a094ced2e4ce283b08f69966aa4f257bdfed089f047",
+        "content_hash": "4574bd6cc5157e62d1f6691fdf01508c63be6fcefbd13cdc391f7163c9975bdd"
       },
       {
-        "item_id": "env_00148-e003",
-        "seq": 3,
+        "item_id": "env_00148-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00148",
-          "amount_paise": 29200,
+          "amount_paise": 6200,
           "currency": "INR",
           "receipt": "zep_00148"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:18:25Z",
+        "emitted_at": "2026-09-02T20:37:25Z",
         "evidence_class": 3,
-        "prev_hash": "94426239219b6f5a5b11c3e182d131d4feb61e54db6d2345f70bf228f62ea0ca",
-        "content_hash": "0878e1e5c3ec672304309372dbd47120b365c67acf1746988c041b593336c7ca"
+        "prev_hash": "4574bd6cc5157e62d1f6691fdf01508c63be6fcefbd13cdc391f7163c9975bdd",
+        "content_hash": "fcafd6be2284c7c05e235428ca1129c18f75c0c208630a68e46a558a7faf2e26"
       },
       {
-        "item_id": "env_00148-e004",
-        "seq": 4,
+        "item_id": "env_00148-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00148",
           "order_id": "order_00148",
-          "amount_paise": 29200,
+          "amount_paise": 6200,
           "status": "captured",
           "block_id": "blk_00148",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:18:30Z",
+        "emitted_at": "2026-09-02T20:37:30Z",
         "evidence_class": 3,
-        "prev_hash": "0878e1e5c3ec672304309372dbd47120b365c67acf1746988c041b593336c7ca",
-        "content_hash": "1a3939e9cab83bf3d37a91673fea81f0eb0176a7298a3b238662474ebd859c8a"
+        "prev_hash": "fcafd6be2284c7c05e235428ca1129c18f75c0c208630a68e46a558a7faf2e26",
+        "content_hash": "54d521179fa9b874e056141e76cf881907ed53dd13254cb11f15510f99416bc0"
       },
       {
-        "item_id": "env_00148-e005",
-        "seq": 5,
+        "item_id": "env_00148-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
-          "claimed_sku": "amul-butter-unsalted-500",
+          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_757",
-        "emitted_at": "2026-09-03T03:33:00Z",
+        "emitted_by": "agt_469",
+        "emitted_at": "2026-09-02T20:52:00Z",
         "evidence_class": 0,
-        "prev_hash": "1a3939e9cab83bf3d37a91673fea81f0eb0176a7298a3b238662474ebd859c8a",
-        "content_hash": "029f23280754530354048d7b42185f5b7802fc8675057423da91197960505b43"
+        "prev_hash": "54d521179fa9b874e056141e76cf881907ed53dd13254cb11f15510f99416bc0",
+        "content_hash": "b32d2e9a9c6d65e7e4eebd4dc89c1673058ba0b5ab3485e0ca08d976198899a0"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-butter-unsalted-500",
-    "ordered_sku": "amul-butter-unsalted-500",
-    "delivered_sku": "amul-butter-unsalted-500",
+    "requested_sku": "aashirvaad-flour-refined-1000",
+    "ordered_sku": "aashirvaad-flour-refined-1000",
+    "delivered_sku": "aashirvaad-flour-refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 14600,
-    "rationale": "Item was correct; the mandate was not honoured. Debit of 29200 paise exceeds the 14600 paise remaining on block blk_00148."
+    "loss_paise": 6200,
+    "rationale": "Item was correct; the mandate was not honoured. Cart placed at blinkit, which is not in the allowlist (zepto)."
   }
 }

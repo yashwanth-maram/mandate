@@ -6,154 +6,203 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00435",
-    "created_at": "2026-09-02T23:48:00Z",
-    "expires_at": "2026-09-03T05:48:00Z",
-    "user_id": "usr_2917",
-    "agent_id": "agt_922",
+    "created_at": "2026-09-03T01:17:00Z",
+    "expires_at": "2026-09-03T07:17:00Z",
+    "user_id": "usr_3756",
+    "agent_id": "agt_157",
     "block": {
       "block_id": "blk_00435",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-17T23:48:00Z",
-      "expires_at": "2026-11-01T23:48:00Z"
+      "blocked_at": "2026-08-31T01:17:00Z",
+      "expires_at": "2026-10-14T01:17:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5750,
-      "max_total_paise": 5750,
+      "category": "noodles",
+      "max_unit_price_paise": 10350,
+      "max_total_paise": 10350,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "harvest",
-      "variant": null,
-      "pack_size_g": 400
+      "brand": "yippee",
+      "variant": "masala",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "I need 400g Harvest brown bread, use Zepto",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "buy 560g Yippee masala noodles from Zepto, keep it under 103 rupees",
+      "uncaptured_attributes": []
     },
-    "content_hash": "df158917bfe4c124f2d3a40a2a3cc57ced9c3df24fd68b2cf0e887b106e8712f",
+    "content_hash": "20e536d867567b3ae825b475a9a9e4b3911cb6af25a227dfc501ff0d156779aa",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00435",
-    "obligation_hash": "df158917bfe4c124f2d3a40a2a3cc57ced9c3df24fd68b2cf0e887b106e8712f",
+    "obligation_hash": "20e536d867567b3ae825b475a9a9e4b3911cb6af25a227dfc501ff0d156779aa",
     "items": [
       {
         "item_id": "env_00435-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ]
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 10800
         },
-        "emitted_by": "agt_922",
-        "emitted_at": "2026-09-02T23:48:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:17:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "950b4447ab964975bae7081728ad6ed69c18f5f5739535b99174c1348e3ed662"
+        "content_hash": "8d612c0d07ee97459fdda901ffc51642b22a7ad27872ea3ae3a1be2894a88485"
       },
       {
         "item_id": "env_00435-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Bestseller in this category this week.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:17:04Z",
+        "evidence_class": 2,
+        "prev_hash": "8d612c0d07ee97459fdda901ffc51642b22a7ad27872ea3ae3a1be2894a88485",
+        "content_hash": "3c7064f9dfd9b9b9b08e463959f4576af895ac386e2d56d135f93994e45d25b1"
+      },
+      {
+        "item_id": "env_00435-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 9000
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:17:05Z",
+        "evidence_class": 2,
+        "prev_hash": "3c7064f9dfd9b9b9b08e463959f4576af895ac386e2d56d135f93994e45d25b1",
+        "content_hash": "782c6d62714453aa6a611bbb4c475025a3e7b999d043f751b34e182dff163941"
+      },
+      {
+        "item_id": "env_00435-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ]
+        },
+        "emitted_by": "agt_157",
+        "emitted_at": "2026-09-03T01:17:12Z",
+        "evidence_class": 1,
+        "prev_hash": "782c6d62714453aa6a611bbb4c475025a3e7b999d043f751b34e182dff163941",
+        "content_hash": "92fe20a6365463ab410eadf5bc887b03303cb08f5831861aeb57b3f08fefbd08"
+      },
+      {
+        "item_id": "env_00435-e004",
+        "seq": 4,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00435",
           "lines": [
             {
-              "sku": "harvest-bread-brown-400",
+              "sku": "yippee-noodles-masala-560",
               "quantity": 1,
-              "unit_price_paise": 5000
+              "unit_price_paise": 9000
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:48:20Z",
+        "emitted_at": "2026-09-03T01:17:20Z",
         "evidence_class": 2,
-        "prev_hash": "950b4447ab964975bae7081728ad6ed69c18f5f5739535b99174c1348e3ed662",
-        "content_hash": "7f3ede11b22de0e597a4dd61afacf26972fba0aa095c5fbee6d097e141dd73a2"
-      },
-      {
-        "item_id": "env_00435-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00435",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:02:00Z",
-        "evidence_class": 2,
-        "prev_hash": "7f3ede11b22de0e597a4dd61afacf26972fba0aa095c5fbee6d097e141dd73a2",
-        "content_hash": "828f7d959e8a22c584f98cef761ea01cf68375640ccadf75180c5dd7975d98f3"
-      },
-      {
-        "item_id": "env_00435-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00435",
-          "amount_paise": 5000,
-          "currency": "INR",
-          "receipt": "zep_00435"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:48:25Z",
-        "evidence_class": 3,
-        "prev_hash": "828f7d959e8a22c584f98cef761ea01cf68375640ccadf75180c5dd7975d98f3",
-        "content_hash": "973f3709dc4baa47a68cdaeb05fb14e4f2d06b1337f09d8dc0f8d58dc4ba0a8f"
-      },
-      {
-        "item_id": "env_00435-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00435",
-          "order_id": "order_00435",
-          "amount_paise": 5000,
-          "status": "captured",
-          "block_id": "blk_00435",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:48:30Z",
-        "evidence_class": 3,
-        "prev_hash": "973f3709dc4baa47a68cdaeb05fb14e4f2d06b1337f09d8dc0f8d58dc4ba0a8f",
-        "content_hash": "486fcd79258a2e39bf7a867ed562c0f45ca2c0781867143364b3f8c19b1fd8b4"
+        "prev_hash": "92fe20a6365463ab410eadf5bc887b03303cb08f5831861aeb57b3f08fefbd08",
+        "content_hash": "d933c92f73619a5e4c6a4a132b3eab01c07ee0c77f7d12135d53372afae37f77"
       },
       {
         "item_id": "env_00435-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00435",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:31:00Z",
+        "evidence_class": 2,
+        "prev_hash": "d933c92f73619a5e4c6a4a132b3eab01c07ee0c77f7d12135d53372afae37f77",
+        "content_hash": "44ab83b2b3954f07704f8165d03966d88206a04c8a226bd5a143744a34ac4411"
+      },
+      {
+        "item_id": "env_00435-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00435",
+          "amount_paise": 9000,
+          "currency": "INR",
+          "receipt": "zep_00435"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:17:25Z",
+        "evidence_class": 3,
+        "prev_hash": "44ab83b2b3954f07704f8165d03966d88206a04c8a226bd5a143744a34ac4411",
+        "content_hash": "2cf98aa56fa42ea4f54e8760b517ac68f0e283b92da3a61b38461994815bc23f"
+      },
+      {
+        "item_id": "env_00435-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00435",
+          "order_id": "order_00435",
+          "amount_paise": 9000,
+          "status": "captured",
+          "block_id": "blk_00435",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:17:30Z",
+        "evidence_class": 3,
+        "prev_hash": "2cf98aa56fa42ea4f54e8760b517ac68f0e283b92da3a61b38461994815bc23f",
+        "content_hash": "4418581ce190442e4c63ebad8424a5320367e1a1954e5264368061de7302aa25"
+      },
+      {
+        "item_id": "env_00435-e008",
+        "seq": 8,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Harvest brown bread. Payment complete.",
-          "claimed_sku": "harvest-bread-brown-400",
+          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
+          "claimed_sku": "yippee-noodles-masala-560",
           "claims_success": true
         },
-        "emitted_by": "agt_922",
-        "emitted_at": "2026-09-03T00:03:00Z",
+        "emitted_by": "agt_157",
+        "emitted_at": "2026-09-03T01:32:00Z",
         "evidence_class": 0,
-        "prev_hash": "486fcd79258a2e39bf7a867ed562c0f45ca2c0781867143364b3f8c19b1fd8b4",
-        "content_hash": "38e55a714e86bed8fcc60323913aa23920a5b35e107c34beffad1e3b4d6e3237"
+        "prev_hash": "4418581ce190442e4c63ebad8424a5320367e1a1954e5264368061de7302aa25",
+        "content_hash": "909707378cd99e0723b135cd9bee78f352e6f5f4ca11f7f06b8d94ab4e9f7240"
       }
     ]
   },
@@ -162,9 +211,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "harvest-bread-brown-400",
-    "ordered_sku": "harvest-bread-brown-400",
-    "delivered_sku": "harvest-bread-brown-400",
+    "requested_sku": "yippee-noodles-masala-560",
+    "ordered_sku": "yippee-noodles-masala-560",
+    "delivered_sku": "yippee-noodles-masala-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

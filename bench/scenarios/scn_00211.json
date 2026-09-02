@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00211",
-    "created_at": "2026-09-03T00:38:00Z",
-    "expires_at": "2026-09-03T06:38:00Z",
-    "user_id": "usr_9856",
-    "agent_id": "agt_439",
+    "created_at": "2026-09-03T00:04:00Z",
+    "expires_at": "2026-09-03T06:04:00Z",
+    "user_id": "usr_3555",
+    "agent_id": "agt_897",
     "block": {
       "block_id": "blk_00211",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-22T00:38:00Z",
-      "expires_at": "2026-10-27T00:38:00Z"
+      "blocked_at": "2026-08-31T00:04:00Z",
+      "expires_at": "2026-10-06T00:04:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18975,
-      "max_total_paise": 18975,
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "fortune",
-      "variant": "mustard",
+      "brand": "mother_dairy",
+      "variant": "full_cream",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1L Fortune kachi ghani mustard oil on Zepto",
+      "text": "get me 1L Mother Dairy full cream milk from Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "483af6c60512f6e913b6ede276ab0a794480cdc2116f9e989f18283fbfdd9f2b",
+    "content_hash": "1cfa7e0c6a28a5fd98a79b3e8fe308ce68274758f3b22eee7cc956b7cf763d67",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00211",
-    "obligation_hash": "483af6c60512f6e913b6ede276ab0a794480cdc2116f9e989f18283fbfdd9f2b",
+    "obligation_hash": "1cfa7e0c6a28a5fd98a79b3e8fe308ce68274758f3b22eee7cc956b7cf763d67",
     "items": [
       {
         "item_id": "env_00211-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ]
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 7500
         },
-        "emitted_by": "agt_439",
-        "emitted_at": "2026-09-03T00:38:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:04:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "9b1af47d8c2bfc85875f914625271fd8d9ffc027224485736eefc0be12df197d"
+        "content_hash": "21ca4e7a30ec31a08765862b263c10b4fb0afcb67d1b0273d36944e8039655fc"
       },
       {
         "item_id": "env_00211-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5700
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:04:04Z",
+        "evidence_class": 2,
+        "prev_hash": "21ca4e7a30ec31a08765862b263c10b4fb0afcb67d1b0273d36944e8039655fc",
+        "content_hash": "acaa1df18e71e121343f340790230af4adff0bcefa0ddd6dc00b08742b4cac2a"
+      },
+      {
+        "item_id": "env_00211-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6400
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:04:05Z",
+        "evidence_class": 2,
+        "prev_hash": "acaa1df18e71e121343f340790230af4adff0bcefa0ddd6dc00b08742b4cac2a",
+        "content_hash": "fb90dc89eef86a524511467f0e892035d472092c6aae4a9322df8df7b90e341d"
+      },
+      {
+        "item_id": "env_00211-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-milk-full_cream-1000",
+          "display_name": "Amul Gold Full Cream Milk 1L",
+          "description": "Amul Gold Full Cream Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 7700
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:04:06Z",
+        "evidence_class": 2,
+        "prev_hash": "fb90dc89eef86a524511467f0e892035d472092c6aae4a9322df8df7b90e341d",
+        "content_hash": "344e3e01d2c0cf0f150af38ceb36a1ff99a0fd6e87d6985570d89fbd9b1b63de"
+      },
+      {
+        "item_id": "env_00211-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "agt_897",
+        "emitted_at": "2026-09-03T00:04:12Z",
+        "evidence_class": 1,
+        "prev_hash": "344e3e01d2c0cf0f150af38ceb36a1ff99a0fd6e87d6985570d89fbd9b1b63de",
+        "content_hash": "7f86ecde0f4c3af88ab131fe4bb462a38c3837e5832fda08498fc8f206a389cc"
+      },
+      {
+        "item_id": "env_00211-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00211",
           "lines": [
             {
-              "sku": "fortune-edible_oil-mustard-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 16500
+              "unit_price_paise": 7500
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:38:20Z",
+        "emitted_at": "2026-09-03T00:04:20Z",
         "evidence_class": 2,
-        "prev_hash": "9b1af47d8c2bfc85875f914625271fd8d9ffc027224485736eefc0be12df197d",
-        "content_hash": "fd922b2d3797ecb20d0e0e8ead590f0395e6b455fe4774c0295e868f038fd5b8"
+        "prev_hash": "7f86ecde0f4c3af88ab131fe4bb462a38c3837e5832fda08498fc8f206a389cc",
+        "content_hash": "006ad46e856f2f747621acacab97ea5f42e272c6d8039378931f861f26a78b31"
       },
       {
-        "item_id": "env_00211-e002",
-        "seq": 2,
+        "item_id": "env_00211-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00211",
           "lines": [
             {
-              "sku": "fortune-edible_oil-mustard-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 16500
+              "unit_price_paise": 7500
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:52:00Z",
+        "emitted_at": "2026-09-03T00:18:00Z",
         "evidence_class": 2,
-        "prev_hash": "fd922b2d3797ecb20d0e0e8ead590f0395e6b455fe4774c0295e868f038fd5b8",
-        "content_hash": "797426af01665254411179cbb83beedddd18cb103242dc33433fd26a2b0ae477"
+        "prev_hash": "006ad46e856f2f747621acacab97ea5f42e272c6d8039378931f861f26a78b31",
+        "content_hash": "83caa27d6d51fd3728df5672e44341fa363b9d54ddcc613cc5170a7841efdb38"
       },
       {
-        "item_id": "env_00211-e003",
-        "seq": 3,
+        "item_id": "env_00211-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00211",
-          "amount_paise": 20237,
+          "amount_paise": 11130,
           "currency": "INR",
           "receipt": "zep_00211"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:38:25Z",
+        "emitted_at": "2026-09-03T00:04:25Z",
         "evidence_class": 3,
-        "prev_hash": "797426af01665254411179cbb83beedddd18cb103242dc33433fd26a2b0ae477",
-        "content_hash": "648d9c44472921e923ea0007dbbb17c55c76579552e97398b46a563f6378c2cd"
+        "prev_hash": "83caa27d6d51fd3728df5672e44341fa363b9d54ddcc613cc5170a7841efdb38",
+        "content_hash": "a763a5c8a5265d7be2922fa74bf7a858d91d1435b0790b727d2347fa8263abc7"
       },
       {
-        "item_id": "env_00211-e004",
-        "seq": 4,
+        "item_id": "env_00211-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00211",
           "order_id": "order_00211",
-          "amount_paise": 20237,
+          "amount_paise": 11130,
           "status": "captured",
           "block_id": "blk_00211",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:38:30Z",
+        "emitted_at": "2026-09-03T00:04:30Z",
         "evidence_class": 3,
-        "prev_hash": "648d9c44472921e923ea0007dbbb17c55c76579552e97398b46a563f6378c2cd",
-        "content_hash": "e9b50b76a0e48ae2af5ba1501d601cdbadbda2920bbc0d2dfb464404d5c06347"
+        "prev_hash": "a763a5c8a5265d7be2922fa74bf7a858d91d1435b0790b727d2347fa8263abc7",
+        "content_hash": "04f5a15a4aecd0d65506edc25a68a1b2cb270656f559f76de3011b9316d2db4b"
       },
       {
-        "item_id": "env_00211-e005",
-        "seq": 5,
+        "item_id": "env_00211-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_439",
-        "emitted_at": "2026-09-03T00:53:00Z",
+        "emitted_by": "agt_897",
+        "emitted_at": "2026-09-03T00:19:00Z",
         "evidence_class": 0,
-        "prev_hash": "e9b50b76a0e48ae2af5ba1501d601cdbadbda2920bbc0d2dfb464404d5c06347",
-        "content_hash": "edc6bef6d2cdcaa11be12b05a2d142a6334519b444ed3ed0493a21b1bc6a0512"
+        "prev_hash": "04f5a15a4aecd0d65506edc25a68a1b2cb270656f559f76de3011b9316d2db4b",
+        "content_hash": "a3a6b4ab36dd89ca500eaea6314ab8a22a69411dacf83fb38fb69916e38a8f58"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-mustard-1000",
-    "ordered_sku": "fortune-edible_oil-mustard-1000",
-    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 3737,
-    "rationale": "Correct item, unreconcilable debit. Debited 20237 paise against an order worth 16500 paise."
+    "loss_paise": 3630,
+    "rationale": "Correct item, unreconcilable debit. Debited 11130 paise against an order worth 7500 paise."
   }
 }

@@ -6,170 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00044",
-    "created_at": "2026-09-02T20:44:00Z",
-    "expires_at": "2026-09-03T02:44:00Z",
-    "user_id": "usr_6403",
-    "agent_id": "agt_521",
+    "created_at": "2026-09-03T03:49:00Z",
+    "expires_at": "2026-09-03T09:49:00Z",
+    "user_id": "usr_8033",
+    "agent_id": "agt_687",
     "block": {
       "block_id": "blk_00044",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T20:44:00Z",
-      "expires_at": "2026-10-11T20:44:00Z"
+      "blocked_at": "2026-08-22T03:49:00Z",
+      "expires_at": "2026-10-25T03:49:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 15179,
-      "max_total_paise": 15179,
+      "category": "flour",
+      "max_unit_price_paise": 8970,
+      "max_total_paise": 8970,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "india_gate",
-      "variant": "basmati",
+      "brand": "aashirvaad",
+      "variant": "whole_wheat",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1kg India Gate basmati rice from Swiggy Instamart, keep it under 151 rupees",
+      "text": "buy 1kg Aashirvaad atta from Swiggy Instamart, keep it under 89 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "b6aeaa910aeacdeb5d6d84c2dfa1094ead056a1e1c682c8de7500d03b2d11ec4",
+    "content_hash": "c4513a57c000bb74a91a1d381b42c0dfc9aa1ef99949d5691c751a7ed8ebde75",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00044",
-    "obligation_hash": "b6aeaa910aeacdeb5d6d84c2dfa1094ead056a1e1c682c8de7500d03b2d11ec4",
+    "obligation_hash": "c4513a57c000bb74a91a1d381b42c0dfc9aa1ef99949d5691c751a7ed8ebde75",
     "items": [
       {
         "item_id": "env_00044-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "india_gate-rice-basmati-1000",
-              "quantity": 1,
-              "unit_price_paise": 13200
-            }
-          ]
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "agt_521",
-        "emitted_at": "2026-09-02T20:44:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0f5cd6b604b8b19e91747db85dcbd90280742cade8ec7a110b7e344c5943ab5c"
+        "content_hash": "05c842dbc283d7a6984373e98ec2c18d54bb5f84116596880666a4e83b558537"
       },
       {
         "item_id": "env_00044-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:04Z",
+        "evidence_class": 2,
+        "prev_hash": "05c842dbc283d7a6984373e98ec2c18d54bb5f84116596880666a4e83b558537",
+        "content_hash": "481824f2f820fb04cff6f1eea84372a9219c7176e6d6f59e9e6bba2d74da81a5"
+      },
+      {
+        "item_id": "env_00044-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:05Z",
+        "evidence_class": 2,
+        "prev_hash": "481824f2f820fb04cff6f1eea84372a9219c7176e6d6f59e9e6bba2d74da81a5",
+        "content_hash": "3ce4a8b476893cb313e55dd8b1037c27ccd565e88e5de90fff4d7bda59c5feeb"
+      },
+      {
+        "item_id": "env_00044-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:06Z",
+        "evidence_class": 2,
+        "prev_hash": "3ce4a8b476893cb313e55dd8b1037c27ccd565e88e5de90fff4d7bda59c5feeb",
+        "content_hash": "0e2d51a85671ef0d8290323cf4a109daceda5820ec4b2d8e034302d1d6dae219"
+      },
+      {
+        "item_id": "env_00044-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "agt_687",
+        "emitted_at": "2026-09-03T03:49:12Z",
+        "evidence_class": 1,
+        "prev_hash": "0e2d51a85671ef0d8290323cf4a109daceda5820ec4b2d8e034302d1d6dae219",
+        "content_hash": "ca17cbbc723b5957a09ca6fa7d10f4bb20fd6da23e8b4463887be41a6e45258b"
+      },
+      {
+        "item_id": "env_00044-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00044",
           "lines": [
             {
-              "sku": "india_gate-rice-basmati-1000",
+              "sku": "aashirvaad-flour-whole_wheat-1000",
               "quantity": 1,
-              "unit_price_paise": 13200
+              "unit_price_paise": 7800
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:44:20Z",
+        "emitted_at": "2026-09-03T03:49:20Z",
         "evidence_class": 2,
-        "prev_hash": "0f5cd6b604b8b19e91747db85dcbd90280742cade8ec7a110b7e344c5943ab5c",
-        "content_hash": "a81696a440cf7791f195d0c494399d0ee3373b92b8bf6e54c2e961a26096a8b8"
-      },
-      {
-        "item_id": "env_00044-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00044",
-          "lines": [
-            {
-              "sku": "india_gate-rice-basmati-1000",
-              "quantity": 1,
-              "unit_price_paise": 13200
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:58:00Z",
-        "evidence_class": 2,
-        "prev_hash": "a81696a440cf7791f195d0c494399d0ee3373b92b8bf6e54c2e961a26096a8b8",
-        "content_hash": "f3c8f0a1c60d6165af41bfa883dbc6d82e09ab009c3135a697a1dd609500cef1"
-      },
-      {
-        "item_id": "env_00044-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00044",
-          "amount_paise": 13200,
-          "currency": "INR",
-          "receipt": "zep_00044"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:44:25Z",
-        "evidence_class": 3,
-        "prev_hash": "f3c8f0a1c60d6165af41bfa883dbc6d82e09ab009c3135a697a1dd609500cef1",
-        "content_hash": "8e8484ffecfa16e60ba477335b3e7310758fba4c17ec2e0ff76659d789719d0f"
-      },
-      {
-        "item_id": "env_00044-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00044",
-          "order_id": "order_00044",
-          "amount_paise": 13200,
-          "status": "captured",
-          "block_id": "blk_00044",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:44:30Z",
-        "evidence_class": 3,
-        "prev_hash": "8e8484ffecfa16e60ba477335b3e7310758fba4c17ec2e0ff76659d789719d0f",
-        "content_hash": "efd278744055ca0e23a7aa6b14b3046c32cfc6c539b583ada5949b25bfbab60e"
-      },
-      {
-        "item_id": "env_00044-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00044b",
-          "order_id": "order_00044",
-          "amount_paise": 13200,
-          "status": "captured",
-          "block_id": "blk_00044",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:44:34Z",
-        "evidence_class": 3,
-        "prev_hash": "efd278744055ca0e23a7aa6b14b3046c32cfc6c539b583ada5949b25bfbab60e",
-        "content_hash": "fe0191e1c7815735fe4587ad71dc50fc4fe11493aab2170ec88a007819c8e569"
+        "prev_hash": "ca17cbbc723b5957a09ca6fa7d10f4bb20fd6da23e8b4463887be41a6e45258b",
+        "content_hash": "342df5a35458b7490d858800e5ca308ff77bd00a3da3a8bf22ac3e92c5b43f67"
       },
       {
         "item_id": "env_00044-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00044",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T04:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "342df5a35458b7490d858800e5ca308ff77bd00a3da3a8bf22ac3e92c5b43f67",
+        "content_hash": "23d0161e4cae7c7493cea579b41323206dd19f46e71231a55773c6dcf631053b"
+      },
+      {
+        "item_id": "env_00044-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00044",
+          "amount_paise": 9921,
+          "currency": "INR",
+          "receipt": "zep_00044"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "23d0161e4cae7c7493cea579b41323206dd19f46e71231a55773c6dcf631053b",
+        "content_hash": "19507a3b1ac3e41191d74bb14ed9b87f891e9cbfb20777e393973b937e79af9e"
+      },
+      {
+        "item_id": "env_00044-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00044",
+          "order_id": "order_00044",
+          "amount_paise": 9921,
+          "status": "captured",
+          "block_id": "blk_00044",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "19507a3b1ac3e41191d74bb14ed9b87f891e9cbfb20777e393973b937e79af9e",
+        "content_hash": "6d221a3f84745a67be3557d94d69b0d9e1b59eef3f7d82056e31f1db1899cb60"
+      },
+      {
+        "item_id": "env_00044-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate basmati rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-basmati-1000",
+          "text": "Ordered 1kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_521",
-        "emitted_at": "2026-09-02T20:59:00Z",
+        "emitted_by": "agt_687",
+        "emitted_at": "2026-09-03T04:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "fe0191e1c7815735fe4587ad71dc50fc4fe11493aab2170ec88a007819c8e569",
-        "content_hash": "f32e37d87db31324a908efa0f89cc32c4a729bc50969c5376285fae7f4f44995"
+        "prev_hash": "6d221a3f84745a67be3557d94d69b0d9e1b59eef3f7d82056e31f1db1899cb60",
+        "content_hash": "12bba02151b43129a158ca063f11239e880755b21db7069e4e4381c1fde30da5"
       }
     ]
   },
@@ -178,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-basmati-1000",
-    "ordered_sku": "india_gate-rice-basmati-1000",
-    "delivered_sku": "india_gate-rice-basmati-1000",
+    "requested_sku": "aashirvaad-flour-whole_wheat-1000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-1000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 13200,
-    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+    "loss_paise": 2121,
+    "rationale": "Correct item, unreconcilable debit. Debited 9921 paise against an order worth 7800 paise."
   }
 }

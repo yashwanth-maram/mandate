@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00359",
-    "created_at": "2026-09-03T02:14:00Z",
-    "expires_at": "2026-09-03T08:14:00Z",
-    "user_id": "usr_8178",
-    "agent_id": "agt_285",
+    "created_at": "2026-09-03T02:18:00Z",
+    "expires_at": "2026-09-03T08:18:00Z",
+    "user_id": "usr_5224",
+    "agent_id": "agt_448",
     "block": {
       "block_id": "blk_00359",
-      "blocked_paise": 69800,
-      "consumed_paise": 52350,
-      "blocked_at": "2026-08-15T02:14:00Z",
-      "expires_at": "2026-10-15T02:14:00Z"
+      "blocked_paise": 58400,
+      "consumed_paise": 43800,
+      "blocked_at": "2026-08-23T02:18:00Z",
+      "expires_at": "2026-10-27T02:18:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 40135,
-      "max_total_paise": 40135,
+      "category": "butter",
+      "max_unit_price_paise": 33580,
+      "max_total_paise": 33580,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "pillsbury",
-      "variant": "whole_wheat",
-      "pack_size_g": 5000
+      "brand": "amul",
+      "variant": "unsalted",
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "I need 5kg Pillsbury atta, use Zepto",
+      "text": "get me 500g Amul unsalted butter from Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "abc292574f1df50bb827644dd4fdb6a11e2cdd7919e9126875f7eafa40c4ac01",
+    "content_hash": "7db4e8dd5fb05729c1620c304a8427102f062c75130dc72d25977f8e0e842858",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00359",
-    "obligation_hash": "abc292574f1df50bb827644dd4fdb6a11e2cdd7919e9126875f7eafa40c4ac01",
+    "obligation_hash": "7db4e8dd5fb05729c1620c304a8427102f062c75130dc72d25977f8e0e842858",
     "items": [
       {
         "item_id": "env_00359-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "pillsbury-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34900
-            }
-          ]
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "agt_285",
-        "emitted_at": "2026-09-03T02:14:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "6fb341c71bdd5c697c1a22b437befd23b9176d28cf552b1c34684c761b252082"
+        "content_hash": "4aa7793c52345e7f4a8cc8fbc00441eb89fb7d78e3f026da30885d16eae7b6ce"
       },
       {
         "item_id": "env_00359-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 29200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:04Z",
+        "evidence_class": 2,
+        "prev_hash": "4aa7793c52345e7f4a8cc8fbc00441eb89fb7d78e3f026da30885d16eae7b6ce",
+        "content_hash": "c8ad3c18513f0830a28cc9061cd9be0e6d9c34fe5de1f14946db0683a31fe3b6"
+      },
+      {
+        "item_id": "env_00359-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:05Z",
+        "evidence_class": 2,
+        "prev_hash": "c8ad3c18513f0830a28cc9061cd9be0e6d9c34fe5de1f14946db0683a31fe3b6",
+        "content_hash": "b60ffdc5c10960a32d85ecb94fbaf490ec8627b0f2cfda5de69f98078f08ae7b"
+      },
+      {
+        "item_id": "env_00359-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 28500
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:06Z",
+        "evidence_class": 2,
+        "prev_hash": "b60ffdc5c10960a32d85ecb94fbaf490ec8627b0f2cfda5de69f98078f08ae7b",
+        "content_hash": "27ffdd3a297550460e27c4c2a24fe830352eac317e853b5a094418edfac69162"
+      },
+      {
+        "item_id": "env_00359-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ]
+        },
+        "emitted_by": "agt_448",
+        "emitted_at": "2026-09-03T02:18:12Z",
+        "evidence_class": 1,
+        "prev_hash": "27ffdd3a297550460e27c4c2a24fe830352eac317e853b5a094418edfac69162",
+        "content_hash": "a5b7abb54331c0f04ac99ae45c6321f990e0d9132cbd88e32f64eabb0eff4bc2"
+      },
+      {
+        "item_id": "env_00359-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00359",
           "lines": [
             {
-              "sku": "pillsbury-flour-whole_wheat-5000",
+              "sku": "amul-butter-unsalted-500",
               "quantity": 1,
-              "unit_price_paise": 34900
+              "unit_price_paise": 29200
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:14:20Z",
+        "emitted_at": "2026-09-03T02:18:20Z",
         "evidence_class": 2,
-        "prev_hash": "6fb341c71bdd5c697c1a22b437befd23b9176d28cf552b1c34684c761b252082",
-        "content_hash": "8b4adac92945e435a70633658da2d0afa5f711ac63733aad0cce0ee59ccdba1c"
+        "prev_hash": "a5b7abb54331c0f04ac99ae45c6321f990e0d9132cbd88e32f64eabb0eff4bc2",
+        "content_hash": "72efcad21ee716d45df98441f1a5ccb23d494bf6c12f8f6e800af435bcbab5dd"
       },
       {
-        "item_id": "env_00359-e002",
-        "seq": 2,
+        "item_id": "env_00359-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00359",
           "lines": [
             {
-              "sku": "pillsbury-flour-whole_wheat-5000",
+              "sku": "amul-butter-unsalted-500",
               "quantity": 1,
-              "unit_price_paise": 34900
+              "unit_price_paise": 29200
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:28:00Z",
+        "emitted_at": "2026-09-03T02:32:00Z",
         "evidence_class": 2,
-        "prev_hash": "8b4adac92945e435a70633658da2d0afa5f711ac63733aad0cce0ee59ccdba1c",
-        "content_hash": "e3cb35ed445fbefca1a3a62831c3857a94ed50235c182bbc21f7faeaaee12e2b"
+        "prev_hash": "72efcad21ee716d45df98441f1a5ccb23d494bf6c12f8f6e800af435bcbab5dd",
+        "content_hash": "a487d5d8a395b5b42fd6c0b04a02f1877e9e410bb4b914cf51fa173a8b5a8a20"
       },
       {
-        "item_id": "env_00359-e003",
-        "seq": 3,
+        "item_id": "env_00359-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00359",
-          "amount_paise": 34900,
+          "amount_paise": 29200,
           "currency": "INR",
           "receipt": "zep_00359"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:14:25Z",
+        "emitted_at": "2026-09-03T02:18:25Z",
         "evidence_class": 3,
-        "prev_hash": "e3cb35ed445fbefca1a3a62831c3857a94ed50235c182bbc21f7faeaaee12e2b",
-        "content_hash": "74643cc0d84fa87b942eb43b0f5cb437ee5465f12dd2364c4e10b9f0040b086b"
+        "prev_hash": "a487d5d8a395b5b42fd6c0b04a02f1877e9e410bb4b914cf51fa173a8b5a8a20",
+        "content_hash": "e0c93be0ba55843ec04b853fe02a41296c9d0b37760908680a020d6392043ac0"
       },
       {
-        "item_id": "env_00359-e004",
-        "seq": 4,
+        "item_id": "env_00359-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00359",
           "order_id": "order_00359",
-          "amount_paise": 34900,
+          "amount_paise": 29200,
           "status": "captured",
           "block_id": "blk_00359",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:14:30Z",
+        "emitted_at": "2026-09-03T02:18:30Z",
         "evidence_class": 3,
-        "prev_hash": "74643cc0d84fa87b942eb43b0f5cb437ee5465f12dd2364c4e10b9f0040b086b",
-        "content_hash": "f479abc55c9c0638b45d298854a63707c807eb6321479c8bde6e927f977a1fca"
+        "prev_hash": "e0c93be0ba55843ec04b853fe02a41296c9d0b37760908680a020d6392043ac0",
+        "content_hash": "1a051a3a741f9fcc61ac1cfce59be217cd721a6e83dd4a830fc03a33c380c268"
       },
       {
-        "item_id": "env_00359-e005",
-        "seq": 5,
+        "item_id": "env_00359-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Pillsbury atta. Payment complete.",
-          "claimed_sku": "pillsbury-flour-whole_wheat-5000",
+          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
+          "claimed_sku": "amul-butter-unsalted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_285",
-        "emitted_at": "2026-09-03T02:29:00Z",
+        "emitted_by": "agt_448",
+        "emitted_at": "2026-09-03T02:33:00Z",
         "evidence_class": 0,
-        "prev_hash": "f479abc55c9c0638b45d298854a63707c807eb6321479c8bde6e927f977a1fca",
-        "content_hash": "5e55b2d3a2f0ac899908b2cf64e4b103a2bd63d6390e5eb937d80d74b061a1de"
+        "prev_hash": "1a051a3a741f9fcc61ac1cfce59be217cd721a6e83dd4a830fc03a33c380c268",
+        "content_hash": "f6f6ff0da2298363b185d75ca93867cdda6937dda440871fd4b29e631bd795c3"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "pillsbury-flour-whole_wheat-5000",
-    "ordered_sku": "pillsbury-flour-whole_wheat-5000",
-    "delivered_sku": "pillsbury-flour-whole_wheat-5000",
+    "requested_sku": "amul-butter-unsalted-500",
+    "ordered_sku": "amul-butter-unsalted-500",
+    "delivered_sku": "amul-butter-unsalted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 17450,
-    "rationale": "Item was correct; the mandate was not honoured. Debit of 34900 paise exceeds the 17450 paise remaining on block blk_00359."
+    "loss_paise": 14600,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 29200 paise exceeds the 14600 paise remaining on block blk_00359."
   }
 }

@@ -6,170 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00172",
-    "created_at": "2026-09-03T02:56:00Z",
-    "expires_at": "2026-09-03T08:56:00Z",
-    "user_id": "usr_9092",
-    "agent_id": "agt_237",
+    "created_at": "2026-09-02T20:43:00Z",
+    "expires_at": "2026-09-03T02:43:00Z",
+    "user_id": "usr_2699",
+    "agent_id": "agt_526",
     "block": {
       "block_id": "blk_00172",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T02:56:00Z",
-      "expires_at": "2026-10-17T02:56:00Z"
+      "blocked_at": "2026-08-15T20:43:00Z",
+      "expires_at": "2026-10-17T20:43:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 21735,
-      "max_total_paise": 21735,
+      "category": "flour",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "groundnut",
+      "brand": "aashirvaad",
+      "variant": "gram",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1L Fortune groundnut oil, use Swiggy Instamart",
+      "text": "buy 1kg Aashirvaad besan from Blinkit, keep it under 110 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "c1ec8a22631f21b10ceea6765a86f6d82248594f2fa47170dcd49471961d99f9",
+    "content_hash": "f4860cf90ae0bebc8ed745b14a30ee9c12931c408fcf1f1b32eb9e698c9ce771",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00172",
-    "obligation_hash": "c1ec8a22631f21b10ceea6765a86f6d82248594f2fa47170dcd49471961d99f9",
+    "obligation_hash": "f4860cf90ae0bebc8ed745b14a30ee9c12931c408fcf1f1b32eb9e698c9ce771",
     "items": [
       {
         "item_id": "env_00172-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "agt_237",
-        "emitted_at": "2026-09-03T02:56:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:43:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "b23f7f10f5d2df5cf22146b2819d1a7887b2b49ad6c572f656b468a7865b67c5"
+        "content_hash": "6a52f69cc8c36980aa3e94ade5243cdbd4f8d689b3abfe9428b3141065d7cc80"
       },
       {
         "item_id": "env_00172-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00172",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:56:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:43:04Z",
         "evidence_class": 2,
-        "prev_hash": "b23f7f10f5d2df5cf22146b2819d1a7887b2b49ad6c572f656b468a7865b67c5",
-        "content_hash": "3c206298bbafc358bd71781d33cb31840748f5b3ad18f9aa1f3a3def06bbbebc"
+        "prev_hash": "6a52f69cc8c36980aa3e94ade5243cdbd4f8d689b3abfe9428b3141065d7cc80",
+        "content_hash": "a098f0d4841104bee4d126586ebc7f84b80441044294b92cb44631751d5e51b5"
       },
       {
         "item_id": "env_00172-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00172",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:10:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:43:05Z",
         "evidence_class": 2,
-        "prev_hash": "3c206298bbafc358bd71781d33cb31840748f5b3ad18f9aa1f3a3def06bbbebc",
-        "content_hash": "2784c024c5da17422142cb7bc09966edc0726308286813621472367b0b6ce16e"
+        "prev_hash": "a098f0d4841104bee4d126586ebc7f84b80441044294b92cb44631751d5e51b5",
+        "content_hash": "08ca3bad31447a254e0f15c34198a0114e8d61b2f48660b0065b603a8baf4710"
       },
       {
         "item_id": "env_00172-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00172",
-          "amount_paise": 18900,
-          "currency": "INR",
-          "receipt": "zep_00172"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 9200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:56:25Z",
-        "evidence_class": 3,
-        "prev_hash": "2784c024c5da17422142cb7bc09966edc0726308286813621472367b0b6ce16e",
-        "content_hash": "85e17ab1c2a9590aad569130d9a1c25e98ae53cfb988e6ebf153633c961a0fe7"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:43:06Z",
+        "evidence_class": 2,
+        "prev_hash": "08ca3bad31447a254e0f15c34198a0114e8d61b2f48660b0065b603a8baf4710",
+        "content_hash": "2b8bab9efb37fd554b4d567a73dc054b9d1ef0c332549b2bac8c40125d8ee0b9"
       },
       {
         "item_id": "env_00172-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00172",
-          "order_id": "order_00172",
-          "amount_paise": 18900,
-          "status": "captured",
-          "block_id": "blk_00172",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:56:30Z",
-        "evidence_class": 3,
-        "prev_hash": "85e17ab1c2a9590aad569130d9a1c25e98ae53cfb988e6ebf153633c961a0fe7",
-        "content_hash": "a5e7b19c55793b8b9d86a10486368529a29f11f277eb3f07656851830ff60b21"
+        "emitted_by": "agt_526",
+        "emitted_at": "2026-09-02T20:43:12Z",
+        "evidence_class": 1,
+        "prev_hash": "2b8bab9efb37fd554b4d567a73dc054b9d1ef0c332549b2bac8c40125d8ee0b9",
+        "content_hash": "9e061de1a20431fe76bf8b287ec9f5edc1f006e81037d6cab3553041624135e8"
       },
       {
         "item_id": "env_00172-e005",
         "seq": 5,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00172b",
-          "order_id": "order_00172",
-          "amount_paise": 18900,
-          "status": "captured",
-          "block_id": "blk_00172",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00172",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:56:34Z",
-        "evidence_class": 3,
-        "prev_hash": "a5e7b19c55793b8b9d86a10486368529a29f11f277eb3f07656851830ff60b21",
-        "content_hash": "d4e0cf4944b01853c6e86eac4f30983223282517d230dab7d8c11fbd5788ef62"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:43:20Z",
+        "evidence_class": 2,
+        "prev_hash": "9e061de1a20431fe76bf8b287ec9f5edc1f006e81037d6cab3553041624135e8",
+        "content_hash": "c381199f7e67fc2b20be2cdd4e31c8ce1100f17c3bf2ca8403b085859762532c"
       },
       {
         "item_id": "env_00172-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00172",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:57:00Z",
+        "evidence_class": 2,
+        "prev_hash": "c381199f7e67fc2b20be2cdd4e31c8ce1100f17c3bf2ca8403b085859762532c",
+        "content_hash": "21ab0082ae67b3dc84af5c4ea2d4a98786efdd65735213f3981a9ce55f465877"
+      },
+      {
+        "item_id": "env_00172-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00172",
+          "amount_paise": 12985,
+          "currency": "INR",
+          "receipt": "zep_00172"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:43:25Z",
+        "evidence_class": 3,
+        "prev_hash": "21ab0082ae67b3dc84af5c4ea2d4a98786efdd65735213f3981a9ce55f465877",
+        "content_hash": "e4647e9a03d0729762a8a0b81eda1ecabac78ffb36f6242b1683902b8ce4b4c3"
+      },
+      {
+        "item_id": "env_00172-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00172",
+          "order_id": "order_00172",
+          "amount_paise": 12985,
+          "status": "captured",
+          "block_id": "blk_00172",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T20:43:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e4647e9a03d0729762a8a0b81eda1ecabac78ffb36f6242b1683902b8ce4b4c3",
+        "content_hash": "212ec58b6b322752e2a58dccb34e55df603a53125aaff39e7429d2999fbeb85e"
+      },
+      {
+        "item_id": "env_00172-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-groundnut-1000",
+          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_237",
-        "emitted_at": "2026-09-03T03:11:00Z",
+        "emitted_by": "agt_526",
+        "emitted_at": "2026-09-02T20:58:00Z",
         "evidence_class": 0,
-        "prev_hash": "d4e0cf4944b01853c6e86eac4f30983223282517d230dab7d8c11fbd5788ef62",
-        "content_hash": "b97d30ad7dbefeace66b29b32401f96938d3e1e29b8f70344a0dcc76ccd30aeb"
+        "prev_hash": "212ec58b6b322752e2a58dccb34e55df603a53125aaff39e7429d2999fbeb85e",
+        "content_hash": "d0a62fbeb5ecf3f3734af5c39cd65f0d9a8e061dd5277eda38d69f395908e266"
       }
     ]
   },
@@ -178,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-groundnut-1000",
-    "ordered_sku": "fortune-edible_oil-groundnut-1000",
-    "delivered_sku": "fortune-edible_oil-groundnut-1000",
+    "requested_sku": "aashirvaad-flour-gram-1000",
+    "ordered_sku": "aashirvaad-flour-gram-1000",
+    "delivered_sku": "aashirvaad-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 18900,
-    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+    "loss_paise": 3385,
+    "rationale": "Correct item, unreconcilable debit. Debited 12985 paise against an order worth 9600 paise."
   }
 }

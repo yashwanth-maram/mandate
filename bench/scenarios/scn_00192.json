@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00192",
-    "created_at": "2026-09-02T20:32:00Z",
-    "expires_at": "2026-09-03T02:32:00Z",
-    "user_id": "usr_5913",
-    "agent_id": "agt_485",
+    "created_at": "2026-09-03T02:18:00Z",
+    "expires_at": "2026-09-03T08:18:00Z",
+    "user_id": "usr_6420",
+    "agent_id": "agt_465",
     "block": {
       "block_id": "blk_00192",
-      "blocked_paise": 50000,
-      "consumed_paise": 0,
-      "blocked_at": "2026-08-28T20:32:00Z",
-      "expires_at": "2026-10-26T20:32:00Z"
+      "blocked_paise": 20000,
+      "consumed_paise": 17150,
+      "blocked_at": "2026-08-30T02:18:00Z",
+      "expires_at": "2026-10-24T02:18:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 4830,
-      "max_total_paise": 4830,
+      "category": "milk",
+      "max_unit_price_paise": 6554,
+      "max_total_paise": 6554,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
-      "brand": "harvest",
-      "variant": "white",
-      "pack_size_g": 400
+      "brand": "mother_dairy",
+      "variant": "double_toned",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 400g Harvest white bread from Swiggy Instamart, keep it under 48 rupees",
+      "text": "order 1L Mother Dairy double toned milk on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "29097eccbf6b4f470e1abedf3822ecbad4368602de0864f8871b0afba2274e9f",
+    "content_hash": "0b6a1c70a2dd04560b1a12dcaf2c2c70ce8c5759fd7b38116aa9dc85e3ae7c58",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00192",
-    "obligation_hash": "29097eccbf6b4f470e1abedf3822ecbad4368602de0864f8871b0afba2274e9f",
+    "obligation_hash": "0b6a1c70a2dd04560b1a12dcaf2c2c70ce8c5759fd7b38116aa9dc85e3ae7c58",
     "items": [
       {
         "item_id": "env_00192-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "harvest-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "agt_485",
-        "emitted_at": "2026-09-02T20:32:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "3762e32f99b2beef8aa083ef02a47da14f931eb2730dc736a175a7541e9c2ac7"
+        "content_hash": "bbe11c154b550bf43d907efdccf036bababd5033b4b0b3772f7b88e201d3bcc8"
       },
       {
         "item_id": "env_00192-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00192",
-          "lines": [
-            {
-              "sku": "harvest-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-milk-double_toned-1000",
+          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
+          "description": "Amul Slim n Trim Double Toned Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5900
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:32:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:04Z",
         "evidence_class": 2,
-        "prev_hash": "3762e32f99b2beef8aa083ef02a47da14f931eb2730dc736a175a7541e9c2ac7",
-        "content_hash": "45cb7f9a9d84ec873122c1f3b036ca7542eac278b034586211a46ae4a543541d"
+        "prev_hash": "bbe11c154b550bf43d907efdccf036bababd5033b4b0b3772f7b88e201d3bcc8",
+        "content_hash": "bd28fa284f2892267637e6ccfd2cd8c312e8e8a193d3b8a4d3468f329ab47d97"
       },
       {
         "item_id": "env_00192-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00192",
-          "lines": [
-            {
-              "sku": "harvest-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 7500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T20:46:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:05Z",
         "evidence_class": 2,
-        "prev_hash": "45cb7f9a9d84ec873122c1f3b036ca7542eac278b034586211a46ae4a543541d",
-        "content_hash": "12798ca35123bc4fd3234526d82c8400f202b97482fa9d33f76695d3ee041f79"
+        "prev_hash": "bd28fa284f2892267637e6ccfd2cd8c312e8e8a193d3b8a4d3468f329ab47d97",
+        "content_hash": "c37b8bd14155dc4b50123acce999bcbf25bb051479b0101ce9bb450161c488f0"
       },
       {
         "item_id": "env_00192-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00192",
-          "amount_paise": 4200,
-          "currency": "INR",
-          "receipt": "zep_00192"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6400
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:32:25Z",
-        "evidence_class": 3,
-        "prev_hash": "12798ca35123bc4fd3234526d82c8400f202b97482fa9d33f76695d3ee041f79",
-        "content_hash": "9b2a5bdbae8cbd2b89a8cd14095a663a00fcce1e1fca578b50fa7ec3f1bd84e7"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:06Z",
+        "evidence_class": 2,
+        "prev_hash": "c37b8bd14155dc4b50123acce999bcbf25bb051479b0101ce9bb450161c488f0",
+        "content_hash": "0c6cf0298346d706e4a1e578e913e7fb67d7f3da1b42add818e74995815682a8"
       },
       {
         "item_id": "env_00192-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00192",
-          "order_id": "order_00192",
-          "amount_paise": 4200,
-          "status": "captured",
-          "block_id": "blk_00192",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:02:00Z",
-        "evidence_class": 3,
-        "prev_hash": "9b2a5bdbae8cbd2b89a8cd14095a663a00fcce1e1fca578b50fa7ec3f1bd84e7",
-        "content_hash": "6b4f149273c7dff66ff67a7fd32403702105faff36f960bd498464085c5010f9"
+        "emitted_by": "agt_465",
+        "emitted_at": "2026-09-03T02:18:12Z",
+        "evidence_class": 1,
+        "prev_hash": "0c6cf0298346d706e4a1e578e913e7fb67d7f3da1b42add818e74995815682a8",
+        "content_hash": "134b98be0e5389066e0153783b796d97bde1634b7f8f9193ede8d109ad9a7714"
       },
       {
         "item_id": "env_00192-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00192",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:18:20Z",
+        "evidence_class": 2,
+        "prev_hash": "134b98be0e5389066e0153783b796d97bde1634b7f8f9193ede8d109ad9a7714",
+        "content_hash": "4c7915d1040645c3bec72031e3e0457835db0afa7163c43bdb10a2c0a3e74095"
+      },
+      {
+        "item_id": "env_00192-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00192",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-double_toned-1000",
+              "quantity": 1,
+              "unit_price_paise": 5700
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:32:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4c7915d1040645c3bec72031e3e0457835db0afa7163c43bdb10a2c0a3e74095",
+        "content_hash": "bee58a1067d7c8dd61ffa18826f7e64ee262d94af8dcd43b13a62e522a436f8e"
+      },
+      {
+        "item_id": "env_00192-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00192",
+          "amount_paise": 5700,
+          "currency": "INR",
+          "receipt": "zep_00192"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:18:25Z",
+        "evidence_class": 3,
+        "prev_hash": "bee58a1067d7c8dd61ffa18826f7e64ee262d94af8dcd43b13a62e522a436f8e",
+        "content_hash": "24097a0192bc787d4bed5e15c3ed48f45387d5cfdd86ca71d32c26cb3601a132"
+      },
+      {
+        "item_id": "env_00192-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00192",
+          "order_id": "order_00192",
+          "amount_paise": 5700,
+          "status": "captured",
+          "block_id": "blk_00192",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:18:30Z",
+        "evidence_class": 3,
+        "prev_hash": "24097a0192bc787d4bed5e15c3ed48f45387d5cfdd86ca71d32c26cb3601a132",
+        "content_hash": "8652ee364d144106b244fb907614370a8776ddb2bc8b0b2378c2c1787029ef52"
+      },
+      {
+        "item_id": "env_00192-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Harvest white bread. Payment complete.",
-          "claimed_sku": "harvest-bread-white-400",
+          "text": "Ordered 1L Mother Dairy double toned milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-double_toned-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_485",
-        "emitted_at": "2026-09-02T20:47:00Z",
+        "emitted_by": "agt_465",
+        "emitted_at": "2026-09-03T02:33:00Z",
         "evidence_class": 0,
-        "prev_hash": "6b4f149273c7dff66ff67a7fd32403702105faff36f960bd498464085c5010f9",
-        "content_hash": "f7a03a6dc6f5cbbf4fd64a9d4111dbf6f13174765e76a9cacb49a03dc4967cd7"
+        "prev_hash": "8652ee364d144106b244fb907614370a8776ddb2bc8b0b2378c2c1787029ef52",
+        "content_hash": "5ba5855a17c3b96b0aa4137b45517dca9deb2438322273134ded4e910beb95da"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "harvest-bread-white-400",
-    "ordered_sku": "harvest-bread-white-400",
-    "delivered_sku": "harvest-bread-white-400",
+    "requested_sku": "mother_dairy-milk-double_toned-1000",
+    "ordered_sku": "mother_dairy-milk-double_toned-1000",
+    "delivered_sku": "mother_dairy-milk-double_toned-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 4200,
-    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+    "loss_paise": 2850,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 5700 paise exceeds the 2850 paise remaining on block blk_00192."
   }
 }

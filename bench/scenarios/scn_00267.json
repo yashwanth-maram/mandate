@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00267",
-    "created_at": "2026-09-03T02:28:00Z",
-    "expires_at": "2026-09-03T08:28:00Z",
-    "user_id": "usr_6680",
-    "agent_id": "agt_635",
+    "created_at": "2026-09-03T01:46:00Z",
+    "expires_at": "2026-09-03T07:46:00Z",
+    "user_id": "usr_6085",
+    "agent_id": "agt_800",
     "block": {
       "block_id": "blk_00267",
-      "blocked_paise": 50000,
+      "blocked_paise": 120405,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T02:28:00Z",
-      "expires_at": "2026-10-28T02:28:00Z"
+      "blocked_at": "2026-08-14T01:46:00Z",
+      "expires_at": "2026-10-25T01:46:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3449,
-      "max_total_paise": 3449,
+      "category": "flour",
+      "max_unit_price_paise": 40135,
+      "max_total_paise": 40135,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "aashirvaad",
-      "variant": "iodised",
-      "pack_size_g": 1000
+      "brand": "pillsbury",
+      "variant": "whole_wheat",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "I need 1kg Aashirvaad iodised salt, use Zepto",
+      "text": "buy 5kg Pillsbury atta from Zepto, keep it under 401 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "6b9afb56d4f5c0ac98503e5aaac6c7d8d1ddc06b0dcbc952aac0b07d67494ffb",
+    "content_hash": "ec0eac335827dd6c126624914090457c2cefc55b8398a52bc837909bb3512d19",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00267",
-    "obligation_hash": "6b9afb56d4f5c0ac98503e5aaac6c7d8d1ddc06b0dcbc952aac0b07d67494ffb",
+    "obligation_hash": "ec0eac335827dd6c126624914090457c2cefc55b8398a52bc837909bb3512d19",
     "items": [
       {
         "item_id": "env_00267-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "aashirvaad-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 3000
-            }
-          ]
+          "sku": "pillsbury-flour-whole_wheat-5000",
+          "display_name": "Pillsbury Chakki Fresh Atta 5kg",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 34900
         },
-        "emitted_by": "agt_635",
-        "emitted_at": "2026-09-03T02:28:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:46:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8d217515825caba99ee3b02cd2970e09addfab33d437f080c51590e4bfc64890"
+        "content_hash": "e85e89758327f53c82f6d21de951625b554ab90e02708854b4107b569b9670dd"
       },
       {
         "item_id": "env_00267-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:46:04Z",
+        "evidence_class": 2,
+        "prev_hash": "e85e89758327f53c82f6d21de951625b554ab90e02708854b4107b569b9670dd",
+        "content_hash": "68e10432682e1b85fafc2333045ef8c71d39a93a0d46f26d63be54c2a30c798b"
+      },
+      {
+        "item_id": "env_00267-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 6800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:46:05Z",
+        "evidence_class": 2,
+        "prev_hash": "68e10432682e1b85fafc2333045ef8c71d39a93a0d46f26d63be54c2a30c798b",
+        "content_hash": "20ee5a51a5378d2ba08f8b03308a3a5b04412029376961adf8e39ea1940e98c6"
+      },
+      {
+        "item_id": "env_00267-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 35500
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T01:46:06Z",
+        "evidence_class": 2,
+        "prev_hash": "20ee5a51a5378d2ba08f8b03308a3a5b04412029376961adf8e39ea1940e98c6",
+        "content_hash": "4f62b491c56b49027ad91b80f96b5e0c94b3f137af6bae2cfe44d24d2f2b071c"
+      },
+      {
+        "item_id": "env_00267-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "pillsbury-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34900
+            }
+          ]
+        },
+        "emitted_by": "agt_800",
+        "emitted_at": "2026-09-03T01:46:12Z",
+        "evidence_class": 1,
+        "prev_hash": "4f62b491c56b49027ad91b80f96b5e0c94b3f137af6bae2cfe44d24d2f2b071c",
+        "content_hash": "53b63eef6806d41ad98734e3d93192cb4471fa8f962c887cf61cf8ac1311aa8f"
+      },
+      {
+        "item_id": "env_00267-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00267",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "pillsbury-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 34900
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:28:20Z",
+        "emitted_at": "2026-09-03T01:46:20Z",
         "evidence_class": 2,
-        "prev_hash": "8d217515825caba99ee3b02cd2970e09addfab33d437f080c51590e4bfc64890",
-        "content_hash": "b34556a466b57e4660cf512d5a5bffad23582ea4440154237ba6c6ca6dd45305"
+        "prev_hash": "53b63eef6806d41ad98734e3d93192cb4471fa8f962c887cf61cf8ac1311aa8f",
+        "content_hash": "a22aade64e6b9c4673792be30e96bd3e13c9efe7651287161b9a3b54c339abf3"
       },
       {
-        "item_id": "env_00267-e002",
-        "seq": 2,
+        "item_id": "env_00267-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00267",
           "lines": [
             {
-              "sku": "tata-salt-iodised-1000",
+              "sku": "fortune-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 2800
+              "unit_price_paise": 34000
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:42:00Z",
+        "emitted_at": "2026-09-03T02:00:00Z",
         "evidence_class": 2,
-        "prev_hash": "b34556a466b57e4660cf512d5a5bffad23582ea4440154237ba6c6ca6dd45305",
-        "content_hash": "68d7d0b07b8195445285e1a6201c28edd11337df31edd540e1d1eba847bf5df0"
+        "prev_hash": "a22aade64e6b9c4673792be30e96bd3e13c9efe7651287161b9a3b54c339abf3",
+        "content_hash": "64da42355f8d3ace1212dd3f69c6ddb8c4ee07e7e4537a92d5ce320b0007d1d5"
       },
       {
-        "item_id": "env_00267-e003",
-        "seq": 3,
+        "item_id": "env_00267-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00267",
-          "amount_paise": 3000,
+          "amount_paise": 34900,
           "currency": "INR",
           "receipt": "zep_00267"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:28:25Z",
+        "emitted_at": "2026-09-03T01:46:25Z",
         "evidence_class": 3,
-        "prev_hash": "68d7d0b07b8195445285e1a6201c28edd11337df31edd540e1d1eba847bf5df0",
-        "content_hash": "613251c19cb4eb809984f019cd016ee1c3c36831d7f629f5b06840e9ecd26c06"
+        "prev_hash": "64da42355f8d3ace1212dd3f69c6ddb8c4ee07e7e4537a92d5ce320b0007d1d5",
+        "content_hash": "0ae236504f91e8763153c03bf4cef1e0a3d9956357c72c1e797cfbcc6a65c832"
       },
       {
-        "item_id": "env_00267-e004",
-        "seq": 4,
+        "item_id": "env_00267-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00267",
           "order_id": "order_00267",
-          "amount_paise": 3000,
+          "amount_paise": 34900,
           "status": "captured",
           "block_id": "blk_00267",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:28:30Z",
+        "emitted_at": "2026-09-03T01:46:30Z",
         "evidence_class": 3,
-        "prev_hash": "613251c19cb4eb809984f019cd016ee1c3c36831d7f629f5b06840e9ecd26c06",
-        "content_hash": "84e057efb767a5227f963a5e78732899696946a53bd148525f16793c2fb8f8b1"
+        "prev_hash": "0ae236504f91e8763153c03bf4cef1e0a3d9956357c72c1e797cfbcc6a65c832",
+        "content_hash": "54dce6fa9fff0185b9118e2e0bd095aa30e2587b8b0c7dda6ce9f844082c3fc7"
       },
       {
-        "item_id": "env_00267-e005",
-        "seq": 5,
+        "item_id": "env_00267-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
-          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "text": "Ordered 5kg Pillsbury atta. Payment complete.",
+          "claimed_sku": "pillsbury-flour-whole_wheat-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_635",
-        "emitted_at": "2026-09-03T02:43:00Z",
+        "emitted_by": "agt_800",
+        "emitted_at": "2026-09-03T02:01:00Z",
         "evidence_class": 0,
-        "prev_hash": "84e057efb767a5227f963a5e78732899696946a53bd148525f16793c2fb8f8b1",
-        "content_hash": "e6885126b463fc17f940dfa791fefe4b1d757f32150a62419e25d92852694bd1"
+        "prev_hash": "54dce6fa9fff0185b9118e2e0bd095aa30e2587b8b0c7dda6ce9f844082c3fc7",
+        "content_hash": "ffb145efa43386e8ab8d222791c751a8c3c3462511bc0b05bd0860c7fa3e02f7"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-salt-iodised-1000",
-    "ordered_sku": "aashirvaad-salt-iodised-1000",
-    "delivered_sku": "tata-salt-iodised-1000",
+    "requested_sku": "pillsbury-flour-whole_wheat-5000",
+    "ordered_sku": "pillsbury-flour-whole_wheat-5000",
+    "delivered_sku": "fortune-flour-whole_wheat-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 3000,
-    "rationale": "Order names aashirvaad; fulfilment shipped tata. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 34900,
+    "rationale": "Order names pillsbury; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

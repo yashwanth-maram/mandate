@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00470",
-    "created_at": "2026-09-03T01:54:00Z",
-    "expires_at": "2026-09-03T07:54:00Z",
-    "user_id": "usr_1519",
-    "agent_id": "agt_438",
+    "created_at": "2026-09-03T00:01:00Z",
+    "expires_at": "2026-09-03T06:01:00Z",
+    "user_id": "usr_6231",
+    "agent_id": "agt_606",
     "block": {
       "block_id": "blk_00470",
-      "blocked_paise": 50000,
+      "blocked_paise": 132825,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T01:54:00Z",
-      "expires_at": "2026-10-29T01:54:00Z"
+      "blocked_at": "2026-08-21T00:01:00Z",
+      "expires_at": "2026-10-18T00:01:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "flour",
+      "max_unit_price_paise": 44275,
+      "max_total_paise": 44275,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "britannia",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "fortune",
+      "variant": "multigrain",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "order 400g Britannia brown bread on Swiggy Instamart",
+      "text": "buy 5kg Fortune multigrain atta from Swiggy Instamart, keep it under 442 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "0d6ae549c9f94f38a1cbf16232c1dea41cfe17bb58e74e32b7af81ff50209a8d",
+    "content_hash": "84f1e109e0e3c8cfcc8ad4b686d4a81aed6230834d0a13566bef2fc449a377eb",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00470",
-    "obligation_hash": "0d6ae549c9f94f38a1cbf16232c1dea41cfe17bb58e74e32b7af81ff50209a8d",
+    "obligation_hash": "84f1e109e0e3c8cfcc8ad4b686d4a81aed6230834d0a13566bef2fc449a377eb",
     "items": [
       {
         "item_id": "env_00470-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 35500
         },
-        "emitted_by": "agt_438",
-        "emitted_at": "2026-09-03T01:54:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:01:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "c9557e1152de8149d8861f476f6216e6347b4444e541dff7a969289accd5b10a"
+        "content_hash": "4c3489f292ed74c5e54df9b8832a54c97b600f20a0ead1fc9c8ef02d10a74b8d"
       },
       {
         "item_id": "env_00470-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 38500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:01:04Z",
+        "evidence_class": 2,
+        "prev_hash": "4c3489f292ed74c5e54df9b8832a54c97b600f20a0ead1fc9c8ef02d10a74b8d",
+        "content_hash": "0cb9eb731bd4ae0bff7e5550d7571192003b42a7a0d20aa226a56a3054dca77e"
+      },
+      {
+        "item_id": "env_00470-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:01:05Z",
+        "evidence_class": 2,
+        "prev_hash": "0cb9eb731bd4ae0bff7e5550d7571192003b42a7a0d20aa226a56a3054dca77e",
+        "content_hash": "200c4032061540ebdd5bdfb138de3a9239c90932882d150fc216f6df5031f47d"
+      },
+      {
+        "item_id": "env_00470-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 39800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:01:06Z",
+        "evidence_class": 2,
+        "prev_hash": "200c4032061540ebdd5bdfb138de3a9239c90932882d150fc216f6df5031f47d",
+        "content_hash": "c35848a274df8295d5f28ff8d14712c7a9fc2ad2cf5cd3ca17b9a9a22185b2df"
+      },
+      {
+        "item_id": "env_00470-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
+        },
+        "emitted_by": "agt_606",
+        "emitted_at": "2026-09-03T00:01:12Z",
+        "evidence_class": 1,
+        "prev_hash": "c35848a274df8295d5f28ff8d14712c7a9fc2ad2cf5cd3ca17b9a9a22185b2df",
+        "content_hash": "6e6175aff5c9e647e119e498744ab3e894accfb13ca0bf93e9bab326f92c2d86"
+      },
+      {
+        "item_id": "env_00470-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00470",
           "lines": [
             {
-              "sku": "britannia-bread-brown-400",
+              "sku": "fortune-flour-multigrain-5000",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 38500
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:54:20Z",
+        "emitted_at": "2026-09-03T00:01:20Z",
         "evidence_class": 2,
-        "prev_hash": "c9557e1152de8149d8861f476f6216e6347b4444e541dff7a969289accd5b10a",
-        "content_hash": "108df9a973d7aa09b41306c0040b00b24e41f6c593a920b3c9c6f24d75365a01"
+        "prev_hash": "6e6175aff5c9e647e119e498744ab3e894accfb13ca0bf93e9bab326f92c2d86",
+        "content_hash": "7149941ac0cb4726d8eb34a19ace43bb3a111204301cf56a7bf9a4e2413c6e5e"
       },
       {
-        "item_id": "env_00470-e002",
-        "seq": 2,
+        "item_id": "env_00470-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00470",
           "lines": [
             {
-              "sku": "harvest-bread-brown-400",
+              "sku": "aashirvaad-flour-multigrain-5000",
               "quantity": 1,
-              "unit_price_paise": 5000
+              "unit_price_paise": 39800
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:08:00Z",
+        "emitted_at": "2026-09-03T00:15:00Z",
         "evidence_class": 2,
-        "prev_hash": "108df9a973d7aa09b41306c0040b00b24e41f6c593a920b3c9c6f24d75365a01",
-        "content_hash": "b3fb81c96ff6b6660ef47dd5266fec12e360b700946d4c3b1ce129e4653d39fd"
+        "prev_hash": "7149941ac0cb4726d8eb34a19ace43bb3a111204301cf56a7bf9a4e2413c6e5e",
+        "content_hash": "658cc6cf81ca7240c2a9e289d4d90b641712169b0ab70349a0f4f706b93f8616"
       },
       {
-        "item_id": "env_00470-e003",
-        "seq": 3,
+        "item_id": "env_00470-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00470",
-          "amount_paise": 5200,
+          "amount_paise": 38500,
           "currency": "INR",
           "receipt": "zep_00470"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:54:25Z",
+        "emitted_at": "2026-09-03T00:01:25Z",
         "evidence_class": 3,
-        "prev_hash": "b3fb81c96ff6b6660ef47dd5266fec12e360b700946d4c3b1ce129e4653d39fd",
-        "content_hash": "e0ab0cacb648686de16652be54c196c9fc1c6179f66547186017b709f82df34c"
+        "prev_hash": "658cc6cf81ca7240c2a9e289d4d90b641712169b0ab70349a0f4f706b93f8616",
+        "content_hash": "69f0e4a4de137e1febabd7fc1384eaad02742a8c18b9ec932e968bdf1928e15c"
       },
       {
-        "item_id": "env_00470-e004",
-        "seq": 4,
+        "item_id": "env_00470-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00470",
           "order_id": "order_00470",
-          "amount_paise": 5200,
+          "amount_paise": 38500,
           "status": "captured",
           "block_id": "blk_00470",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:54:30Z",
+        "emitted_at": "2026-09-03T00:01:30Z",
         "evidence_class": 3,
-        "prev_hash": "e0ab0cacb648686de16652be54c196c9fc1c6179f66547186017b709f82df34c",
-        "content_hash": "0a3a380aa600f9d737ebe9a9fed6e0abe3da728f270ad835f5e3b73bd18688e3"
+        "prev_hash": "69f0e4a4de137e1febabd7fc1384eaad02742a8c18b9ec932e968bdf1928e15c",
+        "content_hash": "8de2b568a3e0256fd5494adaea8ae59b66cc60d08841416f6a0d92d35bf83dc7"
       },
       {
-        "item_id": "env_00470-e005",
-        "seq": 5,
+        "item_id": "env_00470-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 5kg Fortune multigrain atta. Payment complete.",
+          "claimed_sku": "fortune-flour-multigrain-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_438",
-        "emitted_at": "2026-09-03T02:09:00Z",
+        "emitted_by": "agt_606",
+        "emitted_at": "2026-09-03T00:16:00Z",
         "evidence_class": 0,
-        "prev_hash": "0a3a380aa600f9d737ebe9a9fed6e0abe3da728f270ad835f5e3b73bd18688e3",
-        "content_hash": "08763875d14b6d29017455dc7c01324cc08360bc35e51e5972c9e1e51fbf83a1"
+        "prev_hash": "8de2b568a3e0256fd5494adaea8ae59b66cc60d08841416f6a0d92d35bf83dc7",
+        "content_hash": "a64bf98e9092166ba83cb801d334c56ff90fbfccca6f27d16e2c3149ec2566a2"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "harvest-bread-brown-400",
+    "requested_sku": "fortune-flour-multigrain-5000",
+    "ordered_sku": "fortune-flour-multigrain-5000",
+    "delivered_sku": "aashirvaad-flour-multigrain-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 5200,
-    "rationale": "Order names britannia; fulfilment shipped harvest. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 38500,
+    "rationale": "Order names fortune; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

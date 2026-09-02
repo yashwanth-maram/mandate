@@ -6,170 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00098",
-    "created_at": "2026-09-03T00:10:00Z",
-    "expires_at": "2026-09-03T06:10:00Z",
-    "user_id": "usr_2443",
-    "agent_id": "agt_547",
+    "created_at": "2026-09-03T02:14:00Z",
+    "expires_at": "2026-09-03T08:14:00Z",
+    "user_id": "usr_8993",
+    "agent_id": "agt_116",
     "block": {
       "block_id": "blk_00098",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-31T00:10:00Z",
-      "expires_at": "2026-10-10T00:10:00Z"
+      "blocked_at": "2026-09-03T02:14:00Z",
+      "expires_at": "2026-10-20T02:14:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 7819,
-      "max_total_paise": 7819,
+      "category": "butter",
+      "max_unit_price_paise": 33580,
+      "max_total_paise": 33580,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "semolina",
-      "pack_size_g": 1000
+      "brand": "amul",
+      "variant": "unsalted",
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "buy 1kg Aashirvaad sooji from Blinkit, keep it under 78 rupees",
+      "text": "buy 500g Amul unsalted butter from Blinkit, keep it under 335 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "fa75250976ec7e215532dbc634ef1479732d1b8fe7ba5f67d011a44384b376e2",
+    "content_hash": "726df72127cc6936244db80772ef9170f105d3eefffc69ae8cab557332f9242b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00098",
-    "obligation_hash": "fa75250976ec7e215532dbc634ef1479732d1b8fe7ba5f67d011a44384b376e2",
+    "obligation_hash": "726df72127cc6936244db80772ef9170f105d3eefffc69ae8cab557332f9242b",
     "items": [
       {
         "item_id": "env_00098-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ]
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 29200
         },
-        "emitted_by": "agt_547",
-        "emitted_at": "2026-09-03T00:10:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:14:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "e1810bad0f334f48159a17068b05586b0a1f70884d5860af8f695ad046b97e73"
+        "content_hash": "35d711d7ef8dd1c18e30e3bc4c855bef8786e86a248d8e6e3353d456f755ebb5"
       },
       {
         "item_id": "env_00098-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Bestseller in this category this week.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:14:04Z",
+        "evidence_class": 2,
+        "prev_hash": "35d711d7ef8dd1c18e30e3bc4c855bef8786e86a248d8e6e3353d456f755ebb5",
+        "content_hash": "25f5e08767aac042d72f80efeb9a2235a3cb40197fbe6e2d4352714393e1045e"
+      },
+      {
+        "item_id": "env_00098-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 28500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:14:05Z",
+        "evidence_class": 2,
+        "prev_hash": "25f5e08767aac042d72f80efeb9a2235a3cb40197fbe6e2d4352714393e1045e",
+        "content_hash": "62028eb2937d37c7e8c4dbade255a1e36d666c2534e792ba168b5261c9f8fdbb"
+      },
+      {
+        "item_id": "env_00098-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 27500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:14:06Z",
+        "evidence_class": 2,
+        "prev_hash": "62028eb2937d37c7e8c4dbade255a1e36d666c2534e792ba168b5261c9f8fdbb",
+        "content_hash": "1b2dedacf111be516e08e18aca081f96a5cd5f5bd5b34a07902f65178b0fd25e"
+      },
+      {
+        "item_id": "env_00098-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ]
+        },
+        "emitted_by": "agt_116",
+        "emitted_at": "2026-09-03T02:14:12Z",
+        "evidence_class": 1,
+        "prev_hash": "1b2dedacf111be516e08e18aca081f96a5cd5f5bd5b34a07902f65178b0fd25e",
+        "content_hash": "ee7a90d6e22b0cc0e7b9e7c28873978165e4a7bb2a1af8ceed80af46e6669038"
+      },
+      {
+        "item_id": "env_00098-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00098",
           "lines": [
             {
-              "sku": "aashirvaad-flour-semolina-1000",
+              "sku": "amul-butter-unsalted-500",
               "quantity": 1,
-              "unit_price_paise": 6800
+              "unit_price_paise": 29200
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:10:20Z",
+        "emitted_at": "2026-09-03T02:14:20Z",
         "evidence_class": 2,
-        "prev_hash": "e1810bad0f334f48159a17068b05586b0a1f70884d5860af8f695ad046b97e73",
-        "content_hash": "63ee5110d13aedf7ba10c4cfa783e1aa4a4ad9269cc85b48dc50d78ae07fb36f"
-      },
-      {
-        "item_id": "env_00098-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00098",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:24:00Z",
-        "evidence_class": 2,
-        "prev_hash": "63ee5110d13aedf7ba10c4cfa783e1aa4a4ad9269cc85b48dc50d78ae07fb36f",
-        "content_hash": "729b5fbf30a1fc65f5d75563de2973c20d0a3b73ad95dd0bd68cbf0df6887bd7"
-      },
-      {
-        "item_id": "env_00098-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00098",
-          "amount_paise": 6800,
-          "currency": "INR",
-          "receipt": "zep_00098"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:10:25Z",
-        "evidence_class": 3,
-        "prev_hash": "729b5fbf30a1fc65f5d75563de2973c20d0a3b73ad95dd0bd68cbf0df6887bd7",
-        "content_hash": "935de005d71280d25f55ebcf87ebada77edd8025d7da4b7ca7cf1b3617ded05d"
-      },
-      {
-        "item_id": "env_00098-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00098",
-          "order_id": "order_00098",
-          "amount_paise": 6800,
-          "status": "captured",
-          "block_id": "blk_00098",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:10:30Z",
-        "evidence_class": 3,
-        "prev_hash": "935de005d71280d25f55ebcf87ebada77edd8025d7da4b7ca7cf1b3617ded05d",
-        "content_hash": "e0e63083c131fbf904783877b17ec9dac50cd413748f13fa2c1e8d525011270e"
-      },
-      {
-        "item_id": "env_00098-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00098b",
-          "order_id": "order_00098",
-          "amount_paise": 6800,
-          "status": "captured",
-          "block_id": "blk_00098",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:10:34Z",
-        "evidence_class": 3,
-        "prev_hash": "e0e63083c131fbf904783877b17ec9dac50cd413748f13fa2c1e8d525011270e",
-        "content_hash": "b92af59a9524eb51dc906c056df70563bb646ec5402d32082de985d1f5647546"
+        "prev_hash": "ee7a90d6e22b0cc0e7b9e7c28873978165e4a7bb2a1af8ceed80af46e6669038",
+        "content_hash": "834705dbc4e4c3bbf00e4bfc9889f8171dadab16b7bd9b504e2a8a6f1e8c31e5"
       },
       {
         "item_id": "env_00098-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00098",
+          "lines": [
+            {
+              "sku": "amul-butter-unsalted-500",
+              "quantity": 1,
+              "unit_price_paise": 29200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:28:00Z",
+        "evidence_class": 2,
+        "prev_hash": "834705dbc4e4c3bbf00e4bfc9889f8171dadab16b7bd9b504e2a8a6f1e8c31e5",
+        "content_hash": "15891015b3e64df3dbc0112b9d418e1480a1f21abfefd4ccf1e1a3a053e924be"
+      },
+      {
+        "item_id": "env_00098-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00098",
+          "amount_paise": 30094,
+          "currency": "INR",
+          "receipt": "zep_00098"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:14:25Z",
+        "evidence_class": 3,
+        "prev_hash": "15891015b3e64df3dbc0112b9d418e1480a1f21abfefd4ccf1e1a3a053e924be",
+        "content_hash": "a472134854d0f87c32efc6d2506eecd8cd2f69319815d01857d077eb602e6f01"
+      },
+      {
+        "item_id": "env_00098-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00098",
+          "order_id": "order_00098",
+          "amount_paise": 30094,
+          "status": "captured",
+          "block_id": "blk_00098",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:14:30Z",
+        "evidence_class": 3,
+        "prev_hash": "a472134854d0f87c32efc6d2506eecd8cd2f69319815d01857d077eb602e6f01",
+        "content_hash": "d5012d30b8fd23d1ad0f5a3e5ef3bd31c0eccfb23ae2d554f947324aed6af61b"
+      },
+      {
+        "item_id": "env_00098-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad sooji. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-semolina-1000",
+          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
+          "claimed_sku": "amul-butter-unsalted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_547",
-        "emitted_at": "2026-09-03T00:25:00Z",
+        "emitted_by": "agt_116",
+        "emitted_at": "2026-09-03T02:29:00Z",
         "evidence_class": 0,
-        "prev_hash": "b92af59a9524eb51dc906c056df70563bb646ec5402d32082de985d1f5647546",
-        "content_hash": "61a05e5278202c3cb4cacc35412ed7c24ad796faa58bf7ba8341371c21025f9d"
+        "prev_hash": "d5012d30b8fd23d1ad0f5a3e5ef3bd31c0eccfb23ae2d554f947324aed6af61b",
+        "content_hash": "b98ee14e4683350e9d6f898937c928cb323f45becd2aafa2d17b4522080cb8f4"
       }
     ]
   },
@@ -178,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-semolina-1000",
-    "ordered_sku": "aashirvaad-flour-semolina-1000",
-    "delivered_sku": "aashirvaad-flour-semolina-1000",
+    "requested_sku": "amul-butter-unsalted-500",
+    "ordered_sku": "amul-butter-unsalted-500",
+    "delivered_sku": "amul-butter-unsalted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 6800,
-    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
+    "loss_paise": 894,
+    "rationale": "Correct item, unreconcilable debit. Debited 30094 paise against an order worth 29200 paise."
   }
 }

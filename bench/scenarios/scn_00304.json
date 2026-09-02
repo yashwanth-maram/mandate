@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00304",
-    "created_at": "2026-09-03T02:28:00Z",
-    "expires_at": "2026-09-03T08:28:00Z",
-    "user_id": "usr_3304",
-    "agent_id": "agt_439",
+    "created_at": "2026-09-02T18:48:00Z",
+    "expires_at": "2026-09-03T00:48:00Z",
+    "user_id": "usr_3430",
+    "agent_id": "agt_461",
     "block": {
       "block_id": "blk_00304",
-      "blocked_paise": 94872,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T02:28:00Z",
-      "expires_at": "2026-10-10T02:28:00Z"
+      "blocked_at": "2026-08-24T18:48:00Z",
+      "expires_at": "2026-10-16T18:48:00Z"
     },
     "hard": {
-      "category": "butter",
-      "max_unit_price_paise": 31624,
-      "max_total_paise": 31624,
+      "category": "salt",
+      "max_unit_price_paise": 5175,
+      "max_total_paise": 5175,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "swiggy_instamart"
       ],
-      "brand": "nandini",
-      "variant": "salted",
-      "pack_size_g": 500
+      "brand": "tata",
+      "variant": null,
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 500g Nandini salted butter, use Blinkit",
-      "uncaptured_attributes": []
+      "text": "order 1kg Tata low sodium salt on Swiggy Instamart",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "6227078b983caa14773673e7be58df98907bb8cd2e84dc1b66a258243bc557e8",
+    "content_hash": "b4846fad45df4646e5485cf7573ec120c87f139e43b66d8b0022e77aba987dcd",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00304",
-    "obligation_hash": "6227078b983caa14773673e7be58df98907bb8cd2e84dc1b66a258243bc557e8",
+    "obligation_hash": "b4846fad45df4646e5485cf7573ec120c87f139e43b66d8b0022e77aba987dcd",
     "items": [
       {
         "item_id": "env_00304-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "nandini-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 27500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "agt_439",
-        "emitted_at": "2026-09-03T02:28:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:48:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "c308d4e20c7e7615b79a25ece652aa3f437994657a08efc58dd3a7b6e0c8d4fc"
+        "content_hash": "29319edcee0ff4ffca2783b4d6e1e88c665dc48f0f03cdc19c3b01a1145c2ae4"
       },
       {
         "item_id": "env_00304-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00304",
-          "lines": [
-            {
-              "sku": "nandini-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 27500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:28:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:48:04Z",
         "evidence_class": 2,
-        "prev_hash": "c308d4e20c7e7615b79a25ece652aa3f437994657a08efc58dd3a7b6e0c8d4fc",
-        "content_hash": "aa6153e99049d0dc0f5eb7978fa80e7d29faf27a0cb027955d8c60183e962273"
+        "prev_hash": "29319edcee0ff4ffca2783b4d6e1e88c665dc48f0f03cdc19c3b01a1145c2ae4",
+        "content_hash": "3b698cbf22b10dc909230320694fb24350829840e47a4e94dd106dc2100c0c0c"
       },
       {
         "item_id": "env_00304-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00304",
-          "lines": [
-            {
-              "sku": "nandini-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 27500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:42:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:48:05Z",
         "evidence_class": 2,
-        "prev_hash": "aa6153e99049d0dc0f5eb7978fa80e7d29faf27a0cb027955d8c60183e962273",
-        "content_hash": "16c062778c5318c7307a4f9152bc9ac84518a5ec0b0d62fe6ff07794e7a714da"
+        "prev_hash": "3b698cbf22b10dc909230320694fb24350829840e47a4e94dd106dc2100c0c0c",
+        "content_hash": "fc4122a4fac8d7380727280e680d969da1ccb37834e4a05dd1f39534d45691cc"
       },
       {
         "item_id": "env_00304-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00304",
-          "amount_paise": 27500,
-          "currency": "INR",
-          "receipt": "zep_00304"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:28:25Z",
-        "evidence_class": 3,
-        "prev_hash": "16c062778c5318c7307a4f9152bc9ac84518a5ec0b0d62fe6ff07794e7a714da",
-        "content_hash": "f3e113f13a878fdc097760b803a62b8f286fc1c132568d021bdf94da8e91d15c"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:48:06Z",
+        "evidence_class": 2,
+        "prev_hash": "fc4122a4fac8d7380727280e680d969da1ccb37834e4a05dd1f39534d45691cc",
+        "content_hash": "6e3d58a72e3821f9890a2e8a83b44e69a7c1f80e5624dd2383598c43a96a6fa0"
       },
       {
         "item_id": "env_00304-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00304",
-          "order_id": "order_00304",
-          "amount_paise": 27500,
-          "status": "captured",
-          "block_id": "blk_00304",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:28:30Z",
-        "evidence_class": 3,
-        "prev_hash": "f3e113f13a878fdc097760b803a62b8f286fc1c132568d021bdf94da8e91d15c",
-        "content_hash": "78ae3d937b5ff1635590c471652a738c9580b05c9df296e3d92792427fa18a34"
+        "emitted_by": "agt_461",
+        "emitted_at": "2026-09-02T18:48:12Z",
+        "evidence_class": 1,
+        "prev_hash": "6e3d58a72e3821f9890a2e8a83b44e69a7c1f80e5624dd2383598c43a96a6fa0",
+        "content_hash": "d22ecb412c8a3bd848836020dbabd4a65acefb28522cb85dead0bbd7c5302649"
       },
       {
         "item_id": "env_00304-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00304",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T18:48:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d22ecb412c8a3bd848836020dbabd4a65acefb28522cb85dead0bbd7c5302649",
+        "content_hash": "808000b72ddf94a268526458fd125b385646c1ebfbefb3eb56390d9bad354e44"
+      },
+      {
+        "item_id": "env_00304-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00304",
+          "lines": [
+            {
+              "sku": "tata-salt-low_sodium-1000",
+              "quantity": 1,
+              "unit_price_paise": 4500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T19:02:00Z",
+        "evidence_class": 2,
+        "prev_hash": "808000b72ddf94a268526458fd125b385646c1ebfbefb3eb56390d9bad354e44",
+        "content_hash": "d2d61ff0507815448305d74f91354cfff8f0a636d72857cce45a513ff795a141"
+      },
+      {
+        "item_id": "env_00304-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00304",
+          "amount_paise": 4500,
+          "currency": "INR",
+          "receipt": "zep_00304"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:48:25Z",
+        "evidence_class": 3,
+        "prev_hash": "d2d61ff0507815448305d74f91354cfff8f0a636d72857cce45a513ff795a141",
+        "content_hash": "4825acfc6ad7b92cef336a4e7aeb7395a65e28719f96ff6b7f6ea09130169c9a"
+      },
+      {
+        "item_id": "env_00304-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00304",
+          "order_id": "order_00304",
+          "amount_paise": 4500,
+          "status": "captured",
+          "block_id": "blk_00304",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:48:30Z",
+        "evidence_class": 3,
+        "prev_hash": "4825acfc6ad7b92cef336a4e7aeb7395a65e28719f96ff6b7f6ea09130169c9a",
+        "content_hash": "016c2ff87fce2d8ea79b28ec25a7a79aed049f1ace4b3a93050bf8e9d4c6e6c8"
+      },
+      {
+        "item_id": "env_00304-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 500g Nandini salted butter. Payment complete.",
-          "claimed_sku": "nandini-butter-salted-500",
+          "text": "Ordered 1kg Tata low sodium salt. Payment complete.",
+          "claimed_sku": "tata-salt-low_sodium-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_439",
-        "emitted_at": "2026-09-03T02:43:00Z",
+        "emitted_by": "agt_461",
+        "emitted_at": "2026-09-02T19:03:00Z",
         "evidence_class": 0,
-        "prev_hash": "78ae3d937b5ff1635590c471652a738c9580b05c9df296e3d92792427fa18a34",
-        "content_hash": "bbff876d4b81622b67ded16ed882bcafc361ee8dd352b343c1fe9fdc425fc806"
+        "prev_hash": "016c2ff87fce2d8ea79b28ec25a7a79aed049f1ace4b3a93050bf8e9d4c6e6c8",
+        "content_hash": "f585d8f24d930e622c14b141a7b1bf5527c2079883c5e626d08384a4dc01841a"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "nandini-butter-salted-500",
-    "ordered_sku": "nandini-butter-salted-500",
-    "delivered_sku": "nandini-butter-salted-500",
+    "requested_sku": "tata-salt-low_sodium-1000",
+    "ordered_sku": "tata-salt-low_sodium-1000",
+    "delivered_sku": "tata-salt-low_sodium-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

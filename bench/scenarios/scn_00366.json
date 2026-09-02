@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00366",
-    "created_at": "2026-09-03T01:47:00Z",
-    "expires_at": "2026-09-03T07:47:00Z",
-    "user_id": "usr_6584",
-    "agent_id": "agt_472",
+    "created_at": "2026-09-03T03:55:00Z",
+    "expires_at": "2026-09-03T09:55:00Z",
+    "user_id": "usr_9737",
+    "agent_id": "agt_964",
     "block": {
       "block_id": "blk_00366",
-      "blocked_paise": 50000,
+      "blocked_paise": 65205,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-02T01:47:00Z",
-      "expires_at": "2026-10-29T01:47:00Z"
+      "blocked_at": "2026-08-15T03:55:00Z",
+      "expires_at": "2026-10-10T03:55:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5175,
-      "max_total_paise": 5175,
+      "category": "edible_oil",
+      "max_unit_price_paise": 21735,
+      "max_total_paise": 21735,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "britannia",
-      "variant": "white",
-      "pack_size_g": 400
+      "brand": "fortune",
+      "variant": null,
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 400g Britannia white bread on Blinkit",
-      "uncaptured_attributes": []
+      "text": "I need 1L Fortune groundnut oil, use Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "0ea1215f90929f30aec3234755dd38347ea399fad7b563ceecfc36d914322efe",
+    "content_hash": "12c738fc64b8febea96dd4e0874b86671d201a129dd8d95f8248af583d7aee32",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00366",
-    "obligation_hash": "0ea1215f90929f30aec3234755dd38347ea399fad7b563ceecfc36d914322efe",
+    "obligation_hash": "12c738fc64b8febea96dd4e0874b86671d201a129dd8d95f8248af583d7aee32",
     "items": [
       {
         "item_id": "env_00366-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "britannia-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 15800
         },
-        "emitted_by": "agt_472",
-        "emitted_at": "2026-09-03T01:47:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:55:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "cce6f62ba34c2cdb0d3ede56d21a0e2373b61bffe034d3214de0c2f41f211547"
+        "content_hash": "c03ad682555337f903b50821021a8c20366c00ecd293db123aa23368b4998d56"
       },
       {
         "item_id": "env_00366-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00366",
-          "lines": [
-            {
-              "sku": "britannia-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 18900
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T01:47:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:55:04Z",
         "evidence_class": 2,
-        "prev_hash": "cce6f62ba34c2cdb0d3ede56d21a0e2373b61bffe034d3214de0c2f41f211547",
-        "content_hash": "6347137b8bff53107c4973445cb4c25bad68ee95bcfbf288de8660ff05c7f6c3"
+        "prev_hash": "c03ad682555337f903b50821021a8c20366c00ecd293db123aa23368b4998d56",
+        "content_hash": "3cfc4a7fa316e9278832177017952390813481444441e55d14eb8ce059bcc6e0"
       },
       {
         "item_id": "env_00366-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00366",
-          "lines": [
-            {
-              "sku": "britannia-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 15200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:01:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:55:05Z",
         "evidence_class": 2,
-        "prev_hash": "6347137b8bff53107c4973445cb4c25bad68ee95bcfbf288de8660ff05c7f6c3",
-        "content_hash": "85b0100fc726fc02dc69094aa252f0426a28127180f47c5d337a01e7de5f43a9"
+        "prev_hash": "3cfc4a7fa316e9278832177017952390813481444441e55d14eb8ce059bcc6e0",
+        "content_hash": "4b44e9347b7572d35ffc630495c6605e09678d2100d05cd24411b4191e517dc4"
       },
       {
         "item_id": "env_00366-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00366",
-          "amount_paise": 4500,
-          "currency": "INR",
-          "receipt": "zep_00366"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 16800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:47:25Z",
-        "evidence_class": 3,
-        "prev_hash": "85b0100fc726fc02dc69094aa252f0426a28127180f47c5d337a01e7de5f43a9",
-        "content_hash": "0614f4a23c76f5bc2760eb975edb0f22fb5da1932b034ca4d78ec5d8c2c44134"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:55:06Z",
+        "evidence_class": 2,
+        "prev_hash": "4b44e9347b7572d35ffc630495c6605e09678d2100d05cd24411b4191e517dc4",
+        "content_hash": "c04d8b288fffff6e470271fef2d2daad4ecfba0317054c562db0d563ae540113"
       },
       {
         "item_id": "env_00366-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00366",
-          "order_id": "order_00366",
-          "amount_paise": 4500,
-          "status": "captured",
-          "block_id": "blk_00366",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:47:30Z",
-        "evidence_class": 3,
-        "prev_hash": "0614f4a23c76f5bc2760eb975edb0f22fb5da1932b034ca4d78ec5d8c2c44134",
-        "content_hash": "47e88f6f8ff82162286d6d1065565bde9d5f29e1f364ac9b66267453ca7d91f4"
+        "emitted_by": "agt_964",
+        "emitted_at": "2026-09-03T03:55:12Z",
+        "evidence_class": 1,
+        "prev_hash": "c04d8b288fffff6e470271fef2d2daad4ecfba0317054c562db0d563ae540113",
+        "content_hash": "8ba3f05b2a1fb4c49aac4b97f04de1985dc40ffb8d1841a49bbbbf35c4d1d2d9"
       },
       {
         "item_id": "env_00366-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00366",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:55:20Z",
+        "evidence_class": 2,
+        "prev_hash": "8ba3f05b2a1fb4c49aac4b97f04de1985dc40ffb8d1841a49bbbbf35c4d1d2d9",
+        "content_hash": "fda161c77385224571ee1908d441e4efee87a9ac468df02106a31a8c9ac55e3e"
+      },
+      {
+        "item_id": "env_00366-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00366",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T04:09:00Z",
+        "evidence_class": 2,
+        "prev_hash": "fda161c77385224571ee1908d441e4efee87a9ac468df02106a31a8c9ac55e3e",
+        "content_hash": "3326118648aa703dbcffcbbf182c1ded4633e54daae872591f804ce9439f8967"
+      },
+      {
+        "item_id": "env_00366-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00366",
+          "amount_paise": 18900,
+          "currency": "INR",
+          "receipt": "zep_00366"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:55:25Z",
+        "evidence_class": 3,
+        "prev_hash": "3326118648aa703dbcffcbbf182c1ded4633e54daae872591f804ce9439f8967",
+        "content_hash": "4fa6797e38885bf689232152fb06af94d4838f53247a287bb3b368fc6277a9d4"
+      },
+      {
+        "item_id": "env_00366-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00366",
+          "order_id": "order_00366",
+          "amount_paise": 18900,
+          "status": "captured",
+          "block_id": "blk_00366",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:55:30Z",
+        "evidence_class": 3,
+        "prev_hash": "4fa6797e38885bf689232152fb06af94d4838f53247a287bb3b368fc6277a9d4",
+        "content_hash": "369183a8916510e093a3678d9a02d5a0d911614a7b524b406989644de31453ca"
+      },
+      {
+        "item_id": "env_00366-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia white bread. Payment complete.",
-          "claimed_sku": "britannia-bread-white-400",
+          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-groundnut-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_472",
-        "emitted_at": "2026-09-03T02:02:00Z",
+        "emitted_by": "agt_964",
+        "emitted_at": "2026-09-03T04:10:00Z",
         "evidence_class": 0,
-        "prev_hash": "47e88f6f8ff82162286d6d1065565bde9d5f29e1f364ac9b66267453ca7d91f4",
-        "content_hash": "e7e25f361b2c9ca07bd790c4e4c4346af8b7efd81e670570a5eed1eee73c1b62"
+        "prev_hash": "369183a8916510e093a3678d9a02d5a0d911614a7b524b406989644de31453ca",
+        "content_hash": "0151cb4073fb7d3f7d8ba1898bf2baae9cd30832e4917441d080871b5040b1cb"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-white-400",
-    "ordered_sku": "britannia-bread-white-400",
-    "delivered_sku": "britannia-bread-white-400",
+    "requested_sku": "fortune-edible_oil-groundnut-1000",
+    "ordered_sku": "fortune-edible_oil-groundnut-1000",
+    "delivered_sku": "fortune-edible_oil-groundnut-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

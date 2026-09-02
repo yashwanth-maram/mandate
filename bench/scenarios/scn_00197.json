@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00197",
-    "created_at": "2026-09-02T22:49:00Z",
-    "expires_at": "2026-09-03T04:49:00Z",
-    "user_id": "usr_7236",
-    "agent_id": "agt_577",
+    "created_at": "2026-09-03T00:25:00Z",
+    "expires_at": "2026-09-03T06:25:00Z",
+    "user_id": "usr_7201",
+    "agent_id": "agt_474",
     "block": {
       "block_id": "blk_00197",
-      "blocked_paise": 50000,
+      "blocked_paise": 98325,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-16T22:49:00Z",
-      "expires_at": "2026-10-22T22:49:00Z"
+      "blocked_at": "2026-08-16T00:25:00Z",
+      "expires_at": "2026-10-23T00:25:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 8970,
-      "max_total_paise": 8970,
+      "category": "butter",
+      "max_unit_price_paise": 32775,
+      "max_total_paise": 32775,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "india_gate",
+      "brand": "amul",
       "variant": null,
-      "pack_size_g": 1000
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "I need 1kg India Gate sona masoori rice, use Zepto",
+      "text": "get me 500g Amul salted butter from Blinkit",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "1b2c14fad1b0f1db1ea75a5f64d10dcbb302be80291b5596dc4bb3088cbbda31",
+    "content_hash": "24c5d6f63dac916c9d73f8c83f6a6bd44d3bdbe8231b13668fa1a6d8383e55af",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00197",
-    "obligation_hash": "1b2c14fad1b0f1db1ea75a5f64d10dcbb302be80291b5596dc4bb3088cbbda31",
+    "obligation_hash": "24c5d6f63dac916c9d73f8c83f6a6bd44d3bdbe8231b13668fa1a6d8383e55af",
     "items": [
       {
         "item_id": "env_00197-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "india_gate-rice-sona_masoori-1000",
-              "quantity": 1,
-              "unit_price_paise": 7800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 29200
         },
-        "emitted_by": "agt_577",
-        "emitted_at": "2026-09-02T22:49:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:25:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "529fd22ddcce7d038d10fc07322c4d7fa73ae14708f12a92ac122c76a754ec88"
+        "content_hash": "4915886c941728464a9c964d81ad487882a8ec571bc4a94e12d490fc22375664"
       },
       {
         "item_id": "env_00197-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00197",
-          "lines": [
-            {
-              "sku": "india_gate-rice-sona_masoori-1000",
-              "quantity": 1,
-              "unit_price_paise": 7800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:49:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:25:04Z",
         "evidence_class": 2,
-        "prev_hash": "529fd22ddcce7d038d10fc07322c4d7fa73ae14708f12a92ac122c76a754ec88",
-        "content_hash": "26b12abdc5aac2eb6b56e49b9c0c9e00414d09005a9afc91d2fca3c1eee6b359"
+        "prev_hash": "4915886c941728464a9c964d81ad487882a8ec571bc4a94e12d490fc22375664",
+        "content_hash": "0dc1a2a2496c97d2c4276e7dc1ac70bb5185c3b7554d2e5a0233a05f3f2d3759"
       },
       {
         "item_id": "env_00197-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00197",
-          "lines": [
-            {
-              "sku": "india_gate-rice-sona_masoori-1000",
-              "quantity": 1,
-              "unit_price_paise": 7800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 28500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:03:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:25:05Z",
         "evidence_class": 2,
-        "prev_hash": "26b12abdc5aac2eb6b56e49b9c0c9e00414d09005a9afc91d2fca3c1eee6b359",
-        "content_hash": "2ee4b713aa7ebcbf2cf37f6b86e27f5abc6b8767556476c03e235456008ed03e"
+        "prev_hash": "0dc1a2a2496c97d2c4276e7dc1ac70bb5185c3b7554d2e5a0233a05f3f2d3759",
+        "content_hash": "c44073bae9bd1d401615cecfa7986cb8c1fda201ee1334ac7a1dfe46e76eb66d"
       },
       {
         "item_id": "env_00197-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00197",
-          "amount_paise": 7800,
-          "currency": "INR",
-          "receipt": "zep_00197"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:49:25Z",
-        "evidence_class": 3,
-        "prev_hash": "2ee4b713aa7ebcbf2cf37f6b86e27f5abc6b8767556476c03e235456008ed03e",
-        "content_hash": "5d277492a55c2bec899305035c43d511edf8cffe0b363555ed00981f489aa028"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:25:06Z",
+        "evidence_class": 2,
+        "prev_hash": "c44073bae9bd1d401615cecfa7986cb8c1fda201ee1334ac7a1dfe46e76eb66d",
+        "content_hash": "b0360d2d9ca3b40b880317a11eeee3d6ded0d7994513b476ad4b5837a5e87d63"
       },
       {
         "item_id": "env_00197-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00197",
-          "order_id": "order_00197",
-          "amount_paise": 7800,
-          "status": "captured",
-          "block_id": "blk_00197",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:49:30Z",
-        "evidence_class": 3,
-        "prev_hash": "5d277492a55c2bec899305035c43d511edf8cffe0b363555ed00981f489aa028",
-        "content_hash": "c0c4a46f7cb6bdad19b9380b40e0ebf1a24b9b2535c21fc1ad3b0e4b2fce27a3"
+        "emitted_by": "agt_474",
+        "emitted_at": "2026-09-03T00:25:12Z",
+        "evidence_class": 1,
+        "prev_hash": "b0360d2d9ca3b40b880317a11eeee3d6ded0d7994513b476ad4b5837a5e87d63",
+        "content_hash": "edf4dce40711ebcbb0d852f80e9d44f6848e4bb007a0643b28751639370c4d06"
       },
       {
         "item_id": "env_00197-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00197",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:25:20Z",
+        "evidence_class": 2,
+        "prev_hash": "edf4dce40711ebcbb0d852f80e9d44f6848e4bb007a0643b28751639370c4d06",
+        "content_hash": "4e5b3021f67213bafd5e678922aa79275a6deb3822dc7e601d0dd2df387dff6a"
+      },
+      {
+        "item_id": "env_00197-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00197",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:39:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4e5b3021f67213bafd5e678922aa79275a6deb3822dc7e601d0dd2df387dff6a",
+        "content_hash": "fb95e875c4d0070099e5f8b789b763d6097a13abe9090374b25bb26ddeb97ef6"
+      },
+      {
+        "item_id": "env_00197-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00197",
+          "amount_paise": 28500,
+          "currency": "INR",
+          "receipt": "zep_00197"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:25:25Z",
+        "evidence_class": 3,
+        "prev_hash": "fb95e875c4d0070099e5f8b789b763d6097a13abe9090374b25bb26ddeb97ef6",
+        "content_hash": "277f419ef8a801549a840f8a5576af19f66086475ba65cded85eb11190628619"
+      },
+      {
+        "item_id": "env_00197-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00197",
+          "order_id": "order_00197",
+          "amount_paise": 28500,
+          "status": "captured",
+          "block_id": "blk_00197",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:25:30Z",
+        "evidence_class": 3,
+        "prev_hash": "277f419ef8a801549a840f8a5576af19f66086475ba65cded85eb11190628619",
+        "content_hash": "d00662e6b8bc3a2dc3d8fd3de878dfbb73ef8fee10430aca72d47d36613bdca3"
+      },
+      {
+        "item_id": "env_00197-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate sona masoori rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-sona_masoori-1000",
+          "text": "Ordered 500g Amul salted butter. Payment complete.",
+          "claimed_sku": "amul-butter-salted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_577",
-        "emitted_at": "2026-09-02T23:04:00Z",
+        "emitted_by": "agt_474",
+        "emitted_at": "2026-09-03T00:40:00Z",
         "evidence_class": 0,
-        "prev_hash": "c0c4a46f7cb6bdad19b9380b40e0ebf1a24b9b2535c21fc1ad3b0e4b2fce27a3",
-        "content_hash": "7da078103e43eaa3be1fece3d860477a19bbb327034a06b9e3fa65b3babf3ae9"
+        "prev_hash": "d00662e6b8bc3a2dc3d8fd3de878dfbb73ef8fee10430aca72d47d36613bdca3",
+        "content_hash": "ef5b3582ddf9378f6f599a7d16e03f1dd6d19553ce79fbff8a35ecf58b346c3b"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-sona_masoori-1000",
-    "ordered_sku": "india_gate-rice-sona_masoori-1000",
-    "delivered_sku": "india_gate-rice-sona_masoori-1000",
+    "requested_sku": "amul-butter-salted-500",
+    "ordered_sku": "amul-butter-salted-500",
+    "delivered_sku": "amul-butter-salted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

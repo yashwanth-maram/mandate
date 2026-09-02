@@ -6,94 +6,160 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00423",
-    "created_at": "2026-09-02T23:23:00Z",
-    "expires_at": "2026-09-03T05:23:00Z",
-    "user_id": "usr_7698",
-    "agent_id": "agt_470",
+    "created_at": "2026-09-03T02:34:00Z",
+    "expires_at": "2026-09-03T08:34:00Z",
+    "user_id": "usr_2806",
+    "agent_id": "agt_561",
     "block": {
       "block_id": "blk_00423",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-30T23:23:00Z",
-      "expires_at": "2026-10-06T23:23:00Z"
+      "blocked_at": "2026-08-16T02:34:00Z",
+      "expires_at": "2026-10-29T02:34:00Z"
     },
     "hard": {
-      "category": "noodles",
+      "category": "flour",
       "max_unit_price_paise": 11040,
       "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "maggi",
-      "variant": null,
-      "pack_size_g": 560
+      "brand": "aashirvaad",
+      "variant": "gram",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 560g Maggi masala noodles from Zepto, keep it under 110 rupees",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "order 1kg Aashirvaad besan on Zepto",
+      "uncaptured_attributes": []
     },
-    "content_hash": "4c8b841e230682153156e5b26a10e023968e30f14c11e833114f00f2641f1f0d",
+    "content_hash": "2ab56bf1f3e5ad7d970972141678a1b912972bef32d05c60827fd9e0e7d14158",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00423",
-    "obligation_hash": "4c8b841e230682153156e5b26a10e023968e30f14c11e833114f00f2641f1f0d",
+    "obligation_hash": "2ab56bf1f3e5ad7d970972141678a1b912972bef32d05c60827fd9e0e7d14158",
     "items": [
       {
         "item_id": "env_00423-e000",
         "seq": 0,
         "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:34:03Z",
+        "evidence_class": 2,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "d336265eec68bb36bf0d775967c9e573b36be114bfa81ec7c79fda3bc5bec93b"
+      },
+      {
+        "item_id": "env_00423-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 39800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:34:04Z",
+        "evidence_class": 2,
+        "prev_hash": "d336265eec68bb36bf0d775967c9e573b36be114bfa81ec7c79fda3bc5bec93b",
+        "content_hash": "3339a2ac4a17b4b9566536db05735dcb0a3705117f1b2f9bf7f39317234e7b9a"
+      },
+      {
+        "item_id": "env_00423-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:34:05Z",
+        "evidence_class": 2,
+        "prev_hash": "3339a2ac4a17b4b9566536db05735dcb0a3705117f1b2f9bf7f39317234e7b9a",
+        "content_hash": "474286380dbd51f9184eebdd6babbf60eb1d3b00d7728a4f647981df55f71529"
+      },
+      {
+        "item_id": "env_00423-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:34:06Z",
+        "evidence_class": 2,
+        "prev_hash": "474286380dbd51f9184eebdd6babbf60eb1d3b00d7728a4f647981df55f71529",
+        "content_hash": "397e3881780085f438e583850d5b26f731658d72ec4eb0b3627240c198e5a74e"
+      },
+      {
+        "item_id": "env_00423-e004",
+        "seq": 4,
+        "payload": {
           "kind": "AGENT_CART",
           "merchant_id": "zepto",
           "lines": [
             {
-              "sku": "maggi-noodles-masala-560",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
               "unit_price_paise": 9600
             }
           ]
         },
-        "emitted_by": "agt_470",
-        "emitted_at": "2026-09-02T23:23:00Z",
+        "emitted_by": "agt_561",
+        "emitted_at": "2026-09-03T02:34:12Z",
         "evidence_class": 1,
-        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "46c4b338e9b3585eb6e373b90dec85481132b3a5878fd694b50780d0bc971342"
+        "prev_hash": "397e3881780085f438e583850d5b26f731658d72ec4eb0b3627240c198e5a74e",
+        "content_hash": "17156667d398c15da67f5b6390b782b450c58d052c057922ea83245326e80f92"
       },
       {
-        "item_id": "env_00423-e001",
-        "seq": 1,
+        "item_id": "env_00423-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00423",
           "lines": [
             {
-              "sku": "maggi-noodles-masala-560",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
               "unit_price_paise": 9600
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:23:20Z",
+        "emitted_at": "2026-09-03T02:34:20Z",
         "evidence_class": 2,
-        "prev_hash": "46c4b338e9b3585eb6e373b90dec85481132b3a5878fd694b50780d0bc971342",
-        "content_hash": "441975d9f824fd6061947f42cb108c534f0651f3cdfbb9af2aaa4b23ea614f76"
+        "prev_hash": "17156667d398c15da67f5b6390b782b450c58d052c057922ea83245326e80f92",
+        "content_hash": "d51a622de511040a1638063e657f3ae074518b67f2c76b6f4563741d058f7098"
       },
       {
-        "item_id": "env_00423-e002",
-        "seq": 2,
+        "item_id": "env_00423-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00423",
           "lines": [
             {
-              "sku": "maggi-noodles-masala-560",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
               "unit_price_paise": 9600
             }
@@ -101,14 +167,14 @@
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:37:00Z",
+        "emitted_at": "2026-09-03T02:48:00Z",
         "evidence_class": 2,
-        "prev_hash": "441975d9f824fd6061947f42cb108c534f0651f3cdfbb9af2aaa4b23ea614f76",
-        "content_hash": "b2c2ad6da6126912d2c222c90f49a3528ad66629b76ba172d3405dbdec0ad784"
+        "prev_hash": "d51a622de511040a1638063e657f3ae074518b67f2c76b6f4563741d058f7098",
+        "content_hash": "0faf5666edeb23942a0744a13b03c2c84e0aa29a892fa99c55605e8769cd2673"
       },
       {
-        "item_id": "env_00423-e003",
-        "seq": 3,
+        "item_id": "env_00423-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00423",
@@ -117,14 +183,14 @@
           "receipt": "zep_00423"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:23:25Z",
+        "emitted_at": "2026-09-03T02:34:25Z",
         "evidence_class": 3,
-        "prev_hash": "b2c2ad6da6126912d2c222c90f49a3528ad66629b76ba172d3405dbdec0ad784",
-        "content_hash": "c2337f866fe37411a88ee8380137ed58d1c158b1cd7b56fd22f35c7be2310f89"
+        "prev_hash": "0faf5666edeb23942a0744a13b03c2c84e0aa29a892fa99c55605e8769cd2673",
+        "content_hash": "d578a866e3049839099c376a9ee4dc3f59535e0d01cbf03729d81e25e478f9fd"
       },
       {
-        "item_id": "env_00423-e004",
-        "seq": 4,
+        "item_id": "env_00423-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00423",
@@ -135,25 +201,25 @@
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:23:30Z",
+        "emitted_at": "2026-09-03T02:34:30Z",
         "evidence_class": 3,
-        "prev_hash": "c2337f866fe37411a88ee8380137ed58d1c158b1cd7b56fd22f35c7be2310f89",
-        "content_hash": "bb10fab2f03c80dc4b0c3b5c86189bde0585e96df77af7dad2649072c03b33b1"
+        "prev_hash": "d578a866e3049839099c376a9ee4dc3f59535e0d01cbf03729d81e25e478f9fd",
+        "content_hash": "fbc857e463b6d28e451f4cd3b10036cd46c457bd658d53343e7dc49adf06c29e"
       },
       {
-        "item_id": "env_00423-e005",
-        "seq": 5,
+        "item_id": "env_00423-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
-          "claimed_sku": "maggi-noodles-masala-560",
+          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_470",
-        "emitted_at": "2026-09-02T23:38:00Z",
+        "emitted_by": "agt_561",
+        "emitted_at": "2026-09-03T02:49:00Z",
         "evidence_class": 0,
-        "prev_hash": "bb10fab2f03c80dc4b0c3b5c86189bde0585e96df77af7dad2649072c03b33b1",
-        "content_hash": "adbcddfae2286858eb6bc332be26b7f76ecd3c6d40e33052c69e75b26077b466"
+        "prev_hash": "fbc857e463b6d28e451f4cd3b10036cd46c457bd658d53343e7dc49adf06c29e",
+        "content_hash": "628477ebb1cddafa31997584497639ba784911087acfb49bbaea11eb8cebb035"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "maggi-noodles-masala-560",
-    "ordered_sku": "maggi-noodles-masala-560",
-    "delivered_sku": "maggi-noodles-masala-560",
+    "requested_sku": "aashirvaad-flour-gram-1000",
+    "ordered_sku": "aashirvaad-flour-gram-1000",
+    "delivered_sku": "aashirvaad-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

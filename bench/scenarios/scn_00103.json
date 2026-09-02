@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00103",
-    "created_at": "2026-09-02T18:57:00Z",
-    "expires_at": "2026-09-03T00:57:00Z",
-    "user_id": "usr_6766",
-    "agent_id": "agt_619",
+    "created_at": "2026-09-02T22:34:00Z",
+    "expires_at": "2026-09-03T04:34:00Z",
+    "user_id": "usr_3526",
+    "agent_id": "agt_489",
     "block": {
       "block_id": "blk_00103",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-31T18:57:00Z",
-      "expires_at": "2026-10-11T18:57:00Z"
+      "blocked_at": "2026-08-13T22:34:00Z",
+      "expires_at": "2026-10-06T22:34:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 6554,
-      "max_total_paise": 6554,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
-      "brand": "mother_dairy",
-      "variant": "double_toned",
+      "brand": "aashirvaad",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Mother Dairy double toned milk from Swiggy Instamart, keep it under 65 rupees",
+      "text": "buy 1kg Aashirvaad iodised salt from Zepto, keep it under 34 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "55f208720386bec84bd2ce0f82a26256e7463678b20d21c06e1e21c7c4441d61",
+    "content_hash": "12fe0fa712a8fe89ecf656118ac1e5bcb01b6a484604d421807059243f2b9171",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00103",
-    "obligation_hash": "55f208720386bec84bd2ce0f82a26256e7463678b20d21c06e1e21c7c4441d61",
+    "obligation_hash": "12fe0fa712a8fe89ecf656118ac1e5bcb01b6a484604d421807059243f2b9171",
     "items": [
       {
         "item_id": "env_00103-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "agt_619",
-        "emitted_at": "2026-09-02T18:57:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:34:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "de303de2fab335675eb3540b53ac86fd080f810e5d1325b4124454312c768722"
+        "content_hash": "27213caca9bf3d2bb2ef58b8337cd625b64f6fdf57057e849d4bccf85c08d064"
       },
       {
         "item_id": "env_00103-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00103",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T18:57:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:34:04Z",
         "evidence_class": 2,
-        "prev_hash": "de303de2fab335675eb3540b53ac86fd080f810e5d1325b4124454312c768722",
-        "content_hash": "18e612a60c0259c40f560b12bc1cc6e0e090e00cc3ec7f0fd9ac0f9ed1cb6ef6"
+        "prev_hash": "27213caca9bf3d2bb2ef58b8337cd625b64f6fdf57057e849d4bccf85c08d064",
+        "content_hash": "f302efcda6acd88be356ef389bcd975b0a2d6654f1722aefce6f66e4a5163ddc"
       },
       {
         "item_id": "env_00103-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00103",
-          "lines": [
-            {
-              "sku": "amul-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5900
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:11:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:34:05Z",
         "evidence_class": 2,
-        "prev_hash": "18e612a60c0259c40f560b12bc1cc6e0e090e00cc3ec7f0fd9ac0f9ed1cb6ef6",
-        "content_hash": "2e98cc82cacb5bb89857f26bf3af58d18d6902ed62cece8cab7683446fc0572c"
+        "prev_hash": "f302efcda6acd88be356ef389bcd975b0a2d6654f1722aefce6f66e4a5163ddc",
+        "content_hash": "bd2feae125eb0b362d7d574c75306a62a77d5598020ba82ba0e38f3bca0d5757"
       },
       {
         "item_id": "env_00103-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00103",
-          "amount_paise": 5700,
-          "currency": "INR",
-          "receipt": "zep_00103"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:57:25Z",
-        "evidence_class": 3,
-        "prev_hash": "2e98cc82cacb5bb89857f26bf3af58d18d6902ed62cece8cab7683446fc0572c",
-        "content_hash": "b6de2a4db75972e3dea09a8f39761122021d6c129f307afab0043d302d72450f"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:34:06Z",
+        "evidence_class": 2,
+        "prev_hash": "bd2feae125eb0b362d7d574c75306a62a77d5598020ba82ba0e38f3bca0d5757",
+        "content_hash": "5543b04909df5bb16e6ce07797a81a0bc74af1aecac9e698e88202963c01c79e"
       },
       {
         "item_id": "env_00103-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00103",
-          "order_id": "order_00103",
-          "amount_paise": 5700,
-          "status": "captured",
-          "block_id": "blk_00103",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:57:30Z",
-        "evidence_class": 3,
-        "prev_hash": "b6de2a4db75972e3dea09a8f39761122021d6c129f307afab0043d302d72450f",
-        "content_hash": "d2100658ade6e4e603c5494bfc57babb43cb85266f6a02e5af574de84cf5bc98"
+        "emitted_by": "agt_489",
+        "emitted_at": "2026-09-02T22:34:12Z",
+        "evidence_class": 1,
+        "prev_hash": "5543b04909df5bb16e6ce07797a81a0bc74af1aecac9e698e88202963c01c79e",
+        "content_hash": "f84e0a248c77a6bac597223aaf372e99d43eeee34abb60ef65c140a1f7726b7d"
       },
       {
         "item_id": "env_00103-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00103",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:34:20Z",
+        "evidence_class": 2,
+        "prev_hash": "f84e0a248c77a6bac597223aaf372e99d43eeee34abb60ef65c140a1f7726b7d",
+        "content_hash": "1d3ca5f86f2b7bffaf349a234f089428670a04c504b00eb2cf25cf4dee36eccb"
+      },
+      {
+        "item_id": "env_00103-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00103",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:48:00Z",
+        "evidence_class": 2,
+        "prev_hash": "1d3ca5f86f2b7bffaf349a234f089428670a04c504b00eb2cf25cf4dee36eccb",
+        "content_hash": "687e92c4f402e14c5d31107bd0085b2d5efa27fc80bf6a19801d1ec87ca6f81d"
+      },
+      {
+        "item_id": "env_00103-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00103",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00103"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:34:25Z",
+        "evidence_class": 3,
+        "prev_hash": "687e92c4f402e14c5d31107bd0085b2d5efa27fc80bf6a19801d1ec87ca6f81d",
+        "content_hash": "284566b6ee1ec246b3d2c10ee3a22fb1d7aaf5d42cf0df171a83fcbaed2c3ddb"
+      },
+      {
+        "item_id": "env_00103-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00103",
+          "order_id": "order_00103",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00103",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:34:30Z",
+        "evidence_class": 3,
+        "prev_hash": "284566b6ee1ec246b3d2c10ee3a22fb1d7aaf5d42cf0df171a83fcbaed2c3ddb",
+        "content_hash": "663d9a98d18a3e0c17983af72afe7a0dd552c7b2cc6778c13c75767d0b52e4ff"
+      },
+      {
+        "item_id": "env_00103-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy double toned milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-double_toned-1000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_619",
-        "emitted_at": "2026-09-02T19:12:00Z",
+        "emitted_by": "agt_489",
+        "emitted_at": "2026-09-02T22:49:00Z",
         "evidence_class": 0,
-        "prev_hash": "d2100658ade6e4e603c5494bfc57babb43cb85266f6a02e5af574de84cf5bc98",
-        "content_hash": "7f0d8a21fe925833d0223092fa31e1a94a844cf9126c8ddc3e0ec1870bd914cf"
+        "prev_hash": "663d9a98d18a3e0c17983af72afe7a0dd552c7b2cc6778c13c75767d0b52e4ff",
+        "content_hash": "5c3a1ccec60d01c135c859efda6741fb2ce9c656b5b78073a63cc220c0dda9c3"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-double_toned-1000",
-    "ordered_sku": "mother_dairy-milk-double_toned-1000",
-    "delivered_sku": "amul-milk-double_toned-1000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 5700,
-    "rationale": "Order names mother_dairy; fulfilment shipped amul. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 3000,
+    "rationale": "Order names aashirvaad; fulfilment shipped tata. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

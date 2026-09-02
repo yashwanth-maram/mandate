@@ -6,170 +6,238 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00268",
-    "created_at": "2026-09-02T22:35:00Z",
-    "expires_at": "2026-09-03T04:35:00Z",
-    "user_id": "usr_2934",
-    "agent_id": "agt_889",
+    "created_at": "2026-09-02T22:49:00Z",
+    "expires_at": "2026-09-03T04:49:00Z",
+    "user_id": "usr_6711",
+    "agent_id": "agt_718",
     "block": {
       "block_id": "blk_00268",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-02T22:35:00Z",
-      "expires_at": "2026-10-12T22:35:00Z"
+      "blocked_at": "2026-08-15T22:49:00Z",
+      "expires_at": "2026-10-06T22:49:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 7819,
-      "max_total_paise": 7819,
+      "max_unit_price_paise": 6669,
+      "max_total_paise": 6669,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "aashirvaad",
-      "variant": "semolina",
+      "brand": "fortune",
+      "variant": "refined",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1kg Aashirvaad sooji from Swiggy Instamart, keep it under 78 rupees",
+      "text": "get me 1kg Fortune maida from Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "cf9ba3f92644dc76a43496ba654dc949708ef81c3429e944949c83cf7958bc05",
+    "content_hash": "f10b6ecda8d697d87475af9594b86542598854ea438ca6a5177091e832cbf654",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00268",
-    "obligation_hash": "cf9ba3f92644dc76a43496ba654dc949708ef81c3429e944949c83cf7958bc05",
+    "obligation_hash": "f10b6ecda8d697d87475af9594b86542598854ea438ca6a5177091e832cbf654",
     "items": [
       {
         "item_id": "env_00268-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ]
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "agt_889",
-        "emitted_at": "2026-09-02T22:35:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:49:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "3993d3d7d4e8f153b06187137988e632ecdc28008f7abec902191e75fef0791d"
+        "content_hash": "89cbf2c367f79efb6664add3cc16d978943807dd49a0c33161c23d81bcc1af1a"
       },
       {
         "item_id": "env_00268-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 6800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:49:04Z",
+        "evidence_class": 2,
+        "prev_hash": "89cbf2c367f79efb6664add3cc16d978943807dd49a0c33161c23d81bcc1af1a",
+        "content_hash": "3cea0c0fe8085214fd44047e20134d5d333630eb9251dae226ec52bec03ce41b"
+      },
+      {
+        "item_id": "env_00268-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 9200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:49:05Z",
+        "evidence_class": 2,
+        "prev_hash": "3cea0c0fe8085214fd44047e20134d5d333630eb9251dae226ec52bec03ce41b",
+        "content_hash": "791d09a1d822f85e4867bf96af67ebaf391a933b0ea38a6ef72e0a8f7e63dee7"
+      },
+      {
+        "item_id": "env_00268-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "pillsbury-flour-whole_wheat-5000",
+          "display_name": "Pillsbury Chakki Fresh Atta 5kg",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 34900
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:49:06Z",
+        "evidence_class": 2,
+        "prev_hash": "791d09a1d822f85e4867bf96af67ebaf391a933b0ea38a6ef72e0a8f7e63dee7",
+        "content_hash": "b3aac4065de54c4e7c879fa2736f9d263458cb523fbfcd25134329d1e3f21589"
+      },
+      {
+        "item_id": "env_00268-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ]
+        },
+        "emitted_by": "agt_718",
+        "emitted_at": "2026-09-02T22:49:12Z",
+        "evidence_class": 1,
+        "prev_hash": "b3aac4065de54c4e7c879fa2736f9d263458cb523fbfcd25134329d1e3f21589",
+        "content_hash": "22f4e03cd030d28822a15aa66dfa3371e84ac083d19cc0a5e1761c87809667b6"
+      },
+      {
+        "item_id": "env_00268-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00268",
           "lines": [
             {
-              "sku": "aashirvaad-flour-semolina-1000",
+              "sku": "fortune-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 6800
+              "unit_price_paise": 5800
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:35:20Z",
+        "emitted_at": "2026-09-02T22:49:20Z",
         "evidence_class": 2,
-        "prev_hash": "3993d3d7d4e8f153b06187137988e632ecdc28008f7abec902191e75fef0791d",
-        "content_hash": "2ea764f72e66fbc54534014a5bda9d2a31649155a676f3a7343744ad571916a1"
-      },
-      {
-        "item_id": "env_00268-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00268",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-semolina-1000",
-              "quantity": 1,
-              "unit_price_paise": 6800
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:49:00Z",
-        "evidence_class": 2,
-        "prev_hash": "2ea764f72e66fbc54534014a5bda9d2a31649155a676f3a7343744ad571916a1",
-        "content_hash": "db832c16bb1afb0e74a70eccdb87adecd701ef69537a25f100a9d2455917eb2a"
-      },
-      {
-        "item_id": "env_00268-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00268",
-          "amount_paise": 6800,
-          "currency": "INR",
-          "receipt": "zep_00268"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:35:25Z",
-        "evidence_class": 3,
-        "prev_hash": "db832c16bb1afb0e74a70eccdb87adecd701ef69537a25f100a9d2455917eb2a",
-        "content_hash": "fb8ab1a3862352b0ec0f05cd89b552d43a1c9f028d73c1f7dcdddadb9f6aa0bb"
-      },
-      {
-        "item_id": "env_00268-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00268",
-          "order_id": "order_00268",
-          "amount_paise": 6800,
-          "status": "captured",
-          "block_id": "blk_00268",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:35:30Z",
-        "evidence_class": 3,
-        "prev_hash": "fb8ab1a3862352b0ec0f05cd89b552d43a1c9f028d73c1f7dcdddadb9f6aa0bb",
-        "content_hash": "084d83bd6f7cb5f04f4906070896c6a80ef2ed10619a6bcbc4c24bf9f0129948"
-      },
-      {
-        "item_id": "env_00268-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00268b",
-          "order_id": "order_00268",
-          "amount_paise": 6800,
-          "status": "captured",
-          "block_id": "blk_00268",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:35:34Z",
-        "evidence_class": 3,
-        "prev_hash": "084d83bd6f7cb5f04f4906070896c6a80ef2ed10619a6bcbc4c24bf9f0129948",
-        "content_hash": "4f3bdd4c4c9589cb92ce8c5506486bed610fa2209a61f07366c48704e9bcbc77"
+        "prev_hash": "22f4e03cd030d28822a15aa66dfa3371e84ac083d19cc0a5e1761c87809667b6",
+        "content_hash": "ac189f017fb1846b741ef6679a8fe36be115991231faa18c34259e90bf91cc68"
       },
       {
         "item_id": "env_00268-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00268",
+          "lines": [
+            {
+              "sku": "fortune-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 5800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "ac189f017fb1846b741ef6679a8fe36be115991231faa18c34259e90bf91cc68",
+        "content_hash": "54f0e71aee753e62563d719164e50a1792d74050f6bb7c524e16318abc7c07a0"
+      },
+      {
+        "item_id": "env_00268-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00268",
+          "amount_paise": 5800,
+          "currency": "INR",
+          "receipt": "zep_00268"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "54f0e71aee753e62563d719164e50a1792d74050f6bb7c524e16318abc7c07a0",
+        "content_hash": "3399249f92630b652dbffae45c0dba4113de7518f2b7d6a0aa1bf49b7f2d6d79"
+      },
+      {
+        "item_id": "env_00268-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00268",
+          "order_id": "order_00268",
+          "amount_paise": 5800,
+          "status": "captured",
+          "block_id": "blk_00268",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "3399249f92630b652dbffae45c0dba4113de7518f2b7d6a0aa1bf49b7f2d6d79",
+        "content_hash": "717cb55118dc1af655e53e00fc45cbebfef96a84facc9c6e80f79298b725ac6c"
+      },
+      {
+        "item_id": "env_00268-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00268b",
+          "order_id": "order_00268",
+          "amount_paise": 5800,
+          "status": "captured",
+          "block_id": "blk_00268",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:34Z",
+        "evidence_class": 3,
+        "prev_hash": "717cb55118dc1af655e53e00fc45cbebfef96a84facc9c6e80f79298b725ac6c",
+        "content_hash": "169294473f9477edc891bdc1e8dc7ffc3b53e6dfd70eec3728016c76bff903ca"
+      },
+      {
+        "item_id": "env_00268-e010",
+        "seq": 10,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad sooji. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-semolina-1000",
+          "text": "Ordered 1kg Fortune maida. Payment complete.",
+          "claimed_sku": "fortune-flour-refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_889",
-        "emitted_at": "2026-09-02T22:50:00Z",
+        "emitted_by": "agt_718",
+        "emitted_at": "2026-09-02T23:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "4f3bdd4c4c9589cb92ce8c5506486bed610fa2209a61f07366c48704e9bcbc77",
-        "content_hash": "f8e48d936614ced420fe6f065a10ac89240eea9f5e186be5895919c49c767513"
+        "prev_hash": "169294473f9477edc891bdc1e8dc7ffc3b53e6dfd70eec3728016c76bff903ca",
+        "content_hash": "a72ff713c6deecd79cea41e4a591104ef22d8cc4c28fce5f6a3d8daf7d7d3ffe"
       }
     ]
   },
@@ -178,14 +246,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-semolina-1000",
-    "ordered_sku": "aashirvaad-flour-semolina-1000",
-    "delivered_sku": "aashirvaad-flour-semolina-1000",
+    "requested_sku": "fortune-flour-refined-1000",
+    "ordered_sku": "fortune-flour-refined-1000",
+    "delivered_sku": "fortune-flour-refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 6800,
+    "loss_paise": 5800,
     "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
   }
 }

@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00112",
-    "created_at": "2026-09-02T19:43:00Z",
-    "expires_at": "2026-09-03T01:43:00Z",
-    "user_id": "usr_9317",
-    "agent_id": "agt_889",
+    "created_at": "2026-09-02T21:08:00Z",
+    "expires_at": "2026-09-03T03:08:00Z",
+    "user_id": "usr_4053",
+    "agent_id": "agt_755",
     "block": {
       "block_id": "blk_00112",
-      "blocked_paise": 137310,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-16T19:43:00Z",
-      "expires_at": "2026-10-28T19:43:00Z"
+      "blocked_at": "2026-08-20T21:08:00Z",
+      "expires_at": "2026-10-14T21:08:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 45770,
-      "max_total_paise": 45770,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
       "brand": "aashirvaad",
       "variant": null,
-      "pack_size_g": 5000
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 5kg Aashirvaad multigrain atta from Swiggy Instamart",
+      "text": "get me 1kg Aashirvaad iodised salt from Zepto",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "e0c885683b8676af45fb113bc9b93c7196a59d209d47dff037c1a3d08fdd72fa",
+    "content_hash": "f79e978c059a531c617e1feb695da91a0c9219cc4d608a8601bc392e0f42ce69",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00112",
-    "obligation_hash": "e0c885683b8676af45fb113bc9b93c7196a59d209d47dff037c1a3d08fdd72fa",
+    "obligation_hash": "f79e978c059a531c617e1feb695da91a0c9219cc4d608a8601bc392e0f42ce69",
     "items": [
       {
         "item_id": "env_00112-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "agt_889",
-        "emitted_at": "2026-09-02T19:43:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:08:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "aaa19718cb9994a548c0f59d1a963b11f0adb39c6cb417b50686513a9f854f7e"
+        "content_hash": "7bc305ecb0d6eb9d474b86e5e0664108deb514ce4cf2a3eee16c42b5d846e8dc"
       },
       {
         "item_id": "env_00112-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00112",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:43:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:08:04Z",
         "evidence_class": 2,
-        "prev_hash": "aaa19718cb9994a548c0f59d1a963b11f0adb39c6cb417b50686513a9f854f7e",
-        "content_hash": "af068d80585ee118610ec43a888d22eecd850f9bb5576fe681782c620cb67fa3"
+        "prev_hash": "7bc305ecb0d6eb9d474b86e5e0664108deb514ce4cf2a3eee16c42b5d846e8dc",
+        "content_hash": "a2c39bd7e6db800cc92e01bd5d6ae489261e657320b11f92d1588d0102711764"
       },
       {
         "item_id": "env_00112-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00112",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:57:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:08:05Z",
         "evidence_class": 2,
-        "prev_hash": "af068d80585ee118610ec43a888d22eecd850f9bb5576fe681782c620cb67fa3",
-        "content_hash": "c08001f95d294a91dcd8e0ada3b565b378e36d47841842a88c3e1f21b5f90218"
+        "prev_hash": "a2c39bd7e6db800cc92e01bd5d6ae489261e657320b11f92d1588d0102711764",
+        "content_hash": "abea7f4999881b72698abbc4d30ecc6ca487870103dca2832b7f5846d17193f0"
       },
       {
         "item_id": "env_00112-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00112",
-          "amount_paise": 39800,
-          "currency": "INR",
-          "receipt": "zep_00112"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:43:25Z",
-        "evidence_class": 3,
-        "prev_hash": "c08001f95d294a91dcd8e0ada3b565b378e36d47841842a88c3e1f21b5f90218",
-        "content_hash": "e4378476ffff387d916e66bdad7f6344401c64f419d9ebd3d1cb5b61a7f99d05"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:08:06Z",
+        "evidence_class": 2,
+        "prev_hash": "abea7f4999881b72698abbc4d30ecc6ca487870103dca2832b7f5846d17193f0",
+        "content_hash": "a899cf09c5557eb8afe98e575b7e926a66b38025a09a2152cb506496de867a62"
       },
       {
         "item_id": "env_00112-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00112",
-          "order_id": "order_00112",
-          "amount_paise": 39800,
-          "status": "captured",
-          "block_id": "blk_00112",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:43:30Z",
-        "evidence_class": 3,
-        "prev_hash": "e4378476ffff387d916e66bdad7f6344401c64f419d9ebd3d1cb5b61a7f99d05",
-        "content_hash": "17f6bd95f8edd0f30ab33d330e0fcafdb2e0015c2ceddf43e66de092cd9665d4"
+        "emitted_by": "agt_755",
+        "emitted_at": "2026-09-02T21:08:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a899cf09c5557eb8afe98e575b7e926a66b38025a09a2152cb506496de867a62",
+        "content_hash": "d1632d9819f94ed5101af6b2326a5a5111d2ef9b7148464a71395bc560993f79"
       },
       {
         "item_id": "env_00112-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00112",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:08:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d1632d9819f94ed5101af6b2326a5a5111d2ef9b7148464a71395bc560993f79",
+        "content_hash": "8be483a0c0522d03c26fb98b1cfb4e7990621ffde0d08cbe733a386be0274b9f"
+      },
+      {
+        "item_id": "env_00112-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00112",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:22:00Z",
+        "evidence_class": 2,
+        "prev_hash": "8be483a0c0522d03c26fb98b1cfb4e7990621ffde0d08cbe733a386be0274b9f",
+        "content_hash": "dc7a42c5b5206e01bd60a616d14e2580d52dd8ca5a5063e223a1abb205dadbf0"
+      },
+      {
+        "item_id": "env_00112-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00112",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00112"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:08:25Z",
+        "evidence_class": 3,
+        "prev_hash": "dc7a42c5b5206e01bd60a616d14e2580d52dd8ca5a5063e223a1abb205dadbf0",
+        "content_hash": "61681bdbae4936f4b55ef69f05afaba703175c3727ccd15734880cc91c6c891d"
+      },
+      {
+        "item_id": "env_00112-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00112",
+          "order_id": "order_00112",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00112",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:08:30Z",
+        "evidence_class": 3,
+        "prev_hash": "61681bdbae4936f4b55ef69f05afaba703175c3727ccd15734880cc91c6c891d",
+        "content_hash": "7ac366d07bc0f3524637285c7261e0b36ab04a0c7c32e368a6e9da2a2d43b642"
+      },
+      {
+        "item_id": "env_00112-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-multigrain-5000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_889",
-        "emitted_at": "2026-09-02T19:58:00Z",
+        "emitted_by": "agt_755",
+        "emitted_at": "2026-09-02T21:23:00Z",
         "evidence_class": 0,
-        "prev_hash": "17f6bd95f8edd0f30ab33d330e0fcafdb2e0015c2ceddf43e66de092cd9665d4",
-        "content_hash": "56770cc5c1e670fa86004f2f0f0392f7e1d955020799b979a0de25c8ae5d165b"
+        "prev_hash": "7ac366d07bc0f3524637285c7261e0b36ab04a0c7c32e368a6e9da2a2d43b642",
+        "content_hash": "6c2a82d47b8034321ab07f44c3aa7bf5a2c06377c0003aea7fcf5545545764fc"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-multigrain-5000",
-    "ordered_sku": "aashirvaad-flour-multigrain-5000",
-    "delivered_sku": "aashirvaad-flour-multigrain-5000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00175",
-    "created_at": "2026-09-03T00:50:00Z",
-    "expires_at": "2026-09-03T06:50:00Z",
-    "user_id": "usr_2562",
-    "agent_id": "agt_289",
+    "created_at": "2026-09-03T01:38:00Z",
+    "expires_at": "2026-09-03T07:38:00Z",
+    "user_id": "usr_2442",
+    "agent_id": "agt_977",
     "block": {
       "block_id": "blk_00175",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-30T00:50:00Z",
-      "expires_at": "2026-10-18T00:50:00Z"
+      "blocked_at": "2026-08-19T01:38:00Z",
+      "expires_at": "2026-10-17T01:38:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 13569,
-      "max_total_paise": 13569,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "swiggy_instamart"
       ],
-      "brand": "india_gate",
-      "variant": "brown",
+      "brand": "aashirvaad",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1kg India Gate brown rice, use Blinkit",
-      "uncaptured_attributes": []
+      "text": "I need 1kg Aashirvaad iodised salt, use Swiggy Instamart",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "bab3f627b6745f24cf551e290763ef8370f8fb336188497be33e4c38a724e45d",
+    "content_hash": "d5a9cd691e9c1635e3909f97a6a6155f522e59e986530464fdbb71532146dc19",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00175",
-    "obligation_hash": "bab3f627b6745f24cf551e290763ef8370f8fb336188497be33e4c38a724e45d",
+    "obligation_hash": "d5a9cd691e9c1635e3909f97a6a6155f522e59e986530464fdbb71532146dc19",
     "items": [
       {
         "item_id": "env_00175-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "india_gate-rice-brown-1000",
-              "quantity": 1,
-              "unit_price_paise": 11800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "agt_289",
-        "emitted_at": "2026-09-03T00:50:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:38:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "3185e8d43d9db7068755f7432eb703aed1e9b67a3ee997f70437429e0834f791"
+        "content_hash": "9cf97aeab569d4391b181dcf893476cc33a744d59aa48ade67b418f9e202da99"
       },
       {
         "item_id": "env_00175-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00175",
-          "lines": [
-            {
-              "sku": "india_gate-rice-brown-1000",
-              "quantity": 1,
-              "unit_price_paise": 11800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:50:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:38:04Z",
         "evidence_class": 2,
-        "prev_hash": "3185e8d43d9db7068755f7432eb703aed1e9b67a3ee997f70437429e0834f791",
-        "content_hash": "76e816c9c838d2d7114fc50d19f09f8a90f8c28ef0f032654d43aa18ddad5cd4"
+        "prev_hash": "9cf97aeab569d4391b181dcf893476cc33a744d59aa48ade67b418f9e202da99",
+        "content_hash": "848de7be1658a27c2363cc054cf2fcb035efce33ae5649d5322ca5386bf939bd"
       },
       {
         "item_id": "env_00175-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00175",
-          "lines": [
-            {
-              "sku": "india_gate-rice-brown-1000",
-              "quantity": 1,
-              "unit_price_paise": 11800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T01:04:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:38:05Z",
         "evidence_class": 2,
-        "prev_hash": "76e816c9c838d2d7114fc50d19f09f8a90f8c28ef0f032654d43aa18ddad5cd4",
-        "content_hash": "8093261404df6692b33dd986ddced1ef0e3a907e713dc3400096167c32becea0"
+        "prev_hash": "848de7be1658a27c2363cc054cf2fcb035efce33ae5649d5322ca5386bf939bd",
+        "content_hash": "6671fe1fd8c0b090c0082b1d0ec96e9d19a441daf6bd931de74645f971474256"
       },
       {
         "item_id": "env_00175-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00175",
-          "amount_paise": 11800,
-          "currency": "INR",
-          "receipt": "zep_00175"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:50:25Z",
-        "evidence_class": 3,
-        "prev_hash": "8093261404df6692b33dd986ddced1ef0e3a907e713dc3400096167c32becea0",
-        "content_hash": "1d2de8d00f16c9da46d3ff3a3f9fe30f6415ef72d222eb73b110bd7521eb3ce9"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:38:06Z",
+        "evidence_class": 2,
+        "prev_hash": "6671fe1fd8c0b090c0082b1d0ec96e9d19a441daf6bd931de74645f971474256",
+        "content_hash": "f97f04a9ee0abb1d78e7fe32903771c99c25c8f8ce390e6fe92cdfa0986bcd9b"
       },
       {
         "item_id": "env_00175-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00175",
-          "order_id": "order_00175",
-          "amount_paise": 11800,
-          "status": "captured",
-          "block_id": "blk_00175",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:50:30Z",
-        "evidence_class": 3,
-        "prev_hash": "1d2de8d00f16c9da46d3ff3a3f9fe30f6415ef72d222eb73b110bd7521eb3ce9",
-        "content_hash": "482f6aafaf024f25c020a154e84b1774e6c3c4aab65e1f01593f4a978163e78d"
+        "emitted_by": "agt_977",
+        "emitted_at": "2026-09-03T01:38:12Z",
+        "evidence_class": 1,
+        "prev_hash": "f97f04a9ee0abb1d78e7fe32903771c99c25c8f8ce390e6fe92cdfa0986bcd9b",
+        "content_hash": "6656570436f649792ea6e5e5a107a1d7b3d5726444d0d6fc595b2b0055314068"
       },
       {
         "item_id": "env_00175-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00175",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:38:20Z",
+        "evidence_class": 2,
+        "prev_hash": "6656570436f649792ea6e5e5a107a1d7b3d5726444d0d6fc595b2b0055314068",
+        "content_hash": "1998a80caef0b73c487f71805c17ba3183b9153a87ef6f0c537f8455ae47129b"
+      },
+      {
+        "item_id": "env_00175-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00175",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:52:00Z",
+        "evidence_class": 2,
+        "prev_hash": "1998a80caef0b73c487f71805c17ba3183b9153a87ef6f0c537f8455ae47129b",
+        "content_hash": "74eb799cb8d3280e1849fdb1b8a375bf4800577e17b597f9b982d6d6e2432c03"
+      },
+      {
+        "item_id": "env_00175-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00175",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00175"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:38:25Z",
+        "evidence_class": 3,
+        "prev_hash": "74eb799cb8d3280e1849fdb1b8a375bf4800577e17b597f9b982d6d6e2432c03",
+        "content_hash": "10592dffb86cc5ff07525999f9dbf1feb108d6df92fb35550c012e246fb7663b"
+      },
+      {
+        "item_id": "env_00175-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00175",
+          "order_id": "order_00175",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00175",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T01:38:30Z",
+        "evidence_class": 3,
+        "prev_hash": "10592dffb86cc5ff07525999f9dbf1feb108d6df92fb35550c012e246fb7663b",
+        "content_hash": "d4e63d0ba6cad0c4e08771e4e3fc0404cd9fc7e1d1e3f1b71f550bd4acf77095"
+      },
+      {
+        "item_id": "env_00175-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-brown-1000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_289",
-        "emitted_at": "2026-09-03T01:05:00Z",
+        "emitted_by": "agt_977",
+        "emitted_at": "2026-09-03T01:53:00Z",
         "evidence_class": 0,
-        "prev_hash": "482f6aafaf024f25c020a154e84b1774e6c3c4aab65e1f01593f4a978163e78d",
-        "content_hash": "70e1c98ab1ba0a5dc58a8027b00480a91717751328c7c38a5515bf19a6d6d64a"
+        "prev_hash": "d4e63d0ba6cad0c4e08771e4e3fc0404cd9fc7e1d1e3f1b71f550bd4acf77095",
+        "content_hash": "959ed3bcb678dc98c3513e6863281fbce207af1f38a57037a8de119dbe40ce40"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-brown-1000",
-    "ordered_sku": "india_gate-rice-brown-1000",
-    "delivered_sku": "india_gate-rice-brown-1000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

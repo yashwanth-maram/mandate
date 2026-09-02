@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00246",
-    "created_at": "2026-09-03T03:46:00Z",
-    "expires_at": "2026-09-03T09:46:00Z",
-    "user_id": "usr_5380",
-    "agent_id": "agt_978",
+    "created_at": "2026-09-02T23:37:00Z",
+    "expires_at": "2026-09-03T05:37:00Z",
+    "user_id": "usr_8359",
+    "agent_id": "agt_655",
     "block": {
       "block_id": "blk_00246",
-      "blocked_paise": 54510,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T03:46:00Z",
-      "expires_at": "2026-10-31T03:46:00Z"
+      "blocked_at": "2026-08-29T23:37:00Z",
+      "expires_at": "2026-10-08T23:37:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18170,
-      "max_total_paise": 18170,
+      "category": "rice",
+      "max_unit_price_paise": 13569,
+      "max_total_paise": 13569,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "swiggy_instamart"
       ],
-      "brand": "dhara",
-      "variant": "mustard",
+      "brand": "india_gate",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1L Dhara kachi ghani mustard oil from Blinkit",
-      "uncaptured_attributes": []
+      "text": "order 1kg India Gate brown rice on Swiggy Instamart",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "2d41848afc7017aea3e5e0983deb84276f49c6ebabd6386affef4727a8d01dfe",
+    "content_hash": "cb97f87dfa5af4bc1c949302948646a4a0b4143389d5111826fdcc343d2038e8",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00246",
-    "obligation_hash": "2d41848afc7017aea3e5e0983deb84276f49c6ebabd6386affef4727a8d01dfe",
+    "obligation_hash": "cb97f87dfa5af4bc1c949302948646a4a0b4143389d5111826fdcc343d2038e8",
     "items": [
       {
         "item_id": "env_00246-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "agt_978",
-        "emitted_at": "2026-09-03T03:46:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:37:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "d9ec9fa7e476e8acada592cfa737f642b707a6fee24be868bee96df830100b2d"
+        "content_hash": "5e1841f0f212e8f2be101e5fae167bc6002991fc0020c44a5c75775a3db96542"
       },
       {
         "item_id": "env_00246-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00246",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "india_gate-rice-brown-1000",
+          "display_name": "India Gate Brown Basmati Rice 1kg",
+          "description": "India Gate Brown Basmati Rice 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 11800
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:46:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:37:04Z",
         "evidence_class": 2,
-        "prev_hash": "d9ec9fa7e476e8acada592cfa737f642b707a6fee24be868bee96df830100b2d",
-        "content_hash": "0e78d9b7047adea4fb4dfa4f49cd8d8222ca169117434dc50207ab85bb815fbe"
+        "prev_hash": "5e1841f0f212e8f2be101e5fae167bc6002991fc0020c44a5c75775a3db96542",
+        "content_hash": "18754bacf18ae14741734672a4571cd6f0e8d777d88bd573a597f086a26305eb"
       },
       {
         "item_id": "env_00246-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00246",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 13200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T04:00:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:37:05Z",
         "evidence_class": 2,
-        "prev_hash": "0e78d9b7047adea4fb4dfa4f49cd8d8222ca169117434dc50207ab85bb815fbe",
-        "content_hash": "9d69a28ad6bad1d846fbd3bcadaa03ffbae77a3697e00de6092490948f59db32"
+        "prev_hash": "18754bacf18ae14741734672a4571cd6f0e8d777d88bd573a597f086a26305eb",
+        "content_hash": "60ab3bdba7fea5f6c1de6d1840e012052924f1408807f975c564f506cd34e5dc"
       },
       {
         "item_id": "env_00246-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00246",
-          "amount_paise": 15800,
-          "currency": "INR",
-          "receipt": "zep_00246"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:46:25Z",
-        "evidence_class": 3,
-        "prev_hash": "9d69a28ad6bad1d846fbd3bcadaa03ffbae77a3697e00de6092490948f59db32",
-        "content_hash": "3004406cb8b4f2a740c28ea791e7b15fd6026498fc88bec6ae9382c7e2bee8db"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:37:06Z",
+        "evidence_class": 2,
+        "prev_hash": "60ab3bdba7fea5f6c1de6d1840e012052924f1408807f975c564f506cd34e5dc",
+        "content_hash": "16bf00b0e778a6c9640e0e82b5fd7dd7b3564f09206e180c4aa75aad99ee183c"
       },
       {
         "item_id": "env_00246-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00246",
-          "order_id": "order_00246",
-          "amount_paise": 15800,
-          "status": "captured",
-          "block_id": "blk_00246",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:46:30Z",
-        "evidence_class": 3,
-        "prev_hash": "3004406cb8b4f2a740c28ea791e7b15fd6026498fc88bec6ae9382c7e2bee8db",
-        "content_hash": "cf5c2880132f6804446e9d65ce65aade6a1915c6f0e82b09b6996797748e2502"
+        "emitted_by": "agt_655",
+        "emitted_at": "2026-09-02T23:37:12Z",
+        "evidence_class": 1,
+        "prev_hash": "16bf00b0e778a6c9640e0e82b5fd7dd7b3564f09206e180c4aa75aad99ee183c",
+        "content_hash": "4cc23f84c624d174e7c321f3e45dd52629d49a1e68bd58fd92962f31e461e682"
       },
       {
         "item_id": "env_00246-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00246",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:37:20Z",
+        "evidence_class": 2,
+        "prev_hash": "4cc23f84c624d174e7c321f3e45dd52629d49a1e68bd58fd92962f31e461e682",
+        "content_hash": "10719f140448b1d1e8e6fed0e172696f927fa5bd5930e850b6f29ab74066df35"
+      },
+      {
+        "item_id": "env_00246-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00246",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:51:00Z",
+        "evidence_class": 2,
+        "prev_hash": "10719f140448b1d1e8e6fed0e172696f927fa5bd5930e850b6f29ab74066df35",
+        "content_hash": "9961e02388d44aecec3278074caa6c5191d0385b9725dbbc4f64ff7378a20d76"
+      },
+      {
+        "item_id": "env_00246-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00246",
+          "amount_paise": 11800,
+          "currency": "INR",
+          "receipt": "zep_00246"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:37:25Z",
+        "evidence_class": 3,
+        "prev_hash": "9961e02388d44aecec3278074caa6c5191d0385b9725dbbc4f64ff7378a20d76",
+        "content_hash": "9ef7e45efea24d0193e5ea1651f00ad9ebdebd2ba1075d0844946841442c37a9"
+      },
+      {
+        "item_id": "env_00246-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00246",
+          "order_id": "order_00246",
+          "amount_paise": 11800,
+          "status": "captured",
+          "block_id": "blk_00246",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:37:30Z",
+        "evidence_class": 3,
+        "prev_hash": "9ef7e45efea24d0193e5ea1651f00ad9ebdebd2ba1075d0844946841442c37a9",
+        "content_hash": "8cbdcf147bd4d0da6c23bc99b8bf4473093c16f855b1b20b72d7b824d0db3ffb"
+      },
+      {
+        "item_id": "env_00246-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "dhara-edible_oil-mustard-1000",
+          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-brown-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_978",
-        "emitted_at": "2026-09-03T04:01:00Z",
+        "emitted_by": "agt_655",
+        "emitted_at": "2026-09-02T23:52:00Z",
         "evidence_class": 0,
-        "prev_hash": "cf5c2880132f6804446e9d65ce65aade6a1915c6f0e82b09b6996797748e2502",
-        "content_hash": "804c50f04399ee71c74a7398808555a1ba95fc439af28257d5d7c0b2f6517ec3"
+        "prev_hash": "8cbdcf147bd4d0da6c23bc99b8bf4473093c16f855b1b20b72d7b824d0db3ffb",
+        "content_hash": "2cabbda6bfffe875319974c9bcf50efecd9a54a33959aa2672473d282ee5ad6c"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "dhara-edible_oil-mustard-1000",
-    "ordered_sku": "dhara-edible_oil-mustard-1000",
-    "delivered_sku": "dhara-edible_oil-mustard-1000",
+    "requested_sku": "india_gate-rice-brown-1000",
+    "ordered_sku": "india_gate-rice-brown-1000",
+    "delivered_sku": "india_gate-rice-brown-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

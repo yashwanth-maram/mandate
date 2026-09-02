@@ -6,154 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00490",
-    "created_at": "2026-09-02T19:48:00Z",
-    "expires_at": "2026-09-03T01:48:00Z",
-    "user_id": "usr_6864",
-    "agent_id": "agt_790",
+    "created_at": "2026-09-02T18:16:00Z",
+    "expires_at": "2026-09-03T00:16:00Z",
+    "user_id": "usr_7738",
+    "agent_id": "agt_206",
     "block": {
       "block_id": "blk_00490",
-      "blocked_paise": 50000,
+      "blocked_paise": 132825,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T19:48:00Z",
-      "expires_at": "2026-10-24T19:48:00Z"
+      "blocked_at": "2026-08-18T18:16:00Z",
+      "expires_at": "2026-10-25T18:16:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5750,
-      "max_total_paise": 5750,
+      "category": "flour",
+      "max_unit_price_paise": 44275,
+      "max_total_paise": 44275,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "harvest",
-      "variant": null,
-      "pack_size_g": 400
+      "brand": "fortune",
+      "variant": "multigrain",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 400g Harvest brown bread from Blinkit, keep it under 57 rupees",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "get me 5kg Fortune multigrain atta from Zepto",
+      "uncaptured_attributes": []
     },
-    "content_hash": "86830b3f10ed29c6760880756a0b5962ed15e72705b4657756124c0505c4adf9",
+    "content_hash": "76600cab5f0a2011cffbe9f2500d234c8f90da9fa3847b826d144ec228446d67",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00490",
-    "obligation_hash": "86830b3f10ed29c6760880756a0b5962ed15e72705b4657756124c0505c4adf9",
+    "obligation_hash": "76600cab5f0a2011cffbe9f2500d234c8f90da9fa3847b826d144ec228446d67",
     "items": [
       {
         "item_id": "env_00490-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "agt_790",
-        "emitted_at": "2026-09-02T19:48:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:16:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8bccc350430fc5fbd7fa26a5d2348e12096975cd7636e6e8ed223374d056bdd0"
+        "content_hash": "bfc575738b1e02bcdf4a45fb6015f9f2c2d3734f843ef47bcbd955fc6caaa835"
       },
       {
         "item_id": "env_00490-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00490",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 39800
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:48:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:16:04Z",
         "evidence_class": 2,
-        "prev_hash": "8bccc350430fc5fbd7fa26a5d2348e12096975cd7636e6e8ed223374d056bdd0",
-        "content_hash": "338628c1f373ff9b559a87a7230566dc706f8ec2d3f7ee43c8850070af54fb8d"
+        "prev_hash": "bfc575738b1e02bcdf4a45fb6015f9f2c2d3734f843ef47bcbd955fc6caaa835",
+        "content_hash": "cc305bdc85adfae62bf811e1125fa95f964d7adda81b3f6b90cef90fcb1709a0"
       },
       {
         "item_id": "env_00490-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00490",
-          "lines": [
-            {
-              "sku": "harvest-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 38500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T20:02:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:16:05Z",
         "evidence_class": 2,
-        "prev_hash": "338628c1f373ff9b559a87a7230566dc706f8ec2d3f7ee43c8850070af54fb8d",
-        "content_hash": "841a65e75fafb470f1ee0a76e96a7e162f77dfd820f098a3cb90773a746fd73a"
+        "prev_hash": "cc305bdc85adfae62bf811e1125fa95f964d7adda81b3f6b90cef90fcb1709a0",
+        "content_hash": "166691f1550486b59102e751bf1edc8d8774e8ceab58a2362c0f08956730b79d"
       },
       {
         "item_id": "env_00490-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00490",
-          "amount_paise": 5000,
-          "currency": "INR",
-          "receipt": "zep_00490"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:48:25Z",
-        "evidence_class": 3,
-        "prev_hash": "841a65e75fafb470f1ee0a76e96a7e162f77dfd820f098a3cb90773a746fd73a",
-        "content_hash": "cb7c482123fd9e0ca238a699ab2f34fc759ccd656c46977f9455df010d7e51d4"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:16:06Z",
+        "evidence_class": 2,
+        "prev_hash": "166691f1550486b59102e751bf1edc8d8774e8ceab58a2362c0f08956730b79d",
+        "content_hash": "c0f171c7be72d0a63e0fe32bfadcef4fcf8a2f0481516f8d30c069673096695a"
       },
       {
         "item_id": "env_00490-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00490",
-          "order_id": "order_00490",
-          "amount_paise": 5000,
-          "status": "captured",
-          "block_id": "blk_00490",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:48:30Z",
-        "evidence_class": 3,
-        "prev_hash": "cb7c482123fd9e0ca238a699ab2f34fc759ccd656c46977f9455df010d7e51d4",
-        "content_hash": "931ec543a5d1f7116696f6d4f92ec81136b29c89db338b2b514a69643975e159"
+        "emitted_by": "agt_206",
+        "emitted_at": "2026-09-02T18:16:12Z",
+        "evidence_class": 1,
+        "prev_hash": "c0f171c7be72d0a63e0fe32bfadcef4fcf8a2f0481516f8d30c069673096695a",
+        "content_hash": "d153b6be1b6a86ab1893aaced4b1bd75b3cad78d93b3be7fe4ed38da01ff3200"
       },
       {
         "item_id": "env_00490-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00490",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:16:20Z",
+        "evidence_class": 2,
+        "prev_hash": "d153b6be1b6a86ab1893aaced4b1bd75b3cad78d93b3be7fe4ed38da01ff3200",
+        "content_hash": "300ceb0c889cbcc12cc6d15eee2b74aabf9572d2b587c8a8ce7ff511322f1793"
+      },
+      {
+        "item_id": "env_00490-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00490",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:30:00Z",
+        "evidence_class": 2,
+        "prev_hash": "300ceb0c889cbcc12cc6d15eee2b74aabf9572d2b587c8a8ce7ff511322f1793",
+        "content_hash": "39e4b57de0e5babc2e6ec77a69d41e90c80ec05ed68392cc0e2955faa5961cab"
+      },
+      {
+        "item_id": "env_00490-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00490",
+          "amount_paise": 38500,
+          "currency": "INR",
+          "receipt": "zep_00490"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:16:25Z",
+        "evidence_class": 3,
+        "prev_hash": "39e4b57de0e5babc2e6ec77a69d41e90c80ec05ed68392cc0e2955faa5961cab",
+        "content_hash": "368ab149c28faba9d096b82617036b33a7d6607a04e03cd747686c5a0ab39d18"
+      },
+      {
+        "item_id": "env_00490-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00490",
+          "order_id": "order_00490",
+          "amount_paise": 38500,
+          "status": "captured",
+          "block_id": "blk_00490",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:16:30Z",
+        "evidence_class": 3,
+        "prev_hash": "368ab149c28faba9d096b82617036b33a7d6607a04e03cd747686c5a0ab39d18",
+        "content_hash": "26fb4b4035595b0510f07cd712dbfd6279f081a39b6b5cd04678854c91ae1346"
+      },
+      {
+        "item_id": "env_00490-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Harvest brown bread. Payment complete.",
-          "claimed_sku": "harvest-bread-brown-400",
+          "text": "Ordered 5kg Fortune multigrain atta. Payment complete.",
+          "claimed_sku": "fortune-flour-multigrain-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_790",
-        "emitted_at": "2026-09-02T20:03:00Z",
+        "emitted_by": "agt_206",
+        "emitted_at": "2026-09-02T18:31:00Z",
         "evidence_class": 0,
-        "prev_hash": "931ec543a5d1f7116696f6d4f92ec81136b29c89db338b2b514a69643975e159",
-        "content_hash": "b61fa5f338f056f1abe22121f973d3feafb13754f627c1de871efccfbf8254de"
+        "prev_hash": "26fb4b4035595b0510f07cd712dbfd6279f081a39b6b5cd04678854c91ae1346",
+        "content_hash": "ed4c7b941ddff493aa2d381bc5b30cb11e4ae685e36ca9ed86cb9ca616860482"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "harvest-bread-brown-400",
-    "ordered_sku": "harvest-bread-brown-400",
-    "delivered_sku": "harvest-bread-brown-400",
+    "requested_sku": "fortune-flour-multigrain-5000",
+    "ordered_sku": "fortune-flour-multigrain-5000",
+    "delivered_sku": "fortune-flour-multigrain-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00012",
-    "created_at": "2026-09-02T22:41:00Z",
-    "expires_at": "2026-09-03T04:41:00Z",
-    "user_id": "usr_8206",
-    "agent_id": "agt_179",
+    "created_at": "2026-09-02T23:30:00Z",
+    "expires_at": "2026-09-03T05:30:00Z",
+    "user_id": "usr_5022",
+    "agent_id": "agt_950",
     "block": {
       "block_id": "blk_00012",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-24T22:41:00Z",
-      "expires_at": "2026-10-09T22:41:00Z"
+      "blocked_at": "2026-08-31T23:30:00Z",
+      "expires_at": "2026-10-10T23:30:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 4830,
-      "max_total_paise": 4830,
+      "category": "rice",
+      "max_unit_price_paise": 13569,
+      "max_total_paise": 13569,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "harvest",
+      "brand": "india_gate",
       "variant": null,
-      "pack_size_g": 400
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 400g Harvest white bread, use Swiggy Instamart",
+      "text": "buy 1kg India Gate brown rice from Blinkit, keep it under 135 rupees",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "4df2aae2952d9eb1142dba62e2fa86fdacf300ac9d7c124a0c70aea7d4b12157",
+    "content_hash": "cd35dc7852a87c4a284be4fffab1788533686d8f640ad67c5876d29d9265dc73",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00012",
-    "obligation_hash": "4df2aae2952d9eb1142dba62e2fa86fdacf300ac9d7c124a0c70aea7d4b12157",
+    "obligation_hash": "cd35dc7852a87c4a284be4fffab1788533686d8f640ad67c5876d29d9265dc73",
     "items": [
       {
         "item_id": "env_00012-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "harvest-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "agt_179",
-        "emitted_at": "2026-09-02T22:41:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:30:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "16193dc7a54be6d72b3d36f2196a019d19590fe5359182631ecf1e2a59bbd966"
+        "content_hash": "483c284458177b1ce7e6c0f2c6bfa9d2fa48c5b058dd51347c3196bd2a867f5c"
       },
       {
         "item_id": "env_00012-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00012",
-          "lines": [
-            {
-              "sku": "harvest-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 13200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:41:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:30:04Z",
         "evidence_class": 2,
-        "prev_hash": "16193dc7a54be6d72b3d36f2196a019d19590fe5359182631ecf1e2a59bbd966",
-        "content_hash": "e87a1e8c7efa4b2c8e834a6484ecd2df9e29f2aa56fe5817fb2cc7f4644bc969"
+        "prev_hash": "483c284458177b1ce7e6c0f2c6bfa9d2fa48c5b058dd51347c3196bd2a867f5c",
+        "content_hash": "9babdda2db0ad48968aa6e6be3862d0426f10d2ecae705bae69cee520d36d941"
       },
       {
         "item_id": "env_00012-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00012",
-          "lines": [
-            {
-              "sku": "harvest-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-brown-1000",
+          "display_name": "India Gate Brown Basmati Rice 1kg",
+          "description": "India Gate Brown Basmati Rice 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 11800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:55:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:30:05Z",
         "evidence_class": 2,
-        "prev_hash": "e87a1e8c7efa4b2c8e834a6484ecd2df9e29f2aa56fe5817fb2cc7f4644bc969",
-        "content_hash": "7cd22c03742bb39e9122a2a6f605237587aaaf37e408d7079d4870c41835c34a"
+        "prev_hash": "9babdda2db0ad48968aa6e6be3862d0426f10d2ecae705bae69cee520d36d941",
+        "content_hash": "076cfc8660233f1613dd79eec24d668eb605ab4e50bf899fa99aa8f6951db855"
       },
       {
         "item_id": "env_00012-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00012",
-          "amount_paise": 4200,
-          "currency": "INR",
-          "receipt": "zep_00012"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:41:25Z",
-        "evidence_class": 3,
-        "prev_hash": "7cd22c03742bb39e9122a2a6f605237587aaaf37e408d7079d4870c41835c34a",
-        "content_hash": "4c5c85fb60c7d133289c7b4bb0b89ef27b9eb8a2c71092a4baefceb32eb4af37"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:30:06Z",
+        "evidence_class": 2,
+        "prev_hash": "076cfc8660233f1613dd79eec24d668eb605ab4e50bf899fa99aa8f6951db855",
+        "content_hash": "15ab2c0ecd44655cbcdfeb987742a63a21557c7467e4bd6772a41097b8bbdf07"
       },
       {
         "item_id": "env_00012-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00012",
-          "order_id": "order_00012",
-          "amount_paise": 4200,
-          "status": "captured",
-          "block_id": "blk_00012",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:41:30Z",
-        "evidence_class": 3,
-        "prev_hash": "4c5c85fb60c7d133289c7b4bb0b89ef27b9eb8a2c71092a4baefceb32eb4af37",
-        "content_hash": "dc4525fa46adf3b08e89f8aaba76380acc95e033ee5f358ad54e8e12974a0933"
+        "emitted_by": "agt_950",
+        "emitted_at": "2026-09-02T23:30:12Z",
+        "evidence_class": 1,
+        "prev_hash": "15ab2c0ecd44655cbcdfeb987742a63a21557c7467e4bd6772a41097b8bbdf07",
+        "content_hash": "478566ef1eb2467c7b03bab12e4042b90f56070eeab8262bb83310f5acca3275"
       },
       {
         "item_id": "env_00012-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00012",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:30:20Z",
+        "evidence_class": 2,
+        "prev_hash": "478566ef1eb2467c7b03bab12e4042b90f56070eeab8262bb83310f5acca3275",
+        "content_hash": "4925e287399be1e390a265b622bafd02c4d3cd8a97ead0e458262b6af474e8e6"
+      },
+      {
+        "item_id": "env_00012-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00012",
+          "lines": [
+            {
+              "sku": "india_gate-rice-brown-1000",
+              "quantity": 1,
+              "unit_price_paise": 11800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:44:00Z",
+        "evidence_class": 2,
+        "prev_hash": "4925e287399be1e390a265b622bafd02c4d3cd8a97ead0e458262b6af474e8e6",
+        "content_hash": "ce83f04c6eecfec021f956a2ee81c3bcdf81d8976589e24d7a86d2fea0a6c130"
+      },
+      {
+        "item_id": "env_00012-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00012",
+          "amount_paise": 11800,
+          "currency": "INR",
+          "receipt": "zep_00012"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:30:25Z",
+        "evidence_class": 3,
+        "prev_hash": "ce83f04c6eecfec021f956a2ee81c3bcdf81d8976589e24d7a86d2fea0a6c130",
+        "content_hash": "efebac41dee1b304857d5b96d3cceebab53b6732c9ac386a58f3196761fc11a6"
+      },
+      {
+        "item_id": "env_00012-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00012",
+          "order_id": "order_00012",
+          "amount_paise": 11800,
+          "status": "captured",
+          "block_id": "blk_00012",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:30:30Z",
+        "evidence_class": 3,
+        "prev_hash": "efebac41dee1b304857d5b96d3cceebab53b6732c9ac386a58f3196761fc11a6",
+        "content_hash": "797a3a2a18203c11ff943b3afdc2ea2bedd619f166745ee37eadfdd0bac78eff"
+      },
+      {
+        "item_id": "env_00012-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Harvest white bread. Payment complete.",
-          "claimed_sku": "harvest-bread-white-400",
+          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-brown-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_179",
-        "emitted_at": "2026-09-02T22:56:00Z",
+        "emitted_by": "agt_950",
+        "emitted_at": "2026-09-02T23:45:00Z",
         "evidence_class": 0,
-        "prev_hash": "dc4525fa46adf3b08e89f8aaba76380acc95e033ee5f358ad54e8e12974a0933",
-        "content_hash": "da24c1dced8d1519c5304399f36c3106a5ccd9bcf41b486a769973c020603036"
+        "prev_hash": "797a3a2a18203c11ff943b3afdc2ea2bedd619f166745ee37eadfdd0bac78eff",
+        "content_hash": "527626e4927e57b8519923bcd72278edb80e9df57e8f37d628e40ef169f48bc7"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "harvest-bread-white-400",
-    "ordered_sku": "harvest-bread-white-400",
-    "delivered_sku": "harvest-bread-white-400",
+    "requested_sku": "india_gate-rice-brown-1000",
+    "ordered_sku": "india_gate-rice-brown-1000",
+    "delivered_sku": "india_gate-rice-brown-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

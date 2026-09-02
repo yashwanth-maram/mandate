@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00405",
-    "created_at": "2026-09-03T03:12:00Z",
-    "expires_at": "2026-09-03T09:12:00Z",
-    "user_id": "usr_8734",
-    "agent_id": "agt_769",
+    "created_at": "2026-09-02T21:42:00Z",
+    "expires_at": "2026-09-03T03:42:00Z",
+    "user_id": "usr_9085",
+    "agent_id": "agt_521",
     "block": {
       "block_id": "blk_00405",
-      "blocked_paise": 56925,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-30T03:12:00Z",
-      "expires_at": "2026-10-14T03:12:00Z"
+      "blocked_at": "2026-08-16T21:42:00Z",
+      "expires_at": "2026-10-05T21:42:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18975,
-      "max_total_paise": 18975,
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "mustard",
+      "brand": "tata",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Fortune kachi ghani mustard oil from Blinkit, keep it under 189 rupees",
+      "text": "I need 1kg Tata iodised salt, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "aadf54ffe59d668fa9a22adfac1d5ca405714011177e9936f144e4726a6740fd",
+    "content_hash": "23029ab7d456fe5e8408e7d06ebeb8afa3faba8fedf5e16c3fba0f0547fce082",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00405",
-    "obligation_hash": "aadf54ffe59d668fa9a22adfac1d5ca405714011177e9936f144e4726a6740fd",
+    "obligation_hash": "23029ab7d456fe5e8408e7d06ebeb8afa3faba8fedf5e16c3fba0f0547fce082",
     "items": [
       {
         "item_id": "env_00405-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 16500
-            }
-          ]
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "agt_769",
-        "emitted_at": "2026-09-03T03:12:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:42:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "d846ad06262107b337931b938136a94eae095c223004079040a995e269cf3cbe"
+        "content_hash": "acc1f39a6f99d057aad2aa6fa5394d9c41f2eaaee64bf3adf8fbbef9c516238d"
       },
       {
         "item_id": "env_00405-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 3000
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:42:04Z",
+        "evidence_class": 2,
+        "prev_hash": "acc1f39a6f99d057aad2aa6fa5394d9c41f2eaaee64bf3adf8fbbef9c516238d",
+        "content_hash": "b7460ab664af64ad50a19631f6c64672a5b1a1f0f1e10c53fbbd90b5f2b3e852"
+      },
+      {
+        "item_id": "env_00405-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:42:05Z",
+        "evidence_class": 2,
+        "prev_hash": "b7460ab664af64ad50a19631f6c64672a5b1a1f0f1e10c53fbbd90b5f2b3e852",
+        "content_hash": "a5b162d9267cbb1f11d356969fa7f303bbdb730028b4ea326fa838890fa4f2a1"
+      },
+      {
+        "item_id": "env_00405-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T21:42:06Z",
+        "evidence_class": 2,
+        "prev_hash": "a5b162d9267cbb1f11d356969fa7f303bbdb730028b4ea326fa838890fa4f2a1",
+        "content_hash": "ae702c9adf61f6291f6b663d066051677a52874f335877d8e2e8aff2dc9b82de"
+      },
+      {
+        "item_id": "env_00405-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
+        },
+        "emitted_by": "agt_521",
+        "emitted_at": "2026-09-02T21:42:12Z",
+        "evidence_class": 1,
+        "prev_hash": "ae702c9adf61f6291f6b663d066051677a52874f335877d8e2e8aff2dc9b82de",
+        "content_hash": "64c14b3f96d2f3b32b37bfbe8db78b0b1a58a7ef224230043c4768e14038120b"
+      },
+      {
+        "item_id": "env_00405-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00405",
           "lines": [
             {
-              "sku": "fortune-edible_oil-mustard-1000",
+              "sku": "tata-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 16500
+              "unit_price_paise": 2800
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:12:20Z",
+        "emitted_at": "2026-09-02T21:42:20Z",
         "evidence_class": 2,
-        "prev_hash": "d846ad06262107b337931b938136a94eae095c223004079040a995e269cf3cbe",
-        "content_hash": "debf5548fe753a4a1ca98e72c8597689b46a9b550fe454b2e8dc469f4e32e1c2"
+        "prev_hash": "64c14b3f96d2f3b32b37bfbe8db78b0b1a58a7ef224230043c4768e14038120b",
+        "content_hash": "423bd7d618c329d2a1ddb422db45dc03ba828bc8c47e721af5f216abd66d8230"
       },
       {
-        "item_id": "env_00405-e002",
-        "seq": 2,
+        "item_id": "env_00405-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00405",
           "lines": [
             {
-              "sku": "dhara-edible_oil-mustard-1000",
+              "sku": "aashirvaad-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 15800
+              "unit_price_paise": 3000
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:26:00Z",
+        "emitted_at": "2026-09-02T21:56:00Z",
         "evidence_class": 2,
-        "prev_hash": "debf5548fe753a4a1ca98e72c8597689b46a9b550fe454b2e8dc469f4e32e1c2",
-        "content_hash": "a66a805cadf7883fbdaad36ae5002897214d2dec7f67c9a8f47640868dde35b0"
+        "prev_hash": "423bd7d618c329d2a1ddb422db45dc03ba828bc8c47e721af5f216abd66d8230",
+        "content_hash": "30f3c8b2e4eec88c571135de83790c0b5d83845aacffb8f5b06bd0dd7132d893"
       },
       {
-        "item_id": "env_00405-e003",
-        "seq": 3,
+        "item_id": "env_00405-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00405",
-          "amount_paise": 16500,
+          "amount_paise": 2800,
           "currency": "INR",
           "receipt": "zep_00405"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:12:25Z",
+        "emitted_at": "2026-09-02T21:42:25Z",
         "evidence_class": 3,
-        "prev_hash": "a66a805cadf7883fbdaad36ae5002897214d2dec7f67c9a8f47640868dde35b0",
-        "content_hash": "3c1dbc86272899f5b2073cd0f0d02f55ab7b5a8fea0dc64517b756e095c8971c"
+        "prev_hash": "30f3c8b2e4eec88c571135de83790c0b5d83845aacffb8f5b06bd0dd7132d893",
+        "content_hash": "bbb8bfa9069a1a876cb5d047c18fb648f1d9e6631b76dfd06d3839fe8d114669"
       },
       {
-        "item_id": "env_00405-e004",
-        "seq": 4,
+        "item_id": "env_00405-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00405",
           "order_id": "order_00405",
-          "amount_paise": 16500,
+          "amount_paise": 2800,
           "status": "captured",
           "block_id": "blk_00405",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:12:30Z",
+        "emitted_at": "2026-09-02T21:42:30Z",
         "evidence_class": 3,
-        "prev_hash": "3c1dbc86272899f5b2073cd0f0d02f55ab7b5a8fea0dc64517b756e095c8971c",
-        "content_hash": "c31db3b6ae811d32a8f827a63d70e548ef74086f48eda8d78d21a6620c71cf49"
+        "prev_hash": "bbb8bfa9069a1a876cb5d047c18fb648f1d9e6631b76dfd06d3839fe8d114669",
+        "content_hash": "ab2bb4c8efe478ddf86d5930a4e1829f81f2b9bb6389c64d2e37bd98e45fdf02"
       },
       {
-        "item_id": "env_00405-e005",
-        "seq": 5,
+        "item_id": "env_00405-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_769",
-        "emitted_at": "2026-09-03T03:27:00Z",
+        "emitted_by": "agt_521",
+        "emitted_at": "2026-09-02T21:57:00Z",
         "evidence_class": 0,
-        "prev_hash": "c31db3b6ae811d32a8f827a63d70e548ef74086f48eda8d78d21a6620c71cf49",
-        "content_hash": "c433251eae49c98d7e78df3ed12ea47bec7853d73841f9c02f2bc1d9ae73b21d"
+        "prev_hash": "ab2bb4c8efe478ddf86d5930a4e1829f81f2b9bb6389c64d2e37bd98e45fdf02",
+        "content_hash": "9335cd514274085b0509699a3e65156f1122891e1ef4632c58d64f8039891075"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-mustard-1000",
-    "ordered_sku": "fortune-edible_oil-mustard-1000",
-    "delivered_sku": "dhara-edible_oil-mustard-1000",
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 16500,
-    "rationale": "Order names fortune; fulfilment shipped dhara. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 2800,
+    "rationale": "Order names tata; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

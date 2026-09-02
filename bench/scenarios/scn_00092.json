@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00092",
-    "created_at": "2026-09-03T01:32:00Z",
-    "expires_at": "2026-09-03T07:32:00Z",
-    "user_id": "usr_7785",
-    "agent_id": "agt_379",
+    "created_at": "2026-09-03T00:30:00Z",
+    "expires_at": "2026-09-03T06:30:00Z",
+    "user_id": "usr_9592",
+    "agent_id": "agt_426",
     "block": {
       "block_id": "blk_00092",
-      "blocked_paise": 52440,
-      "consumed_paise": 0,
-      "blocked_at": "2026-08-28T01:32:00Z",
-      "expires_at": "2026-10-27T01:32:00Z"
+      "blocked_paise": 20000,
+      "consumed_paise": 17500,
+      "blocked_at": "2026-08-21T00:30:00Z",
+      "expires_at": "2026-10-16T00:30:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 17480,
-      "max_total_paise": 17480,
+      "category": "bread",
+      "max_unit_price_paise": 5750,
+      "max_total_paise": 5750,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "fortune",
-      "variant": "sunflower_refined",
-      "pack_size_g": 1000
+      "brand": "harvest",
+      "variant": "brown",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "get me 1L Fortune refined sunflower oil from Swiggy Instamart",
+      "text": "order 400g Harvest brown bread on Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "c3598d2c7c63a712841aee91c7206c43b716ba5d3bedc7fb8eef465f48932d8f",
+    "content_hash": "80f8c2b984853b2fba88c3170c88ae407b3db440df9b67702083dfeb181fb717",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00092",
-    "obligation_hash": "c3598d2c7c63a712841aee91c7206c43b716ba5d3bedc7fb8eef465f48932d8f",
+    "obligation_hash": "80f8c2b984853b2fba88c3170c88ae407b3db440df9b67702083dfeb181fb717",
     "items": [
       {
         "item_id": "env_00092-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-sunflower_refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 15200
-            }
-          ]
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "agt_379",
-        "emitted_at": "2026-09-03T01:32:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:30:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "dd5d931988a5ca897c4b4ed4193df1e5064f738fc56723a48b141cded9971ec5"
+        "content_hash": "9bbe2511cee63d4ec61011d913180b26cbbe83d9e15243262bc1852a52411d74"
       },
       {
         "item_id": "env_00092-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 4500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:30:04Z",
+        "evidence_class": 2,
+        "prev_hash": "9bbe2511cee63d4ec61011d913180b26cbbe83d9e15243262bc1852a52411d74",
+        "content_hash": "57d53f19f2489597b1e59a8ae0db4a87ae8f279a32bec32e6fa4c4801803be65"
+      },
+      {
+        "item_id": "env_00092-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5000
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:30:05Z",
+        "evidence_class": 2,
+        "prev_hash": "57d53f19f2489597b1e59a8ae0db4a87ae8f279a32bec32e6fa4c4801803be65",
+        "content_hash": "52f9a0d039fe8cecee1fbcc4a20954d42f3392adc57b2593e63aa55769110738"
+      },
+      {
+        "item_id": "env_00092-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:30:06Z",
+        "evidence_class": 2,
+        "prev_hash": "52f9a0d039fe8cecee1fbcc4a20954d42f3392adc57b2593e63aa55769110738",
+        "content_hash": "186172e7f0254a2b44569193ef1bcca7bd236ec7f1bef7e8b0943123d21e3bc3"
+      },
+      {
+        "item_id": "env_00092-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "harvest-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5000
+            }
+          ]
+        },
+        "emitted_by": "agt_426",
+        "emitted_at": "2026-09-03T00:30:12Z",
+        "evidence_class": 1,
+        "prev_hash": "186172e7f0254a2b44569193ef1bcca7bd236ec7f1bef7e8b0943123d21e3bc3",
+        "content_hash": "3db131e745be66a5ca4ee329031213e80b48887417289b65a8b282ab6db69a56"
+      },
+      {
+        "item_id": "env_00092-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00092",
           "lines": [
             {
-              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 15200
+              "unit_price_paise": 5000
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:32:20Z",
+        "emitted_at": "2026-09-03T00:30:20Z",
         "evidence_class": 2,
-        "prev_hash": "dd5d931988a5ca897c4b4ed4193df1e5064f738fc56723a48b141cded9971ec5",
-        "content_hash": "d1bcc19b3d248c653a10cffb7c209e352cf36753f9004451d4d23a5c31b21c00"
+        "prev_hash": "3db131e745be66a5ca4ee329031213e80b48887417289b65a8b282ab6db69a56",
+        "content_hash": "883e3797c38d028b025713caf387375c9409d899988d4219958eac10651a2d25"
       },
       {
-        "item_id": "env_00092-e002",
-        "seq": 2,
+        "item_id": "env_00092-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00092",
           "lines": [
             {
-              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 15200
+              "unit_price_paise": 5000
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:46:00Z",
+        "emitted_at": "2026-09-03T00:44:00Z",
         "evidence_class": 2,
-        "prev_hash": "d1bcc19b3d248c653a10cffb7c209e352cf36753f9004451d4d23a5c31b21c00",
-        "content_hash": "c61e031f5b089b0116b59a7bf3118f578eac3a72e5bb1bdeacbfd4dcadfc4b29"
+        "prev_hash": "883e3797c38d028b025713caf387375c9409d899988d4219958eac10651a2d25",
+        "content_hash": "bcb237818b7e67b768b91275318f7b801432ec221483c6f1be191d6ad6e01719"
       },
       {
-        "item_id": "env_00092-e003",
-        "seq": 3,
+        "item_id": "env_00092-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00092",
-          "amount_paise": 15200,
+          "amount_paise": 5000,
           "currency": "INR",
           "receipt": "zep_00092"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:32:25Z",
+        "emitted_at": "2026-09-03T00:30:25Z",
         "evidence_class": 3,
-        "prev_hash": "c61e031f5b089b0116b59a7bf3118f578eac3a72e5bb1bdeacbfd4dcadfc4b29",
-        "content_hash": "583820707a2212b042845b4ae059ee8ab7c13385431f93322a0f7fb8396852a9"
+        "prev_hash": "bcb237818b7e67b768b91275318f7b801432ec221483c6f1be191d6ad6e01719",
+        "content_hash": "ca2aa8fe06fed4394f6f78e6c5fa403fba8c2d13b1fe07458f13c1fd9e7b8108"
       },
       {
-        "item_id": "env_00092-e004",
-        "seq": 4,
+        "item_id": "env_00092-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00092",
           "order_id": "order_00092",
-          "amount_paise": 15200,
+          "amount_paise": 5000,
           "status": "captured",
           "block_id": "blk_00092",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T08:02:00Z",
+        "emitted_at": "2026-09-03T00:30:30Z",
         "evidence_class": 3,
-        "prev_hash": "583820707a2212b042845b4ae059ee8ab7c13385431f93322a0f7fb8396852a9",
-        "content_hash": "eda8a4d2775f3346cea6954ba024dbea1435c6593269719f99b8f8fadc858222"
+        "prev_hash": "ca2aa8fe06fed4394f6f78e6c5fa403fba8c2d13b1fe07458f13c1fd9e7b8108",
+        "content_hash": "360c644d3f3c976e1ebd6e27c210b6b14a4565bbf622ec53c0c992bf2cb1ffcd"
       },
       {
-        "item_id": "env_00092-e005",
-        "seq": 5,
+        "item_id": "env_00092-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune refined sunflower oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-sunflower_refined-1000",
+          "text": "Ordered 400g Harvest brown bread. Payment complete.",
+          "claimed_sku": "harvest-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_379",
-        "emitted_at": "2026-09-03T01:47:00Z",
+        "emitted_by": "agt_426",
+        "emitted_at": "2026-09-03T00:45:00Z",
         "evidence_class": 0,
-        "prev_hash": "eda8a4d2775f3346cea6954ba024dbea1435c6593269719f99b8f8fadc858222",
-        "content_hash": "c9d9c8c8cd27eef0efb32b7d7dd2adc5c37aa3e224d76ec260fc9c6537bb66b2"
+        "prev_hash": "360c644d3f3c976e1ebd6e27c210b6b14a4565bbf622ec53c0c992bf2cb1ffcd",
+        "content_hash": "0a87a3990d89daee8b37282c5168fd17c2d2c3f4eb909cff2b001dca2f9eb621"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-sunflower_refined-1000",
-    "ordered_sku": "fortune-edible_oil-sunflower_refined-1000",
-    "delivered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "requested_sku": "harvest-bread-brown-400",
+    "ordered_sku": "harvest-bread-brown-400",
+    "delivered_sku": "harvest-bread-brown-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 15200,
-    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+    "loss_paise": 2500,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 5000 paise exceeds the 2500 paise remaining on block blk_00092."
   }
 }

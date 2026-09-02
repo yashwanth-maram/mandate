@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00133",
-    "created_at": "2026-09-03T01:20:00Z",
-    "expires_at": "2026-09-03T07:20:00Z",
-    "user_id": "usr_3956",
-    "agent_id": "agt_658",
+    "created_at": "2026-09-03T00:25:00Z",
+    "expires_at": "2026-09-03T06:25:00Z",
+    "user_id": "usr_6038",
+    "agent_id": "agt_206",
     "block": {
       "block_id": "blk_00133",
-      "blocked_paise": 50000,
+      "blocked_paise": 65205,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-25T01:20:00Z",
-      "expires_at": "2026-10-13T01:20:00Z"
+      "blocked_at": "2026-08-28T00:25:00Z",
+      "expires_at": "2026-10-19T00:25:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 13569,
-      "max_total_paise": 13569,
+      "category": "edible_oil",
+      "max_unit_price_paise": 21735,
+      "max_total_paise": 21735,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "india_gate",
-      "variant": "brown",
+      "brand": "fortune",
+      "variant": "groundnut",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg India Gate brown rice from Zepto",
+      "text": "order 1L Fortune groundnut oil on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "2f80c3b13191b964a56177a19355915afe4f5b7829ad4aff654eb340bb9ffaa7",
+    "content_hash": "8e7591af495b44622c9f26f814a706bf0a1aec71157095a73ffe69360d37472f",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00133",
-    "obligation_hash": "2f80c3b13191b964a56177a19355915afe4f5b7829ad4aff654eb340bb9ffaa7",
+    "obligation_hash": "8e7591af495b44622c9f26f814a706bf0a1aec71157095a73ffe69360d37472f",
     "items": [
       {
         "item_id": "env_00133-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "india_gate-rice-brown-1000",
-              "quantity": 1,
-              "unit_price_paise": 11800
-            }
-          ]
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 18900
         },
-        "emitted_by": "agt_658",
-        "emitted_at": "2026-09-03T01:20:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:25:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0a84ce50857cfca31d288f07d607ee499ce233463dbf766cb7c0e8f61930e6cf"
+        "content_hash": "e3afa8942d0604a62bce6dd2a552859a6edc1f5d50144b142ac08380f25dec97"
       },
       {
         "item_id": "env_00133-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 16800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:25:04Z",
+        "evidence_class": 2,
+        "prev_hash": "e3afa8942d0604a62bce6dd2a552859a6edc1f5d50144b142ac08380f25dec97",
+        "content_hash": "e0cf021abe8e5ab4be107ead77690cb24ecf6092ffc0f41700addb8e6e4b58d1"
+      },
+      {
+        "item_id": "env_00133-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 15200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:25:05Z",
+        "evidence_class": 2,
+        "prev_hash": "e0cf021abe8e5ab4be107ead77690cb24ecf6092ffc0f41700addb8e6e4b58d1",
+        "content_hash": "34dc87be2e54c7500149fffca1744496d9dddc5c63f5f79685cb5a90d841dc91"
+      },
+      {
+        "item_id": "env_00133-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 16500
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:25:06Z",
+        "evidence_class": 2,
+        "prev_hash": "34dc87be2e54c7500149fffca1744496d9dddc5c63f5f79685cb5a90d841dc91",
+        "content_hash": "e02e129149989865c17fd4ba16877d257a38aa003aa878e23812afa750578b87"
+      },
+      {
+        "item_id": "env_00133-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ]
+        },
+        "emitted_by": "agt_206",
+        "emitted_at": "2026-09-03T00:25:12Z",
+        "evidence_class": 1,
+        "prev_hash": "e02e129149989865c17fd4ba16877d257a38aa003aa878e23812afa750578b87",
+        "content_hash": "22f193c2dafc50a7604f27e479316f4d5ce36eb89a7cf2ea9ddc2c2e417fe996"
+      },
+      {
+        "item_id": "env_00133-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00133",
           "lines": [
             {
-              "sku": "india_gate-rice-brown-1000",
+              "sku": "fortune-edible_oil-groundnut-1000",
               "quantity": 1,
-              "unit_price_paise": 11800
+              "unit_price_paise": 18900
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:20:20Z",
+        "emitted_at": "2026-09-03T00:25:20Z",
         "evidence_class": 2,
-        "prev_hash": "0a84ce50857cfca31d288f07d607ee499ce233463dbf766cb7c0e8f61930e6cf",
-        "content_hash": "ce1e01c8bf7dc38d1c1631d9d3360bf5a929e08b913c19d583a05eca0414b1f1"
-      },
-      {
-        "item_id": "env_00133-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00133",
-          "lines": [
-            {
-              "sku": "india_gate-rice-brown-1000",
-              "quantity": 1,
-              "unit_price_paise": 11800
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:34:00Z",
-        "evidence_class": 2,
-        "prev_hash": "ce1e01c8bf7dc38d1c1631d9d3360bf5a929e08b913c19d583a05eca0414b1f1",
-        "content_hash": "8e1b249177ab39428bdd9e00ce8081b9865890175bfbd3671aee80ffd120de00"
-      },
-      {
-        "item_id": "env_00133-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00133",
-          "amount_paise": 11800,
-          "currency": "INR",
-          "receipt": "zep_00133"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:20:25Z",
-        "evidence_class": 3,
-        "prev_hash": "8e1b249177ab39428bdd9e00ce8081b9865890175bfbd3671aee80ffd120de00",
-        "content_hash": "56b62630bf89abebc4522b4287442dc10c94e6c6e231bbf9e08343611194c3c8"
-      },
-      {
-        "item_id": "env_00133-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00133",
-          "order_id": "order_00133",
-          "amount_paise": 11800,
-          "status": "captured",
-          "block_id": "blk_00133",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:20:30Z",
-        "evidence_class": 3,
-        "prev_hash": "56b62630bf89abebc4522b4287442dc10c94e6c6e231bbf9e08343611194c3c8",
-        "content_hash": "f451cb4f5913c876df4162dd530a6dcab1e2b09205480048da3dca99f28dfa8e"
-      },
-      {
-        "item_id": "env_00133-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-brown-1000",
-          "claims_success": true
-        },
-        "emitted_by": "agt_658",
-        "emitted_at": "2026-09-03T01:35:00Z",
-        "evidence_class": 0,
-        "prev_hash": "f451cb4f5913c876df4162dd530a6dcab1e2b09205480048da3dca99f28dfa8e",
-        "content_hash": "5f1c41ef236ae35ba76714ba28e8015422e7551e409d5d16ca521940fc443793"
+        "prev_hash": "22f193c2dafc50a7604f27e479316f4d5ce36eb89a7cf2ea9ddc2c2e417fe996",
+        "content_hash": "f3f70422714b6edd81348e87215996b8dd8a5a95bd8ea039f582fa035c5d5346"
       },
       {
         "item_id": "env_00133-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "I never asked for this. I want a refund.",
-          "raised_at": "2026-09-03T04:20:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00133",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-groundnut-1000",
+              "quantity": 1,
+              "unit_price_paise": 18900
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_3956",
-        "emitted_at": "2026-09-03T04:20:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:39:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f3f70422714b6edd81348e87215996b8dd8a5a95bd8ea039f582fa035c5d5346",
+        "content_hash": "16189f83fe0feb0072d587bbf87bf8e64c5c4584f625bf97e2b7f4d85848a9f6"
+      },
+      {
+        "item_id": "env_00133-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00133",
+          "amount_paise": 18900,
+          "currency": "INR",
+          "receipt": "zep_00133"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:25:25Z",
+        "evidence_class": 3,
+        "prev_hash": "16189f83fe0feb0072d587bbf87bf8e64c5c4584f625bf97e2b7f4d85848a9f6",
+        "content_hash": "539bcf0092cefb6bc60ba284008bc30606df4188d239e9e03d55df4d3dff16de"
+      },
+      {
+        "item_id": "env_00133-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00133",
+          "order_id": "order_00133",
+          "amount_paise": 18900,
+          "status": "captured",
+          "block_id": "blk_00133",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:25:30Z",
+        "evidence_class": 3,
+        "prev_hash": "539bcf0092cefb6bc60ba284008bc30606df4188d239e9e03d55df4d3dff16de",
+        "content_hash": "d2446c1661afb07879d886dfd41c87407b08476edc6799bc6ecffbd8762e3968"
+      },
+      {
+        "item_id": "env_00133-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-groundnut-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_206",
+        "emitted_at": "2026-09-03T00:40:00Z",
         "evidence_class": 0,
-        "prev_hash": "5f1c41ef236ae35ba76714ba28e8015422e7551e409d5d16ca521940fc443793",
-        "content_hash": "8b29c28c67e4e12020b7647872bd7dfa73340cdea2ebadd52d412efe2061f5be"
+        "prev_hash": "d2446c1661afb07879d886dfd41c87407b08476edc6799bc6ecffbd8762e3968",
+        "content_hash": "f819ebcea9ae82d1cf2d12cba50bda7d801563b4890bc0b147e6cd8103943112"
+      },
+      {
+        "item_id": "env_00133-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-03T03:25:00Z"
+        },
+        "emitted_by": "usr_6038",
+        "emitted_at": "2026-09-03T03:25:00Z",
+        "evidence_class": 0,
+        "prev_hash": "f819ebcea9ae82d1cf2d12cba50bda7d801563b4890bc0b147e6cd8103943112",
+        "content_hash": "990672d37126b0aa4482c57ae59340c5d3fd06a7bac4de4986fe9c83f4fd57c0"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-brown-1000",
-    "ordered_sku": "india_gate-rice-brown-1000",
-    "delivered_sku": "india_gate-rice-brown-1000",
+    "requested_sku": "fortune-edible_oil-groundnut-1000",
+    "ordered_sku": "fortune-edible_oil-groundnut-1000",
+    "delivered_sku": "fortune-edible_oil-groundnut-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 11800,
+    "loss_paise": 18900,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

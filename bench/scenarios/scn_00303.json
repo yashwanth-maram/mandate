@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00303",
-    "created_at": "2026-09-02T18:33:00Z",
-    "expires_at": "2026-09-03T00:33:00Z",
-    "user_id": "usr_3983",
-    "agent_id": "agt_716",
+    "created_at": "2026-09-02T23:43:00Z",
+    "expires_at": "2026-09-03T05:43:00Z",
+    "user_id": "usr_7745",
+    "agent_id": "agt_692",
     "block": {
       "block_id": "blk_00303",
-      "blocked_paise": 50000,
+      "blocked_paise": 98325,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-23T18:33:00Z",
-      "expires_at": "2026-10-31T18:33:00Z"
+      "blocked_at": "2026-08-23T23:43:00Z",
+      "expires_at": "2026-10-22T23:43:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 10350,
-      "max_total_paise": 10350,
+      "category": "butter",
+      "max_unit_price_paise": 32775,
+      "max_total_paise": 32775,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "yippee",
-      "variant": "masala",
-      "pack_size_g": 560
+      "brand": "amul",
+      "variant": "salted",
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "order 560g Yippee masala noodles on Blinkit",
+      "text": "I need 500g Amul salted butter, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "d515d57504f30c57059bc3f9a3666d490a42094c77155a8bea11a01868f265a5",
+    "content_hash": "81be0041750bdc2015594164e17ec131ed31e9b99b5c02fc341900ca7512324a",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00303",
-    "obligation_hash": "d515d57504f30c57059bc3f9a3666d490a42094c77155a8bea11a01868f265a5",
+    "obligation_hash": "81be0041750bdc2015594164e17ec131ed31e9b99b5c02fc341900ca7512324a",
     "items": [
       {
         "item_id": "env_00303-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "yippee-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9000
-            }
-          ]
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "agt_716",
-        "emitted_at": "2026-09-02T18:33:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "966492ea849a14a4d567e3dcbd072aea29ac52ae7b0cbf186d589b289cbd6a93"
+        "content_hash": "553ff314eb1ca58282c7cc8ad4d186d45d09f8b16d363ed1fecc64103a096a41"
       },
       {
         "item_id": "env_00303-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 28500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:04Z",
+        "evidence_class": 2,
+        "prev_hash": "553ff314eb1ca58282c7cc8ad4d186d45d09f8b16d363ed1fecc64103a096a41",
+        "content_hash": "8d250754ab80e9e0e68c6a716df4b3c63fe7f0025dedef48a6e2674a1d11ea62"
+      },
+      {
+        "item_id": "env_00303-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:05Z",
+        "evidence_class": 2,
+        "prev_hash": "8d250754ab80e9e0e68c6a716df4b3c63fe7f0025dedef48a6e2674a1d11ea62",
+        "content_hash": "2048b66add0cf687be2c691c160b2ea82bbe0aaa43fd06d71e1eaf8660461fd6"
+      },
+      {
+        "item_id": "env_00303-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Best before 6 months from packaging date.",
+          "listed_price_paise": 29200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:43:06Z",
+        "evidence_class": 2,
+        "prev_hash": "2048b66add0cf687be2c691c160b2ea82bbe0aaa43fd06d71e1eaf8660461fd6",
+        "content_hash": "a3515d7aee23f16ad68f341929f29fb54d441f07ae5d6142bfae62a27db5609d"
+      },
+      {
+        "item_id": "env_00303-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-500",
+              "quantity": 1,
+              "unit_price_paise": 28500
+            }
+          ]
+        },
+        "emitted_by": "agt_692",
+        "emitted_at": "2026-09-02T23:43:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a3515d7aee23f16ad68f341929f29fb54d441f07ae5d6142bfae62a27db5609d",
+        "content_hash": "2659336964985b39c386f32d27bf9cb9c1faf43343719ad36a0e31fe189d3110"
+      },
+      {
+        "item_id": "env_00303-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00303",
           "lines": [
             {
-              "sku": "yippee-noodles-masala-560",
+              "sku": "amul-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 9000
+              "unit_price_paise": 28500
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:33:20Z",
+        "emitted_at": "2026-09-02T23:43:20Z",
         "evidence_class": 2,
-        "prev_hash": "966492ea849a14a4d567e3dcbd072aea29ac52ae7b0cbf186d589b289cbd6a93",
-        "content_hash": "9232df745cda445ee52b599da3711ea95029af1d89f8e0dc39237c2006b3925b"
+        "prev_hash": "2659336964985b39c386f32d27bf9cb9c1faf43343719ad36a0e31fe189d3110",
+        "content_hash": "7046580841bdbb7455558300300d7da73615e89eb88e3e28bdc0e8f2b60b0b27"
       },
       {
-        "item_id": "env_00303-e002",
-        "seq": 2,
+        "item_id": "env_00303-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00303",
           "lines": [
             {
-              "sku": "maggi-noodles-masala-560",
+              "sku": "nandini-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 9600
+              "unit_price_paise": 27500
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:47:00Z",
+        "emitted_at": "2026-09-02T23:57:00Z",
         "evidence_class": 2,
-        "prev_hash": "9232df745cda445ee52b599da3711ea95029af1d89f8e0dc39237c2006b3925b",
-        "content_hash": "455d19df8a2b53c915dad7f71303e21356432d74a394b1fcf92ffa2a33389944"
+        "prev_hash": "7046580841bdbb7455558300300d7da73615e89eb88e3e28bdc0e8f2b60b0b27",
+        "content_hash": "e00a0c9d5ee0e0e483a5176571e083821647cae0a5562790f52ad12bff77f31b"
       },
       {
-        "item_id": "env_00303-e003",
-        "seq": 3,
+        "item_id": "env_00303-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00303",
-          "amount_paise": 9000,
+          "amount_paise": 28500,
           "currency": "INR",
           "receipt": "zep_00303"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:33:25Z",
+        "emitted_at": "2026-09-02T23:43:25Z",
         "evidence_class": 3,
-        "prev_hash": "455d19df8a2b53c915dad7f71303e21356432d74a394b1fcf92ffa2a33389944",
-        "content_hash": "6e0e9800e8a830c82ae76347048fb7da79132618ecb0d3412859e0099d192302"
+        "prev_hash": "e00a0c9d5ee0e0e483a5176571e083821647cae0a5562790f52ad12bff77f31b",
+        "content_hash": "fd49ecc33d1afe5ac3fc0ca320f4ad0c16a1f1f134ec84482cb29fc179671472"
       },
       {
-        "item_id": "env_00303-e004",
-        "seq": 4,
+        "item_id": "env_00303-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00303",
           "order_id": "order_00303",
-          "amount_paise": 9000,
+          "amount_paise": 28500,
           "status": "captured",
           "block_id": "blk_00303",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:33:30Z",
+        "emitted_at": "2026-09-02T23:43:30Z",
         "evidence_class": 3,
-        "prev_hash": "6e0e9800e8a830c82ae76347048fb7da79132618ecb0d3412859e0099d192302",
-        "content_hash": "40678c8142fc1ed9a4751c34c0aed82c3461926bb498d093b861d9ec40d55871"
+        "prev_hash": "fd49ecc33d1afe5ac3fc0ca320f4ad0c16a1f1f134ec84482cb29fc179671472",
+        "content_hash": "5bc0e876b0075f71c3ab1cc1ea25b848c2d28ca8b2866cde64e63bd36e5f167c"
       },
       {
-        "item_id": "env_00303-e005",
-        "seq": 5,
+        "item_id": "env_00303-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
-          "claimed_sku": "yippee-noodles-masala-560",
+          "text": "Ordered 500g Amul salted butter. Payment complete.",
+          "claimed_sku": "amul-butter-salted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_716",
-        "emitted_at": "2026-09-02T18:48:00Z",
+        "emitted_by": "agt_692",
+        "emitted_at": "2026-09-02T23:58:00Z",
         "evidence_class": 0,
-        "prev_hash": "40678c8142fc1ed9a4751c34c0aed82c3461926bb498d093b861d9ec40d55871",
-        "content_hash": "84a640e5d592172526d913ed74ab2d449926ab203386f096343d3610473e789b"
+        "prev_hash": "5bc0e876b0075f71c3ab1cc1ea25b848c2d28ca8b2866cde64e63bd36e5f167c",
+        "content_hash": "1b3224bf6ac41dd9bb7757ed5a3b7a7b21cfd163cd12cc2a9a4a6fc8306a1f56"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "yippee-noodles-masala-560",
-    "ordered_sku": "yippee-noodles-masala-560",
-    "delivered_sku": "maggi-noodles-masala-560",
+    "requested_sku": "amul-butter-salted-500",
+    "ordered_sku": "amul-butter-salted-500",
+    "delivered_sku": "nandini-butter-salted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 9000,
-    "rationale": "Order names yippee; fulfilment shipped maggi. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 28500,
+    "rationale": "Order names amul; fulfilment shipped nandini. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

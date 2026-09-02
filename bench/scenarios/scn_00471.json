@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00471",
-    "created_at": "2026-09-02T19:13:00Z",
-    "expires_at": "2026-09-03T01:13:00Z",
-    "user_id": "usr_9899",
-    "agent_id": "agt_581",
+    "created_at": "2026-09-03T00:10:00Z",
+    "expires_at": "2026-09-03T06:10:00Z",
+    "user_id": "usr_1046",
+    "agent_id": "agt_308",
     "block": {
       "block_id": "blk_00471",
-      "blocked_paise": 117300,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-28T19:13:00Z",
-      "expires_at": "2026-10-08T19:13:00Z"
+      "blocked_at": "2026-09-03T00:10:00Z",
+      "expires_at": "2026-10-14T00:10:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 39100,
-      "max_total_paise": 39100,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
-      "brand": "fortune",
-      "variant": "whole_wheat",
-      "pack_size_g": 5000
+      "brand": "aashirvaad",
+      "variant": "iodised",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 5kg Fortune atta, use Swiggy Instamart",
+      "text": "buy 1kg Aashirvaad iodised salt from Zepto, keep it under 34 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "91e3474b656aab45f1198eb692b36f79771abb8f599b6c0537e810e991fb5e16",
+    "content_hash": "266e6b732c74ec7f01f897186d637f56be6f0ebc1e9aab04f7939a0509d78ac3",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00471",
-    "obligation_hash": "91e3474b656aab45f1198eb692b36f79771abb8f599b6c0537e810e991fb5e16",
+    "obligation_hash": "266e6b732c74ec7f01f897186d637f56be6f0ebc1e9aab04f7939a0509d78ac3",
     "items": [
       {
         "item_id": "env_00471-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "agt_581",
-        "emitted_at": "2026-09-02T19:13:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:10:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "4dc3634e2accd23589bc70f07b2ebe83bd8c8d01ee41b9b7590cd705f6ea41d6"
+        "content_hash": "18882608d3670b00366bde1ea62f324a3155dbdbde99f63c73fbf24294c40d3c"
       },
       {
         "item_id": "env_00471-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00471",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:13:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:10:04Z",
         "evidence_class": 2,
-        "prev_hash": "4dc3634e2accd23589bc70f07b2ebe83bd8c8d01ee41b9b7590cd705f6ea41d6",
-        "content_hash": "b6ce115ecab0415111b8980431db30ce8589e956e24659c65dc1d8fc65c359e5"
+        "prev_hash": "18882608d3670b00366bde1ea62f324a3155dbdbde99f63c73fbf24294c40d3c",
+        "content_hash": "5d3991c7c8a4743f187272029e1b1861d0f094f1fc52a4e10d46ebe620d5e8c9"
       },
       {
         "item_id": "env_00471-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00471",
-          "lines": [
-            {
-              "sku": "pillsbury-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34900
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:27:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:10:05Z",
         "evidence_class": 2,
-        "prev_hash": "b6ce115ecab0415111b8980431db30ce8589e956e24659c65dc1d8fc65c359e5",
-        "content_hash": "d9c8eeeecb971cc50763cbfc3d7e999eae4200e4b4590acad6758f6d0a40691f"
+        "prev_hash": "5d3991c7c8a4743f187272029e1b1861d0f094f1fc52a4e10d46ebe620d5e8c9",
+        "content_hash": "abadb759169f6360560d15e14dffc76222bb2e3642a0db7f5707d020758217b7"
       },
       {
         "item_id": "env_00471-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00471",
-          "amount_paise": 34000,
-          "currency": "INR",
-          "receipt": "zep_00471"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:13:25Z",
-        "evidence_class": 3,
-        "prev_hash": "d9c8eeeecb971cc50763cbfc3d7e999eae4200e4b4590acad6758f6d0a40691f",
-        "content_hash": "912379287374ea4d3da850975fec4ae85f8090709ce6829463f3bca8029590d6"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:10:06Z",
+        "evidence_class": 2,
+        "prev_hash": "abadb759169f6360560d15e14dffc76222bb2e3642a0db7f5707d020758217b7",
+        "content_hash": "62fcefabac33450301ab189aa137765a98de55f640700638e5af76aff8318d99"
       },
       {
         "item_id": "env_00471-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00471",
-          "order_id": "order_00471",
-          "amount_paise": 34000,
-          "status": "captured",
-          "block_id": "blk_00471",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:13:30Z",
-        "evidence_class": 3,
-        "prev_hash": "912379287374ea4d3da850975fec4ae85f8090709ce6829463f3bca8029590d6",
-        "content_hash": "b410a0da8af16c86eb6dc6917710f0bdf1e49dfb1de9afd69c41720024847d79"
+        "emitted_by": "agt_308",
+        "emitted_at": "2026-09-03T00:10:12Z",
+        "evidence_class": 1,
+        "prev_hash": "62fcefabac33450301ab189aa137765a98de55f640700638e5af76aff8318d99",
+        "content_hash": "18764b36b0adb622e6d65397699defea11474f11f64a4da10a1680b854f49e88"
       },
       {
         "item_id": "env_00471-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00471",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:10:20Z",
+        "evidence_class": 2,
+        "prev_hash": "18764b36b0adb622e6d65397699defea11474f11f64a4da10a1680b854f49e88",
+        "content_hash": "a653e98f963f1a14e82e6a7f19942ca30d295f90d773c24012014c2137ae254b"
+      },
+      {
+        "item_id": "env_00471-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00471",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T00:24:00Z",
+        "evidence_class": 2,
+        "prev_hash": "a653e98f963f1a14e82e6a7f19942ca30d295f90d773c24012014c2137ae254b",
+        "content_hash": "67f46c8b412b4b640f947eabae3c2f694804d2028157b275c432df7141f9dc1c"
+      },
+      {
+        "item_id": "env_00471-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00471",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00471"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:10:25Z",
+        "evidence_class": 3,
+        "prev_hash": "67f46c8b412b4b640f947eabae3c2f694804d2028157b275c432df7141f9dc1c",
+        "content_hash": "7f7eed89f8fc3486c29336b9483fc0630a6cdb33786d187ee0a726baa4f7568d"
+      },
+      {
+        "item_id": "env_00471-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00471",
+          "order_id": "order_00471",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00471",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:10:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7f7eed89f8fc3486c29336b9483fc0630a6cdb33786d187ee0a726baa4f7568d",
+        "content_hash": "9dc49e4938c44480756c14e415f03a01625fedbb0252a34a461d50b9a9e42c08"
+      },
+      {
+        "item_id": "env_00471-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Fortune atta. Payment complete.",
-          "claimed_sku": "fortune-flour-whole_wheat-5000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_581",
-        "emitted_at": "2026-09-02T19:28:00Z",
+        "emitted_by": "agt_308",
+        "emitted_at": "2026-09-03T00:25:00Z",
         "evidence_class": 0,
-        "prev_hash": "b410a0da8af16c86eb6dc6917710f0bdf1e49dfb1de9afd69c41720024847d79",
-        "content_hash": "0d081987ece8cc812bf43928f2c6b8ea3646d860c4392cd357af5f00b5ed8e16"
+        "prev_hash": "9dc49e4938c44480756c14e415f03a01625fedbb0252a34a461d50b9a9e42c08",
+        "content_hash": "04074c4960150b5bde5411f71a1a3768a95689dbbf1b9d74bf5865e2abf3077e"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-whole_wheat-5000",
-    "ordered_sku": "fortune-flour-whole_wheat-5000",
-    "delivered_sku": "pillsbury-flour-whole_wheat-5000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 34000,
-    "rationale": "Order names fortune; fulfilment shipped pillsbury. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 3000,
+    "rationale": "Order names aashirvaad; fulfilment shipped tata. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

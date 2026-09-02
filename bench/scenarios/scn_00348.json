@@ -6,154 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00348",
-    "created_at": "2026-09-02T18:38:00Z",
-    "expires_at": "2026-09-03T00:38:00Z",
-    "user_id": "usr_7147",
-    "agent_id": "agt_997",
+    "created_at": "2026-09-02T18:56:00Z",
+    "expires_at": "2026-09-03T00:56:00Z",
+    "user_id": "usr_2158",
+    "agent_id": "agt_660",
     "block": {
       "block_id": "blk_00348",
-      "blocked_paise": 50000,
+      "blocked_paise": 120405,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-13T18:38:00Z",
-      "expires_at": "2026-10-10T18:38:00Z"
+      "blocked_at": "2026-08-14T18:56:00Z",
+      "expires_at": "2026-10-14T18:56:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 6669,
-      "max_total_paise": 6669,
+      "max_unit_price_paise": 40135,
+      "max_total_paise": 40135,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "fortune",
-      "variant": null,
-      "pack_size_g": 1000
+      "brand": "pillsbury",
+      "variant": "whole_wheat",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "get me 1kg Fortune maida from Swiggy Instamart",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "get me 5kg Pillsbury atta from Blinkit",
+      "uncaptured_attributes": []
     },
-    "content_hash": "9313aeea797b3c5ce5ac62d5edeaa4f6143eb1c37b78176b2e8ab97262d983fa",
+    "content_hash": "e1a05a487b310831aedde4909de2127d7e8eb8c793531ce0a27a92cbc316d608",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00348",
-    "obligation_hash": "9313aeea797b3c5ce5ac62d5edeaa4f6143eb1c37b78176b2e8ab97262d983fa",
+    "obligation_hash": "e1a05a487b310831aedde4909de2127d7e8eb8c793531ce0a27a92cbc316d608",
     "items": [
       {
         "item_id": "env_00348-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "pillsbury-flour-whole_wheat-5000",
+          "display_name": "Pillsbury Chakki Fresh Atta 5kg",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 34900
         },
-        "emitted_by": "agt_997",
-        "emitted_at": "2026-09-02T18:38:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:56:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "c65af6484c4d344f7fc66e248a25badd7f162356e66d81e9307b6e5471f71534"
+        "content_hash": "f4e856e5f737ee57fe618b51ead6c8c5bee74ee80413e073ff040ebaacf12a9b"
       },
       {
         "item_id": "env_00348-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00348",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T18:38:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:56:04Z",
         "evidence_class": 2,
-        "prev_hash": "c65af6484c4d344f7fc66e248a25badd7f162356e66d81e9307b6e5471f71534",
-        "content_hash": "5f6461174152ce5b9fa1a71ef33a88adc7fc49a4488105b5413432bf987c8d16"
+        "prev_hash": "f4e856e5f737ee57fe618b51ead6c8c5bee74ee80413e073ff040ebaacf12a9b",
+        "content_hash": "3fd8575919b43afcdad65ed4db12616fffa6779b73b6a534ca689d915cf2859b"
       },
       {
         "item_id": "env_00348-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00348",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T18:52:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:56:05Z",
         "evidence_class": 2,
-        "prev_hash": "5f6461174152ce5b9fa1a71ef33a88adc7fc49a4488105b5413432bf987c8d16",
-        "content_hash": "6e238c6585826b4ac886dfdfb061782a6bea0d3ee288a9c5e2361432f229287f"
+        "prev_hash": "3fd8575919b43afcdad65ed4db12616fffa6779b73b6a534ca689d915cf2859b",
+        "content_hash": "10c4c3c140afb2ab4dbafd9104408e5e94ce624968c1d0eb40eed5664b186f75"
       },
       {
         "item_id": "env_00348-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00348",
-          "amount_paise": 5800,
-          "currency": "INR",
-          "receipt": "zep_00348"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:38:25Z",
-        "evidence_class": 3,
-        "prev_hash": "6e238c6585826b4ac886dfdfb061782a6bea0d3ee288a9c5e2361432f229287f",
-        "content_hash": "2952347d7528b8e47a5bfc196a834ff8a5fb1b919b327a9124b8dfcb18a3fda3"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:56:06Z",
+        "evidence_class": 2,
+        "prev_hash": "10c4c3c140afb2ab4dbafd9104408e5e94ce624968c1d0eb40eed5664b186f75",
+        "content_hash": "7b0b63bdd45e820bad00f77faecbf785a6a10faded4190871fd1b805d000437b"
       },
       {
         "item_id": "env_00348-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00348",
-          "order_id": "order_00348",
-          "amount_paise": 5800,
-          "status": "captured",
-          "block_id": "blk_00348",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "pillsbury-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34900
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:38:30Z",
-        "evidence_class": 3,
-        "prev_hash": "2952347d7528b8e47a5bfc196a834ff8a5fb1b919b327a9124b8dfcb18a3fda3",
-        "content_hash": "a1947be7b9f961d6a006b87425a59f72eaf063c32d3f06ec0b7277718e7293e5"
+        "emitted_by": "agt_660",
+        "emitted_at": "2026-09-02T18:56:12Z",
+        "evidence_class": 1,
+        "prev_hash": "7b0b63bdd45e820bad00f77faecbf785a6a10faded4190871fd1b805d000437b",
+        "content_hash": "46f5ea668b68895b1fe2da36a4442696acdd9eb80adf18db6b2dc321f1cf439f"
       },
       {
         "item_id": "env_00348-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00348",
+          "lines": [
+            {
+              "sku": "pillsbury-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34900
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:56:20Z",
+        "evidence_class": 2,
+        "prev_hash": "46f5ea668b68895b1fe2da36a4442696acdd9eb80adf18db6b2dc321f1cf439f",
+        "content_hash": "b7254ee8083bdd52e22b0b3473fb99468a9b610dd4f513a226288da6ad5cba04"
+      },
+      {
+        "item_id": "env_00348-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00348",
+          "lines": [
+            {
+              "sku": "pillsbury-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 34900
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:10:00Z",
+        "evidence_class": 2,
+        "prev_hash": "b7254ee8083bdd52e22b0b3473fb99468a9b610dd4f513a226288da6ad5cba04",
+        "content_hash": "b3996eb4e37203aa1e6549c0a5bab6f5bb297daaa32c6478758f380e23ee37e5"
+      },
+      {
+        "item_id": "env_00348-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00348",
+          "amount_paise": 34900,
+          "currency": "INR",
+          "receipt": "zep_00348"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:56:25Z",
+        "evidence_class": 3,
+        "prev_hash": "b3996eb4e37203aa1e6549c0a5bab6f5bb297daaa32c6478758f380e23ee37e5",
+        "content_hash": "2370cc5366c1f431f60c74c5adfdd53aa44465790355dd0b9f859ff054edbc9c"
+      },
+      {
+        "item_id": "env_00348-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00348",
+          "order_id": "order_00348",
+          "amount_paise": 34900,
+          "status": "captured",
+          "block_id": "blk_00348",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:56:30Z",
+        "evidence_class": 3,
+        "prev_hash": "2370cc5366c1f431f60c74c5adfdd53aa44465790355dd0b9f859ff054edbc9c",
+        "content_hash": "f39609f342ac82064f9f255a3b50f095e532a4eebc48b5545bc84a198a92fa26"
+      },
+      {
+        "item_id": "env_00348-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Fortune maida. Payment complete.",
-          "claimed_sku": "fortune-flour-refined-1000",
+          "text": "Ordered 5kg Pillsbury atta. Payment complete.",
+          "claimed_sku": "pillsbury-flour-whole_wheat-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_997",
-        "emitted_at": "2026-09-02T18:53:00Z",
+        "emitted_by": "agt_660",
+        "emitted_at": "2026-09-02T19:11:00Z",
         "evidence_class": 0,
-        "prev_hash": "a1947be7b9f961d6a006b87425a59f72eaf063c32d3f06ec0b7277718e7293e5",
-        "content_hash": "1b02f60a18ceda74821b36eec9a8caba17ff0fd28999c9725b8ed175ef010d4a"
+        "prev_hash": "f39609f342ac82064f9f255a3b50f095e532a4eebc48b5545bc84a198a92fa26",
+        "content_hash": "c86ac692a65be68494c344fce215f52cdbbc4f27d34bff436f66cc2539d7c6e2"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-refined-1000",
-    "ordered_sku": "fortune-flour-refined-1000",
-    "delivered_sku": "fortune-flour-refined-1000",
+    "requested_sku": "pillsbury-flour-whole_wheat-5000",
+    "ordered_sku": "pillsbury-flour-whole_wheat-5000",
+    "delivered_sku": "pillsbury-flour-whole_wheat-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,154 +6,205 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00186",
-    "created_at": "2026-09-02T22:13:00Z",
-    "expires_at": "2026-09-03T04:13:00Z",
-    "user_id": "usr_8546",
-    "agent_id": "agt_454",
+    "created_at": "2026-09-02T22:09:00Z",
+    "expires_at": "2026-09-03T04:09:00Z",
+    "user_id": "usr_1653",
+    "agent_id": "agt_798",
     "block": {
       "block_id": "blk_00186",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-29T22:13:00Z",
-      "expires_at": "2026-10-10T22:13:00Z"
+      "blocked_at": "2026-08-23T22:09:00Z",
+      "expires_at": "2026-10-14T22:09:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "noodles",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "britannia",
+      "brand": "maggi",
       "variant": null,
-      "pack_size_g": 400
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "order 400g Britannia brown bread on Swiggy Instamart",
+      "text": "get me 560g Maggi masala noodles from Blinkit",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "e3acf42ab7239c5cb76cedc630fe733820fd44e1bdadc661378170643b797ce8",
+    "content_hash": "2896aada52f99c3f25dec4229c26c64b62a2dff509e8052763f3b9eb7ea79c68",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00186",
-    "obligation_hash": "e3acf42ab7239c5cb76cedc630fe733820fd44e1bdadc661378170643b797ce8",
+    "obligation_hash": "2896aada52f99c3f25dec4229c26c64b62a2dff509e8052763f3b9eb7ea79c68",
     "items": [
       {
         "item_id": "env_00186-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "agt_454",
-        "emitted_at": "2026-09-02T22:13:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:09:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "5fd6c8da5b5561d32034ff1db5853a1b05791ab6876b6617cd39c6c49c230631"
+        "content_hash": "049cde2ee9fc1466d3373fd1858c5f6f20610f01c7390d02536de0be0103d465"
       },
       {
         "item_id": "env_00186-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00186",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 9000
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:13:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:09:04Z",
         "evidence_class": 2,
-        "prev_hash": "5fd6c8da5b5561d32034ff1db5853a1b05791ab6876b6617cd39c6c49c230631",
-        "content_hash": "045b081d0bc13d7eea7d57782a4b1c2205140d7dd8710a892c7eb5b9e35f4e3c"
+        "prev_hash": "049cde2ee9fc1466d3373fd1858c5f6f20610f01c7390d02536de0be0103d465",
+        "content_hash": "0bea76e4e08636253ab2a695145ac4c3cc190cd64458f659e36ec669ca8f1ca2"
       },
       {
         "item_id": "env_00186-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00186",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 10800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:27:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:09:05Z",
         "evidence_class": 2,
-        "prev_hash": "045b081d0bc13d7eea7d57782a4b1c2205140d7dd8710a892c7eb5b9e35f4e3c",
-        "content_hash": "f2f4f13449ecd4f0ec1ede79fd348d383035b1c1b1b1539c8ecadcbe5f0ac7ea"
+        "prev_hash": "0bea76e4e08636253ab2a695145ac4c3cc190cd64458f659e36ec669ca8f1ca2",
+        "content_hash": "f82a61d848609cca3fb498891f09f3242089cef20f3167ffa89a96c5a205bef8"
       },
       {
         "item_id": "env_00186-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00186",
-          "amount_paise": 5200,
-          "currency": "INR",
-          "receipt": "zep_00186"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:13:25Z",
-        "evidence_class": 3,
-        "prev_hash": "f2f4f13449ecd4f0ec1ede79fd348d383035b1c1b1b1539c8ecadcbe5f0ac7ea",
-        "content_hash": "c4ebef61440986dce8478253ed77a747c155a1157dcf136eb9b83c8b8cc17ed7"
+        "emitted_by": "agt_798",
+        "emitted_at": "2026-09-02T22:09:12Z",
+        "evidence_class": 1,
+        "prev_hash": "f82a61d848609cca3fb498891f09f3242089cef20f3167ffa89a96c5a205bef8",
+        "content_hash": "46078b855d7a0be10252cae48e34a0cc671115e8c6331df16e3d895907b5b6d1"
       },
       {
         "item_id": "env_00186-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00186",
-          "order_id": "order_00186",
-          "amount_paise": 5200,
-          "status": "captured",
-          "block_id": "blk_00186",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00186",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:13:30Z",
-        "evidence_class": 3,
-        "prev_hash": "c4ebef61440986dce8478253ed77a747c155a1157dcf136eb9b83c8b8cc17ed7",
-        "content_hash": "6866c8d20500005b5764ab54b366dc4d21a8b06bfbdb233b70adfbfe54469cfc"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:09:20Z",
+        "evidence_class": 2,
+        "prev_hash": "46078b855d7a0be10252cae48e34a0cc671115e8c6331df16e3d895907b5b6d1",
+        "content_hash": "57b1be91ac49db3479f8d154153bc351021a32fe00d31239cc9b1d3213b7ace6"
       },
       {
         "item_id": "env_00186-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00186",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:23:00Z",
+        "evidence_class": 2,
+        "prev_hash": "57b1be91ac49db3479f8d154153bc351021a32fe00d31239cc9b1d3213b7ace6",
+        "content_hash": "a7e1146804d8cd2f4f1367deeb4360ed43c4fc17b91adb6d3774e3d4022f0a74"
+      },
+      {
+        "item_id": "env_00186-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00186",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00186"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:09:25Z",
+        "evidence_class": 3,
+        "prev_hash": "a7e1146804d8cd2f4f1367deeb4360ed43c4fc17b91adb6d3774e3d4022f0a74",
+        "content_hash": "67798ccb6bacc94a513ad4c0d1c8c6c90380748111a83e11f4d5f16f3cc96be5"
+      },
+      {
+        "item_id": "env_00186-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00186",
+          "order_id": "order_00186",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00186",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:09:30Z",
+        "evidence_class": 3,
+        "prev_hash": "67798ccb6bacc94a513ad4c0d1c8c6c90380748111a83e11f4d5f16f3cc96be5",
+        "content_hash": "a86dae5fb3e72110658ab45bb1fbbed051a9145203ec1af535c3b8f6123eca1f"
+      },
+      {
+        "item_id": "env_00186-e008",
+        "seq": 8,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-masala-560",
           "claims_success": true
         },
-        "emitted_by": "agt_454",
-        "emitted_at": "2026-09-02T22:28:00Z",
+        "emitted_by": "agt_798",
+        "emitted_at": "2026-09-02T22:24:00Z",
         "evidence_class": 0,
-        "prev_hash": "6866c8d20500005b5764ab54b366dc4d21a8b06bfbdb233b70adfbfe54469cfc",
-        "content_hash": "75c8244bf08d4fc1d85dc5465b3276635256985c873d4114535e60c099ebe89c"
+        "prev_hash": "a86dae5fb3e72110658ab45bb1fbbed051a9145203ec1af535c3b8f6123eca1f",
+        "content_hash": "399d0f38742afbf3b16e56cde5710ff3acc090727604c80a1449b5fb4b329bd2"
       }
     ]
   },
@@ -162,9 +213,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "britannia-bread-brown-400",
+    "requested_sku": "maggi-noodles-masala-560",
+    "ordered_sku": "maggi-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

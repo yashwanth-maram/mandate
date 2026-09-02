@@ -6,152 +6,203 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00429",
-    "created_at": "2026-09-03T00:19:00Z",
-    "expires_at": "2026-09-03T06:19:00Z",
-    "user_id": "usr_2311",
-    "agent_id": "agt_723",
+    "created_at": "2026-09-02T23:51:00Z",
+    "expires_at": "2026-09-03T05:51:00Z",
+    "user_id": "usr_7176",
+    "agent_id": "agt_834",
     "block": {
       "block_id": "blk_00429",
-      "blocked_paise": 120405,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-02T00:19:00Z",
-      "expires_at": "2026-10-26T00:19:00Z"
+      "blocked_at": "2026-08-21T23:51:00Z",
+      "expires_at": "2026-10-22T23:51:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 40135,
-      "max_total_paise": 40135,
+      "category": "noodles",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "pillsbury",
-      "variant": "whole_wheat",
-      "pack_size_g": 5000
+      "brand": "maggi",
+      "variant": "masala",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "buy 5kg Pillsbury atta from Zepto, keep it under 401 rupees",
+      "text": "buy 560g Maggi masala noodles from Blinkit, keep it under 110 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "c70a59458cd1f413faba66dda8b24eb07d7cb873a85fa5ec90f8eb11c7ea206f",
+    "content_hash": "deadf66d2b0cf88e760fb00ae6497fc90f4ee928d5bc3d2c6b71dbeed4642103",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00429",
-    "obligation_hash": "c70a59458cd1f413faba66dda8b24eb07d7cb873a85fa5ec90f8eb11c7ea206f",
+    "obligation_hash": "deadf66d2b0cf88e760fb00ae6497fc90f4ee928d5bc3d2c6b71dbeed4642103",
     "items": [
       {
         "item_id": "env_00429-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "pillsbury-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 10800
         },
-        "emitted_by": "agt_723",
-        "emitted_at": "2026-09-03T00:19:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:51:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "50fc201882941c2d72f87fb14da720d83c40b3df21a0f08f81684b168e1f24dd"
+        "content_hash": "9299d9b23165197581afa604c6a32a0f9b129a37a9fb79989730f0a2d4748716"
       },
       {
         "item_id": "env_00429-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00429",
-          "lines": [
-            {
-              "sku": "pillsbury-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 9000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:19:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:51:04Z",
         "evidence_class": 2,
-        "prev_hash": "50fc201882941c2d72f87fb14da720d83c40b3df21a0f08f81684b168e1f24dd",
-        "content_hash": "8c257c1ab2e47efb36524477c36b37fe3898c841f8dca9d42c2357da279d8d02"
+        "prev_hash": "9299d9b23165197581afa604c6a32a0f9b129a37a9fb79989730f0a2d4748716",
+        "content_hash": "d883ab20993f4685130eb4185d8c5494bfb76c31599c2bc4114de1c29c268fe8"
       },
       {
         "item_id": "env_00429-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00429",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:33:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:51:05Z",
         "evidence_class": 2,
-        "prev_hash": "8c257c1ab2e47efb36524477c36b37fe3898c841f8dca9d42c2357da279d8d02",
-        "content_hash": "dbe20c2296fb8e80356d6c127e8b75b616bd7162e49da95907d597336364a7da"
+        "prev_hash": "d883ab20993f4685130eb4185d8c5494bfb76c31599c2bc4114de1c29c268fe8",
+        "content_hash": "e60d5cc31e14f2184f0bc40b5dbe913ae6f03309c391bc4043e4cddff919f173"
       },
       {
         "item_id": "env_00429-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00429",
-          "amount_paise": 34900,
-          "currency": "INR",
-          "receipt": "zep_00429"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:19:25Z",
-        "evidence_class": 3,
-        "prev_hash": "dbe20c2296fb8e80356d6c127e8b75b616bd7162e49da95907d597336364a7da",
-        "content_hash": "694b7d6b2cc367a0d9e743faee0ba96bb476e3ec42c85889afb64ca04d79e79a"
+        "emitted_by": "agt_834",
+        "emitted_at": "2026-09-02T23:51:12Z",
+        "evidence_class": 1,
+        "prev_hash": "e60d5cc31e14f2184f0bc40b5dbe913ae6f03309c391bc4043e4cddff919f173",
+        "content_hash": "15fd164d655a6a0fb6d8368522d0603277fc819d4052c391db343c64d823fc71"
       },
       {
         "item_id": "env_00429-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00429",
-          "order_id": "order_00429",
-          "amount_paise": 34900,
-          "status": "captured",
-          "block_id": "blk_00429",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00429",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:19:30Z",
-        "evidence_class": 3,
-        "prev_hash": "694b7d6b2cc367a0d9e743faee0ba96bb476e3ec42c85889afb64ca04d79e79a",
-        "content_hash": "650500e331cb13d7fecf48a47b38c69cd5da48d4935cf120330d964553239c13"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:51:20Z",
+        "evidence_class": 2,
+        "prev_hash": "15fd164d655a6a0fb6d8368522d0603277fc819d4052c391db343c64d823fc71",
+        "content_hash": "22b2194eeb7a36dc6e03fe33639ee2d5ca32b2c5891141ee5ea5651925c92345"
       },
       {
         "item_id": "env_00429-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00429",
+          "lines": [
+            {
+              "sku": "yippee-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:05:00Z",
+        "evidence_class": 2,
+        "prev_hash": "22b2194eeb7a36dc6e03fe33639ee2d5ca32b2c5891141ee5ea5651925c92345",
+        "content_hash": "1fdb1a984bb2d3c7ce34d8fe0c23a0e1c2d1a76f3b313369530c362a44a58164"
+      },
+      {
+        "item_id": "env_00429-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00429",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00429"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:51:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1fdb1a984bb2d3c7ce34d8fe0c23a0e1c2d1a76f3b313369530c362a44a58164",
+        "content_hash": "d74c0bebf37c5386cf67482c5ff4adb35e903c2e510c07aa7f267ae349a9e644"
+      },
+      {
+        "item_id": "env_00429-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00429",
+          "order_id": "order_00429",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00429",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:51:30Z",
+        "evidence_class": 3,
+        "prev_hash": "d74c0bebf37c5386cf67482c5ff4adb35e903c2e510c07aa7f267ae349a9e644",
+        "content_hash": "db18021eb8b670f644dbe69e2b2d315e37b174804d212d7f13ab585190c3ad49"
+      },
+      {
+        "item_id": "env_00429-e008",
+        "seq": 8,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Pillsbury atta. Payment complete.",
-          "claimed_sku": "pillsbury-flour-whole_wheat-5000",
+          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-masala-560",
           "claims_success": true
         },
-        "emitted_by": "agt_723",
-        "emitted_at": "2026-09-03T00:34:00Z",
+        "emitted_by": "agt_834",
+        "emitted_at": "2026-09-03T00:06:00Z",
         "evidence_class": 0,
-        "prev_hash": "650500e331cb13d7fecf48a47b38c69cd5da48d4935cf120330d964553239c13",
-        "content_hash": "63861fc37bc03ded1f48bec70564e93a729f862ebfde21d457fe22f564694122"
+        "prev_hash": "db18021eb8b670f644dbe69e2b2d315e37b174804d212d7f13ab585190c3ad49",
+        "content_hash": "3cdad02443119fa5adc28f57af8445011b30c01cb879317b5bfdcf8f4b4d7ce8"
       }
     ]
   },
@@ -160,14 +211,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "pillsbury-flour-whole_wheat-5000",
-    "ordered_sku": "pillsbury-flour-whole_wheat-5000",
-    "delivered_sku": "fortune-flour-whole_wheat-5000",
+    "requested_sku": "maggi-noodles-masala-560",
+    "ordered_sku": "maggi-noodles-masala-560",
+    "delivered_sku": "yippee-noodles-masala-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 34900,
-    "rationale": "Order names pillsbury; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 9600,
+    "rationale": "Order names maggi; fulfilment shipped yippee. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

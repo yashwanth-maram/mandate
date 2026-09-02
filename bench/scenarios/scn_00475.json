@@ -6,154 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00475",
-    "created_at": "2026-09-02T23:32:00Z",
-    "expires_at": "2026-09-03T05:32:00Z",
-    "user_id": "usr_1246",
-    "agent_id": "agt_271",
+    "created_at": "2026-09-03T00:54:00Z",
+    "expires_at": "2026-09-03T06:54:00Z",
+    "user_id": "usr_7233",
+    "agent_id": "agt_268",
     "block": {
       "block_id": "blk_00475",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-25T23:32:00Z",
-      "expires_at": "2026-10-20T23:32:00Z"
+      "blocked_at": "2026-09-02T00:54:00Z",
+      "expires_at": "2026-10-28T00:54:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 6669,
-      "max_total_paise": 6669,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "fortune",
-      "variant": null,
+      "brand": "aashirvaad",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg Fortune maida from Zepto",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "I need 1kg Aashirvaad iodised salt, use Swiggy Instamart",
+      "uncaptured_attributes": []
     },
-    "content_hash": "566b8050660c83c9bad9bf39c92c41a19ef6ee7f58b811da9f9addbf16ddaa08",
+    "content_hash": "03e271563203e248854eebf7c198be8c1256fafa9983ee4b9eab556a0cec3d21",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00475",
-    "obligation_hash": "566b8050660c83c9bad9bf39c92c41a19ef6ee7f58b811da9f9addbf16ddaa08",
+    "obligation_hash": "03e271563203e248854eebf7c198be8c1256fafa9983ee4b9eab556a0cec3d21",
     "items": [
       {
         "item_id": "env_00475-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "agt_271",
-        "emitted_at": "2026-09-02T23:32:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:54:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "46633730d28debae470c7da0dfa4b1d2241d5891a1583017bc48a1c953d78351"
+        "content_hash": "2983da0de56024ee3f3d6b25e78f5d2311ce2ec1b2edb70ed966f42c29f960aa"
       },
       {
         "item_id": "env_00475-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00475",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:32:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:54:04Z",
         "evidence_class": 2,
-        "prev_hash": "46633730d28debae470c7da0dfa4b1d2241d5891a1583017bc48a1c953d78351",
-        "content_hash": "9814457cf19be2c49b401788d732ef3c71cca691c50c891fabe9bb42470f181b"
+        "prev_hash": "2983da0de56024ee3f3d6b25e78f5d2311ce2ec1b2edb70ed966f42c29f960aa",
+        "content_hash": "713db0847351881b4e3c7cbb67acdca40e6bb21a8f2ee21a858c25870d6c1134"
       },
       {
         "item_id": "env_00475-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00475",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:46:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:54:05Z",
         "evidence_class": 2,
-        "prev_hash": "9814457cf19be2c49b401788d732ef3c71cca691c50c891fabe9bb42470f181b",
-        "content_hash": "1801ae3f32843634d42d7266fa512b19bbf5911a42624fd2d6557077707e64e3"
+        "prev_hash": "713db0847351881b4e3c7cbb67acdca40e6bb21a8f2ee21a858c25870d6c1134",
+        "content_hash": "f9da74f397559f15570431e201108077288dc24d7e6fdd91be3e610d173e7c13"
       },
       {
         "item_id": "env_00475-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00475",
-          "amount_paise": 5800,
-          "currency": "INR",
-          "receipt": "zep_00475"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:32:25Z",
-        "evidence_class": 3,
-        "prev_hash": "1801ae3f32843634d42d7266fa512b19bbf5911a42624fd2d6557077707e64e3",
-        "content_hash": "6fd8b3c3f370a4e69ca74776faccf20467b735a32c562b9053ff57aa9f62b547"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:54:06Z",
+        "evidence_class": 2,
+        "prev_hash": "f9da74f397559f15570431e201108077288dc24d7e6fdd91be3e610d173e7c13",
+        "content_hash": "d3125e3ce5b4426cc5e45899090b8550c6080753e93aaf6e000770c476e32fe6"
       },
       {
         "item_id": "env_00475-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00475",
-          "order_id": "order_00475",
-          "amount_paise": 5800,
-          "status": "captured",
-          "block_id": "blk_00475",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:32:30Z",
-        "evidence_class": 3,
-        "prev_hash": "6fd8b3c3f370a4e69ca74776faccf20467b735a32c562b9053ff57aa9f62b547",
-        "content_hash": "85cad7306aac4da3af4ba4ac8032f7f1c14501718de46910ceb47775bbe31717"
+        "emitted_by": "agt_268",
+        "emitted_at": "2026-09-03T00:54:12Z",
+        "evidence_class": 1,
+        "prev_hash": "d3125e3ce5b4426cc5e45899090b8550c6080753e93aaf6e000770c476e32fe6",
+        "content_hash": "81aae41ed7d1596898ec00d073db305221578ceb155822a0a6f6863c2ef85167"
       },
       {
         "item_id": "env_00475-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00475",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:54:20Z",
+        "evidence_class": 2,
+        "prev_hash": "81aae41ed7d1596898ec00d073db305221578ceb155822a0a6f6863c2ef85167",
+        "content_hash": "e0340aaadbe05b748557dd40797a6320048d307245754ebcfb85051d5fb8f735"
+      },
+      {
+        "item_id": "env_00475-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00475",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:08:00Z",
+        "evidence_class": 2,
+        "prev_hash": "e0340aaadbe05b748557dd40797a6320048d307245754ebcfb85051d5fb8f735",
+        "content_hash": "ac0a062dbde512fbf46de61eeff74e307f3f1c4199e54d9170b1a0016087a3a7"
+      },
+      {
+        "item_id": "env_00475-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00475",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00475"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:54:25Z",
+        "evidence_class": 3,
+        "prev_hash": "ac0a062dbde512fbf46de61eeff74e307f3f1c4199e54d9170b1a0016087a3a7",
+        "content_hash": "dac5deb5167a105947b903ad504e92a03a2114c2df23114f016cb344813f712b"
+      },
+      {
+        "item_id": "env_00475-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00475",
+          "order_id": "order_00475",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00475",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:54:30Z",
+        "evidence_class": 3,
+        "prev_hash": "dac5deb5167a105947b903ad504e92a03a2114c2df23114f016cb344813f712b",
+        "content_hash": "acdd1523083571ad8b2a4e3e693859e4beb214740a4a0b00c68b1a1959c377e8"
+      },
+      {
+        "item_id": "env_00475-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Fortune maida. Payment complete.",
-          "claimed_sku": "fortune-flour-refined-1000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_271",
-        "emitted_at": "2026-09-02T23:47:00Z",
+        "emitted_by": "agt_268",
+        "emitted_at": "2026-09-03T01:09:00Z",
         "evidence_class": 0,
-        "prev_hash": "85cad7306aac4da3af4ba4ac8032f7f1c14501718de46910ceb47775bbe31717",
-        "content_hash": "6c4eb841c915484b2c7a8447db0d9160e502b6a31e7ba4afecbcbc715508f5f8"
+        "prev_hash": "acdd1523083571ad8b2a4e3e693859e4beb214740a4a0b00c68b1a1959c377e8",
+        "content_hash": "3320e906b4a6214a1525a2b648c1794ed22ca166c3776f860411bd6dd8053c7d"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-refined-1000",
-    "ordered_sku": "fortune-flour-refined-1000",
-    "delivered_sku": "fortune-flour-refined-1000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

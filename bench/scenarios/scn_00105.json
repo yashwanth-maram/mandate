@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00105",
-    "created_at": "2026-09-03T03:45:00Z",
-    "expires_at": "2026-09-03T09:45:00Z",
-    "user_id": "usr_4084",
-    "agent_id": "agt_429",
+    "created_at": "2026-09-02T23:08:00Z",
+    "expires_at": "2026-09-03T05:08:00Z",
+    "user_id": "usr_5397",
+    "agent_id": "agt_604",
     "block": {
       "block_id": "blk_00105",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-15T03:45:00Z",
-      "expires_at": "2026-10-18T03:45:00Z"
+      "blocked_at": "2026-08-29T23:08:00Z",
+      "expires_at": "2026-10-04T23:08:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 6554,
-      "max_total_paise": 6554,
+      "category": "flour",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "mother_dairy",
-      "variant": "double_toned",
+      "brand": "aashirvaad",
+      "variant": "refined",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1L Mother Dairy double toned milk on Swiggy Instamart",
+      "text": "order 1kg Aashirvaad maida on Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "b377c98eb275eb84688bd148900d60deb968455f87c0d3b0d1e4593c870ee9cb",
+    "content_hash": "b22590bfac5c2d35507abc655d809da27622958d26d585cba128ea21f58895b2",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00105",
-    "obligation_hash": "b377c98eb275eb84688bd148900d60deb968455f87c0d3b0d1e4593c870ee9cb",
+    "obligation_hash": "b22590bfac5c2d35507abc655d809da27622958d26d585cba128ea21f58895b2",
     "items": [
       {
         "item_id": "env_00105-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5700
-            }
-          ]
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 38500
         },
-        "emitted_by": "agt_429",
-        "emitted_at": "2026-09-03T03:45:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:08:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8f1311ab163dcb0898602de5ea9a401d9bf326685392fa9c525eb801241ea021"
+        "content_hash": "6c831dc25b57f05524f3b3681183c2fabda9d823efaa72fe68d47d51ed8d8c3f"
       },
       {
         "item_id": "env_00105-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:08:04Z",
+        "evidence_class": 2,
+        "prev_hash": "6c831dc25b57f05524f3b3681183c2fabda9d823efaa72fe68d47d51ed8d8c3f",
+        "content_hash": "0faea43e37f40d0fa1f2003ee6b187488a1a5e0d349c1b89383dd4192fa3a391"
+      },
+      {
+        "item_id": "env_00105-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 9200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:08:05Z",
+        "evidence_class": 2,
+        "prev_hash": "0faea43e37f40d0fa1f2003ee6b187488a1a5e0d349c1b89383dd4192fa3a391",
+        "content_hash": "c41e04b71247fca25f62dcfa6399f09e4f2855fe0fdb136c590bed38124655be"
+      },
+      {
+        "item_id": "env_00105-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:08:06Z",
+        "evidence_class": 2,
+        "prev_hash": "c41e04b71247fca25f62dcfa6399f09e4f2855fe0fdb136c590bed38124655be",
+        "content_hash": "0efd385594399257e46ac3cc94e53dd1e8925cb1098b6c45b5fea54a9c37354f"
+      },
+      {
+        "item_id": "env_00105-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_604",
+        "emitted_at": "2026-09-02T23:08:12Z",
+        "evidence_class": 1,
+        "prev_hash": "0efd385594399257e46ac3cc94e53dd1e8925cb1098b6c45b5fea54a9c37354f",
+        "content_hash": "ea448ddfcde8ca26ce5d7e04193f449ebb5fcf34d54e47773cb77677ec88538f"
+      },
+      {
+        "item_id": "env_00105-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00105",
           "lines": [
             {
-              "sku": "mother_dairy-milk-double_toned-1000",
+              "sku": "aashirvaad-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 5700
+              "unit_price_paise": 6200
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:45:20Z",
+        "emitted_at": "2026-09-02T23:08:20Z",
         "evidence_class": 2,
-        "prev_hash": "8f1311ab163dcb0898602de5ea9a401d9bf326685392fa9c525eb801241ea021",
-        "content_hash": "a5701e84131a2b1540998e5f3a4d2a277a691c060e19998e079b1ef2381b5fde"
+        "prev_hash": "ea448ddfcde8ca26ce5d7e04193f449ebb5fcf34d54e47773cb77677ec88538f",
+        "content_hash": "d9558de01af6783cb06243e60e63d2232be0668c716b8a200b12eed5bf593ed4"
       },
       {
-        "item_id": "env_00105-e002",
-        "seq": 2,
+        "item_id": "env_00105-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00105",
           "lines": [
             {
-              "sku": "amul-milk-double_toned-1000",
+              "sku": "fortune-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 5900
+              "unit_price_paise": 5800
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:59:00Z",
+        "emitted_at": "2026-09-02T23:22:00Z",
         "evidence_class": 2,
-        "prev_hash": "a5701e84131a2b1540998e5f3a4d2a277a691c060e19998e079b1ef2381b5fde",
-        "content_hash": "83b3d2d1f28832ef561a627ea0b36149c295fec775c2e4cc292ae4f437b720da"
+        "prev_hash": "d9558de01af6783cb06243e60e63d2232be0668c716b8a200b12eed5bf593ed4",
+        "content_hash": "a2c1f5308bd87e81c7b44970eb8bc3bbf59bbfeba1ebf8ffbc92030013d66ddf"
       },
       {
-        "item_id": "env_00105-e003",
-        "seq": 3,
+        "item_id": "env_00105-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00105",
-          "amount_paise": 5700,
+          "amount_paise": 6200,
           "currency": "INR",
           "receipt": "zep_00105"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:45:25Z",
+        "emitted_at": "2026-09-02T23:08:25Z",
         "evidence_class": 3,
-        "prev_hash": "83b3d2d1f28832ef561a627ea0b36149c295fec775c2e4cc292ae4f437b720da",
-        "content_hash": "8db5df7c743a3875462c888e45bafd81f2d60b2836bcdccfa3e8dbeab8ce4ba4"
+        "prev_hash": "a2c1f5308bd87e81c7b44970eb8bc3bbf59bbfeba1ebf8ffbc92030013d66ddf",
+        "content_hash": "2025260b256c8f0a0c437537adda7411e8bc8abae77900e3f391e53d41a51aa5"
       },
       {
-        "item_id": "env_00105-e004",
-        "seq": 4,
+        "item_id": "env_00105-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00105",
           "order_id": "order_00105",
-          "amount_paise": 5700,
+          "amount_paise": 6200,
           "status": "captured",
           "block_id": "blk_00105",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:45:30Z",
+        "emitted_at": "2026-09-02T23:08:30Z",
         "evidence_class": 3,
-        "prev_hash": "8db5df7c743a3875462c888e45bafd81f2d60b2836bcdccfa3e8dbeab8ce4ba4",
-        "content_hash": "f82bed973fde5948a2f3f9a748aad8258af1ddd460a3afa068407ef70c43f8cc"
+        "prev_hash": "2025260b256c8f0a0c437537adda7411e8bc8abae77900e3f391e53d41a51aa5",
+        "content_hash": "bf27acd120b2668a803c79b1b2b2b9ae993624c52b576f3d838e86649f3e4102"
       },
       {
-        "item_id": "env_00105-e005",
-        "seq": 5,
+        "item_id": "env_00105-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy double toned milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-double_toned-1000",
+          "text": "Ordered 1kg Aashirvaad maida. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_429",
-        "emitted_at": "2026-09-03T04:00:00Z",
+        "emitted_by": "agt_604",
+        "emitted_at": "2026-09-02T23:23:00Z",
         "evidence_class": 0,
-        "prev_hash": "f82bed973fde5948a2f3f9a748aad8258af1ddd460a3afa068407ef70c43f8cc",
-        "content_hash": "e8a8507b3eabaa86a0311a1af6c457583ced0062de942744764a7881293ddb33"
+        "prev_hash": "bf27acd120b2668a803c79b1b2b2b9ae993624c52b576f3d838e86649f3e4102",
+        "content_hash": "cba1ac82726eb59f449cc57be4d2c51ce062844841691cc74d5743daaedd08c0"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-double_toned-1000",
-    "ordered_sku": "mother_dairy-milk-double_toned-1000",
-    "delivered_sku": "amul-milk-double_toned-1000",
+    "requested_sku": "aashirvaad-flour-refined-1000",
+    "ordered_sku": "aashirvaad-flour-refined-1000",
+    "delivered_sku": "fortune-flour-refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 5700,
-    "rationale": "Order names mother_dairy; fulfilment shipped amul. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 6200,
+    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

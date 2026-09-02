@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00132",
-    "created_at": "2026-09-03T02:29:00Z",
-    "expires_at": "2026-09-03T08:29:00Z",
-    "user_id": "usr_7018",
-    "agent_id": "agt_916",
+    "created_at": "2026-09-03T00:17:00Z",
+    "expires_at": "2026-09-03T06:17:00Z",
+    "user_id": "usr_4287",
+    "agent_id": "agt_398",
     "block": {
       "block_id": "blk_00132",
-      "blocked_paise": 65205,
+      "blocked_paise": 132825,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T02:29:00Z",
-      "expires_at": "2026-10-11T02:29:00Z"
+      "blocked_at": "2026-08-16T00:17:00Z",
+      "expires_at": "2026-10-28T00:17:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 21735,
-      "max_total_paise": 21735,
+      "category": "flour",
+      "max_unit_price_paise": 44275,
+      "max_total_paise": 44275,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
       "brand": "fortune",
-      "variant": "groundnut",
-      "pack_size_g": 1000
+      "variant": "multigrain",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "get me 1L Fortune groundnut oil from Zepto",
+      "text": "I need 5kg Fortune multigrain atta, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "860565bdcf45cb7dd8aa43ad9008460707317f11464bb67be8d1ba677e1a3d09",
+    "content_hash": "b6389f6af7ef647b463ef0a7ffda7034d643f8c13fcf67df71ef1faad144d740",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00132",
-    "obligation_hash": "860565bdcf45cb7dd8aa43ad9008460707317f11464bb67be8d1ba677e1a3d09",
+    "obligation_hash": "b6389f6af7ef647b463ef0a7ffda7034d643f8c13fcf67df71ef1faad144d740",
     "items": [
       {
         "item_id": "env_00132-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 35500
         },
-        "emitted_by": "agt_916",
-        "emitted_at": "2026-09-03T02:29:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0b9431c8142a0df616eaff3af8b478ee7a1999f21ac5c5c41d46d7e48571e2a9"
+        "content_hash": "3c6920c0563ff39b7f6d3f325c13aa784bfcf4cf1628f63fa76ab4734f75c50b"
       },
       {
         "item_id": "env_00132-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00132",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:29:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:04Z",
         "evidence_class": 2,
-        "prev_hash": "0b9431c8142a0df616eaff3af8b478ee7a1999f21ac5c5c41d46d7e48571e2a9",
-        "content_hash": "8027699062ab4e9b914d16c685ed1826bff28aa07808f92e8d2c0632e49a079d"
+        "prev_hash": "3c6920c0563ff39b7f6d3f325c13aa784bfcf4cf1628f63fa76ab4734f75c50b",
+        "content_hash": "0687daf7f680a7dead8e7aab99e08ab035cee58456c8b695b3a0531eee9c0ec8"
       },
       {
         "item_id": "env_00132-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00132",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 38500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:43:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:05Z",
         "evidence_class": 2,
-        "prev_hash": "8027699062ab4e9b914d16c685ed1826bff28aa07808f92e8d2c0632e49a079d",
-        "content_hash": "1129aad004db0a770d8910ec1a246d4ca0442eab20b4f0808941d84eabc69141"
+        "prev_hash": "0687daf7f680a7dead8e7aab99e08ab035cee58456c8b695b3a0531eee9c0ec8",
+        "content_hash": "e110c3db8051d3cf45f4a43ed11bc6cc454031a602932ac66ab9f5a138af946c"
       },
       {
         "item_id": "env_00132-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00132",
-          "amount_paise": 18900,
-          "currency": "INR",
-          "receipt": "zep_00132"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:29:25Z",
-        "evidence_class": 3,
-        "prev_hash": "1129aad004db0a770d8910ec1a246d4ca0442eab20b4f0808941d84eabc69141",
-        "content_hash": "c50d279194272821d21200cbdae3f4362f3d786973df6d9e4e3aa0b616191692"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:06Z",
+        "evidence_class": 2,
+        "prev_hash": "e110c3db8051d3cf45f4a43ed11bc6cc454031a602932ac66ab9f5a138af946c",
+        "content_hash": "9ed9405f6deee3e1c2647af91891cb5da472f2b4f461e35eeebba1a61346cbd4"
       },
       {
         "item_id": "env_00132-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00132",
-          "order_id": "order_00132",
-          "amount_paise": 18900,
-          "status": "captured",
-          "block_id": "blk_00132",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:29:30Z",
-        "evidence_class": 3,
-        "prev_hash": "c50d279194272821d21200cbdae3f4362f3d786973df6d9e4e3aa0b616191692",
-        "content_hash": "ea97ae2fad4e12370899453cfd8a9fba63b31d005fb0065736c2a02e37e25662"
+        "emitted_by": "agt_398",
+        "emitted_at": "2026-09-03T00:17:12Z",
+        "evidence_class": 1,
+        "prev_hash": "9ed9405f6deee3e1c2647af91891cb5da472f2b4f461e35eeebba1a61346cbd4",
+        "content_hash": "eee8f29b3d1b830fbbdad645b5cf7f2518dc3d94231aba25cf654d1810eccafb"
       },
       {
         "item_id": "env_00132-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00132",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:17:20Z",
+        "evidence_class": 2,
+        "prev_hash": "eee8f29b3d1b830fbbdad645b5cf7f2518dc3d94231aba25cf654d1810eccafb",
+        "content_hash": "cc7d5327739632cd30cbedc642f5bc9e2405bde593bfa2ffa6d1af7da7b9da57"
+      },
+      {
+        "item_id": "env_00132-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00132",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:31:00Z",
+        "evidence_class": 2,
+        "prev_hash": "cc7d5327739632cd30cbedc642f5bc9e2405bde593bfa2ffa6d1af7da7b9da57",
+        "content_hash": "803d3ea08a6bf3cbef97c9e003e7da7a76a6a9735a58b95b0c923a84f42e0074"
+      },
+      {
+        "item_id": "env_00132-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00132",
+          "amount_paise": 38500,
+          "currency": "INR",
+          "receipt": "zep_00132"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:17:25Z",
+        "evidence_class": 3,
+        "prev_hash": "803d3ea08a6bf3cbef97c9e003e7da7a76a6a9735a58b95b0c923a84f42e0074",
+        "content_hash": "9f13a462ef2eddf906b2ce2b1df2233d30f254f66495767c48dc369441b97468"
+      },
+      {
+        "item_id": "env_00132-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00132",
+          "order_id": "order_00132",
+          "amount_paise": 38500,
+          "status": "captured",
+          "block_id": "blk_00132",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:17:30Z",
+        "evidence_class": 3,
+        "prev_hash": "9f13a462ef2eddf906b2ce2b1df2233d30f254f66495767c48dc369441b97468",
+        "content_hash": "82f16fb4389f85319151f43dede7f154c8b92cc14f8621fd063040581d7a0f88"
+      },
+      {
+        "item_id": "env_00132-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-groundnut-1000",
+          "text": "Ordered 5kg Fortune multigrain atta. Payment complete.",
+          "claimed_sku": "fortune-flour-multigrain-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_916",
-        "emitted_at": "2026-09-03T02:44:00Z",
+        "emitted_by": "agt_398",
+        "emitted_at": "2026-09-03T00:32:00Z",
         "evidence_class": 0,
-        "prev_hash": "ea97ae2fad4e12370899453cfd8a9fba63b31d005fb0065736c2a02e37e25662",
-        "content_hash": "1b7d950115523e1479b164bd8c3d2fa35562cafdabaa514aa18c43e09a6d31b8"
+        "prev_hash": "82f16fb4389f85319151f43dede7f154c8b92cc14f8621fd063040581d7a0f88",
+        "content_hash": "3507a60449312a182326e5186c21376b32e44d19a7955ab8f7aba196f6ce29f0"
       }
     ]
   },
@@ -160,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-groundnut-1000",
-    "ordered_sku": "fortune-edible_oil-groundnut-1000",
-    "delivered_sku": "fortune-edible_oil-groundnut-1000",
+    "requested_sku": "fortune-flour-multigrain-5000",
+    "ordered_sku": "fortune-flour-multigrain-5000",
+    "delivered_sku": "fortune-flour-multigrain-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

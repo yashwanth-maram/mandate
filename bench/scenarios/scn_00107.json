@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00107",
-    "created_at": "2026-09-02T23:46:00Z",
-    "expires_at": "2026-09-03T05:46:00Z",
-    "user_id": "usr_1857",
-    "agent_id": "agt_908",
+    "created_at": "2026-09-03T03:49:00Z",
+    "expires_at": "2026-09-03T09:49:00Z",
+    "user_id": "usr_4971",
+    "agent_id": "agt_433",
     "block": {
       "block_id": "blk_00107",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-13T23:46:00Z",
-      "expires_at": "2026-10-22T23:46:00Z"
+      "blocked_at": "2026-08-22T03:49:00Z",
+      "expires_at": "2026-10-11T03:49:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 14719,
-      "max_total_paise": 14719,
+      "category": "edible_oil",
+      "max_unit_price_paise": 18170,
+      "max_total_paise": 18170,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "daawat",
-      "variant": "basmati",
+      "brand": "dhara",
+      "variant": "mustard",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1kg Daawat basmati rice, use Swiggy Instamart",
+      "text": "buy 1L Dhara kachi ghani mustard oil from Swiggy Instamart, keep it under 181 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "fd1d723d199fdc8d665781d3acfe678f430dc1a6f50d07597d933ae58033f7d3",
+    "content_hash": "3c96f13fa38a54532187260edb01e4b58ae39e84675238270d18a32eb49ca5f2",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00107",
-    "obligation_hash": "fd1d723d199fdc8d665781d3acfe678f430dc1a6f50d07597d933ae58033f7d3",
+    "obligation_hash": "3c96f13fa38a54532187260edb01e4b58ae39e84675238270d18a32eb49ca5f2",
     "items": [
       {
         "item_id": "env_00107-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "daawat-rice-basmati-1000",
-              "quantity": 1,
-              "unit_price_paise": 12800
-            }
-          ]
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 15200
         },
-        "emitted_by": "agt_908",
-        "emitted_at": "2026-09-02T23:46:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "e2453ea5b7ad872cf96b5ad405804397917b1ddb2fd30f3ff7caf22cfe9ff1dc"
+        "content_hash": "87493aff83b584f06c63dab7670962130ccf32eb26e120637d3a8a60709e72d3"
       },
       {
         "item_id": "env_00107-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 15800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:04Z",
+        "evidence_class": 2,
+        "prev_hash": "87493aff83b584f06c63dab7670962130ccf32eb26e120637d3a8a60709e72d3",
+        "content_hash": "12ffe9c1904f7db642233715f03692e9f0cd188f423eb3395675365589e4aa7f"
+      },
+      {
+        "item_id": "env_00107-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 18900
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:05Z",
+        "evidence_class": 2,
+        "prev_hash": "12ffe9c1904f7db642233715f03692e9f0cd188f423eb3395675365589e4aa7f",
+        "content_hash": "b5daa0bad7d08aef75e8738ad375a7ec6b437c359cb3263acf7f72855bb94b64"
+      },
+      {
+        "item_id": "env_00107-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 16800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:49:06Z",
+        "evidence_class": 2,
+        "prev_hash": "b5daa0bad7d08aef75e8738ad375a7ec6b437c359cb3263acf7f72855bb94b64",
+        "content_hash": "652cba146043ae0fd9ac6b76760b73b13e00ca7b71bd48b47289d4ebc571ea9e"
+      },
+      {
+        "item_id": "env_00107-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "dhara-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 15800
+            }
+          ]
+        },
+        "emitted_by": "agt_433",
+        "emitted_at": "2026-09-03T03:49:12Z",
+        "evidence_class": 1,
+        "prev_hash": "652cba146043ae0fd9ac6b76760b73b13e00ca7b71bd48b47289d4ebc571ea9e",
+        "content_hash": "d6a54286f26a783d6ca050eb81b74afd5331e64ccf6b5fbf4d8112f225d434da"
+      },
+      {
+        "item_id": "env_00107-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00107",
           "lines": [
             {
-              "sku": "daawat-rice-basmati-1000",
+              "sku": "dhara-edible_oil-mustard-1000",
               "quantity": 1,
-              "unit_price_paise": 12800
+              "unit_price_paise": 15800
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T23:46:20Z",
+        "emitted_at": "2026-09-03T03:49:20Z",
         "evidence_class": 2,
-        "prev_hash": "e2453ea5b7ad872cf96b5ad405804397917b1ddb2fd30f3ff7caf22cfe9ff1dc",
-        "content_hash": "d638a9dc54657f994911e3dca3d9f90b8382aafe23ca1c057337046dd1ed0156"
+        "prev_hash": "d6a54286f26a783d6ca050eb81b74afd5331e64ccf6b5fbf4d8112f225d434da",
+        "content_hash": "674226f9e2a4a33328a0b08617013528d171d01319eb6d8dc1a76785ac21ee0a"
       },
       {
-        "item_id": "env_00107-e002",
-        "seq": 2,
+        "item_id": "env_00107-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00107",
           "lines": [
             {
-              "sku": "daawat-rice-basmati-1000",
+              "sku": "dhara-edible_oil-mustard-1000",
               "quantity": 1,
-              "unit_price_paise": 12800
+              "unit_price_paise": 15800
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T00:00:00Z",
+        "emitted_at": "2026-09-03T04:03:00Z",
         "evidence_class": 2,
-        "prev_hash": "d638a9dc54657f994911e3dca3d9f90b8382aafe23ca1c057337046dd1ed0156",
-        "content_hash": "56b97505807baac8234b4724f2a4a34ea80d9754beb3db61d7440110a4374bf9"
+        "prev_hash": "674226f9e2a4a33328a0b08617013528d171d01319eb6d8dc1a76785ac21ee0a",
+        "content_hash": "ac770db4e6ef5b39289c8a40d6d1ba69d305d494207d87b6445036f8aded1654"
       },
       {
-        "item_id": "env_00107-e003",
-        "seq": 3,
+        "item_id": "env_00107-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00107",
-          "amount_paise": 13569,
+          "amount_paise": 19704,
           "currency": "INR",
           "receipt": "zep_00107"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:46:25Z",
+        "emitted_at": "2026-09-03T03:49:25Z",
         "evidence_class": 3,
-        "prev_hash": "56b97505807baac8234b4724f2a4a34ea80d9754beb3db61d7440110a4374bf9",
-        "content_hash": "1e3fcc1b9fca8356d5f082529cf8b0f80b4f56b6a913b9dc5d61be8c9d73f209"
+        "prev_hash": "ac770db4e6ef5b39289c8a40d6d1ba69d305d494207d87b6445036f8aded1654",
+        "content_hash": "b0b1a67f8a2fae0bc67ba70eca3b5a5f8ac65cc697e34ff5f4789bc2b1f17850"
       },
       {
-        "item_id": "env_00107-e004",
-        "seq": 4,
+        "item_id": "env_00107-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00107",
           "order_id": "order_00107",
-          "amount_paise": 13569,
+          "amount_paise": 19704,
           "status": "captured",
           "block_id": "blk_00107",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:46:30Z",
+        "emitted_at": "2026-09-03T03:49:30Z",
         "evidence_class": 3,
-        "prev_hash": "1e3fcc1b9fca8356d5f082529cf8b0f80b4f56b6a913b9dc5d61be8c9d73f209",
-        "content_hash": "a6e15fcd5b635fb2c8c381c3ba0a529e1a8301445a91bad2ab736747df890282"
+        "prev_hash": "b0b1a67f8a2fae0bc67ba70eca3b5a5f8ac65cc697e34ff5f4789bc2b1f17850",
+        "content_hash": "d31bb3bb1df53e992fa1b90294b7b6c3befebe84e5e704d2d53b971f4fc900ab"
       },
       {
-        "item_id": "env_00107-e005",
-        "seq": 5,
+        "item_id": "env_00107-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
-          "claimed_sku": "daawat-rice-basmati-1000",
+          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "dhara-edible_oil-mustard-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_908",
-        "emitted_at": "2026-09-03T00:01:00Z",
+        "emitted_by": "agt_433",
+        "emitted_at": "2026-09-03T04:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "a6e15fcd5b635fb2c8c381c3ba0a529e1a8301445a91bad2ab736747df890282",
-        "content_hash": "c3b9de21cd9e1f88d75b9122b569bff39c0b9f91c903f4de46d5875860b672b5"
+        "prev_hash": "d31bb3bb1df53e992fa1b90294b7b6c3befebe84e5e704d2d53b971f4fc900ab",
+        "content_hash": "efdbe2126ec8f089120695bc7ef2099848a03b497daaf70cc89af249f3f8f475"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "daawat-rice-basmati-1000",
-    "ordered_sku": "daawat-rice-basmati-1000",
-    "delivered_sku": "daawat-rice-basmati-1000",
+    "requested_sku": "dhara-edible_oil-mustard-1000",
+    "ordered_sku": "dhara-edible_oil-mustard-1000",
+    "delivered_sku": "dhara-edible_oil-mustard-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 769,
-    "rationale": "Correct item, unreconcilable debit. Debited 13569 paise against an order worth 12800 paise."
+    "loss_paise": 3904,
+    "rationale": "Correct item, unreconcilable debit. Debited 19704 paise against an order worth 15800 paise."
   }
 }

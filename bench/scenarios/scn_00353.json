@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00353",
-    "created_at": "2026-09-03T02:28:00Z",
-    "expires_at": "2026-09-03T08:28:00Z",
-    "user_id": "usr_4402",
-    "agent_id": "agt_804",
+    "created_at": "2026-09-03T02:08:00Z",
+    "expires_at": "2026-09-03T08:08:00Z",
+    "user_id": "usr_8539",
+    "agent_id": "agt_808",
     "block": {
       "block_id": "blk_00353",
-      "blocked_paise": 57960,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T02:28:00Z",
-      "expires_at": "2026-10-13T02:28:00Z"
+      "blocked_at": "2026-08-22T02:08:00Z",
+      "expires_at": "2026-10-30T02:08:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 19320,
-      "max_total_paise": 19320,
+      "category": "rice",
+      "max_unit_price_paise": 8970,
+      "max_total_paise": 8970,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "saffola",
-      "variant": "sunflower_refined",
+      "brand": "india_gate",
+      "variant": "sona_masoori",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1L Saffola refined sunflower oil on Zepto",
+      "text": "buy 1kg India Gate sona masoori rice from Zepto, keep it under 89 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "718a488d6f29848c5af42b30dc8db2d482d8028ac83803b8431244f80524977c",
+    "content_hash": "0eb6dab69fef70da6e249ec201f3455c54e56f2709aa0800a3b6eb8434075da1",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00353",
-    "obligation_hash": "718a488d6f29848c5af42b30dc8db2d482d8028ac83803b8431244f80524977c",
+    "obligation_hash": "0eb6dab69fef70da6e249ec201f3455c54e56f2709aa0800a3b6eb8434075da1",
     "items": [
       {
         "item_id": "env_00353-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "saffola-edible_oil-sunflower_refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 16800
-            }
-          ]
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 13200
         },
-        "emitted_by": "agt_804",
-        "emitted_at": "2026-09-03T02:28:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:08:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "25689bd5e707bc90961d3b54dd372f61b35100526787d8f356023c4479183a16"
+        "content_hash": "c79f85c7d4d999914d24c86237d297155077c0f6bf2c6cd59b8974e069e39ed4"
       },
       {
         "item_id": "env_00353-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 37200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:08:04Z",
+        "evidence_class": 2,
+        "prev_hash": "c79f85c7d4d999914d24c86237d297155077c0f6bf2c6cd59b8974e069e39ed4",
+        "content_hash": "560809de658a3e1b4c1e27e0bcc9a56ca0d3daad13dfa3413b84c0620577f6f9"
+      },
+      {
+        "item_id": "env_00353-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:08:05Z",
+        "evidence_class": 2,
+        "prev_hash": "560809de658a3e1b4c1e27e0bcc9a56ca0d3daad13dfa3413b84c0620577f6f9",
+        "content_hash": "1be78080674772a45e4df912723c32611711bd13306450ab803507c4914acd01"
+      },
+      {
+        "item_id": "env_00353-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 12800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T02:08:06Z",
+        "evidence_class": 2,
+        "prev_hash": "1be78080674772a45e4df912723c32611711bd13306450ab803507c4914acd01",
+        "content_hash": "20417676fdae5a190e2b539d43f95e8752239cbfc11f414f47379b64c2118b01"
+      },
+      {
+        "item_id": "env_00353-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "india_gate-rice-sona_masoori-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "agt_808",
+        "emitted_at": "2026-09-03T02:08:12Z",
+        "evidence_class": 1,
+        "prev_hash": "20417676fdae5a190e2b539d43f95e8752239cbfc11f414f47379b64c2118b01",
+        "content_hash": "dae0be786437a75405cad8d296b4a2a43f6135189826c82182b312d62a95619d"
+      },
+      {
+        "item_id": "env_00353-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00353",
           "lines": [
             {
-              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "sku": "india_gate-rice-sona_masoori-1000",
               "quantity": 1,
-              "unit_price_paise": 16800
+              "unit_price_paise": 7800
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:28:20Z",
+        "emitted_at": "2026-09-03T02:08:20Z",
         "evidence_class": 2,
-        "prev_hash": "25689bd5e707bc90961d3b54dd372f61b35100526787d8f356023c4479183a16",
-        "content_hash": "aa065c1252e447731b2a741d4453904f74b8583f6a44cc67827fe7222856e4ab"
+        "prev_hash": "dae0be786437a75405cad8d296b4a2a43f6135189826c82182b312d62a95619d",
+        "content_hash": "28c4f7c2097e917bd3aeea817f9eec4864689b9053e0bb25194b0f93becc36f1"
       },
       {
-        "item_id": "env_00353-e002",
-        "seq": 2,
+        "item_id": "env_00353-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00353",
           "lines": [
             {
-              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "sku": "india_gate-rice-sona_masoori-1000",
               "quantity": 1,
-              "unit_price_paise": 16800
+              "unit_price_paise": 7800
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:42:00Z",
+        "emitted_at": "2026-09-03T02:22:00Z",
         "evidence_class": 2,
-        "prev_hash": "aa065c1252e447731b2a741d4453904f74b8583f6a44cc67827fe7222856e4ab",
-        "content_hash": "c309b6e6883ea6054fc0a7cc8ed648edd0ea3e82b88e7270d5556ae092131cd8"
+        "prev_hash": "28c4f7c2097e917bd3aeea817f9eec4864689b9053e0bb25194b0f93becc36f1",
+        "content_hash": "a1e3004082104785663a1e5f56ecea63728aea4e9153c89da58851293bb89a64"
       },
       {
-        "item_id": "env_00353-e003",
-        "seq": 3,
+        "item_id": "env_00353-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00353",
-          "amount_paise": 16800,
+          "amount_paise": 7800,
           "currency": "INR",
           "receipt": "zep_00353"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:28:25Z",
+        "emitted_at": "2026-09-03T02:08:25Z",
         "evidence_class": 3,
-        "prev_hash": "c309b6e6883ea6054fc0a7cc8ed648edd0ea3e82b88e7270d5556ae092131cd8",
-        "content_hash": "9752963ebeaeeab364c2c910a3ead8711dca552da17fc9b759449c38af865a43"
+        "prev_hash": "a1e3004082104785663a1e5f56ecea63728aea4e9153c89da58851293bb89a64",
+        "content_hash": "218870ffa93cd1ff5f619b7689ab065a2c0578b7014fb186fca7757b9714daa3"
       },
       {
-        "item_id": "env_00353-e004",
-        "seq": 4,
+        "item_id": "env_00353-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00353",
           "order_id": "order_00353",
-          "amount_paise": 16800,
+          "amount_paise": 7800,
           "status": "captured",
           "block_id": "blk_00353",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:28:30Z",
+        "emitted_at": "2026-09-03T02:08:30Z",
         "evidence_class": 3,
-        "prev_hash": "9752963ebeaeeab364c2c910a3ead8711dca552da17fc9b759449c38af865a43",
-        "content_hash": "7baef6703f33dfd3ba2e187fcfefc05865330672f37f18e45c2619c360317208"
+        "prev_hash": "218870ffa93cd1ff5f619b7689ab065a2c0578b7014fb186fca7757b9714daa3",
+        "content_hash": "c043f6eb7f6c44a09a9952a8de05608018b9963e7da0eb8c595978f5ed395a6c"
       },
       {
-        "item_id": "env_00353-e005",
-        "seq": 5,
+        "item_id": "env_00353-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Saffola refined sunflower oil. Payment complete.",
-          "claimed_sku": "saffola-edible_oil-sunflower_refined-1000",
+          "text": "Ordered 1kg India Gate sona masoori rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-sona_masoori-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_804",
-        "emitted_at": "2026-09-03T02:43:00Z",
+        "emitted_by": "agt_808",
+        "emitted_at": "2026-09-03T02:23:00Z",
         "evidence_class": 0,
-        "prev_hash": "7baef6703f33dfd3ba2e187fcfefc05865330672f37f18e45c2619c360317208",
-        "content_hash": "4eb95cd71158bc1e03d850df1fa161971a51ae425609e30c2a3d6aca952bba06"
+        "prev_hash": "c043f6eb7f6c44a09a9952a8de05608018b9963e7da0eb8c595978f5ed395a6c",
+        "content_hash": "8c695f454da417e80999c4b69b0269103616529172e92986b85a0c5ca15b97b7"
       }
     ]
   },
@@ -160,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "saffola-edible_oil-sunflower_refined-1000",
-    "ordered_sku": "saffola-edible_oil-sunflower_refined-1000",
-    "delivered_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "requested_sku": "india_gate-rice-sona_masoori-1000",
+    "ordered_sku": "india_gate-rice-sona_masoori-1000",
+    "delivered_sku": "india_gate-rice-sona_masoori-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

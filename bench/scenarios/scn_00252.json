@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00252",
-    "created_at": "2026-09-02T18:49:00Z",
-    "expires_at": "2026-09-03T00:49:00Z",
-    "user_id": "usr_1752",
-    "agent_id": "agt_201",
+    "created_at": "2026-09-02T21:03:00Z",
+    "expires_at": "2026-09-03T03:03:00Z",
+    "user_id": "usr_8433",
+    "agent_id": "agt_704",
     "block": {
       "block_id": "blk_00252",
-      "blocked_paise": 65205,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-13T18:49:00Z",
-      "expires_at": "2026-10-27T18:49:00Z"
+      "blocked_at": "2026-08-27T21:03:00Z",
+      "expires_at": "2026-10-30T21:03:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 21735,
-      "max_total_paise": 21735,
+      "category": "salt",
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "fortune",
-      "variant": "groundnut",
+      "brand": "tata",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Fortune groundnut oil from Blinkit, keep it under 217 rupees",
+      "text": "buy 1kg Tata iodised salt from Zepto, keep it under 32 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "2aa89dd1cc21a0421a58edb1b4bde1557d142df4c4f7a172f595439004f7d7e3",
+    "content_hash": "54802f21020ebb94933c3cb8862c24e47d2920dc7984b9d935696e89a29ac5a3",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00252",
-    "obligation_hash": "2aa89dd1cc21a0421a58edb1b4bde1557d142df4c4f7a172f595439004f7d7e3",
+    "obligation_hash": "54802f21020ebb94933c3cb8862c24e47d2920dc7984b9d935696e89a29ac5a3",
     "items": [
       {
         "item_id": "env_00252-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "agt_201",
-        "emitted_at": "2026-09-02T18:49:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:03:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "ad36de964a221f8be6ec11b32d695420b7380bda2a7dfaf3bf350ea5007a2259"
+        "content_hash": "1b9f413db3cc4182a8251542fe2251f101e7b24d3c498b7454e4421881a86e06"
       },
       {
         "item_id": "env_00252-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00252",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:49:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:03:04Z",
         "evidence_class": 2,
-        "prev_hash": "ad36de964a221f8be6ec11b32d695420b7380bda2a7dfaf3bf350ea5007a2259",
-        "content_hash": "f59c6c97101211b1fe63879887288f59f5fc2a5b94b539c22f906f580d1d7f34"
+        "prev_hash": "1b9f413db3cc4182a8251542fe2251f101e7b24d3c498b7454e4421881a86e06",
+        "content_hash": "4d77d347fcc9c7d483c03bd2106e565af145c8dd48826aceeb1024d496c9dc72"
       },
       {
         "item_id": "env_00252-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00252",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-groundnut-1000",
-              "quantity": 1,
-              "unit_price_paise": 18900
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:03:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:03:05Z",
         "evidence_class": 2,
-        "prev_hash": "f59c6c97101211b1fe63879887288f59f5fc2a5b94b539c22f906f580d1d7f34",
-        "content_hash": "a94c49ab6e2fc1d1019c302bb211ae2be5d9b6c6b5e8afb182ee374de3887cf0"
+        "prev_hash": "4d77d347fcc9c7d483c03bd2106e565af145c8dd48826aceeb1024d496c9dc72",
+        "content_hash": "93ef79b8ac4898b310f70944c10dacfb673ab62b24289d67e38a2fd8c3bbf27b"
       },
       {
         "item_id": "env_00252-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00252",
-          "amount_paise": 18900,
-          "currency": "INR",
-          "receipt": "zep_00252"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:49:25Z",
-        "evidence_class": 3,
-        "prev_hash": "a94c49ab6e2fc1d1019c302bb211ae2be5d9b6c6b5e8afb182ee374de3887cf0",
-        "content_hash": "ff7bd296c1495b96e73632f22ddbc93cbb12f7fe843ecd787ee957b5dd45a67b"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:03:06Z",
+        "evidence_class": 2,
+        "prev_hash": "93ef79b8ac4898b310f70944c10dacfb673ab62b24289d67e38a2fd8c3bbf27b",
+        "content_hash": "8401f8811bd0c5562961336a6e605f66e85109d94b7a538228c195db28bf62dd"
       },
       {
         "item_id": "env_00252-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00252",
-          "order_id": "order_00252",
-          "amount_paise": 18900,
-          "status": "captured",
-          "block_id": "blk_00252",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:49:30Z",
-        "evidence_class": 3,
-        "prev_hash": "ff7bd296c1495b96e73632f22ddbc93cbb12f7fe843ecd787ee957b5dd45a67b",
-        "content_hash": "44c5bfe1b4998fe347fbedf5f5e586ab6b2895ec907498721e51d4c9f34f9b12"
+        "emitted_by": "agt_704",
+        "emitted_at": "2026-09-02T21:03:12Z",
+        "evidence_class": 1,
+        "prev_hash": "8401f8811bd0c5562961336a6e605f66e85109d94b7a538228c195db28bf62dd",
+        "content_hash": "8b3e8e47987c0fe70274652bcdbc7a12683ff0f9ce3ba6ed8e9948c194d5d8cf"
       },
       {
         "item_id": "env_00252-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune groundnut oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-groundnut-1000",
-          "claims_success": true
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00252",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ]
         },
-        "emitted_by": "agt_201",
-        "emitted_at": "2026-09-02T19:04:00Z",
-        "evidence_class": 0,
-        "prev_hash": "44c5bfe1b4998fe347fbedf5f5e586ab6b2895ec907498721e51d4c9f34f9b12",
-        "content_hash": "a61a29bf85ef8d9579255711dc58be3bc52f3337819544cdf5d9d32c95bf03b1"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:03:20Z",
+        "evidence_class": 2,
+        "prev_hash": "8b3e8e47987c0fe70274652bcdbc7a12683ff0f9ce3ba6ed8e9948c194d5d8cf",
+        "content_hash": "f98b4289c1638c7042c61d545bbbb87d4b06c86a2a4072015ca5b3931df011d9"
       },
       {
         "item_id": "env_00252-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "I never asked for this. I want a refund.",
-          "raised_at": "2026-09-02T21:49:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00252",
+          "lines": [
+            {
+              "sku": "tata-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 2800
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_1752",
-        "emitted_at": "2026-09-02T21:49:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:17:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f98b4289c1638c7042c61d545bbbb87d4b06c86a2a4072015ca5b3931df011d9",
+        "content_hash": "f78584d8b957b47c840d6a2356206da8815a1fde2d55fdfa9b7f237a3ef9d7f5"
+      },
+      {
+        "item_id": "env_00252-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00252",
+          "amount_paise": 2800,
+          "currency": "INR",
+          "receipt": "zep_00252"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:03:25Z",
+        "evidence_class": 3,
+        "prev_hash": "f78584d8b957b47c840d6a2356206da8815a1fde2d55fdfa9b7f237a3ef9d7f5",
+        "content_hash": "0801611881089b45db5a6273db9cf919bbc2cb9f96c3df4c86799539db42faaa"
+      },
+      {
+        "item_id": "env_00252-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00252",
+          "order_id": "order_00252",
+          "amount_paise": 2800,
+          "status": "captured",
+          "block_id": "blk_00252",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T21:03:30Z",
+        "evidence_class": 3,
+        "prev_hash": "0801611881089b45db5a6273db9cf919bbc2cb9f96c3df4c86799539db42faaa",
+        "content_hash": "90bfd6dba78f7cd5faf04184703e665b0cf65d8f3d995e2065031a8c47a6a170"
+      },
+      {
+        "item_id": "env_00252-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_704",
+        "emitted_at": "2026-09-02T21:18:00Z",
         "evidence_class": 0,
-        "prev_hash": "a61a29bf85ef8d9579255711dc58be3bc52f3337819544cdf5d9d32c95bf03b1",
-        "content_hash": "d5f6737e6778f674a0bc103cfeccc3022c2e130a4a23ea2ed36ef9bc20f81dbd"
+        "prev_hash": "90bfd6dba78f7cd5faf04184703e665b0cf65d8f3d995e2065031a8c47a6a170",
+        "content_hash": "6f38676492b30d4bcfec9eb201943d1f194c4380463960d1bb9e0512dff8942e"
+      },
+      {
+        "item_id": "env_00252-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Didn't order this. Please reverse the payment.",
+          "raised_at": "2026-09-03T00:03:00Z"
+        },
+        "emitted_by": "usr_8433",
+        "emitted_at": "2026-09-03T00:03:00Z",
+        "evidence_class": 0,
+        "prev_hash": "6f38676492b30d4bcfec9eb201943d1f194c4380463960d1bb9e0512dff8942e",
+        "content_hash": "13c60e591420bdc372ebff25acd29307b331ef952af1eea8e1b7b2c00591cad8"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-groundnut-1000",
-    "ordered_sku": "fortune-edible_oil-groundnut-1000",
-    "delivered_sku": "fortune-edible_oil-groundnut-1000",
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 18900,
+    "loss_paise": 2800,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

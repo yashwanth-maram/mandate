@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00073",
-    "created_at": "2026-09-03T00:16:00Z",
-    "expires_at": "2026-09-03T06:16:00Z",
-    "user_id": "usr_9920",
-    "agent_id": "agt_760",
+    "created_at": "2026-09-03T00:14:00Z",
+    "expires_at": "2026-09-03T06:14:00Z",
+    "user_id": "usr_7606",
+    "agent_id": "agt_474",
     "block": {
       "block_id": "blk_00073",
-      "blocked_paise": 98325,
+      "blocked_paise": 132825,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-23T00:16:00Z",
-      "expires_at": "2026-10-04T00:16:00Z"
+      "blocked_at": "2026-09-02T00:14:00Z",
+      "expires_at": "2026-10-15T00:14:00Z"
     },
     "hard": {
-      "category": "butter",
-      "max_unit_price_paise": 32775,
-      "max_total_paise": 32775,
+      "category": "flour",
+      "max_unit_price_paise": 44275,
+      "max_total_paise": 44275,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "amul",
-      "variant": "salted",
-      "pack_size_g": 500
+      "brand": "fortune",
+      "variant": "multigrain",
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 500g Amul salted butter from Zepto, keep it under 327 rupees",
+      "text": "get me 5kg Fortune multigrain atta from Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "203e94019e024b13d22bec4e0f3569cb69fa7b288a3156c446da3143a0104000",
+    "content_hash": "8c54f829774eb47b2b5b9e10b2aac45c8180207fe5c9262b2be59f1246334237",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00073",
-    "obligation_hash": "203e94019e024b13d22bec4e0f3569cb69fa7b288a3156c446da3143a0104000",
+    "obligation_hash": "8c54f829774eb47b2b5b9e10b2aac45c8180207fe5c9262b2be59f1246334237",
     "items": [
       {
         "item_id": "env_00073-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "amul-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 28500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "agt_760",
-        "emitted_at": "2026-09-03T00:16:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:14:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "dab543d0b48aeb5f5e471d18217e45d617097cc169b0381d103f7f99f369680a"
+        "content_hash": "6854d6384e6735cc24c3fabc011f279e6159277414976da81a4a6cf352fbc893"
       },
       {
         "item_id": "env_00073-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00073",
-          "lines": [
-            {
-              "sku": "amul-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 28500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-multigrain-5000",
+          "display_name": "Fortune Multigrain Atta 5kg",
+          "description": "Fortune Multigrain Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 38500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:16:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:14:04Z",
         "evidence_class": 2,
-        "prev_hash": "dab543d0b48aeb5f5e471d18217e45d617097cc169b0381d103f7f99f369680a",
-        "content_hash": "7254f7c6fbb2ebd56d635c16ffc5c07431b375454cec1b17dd42a5e12849c24b"
+        "prev_hash": "6854d6384e6735cc24c3fabc011f279e6159277414976da81a4a6cf352fbc893",
+        "content_hash": "b30c77dd22dc370fedf0988362df82d88005f6b795955395324611eb30312348"
       },
       {
         "item_id": "env_00073-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00073",
-          "lines": [
-            {
-              "sku": "nandini-butter-salted-500",
-              "quantity": 1,
-              "unit_price_paise": 27500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:30:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:14:05Z",
         "evidence_class": 2,
-        "prev_hash": "7254f7c6fbb2ebd56d635c16ffc5c07431b375454cec1b17dd42a5e12849c24b",
-        "content_hash": "6fdbc58cfd96f85c575136009ca62e7cbd6bc0c75fee8a1379d6898b6ee82bf4"
+        "prev_hash": "b30c77dd22dc370fedf0988362df82d88005f6b795955395324611eb30312348",
+        "content_hash": "c6e48ad6d4b0cbf5f20f768f382bff73dfcd5bfa38dc8a5d410a355236bbe26f"
       },
       {
         "item_id": "env_00073-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00073",
-          "amount_paise": 28500,
-          "currency": "INR",
-          "receipt": "zep_00073"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:16:25Z",
-        "evidence_class": 3,
-        "prev_hash": "6fdbc58cfd96f85c575136009ca62e7cbd6bc0c75fee8a1379d6898b6ee82bf4",
-        "content_hash": "a69795064c6a193df124e792d627c54384ac0c10ec125ab4ff4c67b8b90cffa9"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:14:06Z",
+        "evidence_class": 2,
+        "prev_hash": "c6e48ad6d4b0cbf5f20f768f382bff73dfcd5bfa38dc8a5d410a355236bbe26f",
+        "content_hash": "a626b2857458d71f551bbefd2e7490e3073cd0d9cb179dc16303a03c8e64891f"
       },
       {
         "item_id": "env_00073-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00073",
-          "order_id": "order_00073",
-          "amount_paise": 28500,
-          "status": "captured",
-          "block_id": "blk_00073",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:16:30Z",
-        "evidence_class": 3,
-        "prev_hash": "a69795064c6a193df124e792d627c54384ac0c10ec125ab4ff4c67b8b90cffa9",
-        "content_hash": "ceee68d5635c707942c6387806cb8636741f83662281efb4c6408d522a427c55"
+        "emitted_by": "agt_474",
+        "emitted_at": "2026-09-03T00:14:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a626b2857458d71f551bbefd2e7490e3073cd0d9cb179dc16303a03c8e64891f",
+        "content_hash": "4942bb3c605f6abe09da4cc20c1735a847726b89063d6b7112fbe54c118b3d93"
       },
       {
         "item_id": "env_00073-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00073",
+          "lines": [
+            {
+              "sku": "fortune-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 38500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:14:20Z",
+        "evidence_class": 2,
+        "prev_hash": "4942bb3c605f6abe09da4cc20c1735a847726b89063d6b7112fbe54c118b3d93",
+        "content_hash": "25c9bac5bf648046954a5e0bc86aa6d61fe9ba56f6674d6a627836c6d4b013ef"
+      },
+      {
+        "item_id": "env_00073-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00073",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:28:00Z",
+        "evidence_class": 2,
+        "prev_hash": "25c9bac5bf648046954a5e0bc86aa6d61fe9ba56f6674d6a627836c6d4b013ef",
+        "content_hash": "a38efba26c747a4aafe83bade5185240436d4010eca62cdeb06bd7b36d0efe2f"
+      },
+      {
+        "item_id": "env_00073-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00073",
+          "amount_paise": 38500,
+          "currency": "INR",
+          "receipt": "zep_00073"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:14:25Z",
+        "evidence_class": 3,
+        "prev_hash": "a38efba26c747a4aafe83bade5185240436d4010eca62cdeb06bd7b36d0efe2f",
+        "content_hash": "94bf12aa052a86bd5110a14606c37f4b91929f8ef626cecc8008a075ff7c790c"
+      },
+      {
+        "item_id": "env_00073-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00073",
+          "order_id": "order_00073",
+          "amount_paise": 38500,
+          "status": "captured",
+          "block_id": "blk_00073",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:14:30Z",
+        "evidence_class": 3,
+        "prev_hash": "94bf12aa052a86bd5110a14606c37f4b91929f8ef626cecc8008a075ff7c790c",
+        "content_hash": "0e6e8b5c3bae3d37fe650183c58f60673a791ae6616ee3a8902909dbe6ea3e70"
+      },
+      {
+        "item_id": "env_00073-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 500g Amul salted butter. Payment complete.",
-          "claimed_sku": "amul-butter-salted-500",
+          "text": "Ordered 5kg Fortune multigrain atta. Payment complete.",
+          "claimed_sku": "fortune-flour-multigrain-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_760",
-        "emitted_at": "2026-09-03T00:31:00Z",
+        "emitted_by": "agt_474",
+        "emitted_at": "2026-09-03T00:29:00Z",
         "evidence_class": 0,
-        "prev_hash": "ceee68d5635c707942c6387806cb8636741f83662281efb4c6408d522a427c55",
-        "content_hash": "1a37b3b52598f655d4e1ea258dcfaa04fdb9c145d55dd365e92ea572ef83cfeb"
+        "prev_hash": "0e6e8b5c3bae3d37fe650183c58f60673a791ae6616ee3a8902909dbe6ea3e70",
+        "content_hash": "f09dace6e53384cb7db2b21cc9aa3eef1660c04cb2aceb9d4d5473c468b1b61f"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-butter-salted-500",
-    "ordered_sku": "amul-butter-salted-500",
-    "delivered_sku": "nandini-butter-salted-500",
+    "requested_sku": "fortune-flour-multigrain-5000",
+    "ordered_sku": "fortune-flour-multigrain-5000",
+    "delivered_sku": "aashirvaad-flour-multigrain-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 28500,
-    "rationale": "Order names amul; fulfilment shipped nandini. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 38500,
+    "rationale": "Order names fortune; fulfilment shipped aashirvaad. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

@@ -6,152 +6,238 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00393",
-    "created_at": "2026-09-03T03:59:00Z",
-    "expires_at": "2026-09-03T09:59:00Z",
-    "user_id": "usr_1745",
-    "agent_id": "agt_817",
+    "created_at": "2026-09-02T22:46:00Z",
+    "expires_at": "2026-09-03T04:46:00Z",
+    "user_id": "usr_3071",
+    "agent_id": "agt_971",
     "block": {
       "block_id": "blk_00393",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T03:59:00Z",
-      "expires_at": "2026-10-14T03:59:00Z"
+      "blocked_at": "2026-08-17T22:46:00Z",
+      "expires_at": "2026-11-01T22:46:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "flour",
+      "max_unit_price_paise": 10580,
+      "max_total_paise": 10580,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "britannia",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "fortune",
+      "variant": "gram",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 400g Britannia brown bread from Zepto",
+      "text": "buy 1kg Fortune besan from Swiggy Instamart, keep it under 105 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "e11a20c489d34e2d1564328c946bc20a16b17f24ec60bd1edd677e262b8bfdf3",
+    "content_hash": "694faf6a82e7bc00694a251b93c119b9d8e6088961e77053b1bec08fdee980a7",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00393",
-    "obligation_hash": "e11a20c489d34e2d1564328c946bc20a16b17f24ec60bd1edd677e262b8bfdf3",
+    "obligation_hash": "694faf6a82e7bc00694a251b93c119b9d8e6088961e77053b1bec08fdee980a7",
     "items": [
       {
         "item_id": "env_00393-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 9200
         },
-        "emitted_by": "agt_817",
-        "emitted_at": "2026-09-03T03:59:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:46:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "87c73bc74dc5b392819aae0ae08ab1fab9885b079866e9c5bd2d2b5bff856236"
+        "content_hash": "f18466ca870284a49338d0a11ffd7a2bef799c04bdd27210be9172622c6bde36"
       },
       {
         "item_id": "env_00393-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00393",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:59:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:46:04Z",
         "evidence_class": 2,
-        "prev_hash": "87c73bc74dc5b392819aae0ae08ab1fab9885b079866e9c5bd2d2b5bff856236",
-        "content_hash": "bce4ff86f128659a25d98e32e9f35b4610a1457248c48c539bbb987f88544c48"
+        "prev_hash": "f18466ca870284a49338d0a11ffd7a2bef799c04bdd27210be9172622c6bde36",
+        "content_hash": "0e72b85e0089272202930f4f0178511e81dca82c2c1bd11a77273a8601aa249a"
       },
       {
         "item_id": "env_00393-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00393",
-          "lines": [
-            {
-              "sku": "britannia-bread-brown-400",
-              "quantity": 1,
-              "unit_price_paise": 5200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 34000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T04:13:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:46:05Z",
         "evidence_class": 2,
-        "prev_hash": "bce4ff86f128659a25d98e32e9f35b4610a1457248c48c539bbb987f88544c48",
-        "content_hash": "100c073614a9eb847c5fbfea4a78a4faade106317ef766b06668b91f49bb76d6"
+        "prev_hash": "0e72b85e0089272202930f4f0178511e81dca82c2c1bd11a77273a8601aa249a",
+        "content_hash": "e6faa32788159d458d4d9e85af22fea609624d7a65bf60ece678ec4cbf72f651"
       },
       {
         "item_id": "env_00393-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00393",
-          "amount_paise": 6887,
-          "currency": "INR",
-          "receipt": "zep_00393"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:59:25Z",
-        "evidence_class": 3,
-        "prev_hash": "100c073614a9eb847c5fbfea4a78a4faade106317ef766b06668b91f49bb76d6",
-        "content_hash": "1bed810b1a23837c68fa38f38cdc7018353c2c7a960a0acf62c01058939c9b6b"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:46:06Z",
+        "evidence_class": 2,
+        "prev_hash": "e6faa32788159d458d4d9e85af22fea609624d7a65bf60ece678ec4cbf72f651",
+        "content_hash": "598aaffbfc7672cd7a5a0a0c71b3a72135b4e54bf733c1c2a7a8943629e437aa"
       },
       {
         "item_id": "env_00393-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00393",
-          "order_id": "order_00393",
-          "amount_paise": 6887,
-          "status": "captured",
-          "block_id": "blk_00393",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:59:30Z",
-        "evidence_class": 3,
-        "prev_hash": "1bed810b1a23837c68fa38f38cdc7018353c2c7a960a0acf62c01058939c9b6b",
-        "content_hash": "8c0c3aebf30fffbfe7d19e66489f7fa4ad0df19424fdf1a51d9c4ee7e240e830"
+        "emitted_by": "agt_971",
+        "emitted_at": "2026-09-02T22:46:12Z",
+        "evidence_class": 1,
+        "prev_hash": "598aaffbfc7672cd7a5a0a0c71b3a72135b4e54bf733c1c2a7a8943629e437aa",
+        "content_hash": "102071551b8271951ee68ff33d3ee321fdc961eaa49881441ffc39a4bcdd7d95"
       },
       {
         "item_id": "env_00393-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00393",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:46:20Z",
+        "evidence_class": 2,
+        "prev_hash": "102071551b8271951ee68ff33d3ee321fdc961eaa49881441ffc39a4bcdd7d95",
+        "content_hash": "f3b7f5cb96ae4180b98eceebf016f4dc415aa49a069a2a587a768f0948541a7d"
+      },
+      {
+        "item_id": "env_00393-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00393",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:00:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f3b7f5cb96ae4180b98eceebf016f4dc415aa49a069a2a587a768f0948541a7d",
+        "content_hash": "0f0aad4eed628ace4709e053ef1ba018fe279e0e995ae131968dd4652c1662eb"
+      },
+      {
+        "item_id": "env_00393-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00393",
+          "amount_paise": 9200,
+          "currency": "INR",
+          "receipt": "zep_00393"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:46:25Z",
+        "evidence_class": 3,
+        "prev_hash": "0f0aad4eed628ace4709e053ef1ba018fe279e0e995ae131968dd4652c1662eb",
+        "content_hash": "165ad792d8a27f72993463a74f4542ed2e0acf34db106f7871db39d2c211e5b8"
+      },
+      {
+        "item_id": "env_00393-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00393",
+          "order_id": "order_00393",
+          "amount_paise": 9200,
+          "status": "captured",
+          "block_id": "blk_00393",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:46:30Z",
+        "evidence_class": 3,
+        "prev_hash": "165ad792d8a27f72993463a74f4542ed2e0acf34db106f7871db39d2c211e5b8",
+        "content_hash": "6409abbda90eb5c190ae63aae73a6d0afb3021445825285d46a3532303238282"
+      },
+      {
+        "item_id": "env_00393-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00393b",
+          "order_id": "order_00393",
+          "amount_paise": 9200,
+          "status": "captured",
+          "block_id": "blk_00393",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:46:34Z",
+        "evidence_class": 3,
+        "prev_hash": "6409abbda90eb5c190ae63aae73a6d0afb3021445825285d46a3532303238282",
+        "content_hash": "2967add9dbbad61fa9537dc22a66b217b654441fc37e850b5c63344503e3f5fb"
+      },
+      {
+        "item_id": "env_00393-e010",
+        "seq": 10,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 1kg Fortune besan. Payment complete.",
+          "claimed_sku": "fortune-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_817",
-        "emitted_at": "2026-09-03T04:14:00Z",
+        "emitted_by": "agt_971",
+        "emitted_at": "2026-09-02T23:01:00Z",
         "evidence_class": 0,
-        "prev_hash": "8c0c3aebf30fffbfe7d19e66489f7fa4ad0df19424fdf1a51d9c4ee7e240e830",
-        "content_hash": "54f058809e5719178db0a82f43c43ee42eee63ba847a300470a9ef4ab5eb8611"
+        "prev_hash": "2967add9dbbad61fa9537dc22a66b217b654441fc37e850b5c63344503e3f5fb",
+        "content_hash": "94e5d6f9c0e270d32be6cad650b0e303b047c9926fef764db81b115bf5ac1759"
       }
     ]
   },
@@ -160,14 +246,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "britannia-bread-brown-400",
+    "requested_sku": "fortune-flour-gram-1000",
+    "ordered_sku": "fortune-flour-gram-1000",
+    "delivered_sku": "fortune-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 1687,
-    "rationale": "Correct item, unreconcilable debit. Debited 6887 paise against an order worth 5200 paise."
+    "loss_paise": 9200,
+    "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
   }
 }

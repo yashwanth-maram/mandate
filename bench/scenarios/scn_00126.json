@@ -6,16 +6,16 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00126",
-    "created_at": "2026-09-03T00:22:00Z",
-    "expires_at": "2026-09-03T06:22:00Z",
-    "user_id": "usr_5155",
-    "agent_id": "agt_865",
+    "created_at": "2026-09-02T19:12:00Z",
+    "expires_at": "2026-09-03T01:12:00Z",
+    "user_id": "usr_9655",
+    "agent_id": "agt_112",
     "block": {
       "block_id": "blk_00126",
       "blocked_paise": 128000,
       "consumed_paise": 96000,
-      "blocked_at": "2026-09-03T00:22:00Z",
-      "expires_at": "2026-10-14T00:22:00Z"
+      "blocked_at": "2026-08-22T19:12:00Z",
+      "expires_at": "2026-10-31T19:12:00Z"
     },
     "hard": {
       "category": "rice",
@@ -23,31 +23,99 @@
       "max_total_paise": 73600,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "zepto"
       ],
       "brand": "india_gate",
       "variant": "basmati",
       "pack_size_g": 5000
     },
     "intent": {
-      "text": "get me 5kg India Gate basmati rice from Swiggy Instamart",
+      "text": "I need 5kg India Gate basmati rice, use Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "d749edf130a8624af1c27915834daba94b68d3380d89c66cbfe21a3bb54d12ff",
+    "content_hash": "f2c035d14207c2954c11406d5b9947eee8eb8c1b9c8223baae5697c4ac1bf087",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00126",
-    "obligation_hash": "d749edf130a8624af1c27915834daba94b68d3380d89c66cbfe21a3bb54d12ff",
+    "obligation_hash": "f2c035d14207c2954c11406d5b9947eee8eb8c1b9c8223baae5697c4ac1bf087",
     "items": [
       {
         "item_id": "env_00126-e000",
         "seq": 0,
         "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 13200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:12:03Z",
+        "evidence_class": 2,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "bf28b65379eacbbac16a07015d565905429042df71ba6d183adde7a93dfc70ac"
+      },
+      {
+        "item_id": "env_00126-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 64000
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:12:04Z",
+        "evidence_class": 2,
+        "prev_hash": "bf28b65379eacbbac16a07015d565905429042df71ba6d183adde7a93dfc70ac",
+        "content_hash": "c3aa636a60844fe510d0902542f34e62698b2ed4b275ed835a33dd0df388b719"
+      },
+      {
+        "item_id": "env_00126-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:12:05Z",
+        "evidence_class": 2,
+        "prev_hash": "c3aa636a60844fe510d0902542f34e62698b2ed4b275ed835a33dd0df388b719",
+        "content_hash": "f34c9634c9ab0b71458bcb06f88486ef7050c8ec604836706c82e4eb416456ba"
+      },
+      {
+        "item_id": "env_00126-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-brown-1000",
+          "display_name": "India Gate Brown Basmati Rice 1kg",
+          "description": "India Gate Brown Basmati Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 11800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:12:06Z",
+        "evidence_class": 2,
+        "prev_hash": "f34c9634c9ab0b71458bcb06f88486ef7050c8ec604836706c82e4eb416456ba",
+        "content_hash": "53bf4bfb4295a776a7a5eef218d26694a8dfd1363ebefe7850cc389e5ff12678"
+      },
+      {
+        "item_id": "env_00126-e004",
+        "seq": 4,
+        "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
+          "merchant_id": "zepto",
           "lines": [
             {
               "sku": "india_gate-rice-basmati-5000",
@@ -56,18 +124,18 @@
             }
           ]
         },
-        "emitted_by": "agt_865",
-        "emitted_at": "2026-09-03T00:22:00Z",
+        "emitted_by": "agt_112",
+        "emitted_at": "2026-09-02T19:12:12Z",
         "evidence_class": 1,
-        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "5d00c0a8252f93fa5d4771de77d4ae2d9ec81fb25762151cd359a39c03d91045"
+        "prev_hash": "53bf4bfb4295a776a7a5eef218d26694a8dfd1363ebefe7850cc389e5ff12678",
+        "content_hash": "c4f3b895e6978b35eed4cba700e26e59cb94b43b619efb0a1466730e598a1f6f"
       },
       {
-        "item_id": "env_00126-e001",
-        "seq": 1,
+        "item_id": "env_00126-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
+          "merchant_id": "zepto",
           "merchant_order_id": "zep_00126",
           "lines": [
             {
@@ -77,15 +145,15 @@
             }
           ]
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T00:22:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:12:20Z",
         "evidence_class": 2,
-        "prev_hash": "5d00c0a8252f93fa5d4771de77d4ae2d9ec81fb25762151cd359a39c03d91045",
-        "content_hash": "64dbeb53a9d958c8c4cf0c10f6a236e397fb632a8d02f56424fdf08b1eb349ab"
+        "prev_hash": "c4f3b895e6978b35eed4cba700e26e59cb94b43b619efb0a1466730e598a1f6f",
+        "content_hash": "aad654598e62c40eabf6484ac48011303cbf0e98eeee34bdce7f24106cbbe4d3"
       },
       {
-        "item_id": "env_00126-e002",
-        "seq": 2,
+        "item_id": "env_00126-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00126",
@@ -98,15 +166,15 @@
           ],
           "delivered": true
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T00:36:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:26:00Z",
         "evidence_class": 2,
-        "prev_hash": "64dbeb53a9d958c8c4cf0c10f6a236e397fb632a8d02f56424fdf08b1eb349ab",
-        "content_hash": "b3e9ea56203cb49b6d38f1abdce04b76ecf783c9546a4df3883e1c21340624c4"
+        "prev_hash": "aad654598e62c40eabf6484ac48011303cbf0e98eeee34bdce7f24106cbbe4d3",
+        "content_hash": "59f0d5c3fb85e10cf74cad1e5bc8ca6397b944dd6c167f845f06dac36fe7bf40"
       },
       {
-        "item_id": "env_00126-e003",
-        "seq": 3,
+        "item_id": "env_00126-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00126",
@@ -115,14 +183,14 @@
           "receipt": "zep_00126"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:22:25Z",
+        "emitted_at": "2026-09-02T19:12:25Z",
         "evidence_class": 3,
-        "prev_hash": "b3e9ea56203cb49b6d38f1abdce04b76ecf783c9546a4df3883e1c21340624c4",
-        "content_hash": "34510078540a06cea81a6b60c27de602a9a27731adf954ec8d76d355d11a8b2d"
+        "prev_hash": "59f0d5c3fb85e10cf74cad1e5bc8ca6397b944dd6c167f845f06dac36fe7bf40",
+        "content_hash": "edf65b0758e8282b0ed6a6cd180d985024b3409725539e1e4c89f4b1c71af653"
       },
       {
-        "item_id": "env_00126-e004",
-        "seq": 4,
+        "item_id": "env_00126-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00126",
@@ -133,25 +201,25 @@
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:22:30Z",
+        "emitted_at": "2026-09-02T19:12:30Z",
         "evidence_class": 3,
-        "prev_hash": "34510078540a06cea81a6b60c27de602a9a27731adf954ec8d76d355d11a8b2d",
-        "content_hash": "2a54749ad87b42a4ee1420dde91a6aa02e972409a38b7461abca51aea92c7fee"
+        "prev_hash": "edf65b0758e8282b0ed6a6cd180d985024b3409725539e1e4c89f4b1c71af653",
+        "content_hash": "803ab1bd461583fdc9202b09e5165394b4ab18960b022a603bb70bbdc5e9d084"
       },
       {
-        "item_id": "env_00126-e005",
-        "seq": 5,
+        "item_id": "env_00126-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
           "text": "Ordered 5kg India Gate basmati rice. Payment complete.",
           "claimed_sku": "india_gate-rice-basmati-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_865",
-        "emitted_at": "2026-09-03T00:37:00Z",
+        "emitted_by": "agt_112",
+        "emitted_at": "2026-09-02T19:27:00Z",
         "evidence_class": 0,
-        "prev_hash": "2a54749ad87b42a4ee1420dde91a6aa02e972409a38b7461abca51aea92c7fee",
-        "content_hash": "9d391bd9ccb98c7afe37797c5ce53b32d2935e00543857a26e11cceb71e0d7cf"
+        "prev_hash": "803ab1bd461583fdc9202b09e5165394b4ab18960b022a603bb70bbdc5e9d084",
+        "content_hash": "7c19d369abcc524663e66b1ae48b69627ec344b52a10bde82bd178d8108e63c6"
       }
     ]
   },

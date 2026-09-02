@@ -6,170 +6,238 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00231",
-    "created_at": "2026-09-02T19:51:00Z",
-    "expires_at": "2026-09-03T01:51:00Z",
-    "user_id": "usr_3692",
-    "agent_id": "agt_858",
+    "created_at": "2026-09-02T22:49:00Z",
+    "expires_at": "2026-09-03T04:49:00Z",
+    "user_id": "usr_6285",
+    "agent_id": "agt_519",
     "block": {
       "block_id": "blk_00231",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-26T19:51:00Z",
-      "expires_at": "2026-10-18T19:51:00Z"
+      "blocked_at": "2026-08-13T22:49:00Z",
+      "expires_at": "2026-10-12T22:49:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 39100,
-      "max_total_paise": 39100,
+      "category": "bread",
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "whole_wheat",
-      "pack_size_g": 5000
+      "brand": "harvest",
+      "variant": "white",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "order 5kg Fortune atta on Blinkit",
+      "text": "get me 400g Harvest white bread from Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "086a0a38d4c7b6dec7d7afba9f1ae0e47092ce6eca928e438cb0aa1e50d822c3",
+    "content_hash": "fa217e8b7ce0f67db16069355fe443df5edb5828db248d91ef293f4c0487c24b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00231",
-    "obligation_hash": "086a0a38d4c7b6dec7d7afba9f1ae0e47092ce6eca928e438cb0aa1e50d822c3",
+    "obligation_hash": "fa217e8b7ce0f67db16069355fe443df5edb5828db248d91ef293f4c0487c24b",
     "items": [
       {
         "item_id": "env_00231-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ]
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "agt_858",
-        "emitted_at": "2026-09-02T19:51:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:49:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "638f1c201a86339b8a9d7146a3ca223484a00bb900d1a179df673c4a7c535de7"
+        "content_hash": "88fb050b08b4e7d1f6202f287d94c811b4bfa8e9eb0ddcecd761df7b2c8c871d"
       },
       {
         "item_id": "env_00231-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 6200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:49:04Z",
+        "evidence_class": 2,
+        "prev_hash": "88fb050b08b4e7d1f6202f287d94c811b4bfa8e9eb0ddcecd761df7b2c8c871d",
+        "content_hash": "7b3836c10dcc8850187fade9b36b8e79a3a6808f3ebc8d29d86ac9fad3c949b7"
+      },
+      {
+        "item_id": "env_00231-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5000
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:49:05Z",
+        "evidence_class": 2,
+        "prev_hash": "7b3836c10dcc8850187fade9b36b8e79a3a6808f3ebc8d29d86ac9fad3c949b7",
+        "content_hash": "7ba5e6c9a88ae5d1b4260a9efcf54a7a27fe3b0c9a2c8a08c06f84fc9fc88920"
+      },
+      {
+        "item_id": "env_00231-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 4200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:49:06Z",
+        "evidence_class": 2,
+        "prev_hash": "7ba5e6c9a88ae5d1b4260a9efcf54a7a27fe3b0c9a2c8a08c06f84fc9fc88920",
+        "content_hash": "e37610d62bd218c296e74244fb8a71ac87d347d71ec2e56f968cf3cf3ade3ff0"
+      },
+      {
+        "item_id": "env_00231-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ]
+        },
+        "emitted_by": "agt_519",
+        "emitted_at": "2026-09-02T22:49:12Z",
+        "evidence_class": 1,
+        "prev_hash": "e37610d62bd218c296e74244fb8a71ac87d347d71ec2e56f968cf3cf3ade3ff0",
+        "content_hash": "0689924b5260e832fbb88c74fb3e90ca84bbfd87b708e9db69767378df7d151e"
+      },
+      {
+        "item_id": "env_00231-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00231",
           "lines": [
             {
-              "sku": "fortune-flour-whole_wheat-5000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 34000
+              "unit_price_paise": 4200
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:51:20Z",
+        "emitted_at": "2026-09-02T22:49:20Z",
         "evidence_class": 2,
-        "prev_hash": "638f1c201a86339b8a9d7146a3ca223484a00bb900d1a179df673c4a7c535de7",
-        "content_hash": "662124b80e24e6a02879f68c638df1081dc967f8e2d3178fa3be29ad7aa7bf94"
-      },
-      {
-        "item_id": "env_00231-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00231",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T20:05:00Z",
-        "evidence_class": 2,
-        "prev_hash": "662124b80e24e6a02879f68c638df1081dc967f8e2d3178fa3be29ad7aa7bf94",
-        "content_hash": "d8e8e0df46c2dcf67643f2aba95817990952b5b30fbc9f174669610958450a7b"
-      },
-      {
-        "item_id": "env_00231-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00231",
-          "amount_paise": 34000,
-          "currency": "INR",
-          "receipt": "zep_00231"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:51:25Z",
-        "evidence_class": 3,
-        "prev_hash": "d8e8e0df46c2dcf67643f2aba95817990952b5b30fbc9f174669610958450a7b",
-        "content_hash": "04b9af65b218fb5bcae81a037f30b53bae6a2a07aeb0401e31f4eb8f3cb468ba"
-      },
-      {
-        "item_id": "env_00231-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00231",
-          "order_id": "order_00231",
-          "amount_paise": 34000,
-          "status": "captured",
-          "block_id": "blk_00231",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:51:30Z",
-        "evidence_class": 3,
-        "prev_hash": "04b9af65b218fb5bcae81a037f30b53bae6a2a07aeb0401e31f4eb8f3cb468ba",
-        "content_hash": "4b81439b47710f4be60d5371d43597083df13bac56ea344279406edebc782147"
-      },
-      {
-        "item_id": "env_00231-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00231b",
-          "order_id": "order_00231",
-          "amount_paise": 34000,
-          "status": "captured",
-          "block_id": "blk_00231",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:51:34Z",
-        "evidence_class": 3,
-        "prev_hash": "4b81439b47710f4be60d5371d43597083df13bac56ea344279406edebc782147",
-        "content_hash": "aa2a441432b9b7d1fbba44e80ea8a3ac8e25c865b6a8cfba430be17d1e193ed0"
+        "prev_hash": "0689924b5260e832fbb88c74fb3e90ca84bbfd87b708e9db69767378df7d151e",
+        "content_hash": "10c800a41af6b29630bf7ee111819e992c3f1bf038840bebf95defd397a15da6"
       },
       {
         "item_id": "env_00231-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00231",
+          "lines": [
+            {
+              "sku": "harvest-bread-white-400",
+              "quantity": 1,
+              "unit_price_paise": 4200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T23:03:00Z",
+        "evidence_class": 2,
+        "prev_hash": "10c800a41af6b29630bf7ee111819e992c3f1bf038840bebf95defd397a15da6",
+        "content_hash": "e8e8767bd4695872b4a415a92d20fe52143a41604094a7c87bf8bb7a9bc6151d"
+      },
+      {
+        "item_id": "env_00231-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00231",
+          "amount_paise": 4200,
+          "currency": "INR",
+          "receipt": "zep_00231"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:25Z",
+        "evidence_class": 3,
+        "prev_hash": "e8e8767bd4695872b4a415a92d20fe52143a41604094a7c87bf8bb7a9bc6151d",
+        "content_hash": "e1e90f0a3aac295ae098ade81a5dde4665f2a64131892b1df1943dea50249684"
+      },
+      {
+        "item_id": "env_00231-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00231",
+          "order_id": "order_00231",
+          "amount_paise": 4200,
+          "status": "captured",
+          "block_id": "blk_00231",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e1e90f0a3aac295ae098ade81a5dde4665f2a64131892b1df1943dea50249684",
+        "content_hash": "9acbbf516e34e9efaac6041eac90b412364c12b1a28c303e6196352decd31f30"
+      },
+      {
+        "item_id": "env_00231-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00231b",
+          "order_id": "order_00231",
+          "amount_paise": 4200,
+          "status": "captured",
+          "block_id": "blk_00231",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T22:49:34Z",
+        "evidence_class": 3,
+        "prev_hash": "9acbbf516e34e9efaac6041eac90b412364c12b1a28c303e6196352decd31f30",
+        "content_hash": "125a8da342902c4948f54c648cc5720af9ac6ffe47f539c915f3be15420c1c7d"
+      },
+      {
+        "item_id": "env_00231-e010",
+        "seq": 10,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Fortune atta. Payment complete.",
-          "claimed_sku": "fortune-flour-whole_wheat-5000",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
           "claims_success": true
         },
-        "emitted_by": "agt_858",
-        "emitted_at": "2026-09-02T20:06:00Z",
+        "emitted_by": "agt_519",
+        "emitted_at": "2026-09-02T23:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "aa2a441432b9b7d1fbba44e80ea8a3ac8e25c865b6a8cfba430be17d1e193ed0",
-        "content_hash": "fb0693a14a997f6b16d971b73405905c3eceeafec1971877ce974b2d2d450f12"
+        "prev_hash": "125a8da342902c4948f54c648cc5720af9ac6ffe47f539c915f3be15420c1c7d",
+        "content_hash": "aa63a2238a840cb785b9e94bf432b22e7c945e0754a8e2c895ad99277f66b474"
       }
     ]
   },
@@ -178,14 +246,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-whole_wheat-5000",
-    "ordered_sku": "fortune-flour-whole_wheat-5000",
-    "delivered_sku": "fortune-flour-whole_wheat-5000",
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 34000,
+    "loss_paise": 4200,
     "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
   }
 }

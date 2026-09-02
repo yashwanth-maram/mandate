@@ -6,166 +6,217 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00469",
-    "created_at": "2026-09-02T20:34:00Z",
-    "expires_at": "2026-09-03T02:34:00Z",
-    "user_id": "usr_1241",
-    "agent_id": "agt_605",
+    "created_at": "2026-09-02T23:27:00Z",
+    "expires_at": "2026-09-03T05:27:00Z",
+    "user_id": "usr_3421",
+    "agent_id": "agt_499",
     "block": {
       "block_id": "blk_00469",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-27T20:34:00Z",
-      "expires_at": "2026-10-12T20:34:00Z"
+      "blocked_at": "2026-08-19T23:27:00Z",
+      "expires_at": "2026-10-25T23:27:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 8625,
-      "max_total_paise": 8625,
+      "category": "noodles",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "mother_dairy",
-      "variant": "full_cream",
-      "pack_size_g": 1000
+      "brand": "maggi",
+      "variant": "masala",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "buy 1L Mother Dairy full cream milk from Zepto, keep it under 86 rupees",
+      "text": "buy 560g Maggi masala noodles from Zepto, keep it under 110 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "76ecdcd22cc6283184106c6c0ee490815d096f25110c2882688df10aa09c8322",
+    "content_hash": "3fe1c2e02fa604c61d6d9d5cde69d4d54d8899c25ed3f4349ecef2779e394ef6",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00469",
-    "obligation_hash": "76ecdcd22cc6283184106c6c0ee490815d096f25110c2882688df10aa09c8322",
+    "obligation_hash": "3fe1c2e02fa604c61d6d9d5cde69d4d54d8899c25ed3f4349ecef2779e394ef6",
     "items": [
       {
         "item_id": "env_00469-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-full_cream-1000",
-              "quantity": 1,
-              "unit_price_paise": 7500
-            }
-          ]
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 10800
         },
-        "emitted_by": "agt_605",
-        "emitted_at": "2026-09-02T20:34:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T23:27:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "4e72114c92645daafa5d3bfca63fa651e7ee25e1640f1e8855ec45c256573f18"
+        "content_hash": "610675c11d446cc732e868bf73675fe3ccd5342a8a9c7454fa82de6d9c7a73bf"
       },
       {
         "item_id": "env_00469-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 9000
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T23:27:04Z",
+        "evidence_class": 2,
+        "prev_hash": "610675c11d446cc732e868bf73675fe3ccd5342a8a9c7454fa82de6d9c7a73bf",
+        "content_hash": "f7f1b6ad66c71b6c614e9028c55dcc09710f4bb7d22c8ea5c970b3749cd78eb8"
+      },
+      {
+        "item_id": "env_00469-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T23:27:05Z",
+        "evidence_class": 2,
+        "prev_hash": "f7f1b6ad66c71b6c614e9028c55dcc09710f4bb7d22c8ea5c970b3749cd78eb8",
+        "content_hash": "7dae9de4e898ca2647f0b1131120412e5c6d46a0cc4057bf79f01719612d8182"
+      },
+      {
+        "item_id": "env_00469-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "agt_499",
+        "emitted_at": "2026-09-02T23:27:12Z",
+        "evidence_class": 1,
+        "prev_hash": "7dae9de4e898ca2647f0b1131120412e5c6d46a0cc4057bf79f01719612d8182",
+        "content_hash": "c56eca24974a792eab37b8e18528fe71936589d9286f2b844d57e7e7f5b59057"
+      },
+      {
+        "item_id": "env_00469-e004",
+        "seq": 4,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00469",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "maggi-noodles-masala-560",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 9600
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:34:20Z",
+        "emitted_at": "2026-09-02T23:27:20Z",
         "evidence_class": 2,
-        "prev_hash": "4e72114c92645daafa5d3bfca63fa651e7ee25e1640f1e8855ec45c256573f18",
-        "content_hash": "d0beaf5365d09c3b01990f72e9a84ca8c77e7c19b819e9f91ae615e1260a8dfb"
-      },
-      {
-        "item_id": "env_00469-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00469",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-full_cream-1000",
-              "quantity": 1,
-              "unit_price_paise": 7500
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:48:00Z",
-        "evidence_class": 2,
-        "prev_hash": "d0beaf5365d09c3b01990f72e9a84ca8c77e7c19b819e9f91ae615e1260a8dfb",
-        "content_hash": "dd624582468338b0f15e66a4d36ce3afc81ea1bc9d173abac6de5624de88d18f"
-      },
-      {
-        "item_id": "env_00469-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00469",
-          "amount_paise": 7500,
-          "currency": "INR",
-          "receipt": "zep_00469"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:34:25Z",
-        "evidence_class": 3,
-        "prev_hash": "dd624582468338b0f15e66a4d36ce3afc81ea1bc9d173abac6de5624de88d18f",
-        "content_hash": "4a94235819b9f0c639456c070c5a34fe4977ed6602101628e3f8cec075ed95f1"
-      },
-      {
-        "item_id": "env_00469-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00469",
-          "order_id": "order_00469",
-          "amount_paise": 7500,
-          "status": "captured",
-          "block_id": "blk_00469",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:34:30Z",
-        "evidence_class": 3,
-        "prev_hash": "4a94235819b9f0c639456c070c5a34fe4977ed6602101628e3f8cec075ed95f1",
-        "content_hash": "64d941803605916758048707e70605e451f4949a37c2e46c899dfb556bef5013"
+        "prev_hash": "c56eca24974a792eab37b8e18528fe71936589d9286f2b844d57e7e7f5b59057",
+        "content_hash": "ccce81be2d7a79faf6213bd290a9501f30978e339cb6f69272f8738115d7a46f"
       },
       {
         "item_id": "env_00469-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-full_cream-1000",
-          "claims_success": true
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00469",
+          "lines": [
+            {
+              "sku": "maggi-noodles-masala-560",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "agt_605",
-        "emitted_at": "2026-09-02T20:49:00Z",
-        "evidence_class": 0,
-        "prev_hash": "64d941803605916758048707e70605e451f4949a37c2e46c899dfb556bef5013",
-        "content_hash": "0b3adfa53fd29a8e1801ec7a4d9356fedac4b1fb278568c521926dd2c095e7fc"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T23:41:00Z",
+        "evidence_class": 2,
+        "prev_hash": "ccce81be2d7a79faf6213bd290a9501f30978e339cb6f69272f8738115d7a46f",
+        "content_hash": "8e68883fd4cfc8e1196fb347df767405d98b3711dfb1933e7db3ab34dc80e98b"
       },
       {
         "item_id": "env_00469-e006",
         "seq": 6,
         "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00469",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00469"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:27:25Z",
+        "evidence_class": 3,
+        "prev_hash": "8e68883fd4cfc8e1196fb347df767405d98b3711dfb1933e7db3ab34dc80e98b",
+        "content_hash": "4f88f7a4831e275629b517a89dd639185ea5b2ea05bedf19aa3a9f43c9a38dab"
+      },
+      {
+        "item_id": "env_00469-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00469",
+          "order_id": "order_00469",
+          "amount_paise": 9600,
+          "status": "captured",
+          "block_id": "blk_00469",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:27:30Z",
+        "evidence_class": 3,
+        "prev_hash": "4f88f7a4831e275629b517a89dd639185ea5b2ea05bedf19aa3a9f43c9a38dab",
+        "content_hash": "f262f40a0c8dfc9a28ed8b19e47bd29bca46b82baa4000201c84b83dc13c9415"
+      },
+      {
+        "item_id": "env_00469-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-masala-560",
+          "claims_success": true
+        },
+        "emitted_by": "agt_499",
+        "emitted_at": "2026-09-02T23:42:00Z",
+        "evidence_class": 0,
+        "prev_hash": "f262f40a0c8dfc9a28ed8b19e47bd29bca46b82baa4000201c84b83dc13c9415",
+        "content_hash": "85605f34957610d783ad37a23aa74dfc955f635b6bafddbc7197a44dd962a8a9"
+      },
+      {
+        "item_id": "env_00469-e009",
+        "seq": 9,
+        "payload": {
           "kind": "USER_DISPUTE",
           "text": "This isn't what I wanted, the agent got it wrong.",
-          "raised_at": "2026-09-02T23:34:00Z"
+          "raised_at": "2026-09-03T02:27:00Z"
         },
-        "emitted_by": "usr_1241",
-        "emitted_at": "2026-09-02T23:34:00Z",
+        "emitted_by": "usr_3421",
+        "emitted_at": "2026-09-03T02:27:00Z",
         "evidence_class": 0,
-        "prev_hash": "0b3adfa53fd29a8e1801ec7a4d9356fedac4b1fb278568c521926dd2c095e7fc",
-        "content_hash": "acfd28f94c2dc9a7f9d2f865403b68274beb69fc2c53e482b01bae8c74a935f5"
+        "prev_hash": "85605f34957610d783ad37a23aa74dfc955f635b6bafddbc7197a44dd962a8a9",
+        "content_hash": "70897d77342b8cab2427955d3a0a65df7dc377d0f19a05d09e948a5512387c47"
       }
     ]
   },
@@ -174,14 +225,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-full_cream-1000",
-    "ordered_sku": "mother_dairy-milk-full_cream-1000",
-    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "requested_sku": "maggi-noodles-masala-560",
+    "ordered_sku": "maggi-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 7500,
+    "loss_paise": 9600,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

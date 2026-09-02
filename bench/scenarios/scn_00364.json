@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00364",
-    "created_at": "2026-09-02T19:20:00Z",
-    "expires_at": "2026-09-03T01:20:00Z",
-    "user_id": "usr_8521",
-    "agent_id": "agt_554",
+    "created_at": "2026-09-02T18:37:00Z",
+    "expires_at": "2026-09-03T00:37:00Z",
+    "user_id": "usr_9805",
+    "agent_id": "agt_442",
     "block": {
       "block_id": "blk_00364",
-      "blocked_paise": 50000,
+      "blocked_paise": 56925,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-15T19:20:00Z",
-      "expires_at": "2026-10-16T19:20:00Z"
+      "blocked_at": "2026-08-21T18:37:00Z",
+      "expires_at": "2026-10-25T18:37:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 8970,
-      "max_total_paise": 8970,
+      "category": "edible_oil",
+      "max_unit_price_paise": 18975,
+      "max_total_paise": 18975,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "india_gate",
-      "variant": "sona_masoori",
+      "brand": "fortune",
+      "variant": "mustard",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg India Gate sona masoori rice from Zepto",
+      "text": "order 1L Fortune kachi ghani mustard oil on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "1c7607db8be194135ef64aad4f4daa1a84cc564bf3f6c788dd1afecba2abdc81",
+    "content_hash": "183b712045eb5fa4804e666807f926b41371401fc648a4f838ff54a0815ed94c",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00364",
-    "obligation_hash": "1c7607db8be194135ef64aad4f4daa1a84cc564bf3f6c788dd1afecba2abdc81",
+    "obligation_hash": "183b712045eb5fa4804e666807f926b41371401fc648a4f838ff54a0815ed94c",
     "items": [
       {
         "item_id": "env_00364-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "india_gate-rice-sona_masoori-1000",
-              "quantity": 1,
-              "unit_price_paise": 7800
-            }
-          ]
+          "sku": "fortune-edible_oil-mustard-1000",
+          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
+          "description": "Fortune Kachi Ghani Mustard Oil 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 16500
         },
-        "emitted_by": "agt_554",
-        "emitted_at": "2026-09-02T19:20:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:37:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "4ba422b0882d8eae341691f27378ce0fd673c0fb8f86d1c56e61a491da30d511"
+        "content_hash": "d49ec762df629e4c8e4d8191a80efdc5880cbd764bc2b8249c92a360bf105828"
       },
       {
         "item_id": "env_00364-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 16800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:37:04Z",
+        "evidence_class": 2,
+        "prev_hash": "d49ec762df629e4c8e4d8191a80efdc5880cbd764bc2b8249c92a360bf105828",
+        "content_hash": "3f5c021a87d6503e5449dc2f5c51ab37b3cbe5b679ee2024284186aa5c986925"
+      },
+      {
+        "item_id": "env_00364-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 15200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:37:05Z",
+        "evidence_class": 2,
+        "prev_hash": "3f5c021a87d6503e5449dc2f5c51ab37b3cbe5b679ee2024284186aa5c986925",
+        "content_hash": "b6b94b047f22be03d73a505b2059a9d9fea6fb89988bac64496cbf2e6e92b52c"
+      },
+      {
+        "item_id": "env_00364-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 18900
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:37:06Z",
+        "evidence_class": 2,
+        "prev_hash": "b6b94b047f22be03d73a505b2059a9d9fea6fb89988bac64496cbf2e6e92b52c",
+        "content_hash": "0f30e51b851a6c0c6bf2f2c0a407e9bfcc00e8fd34671d5678d0de4dcd1e9b0b"
+      },
+      {
+        "item_id": "env_00364-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ]
+        },
+        "emitted_by": "agt_442",
+        "emitted_at": "2026-09-02T18:37:12Z",
+        "evidence_class": 1,
+        "prev_hash": "0f30e51b851a6c0c6bf2f2c0a407e9bfcc00e8fd34671d5678d0de4dcd1e9b0b",
+        "content_hash": "8b8c797528889e7fb2b097972b74b6c38e41170dfa3da15cc6694434941fb54b"
+      },
+      {
+        "item_id": "env_00364-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00364",
           "lines": [
             {
-              "sku": "india_gate-rice-sona_masoori-1000",
+              "sku": "fortune-edible_oil-mustard-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 16500
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:20:20Z",
+        "emitted_at": "2026-09-02T18:37:20Z",
         "evidence_class": 2,
-        "prev_hash": "4ba422b0882d8eae341691f27378ce0fd673c0fb8f86d1c56e61a491da30d511",
-        "content_hash": "bd6a60de26a8cba4ee2e704716ace84d2a3afb222348ad6ca3776f58aec73dce"
-      },
-      {
-        "item_id": "env_00364-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00364",
-          "lines": [
-            {
-              "sku": "india_gate-rice-sona_masoori-1000",
-              "quantity": 1,
-              "unit_price_paise": 7800
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:34:00Z",
-        "evidence_class": 2,
-        "prev_hash": "bd6a60de26a8cba4ee2e704716ace84d2a3afb222348ad6ca3776f58aec73dce",
-        "content_hash": "5847b3ce25974e7fc192ad31caf83c062acf22bec0ad794de10ec9cbdee9c284"
-      },
-      {
-        "item_id": "env_00364-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00364",
-          "amount_paise": 7800,
-          "currency": "INR",
-          "receipt": "zep_00364"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:20:25Z",
-        "evidence_class": 3,
-        "prev_hash": "5847b3ce25974e7fc192ad31caf83c062acf22bec0ad794de10ec9cbdee9c284",
-        "content_hash": "c7c337d3520fe1cbff55f32e292c04d6f2d545b50a74e945cd1ab46e11615f95"
-      },
-      {
-        "item_id": "env_00364-e004",
-        "seq": 4,
-        "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00364",
-          "order_id": "order_00364",
-          "amount_paise": 7800,
-          "status": "captured",
-          "block_id": "blk_00364",
-          "method": "upi_reserve_pay"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:20:30Z",
-        "evidence_class": 3,
-        "prev_hash": "c7c337d3520fe1cbff55f32e292c04d6f2d545b50a74e945cd1ab46e11615f95",
-        "content_hash": "c1f59d0a6e0a6c2c258a18824330bfb58665253603963cce26b6223fb407cf76"
-      },
-      {
-        "item_id": "env_00364-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate sona masoori rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-sona_masoori-1000",
-          "claims_success": true
-        },
-        "emitted_by": "agt_554",
-        "emitted_at": "2026-09-02T19:35:00Z",
-        "evidence_class": 0,
-        "prev_hash": "c1f59d0a6e0a6c2c258a18824330bfb58665253603963cce26b6223fb407cf76",
-        "content_hash": "968415e674dbccda583b77b9c23bd54179a67d79beec2b57781a9e30f1c56c47"
+        "prev_hash": "8b8c797528889e7fb2b097972b74b6c38e41170dfa3da15cc6694434941fb54b",
+        "content_hash": "0e4320b25b1dd84ac4516a12fe3db25205f952f21a74bcfad819f5b8b4274ed2"
       },
       {
         "item_id": "env_00364-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "This isn't what I wanted, the agent got it wrong.",
-          "raised_at": "2026-09-02T22:20:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00364",
+          "lines": [
+            {
+              "sku": "fortune-edible_oil-mustard-1000",
+              "quantity": 1,
+              "unit_price_paise": 16500
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_8521",
-        "emitted_at": "2026-09-02T22:20:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:51:00Z",
+        "evidence_class": 2,
+        "prev_hash": "0e4320b25b1dd84ac4516a12fe3db25205f952f21a74bcfad819f5b8b4274ed2",
+        "content_hash": "4e81f138bb5927f564335cbd9064776a388d4b0bc1a6bacb41415d598b531ec6"
+      },
+      {
+        "item_id": "env_00364-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00364",
+          "amount_paise": 16500,
+          "currency": "INR",
+          "receipt": "zep_00364"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:37:25Z",
+        "evidence_class": 3,
+        "prev_hash": "4e81f138bb5927f564335cbd9064776a388d4b0bc1a6bacb41415d598b531ec6",
+        "content_hash": "dc9dda956bf899730ed18db2a9ab62e037841282b60da2b0c84b094ca0742746"
+      },
+      {
+        "item_id": "env_00364-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00364",
+          "order_id": "order_00364",
+          "amount_paise": 16500,
+          "status": "captured",
+          "block_id": "blk_00364",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:37:30Z",
+        "evidence_class": 3,
+        "prev_hash": "dc9dda956bf899730ed18db2a9ab62e037841282b60da2b0c84b094ca0742746",
+        "content_hash": "0cc9af727a23b25618fb684c981b79d485879c276fd3f1350b7750e2b5532e68"
+      },
+      {
+        "item_id": "env_00364-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "claims_success": true
+        },
+        "emitted_by": "agt_442",
+        "emitted_at": "2026-09-02T18:52:00Z",
         "evidence_class": 0,
-        "prev_hash": "968415e674dbccda583b77b9c23bd54179a67d79beec2b57781a9e30f1c56c47",
-        "content_hash": "b8afc34d381fb3af19a8e59e4fbf8e6cb335d4dffd0c4a8113cc1f24c0174e86"
+        "prev_hash": "0cc9af727a23b25618fb684c981b79d485879c276fd3f1350b7750e2b5532e68",
+        "content_hash": "66696394cc893e9b5de9fa49f46d6646f07b1387279d66b2a37658fca970a053"
+      },
+      {
+        "item_id": "env_00364-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-02T21:37:00Z"
+        },
+        "emitted_by": "usr_9805",
+        "emitted_at": "2026-09-02T21:37:00Z",
+        "evidence_class": 0,
+        "prev_hash": "66696394cc893e9b5de9fa49f46d6646f07b1387279d66b2a37658fca970a053",
+        "content_hash": "d6b6abae0259c65db0a182f22e7707b58aedf9c62a3720fab9a4f44ab6769124"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-sona_masoori-1000",
-    "ordered_sku": "india_gate-rice-sona_masoori-1000",
-    "delivered_sku": "india_gate-rice-sona_masoori-1000",
+    "requested_sku": "fortune-edible_oil-mustard-1000",
+    "ordered_sku": "fortune-edible_oil-mustard-1000",
+    "delivered_sku": "fortune-edible_oil-mustard-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 7800,
+    "loss_paise": 16500,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

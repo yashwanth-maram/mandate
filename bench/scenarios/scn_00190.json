@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00190",
-    "created_at": "2026-09-03T02:53:00Z",
-    "expires_at": "2026-09-03T08:53:00Z",
-    "user_id": "usr_4621",
-    "agent_id": "agt_523",
+    "created_at": "2026-09-02T18:31:00Z",
+    "expires_at": "2026-09-03T00:31:00Z",
+    "user_id": "usr_8765",
+    "agent_id": "agt_260",
     "block": {
       "block_id": "blk_00190",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-25T02:53:00Z",
-      "expires_at": "2026-10-11T02:53:00Z"
+      "blocked_at": "2026-08-16T18:31:00Z",
+      "expires_at": "2026-10-09T18:31:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 11040,
-      "max_total_paise": 11040,
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "gram",
+      "brand": "mother_dairy",
+      "variant": "full_cream",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg Aashirvaad besan from Zepto",
+      "text": "order 1L Mother Dairy full cream milk on Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "a4f3a36bc8b2a685dbdec17f31553ac6b67e1d608b8cc838d94c5c2a960141f6",
+    "content_hash": "2352bfbf212d53e60d5f8f64022be12359847e4287bc61ed3d7eb1ebc7730377",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00190",
-    "obligation_hash": "a4f3a36bc8b2a685dbdec17f31553ac6b67e1d608b8cc838d94c5c2a960141f6",
+    "obligation_hash": "2352bfbf212d53e60d5f8f64022be12359847e4287bc61ed3d7eb1ebc7730377",
     "items": [
       {
         "item_id": "env_00190-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-gram-1000",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 7500
         },
-        "emitted_by": "agt_523",
-        "emitted_at": "2026-09-03T02:53:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:31:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0342b84c17d096e06706649d933f945c85d7d437ee413816346613d2aeb6be08"
+        "content_hash": "45aa27805c9d36f7b1d74404d7b26063a0e5866010a2080e7d7e2f394f514615"
       },
       {
         "item_id": "env_00190-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00190",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-gram-1000",
-              "quantity": 1,
-              "unit_price_paise": 9600
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6400
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:53:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:31:04Z",
         "evidence_class": 2,
-        "prev_hash": "0342b84c17d096e06706649d933f945c85d7d437ee413816346613d2aeb6be08",
-        "content_hash": "b81c6aecb26f09723770ca7f450b498209a94ed194e35b6ce10f666baee32b60"
+        "prev_hash": "45aa27805c9d36f7b1d74404d7b26063a0e5866010a2080e7d7e2f394f514615",
+        "content_hash": "34b6f912a124d77a723b36c458d11b31a30326fbabf8e782182f12e9268078ef"
       },
       {
         "item_id": "env_00190-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00190",
-          "lines": [
-            {
-              "sku": "fortune-flour-gram-1000",
-              "quantity": 1,
-              "unit_price_paise": 9200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:07:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:31:05Z",
         "evidence_class": 2,
-        "prev_hash": "b81c6aecb26f09723770ca7f450b498209a94ed194e35b6ce10f666baee32b60",
-        "content_hash": "486f6200249f4280be049a445d3639bd33f297fac25c27557daf489c9d9c9d1d"
+        "prev_hash": "34b6f912a124d77a723b36c458d11b31a30326fbabf8e782182f12e9268078ef",
+        "content_hash": "48bebf54a9ec881a393071d8483109fda8751d6a891f84bfeccc98a7405f71b5"
       },
       {
         "item_id": "env_00190-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00190",
-          "amount_paise": 9600,
-          "currency": "INR",
-          "receipt": "zep_00190"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-milk-toned-1000",
+          "display_name": "Amul Taaza Toned Milk 1L",
+          "description": "Amul Taaza Toned Milk 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 6600
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:53:25Z",
-        "evidence_class": 3,
-        "prev_hash": "486f6200249f4280be049a445d3639bd33f297fac25c27557daf489c9d9c9d1d",
-        "content_hash": "aa706dd8b22709330311524a443c7b7e623ee8df0b352519fce9b84e89cc3bbd"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:31:06Z",
+        "evidence_class": 2,
+        "prev_hash": "48bebf54a9ec881a393071d8483109fda8751d6a891f84bfeccc98a7405f71b5",
+        "content_hash": "e09b5c7fbff1b5f5e9d375a3b90d527c0ea84a49829eff7babf8625985a111bf"
       },
       {
         "item_id": "env_00190-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00190",
-          "order_id": "order_00190",
-          "amount_paise": 9600,
-          "status": "captured",
-          "block_id": "blk_00190",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:53:30Z",
-        "evidence_class": 3,
-        "prev_hash": "aa706dd8b22709330311524a443c7b7e623ee8df0b352519fce9b84e89cc3bbd",
-        "content_hash": "204a32b3c0576e67547aa6ab7d48856cb7e655c455ce83d88f9705d754e8827b"
+        "emitted_by": "agt_260",
+        "emitted_at": "2026-09-02T18:31:12Z",
+        "evidence_class": 1,
+        "prev_hash": "e09b5c7fbff1b5f5e9d375a3b90d527c0ea84a49829eff7babf8625985a111bf",
+        "content_hash": "b6ffebbbaf089b8827e660bf14b0763f3c69897ef2f6b1cd8ca751ff9d7cca48"
       },
       {
         "item_id": "env_00190-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00190",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:31:20Z",
+        "evidence_class": 2,
+        "prev_hash": "b6ffebbbaf089b8827e660bf14b0763f3c69897ef2f6b1cd8ca751ff9d7cca48",
+        "content_hash": "7fd9982de007b5cd013d93449328707ded25115d94e65e65b3c11b5b5c5aebfa"
+      },
+      {
+        "item_id": "env_00190-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00190",
+          "lines": [
+            {
+              "sku": "amul-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7700
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:45:00Z",
+        "evidence_class": 2,
+        "prev_hash": "7fd9982de007b5cd013d93449328707ded25115d94e65e65b3c11b5b5c5aebfa",
+        "content_hash": "1774f61ebe86be796295bd47f0c5d21a445db56a4b77a6c79001a6fa13d2cb72"
+      },
+      {
+        "item_id": "env_00190-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00190",
+          "amount_paise": 7500,
+          "currency": "INR",
+          "receipt": "zep_00190"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:31:25Z",
+        "evidence_class": 3,
+        "prev_hash": "1774f61ebe86be796295bd47f0c5d21a445db56a4b77a6c79001a6fa13d2cb72",
+        "content_hash": "231cbb4e6d8afa8f7e4368db07005bbb576cb6a8a62be478ae1d1ad87084a473"
+      },
+      {
+        "item_id": "env_00190-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00190",
+          "order_id": "order_00190",
+          "amount_paise": 7500,
+          "status": "captured",
+          "block_id": "blk_00190",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:31:30Z",
+        "evidence_class": 3,
+        "prev_hash": "231cbb4e6d8afa8f7e4368db07005bbb576cb6a8a62be478ae1d1ad87084a473",
+        "content_hash": "c5319576480f6a8bf0691ca662ce8ecd72ea9225bbd0e703f031032e89ed066a"
+      },
+      {
+        "item_id": "env_00190-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-gram-1000",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_523",
-        "emitted_at": "2026-09-03T03:08:00Z",
+        "emitted_by": "agt_260",
+        "emitted_at": "2026-09-02T18:46:00Z",
         "evidence_class": 0,
-        "prev_hash": "204a32b3c0576e67547aa6ab7d48856cb7e655c455ce83d88f9705d754e8827b",
-        "content_hash": "ec5fb6ed35fb4f02d35d1c1aa250a81acc1b192fc63dd36286e79da2f9acfc12"
+        "prev_hash": "c5319576480f6a8bf0691ca662ce8ecd72ea9225bbd0e703f031032e89ed066a",
+        "content_hash": "b8f51bff1825e1470a9e03ae658b52180055e112c008d479fd0fc96539e885d4"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-gram-1000",
-    "ordered_sku": "aashirvaad-flour-gram-1000",
-    "delivered_sku": "fortune-flour-gram-1000",
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "amul-milk-full_cream-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 9600,
-    "rationale": "Order names aashirvaad; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 7500,
+    "rationale": "Order names mother_dairy; fulfilment shipped amul. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

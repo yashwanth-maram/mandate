@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00372",
-    "created_at": "2026-09-03T00:36:00Z",
-    "expires_at": "2026-09-03T06:36:00Z",
-    "user_id": "usr_6273",
-    "agent_id": "agt_616",
+    "created_at": "2026-09-03T03:04:00Z",
+    "expires_at": "2026-09-03T09:04:00Z",
+    "user_id": "usr_3944",
+    "agent_id": "agt_119",
     "block": {
       "block_id": "blk_00372",
-      "blocked_paise": 50000,
+      "blocked_paise": 57960,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-22T00:36:00Z",
-      "expires_at": "2026-10-16T00:36:00Z"
+      "blocked_at": "2026-08-26T03:04:00Z",
+      "expires_at": "2026-10-28T03:04:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5175,
-      "max_total_paise": 5175,
+      "category": "edible_oil",
+      "max_unit_price_paise": 19320,
+      "max_total_paise": 19320,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "britannia",
-      "variant": "white",
-      "pack_size_g": 400
+      "brand": "saffola",
+      "variant": "sunflower_refined",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 400g Britannia white bread on Zepto",
+      "text": "order 1L Saffola refined sunflower oil on Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "41c5476d4954ebeb4608cd5b1303eb5a2b149a2ea6f34b3bc60d9d7d0328710d",
+    "content_hash": "d856ddfeb5d637bfe5f5f399b34427193f10fcaa04ae719e05f94e2e60f31644",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00372",
-    "obligation_hash": "41c5476d4954ebeb4608cd5b1303eb5a2b149a2ea6f34b3bc60d9d7d0328710d",
+    "obligation_hash": "d856ddfeb5d637bfe5f5f399b34427193f10fcaa04ae719e05f94e2e60f31644",
     "items": [
       {
         "item_id": "env_00372-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "britannia-bread-white-400",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ]
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 15800
         },
-        "emitted_by": "agt_616",
-        "emitted_at": "2026-09-03T00:36:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:04:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "636dc56ad7e89aa659f04c10a3b4b5679151abf1b065d2087c1fc15c93eca40a"
+        "content_hash": "2341677060c25708a041036f48b33ce696fc7ed26df1e492c63a370930cbf2e9"
       },
       {
         "item_id": "env_00372-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 15200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:04:04Z",
+        "evidence_class": 2,
+        "prev_hash": "2341677060c25708a041036f48b33ce696fc7ed26df1e492c63a370930cbf2e9",
+        "content_hash": "54c3544707019e7e9f74966a95ab4f738315a021e33cce6640cef08c2eb8f723"
+      },
+      {
+        "item_id": "env_00372-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 18900
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:04:05Z",
+        "evidence_class": 2,
+        "prev_hash": "54c3544707019e7e9f74966a95ab4f738315a021e33cce6640cef08c2eb8f723",
+        "content_hash": "8e2bd03fa460cf7f27d304e750121675488a37b33dd96d7bc27d466f972f7f67"
+      },
+      {
+        "item_id": "env_00372-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 16800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-03T03:04:06Z",
+        "evidence_class": 2,
+        "prev_hash": "8e2bd03fa460cf7f27d304e750121675488a37b33dd96d7bc27d466f972f7f67",
+        "content_hash": "60e89757ca1d2b30470810dae252b58e3f2d007609124c357984397ee6f976dc"
+      },
+      {
+        "item_id": "env_00372-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "saffola-edible_oil-sunflower_refined-1000",
+              "quantity": 1,
+              "unit_price_paise": 16800
+            }
+          ]
+        },
+        "emitted_by": "agt_119",
+        "emitted_at": "2026-09-03T03:04:12Z",
+        "evidence_class": 1,
+        "prev_hash": "60e89757ca1d2b30470810dae252b58e3f2d007609124c357984397ee6f976dc",
+        "content_hash": "ab7caeb6945507b741867d062a7b8d1318273a66de3b6993654b028b6a3c031a"
+      },
+      {
+        "item_id": "env_00372-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00372",
           "lines": [
             {
-              "sku": "britannia-bread-white-400",
+              "sku": "saffola-edible_oil-sunflower_refined-1000",
               "quantity": 1,
-              "unit_price_paise": 4500
+              "unit_price_paise": 16800
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:36:20Z",
+        "emitted_at": "2026-09-03T03:04:20Z",
         "evidence_class": 2,
-        "prev_hash": "636dc56ad7e89aa659f04c10a3b4b5679151abf1b065d2087c1fc15c93eca40a",
-        "content_hash": "946ee195654152de8a274536505d1204be949ed14fd83e2857b0cc4076143529"
+        "prev_hash": "ab7caeb6945507b741867d062a7b8d1318273a66de3b6993654b028b6a3c031a",
+        "content_hash": "83c6eb17f499532671aa6e5011835b983866533b34cde67186b498e15caa1e8f"
       },
       {
-        "item_id": "env_00372-e002",
-        "seq": 2,
+        "item_id": "env_00372-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00372",
           "lines": [
             {
-              "sku": "harvest-bread-white-400",
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
               "quantity": 1,
-              "unit_price_paise": 4200
+              "unit_price_paise": 15200
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:50:00Z",
+        "emitted_at": "2026-09-03T03:18:00Z",
         "evidence_class": 2,
-        "prev_hash": "946ee195654152de8a274536505d1204be949ed14fd83e2857b0cc4076143529",
-        "content_hash": "9de530a3f15113e3f6f1a8fbeb8c272ea99f8f42a155f358f63f3abd595e7d4b"
+        "prev_hash": "83c6eb17f499532671aa6e5011835b983866533b34cde67186b498e15caa1e8f",
+        "content_hash": "0e44c0829be346a321c78c91efc2c5b275f4ba6bf25bf1bc53a996dd100dfee0"
       },
       {
-        "item_id": "env_00372-e003",
-        "seq": 3,
+        "item_id": "env_00372-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00372",
-          "amount_paise": 4500,
+          "amount_paise": 16800,
           "currency": "INR",
           "receipt": "zep_00372"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:36:25Z",
+        "emitted_at": "2026-09-03T03:04:25Z",
         "evidence_class": 3,
-        "prev_hash": "9de530a3f15113e3f6f1a8fbeb8c272ea99f8f42a155f358f63f3abd595e7d4b",
-        "content_hash": "0a749efe57a0405897ed5c0014bfc70742efc80cda741d7bc9141d9470231d4d"
+        "prev_hash": "0e44c0829be346a321c78c91efc2c5b275f4ba6bf25bf1bc53a996dd100dfee0",
+        "content_hash": "94482f45413cdf9a36da9e708421915af0ac07764ed0cfb7a1e7288c52fbdca2"
       },
       {
-        "item_id": "env_00372-e004",
-        "seq": 4,
+        "item_id": "env_00372-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00372",
           "order_id": "order_00372",
-          "amount_paise": 4500,
+          "amount_paise": 16800,
           "status": "captured",
           "block_id": "blk_00372",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:36:30Z",
+        "emitted_at": "2026-09-03T03:04:30Z",
         "evidence_class": 3,
-        "prev_hash": "0a749efe57a0405897ed5c0014bfc70742efc80cda741d7bc9141d9470231d4d",
-        "content_hash": "36f94c9624e66a8dc820d1a837f66f5903aca7bd6f89092a07766fb10729d3db"
+        "prev_hash": "94482f45413cdf9a36da9e708421915af0ac07764ed0cfb7a1e7288c52fbdca2",
+        "content_hash": "8bb956e8f1e07ed283a42bc0b7b1eb8a61423e8f9da6fdbba84cba752a4bf4fd"
       },
       {
-        "item_id": "env_00372-e005",
-        "seq": 5,
+        "item_id": "env_00372-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia white bread. Payment complete.",
-          "claimed_sku": "britannia-bread-white-400",
+          "text": "Ordered 1L Saffola refined sunflower oil. Payment complete.",
+          "claimed_sku": "saffola-edible_oil-sunflower_refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_616",
-        "emitted_at": "2026-09-03T00:51:00Z",
+        "emitted_by": "agt_119",
+        "emitted_at": "2026-09-03T03:19:00Z",
         "evidence_class": 0,
-        "prev_hash": "36f94c9624e66a8dc820d1a837f66f5903aca7bd6f89092a07766fb10729d3db",
-        "content_hash": "d4cb4ff190cf1608442b20e9b64e5d6677a22a55e620a1f79bb372ee95bad519"
+        "prev_hash": "8bb956e8f1e07ed283a42bc0b7b1eb8a61423e8f9da6fdbba84cba752a4bf4fd",
+        "content_hash": "48aa7275985a7a2bbf4e63dbad30e884c531cad683904dafe85beaa77b5d29ba"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-white-400",
-    "ordered_sku": "britannia-bread-white-400",
-    "delivered_sku": "harvest-bread-white-400",
+    "requested_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "ordered_sku": "saffola-edible_oil-sunflower_refined-1000",
+    "delivered_sku": "fortune-edible_oil-sunflower_refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 4500,
-    "rationale": "Order names britannia; fulfilment shipped harvest. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 16800,
+    "rationale": "Order names saffola; fulfilment shipped fortune. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

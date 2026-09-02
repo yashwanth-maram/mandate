@@ -6,170 +6,238 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00451",
-    "created_at": "2026-09-03T03:33:00Z",
-    "expires_at": "2026-09-03T09:33:00Z",
-    "user_id": "usr_5222",
-    "agent_id": "agt_452",
+    "created_at": "2026-09-03T03:09:00Z",
+    "expires_at": "2026-09-03T09:09:00Z",
+    "user_id": "usr_5415",
+    "agent_id": "agt_211",
     "block": {
       "block_id": "blk_00451",
       "blocked_paise": 1000000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-03T03:33:00Z",
-      "expires_at": "2026-10-16T03:33:00Z"
+      "blocked_at": "2026-08-20T03:09:00Z",
+      "expires_at": "2026-10-24T03:09:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3219,
-      "max_total_paise": 3219,
+      "category": "rice",
+      "max_unit_price_paise": 14719,
+      "max_total_paise": 14719,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "swiggy_instamart"
       ],
-      "brand": "tata",
-      "variant": "iodised",
+      "brand": "daawat",
+      "variant": "basmati",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg Tata iodised salt from Blinkit",
+      "text": "buy 1kg Daawat basmati rice from Swiggy Instamart, keep it under 147 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "8ec0655bef3d37c913fc59f2b6146030bdb872d0e9f92e101dcca781fa657640",
+    "content_hash": "3e019025d0c296414e0f390a1fbf6d0415ffaf54def04c735a993e8908a2b70f",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00451",
-    "obligation_hash": "8ec0655bef3d37c913fc59f2b6146030bdb872d0e9f92e101dcca781fa657640",
+    "obligation_hash": "3e019025d0c296414e0f390a1fbf6d0415ffaf54def04c735a993e8908a2b70f",
     "items": [
       {
         "item_id": "env_00451-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "tata-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 2800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "agt_452",
-        "emitted_at": "2026-09-03T03:33:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:09:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "76bf62db674a789ce8fc8724b5c9d8649d9a5d36ee661000e99bd1507e190271"
+        "content_hash": "af1a8a486d03ead9231332e0e2aed4e1f2d883938cb92960130805b2ea7fb012"
       },
       {
         "item_id": "env_00451-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00451",
-          "lines": [
-            {
-              "sku": "tata-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 2800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:33:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:09:04Z",
         "evidence_class": 2,
-        "prev_hash": "76bf62db674a789ce8fc8724b5c9d8649d9a5d36ee661000e99bd1507e190271",
-        "content_hash": "746850b5c25f56a1053d66e9b04722634cc29f54d21452ab86b68f0452cdd230"
+        "prev_hash": "af1a8a486d03ead9231332e0e2aed4e1f2d883938cb92960130805b2ea7fb012",
+        "content_hash": "b94624862e11fa48443695ea04484f3b0c1be4cd97bf40af3a0fae0225c7577b"
       },
       {
         "item_id": "env_00451-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00451",
-          "lines": [
-            {
-              "sku": "tata-salt-iodised-1000",
-              "quantity": 1,
-              "unit_price_paise": 2800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 13200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:47:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:09:05Z",
         "evidence_class": 2,
-        "prev_hash": "746850b5c25f56a1053d66e9b04722634cc29f54d21452ab86b68f0452cdd230",
-        "content_hash": "0b8ad9e6af98e3ba0e0a77d2f1459942feab26d00c2dbd54e41fc97fe83d3346"
+        "prev_hash": "b94624862e11fa48443695ea04484f3b0c1be4cd97bf40af3a0fae0225c7577b",
+        "content_hash": "ce44548608deb917167502f9996b9b2e38031129c977288f273b1355454eed9e"
       },
       {
         "item_id": "env_00451-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00451",
-          "amount_paise": 2800,
-          "currency": "INR",
-          "receipt": "zep_00451"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 12800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:33:25Z",
-        "evidence_class": 3,
-        "prev_hash": "0b8ad9e6af98e3ba0e0a77d2f1459942feab26d00c2dbd54e41fc97fe83d3346",
-        "content_hash": "1056802595e43fcb83dd5e09a2c2b75a4c29dee118e529fa18e290cffab95047"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:09:06Z",
+        "evidence_class": 2,
+        "prev_hash": "ce44548608deb917167502f9996b9b2e38031129c977288f273b1355454eed9e",
+        "content_hash": "30039fafdd0ede82ca290a1c6261fe6f87d114b2159201aab9d009a49405e71f"
       },
       {
         "item_id": "env_00451-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00451",
-          "order_id": "order_00451",
-          "amount_paise": 2800,
-          "status": "captured",
-          "block_id": "blk_00451",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:33:30Z",
-        "evidence_class": 3,
-        "prev_hash": "1056802595e43fcb83dd5e09a2c2b75a4c29dee118e529fa18e290cffab95047",
-        "content_hash": "8bc4a29ff0b2cefe2453e42e8747fd1c5cbc9e0936b5350f7f788d199ad09a5c"
+        "emitted_by": "agt_211",
+        "emitted_at": "2026-09-03T03:09:12Z",
+        "evidence_class": 1,
+        "prev_hash": "30039fafdd0ede82ca290a1c6261fe6f87d114b2159201aab9d009a49405e71f",
+        "content_hash": "816e64437656597cc08a2ba8f52065b93efc0570bf696361fb2d603ecab44222"
       },
       {
         "item_id": "env_00451-e005",
         "seq": 5,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00451b",
-          "order_id": "order_00451",
-          "amount_paise": 2800,
-          "status": "captured",
-          "block_id": "blk_00451",
-          "method": "upi_reserve_pay"
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00451",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:33:34Z",
-        "evidence_class": 3,
-        "prev_hash": "8bc4a29ff0b2cefe2453e42e8747fd1c5cbc9e0936b5350f7f788d199ad09a5c",
-        "content_hash": "d661ebec6e207c18d0b2ec71e2a115926efab4f76074c769d0c2d8397e72b51e"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:09:20Z",
+        "evidence_class": 2,
+        "prev_hash": "816e64437656597cc08a2ba8f52065b93efc0570bf696361fb2d603ecab44222",
+        "content_hash": "053608afbd58f725ad1de7802cb21945a2fc3f69a06af2421e7edc367b413332"
       },
       {
         "item_id": "env_00451-e006",
         "seq": 6,
         "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00451",
+          "lines": [
+            {
+              "sku": "daawat-rice-basmati-1000",
+              "quantity": 1,
+              "unit_price_paise": 12800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:23:00Z",
+        "evidence_class": 2,
+        "prev_hash": "053608afbd58f725ad1de7802cb21945a2fc3f69a06af2421e7edc367b413332",
+        "content_hash": "774fd45a58cf4d678f86b5389b529edbd2c792bd96f869f9a1970b6715eda95c"
+      },
+      {
+        "item_id": "env_00451-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00451",
+          "amount_paise": 12800,
+          "currency": "INR",
+          "receipt": "zep_00451"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:09:25Z",
+        "evidence_class": 3,
+        "prev_hash": "774fd45a58cf4d678f86b5389b529edbd2c792bd96f869f9a1970b6715eda95c",
+        "content_hash": "285812b92eedb798f208a1f285d56251ad13eb33703bf345655ebc3a655f56f5"
+      },
+      {
+        "item_id": "env_00451-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00451",
+          "order_id": "order_00451",
+          "amount_paise": 12800,
+          "status": "captured",
+          "block_id": "blk_00451",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:09:30Z",
+        "evidence_class": 3,
+        "prev_hash": "285812b92eedb798f208a1f285d56251ad13eb33703bf345655ebc3a655f56f5",
+        "content_hash": "822823e290054490e455bc84fe6f3db521ec976e25744de126e3549cb1e98220"
+      },
+      {
+        "item_id": "env_00451-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00451b",
+          "order_id": "order_00451",
+          "amount_paise": 12800,
+          "status": "captured",
+          "block_id": "blk_00451",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T03:09:34Z",
+        "evidence_class": 3,
+        "prev_hash": "822823e290054490e455bc84fe6f3db521ec976e25744de126e3549cb1e98220",
+        "content_hash": "a38b0f0912b63ef598a516b3e403ded59e74f9a0f79d18505946d110991c585f"
+      },
+      {
+        "item_id": "env_00451-e010",
+        "seq": 10,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
-          "claimed_sku": "tata-salt-iodised-1000",
+          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
+          "claimed_sku": "daawat-rice-basmati-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_452",
-        "emitted_at": "2026-09-03T03:48:00Z",
+        "emitted_by": "agt_211",
+        "emitted_at": "2026-09-03T03:24:00Z",
         "evidence_class": 0,
-        "prev_hash": "d661ebec6e207c18d0b2ec71e2a115926efab4f76074c769d0c2d8397e72b51e",
-        "content_hash": "2135d9df1986476ee10f776d9d63a9a5a973b285554e0412401120cc727faba6"
+        "prev_hash": "a38b0f0912b63ef598a516b3e403ded59e74f9a0f79d18505946d110991c585f",
+        "content_hash": "81ad99313bab6f6e8feb36dff7508c2545f9152342a28386fbec93ffc153dc6c"
       }
     ]
   },
@@ -178,14 +246,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "tata-salt-iodised-1000",
-    "ordered_sku": "tata-salt-iodised-1000",
-    "delivered_sku": "tata-salt-iodised-1000",
+    "requested_sku": "daawat-rice-basmati-1000",
+    "ordered_sku": "daawat-rice-basmati-1000",
+    "delivered_sku": "daawat-rice-basmati-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 2800,
+    "loss_paise": 12800,
     "rationale": "Correct item, unreconcilable debit. Two captured debits reference one order and one fulfilment."
   }
 }

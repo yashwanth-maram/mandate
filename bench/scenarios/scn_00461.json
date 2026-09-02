@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00461",
-    "created_at": "2026-09-03T03:13:00Z",
-    "expires_at": "2026-09-03T09:13:00Z",
-    "user_id": "usr_5463",
-    "agent_id": "agt_661",
+    "created_at": "2026-09-03T03:25:00Z",
+    "expires_at": "2026-09-03T09:25:00Z",
+    "user_id": "usr_2951",
+    "agent_id": "agt_275",
     "block": {
       "block_id": "blk_00461",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-20T03:13:00Z",
-      "expires_at": "2026-10-07T03:13:00Z"
+      "blocked_at": "2026-08-27T03:25:00Z",
+      "expires_at": "2026-10-04T03:25:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 5175,
-      "max_total_paise": 5175,
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "tata",
+      "brand": "mother_dairy",
       "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1kg Tata low sodium salt on Swiggy Instamart",
+      "text": "order 1L Mother Dairy full cream milk on Swiggy Instamart",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "e0225ef763db9314825b8196ea88e08014388226e8ea11172bce14f3da4507fc",
+    "content_hash": "dc5a045a51eede8e0ac607874521135ba6f476fb720e9a28708e82c7bb6f466b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00461",
-    "obligation_hash": "e0225ef763db9314825b8196ea88e08014388226e8ea11172bce14f3da4507fc",
+    "obligation_hash": "dc5a045a51eede8e0ac607874521135ba6f476fb720e9a28708e82c7bb6f466b",
     "items": [
       {
         "item_id": "env_00461-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "tata-salt-low_sodium-1000",
-              "quantity": 1,
-              "unit_price_paise": 4500
-            }
-          ]
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "agt_661",
-        "emitted_at": "2026-09-03T03:13:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:25:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "1cf22e2052d2d27003c79b990ac21993dd3f04a412efaa8931243b11570b0c9c"
+        "content_hash": "d912d57c7e1e8d91670b6f5ce73131195a79b684cb9db4cc8c0ec57096bc56c1"
       },
       {
         "item_id": "env_00461-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 6400
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:25:04Z",
+        "evidence_class": 2,
+        "prev_hash": "d912d57c7e1e8d91670b6f5ce73131195a79b684cb9db4cc8c0ec57096bc56c1",
+        "content_hash": "0ff89302f525b567fb45c9a5389808bcc713957bb653946b5f424372b97694ff"
+      },
+      {
+        "item_id": "env_00461-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 7500
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:25:05Z",
+        "evidence_class": 2,
+        "prev_hash": "0ff89302f525b567fb45c9a5389808bcc713957bb653946b5f424372b97694ff",
+        "content_hash": "2f4e8934916269f317a5f19a98cbbe3fb329a15ac96fce77975f1dd1165a75d6"
+      },
+      {
+        "item_id": "env_00461-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-milk-double_toned-1000",
+          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
+          "description": "Amul Slim n Trim Double Toned Milk 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5900
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T03:25:06Z",
+        "evidence_class": 2,
+        "prev_hash": "2f4e8934916269f317a5f19a98cbbe3fb329a15ac96fce77975f1dd1165a75d6",
+        "content_hash": "2d3a7d27627ba69ae121674597d77ae8f3371bb48d258ef49afebadadae3cca7"
+      },
+      {
+        "item_id": "env_00461-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "mother_dairy-milk-full_cream-1000",
+              "quantity": 1,
+              "unit_price_paise": 7500
+            }
+          ]
+        },
+        "emitted_by": "agt_275",
+        "emitted_at": "2026-09-03T03:25:12Z",
+        "evidence_class": 1,
+        "prev_hash": "2d3a7d27627ba69ae121674597d77ae8f3371bb48d258ef49afebadadae3cca7",
+        "content_hash": "1644724aaa144c93796d9147d08fd0bfacf2458e10629713f281fa94f0119b5f"
+      },
+      {
+        "item_id": "env_00461-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00461",
           "lines": [
             {
-              "sku": "tata-salt-low_sodium-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 4500
+              "unit_price_paise": 7500
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:13:20Z",
+        "emitted_at": "2026-09-03T03:25:20Z",
         "evidence_class": 2,
-        "prev_hash": "1cf22e2052d2d27003c79b990ac21993dd3f04a412efaa8931243b11570b0c9c",
-        "content_hash": "8fa0e482298a6d90456847d6abeb009bfa605e0d2afd243c947d371a447be95b"
+        "prev_hash": "1644724aaa144c93796d9147d08fd0bfacf2458e10629713f281fa94f0119b5f",
+        "content_hash": "1a2df64ca8e753905a897807372528d0dd765c3846bc4c35634a24d3a109862b"
       },
       {
-        "item_id": "env_00461-e002",
-        "seq": 2,
+        "item_id": "env_00461-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00461",
           "lines": [
             {
-              "sku": "tata-salt-low_sodium-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 4500
+              "unit_price_paise": 7500
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T03:27:00Z",
+        "emitted_at": "2026-09-03T03:39:00Z",
         "evidence_class": 2,
-        "prev_hash": "8fa0e482298a6d90456847d6abeb009bfa605e0d2afd243c947d371a447be95b",
-        "content_hash": "eca6f38fe6a515487520644c0f15052eed9298b7322166488d7f03f8da355e97"
+        "prev_hash": "1a2df64ca8e753905a897807372528d0dd765c3846bc4c35634a24d3a109862b",
+        "content_hash": "eb4f1d61d133533cbe6026191b30970773f5f3ba0dd77c5dd47a3dc921b8936b"
       },
       {
-        "item_id": "env_00461-e003",
-        "seq": 3,
+        "item_id": "env_00461-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00461",
-          "amount_paise": 4500,
+          "amount_paise": 7500,
           "currency": "INR",
           "receipt": "zep_00461"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:13:25Z",
+        "emitted_at": "2026-09-03T03:25:25Z",
         "evidence_class": 3,
-        "prev_hash": "eca6f38fe6a515487520644c0f15052eed9298b7322166488d7f03f8da355e97",
-        "content_hash": "44de404abfc2a958ede550b3df7b02da41dd55af0b857a751efdefd87c3b223e"
+        "prev_hash": "eb4f1d61d133533cbe6026191b30970773f5f3ba0dd77c5dd47a3dc921b8936b",
+        "content_hash": "c343a2be57f958eebe4245e3f249120b45c43f247ea07cfc5b85c5a8a6eccd4d"
       },
       {
-        "item_id": "env_00461-e004",
-        "seq": 4,
+        "item_id": "env_00461-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00461",
           "order_id": "order_00461",
-          "amount_paise": 4500,
+          "amount_paise": 7500,
           "status": "captured",
           "block_id": "blk_00461",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:13:30Z",
+        "emitted_at": "2026-09-03T03:25:30Z",
         "evidence_class": 3,
-        "prev_hash": "44de404abfc2a958ede550b3df7b02da41dd55af0b857a751efdefd87c3b223e",
-        "content_hash": "25dd684dd7af596663429e887ccb336df685387beff7ffbd92b27931f98170d5"
+        "prev_hash": "c343a2be57f958eebe4245e3f249120b45c43f247ea07cfc5b85c5a8a6eccd4d",
+        "content_hash": "8cbacb100fed430da5c79f7f0de0ef972cc0e249e0a6bb72c7a57343f68db1b0"
       },
       {
-        "item_id": "env_00461-e005",
-        "seq": 5,
+        "item_id": "env_00461-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Tata low sodium salt. Payment complete.",
-          "claimed_sku": "tata-salt-low_sodium-1000",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_661",
-        "emitted_at": "2026-09-03T03:28:00Z",
+        "emitted_by": "agt_275",
+        "emitted_at": "2026-09-03T03:40:00Z",
         "evidence_class": 0,
-        "prev_hash": "25dd684dd7af596663429e887ccb336df685387beff7ffbd92b27931f98170d5",
-        "content_hash": "c4bc19a8dddd8b1b60ee67159945014160f808d3fb267638e00ceee327d0f7cb"
+        "prev_hash": "8cbacb100fed430da5c79f7f0de0ef972cc0e249e0a6bb72c7a57343f68db1b0",
+        "content_hash": "f94c0ac44710b81981e637d50b32a71f1a61d9c42f83ee0dc1377fde941786e0"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "tata-salt-low_sodium-1000",
-    "ordered_sku": "tata-salt-low_sodium-1000",
-    "delivered_sku": "tata-salt-low_sodium-1000",
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

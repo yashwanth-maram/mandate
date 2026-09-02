@@ -144,10 +144,10 @@ class ProvenanceVerifier(Verifier):
 
         snapshot_items = env.of_kind(EvidenceKind.CATALOG_SNAPSHOT)
         if not snapshot_items:
-            return self._pass(
-                "no catalogue content in the envelope, so nothing recorded here "
-                "could have steered the agent",
-                [],
+            return self._abstain(
+                "no catalogue content was recorded, so whether the agent was "
+                "steered by merchant text cannot be ruled out. An absent browse "
+                "trace is missing instrumentation, not evidence of safety"
             )
 
         tainted: list[tuple[str, CatalogSnapshot, dict[str, list[str]]]] = []

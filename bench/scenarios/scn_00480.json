@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00480",
-    "created_at": "2026-09-03T03:27:00Z",
-    "expires_at": "2026-09-03T09:27:00Z",
-    "user_id": "usr_3627",
-    "agent_id": "agt_170",
+    "created_at": "2026-09-02T23:02:00Z",
+    "expires_at": "2026-09-03T05:02:00Z",
+    "user_id": "usr_3645",
+    "agent_id": "agt_169",
     "block": {
       "block_id": "blk_00480",
-      "blocked_paise": 54510,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T03:27:00Z",
-      "expires_at": "2026-10-07T03:27:00Z"
+      "blocked_at": "2026-08-25T23:02:00Z",
+      "expires_at": "2026-10-20T23:02:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18170,
-      "max_total_paise": 18170,
+      "category": "salt",
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "swiggy_instamart"
       ],
-      "brand": "dhara",
-      "variant": "mustard",
+      "brand": "aashirvaad",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Dhara kachi ghani mustard oil from Blinkit, keep it under 181 rupees",
+      "text": "I need 1kg Aashirvaad iodised salt, use Swiggy Instamart",
       "uncaptured_attributes": []
     },
-    "content_hash": "eb6b8b57dcacba34374dbb49cf8b14824efbeac81448579b02681b5faf5a7160",
+    "content_hash": "4add9d8be492f1658d090587ffa436e7228e0cffffea8524884cb531d3810716",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00480",
-    "obligation_hash": "eb6b8b57dcacba34374dbb49cf8b14824efbeac81448579b02681b5faf5a7160",
+    "obligation_hash": "4add9d8be492f1658d090587ffa436e7228e0cffffea8524884cb531d3810716",
     "items": [
       {
         "item_id": "env_00480-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 2800
         },
-        "emitted_by": "agt_170",
-        "emitted_at": "2026-09-03T03:27:00Z",
-        "evidence_class": 1,
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:02:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "edb611d7d8ffc58ab6b50e67357298ae1ea1625d71993329b21bde5371325006"
+        "content_hash": "a2f378376100acdcb0956a3789f929a76cd7ab91e0e6c450fbe8422c983fb22f"
       },
       {
         "item_id": "env_00480-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00480",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:27:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:02:04Z",
         "evidence_class": 2,
-        "prev_hash": "edb611d7d8ffc58ab6b50e67357298ae1ea1625d71993329b21bde5371325006",
-        "content_hash": "66ec233d9e721475766a930236f949dc56d14a4fc9c986f2879467488ce5af9e"
+        "prev_hash": "a2f378376100acdcb0956a3789f929a76cd7ab91e0e6c450fbe8422c983fb22f",
+        "content_hash": "255303479f6e74c2cd15a042b9ff3ae4f1d0026f55ac12190b4f33e21371b9e1"
       },
       {
         "item_id": "env_00480-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00480",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-low_sodium-1000",
+          "display_name": "Tata Salt Lite Low Sodium 1kg",
+          "description": "Tata Salt Lite Low Sodium 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:41:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:02:05Z",
         "evidence_class": 2,
-        "prev_hash": "66ec233d9e721475766a930236f949dc56d14a4fc9c986f2879467488ce5af9e",
-        "content_hash": "a94e0a43c5d8afed70972742dd2b96580b7eef63dd77fb0d87e14afb51e4b393"
+        "prev_hash": "255303479f6e74c2cd15a042b9ff3ae4f1d0026f55ac12190b4f33e21371b9e1",
+        "content_hash": "5ac3644405b148303e783678f4ac8dc35b03659c962dc6d1330a695d72600ad7"
       },
       {
         "item_id": "env_00480-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00480",
-          "amount_paise": 15800,
-          "currency": "INR",
-          "receipt": "zep_00480"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 3000
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:27:25Z",
-        "evidence_class": 3,
-        "prev_hash": "a94e0a43c5d8afed70972742dd2b96580b7eef63dd77fb0d87e14afb51e4b393",
-        "content_hash": "1b6c35a758eab68c4ed0aa7fa18e280c5dbc05a96ff1b3510db2d6a308db7b4b"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:02:06Z",
+        "evidence_class": 2,
+        "prev_hash": "5ac3644405b148303e783678f4ac8dc35b03659c962dc6d1330a695d72600ad7",
+        "content_hash": "5f50560cf49603ec3fc8ed6f13fe3af1ac711e878b7aeb8230daa9dbc6e260a7"
       },
       {
         "item_id": "env_00480-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00480",
-          "order_id": "order_00480",
-          "amount_paise": 15800,
-          "status": "captured",
-          "block_id": "blk_00480",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:27:30Z",
-        "evidence_class": 3,
-        "prev_hash": "1b6c35a758eab68c4ed0aa7fa18e280c5dbc05a96ff1b3510db2d6a308db7b4b",
-        "content_hash": "dc2e39fd2b2f4fc6aa87988f3a94719022836e699d421ba9d5552cebe17f37f0"
+        "emitted_by": "agt_169",
+        "emitted_at": "2026-09-02T23:02:12Z",
+        "evidence_class": 1,
+        "prev_hash": "5f50560cf49603ec3fc8ed6f13fe3af1ac711e878b7aeb8230daa9dbc6e260a7",
+        "content_hash": "3132418ce356ee08387a2581c294531a7efdb4ae602cabd4ac81a4e63e9ae1cd"
       },
       {
         "item_id": "env_00480-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00480",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ]
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:02:20Z",
+        "evidence_class": 2,
+        "prev_hash": "3132418ce356ee08387a2581c294531a7efdb4ae602cabd4ac81a4e63e9ae1cd",
+        "content_hash": "12696391b2984c9187520f3b06dee35ef2a384c2a7cb95170c31d4944699b496"
+      },
+      {
+        "item_id": "env_00480-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00480",
+          "lines": [
+            {
+              "sku": "aashirvaad-salt-iodised-1000",
+              "quantity": 1,
+              "unit_price_paise": 3000
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:16:00Z",
+        "evidence_class": 2,
+        "prev_hash": "12696391b2984c9187520f3b06dee35ef2a384c2a7cb95170c31d4944699b496",
+        "content_hash": "f6ddc1ba2db684565a999b536e2a49dd1f58772a5279a98c039c94cf24f2626b"
+      },
+      {
+        "item_id": "env_00480-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00480",
+          "amount_paise": 3000,
+          "currency": "INR",
+          "receipt": "zep_00480"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:02:25Z",
+        "evidence_class": 3,
+        "prev_hash": "f6ddc1ba2db684565a999b536e2a49dd1f58772a5279a98c039c94cf24f2626b",
+        "content_hash": "8bb8dccdf9c10268d20c9da8eae3327a98b0b548a7871461eb38dcdb28691e68"
+      },
+      {
+        "item_id": "env_00480-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00480",
+          "order_id": "order_00480",
+          "amount_paise": 3000,
+          "status": "captured",
+          "block_id": "blk_00480",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:02:30Z",
+        "evidence_class": 3,
+        "prev_hash": "8bb8dccdf9c10268d20c9da8eae3327a98b0b548a7871461eb38dcdb28691e68",
+        "content_hash": "1d7f19d05a66dd491ed9849cd5c65b1a7fa13a72607250b2ada941050b6e007b"
+      },
+      {
+        "item_id": "env_00480-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "dhara-edible_oil-mustard-1000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_170",
-        "emitted_at": "2026-09-03T03:42:00Z",
+        "emitted_by": "agt_169",
+        "emitted_at": "2026-09-02T23:17:00Z",
         "evidence_class": 0,
-        "prev_hash": "dc2e39fd2b2f4fc6aa87988f3a94719022836e699d421ba9d5552cebe17f37f0",
-        "content_hash": "cab59b401bbd805644d9dc71fd55f80df3216569d1833cd3ba19154735bdab4b"
+        "prev_hash": "1d7f19d05a66dd491ed9849cd5c65b1a7fa13a72607250b2ada941050b6e007b",
+        "content_hash": "5da2a51b3dd26c2a2573c53480e5e65873559d1743fe0049b1d6addd52585462"
       }
     ]
   },
@@ -160,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "dhara-edible_oil-mustard-1000",
-    "ordered_sku": "dhara-edible_oil-mustard-1000",
-    "delivered_sku": "dhara-edible_oil-mustard-1000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

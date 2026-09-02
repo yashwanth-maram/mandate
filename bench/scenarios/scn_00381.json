@@ -6,166 +6,234 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00381",
-    "created_at": "2026-09-03T00:16:00Z",
-    "expires_at": "2026-09-03T06:16:00Z",
-    "user_id": "usr_9955",
-    "agent_id": "agt_856",
+    "created_at": "2026-09-02T18:07:00Z",
+    "expires_at": "2026-09-03T00:07:00Z",
+    "user_id": "usr_4212",
+    "agent_id": "agt_940",
     "block": {
       "block_id": "blk_00381",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-15T00:16:00Z",
-      "expires_at": "2026-10-09T00:16:00Z"
+      "blocked_at": "2026-08-13T18:07:00Z",
+      "expires_at": "2026-10-14T18:07:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 8625,
-      "max_total_paise": 8625,
+      "category": "butter",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "mother_dairy",
-      "variant": "full_cream",
-      "pack_size_g": 1000
+      "brand": "amul",
+      "variant": "salted",
+      "pack_size_g": 100
     },
     "intent": {
-      "text": "order 1L Mother Dairy full cream milk on Blinkit",
+      "text": "get me 100g Amul salted butter from Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "e5f8b5eb64496a91e2f4e33ff14ae95dd0be8bc6b1ed1da6f4d30582383745ee",
+    "content_hash": "dd3b53f5d00096583a0049d3ec44274df540338d77c101252c36b08e5d627864",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00381",
-    "obligation_hash": "e5f8b5eb64496a91e2f4e33ff14ae95dd0be8bc6b1ed1da6f4d30582383745ee",
+    "obligation_hash": "dd3b53f5d00096583a0049d3ec44274df540338d77c101252c36b08e5d627864",
     "items": [
       {
         "item_id": "env_00381-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-full_cream-1000",
-              "quantity": 1,
-              "unit_price_paise": 7500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 29200
         },
-        "emitted_by": "agt_856",
-        "emitted_at": "2026-09-03T00:16:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:07:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "d3d69cd88dcd30f18d2513435e517e64d6a649088c57a41a2e0522ea12fadd59"
+        "content_hash": "9f9718f54faf341652f672718e70ac738449ae80c679a95614e953c07bf8686b"
       },
       {
         "item_id": "env_00381-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00381",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-full_cream-1000",
-              "quantity": 1,
-              "unit_price_paise": 7500
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:16:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:07:04Z",
         "evidence_class": 2,
-        "prev_hash": "d3d69cd88dcd30f18d2513435e517e64d6a649088c57a41a2e0522ea12fadd59",
-        "content_hash": "9d3083cd864947b16d30616eafcb87eae0a05d8543fe0bb43a695845a67de068"
+        "prev_hash": "9f9718f54faf341652f672718e70ac738449ae80c679a95614e953c07bf8686b",
+        "content_hash": "5904dd5d3717887333817f5d61d4a09ad90ee9d7508ed9919ae0ea8f0ea04974"
       },
       {
         "item_id": "env_00381-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00381",
-          "lines": [
-            {
-              "sku": "mother_dairy-milk-full_cream-1000",
-              "quantity": 1,
-              "unit_price_paise": 7500
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:30:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:07:05Z",
         "evidence_class": 2,
-        "prev_hash": "9d3083cd864947b16d30616eafcb87eae0a05d8543fe0bb43a695845a67de068",
-        "content_hash": "2c5f15a2bc3486c70bd46a70aa9c19f8b8dd99d68a5b56ddc63f54ae9c0b8827"
+        "prev_hash": "5904dd5d3717887333817f5d61d4a09ad90ee9d7508ed9919ae0ea8f0ea04974",
+        "content_hash": "4a0c71da83fe77ab79c5771060c58e9a391f98412f19fa32b75670077e38afbb"
       },
       {
         "item_id": "env_00381-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00381",
-          "amount_paise": 7500,
-          "currency": "INR",
-          "receipt": "zep_00381"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 28500
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:16:25Z",
-        "evidence_class": 3,
-        "prev_hash": "2c5f15a2bc3486c70bd46a70aa9c19f8b8dd99d68a5b56ddc63f54ae9c0b8827",
-        "content_hash": "f3d788511f5264a2d0c2415ce288146d1ec132d0f704082dc68c91046f6adffb"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:07:06Z",
+        "evidence_class": 2,
+        "prev_hash": "4a0c71da83fe77ab79c5771060c58e9a391f98412f19fa32b75670077e38afbb",
+        "content_hash": "864bc453178e93946161c06f6b8a0297cfb3cd715da8568552a681aa947daaf5"
       },
       {
         "item_id": "env_00381-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00381",
-          "order_id": "order_00381",
-          "amount_paise": 7500,
-          "status": "captured",
-          "block_id": "blk_00381",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:16:30Z",
-        "evidence_class": 3,
-        "prev_hash": "f3d788511f5264a2d0c2415ce288146d1ec132d0f704082dc68c91046f6adffb",
-        "content_hash": "c83607ed815bbd8e844c83d4164be617b6973b038eb7b478e00c0fe20506ee8a"
+        "emitted_by": "agt_940",
+        "emitted_at": "2026-09-02T18:07:12Z",
+        "evidence_class": 1,
+        "prev_hash": "864bc453178e93946161c06f6b8a0297cfb3cd715da8568552a681aa947daaf5",
+        "content_hash": "6f5f429cb118a6908c4a30a7f71395bc8145ccd64eb5822b6ba7667fb2ed7b41"
       },
       {
         "item_id": "env_00381-e005",
         "seq": 5,
         "payload": {
-          "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-full_cream-1000",
-          "claims_success": true
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00381",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
         },
-        "emitted_by": "agt_856",
-        "emitted_at": "2026-09-03T00:31:00Z",
-        "evidence_class": 0,
-        "prev_hash": "c83607ed815bbd8e844c83d4164be617b6973b038eb7b478e00c0fe20506ee8a",
-        "content_hash": "5fb7da3cb90098b48acb58ab66f19268d62a60782a3a519830b6d9926ba69426"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:07:20Z",
+        "evidence_class": 2,
+        "prev_hash": "6f5f429cb118a6908c4a30a7f71395bc8145ccd64eb5822b6ba7667fb2ed7b41",
+        "content_hash": "ce173d431e34439c98c944f632505917cfbd04d85bb9aaaedd68be6c7da3c8fb"
       },
       {
         "item_id": "env_00381-e006",
         "seq": 6,
         "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "This isn't what I wanted, the agent got it wrong.",
-          "raised_at": "2026-09-03T03:16:00Z"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00381",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "usr_9955",
-        "emitted_at": "2026-09-03T03:16:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:21:00Z",
+        "evidence_class": 2,
+        "prev_hash": "ce173d431e34439c98c944f632505917cfbd04d85bb9aaaedd68be6c7da3c8fb",
+        "content_hash": "c2fea8c74bc8added594b2697525f8e39ba34d767a8eceeae32c4bac62524ff2"
+      },
+      {
+        "item_id": "env_00381-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00381",
+          "amount_paise": 6200,
+          "currency": "INR",
+          "receipt": "zep_00381"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:07:25Z",
+        "evidence_class": 3,
+        "prev_hash": "c2fea8c74bc8added594b2697525f8e39ba34d767a8eceeae32c4bac62524ff2",
+        "content_hash": "295f6457eb024e5910317917d255a9fbae43fda76cf14c6803072eedd537abe6"
+      },
+      {
+        "item_id": "env_00381-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00381",
+          "order_id": "order_00381",
+          "amount_paise": 6200,
+          "status": "captured",
+          "block_id": "blk_00381",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:07:30Z",
+        "evidence_class": 3,
+        "prev_hash": "295f6457eb024e5910317917d255a9fbae43fda76cf14c6803072eedd537abe6",
+        "content_hash": "d439f8a338dcc10e318836ae373de6a056a88dd7e714d7517237d739d7ec6cff"
+      },
+      {
+        "item_id": "env_00381-e009",
+        "seq": 9,
+        "payload": {
+          "kind": "AGENT_SELF_REPORT",
+          "text": "Ordered 100g Amul salted butter. Payment complete.",
+          "claimed_sku": "amul-butter-salted-100",
+          "claims_success": true
+        },
+        "emitted_by": "agt_940",
+        "emitted_at": "2026-09-02T18:22:00Z",
         "evidence_class": 0,
-        "prev_hash": "5fb7da3cb90098b48acb58ab66f19268d62a60782a3a519830b6d9926ba69426",
-        "content_hash": "2ee4ce097ccf9c7937787be3d5e8e9bff6564c341b5c4fad43b9b09dc71157dc"
+        "prev_hash": "d439f8a338dcc10e318836ae373de6a056a88dd7e714d7517237d739d7ec6cff",
+        "content_hash": "a3b79a81191994a7ce220d21d967198460043a0ad7fabb5b4ba40c8641aa47af"
+      },
+      {
+        "item_id": "env_00381-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-02T21:07:00Z"
+        },
+        "emitted_by": "usr_4212",
+        "emitted_at": "2026-09-02T21:07:00Z",
+        "evidence_class": 0,
+        "prev_hash": "a3b79a81191994a7ce220d21d967198460043a0ad7fabb5b4ba40c8641aa47af",
+        "content_hash": "5add27e7a68538ee32b8fdce597de59423ee96f99c7eb970a260805193f0222a"
       }
     ]
   },
@@ -174,14 +242,14 @@
     "liable_party": "USER",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-full_cream-1000",
-    "ordered_sku": "mother_dairy-milk-full_cream-1000",
-    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "requested_sku": "amul-butter-salted-100",
+    "ordered_sku": "amul-butter-salted-100",
+    "delivered_sku": "amul-butter-salted-100",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 7500,
+    "loss_paise": 6200,
     "rationale": "Agent ordered the requested item, merchant delivered it, debit reconciles. The dispute contradicts the record and is SELF_REPORT class, so it establishes nothing on its own. Refunding here is a false positive borne by the merchant."
   }
 }

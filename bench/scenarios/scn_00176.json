@@ -6,152 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00176",
-    "created_at": "2026-09-02T22:33:00Z",
-    "expires_at": "2026-09-03T04:33:00Z",
-    "user_id": "usr_6400",
-    "agent_id": "agt_409",
+    "created_at": "2026-09-03T02:40:00Z",
+    "expires_at": "2026-09-03T08:40:00Z",
+    "user_id": "usr_4389",
+    "agent_id": "agt_770",
     "block": {
       "block_id": "blk_00176",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-15T22:33:00Z",
-      "expires_at": "2026-10-25T22:33:00Z"
+      "blocked_at": "2026-08-20T02:40:00Z",
+      "expires_at": "2026-11-02T02:40:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 6784,
-      "max_total_paise": 6784,
+      "category": "butter",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
       "brand": "amul",
-      "variant": "double_toned",
-      "pack_size_g": 1000
+      "variant": "salted",
+      "pack_size_g": 100
     },
     "intent": {
-      "text": "get me 1L Amul double toned milk from Zepto",
+      "text": "I need 100g Amul salted butter, use Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "d35341e9fd74dbd657584247bbaa5aae0ad6d46c9a69bb6a87f062438a9b664d",
+    "content_hash": "bee445f865e6d4c31daeb5f21f8ac5e49b46f0edcf7071bc831e6d55c95c17e8",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00176",
-    "obligation_hash": "d35341e9fd74dbd657584247bbaa5aae0ad6d46c9a69bb6a87f062438a9b664d",
+    "obligation_hash": "bee445f865e6d4c31daeb5f21f8ac5e49b46f0edcf7071bc831e6d55c95c17e8",
     "items": [
       {
         "item_id": "env_00176-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "amul-milk-double_toned-1000",
-              "quantity": 1,
-              "unit_price_paise": 5900
-            }
-          ]
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "agt_409",
-        "emitted_at": "2026-09-02T22:33:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:40:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "5373c3d29725a97941b6959ef55fe451640cef7a5d7c9d73a3140639565807c0"
+        "content_hash": "98a12760afd2994b93c0ec6381357d75eb72f558b252e3d61ad1c41f300d3509"
       },
       {
         "item_id": "env_00176-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 28500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:40:04Z",
+        "evidence_class": 2,
+        "prev_hash": "98a12760afd2994b93c0ec6381357d75eb72f558b252e3d61ad1c41f300d3509",
+        "content_hash": "40850489fced80ad50c44028af01d4d9b0c035bdded47eb2382d31984dfd7688"
+      },
+      {
+        "item_id": "env_00176-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 29200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:40:05Z",
+        "evidence_class": 2,
+        "prev_hash": "40850489fced80ad50c44028af01d4d9b0c035bdded47eb2382d31984dfd7688",
+        "content_hash": "6b510025391d064690284c66f628345fea8b18f3b21c0c39f1e66357fdc5e851"
+      },
+      {
+        "item_id": "env_00176-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 27500
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T02:40:06Z",
+        "evidence_class": 2,
+        "prev_hash": "6b510025391d064690284c66f628345fea8b18f3b21c0c39f1e66357fdc5e851",
+        "content_hash": "ae925110e4116fa5bbf25c1a446f24e5c2332148e7f0fc6e566d4c8478a2044e"
+      },
+      {
+        "item_id": "env_00176-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "amul-butter-salted-100",
+              "quantity": 1,
+              "unit_price_paise": 6200
+            }
+          ]
+        },
+        "emitted_by": "agt_770",
+        "emitted_at": "2026-09-03T02:40:12Z",
+        "evidence_class": 1,
+        "prev_hash": "ae925110e4116fa5bbf25c1a446f24e5c2332148e7f0fc6e566d4c8478a2044e",
+        "content_hash": "c835eef20be434790f0f67a623b6739428525ec24a4e8939a6a491e8601037a6"
+      },
+      {
+        "item_id": "env_00176-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00176",
           "lines": [
             {
-              "sku": "amul-milk-double_toned-1000",
+              "sku": "amul-butter-salted-100",
               "quantity": 1,
-              "unit_price_paise": 5900
+              "unit_price_paise": 6200
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T22:33:20Z",
+        "emitted_at": "2026-09-03T02:40:20Z",
         "evidence_class": 2,
-        "prev_hash": "5373c3d29725a97941b6959ef55fe451640cef7a5d7c9d73a3140639565807c0",
-        "content_hash": "fa17d43647363a5e509918b01d9e62f9f4926118b9b81dd93436319bc3ecb362"
+        "prev_hash": "c835eef20be434790f0f67a623b6739428525ec24a4e8939a6a491e8601037a6",
+        "content_hash": "7f1d0eacd8a47ed13b900f5cdaf5818e775b779d54e3753c4c4836cf127f2eed"
       },
       {
-        "item_id": "env_00176-e002",
-        "seq": 2,
+        "item_id": "env_00176-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00176",
           "lines": [
             {
-              "sku": "amul-milk-double_toned-1000",
+              "sku": "amul-butter-salted-100",
               "quantity": 1,
-              "unit_price_paise": 5900
+              "unit_price_paise": 6200
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T22:47:00Z",
+        "emitted_at": "2026-09-03T02:54:00Z",
         "evidence_class": 2,
-        "prev_hash": "fa17d43647363a5e509918b01d9e62f9f4926118b9b81dd93436319bc3ecb362",
-        "content_hash": "843983053f5d24002d9e8e0d720fb0003e77129d7f3469f60991d64e23c386cf"
+        "prev_hash": "7f1d0eacd8a47ed13b900f5cdaf5818e775b779d54e3753c4c4836cf127f2eed",
+        "content_hash": "46abc77a357704132e72c60fec47c2f351a3682d3eb6d9530b0cc593a28ee1dd"
       },
       {
-        "item_id": "env_00176-e003",
-        "seq": 3,
+        "item_id": "env_00176-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00176",
-          "amount_paise": 5900,
+          "amount_paise": 6200,
           "currency": "INR",
           "receipt": "zep_00176"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:33:25Z",
+        "emitted_at": "2026-09-03T02:40:25Z",
         "evidence_class": 3,
-        "prev_hash": "843983053f5d24002d9e8e0d720fb0003e77129d7f3469f60991d64e23c386cf",
-        "content_hash": "c81c82b2074f20bc30653129305dbf2708976d041bbf267fd66019a738f95e44"
+        "prev_hash": "46abc77a357704132e72c60fec47c2f351a3682d3eb6d9530b0cc593a28ee1dd",
+        "content_hash": "7bb682383a76cb76a4abc1939abf3a4f5f6d9d573f5e4b2de08f60f30dac1cfd"
       },
       {
-        "item_id": "env_00176-e004",
-        "seq": 4,
+        "item_id": "env_00176-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00176",
           "order_id": "order_00176",
-          "amount_paise": 5900,
+          "amount_paise": 6200,
           "status": "captured",
           "block_id": "blk_00176",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:33:30Z",
+        "emitted_at": "2026-09-03T09:10:00Z",
         "evidence_class": 3,
-        "prev_hash": "c81c82b2074f20bc30653129305dbf2708976d041bbf267fd66019a738f95e44",
-        "content_hash": "3e51f89c7d8fe0d10e445480461161669c9765f25c79604d039a00385ef41055"
+        "prev_hash": "7bb682383a76cb76a4abc1939abf3a4f5f6d9d573f5e4b2de08f60f30dac1cfd",
+        "content_hash": "ff8f26922601205342f7d8699492cbee55184ad8f9eea656dbe237fdde58c07e"
       },
       {
-        "item_id": "env_00176-e005",
-        "seq": 5,
+        "item_id": "env_00176-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Amul double toned milk. Payment complete.",
-          "claimed_sku": "amul-milk-double_toned-1000",
+          "text": "Ordered 100g Amul salted butter. Payment complete.",
+          "claimed_sku": "amul-butter-salted-100",
           "claims_success": true
         },
-        "emitted_by": "agt_409",
-        "emitted_at": "2026-09-02T22:48:00Z",
+        "emitted_by": "agt_770",
+        "emitted_at": "2026-09-03T02:55:00Z",
         "evidence_class": 0,
-        "prev_hash": "3e51f89c7d8fe0d10e445480461161669c9765f25c79604d039a00385ef41055",
-        "content_hash": "a8157da1768078162a1f8f40433ea6c57c5b212406fc12ea28e4aa6f20fa332e"
+        "prev_hash": "ff8f26922601205342f7d8699492cbee55184ad8f9eea656dbe237fdde58c07e",
+        "content_hash": "ae7357d2d9162fc6e52f58d89034dae4cb1634dfa35055d29157faddeda726e2"
       }
     ]
   },
@@ -160,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-milk-double_toned-1000",
-    "ordered_sku": "amul-milk-double_toned-1000",
-    "delivered_sku": "amul-milk-double_toned-1000",
+    "requested_sku": "amul-butter-salted-100",
+    "ordered_sku": "amul-butter-salted-100",
+    "delivered_sku": "amul-butter-salted-100",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 5900,
-    "rationale": "Item was correct; the mandate was not honoured. Cart placed at blinkit, which is not in the allowlist (zepto)."
+    "loss_paise": 6200,
+    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
   }
 }

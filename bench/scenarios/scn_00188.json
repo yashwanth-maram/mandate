@@ -6,154 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00188",
-    "created_at": "2026-09-02T18:49:00Z",
-    "expires_at": "2026-09-03T00:49:00Z",
-    "user_id": "usr_5009",
-    "agent_id": "agt_858",
+    "created_at": "2026-09-02T18:24:00Z",
+    "expires_at": "2026-09-03T00:24:00Z",
+    "user_id": "usr_8523",
+    "agent_id": "agt_834",
     "block": {
       "block_id": "blk_00188",
-      "blocked_paise": 117300,
+      "blocked_paise": 137310,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T18:49:00Z",
-      "expires_at": "2026-10-14T18:49:00Z"
+      "blocked_at": "2026-08-23T18:24:00Z",
+      "expires_at": "2026-10-03T18:24:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 39100,
-      "max_total_paise": 39100,
+      "max_unit_price_paise": 45770,
+      "max_total_paise": 45770,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "fortune",
+      "brand": "aashirvaad",
       "variant": null,
       "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 5kg Fortune atta from Swiggy Instamart, keep it under 391 rupees",
+      "text": "get me 5kg Aashirvaad multigrain atta from Blinkit",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "8e988976fec12b306b1f0bc70ebc4dede3f4341d9e953c9ab736e009539d27f9",
+    "content_hash": "764458a3b4fc2ab925789f56631471a88f6c7a32b318163c3586bb3271581cef",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00188",
-    "obligation_hash": "8e988976fec12b306b1f0bc70ebc4dede3f4341d9e953c9ab736e009539d27f9",
+    "obligation_hash": "764458a3b4fc2ab925789f56631471a88f6c7a32b318163c3586bb3271581cef",
     "items": [
       {
         "item_id": "env_00188-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 39800
         },
-        "emitted_by": "agt_858",
-        "emitted_at": "2026-09-02T18:49:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:24:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "5d042d6934d59c97681fe5da857650aeea6051612fb52136a10e3213726bd694"
+        "content_hash": "ff047ab144f4649da2da73c7689a246cd99d156945e783244f2104cbdfb66e71"
       },
       {
         "item_id": "env_00188-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
-          "merchant_order_id": "zep_00188",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T18:49:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:24:04Z",
         "evidence_class": 2,
-        "prev_hash": "5d042d6934d59c97681fe5da857650aeea6051612fb52136a10e3213726bd694",
-        "content_hash": "0f8e9c45450342105bc234477229cc00e0d4d1f9eb15843637801e454370587a"
+        "prev_hash": "ff047ab144f4649da2da73c7689a246cd99d156945e783244f2104cbdfb66e71",
+        "content_hash": "3f69dd2b35a4b1d63efd4f23f998b2a76242424b71c13cd06644157136d18497"
       },
       {
         "item_id": "env_00188-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00188",
-          "lines": [
-            {
-              "sku": "fortune-flour-whole_wheat-5000",
-              "quantity": 1,
-              "unit_price_paise": 34000
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T19:03:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:24:05Z",
         "evidence_class": 2,
-        "prev_hash": "0f8e9c45450342105bc234477229cc00e0d4d1f9eb15843637801e454370587a",
-        "content_hash": "a025551b04318574c48dfc0b12caf7569542565d53c80602bb93892ca8f08aba"
+        "prev_hash": "3f69dd2b35a4b1d63efd4f23f998b2a76242424b71c13cd06644157136d18497",
+        "content_hash": "fff9486d51470e3eb63ba463f19d582a4b90c7c9c2eba8d348195ae8ecf58f99"
       },
       {
         "item_id": "env_00188-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00188",
-          "amount_paise": 34000,
-          "currency": "INR",
-          "receipt": "zep_00188"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "pillsbury-flour-whole_wheat-5000",
+          "display_name": "Pillsbury Chakki Fresh Atta 5kg",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 34900
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:49:25Z",
-        "evidence_class": 3,
-        "prev_hash": "a025551b04318574c48dfc0b12caf7569542565d53c80602bb93892ca8f08aba",
-        "content_hash": "0dff9c81adf3a823628a83a19f7497a35468d4a76f0a32e3e9e889adcf1f664e"
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:24:06Z",
+        "evidence_class": 2,
+        "prev_hash": "fff9486d51470e3eb63ba463f19d582a4b90c7c9c2eba8d348195ae8ecf58f99",
+        "content_hash": "905963091c067a5f75bc9b739fb305ddb42eef6ee36c8d7d3452c089fbe61fc2"
       },
       {
         "item_id": "env_00188-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00188",
-          "order_id": "order_00188",
-          "amount_paise": 34000,
-          "status": "captured",
-          "block_id": "blk_00188",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:49:30Z",
-        "evidence_class": 3,
-        "prev_hash": "0dff9c81adf3a823628a83a19f7497a35468d4a76f0a32e3e9e889adcf1f664e",
-        "content_hash": "cf1d1e2ed6c782bbb5b12c36db08a16ddc9cc0c01056478d152755a82fd9120f"
+        "emitted_by": "agt_834",
+        "emitted_at": "2026-09-02T18:24:12Z",
+        "evidence_class": 1,
+        "prev_hash": "905963091c067a5f75bc9b739fb305ddb42eef6ee36c8d7d3452c089fbe61fc2",
+        "content_hash": "1b7ae8df8458e17a778411d7f70f85b5ecb237338c14774b981bb1804a715d3c"
       },
       {
         "item_id": "env_00188-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "blinkit",
+          "merchant_order_id": "zep_00188",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ]
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:24:20Z",
+        "evidence_class": 2,
+        "prev_hash": "1b7ae8df8458e17a778411d7f70f85b5ecb237338c14774b981bb1804a715d3c",
+        "content_hash": "500ba3fea563ae3f58570db18f57af4cbe734d9e0e17ed7160e7665d5f503465"
+      },
+      {
+        "item_id": "env_00188-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00188",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-multigrain-5000",
+              "quantity": 1,
+              "unit_price_paise": 39800
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:38:00Z",
+        "evidence_class": 2,
+        "prev_hash": "500ba3fea563ae3f58570db18f57af4cbe734d9e0e17ed7160e7665d5f503465",
+        "content_hash": "426b69e505efe3457b8e63774fc5db7da145d3c472fa6dc4b692a119344c7b7f"
+      },
+      {
+        "item_id": "env_00188-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00188",
+          "amount_paise": 39800,
+          "currency": "INR",
+          "receipt": "zep_00188"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:24:25Z",
+        "evidence_class": 3,
+        "prev_hash": "426b69e505efe3457b8e63774fc5db7da145d3c472fa6dc4b692a119344c7b7f",
+        "content_hash": "7b771ce4500be241d50396e0708ea41833ef824d0862d81ec668d1ff91894dbd"
+      },
+      {
+        "item_id": "env_00188-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00188",
+          "order_id": "order_00188",
+          "amount_paise": 39800,
+          "status": "captured",
+          "block_id": "blk_00188",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:24:30Z",
+        "evidence_class": 3,
+        "prev_hash": "7b771ce4500be241d50396e0708ea41833ef824d0862d81ec668d1ff91894dbd",
+        "content_hash": "53a2b9e9fccaff051de61bc2df08725eb673e868f9761365ec271c28ae6bb668"
+      },
+      {
+        "item_id": "env_00188-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Fortune atta. Payment complete.",
-          "claimed_sku": "fortune-flour-whole_wheat-5000",
+          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-multigrain-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_858",
-        "emitted_at": "2026-09-02T19:04:00Z",
+        "emitted_by": "agt_834",
+        "emitted_at": "2026-09-02T18:39:00Z",
         "evidence_class": 0,
-        "prev_hash": "cf1d1e2ed6c782bbb5b12c36db08a16ddc9cc0c01056478d152755a82fd9120f",
-        "content_hash": "a9726d601e6b874eb66a402cccd57bb0f72a3c1c8176941db7b0d668d33bfcb9"
+        "prev_hash": "53a2b9e9fccaff051de61bc2df08725eb673e868f9761365ec271c28ae6bb668",
+        "content_hash": "7eaf9f3c41ad1f3aaa7a29f93a1b68cc5d6db20455be80b3818df86cd3ffe84f"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-whole_wheat-5000",
-    "ordered_sku": "fortune-flour-whole_wheat-5000",
-    "delivered_sku": "fortune-flour-whole_wheat-5000",
+    "requested_sku": "aashirvaad-flour-multigrain-5000",
+    "ordered_sku": "aashirvaad-flour-multigrain-5000",
+    "delivered_sku": "aashirvaad-flour-multigrain-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

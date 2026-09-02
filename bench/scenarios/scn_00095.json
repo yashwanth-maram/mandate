@@ -6,152 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00095",
-    "created_at": "2026-09-03T01:20:00Z",
-    "expires_at": "2026-09-03T07:20:00Z",
-    "user_id": "usr_3878",
-    "agent_id": "agt_232",
+    "created_at": "2026-09-02T22:49:00Z",
+    "expires_at": "2026-09-03T04:49:00Z",
+    "user_id": "usr_7236",
+    "agent_id": "agt_577",
     "block": {
       "block_id": "blk_00095",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-22T01:20:00Z",
-      "expires_at": "2026-10-20T01:20:00Z"
+      "blocked_at": "2026-08-16T22:49:00Z",
+      "expires_at": "2026-10-22T22:49:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 6669,
-      "max_total_paise": 6669,
+      "category": "rice",
+      "max_unit_price_paise": 8970,
+      "max_total_paise": 8970,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "fortune",
-      "variant": "refined",
+      "brand": "india_gate",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1kg Fortune maida on Zepto",
-      "uncaptured_attributes": []
+      "text": "I need 1kg India Gate sona masoori rice, use Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "e5e8f105f45ea0005e2c2e283a9a10ac860eae24ace18431f87666fb38291bbc",
+    "content_hash": "d82c4a9f5e3b3e337c354f595a152ecf3332523b33b2ad116a750609a1877e43",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00095",
-    "obligation_hash": "e5e8f105f45ea0005e2c2e283a9a10ac860eae24ace18431f87666fb38291bbc",
+    "obligation_hash": "d82c4a9f5e3b3e337c354f595a152ecf3332523b33b2ad116a750609a1877e43",
     "items": [
       {
         "item_id": "env_00095-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-flour-refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 5800
-            }
-          ]
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "agt_232",
-        "emitted_at": "2026-09-03T01:20:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:49:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "f3f272994c9397615d932d28e85986743b01dd4a3aca832ddf567e31eedce30f"
+        "content_hash": "7e7b7b7d94f3c819ff522be63455e9a06880b595a05f88ba605726295df97ada"
       },
       {
         "item_id": "env_00095-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 13200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:49:04Z",
+        "evidence_class": 2,
+        "prev_hash": "7e7b7b7d94f3c819ff522be63455e9a06880b595a05f88ba605726295df97ada",
+        "content_hash": "c70935a632b9d5ffb66fa82079dd90fbe6921748d8417a99dc47674c4ce92740"
+      },
+      {
+        "item_id": "env_00095-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "india_gate-rice-sona_masoori-1000",
+          "display_name": "India Gate Sona Masoori Rice 1kg",
+          "description": "India Gate Sona Masoori Rice 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 7800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:49:05Z",
+        "evidence_class": 2,
+        "prev_hash": "c70935a632b9d5ffb66fa82079dd90fbe6921748d8417a99dc47674c4ce92740",
+        "content_hash": "d986f6d928d608be0ae97616e3e22d438eebec2f9fcb8b8429ce10c74b5bab38"
+      },
+      {
+        "item_id": "env_00095-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 12800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:49:06Z",
+        "evidence_class": 2,
+        "prev_hash": "d986f6d928d608be0ae97616e3e22d438eebec2f9fcb8b8429ce10c74b5bab38",
+        "content_hash": "5ce9a4a8a7515c616fdf853b0044125b8736c692245ba3aa1711e560497c904f"
+      },
+      {
+        "item_id": "env_00095-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "india_gate-rice-sona_masoori-1000",
+              "quantity": 1,
+              "unit_price_paise": 7800
+            }
+          ]
+        },
+        "emitted_by": "agt_577",
+        "emitted_at": "2026-09-02T22:49:12Z",
+        "evidence_class": 1,
+        "prev_hash": "5ce9a4a8a7515c616fdf853b0044125b8736c692245ba3aa1711e560497c904f",
+        "content_hash": "146a76c877dc2e978b8f8591d08736c38fb5d0279f75121d62e4f95ac18c02f2"
+      },
+      {
+        "item_id": "env_00095-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00095",
           "lines": [
             {
-              "sku": "fortune-flour-refined-1000",
+              "sku": "india_gate-rice-sona_masoori-1000",
               "quantity": 1,
-              "unit_price_paise": 5800
+              "unit_price_paise": 7800
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:20:20Z",
+        "emitted_at": "2026-09-02T22:49:20Z",
         "evidence_class": 2,
-        "prev_hash": "f3f272994c9397615d932d28e85986743b01dd4a3aca832ddf567e31eedce30f",
-        "content_hash": "301c1fd610c3e8fb93902f7cb36cc414846dceb50168b352df737d3bca29fc52"
+        "prev_hash": "146a76c877dc2e978b8f8591d08736c38fb5d0279f75121d62e4f95ac18c02f2",
+        "content_hash": "0a0455869dcb9da8260f268023bebff320cefa8130babd488fbae187a855b743"
       },
       {
-        "item_id": "env_00095-e002",
-        "seq": 2,
+        "item_id": "env_00095-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00095",
           "lines": [
             {
-              "sku": "fortune-flour-refined-1000",
+              "sku": "india_gate-rice-sona_masoori-1000",
               "quantity": 1,
-              "unit_price_paise": 5800
+              "unit_price_paise": 7800
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:34:00Z",
+        "emitted_at": "2026-09-02T23:03:00Z",
         "evidence_class": 2,
-        "prev_hash": "301c1fd610c3e8fb93902f7cb36cc414846dceb50168b352df737d3bca29fc52",
-        "content_hash": "07589fb84db219351a4b21cab50407e9da4bd27d99f8d5513f9c8385b393069c"
+        "prev_hash": "0a0455869dcb9da8260f268023bebff320cefa8130babd488fbae187a855b743",
+        "content_hash": "9acef775f291f1d7281dfec696f76441f996100f35f443ad6e222223e6a9249c"
       },
       {
-        "item_id": "env_00095-e003",
-        "seq": 3,
+        "item_id": "env_00095-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00095",
-          "amount_paise": 5800,
+          "amount_paise": 7800,
           "currency": "INR",
           "receipt": "zep_00095"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:20:25Z",
+        "emitted_at": "2026-09-02T22:49:25Z",
         "evidence_class": 3,
-        "prev_hash": "07589fb84db219351a4b21cab50407e9da4bd27d99f8d5513f9c8385b393069c",
-        "content_hash": "71be7dd151d2beeb2c4589b7a5cf012c177696e5007021e2723f3482c023f1d9"
+        "prev_hash": "9acef775f291f1d7281dfec696f76441f996100f35f443ad6e222223e6a9249c",
+        "content_hash": "4041847286b7dcb8338427ae643bdbfd9274562f8004e1b2a2f97734b2ede313"
       },
       {
-        "item_id": "env_00095-e004",
-        "seq": 4,
+        "item_id": "env_00095-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00095",
           "order_id": "order_00095",
-          "amount_paise": 5800,
+          "amount_paise": 7800,
           "status": "captured",
           "block_id": "blk_00095",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:20:30Z",
+        "emitted_at": "2026-09-02T22:49:30Z",
         "evidence_class": 3,
-        "prev_hash": "71be7dd151d2beeb2c4589b7a5cf012c177696e5007021e2723f3482c023f1d9",
-        "content_hash": "592e1b4d94c7c34ce66f0c732789447b3487349f3a718b6fe39953e31505c50e"
+        "prev_hash": "4041847286b7dcb8338427ae643bdbfd9274562f8004e1b2a2f97734b2ede313",
+        "content_hash": "1bb09499c1dd40cfea6af2199a6d156dee3eafa5d17de7532890d6c35d2102f0"
       },
       {
-        "item_id": "env_00095-e005",
-        "seq": 5,
+        "item_id": "env_00095-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Fortune maida. Payment complete.",
-          "claimed_sku": "fortune-flour-refined-1000",
+          "text": "Ordered 1kg India Gate sona masoori rice. Payment complete.",
+          "claimed_sku": "india_gate-rice-sona_masoori-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_232",
-        "emitted_at": "2026-09-03T01:35:00Z",
+        "emitted_by": "agt_577",
+        "emitted_at": "2026-09-02T23:04:00Z",
         "evidence_class": 0,
-        "prev_hash": "592e1b4d94c7c34ce66f0c732789447b3487349f3a718b6fe39953e31505c50e",
-        "content_hash": "b489af46a1edc283b27fc37e116ce0b2804d87b36d4eabe6fec14f0da0bdff4d"
+        "prev_hash": "1bb09499c1dd40cfea6af2199a6d156dee3eafa5d17de7532890d6c35d2102f0",
+        "content_hash": "8795ed223e83e5d1a18b4ab15b05687ab4c5241702643e9ca506e5a3afa6dded"
       }
     ]
   },
@@ -160,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-refined-1000",
-    "ordered_sku": "fortune-flour-refined-1000",
-    "delivered_sku": "fortune-flour-refined-1000",
+    "requested_sku": "india_gate-rice-sona_masoori-1000",
+    "ordered_sku": "india_gate-rice-sona_masoori-1000",
+    "delivered_sku": "india_gate-rice-sona_masoori-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

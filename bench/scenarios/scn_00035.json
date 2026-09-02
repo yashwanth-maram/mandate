@@ -6,154 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00035",
-    "created_at": "2026-09-02T18:54:00Z",
-    "expires_at": "2026-09-03T00:54:00Z",
-    "user_id": "usr_3485",
-    "agent_id": "agt_252",
+    "created_at": "2026-09-02T20:58:00Z",
+    "expires_at": "2026-09-03T02:58:00Z",
+    "user_id": "usr_2801",
+    "agent_id": "agt_776",
     "block": {
       "block_id": "blk_00035",
-      "blocked_paise": 137310,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-15T18:54:00Z",
-      "expires_at": "2026-11-01T18:54:00Z"
+      "blocked_at": "2026-09-02T20:58:00Z",
+      "expires_at": "2026-10-06T20:58:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 45770,
-      "max_total_paise": 45770,
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
       "brand": "aashirvaad",
-      "variant": null,
-      "pack_size_g": 5000
+      "variant": "gram",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 5kg Aashirvaad multigrain atta, use Blinkit",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "get me 1kg Aashirvaad besan from Blinkit",
+      "uncaptured_attributes": []
     },
-    "content_hash": "1e5e272c171c90954fbe3cdf6a647a357560b552532de1afbfe52cd04854e32a",
+    "content_hash": "86a8c0b151f8895433feab102faf00a8f4f9d1bd3afeebebb7ba390f8b446d1e",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00035",
-    "obligation_hash": "1e5e272c171c90954fbe3cdf6a647a357560b552532de1afbfe52cd04854e32a",
+    "obligation_hash": "86a8c0b151f8895433feab102faf00a8f4f9d1bd3afeebebb7ba390f8b446d1e",
     "items": [
       {
         "item_id": "env_00035-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "aashirvaad-flour-multigrain-5000",
-              "quantity": 1,
-              "unit_price_paise": 39800
-            }
-          ]
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 39800
         },
-        "emitted_by": "agt_252",
-        "emitted_at": "2026-09-02T18:54:00Z",
-        "evidence_class": 1,
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:58:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "812415df1dd9cbebfdf120dde03eb929dcd8b1353b2080805a449212283e459a"
+        "content_hash": "3fcf78226b56fbf2b08299af50b9ebfc38eed1907589a7494b869aaca92ca1c5"
       },
       {
         "item_id": "env_00035-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9200
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:58:04Z",
+        "evidence_class": 2,
+        "prev_hash": "3fcf78226b56fbf2b08299af50b9ebfc38eed1907589a7494b869aaca92ca1c5",
+        "content_hash": "6281a741cfc96a9932a0911ad878de6b41bdf3c75b9c19c03bfe81812a982dcf"
+      },
+      {
+        "item_id": "env_00035-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5800
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:58:05Z",
+        "evidence_class": 2,
+        "prev_hash": "6281a741cfc96a9932a0911ad878de6b41bdf3c75b9c19c03bfe81812a982dcf",
+        "content_hash": "1c8d7fb72f0aeac7edd299e293a39de477c63fda40cbd6766d190a4d33a58e8c"
+      },
+      {
+        "item_id": "env_00035-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9600
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:58:06Z",
+        "evidence_class": 2,
+        "prev_hash": "1c8d7fb72f0aeac7edd299e293a39de477c63fda40cbd6766d190a4d33a58e8c",
+        "content_hash": "a509e955166bd1479912bb7d3321d0a5c332ba476f645bb743c3607c2d213a46"
+      },
+      {
+        "item_id": "env_00035-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "blinkit",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9600
+            }
+          ]
+        },
+        "emitted_by": "agt_776",
+        "emitted_at": "2026-09-02T20:58:12Z",
+        "evidence_class": 1,
+        "prev_hash": "a509e955166bd1479912bb7d3321d0a5c332ba476f645bb743c3607c2d213a46",
+        "content_hash": "d333df36aa8a26136d1e774bf181f980e7d81d32d716663c4506c819268fa30e"
+      },
+      {
+        "item_id": "env_00035-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00035",
           "lines": [
             {
-              "sku": "aashirvaad-flour-multigrain-5000",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 39800
+              "unit_price_paise": 9600
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:54:20Z",
+        "emitted_at": "2026-09-02T20:58:20Z",
         "evidence_class": 2,
-        "prev_hash": "812415df1dd9cbebfdf120dde03eb929dcd8b1353b2080805a449212283e459a",
-        "content_hash": "3c39d4117c923bc562c1ffbc6e7d261851d6d8400805114f85f90430234f4665"
+        "prev_hash": "d333df36aa8a26136d1e774bf181f980e7d81d32d716663c4506c819268fa30e",
+        "content_hash": "d396da4a6ecc9de7d84ce6edf91c7f0182884add8b303fa195e98bcab9b6af18"
       },
       {
-        "item_id": "env_00035-e002",
-        "seq": 2,
+        "item_id": "env_00035-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00035",
           "lines": [
             {
-              "sku": "aashirvaad-flour-multigrain-5000",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 39800
+              "unit_price_paise": 9600
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:08:00Z",
+        "emitted_at": "2026-09-02T21:12:00Z",
         "evidence_class": 2,
-        "prev_hash": "3c39d4117c923bc562c1ffbc6e7d261851d6d8400805114f85f90430234f4665",
-        "content_hash": "e5512e801a9a5375c029eb07c926711053e4106f35f4ecc01a1948ccd34f3f3b"
+        "prev_hash": "d396da4a6ecc9de7d84ce6edf91c7f0182884add8b303fa195e98bcab9b6af18",
+        "content_hash": "9a8797dd5a70d7a6503fdb9dff97cec461fe2436025366590492cd7b9aba15db"
       },
       {
-        "item_id": "env_00035-e003",
-        "seq": 3,
+        "item_id": "env_00035-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00035",
-          "amount_paise": 39800,
+          "amount_paise": 9600,
           "currency": "INR",
           "receipt": "zep_00035"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:54:25Z",
+        "emitted_at": "2026-09-02T20:58:25Z",
         "evidence_class": 3,
-        "prev_hash": "e5512e801a9a5375c029eb07c926711053e4106f35f4ecc01a1948ccd34f3f3b",
-        "content_hash": "e980a6ef04633aae1e158093a810928d9b534413f4262739d9a8fd80a653740c"
+        "prev_hash": "9a8797dd5a70d7a6503fdb9dff97cec461fe2436025366590492cd7b9aba15db",
+        "content_hash": "b339ea15357aa77dae5365d5d12ccec39e71680efc4840e6c21294f53c0545e5"
       },
       {
-        "item_id": "env_00035-e004",
-        "seq": 4,
+        "item_id": "env_00035-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00035",
           "order_id": "order_00035",
-          "amount_paise": 39800,
+          "amount_paise": 9600,
           "status": "captured",
           "block_id": "blk_00035",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:54:30Z",
+        "emitted_at": "2026-09-02T20:58:30Z",
         "evidence_class": 3,
-        "prev_hash": "e980a6ef04633aae1e158093a810928d9b534413f4262739d9a8fd80a653740c",
-        "content_hash": "abbbc18b27509732fc0582ffe01356e7d767b3d22e2bd0312b819ae8a77308e0"
+        "prev_hash": "b339ea15357aa77dae5365d5d12ccec39e71680efc4840e6c21294f53c0545e5",
+        "content_hash": "878605bef9d844040ab473938026579f2deb30c4962f37caab394069c614b2b0"
       },
       {
-        "item_id": "env_00035-e005",
-        "seq": 5,
+        "item_id": "env_00035-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Aashirvaad multigrain atta. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-multigrain-5000",
+          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_252",
-        "emitted_at": "2026-09-02T19:09:00Z",
+        "emitted_by": "agt_776",
+        "emitted_at": "2026-09-02T21:13:00Z",
         "evidence_class": 0,
-        "prev_hash": "abbbc18b27509732fc0582ffe01356e7d767b3d22e2bd0312b819ae8a77308e0",
-        "content_hash": "7e7fe1cbe128f6ca236f9377094c0b91a42a3492f4dcb30a5d670d6c185fedef"
+        "prev_hash": "878605bef9d844040ab473938026579f2deb30c4962f37caab394069c614b2b0",
+        "content_hash": "ec2da36e22d0e9855f33d08f3c6fb21bc58657471987a5d438f5cadd216ed61e"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-multigrain-5000",
-    "ordered_sku": "aashirvaad-flour-multigrain-5000",
-    "delivered_sku": "aashirvaad-flour-multigrain-5000",
+    "requested_sku": "aashirvaad-flour-gram-1000",
+    "ordered_sku": "aashirvaad-flour-gram-1000",
+    "delivered_sku": "aashirvaad-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

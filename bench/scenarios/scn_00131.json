@@ -6,21 +6,21 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00131",
-    "created_at": "2026-09-03T01:27:00Z",
-    "expires_at": "2026-09-03T07:27:00Z",
-    "user_id": "usr_7553",
-    "agent_id": "agt_861",
+    "created_at": "2026-09-02T18:36:00Z",
+    "expires_at": "2026-09-03T00:36:00Z",
+    "user_id": "usr_7870",
+    "agent_id": "agt_329",
     "block": {
       "block_id": "blk_00131",
-      "blocked_paise": 52440,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-20T01:27:00Z",
-      "expires_at": "2026-10-31T01:27:00Z"
+      "blocked_at": "2026-08-23T18:36:00Z",
+      "expires_at": "2026-10-09T18:36:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 17480,
-      "max_total_paise": 17480,
+      "category": "flour",
+      "max_unit_price_paise": 10580,
+      "max_total_paise": 10580,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
@@ -30,130 +30,198 @@
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Fortune refined sunflower oil from Zepto, keep it under 174 rupees",
+      "text": "buy 1kg Fortune besan from Zepto, keep it under 105 rupees",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "a8370894cc71c9d1ff294a4e6ef1eb6f4021e9869ee42490cd855883801a8bee",
+    "content_hash": "92bee26bf0e5244436ffa7c9900f12a9695b53d9b7fb04d2ace04105f2463a36",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00131",
-    "obligation_hash": "a8370894cc71c9d1ff294a4e6ef1eb6f4021e9869ee42490cd855883801a8bee",
+    "obligation_hash": "92bee26bf0e5244436ffa7c9900f12a9695b53d9b7fb04d2ace04105f2463a36",
     "items": [
       {
         "item_id": "env_00131-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "fortune-edible_oil-sunflower_refined-1000",
-              "quantity": 1,
-              "unit_price_paise": 15200
-            }
-          ]
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "agt_861",
-        "emitted_at": "2026-09-03T01:27:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:36:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "e7c3e411d6749dc43c6778bea42aa1eb8a63e03df16683aded848699fb496049"
+        "content_hash": "79f97e626f21a7fdc3d41a753558180389f49f184cca17e128f338f25fc819c1"
       },
       {
         "item_id": "env_00131-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "pillsbury-flour-whole_wheat-5000",
+          "display_name": "Pillsbury Chakki Fresh Atta 5kg",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 34900
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:36:04Z",
+        "evidence_class": 2,
+        "prev_hash": "79f97e626f21a7fdc3d41a753558180389f49f184cca17e128f338f25fc819c1",
+        "content_hash": "8a9104316de3b09bbb1f0027158cb80bb304bb332e0d26eaa587542d97ff5cc3"
+      },
+      {
+        "item_id": "env_00131-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:36:05Z",
+        "evidence_class": 2,
+        "prev_hash": "8a9104316de3b09bbb1f0027158cb80bb304bb332e0d26eaa587542d97ff5cc3",
+        "content_hash": "a6592c02281021a21e4cd53da14a540e73b1a332425567fc81369d42d50315c0"
+      },
+      {
+        "item_id": "env_00131-e003",
+        "seq": 3,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 9200
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:36:06Z",
+        "evidence_class": 2,
+        "prev_hash": "a6592c02281021a21e4cd53da14a540e73b1a332425567fc81369d42d50315c0",
+        "content_hash": "52819237081ad69c5abc7a0d03e58f07d00208b29f5d6877eaed073726247cdf"
+      },
+      {
+        "item_id": "env_00131-e004",
+        "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
+        },
+        "emitted_by": "agt_329",
+        "emitted_at": "2026-09-02T18:36:12Z",
+        "evidence_class": 1,
+        "prev_hash": "52819237081ad69c5abc7a0d03e58f07d00208b29f5d6877eaed073726247cdf",
+        "content_hash": "63a29cb6be90421b52d901e49217703c4b24fd28b20632b8b9b7b5ea325eb35b"
+      },
+      {
+        "item_id": "env_00131-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00131",
           "lines": [
             {
-              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "sku": "fortune-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 15200
+              "unit_price_paise": 9200
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:27:20Z",
+        "emitted_at": "2026-09-02T18:36:20Z",
         "evidence_class": 2,
-        "prev_hash": "e7c3e411d6749dc43c6778bea42aa1eb8a63e03df16683aded848699fb496049",
-        "content_hash": "205f52bac404d7e00ce5ae794e393f8193d3666c7a64ab0c9c7f72240d8f9b61"
+        "prev_hash": "63a29cb6be90421b52d901e49217703c4b24fd28b20632b8b9b7b5ea325eb35b",
+        "content_hash": "37e0f49d62e2f7ee3d890b28d99298daa93723c58baa5e7bfcf11bce98b138f2"
       },
       {
-        "item_id": "env_00131-e002",
-        "seq": 2,
+        "item_id": "env_00131-e006",
+        "seq": 6,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00131",
           "lines": [
             {
-              "sku": "fortune-edible_oil-sunflower_refined-1000",
+              "sku": "fortune-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 15200
+              "unit_price_paise": 9200
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:41:00Z",
+        "emitted_at": "2026-09-02T18:50:00Z",
         "evidence_class": 2,
-        "prev_hash": "205f52bac404d7e00ce5ae794e393f8193d3666c7a64ab0c9c7f72240d8f9b61",
-        "content_hash": "ac2f15307ec836ba27d98dc4aa0a0c5669706012d1be822f71a9ac92f754eab0"
+        "prev_hash": "37e0f49d62e2f7ee3d890b28d99298daa93723c58baa5e7bfcf11bce98b138f2",
+        "content_hash": "bc8de423035e338bbf6bc7e12f24366c0e1a9b89aea22b6c06a4bc43495457d7"
       },
       {
-        "item_id": "env_00131-e003",
-        "seq": 3,
+        "item_id": "env_00131-e007",
+        "seq": 7,
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00131",
-          "amount_paise": 15200,
+          "amount_paise": 9200,
           "currency": "INR",
           "receipt": "zep_00131"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:27:25Z",
+        "emitted_at": "2026-09-02T18:36:25Z",
         "evidence_class": 3,
-        "prev_hash": "ac2f15307ec836ba27d98dc4aa0a0c5669706012d1be822f71a9ac92f754eab0",
-        "content_hash": "5155183685e45bd99aa6c8728d370bcc07011861c6c8be63607ac1d38946480f"
+        "prev_hash": "bc8de423035e338bbf6bc7e12f24366c0e1a9b89aea22b6c06a4bc43495457d7",
+        "content_hash": "c2f80caf564cbbf5bae4d226f741b4ae727ce7b6c593130c7e9cea7455f8ce31"
       },
       {
-        "item_id": "env_00131-e004",
-        "seq": 4,
+        "item_id": "env_00131-e008",
+        "seq": 8,
         "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00131",
           "order_id": "order_00131",
-          "amount_paise": 15200,
+          "amount_paise": 9200,
           "status": "captured",
           "block_id": "blk_00131",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:27:30Z",
+        "emitted_at": "2026-09-02T18:36:30Z",
         "evidence_class": 3,
-        "prev_hash": "5155183685e45bd99aa6c8728d370bcc07011861c6c8be63607ac1d38946480f",
-        "content_hash": "92c21f252230ab1ebb31f57072c1133404832133b0daf2fcea61f2b6c5990d0f"
+        "prev_hash": "c2f80caf564cbbf5bae4d226f741b4ae727ce7b6c593130c7e9cea7455f8ce31",
+        "content_hash": "2255ffd98f2d8a562bb82b8e364a9871800047117f5fe1c6c269803549aa02a2"
       },
       {
-        "item_id": "env_00131-e005",
-        "seq": 5,
+        "item_id": "env_00131-e009",
+        "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune refined sunflower oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-sunflower_refined-1000",
+          "text": "Ordered 1kg Fortune besan. Payment complete.",
+          "claimed_sku": "fortune-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_861",
-        "emitted_at": "2026-09-03T01:42:00Z",
+        "emitted_by": "agt_329",
+        "emitted_at": "2026-09-02T18:51:00Z",
         "evidence_class": 0,
-        "prev_hash": "92c21f252230ab1ebb31f57072c1133404832133b0daf2fcea61f2b6c5990d0f",
-        "content_hash": "72feee9ffa8fc25fcf93c84b37e2e5b0e1775a29685502be86ad489c566b4e22"
+        "prev_hash": "2255ffd98f2d8a562bb82b8e364a9871800047117f5fe1c6c269803549aa02a2",
+        "content_hash": "013f198c7c119c15b931d3750e249f810a94e0a8c42eccca51c5a091723c33da"
       }
     ]
   },
@@ -162,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-sunflower_refined-1000",
-    "ordered_sku": "fortune-edible_oil-sunflower_refined-1000",
-    "delivered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "requested_sku": "fortune-flour-gram-1000",
+    "ordered_sku": "fortune-flour-gram-1000",
+    "delivered_sku": "fortune-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

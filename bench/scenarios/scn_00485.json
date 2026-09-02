@@ -6,154 +6,220 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00485",
-    "created_at": "2026-09-03T02:21:00Z",
-    "expires_at": "2026-09-03T08:21:00Z",
-    "user_id": "usr_9615",
-    "agent_id": "agt_738",
+    "created_at": "2026-09-02T19:23:00Z",
+    "expires_at": "2026-09-03T01:23:00Z",
+    "user_id": "usr_5887",
+    "agent_id": "agt_994",
     "block": {
       "block_id": "blk_00485",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-16T02:21:00Z",
-      "expires_at": "2026-10-11T02:21:00Z"
+      "blocked_at": "2026-08-19T19:23:00Z",
+      "expires_at": "2026-10-29T19:23:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 7129,
-      "max_total_paise": 7129,
+      "category": "flour",
+      "max_unit_price_paise": 10580,
+      "max_total_paise": 10580,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "britannia",
-      "variant": null,
-      "pack_size_g": 400
+      "brand": "fortune",
+      "variant": "gram",
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 400g Britannia multigrain bread from Blinkit",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "buy 1kg Fortune besan from Zepto, keep it under 105 rupees",
+      "uncaptured_attributes": []
     },
-    "content_hash": "ebb02c53ee604ac4109d8be417161f0558d958b158e16a6d4f106e51a1ab96b2",
+    "content_hash": "15356e34ebae53c5192ae5fdc939e2ac62069c8e212410308053f9d471239209",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00485",
-    "obligation_hash": "ebb02c53ee604ac4109d8be417161f0558d958b158e16a6d4f106e51a1ab96b2",
+    "obligation_hash": "15356e34ebae53c5192ae5fdc939e2ac62069c8e212410308053f9d471239209",
     "items": [
       {
         "item_id": "env_00485-e000",
         "seq": 0,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
-          "lines": [
-            {
-              "sku": "britannia-bread-multigrain-400",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 34000
         },
-        "emitted_by": "agt_738",
-        "emitted_at": "2026-09-03T02:21:00Z",
-        "evidence_class": 1,
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:23:03Z",
+        "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "6dbaab12b070c159962cb28db1c0b7c999498b7dc36898419ea030cb5d9afd61"
+        "content_hash": "db377e74b5b72d094c82a58b6e6a4b66a9307f59e36349ff438a177d783ea38f"
       },
       {
         "item_id": "env_00485-e001",
         "seq": 1,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
-          "merchant_order_id": "zep_00485",
-          "lines": [
-            {
-              "sku": "britannia-bread-multigrain-400",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:21:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:23:04Z",
         "evidence_class": 2,
-        "prev_hash": "6dbaab12b070c159962cb28db1c0b7c999498b7dc36898419ea030cb5d9afd61",
-        "content_hash": "2ca9eb4c459b0d5b3627f22567cac8ac0ad27d6abf4936f1bd1c96033e1db7bc"
+        "prev_hash": "db377e74b5b72d094c82a58b6e6a4b66a9307f59e36349ff438a177d783ea38f",
+        "content_hash": "3e3a010db84967a6467bd54f60ef1ecd7add72fd1193bb350016c3cb7222d050"
       },
       {
         "item_id": "env_00485-e002",
         "seq": 2,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00485",
-          "lines": [
-            {
-              "sku": "britannia-bread-multigrain-400",
-              "quantity": 1,
-              "unit_price_paise": 6200
-            }
-          ],
-          "delivered": true
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-gram-1000",
+          "display_name": "Fortune Besan 1kg",
+          "description": "Fortune Besan 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:35:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:23:05Z",
         "evidence_class": 2,
-        "prev_hash": "2ca9eb4c459b0d5b3627f22567cac8ac0ad27d6abf4936f1bd1c96033e1db7bc",
-        "content_hash": "daab0f8b2727474276fdbf36b97ab3b3ad5b362a813704ffe25b8a29d9b9d708"
+        "prev_hash": "3e3a010db84967a6467bd54f60ef1ecd7add72fd1193bb350016c3cb7222d050",
+        "content_hash": "01d1c82ccecf3f0c31a962bdd9d71e85bc1f650629409adc57697c8ea01b4bac"
       },
       {
         "item_id": "env_00485-e003",
         "seq": 3,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00485",
-          "amount_paise": 6200,
-          "currency": "INR",
-          "receipt": "zep_00485"
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:21:25Z",
-        "evidence_class": 3,
-        "prev_hash": "daab0f8b2727474276fdbf36b97ab3b3ad5b362a813704ffe25b8a29d9b9d708",
-        "content_hash": "7e04f582c738852db710d5ed513a4d5ff66191efe29c5794106ae60f92e267dd"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:23:06Z",
+        "evidence_class": 2,
+        "prev_hash": "01d1c82ccecf3f0c31a962bdd9d71e85bc1f650629409adc57697c8ea01b4bac",
+        "content_hash": "d079e011e877a99be9ef4096280af40634f65432cdb67e0f291425c292871963"
       },
       {
         "item_id": "env_00485-e004",
         "seq": 4,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00485",
-          "order_id": "order_00485",
-          "amount_paise": 6200,
-          "status": "captured",
-          "block_id": "blk_00485",
-          "method": "upi_reserve_pay"
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:21:30Z",
-        "evidence_class": 3,
-        "prev_hash": "7e04f582c738852db710d5ed513a4d5ff66191efe29c5794106ae60f92e267dd",
-        "content_hash": "923450bc11f407403b01e5c8c8f8367d11d7b48076498c1799ae9c5f4079b8c2"
+        "emitted_by": "agt_994",
+        "emitted_at": "2026-09-02T19:23:12Z",
+        "evidence_class": 1,
+        "prev_hash": "d079e011e877a99be9ef4096280af40634f65432cdb67e0f291425c292871963",
+        "content_hash": "a91dbb76230fc84036fb47064f78f59aadfb034168421055cf11cfa7bede9754"
       },
       {
         "item_id": "env_00485-e005",
         "seq": 5,
         "payload": {
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "zepto",
+          "merchant_order_id": "zep_00485",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ]
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:23:20Z",
+        "evidence_class": 2,
+        "prev_hash": "a91dbb76230fc84036fb47064f78f59aadfb034168421055cf11cfa7bede9754",
+        "content_hash": "f1e6e73071d922ca53759f29a05044a94744f56bd6ed71d96f8322216fb08f20"
+      },
+      {
+        "item_id": "env_00485-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00485",
+          "lines": [
+            {
+              "sku": "fortune-flour-gram-1000",
+              "quantity": 1,
+              "unit_price_paise": 9200
+            }
+          ],
+          "delivered": true
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:37:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f1e6e73071d922ca53759f29a05044a94744f56bd6ed71d96f8322216fb08f20",
+        "content_hash": "a9f67361b4e355526c315fe2dbf8bb6297856f09e3fc7cbbc8bbac4be96cb1bf"
+      },
+      {
+        "item_id": "env_00485-e007",
+        "seq": 7,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00485",
+          "amount_paise": 9200,
+          "currency": "INR",
+          "receipt": "zep_00485"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:23:25Z",
+        "evidence_class": 3,
+        "prev_hash": "a9f67361b4e355526c315fe2dbf8bb6297856f09e3fc7cbbc8bbac4be96cb1bf",
+        "content_hash": "e47dc64c7417c73b2863194952f8fb2840781f5b3beda42ad118df0aa5aee3a7"
+      },
+      {
+        "item_id": "env_00485-e008",
+        "seq": 8,
+        "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00485",
+          "order_id": "order_00485",
+          "amount_paise": 9200,
+          "status": "captured",
+          "block_id": "blk_00485",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T19:23:30Z",
+        "evidence_class": 3,
+        "prev_hash": "e47dc64c7417c73b2863194952f8fb2840781f5b3beda42ad118df0aa5aee3a7",
+        "content_hash": "f348288653df895922772f58948f930176a817862c2d3eda490d352bc02adf91"
+      },
+      {
+        "item_id": "env_00485-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia multigrain bread. Payment complete.",
-          "claimed_sku": "britannia-bread-multigrain-400",
+          "text": "Ordered 1kg Fortune besan. Payment complete.",
+          "claimed_sku": "fortune-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_738",
-        "emitted_at": "2026-09-03T02:36:00Z",
+        "emitted_by": "agt_994",
+        "emitted_at": "2026-09-02T19:38:00Z",
         "evidence_class": 0,
-        "prev_hash": "923450bc11f407403b01e5c8c8f8367d11d7b48076498c1799ae9c5f4079b8c2",
-        "content_hash": "8bfc89bd0d537c1bc48e649bb3348375ac2f46396cd65de43dffd7a217da5a74"
+        "prev_hash": "f348288653df895922772f58948f930176a817862c2d3eda490d352bc02adf91",
+        "content_hash": "06cb20d8da0ef9141b9f2e3740575b13a2f55b36cece84f82dacc6832b6941ce"
       }
     ]
   },
@@ -162,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-multigrain-400",
-    "ordered_sku": "britannia-bread-multigrain-400",
-    "delivered_sku": "britannia-bread-multigrain-400",
+    "requested_sku": "fortune-flour-gram-1000",
+    "ordered_sku": "fortune-flour-gram-1000",
+    "delivered_sku": "fortune-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
