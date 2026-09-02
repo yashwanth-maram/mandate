@@ -32,7 +32,6 @@ from bench.scenario import VerifierInput
 from bench.taxonomy import FaultClass
 from schemas.evidence import (
     EvidenceKind,
-    MerchantFulfilment,
     MerchantOrder,
     PspOrder,
     PspPayment,
@@ -120,61 +119,10 @@ class ReceiptVerifier(Verifier):
                     loss_paise=abs(psp_order.amount_paise - order.total_paise),
                 )
 
-        # -- fulfilment -----------------------------------------------------
-
-        fulfilment_item = env.first_of_kind(EvidenceKind.MERCHANT_FULFILMENT)
-        if fulfilment_item is None:
-            return self._abstain(
-                "debit reconciles, but no fulfilment record - cannot say whether "
-                "what was ordered is what arrived"
-            )
-        fulfilment: MerchantFulfilment = fulfilment_item.payload  # type: ignore[assignment]
-
-        if not fulfilment.delivered:
-            return self._fail(
-                f"merchant order {order.merchant_order_id} was charged but the "
-                f"fulfilment record shows it was not delivered",
-                FaultClass.MERCHANT_SUBSTITUTION,
-                [fulfilment_item.item_id, order_item.item_id],
-                loss_paise=order.total_paise,
-            )
-
-        ordered = {line.sku: line.quantity for line in order.lines}
-        shipped = {line.sku: line.quantity for line in fulfilment.lines}
-
-        if ordered != shipped:
-            missing = sorted(set(ordered) - set(shipped))
-            extra = sorted(set(shipped) - set(ordered))
-            if missing and extra:
-                detail = f"ordered {missing[0]}, shipped {extra[0]}"
-            elif extra:
-                detail = f"shipped {extra[0]}, which was not ordered"
-            elif missing:
-                detail = f"ordered {missing[0]}, which was not shipped"
-            else:
-                changed = [
-                    f"{sku} ordered {ordered[sku]}, shipped {shipped[sku]}"
-                    for sku in ordered
-                    if ordered[sku] != shipped[sku]
-                ]
-                detail = "; ".join(changed)
-
-            return self._fail(
-                f"merchant order and fulfilment disagree: {detail}. The agent's "
-                f"order was placed correctly, so this is a substitution rather "
-                f"than an agent error",
-                FaultClass.MERCHANT_SUBSTITUTION,
-                [order_item.item_id, fulfilment_item.item_id],
-                loss_paise=order.total_paise,
-            )
-
-        basis = (
-            [order_item.item_id, fulfilment_item.item_id]
-            + [item.item_id for item in payment_items]
-        )
+        basis = [order_item.item_id] + [item.item_id for item in payment_items]
         return self._pass(
             f"debit of {format_paise(captured)} reconciles against the merchant "
-            f"order, and fulfilment matches what was ordered",
+            f"order",
             basis,
         )
 
@@ -217,6 +165,6 @@ if __name__ == "__main__":
     print("-" * 45)
     print(f"abstentions: {abstained}")
     print()
-    print("Expected: DEBIT_MISMATCH and MERCHANT_SUBSTITUTION caught and agreed,")
+    print("Expected: DEBIT_MISMATCH caught and agreed,")
     print("everything else silent. Any FAIL on NO_FAULT is a false positive and")
     print("costs a merchant a real sale.")

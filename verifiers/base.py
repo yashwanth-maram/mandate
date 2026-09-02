@@ -47,11 +47,12 @@ from bench.taxonomy import FaultClass
 class VerifierRole(str, Enum):
     """What kind of question this verifier answers."""
 
-    CONSTRAINT = "constraint"   # hard constraints the obligation captured
-    RECEIPT = "receipt"         # does the money reconcile against the record
-    POLICY = "policy"           # NPCI and RBI rules, versioned
-    PROVENANCE = "provenance"   # was the agent steered by untrusted content
-    SEMANTIC = "semantic"       # did the action match what the user meant
+    CONSTRAINT = "constraint"     # hard constraints the obligation captured
+    RECEIPT = "receipt"           # does the money reconcile
+    FULFILMENT = "fulfilment"     # did the shelf match the order
+    POLICY = "policy"             # NPCI and RBI rules, versioned
+    PROVENANCE = "provenance"     # was the agent steered by untrusted content
+    SEMANTIC = "semantic"         # did the action match what the user meant
 
 
 class Verdict(str, Enum):
