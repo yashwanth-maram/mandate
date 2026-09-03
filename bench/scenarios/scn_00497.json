@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00497",
-    "created_at": "2026-09-02T20:58:00Z",
-    "expires_at": "2026-09-03T02:58:00Z",
-    "user_id": "usr_3406",
-    "agent_id": "agt_992",
+    "created_at": "2026-09-02T19:15:00Z",
+    "expires_at": "2026-09-03T01:15:00Z",
+    "user_id": "usr_8445",
+    "agent_id": "agt_204",
     "block": {
       "block_id": "blk_00497",
-      "blocked_paise": 50000,
+      "blocked_paise": 128340,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-14T20:58:00Z",
-      "expires_at": "2026-10-22T20:58:00Z"
+      "blocked_at": "2026-08-28T19:15:00Z",
+      "expires_at": "2026-10-07T19:15:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "rice",
+      "max_unit_price_paise": 42780,
+      "max_total_paise": 42780,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "tata",
-      "variant": "rock",
-      "pack_size_g": 1000
+      "brand": "daawat",
+      "variant": null,
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "get me 1kg Tata rock salt from Zepto",
-      "uncaptured_attributes": []
+      "text": "order 5kg Daawat sona masoori rice on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "38d084022291dba6a3cb4257f302e745221ef875965c9de820350ebe0d662be7",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "a60c2b863fd79746fc871171113eaf3fa84fe72d9b9244c8e2474d232aa7131e",
+    "signature": "TjGgPgUePIyxXiapdrIz3Ux6BQjjwmNd33RyCHXsy0LopA0qLylVdBOomohURE7qdddiiUHmWsNuu94n3nmtCw==",
+    "signer_key_id": "usr_8445:8d956c3655206c0f"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00497",
-    "obligation_hash": "38d084022291dba6a3cb4257f302e745221ef875965c9de820350ebe0d662be7",
+    "obligation_hash": "a60c2b863fd79746fc871171113eaf3fa84fe72d9b9244c8e2474d232aa7131e",
     "items": [
       {
         "item_id": "env_00497-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-low_sodium-1000",
-          "display_name": "Tata Salt Lite Low Sodium 1kg",
-          "description": "Tata Salt Lite Low Sodium 1kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 4500
+          "merchant_id": "blinkit",
+          "sku": "daawat-rice-basmati-1000",
+          "display_name": "Daawat Rozana Basmati Rice 1kg",
+          "description": "Daawat Rozana Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 12800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:58:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:15:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "d17ea0f346e8e4c27a1fa589ae637be719ce0d243fd43064c815f2b074a0c7e4"
+        "content_hash": "23f224540c05075680c83a61f89a823d63c3c1e60fb22256c6635934200dba42"
       },
       {
         "item_id": "env_00497-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "aashirvaad-salt-iodised-1000",
-          "display_name": "Aashirvaad Iodised Salt 1kg",
-          "description": "Aashirvaad Iodised Salt 1kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 3000
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-5000",
+          "display_name": "India Gate Classic Basmati Rice 5kg",
+          "description": "India Gate Classic Basmati Rice 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 64000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:58:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:15:04Z",
         "evidence_class": 2,
-        "prev_hash": "d17ea0f346e8e4c27a1fa589ae637be719ce0d243fd43064c815f2b074a0c7e4",
-        "content_hash": "b10b79242fdc560d5e0de87792de2572e6e58425a6ec21eb60ecb1db89c4e211"
+        "prev_hash": "23f224540c05075680c83a61f89a823d63c3c1e60fb22256c6635934200dba42",
+        "content_hash": "d3241c8728a68855dd8d38fbd3869a1105535c56c617353a879bc2a5a692c197"
       },
       {
         "item_id": "env_00497-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-iodised-1000",
-          "display_name": "Tata Salt Iodised 1kg",
-          "description": "Tata Salt Iodised 1kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 2800
+          "merchant_id": "blinkit",
+          "sku": "daawat-rice-sona_masoori-5000",
+          "display_name": "Daawat Sona Masoori Rice 5kg",
+          "description": "Daawat Sona Masoori Rice 5kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 37200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:58:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:15:05Z",
         "evidence_class": 2,
-        "prev_hash": "b10b79242fdc560d5e0de87792de2572e6e58425a6ec21eb60ecb1db89c4e211",
-        "content_hash": "f68277fdedd0fa7fcda0344d01e0a0774aed3b7679487f2fa22fdd57c4685ded"
+        "prev_hash": "d3241c8728a68855dd8d38fbd3869a1105535c56c617353a879bc2a5a692c197",
+        "content_hash": "7f73aad528fd61890fa915f9c2af943ad2a4e780ea48717fefc5e51c17df22d7"
       },
       {
         "item_id": "env_00497-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-rock-1000",
-          "display_name": "Tata Sampann Rock Salt 1kg",
-          "description": "Tata Sampann Rock Salt 1kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 5200
+          "merchant_id": "blinkit",
+          "sku": "india_gate-rice-basmati-1000",
+          "display_name": "India Gate Classic Basmati Rice 1kg",
+          "description": "India Gate Classic Basmati Rice 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 13200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:58:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:15:06Z",
         "evidence_class": 2,
-        "prev_hash": "f68277fdedd0fa7fcda0344d01e0a0774aed3b7679487f2fa22fdd57c4685ded",
-        "content_hash": "6bfc24d2698280da819f3a3a6cf9d2d190b7b20e4998089862f18f4ba5cc5d56"
+        "prev_hash": "7f73aad528fd61890fa915f9c2af943ad2a4e780ea48717fefc5e51c17df22d7",
+        "content_hash": "76e567432e89b53d8c82e336f72e3513397a7a2cc542ebf5ccf1cce2aa2fe0d7"
       },
       {
         "item_id": "env_00497-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "tata-salt-rock-1000",
+              "sku": "daawat-rice-sona_masoori-5000",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 37200
             }
           ]
         },
-        "emitted_by": "agt_992",
-        "emitted_at": "2026-09-02T20:58:12Z",
+        "emitted_by": "agt_204",
+        "emitted_at": "2026-09-02T19:15:12Z",
         "evidence_class": 1,
-        "prev_hash": "6bfc24d2698280da819f3a3a6cf9d2d190b7b20e4998089862f18f4ba5cc5d56",
-        "content_hash": "9e0628adc9d883fe6d097754afeb25639aad33dde828cc546a5ce1e52c0afe94"
+        "prev_hash": "76e567432e89b53d8c82e336f72e3513397a7a2cc542ebf5ccf1cce2aa2fe0d7",
+        "content_hash": "b290da61c3cbc9a4fdb1e020b86671d6ea97146df6db4b6633c079647e9d5d26"
       },
       {
         "item_id": "env_00497-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00497",
           "lines": [
             {
-              "sku": "tata-salt-rock-1000",
+              "sku": "daawat-rice-sona_masoori-5000",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 37200
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:58:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:15:20Z",
         "evidence_class": 2,
-        "prev_hash": "9e0628adc9d883fe6d097754afeb25639aad33dde828cc546a5ce1e52c0afe94",
-        "content_hash": "88ed0e818cbb75cf2316e90f71b5e8a80b54f88e6f39da7b08cc463f74bd0a06"
+        "prev_hash": "b290da61c3cbc9a4fdb1e020b86671d6ea97146df6db4b6633c079647e9d5d26",
+        "content_hash": "35d6216267d513980db609164df0bcde8cd2f2a690e8c8dbc25d5b2dfab15633"
       },
       {
         "item_id": "env_00497-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00497",
           "lines": [
             {
-              "sku": "tata-salt-rock-1000",
+              "sku": "daawat-rice-sona_masoori-5000",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 37200
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T21:12:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:29:00Z",
         "evidence_class": 2,
-        "prev_hash": "88ed0e818cbb75cf2316e90f71b5e8a80b54f88e6f39da7b08cc463f74bd0a06",
-        "content_hash": "c53e1cd723e461b0a2f2c17afe1457ec0f1a616e326e5761226df2ac7001d854"
+        "prev_hash": "35d6216267d513980db609164df0bcde8cd2f2a690e8c8dbc25d5b2dfab15633",
+        "content_hash": "93b1392e63f22495cc739e06c1439cb69f3ef73a505c2553c0e017ee38330669"
       },
       {
         "item_id": "env_00497-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00497",
-          "amount_paise": 5200,
+          "amount_paise": 37200,
           "currency": "INR",
           "receipt": "zep_00497"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:58:25Z",
+        "emitted_at": "2026-09-02T19:15:25Z",
         "evidence_class": 3,
-        "prev_hash": "c53e1cd723e461b0a2f2c17afe1457ec0f1a616e326e5761226df2ac7001d854",
-        "content_hash": "eb446e2239c4cb2dd4dcc769d47924fd2e5b2e9a8d21f694cfef095a97712897"
+        "prev_hash": "93b1392e63f22495cc739e06c1439cb69f3ef73a505c2553c0e017ee38330669",
+        "content_hash": "f7cba9be4e359687d95297842cd21aea82c7507b540c6b9739bb56935303d0eb"
       },
       {
         "item_id": "env_00497-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00497",
           "order_id": "order_00497",
-          "amount_paise": 5200,
+          "amount_paise": 37200,
           "status": "captured",
           "block_id": "blk_00497",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:58:30Z",
+        "emitted_at": "2026-09-02T19:15:30Z",
         "evidence_class": 3,
-        "prev_hash": "eb446e2239c4cb2dd4dcc769d47924fd2e5b2e9a8d21f694cfef095a97712897",
-        "content_hash": "008fe4aba33c9a1a71beb44470555be158b6e958bf8703e509522413356570fb"
+        "prev_hash": "f7cba9be4e359687d95297842cd21aea82c7507b540c6b9739bb56935303d0eb",
+        "content_hash": "06a0d2110843f2c8778f6b09beed689b89f9a654e1cc8f0e7e9db8872b3ec929"
       },
       {
         "item_id": "env_00497-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Tata rock salt. Payment complete.",
-          "claimed_sku": "tata-salt-rock-1000",
+          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
+          "claimed_sku": "daawat-rice-sona_masoori-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_992",
-        "emitted_at": "2026-09-02T21:13:00Z",
+        "emitted_by": "agt_204",
+        "emitted_at": "2026-09-02T19:30:00Z",
         "evidence_class": 0,
-        "prev_hash": "008fe4aba33c9a1a71beb44470555be158b6e958bf8703e509522413356570fb",
-        "content_hash": "3614e29853f84d256e9ae76431ba9f6ec2a8f90d54e020a9f4d3580a76c3ecbe"
+        "prev_hash": "06a0d2110843f2c8778f6b09beed689b89f9a654e1cc8f0e7e9db8872b3ec929",
+        "content_hash": "9d8238bb7095e853e3637f7387b5ea6faab4153cca3b166825c8e85ae21ac80a"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "tata-salt-rock-1000",
-    "ordered_sku": "tata-salt-rock-1000",
-    "delivered_sku": "tata-salt-rock-1000",
+    "requested_sku": "daawat-rice-sona_masoori-5000",
+    "ordered_sku": "daawat-rice-sona_masoori-5000",
+    "delivered_sku": "daawat-rice-sona_masoori-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

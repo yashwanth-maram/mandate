@@ -209,6 +209,13 @@ def main() -> None:
     args = ap.parse_args()
 
     dataset = load_dir(args.scenarios)
+    
+    keyring_path = args.scenarios / "_keyring.json"
+    keyring = (
+        json.loads(keyring_path.read_text(encoding="utf-8"))
+        if keyring_path.exists()
+        else {}
+    )
     scenarios = (
         dataset.scenarios if args.split == "all" else dataset.split(args.split)
     )
@@ -218,7 +225,7 @@ def main() -> None:
     if not scenarios:
         raise SystemExit(f"no scenarios in split '{args.split}'")
 
-    adj = Adjudicator(semantic=build_semantic(args))
+    adj = Adjudicator(semantic=build_semantic(args), keyring=keyring)
 
     mode_label = "live" if args.live else "stub"
     if args.self_report:

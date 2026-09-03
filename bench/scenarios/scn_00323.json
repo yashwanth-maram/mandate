@@ -6,41 +6,43 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00323",
-    "created_at": "2026-09-03T01:07:00Z",
-    "expires_at": "2026-09-03T07:07:00Z",
-    "user_id": "usr_8755",
-    "agent_id": "agt_219",
+    "created_at": "2026-09-02T22:03:00Z",
+    "expires_at": "2026-09-03T04:03:00Z",
+    "user_id": "usr_3652",
+    "agent_id": "agt_290",
     "block": {
       "block_id": "blk_00323",
-      "blocked_paise": 50000,
+      "blocked_paise": 122475,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T01:07:00Z",
-      "expires_at": "2026-10-22T01:07:00Z"
+      "blocked_at": "2026-08-25T22:03:00Z",
+      "expires_at": "2026-10-12T22:03:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5750,
-      "max_total_paise": 5750,
+      "category": "flour",
+      "max_unit_price_paise": 40825,
+      "max_total_paise": 40825,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "harvest",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "aashirvaad",
+      "variant": null,
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "I need 400g Harvest brown bread, use Zepto",
-      "uncaptured_attributes": []
+      "text": "buy 5kg Aashirvaad atta from Zepto, keep it under 408 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "266d02911cb1557fde5e623b79b45c87e0bbe0421c3c93065ae3a0d9a3db1593",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "9c19c52740908558f9728aab0e829fcc5721a92f1bf88ac1e2f18b288f7a95b5",
+    "signature": "RPeYMH5yGjarqNr4eFgVKeXckLsoelVDt024hLT8i7D+bWzm5tYQT4+6xHiim1vrKGDqjhjLIgg45Hh25fQ+Dg==",
+    "signer_key_id": "usr_3652:e46e9780ae01fd1a"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00323",
-    "obligation_hash": "266d02911cb1557fde5e623b79b45c87e0bbe0421c3c93065ae3a0d9a3db1593",
+    "obligation_hash": "9c19c52740908558f9728aab0e829fcc5721a92f1bf88ac1e2f18b288f7a95b5",
     "items": [
       {
         "item_id": "env_00323-e000",
@@ -48,16 +50,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "harvest-bread-white-400",
-          "display_name": "Harvest Gold White Bread 400g",
-          "description": "Harvest Gold White Bread 400g. Best before 6 months from packaging date.",
-          "listed_price_paise": 4200
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 39800
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:07:03Z",
+        "emitted_at": "2026-09-02T22:03:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "cb78670c6f912cb4a18084e90b3ba88f5095517c2978c0856f42826856683315"
+        "content_hash": "e852fde2bb8a6867d3b10eb2c0f1609824c131f59bb7764ab4e20f33a91baf08"
       },
       {
         "item_id": "env_00323-e001",
@@ -65,16 +67,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "britannia-bread-white-400",
-          "display_name": "Britannia White Bread 400g",
-          "description": "Britannia White Bread 400g. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 4500
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 35500
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:07:04Z",
+        "emitted_at": "2026-09-02T22:03:04Z",
         "evidence_class": 2,
-        "prev_hash": "cb78670c6f912cb4a18084e90b3ba88f5095517c2978c0856f42826856683315",
-        "content_hash": "73756798a90fb4be39204e948899e7c1d11dbc0447d865b0095f5a6da18a6ea0"
+        "prev_hash": "e852fde2bb8a6867d3b10eb2c0f1609824c131f59bb7764ab4e20f33a91baf08",
+        "content_hash": "19d579940c25acae3c367a0af921fc9a0089464726c1d349864ad25c373150ea"
       },
       {
         "item_id": "env_00323-e002",
@@ -82,16 +84,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "britannia-bread-brown-400",
-          "display_name": "Britannia Brown Bread 400g",
-          "description": "Britannia Brown Bread 400g. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 5200
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 6800
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:07:05Z",
+        "emitted_at": "2026-09-02T22:03:05Z",
         "evidence_class": 2,
-        "prev_hash": "73756798a90fb4be39204e948899e7c1d11dbc0447d865b0095f5a6da18a6ea0",
-        "content_hash": "3931c44078c8f208913fbd82ec9d98cf00071973e4d59ee78324ca3c90b8f2b4"
+        "prev_hash": "19d579940c25acae3c367a0af921fc9a0089464726c1d349864ad25c373150ea",
+        "content_hash": "1f8dbdc452e443a0ad2cefc296e65906c1c6a302e65db26401107b39692db57a"
       },
       {
         "item_id": "env_00323-e003",
@@ -99,16 +101,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "harvest-bread-brown-400",
-          "display_name": "Harvest Gold Brown Bread 400g",
-          "description": "Harvest Gold Brown Bread 400g. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 5000
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 7800
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:07:06Z",
+        "emitted_at": "2026-09-02T22:03:06Z",
         "evidence_class": 2,
-        "prev_hash": "3931c44078c8f208913fbd82ec9d98cf00071973e4d59ee78324ca3c90b8f2b4",
-        "content_hash": "eea88f8f9d7f35f6a159b804a390d54f8a8d81a0edbba525376f565f83681cc8"
+        "prev_hash": "1f8dbdc452e443a0ad2cefc296e65906c1c6a302e65db26401107b39692db57a",
+        "content_hash": "e82290421ecf9890f24891f7f2e1a2f78dbe0a93d38e899ebf535164ee52444f"
       },
       {
         "item_id": "env_00323-e004",
@@ -118,17 +120,17 @@
           "merchant_id": "zepto",
           "lines": [
             {
-              "sku": "harvest-bread-brown-400",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 5000
+              "unit_price_paise": 35500
             }
           ]
         },
-        "emitted_by": "agt_219",
-        "emitted_at": "2026-09-03T01:07:12Z",
+        "emitted_by": "agt_290",
+        "emitted_at": "2026-09-02T22:03:12Z",
         "evidence_class": 1,
-        "prev_hash": "eea88f8f9d7f35f6a159b804a390d54f8a8d81a0edbba525376f565f83681cc8",
-        "content_hash": "f9ec5c3bf4c4cffcd1a651222d9c7977312820ed524b765fb587e7b1e96b6690"
+        "prev_hash": "e82290421ecf9890f24891f7f2e1a2f78dbe0a93d38e899ebf535164ee52444f",
+        "content_hash": "fbc5e7dd85ccbbbe60252fd86735d5bcbe0b95a04fce54d1fe906ae3895eeb94"
       },
       {
         "item_id": "env_00323-e005",
@@ -139,17 +141,17 @@
           "merchant_order_id": "zep_00323",
           "lines": [
             {
-              "sku": "harvest-bread-brown-400",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 5000
+              "unit_price_paise": 35500
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:07:20Z",
+        "emitted_at": "2026-09-02T22:03:20Z",
         "evidence_class": 2,
-        "prev_hash": "f9ec5c3bf4c4cffcd1a651222d9c7977312820ed524b765fb587e7b1e96b6690",
-        "content_hash": "3dda14e015d11de1645e1ec745edc110ed982fc92abe6ea9943cc94dff01ad05"
+        "prev_hash": "fbc5e7dd85ccbbbe60252fd86735d5bcbe0b95a04fce54d1fe906ae3895eeb94",
+        "content_hash": "eb4a1699bc6df0406f1c69b2b72a704932d7bc57e455e4b089ce7747fd9189ef"
       },
       {
         "item_id": "env_00323-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00323",
           "lines": [
             {
-              "sku": "harvest-bread-brown-400",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 5000
+              "unit_price_paise": 35500
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:21:00Z",
+        "emitted_at": "2026-09-02T22:17:00Z",
         "evidence_class": 2,
-        "prev_hash": "3dda14e015d11de1645e1ec745edc110ed982fc92abe6ea9943cc94dff01ad05",
-        "content_hash": "9bd0c56547b7e80e058f2ddd8ee93f93091e03664db1bc0f5fcc5a10fa62a63b"
+        "prev_hash": "eb4a1699bc6df0406f1c69b2b72a704932d7bc57e455e4b089ce7747fd9189ef",
+        "content_hash": "54c95494ac5aa582665bbe7f34730712c391a56bc35312ffc2cdaf74c6b87588"
       },
       {
         "item_id": "env_00323-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00323",
-          "amount_paise": 5000,
+          "amount_paise": 35500,
           "currency": "INR",
           "receipt": "zep_00323"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:07:25Z",
+        "emitted_at": "2026-09-02T22:03:25Z",
         "evidence_class": 3,
-        "prev_hash": "9bd0c56547b7e80e058f2ddd8ee93f93091e03664db1bc0f5fcc5a10fa62a63b",
-        "content_hash": "7396d75231025449c07b13925604a1bfda22ac64ebd8cf2466a733e8eb9bf03a"
+        "prev_hash": "54c95494ac5aa582665bbe7f34730712c391a56bc35312ffc2cdaf74c6b87588",
+        "content_hash": "e6e37c6eeccd9290948703215d34bb32cc821ebc577cdfef044cf28148d9cc76"
       },
       {
         "item_id": "env_00323-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00323",
           "order_id": "order_00323",
-          "amount_paise": 5000,
+          "amount_paise": 35500,
           "status": "captured",
           "block_id": "blk_00323",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:07:30Z",
+        "emitted_at": "2026-09-02T22:03:30Z",
         "evidence_class": 3,
-        "prev_hash": "7396d75231025449c07b13925604a1bfda22ac64ebd8cf2466a733e8eb9bf03a",
-        "content_hash": "22d430473ca2561ddc150e56da52e8256e2cd23194399e11d220bab8a72ea47b"
+        "prev_hash": "e6e37c6eeccd9290948703215d34bb32cc821ebc577cdfef044cf28148d9cc76",
+        "content_hash": "f70d19ec4a935e7f6387d5d14a7215d72eed97090c8b86230603c6c03072ef5e"
       },
       {
         "item_id": "env_00323-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Harvest brown bread. Payment complete.",
-          "claimed_sku": "harvest-bread-brown-400",
+          "text": "Ordered 5kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_219",
-        "emitted_at": "2026-09-03T01:22:00Z",
+        "emitted_by": "agt_290",
+        "emitted_at": "2026-09-02T22:18:00Z",
         "evidence_class": 0,
-        "prev_hash": "22d430473ca2561ddc150e56da52e8256e2cd23194399e11d220bab8a72ea47b",
-        "content_hash": "6569be53e80ed7aeebb46a68c0a0b1b5b1190822170f75a1412932cd33c4753d"
+        "prev_hash": "f70d19ec4a935e7f6387d5d14a7215d72eed97090c8b86230603c6c03072ef5e",
+        "content_hash": "5937ee24a451bacb00410ee6983565a62c5a9cfba7412d1070fcaca42c5f7061"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "harvest-bread-brown-400",
-    "ordered_sku": "harvest-bread-brown-400",
-    "delivered_sku": "harvest-bread-brown-400",
+    "requested_sku": "aashirvaad-flour-whole_wheat-5000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,152 +6,150 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00062",
-    "created_at": "2026-09-02T20:41:00Z",
-    "expires_at": "2026-09-03T02:41:00Z",
-    "user_id": "usr_8202",
-    "agent_id": "agt_525",
+    "created_at": "2026-09-02T18:08:00Z",
+    "expires_at": "2026-09-03T00:08:00Z",
+    "user_id": "usr_6629",
+    "agent_id": "agt_643",
     "block": {
       "block_id": "blk_00062",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T20:41:00Z",
-      "expires_at": "2026-10-16T20:41:00Z"
+      "blocked_at": "2026-08-15T18:08:00Z",
+      "expires_at": "2026-10-02T18:08:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3449,
-      "max_total_paise": 3449,
+      "category": "bread",
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": null,
-      "pack_size_g": 1000
+      "brand": "harvest",
+      "variant": "white",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "order 1kg Aashirvaad iodised salt on Zepto",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "order 400g Harvest white bread on Blinkit",
+      "uncaptured_attributes": []
     },
-    "content_hash": "a1be1c883f4d06f2e2506ecf72cb39781ef77e7b330a4abb2849e794eae09dcd",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "3da55d8b4c490bd665181beb796e73b6b5c5d0022c0ee78a7ae8a56f0982542b",
+    "signature": "jRzBqhdu5U37OSFjk3pwXgBYiMXrLsyqHteQuxE7SiT8o5coKoF3dJhhGMPc0ndDpo5mMiTheOp1uLLuzfusAA==",
+    "signer_key_id": "usr_6629:20e8e5df0f541e73"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00062",
-    "obligation_hash": "a1be1c883f4d06f2e2506ecf72cb39781ef77e7b330a4abb2849e794eae09dcd",
+    "obligation_hash": "3da55d8b4c490bd665181beb796e73b6b5c5d0022c0ee78a7ae8a56f0982542b",
     "items": [
       {
         "item_id": "env_00062-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "aashirvaad-salt-iodised-1000",
-          "display_name": "Aashirvaad Iodised Salt 1kg",
-          "description": "Aashirvaad Iodised Salt 1kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 3000
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 4200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:41:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:08:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "132f0c01cca57010961673acaa1771e8b42f748c5ae7f28ff6ddb6e105175d2b"
+        "content_hash": "ea12b255ace4df0c45dc5569994bf143ca46cf18777191b483075ef9c631f82a"
       },
       {
         "item_id": "env_00062-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-rock-1000",
-          "display_name": "Tata Sampann Rock Salt 1kg",
-          "description": "Tata Sampann Rock Salt 1kg. Bestseller in this category this week.",
-          "listed_price_paise": 5200
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:41:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:08:04Z",
         "evidence_class": 2,
-        "prev_hash": "132f0c01cca57010961673acaa1771e8b42f748c5ae7f28ff6ddb6e105175d2b",
-        "content_hash": "c29d57d0f4a793f8f437a14aca7a68d6e0ec0a755f1dd0dbbc9cb9bf6543eefd"
+        "prev_hash": "ea12b255ace4df0c45dc5569994bf143ca46cf18777191b483075ef9c631f82a",
+        "content_hash": "28ed439208f460578655f100348a2b43b8f775465c7e92c518ce86ab87a1a9c1"
       },
       {
         "item_id": "env_00062-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-low_sodium-1000",
-          "display_name": "Tata Salt Lite Low Sodium 1kg",
-          "description": "Tata Salt Lite Low Sodium 1kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 4500
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:41:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:08:05Z",
         "evidence_class": 2,
-        "prev_hash": "c29d57d0f4a793f8f437a14aca7a68d6e0ec0a755f1dd0dbbc9cb9bf6543eefd",
-        "content_hash": "5321356c814cccf0c8736c4419fab1c258c234c0cf1b6267c66a21f69189e554"
+        "prev_hash": "28ed439208f460578655f100348a2b43b8f775465c7e92c518ce86ab87a1a9c1",
+        "content_hash": "2a75e91dcd6e9275096dac423d014bc47b07e1ce1ffd6bdb54daaf14679d506e"
       },
       {
         "item_id": "env_00062-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-iodised-1000",
-          "display_name": "Tata Salt Iodised 1kg",
-          "description": "Tata Salt Iodised 1kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 2800
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:41:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:08:06Z",
         "evidence_class": 2,
-        "prev_hash": "5321356c814cccf0c8736c4419fab1c258c234c0cf1b6267c66a21f69189e554",
-        "content_hash": "b2ed4d95f3fd1afadd69eeece53f00cfdccff128275fcb1f406ce33461918afb"
+        "prev_hash": "2a75e91dcd6e9275096dac423d014bc47b07e1ce1ffd6bdb54daaf14679d506e",
+        "content_hash": "8d25a86d7c1d2b512dd8fa5a5ade67f4933a1a7efc40a8b2c79bf0df6df53c90"
       },
       {
         "item_id": "env_00062-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 4200
             }
           ]
         },
-        "emitted_by": "agt_525",
-        "emitted_at": "2026-09-02T20:41:12Z",
+        "emitted_by": "agt_643",
+        "emitted_at": "2026-09-02T18:08:12Z",
         "evidence_class": 1,
-        "prev_hash": "b2ed4d95f3fd1afadd69eeece53f00cfdccff128275fcb1f406ce33461918afb",
-        "content_hash": "9564b085e226e1052bf4282e9c17f4f3dc9fa3e09dc5edd7d261eff8ca6ce64f"
+        "prev_hash": "8d25a86d7c1d2b512dd8fa5a5ade67f4933a1a7efc40a8b2c79bf0df6df53c90",
+        "content_hash": "e3b465dbcdd628b696d0780af9cedf9e25bcfa4740126f073ab5ede682b9e25d"
       },
       {
         "item_id": "env_00062-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00062",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 4200
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:41:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:08:20Z",
         "evidence_class": 2,
-        "prev_hash": "9564b085e226e1052bf4282e9c17f4f3dc9fa3e09dc5edd7d261eff8ca6ce64f",
-        "content_hash": "29385d5aef56e83644598f7a681c4472ec59777a30eee0354641adfc4e25a221"
+        "prev_hash": "e3b465dbcdd628b696d0780af9cedf9e25bcfa4740126f073ab5ede682b9e25d",
+        "content_hash": "9d1c3442562191088f061fa4fd171963fa2e1ddfc0a85ef8cbb7ad33d927edd3"
       },
       {
         "item_id": "env_00062-e006",
@@ -161,18 +159,18 @@
           "merchant_order_id": "zep_00062",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 4200
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:55:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:22:00Z",
         "evidence_class": 2,
-        "prev_hash": "29385d5aef56e83644598f7a681c4472ec59777a30eee0354641adfc4e25a221",
-        "content_hash": "5dbd0c1176eeba915592e19c0fb7c05beaa5a2672143990b4b369744c097bbbc"
+        "prev_hash": "9d1c3442562191088f061fa4fd171963fa2e1ddfc0a85ef8cbb7ad33d927edd3",
+        "content_hash": "915fd106e3e40169e77d422d362d71b71f279e7ebd97dc43aecc870e1bfc1381"
       },
       {
         "item_id": "env_00062-e007",
@@ -180,15 +178,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00062",
-          "amount_paise": 3000,
+          "amount_paise": 4200,
           "currency": "INR",
           "receipt": "zep_00062"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:41:25Z",
+        "emitted_at": "2026-09-02T18:08:25Z",
         "evidence_class": 3,
-        "prev_hash": "5dbd0c1176eeba915592e19c0fb7c05beaa5a2672143990b4b369744c097bbbc",
-        "content_hash": "fee46ebc0412b31e9c84ad687d7ef554e78b174e2b80f8fc98f1070e0816b669"
+        "prev_hash": "915fd106e3e40169e77d422d362d71b71f279e7ebd97dc43aecc870e1bfc1381",
+        "content_hash": "92da2d89f0a681fb3a600dd97cd7f63bfaa2215aad077fd65c22d13bbadad0b4"
       },
       {
         "item_id": "env_00062-e008",
@@ -197,31 +195,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00062",
           "order_id": "order_00062",
-          "amount_paise": 3000,
+          "amount_paise": 4200,
           "status": "captured",
           "block_id": "blk_00062",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:41:30Z",
+        "emitted_at": "2026-09-02T18:08:30Z",
         "evidence_class": 3,
-        "prev_hash": "fee46ebc0412b31e9c84ad687d7ef554e78b174e2b80f8fc98f1070e0816b669",
-        "content_hash": "bc6b450466e2293c04eb28f9389c86665b0da7fed37c2f2200137c2ccf75cc14"
+        "prev_hash": "92da2d89f0a681fb3a600dd97cd7f63bfaa2215aad077fd65c22d13bbadad0b4",
+        "content_hash": "7a560eace3382a7d3c8a33d12a7062d8945b064da37d4a797407f4d406fa53af"
       },
       {
         "item_id": "env_00062-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
-          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
           "claims_success": true
         },
-        "emitted_by": "agt_525",
-        "emitted_at": "2026-09-02T20:56:00Z",
+        "emitted_by": "agt_643",
+        "emitted_at": "2026-09-02T18:23:00Z",
         "evidence_class": 0,
-        "prev_hash": "bc6b450466e2293c04eb28f9389c86665b0da7fed37c2f2200137c2ccf75cc14",
-        "content_hash": "026a02fad00ac27333b678f4404665258339952af371abbcf3213ca3c4b3375b"
+        "prev_hash": "7a560eace3382a7d3c8a33d12a7062d8945b064da37d4a797407f4d406fa53af",
+        "content_hash": "b494419abc7df41ac645d3476d053a03f01a5fb7a50a286fd4b570299f9c064d"
       }
     ]
   },
@@ -230,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-salt-iodised-1000",
-    "ordered_sku": "aashirvaad-salt-iodised-1000",
-    "delivered_sku": "aashirvaad-salt-iodised-1000",
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00118",
-    "created_at": "2026-09-02T22:03:00Z",
-    "expires_at": "2026-09-03T04:03:00Z",
-    "user_id": "usr_7878",
-    "agent_id": "agt_603",
+    "created_at": "2026-09-02T22:22:00Z",
+    "expires_at": "2026-09-03T04:22:00Z",
+    "user_id": "usr_1804",
+    "agent_id": "agt_372",
     "block": {
       "block_id": "blk_00118",
-      "blocked_paise": 56925,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T22:03:00Z",
-      "expires_at": "2026-10-06T22:03:00Z"
+      "blocked_at": "2026-08-17T22:22:00Z",
+      "expires_at": "2026-10-03T22:22:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18975,
-      "max_total_paise": 18975,
+      "category": "bread",
+      "max_unit_price_paise": 4830,
+      "max_total_paise": 4830,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "mustard",
-      "pack_size_g": 1000
+      "brand": "harvest",
+      "variant": null,
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "I need 1L Fortune kachi ghani mustard oil, use Zepto",
-      "uncaptured_attributes": []
+      "text": "get me 400g Harvest white bread from Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "6da826cf90c8b486a61a2ffee839e3a40a0e201889ce0e81fbb757f716e1315f",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "1b2e4703a681a71b3637d7d6975658393e0d7a9d93978bcb26216448c729cb9f",
+    "signature": "SOkbZn0rzISrEacRWq1vpg2XNU68LlHTzRNaIH4JqycvKOng/6SeO+0WyW4xYHnICAu47mY/pRSWw0Vk0iOTCQ==",
+    "signer_key_id": "usr_1804:ef39ae132ee52cd2"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00118",
-    "obligation_hash": "6da826cf90c8b486a61a2ffee839e3a40a0e201889ce0e81fbb757f716e1315f",
+    "obligation_hash": "1b2e4703a681a71b3637d7d6975658393e0d7a9d93978bcb26216448c729cb9f",
     "items": [
       {
         "item_id": "env_00118-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "fortune-edible_oil-mustard-1000",
-          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
-          "description": "Fortune Kachi Ghani Mustard Oil 1L. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 16500
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Bestseller in this category this week.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:03:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:22:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "c506d75adc250b8551630391ed98a1ac1a9b5fcb363f061ab97798af378f0a6b"
+        "content_hash": "f444bd73c3dad97c37da80c504b89cebb020dda7b049b6ecaf9274a5d1925220"
       },
       {
         "item_id": "env_00118-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "saffola-edible_oil-sunflower_refined-1000",
-          "display_name": "Saffola Gold Refined Oil 1L",
-          "description": "Saffola Gold Refined Oil 1L. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 16800
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:03:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:22:04Z",
         "evidence_class": 2,
-        "prev_hash": "c506d75adc250b8551630391ed98a1ac1a9b5fcb363f061ab97798af378f0a6b",
-        "content_hash": "90d54fa0e1729be83c90e963fe7e2898dc33d920394baf9549dd9072592296a9"
+        "prev_hash": "f444bd73c3dad97c37da80c504b89cebb020dda7b049b6ecaf9274a5d1925220",
+        "content_hash": "4bd105a7fd50f58f5e06a2a587f39a3d5859cf5bc6542cd3b53faa1f5dac6e6a"
       },
       {
         "item_id": "env_00118-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "dhara-edible_oil-mustard-1000",
-          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
-          "description": "Dhara Kachi Ghani Mustard Oil 1L. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 15800
+          "merchant_id": "blinkit",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:03:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:22:05Z",
         "evidence_class": 2,
-        "prev_hash": "90d54fa0e1729be83c90e963fe7e2898dc33d920394baf9549dd9072592296a9",
-        "content_hash": "15c8c09e774217c2db13e31e7879da9b8e16972875a308c06ffee288d0af92e4"
+        "prev_hash": "4bd105a7fd50f58f5e06a2a587f39a3d5859cf5bc6542cd3b53faa1f5dac6e6a",
+        "content_hash": "4dc36091b60ce46725f1a6d2ed2b9bc4772900340b0e90d07abf22f7e780da67"
       },
       {
         "item_id": "env_00118-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "fortune-edible_oil-groundnut-1000",
-          "display_name": "Fortune Groundnut Oil 1L",
-          "description": "Fortune Groundnut Oil 1L. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 18900
+          "merchant_id": "blinkit",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 4200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:03:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:22:06Z",
         "evidence_class": 2,
-        "prev_hash": "15c8c09e774217c2db13e31e7879da9b8e16972875a308c06ffee288d0af92e4",
-        "content_hash": "56a734e73dd0d7cc7ff5eb7c01cd87dcd54722caff630c7f50828153f991c855"
+        "prev_hash": "4dc36091b60ce46725f1a6d2ed2b9bc4772900340b0e90d07abf22f7e780da67",
+        "content_hash": "840c59ca948972725a291cdf77f1b51bf9f5e73803b703f1f753a56a5c9c2e04"
       },
       {
         "item_id": "env_00118-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "fortune-edible_oil-mustard-1000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 16500
+              "unit_price_paise": 4200
             }
           ]
         },
-        "emitted_by": "agt_603",
-        "emitted_at": "2026-09-02T22:03:12Z",
+        "emitted_by": "agt_372",
+        "emitted_at": "2026-09-02T22:22:12Z",
         "evidence_class": 1,
-        "prev_hash": "56a734e73dd0d7cc7ff5eb7c01cd87dcd54722caff630c7f50828153f991c855",
-        "content_hash": "4580e9f9cfd1fd01250593ec234cdaf59b6751f75cb81eea42a7a35fa6845f68"
+        "prev_hash": "840c59ca948972725a291cdf77f1b51bf9f5e73803b703f1f753a56a5c9c2e04",
+        "content_hash": "4783ab8a2a4cbc68c101b5f22ab88b5ef347e6f31b03dcc6b834420cbf70a632"
       },
       {
         "item_id": "env_00118-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00118",
           "lines": [
             {
-              "sku": "fortune-edible_oil-mustard-1000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 16500
+              "unit_price_paise": 4200
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:03:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:22:20Z",
         "evidence_class": 2,
-        "prev_hash": "4580e9f9cfd1fd01250593ec234cdaf59b6751f75cb81eea42a7a35fa6845f68",
-        "content_hash": "291c04826fe646ef2cc1e26df0b84e86522fe493d9951f1b77393b9ca70f665d"
+        "prev_hash": "4783ab8a2a4cbc68c101b5f22ab88b5ef347e6f31b03dcc6b834420cbf70a632",
+        "content_hash": "00428cb1074937fd7af68890923051e2eeb2f56ad0953a7ba745dbc34b88f757"
       },
       {
         "item_id": "env_00118-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00118",
           "lines": [
             {
-              "sku": "fortune-edible_oil-mustard-1000",
+              "sku": "harvest-bread-white-400",
               "quantity": 1,
-              "unit_price_paise": 16500
+              "unit_price_paise": 4200
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T22:17:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:36:00Z",
         "evidence_class": 2,
-        "prev_hash": "291c04826fe646ef2cc1e26df0b84e86522fe493d9951f1b77393b9ca70f665d",
-        "content_hash": "a2e796e501e88b8d31b9b3ec0fbe21a3624210e0ec46528f911d33efdb78d419"
+        "prev_hash": "00428cb1074937fd7af68890923051e2eeb2f56ad0953a7ba745dbc34b88f757",
+        "content_hash": "bb28921f3da913d9683b17f4839a71307f79f60b1eabd34c07107f8f0c1aac01"
       },
       {
         "item_id": "env_00118-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00118",
-          "amount_paise": 16500,
+          "amount_paise": 4200,
           "currency": "INR",
           "receipt": "zep_00118"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:03:25Z",
+        "emitted_at": "2026-09-02T22:22:25Z",
         "evidence_class": 3,
-        "prev_hash": "a2e796e501e88b8d31b9b3ec0fbe21a3624210e0ec46528f911d33efdb78d419",
-        "content_hash": "832ec2f9f2b6b8f048444b3f7335becd84f3d5841f91cc10ddba964cd558bc33"
+        "prev_hash": "bb28921f3da913d9683b17f4839a71307f79f60b1eabd34c07107f8f0c1aac01",
+        "content_hash": "7653ea8a5cfff955d51cce82988d588c4314b337538db099025786c0694aa0cc"
       },
       {
         "item_id": "env_00118-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00118",
           "order_id": "order_00118",
-          "amount_paise": 16500,
+          "amount_paise": 4200,
           "status": "captured",
           "block_id": "blk_00118",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:03:30Z",
+        "emitted_at": "2026-09-02T22:22:30Z",
         "evidence_class": 3,
-        "prev_hash": "832ec2f9f2b6b8f048444b3f7335becd84f3d5841f91cc10ddba964cd558bc33",
-        "content_hash": "c9a19c259f82a95b174398e62b402603d31fb66e9e38217e1c4181725a8a7733"
+        "prev_hash": "7653ea8a5cfff955d51cce82988d588c4314b337538db099025786c0694aa0cc",
+        "content_hash": "7992837605ff1c383e1ab23580a22164f489824c3deff67584d5150575e21fcd"
       },
       {
         "item_id": "env_00118-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Fortune kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "fortune-edible_oil-mustard-1000",
+          "text": "Ordered 400g Harvest white bread. Payment complete.",
+          "claimed_sku": "harvest-bread-white-400",
           "claims_success": true
         },
-        "emitted_by": "agt_603",
-        "emitted_at": "2026-09-02T22:18:00Z",
+        "emitted_by": "agt_372",
+        "emitted_at": "2026-09-02T22:37:00Z",
         "evidence_class": 0,
-        "prev_hash": "c9a19c259f82a95b174398e62b402603d31fb66e9e38217e1c4181725a8a7733",
-        "content_hash": "1b584ae985b53021e956dbe6b0ac1fa68660a0cf784621641653e011ce449158"
+        "prev_hash": "7992837605ff1c383e1ab23580a22164f489824c3deff67584d5150575e21fcd",
+        "content_hash": "63b9788c48c22442e77320e17828829a861b3bd44ee7b697a83ad97e52599ad6"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-edible_oil-mustard-1000",
-    "ordered_sku": "fortune-edible_oil-mustard-1000",
-    "delivered_sku": "fortune-edible_oil-mustard-1000",
+    "requested_sku": "harvest-bread-white-400",
+    "ordered_sku": "harvest-bread-white-400",
+    "delivered_sku": "harvest-bread-white-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

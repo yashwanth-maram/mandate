@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00037",
-    "created_at": "2026-09-03T03:29:00Z",
-    "expires_at": "2026-09-03T09:29:00Z",
-    "user_id": "usr_7022",
-    "agent_id": "agt_217",
+    "created_at": "2026-09-02T20:11:00Z",
+    "expires_at": "2026-09-03T02:11:00Z",
+    "user_id": "usr_2584",
+    "agent_id": "agt_727",
     "block": {
       "block_id": "blk_00037",
-      "blocked_paise": 50000,
+      "blocked_paise": 100740,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-26T03:29:00Z",
-      "expires_at": "2026-10-21T03:29:00Z"
+      "blocked_at": "2026-08-23T20:11:00Z",
+      "expires_at": "2026-10-07T20:11:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 8625,
-      "max_total_paise": 8625,
+      "category": "butter",
+      "max_unit_price_paise": 33580,
+      "max_total_paise": 33580,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "mother_dairy",
-      "variant": "full_cream",
-      "pack_size_g": 1000
+      "brand": "amul",
+      "variant": null,
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "order 1L Mother Dairy full cream milk on Zepto",
-      "uncaptured_attributes": []
+      "text": "buy 500g Amul unsalted butter from Blinkit, keep it under 335 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "3759c27ae99f5d9d17cdad9c83589ca063115284b496183279b6e525d5beab71",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "bd68898cc0b56a775877ca3d1e5a50e9380fcdda32f560d56c918b1ec9e24c82",
+    "signature": "eRhbbFmkbTaTtCAy6qfm78a2h93gMcnDI9/aomjAculnOa21/RfUKiB0KO936B+4bTc9t3hinuYjHi+QeerxCg==",
+    "signer_key_id": "usr_2584:257703b0e71d14e3"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00037",
-    "obligation_hash": "3759c27ae99f5d9d17cdad9c83589ca063115284b496183279b6e525d5beab71",
+    "obligation_hash": "bd68898cc0b56a775877ca3d1e5a50e9380fcdda32f560d56c918b1ec9e24c82",
     "items": [
       {
         "item_id": "env_00037-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-toned-1000",
-          "display_name": "Mother Dairy Toned Milk 1L",
-          "description": "Mother Dairy Toned Milk 1L. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 6400
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 29200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:29:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:11:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "f35158a09bfad4cfbbabbcc9e3287ac3ae31b3121307e9dfda28fd951282c546"
+        "content_hash": "f0b2daf2c53f445d59f91cf397cdf700b4d6653cab4992eb8dd1a3507cb3d18c"
       },
       {
         "item_id": "env_00037-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-double_toned-1000",
-          "display_name": "Mother Dairy Double Toned Milk 1L",
-          "description": "Mother Dairy Double Toned Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 5700
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 28500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:29:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:11:04Z",
         "evidence_class": 2,
-        "prev_hash": "f35158a09bfad4cfbbabbcc9e3287ac3ae31b3121307e9dfda28fd951282c546",
-        "content_hash": "c0c6d350f515de0ddf80e7698bd710abd31cdb98c0da8641b6cc527be2445ebe"
+        "prev_hash": "f0b2daf2c53f445d59f91cf397cdf700b4d6653cab4992eb8dd1a3507cb3d18c",
+        "content_hash": "a5173d77224a2f9d086e030546068edcbd1861df1da6a3be8e9e39c8fac771f2"
       },
       {
         "item_id": "env_00037-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "amul-milk-full_cream-1000",
-          "display_name": "Amul Gold Full Cream Milk 1L",
-          "description": "Amul Gold Full Cream Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 7700
+          "merchant_id": "blinkit",
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 27500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:29:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:11:05Z",
         "evidence_class": 2,
-        "prev_hash": "c0c6d350f515de0ddf80e7698bd710abd31cdb98c0da8641b6cc527be2445ebe",
-        "content_hash": "0e08857aa197cdf08fd9fd258426549db9067e08fea99c26e07266dfda14e4d5"
+        "prev_hash": "a5173d77224a2f9d086e030546068edcbd1861df1da6a3be8e9e39c8fac771f2",
+        "content_hash": "38da33a0470cf4e6e0ee8a92742f3d8d7b0c1d56bc5010bf8659076e703c3d01"
       },
       {
         "item_id": "env_00037-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-full_cream-1000",
-          "display_name": "Mother Dairy Full Cream Milk 1L",
-          "description": "Mother Dairy Full Cream Milk 1L. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 7500
+          "merchant_id": "blinkit",
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:29:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:11:06Z",
         "evidence_class": 2,
-        "prev_hash": "0e08857aa197cdf08fd9fd258426549db9067e08fea99c26e07266dfda14e4d5",
-        "content_hash": "e18c6eabdc6294566a25f99a3c1ab8d1449a76cf5525d90e688ef70b0a33aedb"
+        "prev_hash": "38da33a0470cf4e6e0ee8a92742f3d8d7b0c1d56bc5010bf8659076e703c3d01",
+        "content_hash": "48498cf8cf89e12a8382cd1d8a65351ae66a663b8f4077b4790f5d544a07b0d1"
       },
       {
         "item_id": "env_00037-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "amul-butter-unsalted-500",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 29200
             }
           ]
         },
-        "emitted_by": "agt_217",
-        "emitted_at": "2026-09-03T03:29:12Z",
+        "emitted_by": "agt_727",
+        "emitted_at": "2026-09-02T20:11:12Z",
         "evidence_class": 1,
-        "prev_hash": "e18c6eabdc6294566a25f99a3c1ab8d1449a76cf5525d90e688ef70b0a33aedb",
-        "content_hash": "36f191c9aa9e5491872fa294612c54d0d28055700a32228c9f952c90c948f270"
+        "prev_hash": "48498cf8cf89e12a8382cd1d8a65351ae66a663b8f4077b4790f5d544a07b0d1",
+        "content_hash": "d12d7096daa30d9716226b14d1803b887b083cbf1c4f0be2b348840a6a82014d"
       },
       {
         "item_id": "env_00037-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00037",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "amul-butter-unsalted-500",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 29200
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:29:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:11:20Z",
         "evidence_class": 2,
-        "prev_hash": "36f191c9aa9e5491872fa294612c54d0d28055700a32228c9f952c90c948f270",
-        "content_hash": "b0179d407ec93ca4ef03c225eaa1c620b7b7290d68584f94dc8f7341d6761d41"
+        "prev_hash": "d12d7096daa30d9716226b14d1803b887b083cbf1c4f0be2b348840a6a82014d",
+        "content_hash": "a027bf254ebd821d64f87cd8db1cc7607b59dfcbe284c20a1d8cb6bae44bfb43"
       },
       {
         "item_id": "env_00037-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00037",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "amul-butter-unsalted-500",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 29200
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:43:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:25:00Z",
         "evidence_class": 2,
-        "prev_hash": "b0179d407ec93ca4ef03c225eaa1c620b7b7290d68584f94dc8f7341d6761d41",
-        "content_hash": "8d481f69e068ccaeb6c0fdd9d52ef220b28c5bac8418d7c7b5df1cae821b713b"
+        "prev_hash": "a027bf254ebd821d64f87cd8db1cc7607b59dfcbe284c20a1d8cb6bae44bfb43",
+        "content_hash": "256d9bca9ffd8a8015733ea2f4060531c5d2ee632b091e24adf663a068642796"
       },
       {
         "item_id": "env_00037-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00037",
-          "amount_paise": 7500,
+          "amount_paise": 29200,
           "currency": "INR",
           "receipt": "zep_00037"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:29:25Z",
+        "emitted_at": "2026-09-02T20:11:25Z",
         "evidence_class": 3,
-        "prev_hash": "8d481f69e068ccaeb6c0fdd9d52ef220b28c5bac8418d7c7b5df1cae821b713b",
-        "content_hash": "81645ae33e4964ed64f0dc5dfa8a408ed14ff892d295cf9e0a093ef3f9780a0c"
+        "prev_hash": "256d9bca9ffd8a8015733ea2f4060531c5d2ee632b091e24adf663a068642796",
+        "content_hash": "81a03143e1af809c8daf513dcb91ec071c6c8e36021771d8435b2a405334252b"
       },
       {
         "item_id": "env_00037-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00037",
           "order_id": "order_00037",
-          "amount_paise": 7500,
+          "amount_paise": 29200,
           "status": "captured",
           "block_id": "blk_00037",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:29:30Z",
+        "emitted_at": "2026-09-02T20:11:30Z",
         "evidence_class": 3,
-        "prev_hash": "81645ae33e4964ed64f0dc5dfa8a408ed14ff892d295cf9e0a093ef3f9780a0c",
-        "content_hash": "d95e23b3499b623dd9b31cc76a18ae3e1371e500462506b71bf24acb634fd574"
+        "prev_hash": "81a03143e1af809c8daf513dcb91ec071c6c8e36021771d8435b2a405334252b",
+        "content_hash": "0c9d5a1cd074a3322acf312f64f3bb9f32ea1f22646787d879b901a0c677a78c"
       },
       {
         "item_id": "env_00037-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-full_cream-1000",
+          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
+          "claimed_sku": "amul-butter-unsalted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_217",
-        "emitted_at": "2026-09-03T03:44:00Z",
+        "emitted_by": "agt_727",
+        "emitted_at": "2026-09-02T20:26:00Z",
         "evidence_class": 0,
-        "prev_hash": "d95e23b3499b623dd9b31cc76a18ae3e1371e500462506b71bf24acb634fd574",
-        "content_hash": "94e6907b403812c5777e285aedb87585cd804e03143c6b252bd21fd8887a7802"
+        "prev_hash": "0c9d5a1cd074a3322acf312f64f3bb9f32ea1f22646787d879b901a0c677a78c",
+        "content_hash": "dde215da6ee07b20aec4b89fb4f71c9997b35584bcae2b486767e94d8b4e1b6d"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-full_cream-1000",
-    "ordered_sku": "mother_dairy-milk-full_cream-1000",
-    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "requested_sku": "amul-butter-unsalted-500",
+    "ordered_sku": "amul-butter-unsalted-500",
+    "delivered_sku": "amul-butter-unsalted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

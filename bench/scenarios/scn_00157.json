@@ -6,47 +6,98 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00157",
-    "created_at": "2026-09-03T01:38:00Z",
-    "expires_at": "2026-09-03T07:38:00Z",
-    "user_id": "usr_2442",
-    "agent_id": "agt_977",
+    "created_at": "2026-09-03T02:10:00Z",
+    "expires_at": "2026-09-03T08:10:00Z",
+    "user_id": "usr_1656",
+    "agent_id": "agt_787",
     "block": {
       "block_id": "blk_00157",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T01:38:00Z",
-      "expires_at": "2026-10-17T01:38:00Z"
+      "blocked_at": "2026-09-01T02:10:00Z",
+      "expires_at": "2026-10-19T02:10:00Z"
     },
     "hard": {
       "category": "salt",
-      "max_unit_price_paise": 3449,
-      "max_total_paise": 3449,
+      "max_unit_price_paise": 3219,
+      "max_total_paise": 3219,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "aashirvaad",
+      "brand": "tata",
       "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1kg Aashirvaad iodised salt, use Swiggy Instamart",
+      "text": "buy 1kg Tata iodised salt from Swiggy Instamart, keep it under 32 rupees",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "5582487c0277823d502904020d4050d96aaa5a295c7d057b30774ca84d447c43",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "8822b2a636288e6287a7169e9221d40668c8fe0b98834df0f030fa336d6e0de3",
+    "signature": "yimbfrX49wUFXZRaiA1uIV8Y7i/7um66NrGAfciNCrGaDgY0B38b+PNlKBAW8qs2EjZ1++01MIUGNTQGYEHuBA==",
+    "signer_key_id": "usr_1656:e612dd4234fb48c3"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00157",
-    "obligation_hash": "5582487c0277823d502904020d4050d96aaa5a295c7d057b30774ca84d447c43",
+    "obligation_hash": "8822b2a636288e6287a7169e9221d40668c8fe0b98834df0f030fa336d6e0de3",
     "items": [
       {
         "item_id": "env_00157-e000",
         "seq": 0,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5200
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:10:03Z",
+        "evidence_class": 2,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "cd5dc74e43f9af3bda5cc4779cd6c8e7d524bd20f4d2e11d3a46280ebfda13d7"
+      },
+      {
+        "item_id": "env_00157-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 2800
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:10:04Z",
+        "evidence_class": 2,
+        "prev_hash": "cd5dc74e43f9af3bda5cc4779cd6c8e7d524bd20f4d2e11d3a46280ebfda13d7",
+        "content_hash": "b66566510836dc450dd929d290e6ad06751b6ebf865528ef0dab78dbbd7f91f2"
+      },
+      {
+        "item_id": "env_00157-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 3000
+        },
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T02:10:05Z",
+        "evidence_class": 2,
+        "prev_hash": "b66566510836dc450dd929d290e6ad06751b6ebf865528ef0dab78dbbd7f91f2",
+        "content_hash": "c96d267fcf721cf941707e107f2053231635ad901e6bb012b3f3e243a2602bd4"
+      },
+      {
+        "item_id": "env_00157-e003",
+        "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
@@ -56,61 +107,10 @@
           "listed_price_paise": 4500
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:38:03Z",
+        "emitted_at": "2026-09-03T02:10:06Z",
         "evidence_class": 2,
-        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8e5c7aea70c045000019c9bf6b63a4b924861430daff8f55cb2c9f317d504fe8"
-      },
-      {
-        "item_id": "env_00157-e001",
-        "seq": 1,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "tata-salt-rock-1000",
-          "display_name": "Tata Sampann Rock Salt 1kg",
-          "description": "Tata Sampann Rock Salt 1kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 5200
-        },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:38:04Z",
-        "evidence_class": 2,
-        "prev_hash": "8e5c7aea70c045000019c9bf6b63a4b924861430daff8f55cb2c9f317d504fe8",
-        "content_hash": "3624b6e7f62cbd7f18bd0767a5d92d4ab2c1fcf3194be78d05a124d2c2224822"
-      },
-      {
-        "item_id": "env_00157-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "tata-salt-iodised-1000",
-          "display_name": "Tata Salt Iodised 1kg",
-          "description": "Tata Salt Iodised 1kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 2800
-        },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:38:05Z",
-        "evidence_class": 2,
-        "prev_hash": "3624b6e7f62cbd7f18bd0767a5d92d4ab2c1fcf3194be78d05a124d2c2224822",
-        "content_hash": "f4970aba250ccf0dd8e0098f83e208ae11d5769b2b509a6a78e29b68d75a6a7f"
-      },
-      {
-        "item_id": "env_00157-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "aashirvaad-salt-iodised-1000",
-          "display_name": "Aashirvaad Iodised Salt 1kg",
-          "description": "Aashirvaad Iodised Salt 1kg. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 3000
-        },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:38:06Z",
-        "evidence_class": 2,
-        "prev_hash": "f4970aba250ccf0dd8e0098f83e208ae11d5769b2b509a6a78e29b68d75a6a7f",
-        "content_hash": "ee28216c9d8fbf88e3717ca32169ee30b5d15b4bc0d69a06efe0af404710b6d7"
+        "prev_hash": "c96d267fcf721cf941707e107f2053231635ad901e6bb012b3f3e243a2602bd4",
+        "content_hash": "f07fe3333eb351cff8d8b13382ab5393cc2ea7633e57a0f12ffe14da7f4aba24"
       },
       {
         "item_id": "env_00157-e004",
@@ -120,17 +120,17 @@
           "merchant_id": "swiggy_instamart",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "tata-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 2800
             }
           ]
         },
-        "emitted_by": "agt_977",
-        "emitted_at": "2026-09-03T01:38:12Z",
+        "emitted_by": "agt_787",
+        "emitted_at": "2026-09-03T02:10:12Z",
         "evidence_class": 1,
-        "prev_hash": "ee28216c9d8fbf88e3717ca32169ee30b5d15b4bc0d69a06efe0af404710b6d7",
-        "content_hash": "a43db5f1e440933f9c8747afb607afec2d7c8da89268d90616bac5cd0bd08a44"
+        "prev_hash": "f07fe3333eb351cff8d8b13382ab5393cc2ea7633e57a0f12ffe14da7f4aba24",
+        "content_hash": "b9e3bd0b365ab398169612347b3f4238fbd8abea530c1d1029c1fec60c19d1a4"
       },
       {
         "item_id": "env_00157-e005",
@@ -141,17 +141,17 @@
           "merchant_order_id": "zep_00157",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "tata-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 2800
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:38:20Z",
+        "emitted_at": "2026-09-03T02:10:20Z",
         "evidence_class": 2,
-        "prev_hash": "a43db5f1e440933f9c8747afb607afec2d7c8da89268d90616bac5cd0bd08a44",
-        "content_hash": "54ce7204cacceb1bfae9cdc1ed72ce81917eef0d92a504cb2bb6126f5aecac7c"
+        "prev_hash": "b9e3bd0b365ab398169612347b3f4238fbd8abea530c1d1029c1fec60c19d1a4",
+        "content_hash": "5d9dd784a7bd0f10d362c6ec133350057e3d08b0594d550652e4d6f3bba030bf"
       },
       {
         "item_id": "env_00157-e006",
@@ -161,18 +161,18 @@
           "merchant_order_id": "zep_00157",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "tata-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 2800
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T01:52:00Z",
+        "emitted_at": "2026-09-03T02:24:00Z",
         "evidence_class": 2,
-        "prev_hash": "54ce7204cacceb1bfae9cdc1ed72ce81917eef0d92a504cb2bb6126f5aecac7c",
-        "content_hash": "a5c68421d1e2697f8a6a4cffe8d49104e3682cb18ac42e09fcde2a414c479077"
+        "prev_hash": "5d9dd784a7bd0f10d362c6ec133350057e3d08b0594d550652e4d6f3bba030bf",
+        "content_hash": "5d8a647c6fdfd567feee2fc364ae9ee4db9314964e536a7899320a15dd983784"
       },
       {
         "item_id": "env_00157-e007",
@@ -180,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00157",
-          "amount_paise": 3000,
+          "amount_paise": 2800,
           "currency": "INR",
           "receipt": "zep_00157"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:38:25Z",
+        "emitted_at": "2026-09-03T02:10:25Z",
         "evidence_class": 3,
-        "prev_hash": "a5c68421d1e2697f8a6a4cffe8d49104e3682cb18ac42e09fcde2a414c479077",
-        "content_hash": "1c2b47bd746ce9a62baf0401e3ca6632239c6dfee39da4444d071a75ddd1237e"
+        "prev_hash": "5d8a647c6fdfd567feee2fc364ae9ee4db9314964e536a7899320a15dd983784",
+        "content_hash": "773495c6be67cf26c5622540a7403f1db85d701b73681b8b29e3f08f6c4ae576"
       },
       {
         "item_id": "env_00157-e008",
@@ -197,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00157",
           "order_id": "order_00157",
-          "amount_paise": 3000,
+          "amount_paise": 2800,
           "status": "captured",
           "block_id": "blk_00157",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:38:30Z",
+        "emitted_at": "2026-09-03T02:10:30Z",
         "evidence_class": 3,
-        "prev_hash": "1c2b47bd746ce9a62baf0401e3ca6632239c6dfee39da4444d071a75ddd1237e",
-        "content_hash": "efb0cea1653e24fb023a5f3c49459abe35aec215cc624db6754102bba0f1c9fa"
+        "prev_hash": "773495c6be67cf26c5622540a7403f1db85d701b73681b8b29e3f08f6c4ae576",
+        "content_hash": "e30cbf36c9d216f677599bfee09c6121559f7b9ca09a568e06cd9839188fdefe"
       },
       {
         "item_id": "env_00157-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
-          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "text": "Ordered 1kg Tata iodised salt. Payment complete.",
+          "claimed_sku": "tata-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_977",
-        "emitted_at": "2026-09-03T01:53:00Z",
+        "emitted_by": "agt_787",
+        "emitted_at": "2026-09-03T02:25:00Z",
         "evidence_class": 0,
-        "prev_hash": "efb0cea1653e24fb023a5f3c49459abe35aec215cc624db6754102bba0f1c9fa",
-        "content_hash": "99b39fc11f7cb2560ea543064abde95170346b86188c804b906842103984f155"
+        "prev_hash": "e30cbf36c9d216f677599bfee09c6121559f7b9ca09a568e06cd9839188fdefe",
+        "content_hash": "1806f60c04c3c7b788c75af307ad16a15d31c94de88bdf706caef607f9bde219"
       }
     ]
   },
@@ -230,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-salt-iodised-1000",
-    "ordered_sku": "aashirvaad-salt-iodised-1000",
-    "delivered_sku": "aashirvaad-salt-iodised-1000",
+    "requested_sku": "tata-salt-iodised-1000",
+    "ordered_sku": "tata-salt-iodised-1000",
+    "delivered_sku": "tata-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

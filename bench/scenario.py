@@ -341,7 +341,7 @@ class ScenarioSet:
 
 
 def load_dir(directory: Path) -> ScenarioSet:
-    paths = sorted(Path(directory).glob("*.json"))
+    paths = sorted(p for p in Path(directory).glob("*.json") if not p.name.startswith("_"))
     if not paths:
         raise FileNotFoundError(f"no scenarios in {directory} - run `make gen` first")
     return ScenarioSet(Scenario.read(p) for p in paths)

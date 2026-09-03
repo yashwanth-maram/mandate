@@ -75,6 +75,24 @@ class Signer:
         return cls(Ed25519PrivateKey.generate(), name)
 
     @classmethod
+    def from_seed_bytes(cls, raw: bytes, name: str = "user") -> "Signer":
+        """
+        A keypair derived from supplied bytes rather than from os.urandom.
+
+        The benchmark generator needs this: Ed25519PrivateKey.generate() draws
+        from the OS entropy pool, so signing with it would make every scenario
+        file differ between runs and break the reproducibility the whole
+        evaluation rests on. Deriving from the seeded PRNG keeps `--seed 42`
+        meaning one dataset.
+
+        Not for production. A user's key must come from real entropy and never
+        leave their device.
+        """
+        if len(raw) != 32:
+            raise ValueError(f"Ed25519 needs 32 seed bytes, got {len(raw)}")
+        return cls(Ed25519PrivateKey.from_private_bytes(raw), name)
+
+    @classmethod
     def load_or_create(cls, name: str = "user", directory: Path = KEY_DIR) -> "Signer":
         directory.mkdir(parents=True, exist_ok=True)
         path = directory / f"{name}.ed25519"

@@ -6,41 +6,43 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00490",
-    "created_at": "2026-09-02T18:15:00Z",
-    "expires_at": "2026-09-03T00:15:00Z",
-    "user_id": "usr_5094",
-    "agent_id": "agt_932",
+    "created_at": "2026-09-03T02:54:00Z",
+    "expires_at": "2026-09-03T08:54:00Z",
+    "user_id": "usr_5417",
+    "agent_id": "agt_522",
     "block": {
       "block_id": "blk_00490",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-01T18:15:00Z",
-      "expires_at": "2026-10-04T18:15:00Z"
+      "blocked_at": "2026-08-23T02:54:00Z",
+      "expires_at": "2026-10-13T02:54:00Z"
     },
     "hard": {
-      "category": "bread",
-      "max_unit_price_paise": 5979,
-      "max_total_paise": 5979,
+      "category": "noodles",
+      "max_unit_price_paise": 12419,
+      "max_total_paise": 12419,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "britannia",
-      "variant": "brown",
-      "pack_size_g": 400
+      "brand": "maggi",
+      "variant": null,
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "get me 400g Britannia brown bread from Blinkit",
-      "uncaptured_attributes": []
+      "text": "buy 560g Maggi atta noodles from Blinkit, keep it under 124 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "1764eddc28a7734bfab4e25aefcebe18fe020242eb7f101d1c32719edbdce328",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "6d320f6469d0d86f6dcc43ac387c290119d0c5baaaf3e3720f125ddeb828e8ae",
+    "signature": "EHIukcqD36u6vH8/GAsWDGaMwhbWaSM3HkYNaL8C7l29TFMJvTXZ0sChwU5AWe7dQ5raGZu2ojBqOtezGWOWBA==",
+    "signer_key_id": "usr_5417:0817cd4a6948e224"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00490",
-    "obligation_hash": "1764eddc28a7734bfab4e25aefcebe18fe020242eb7f101d1c32719edbdce328",
+    "obligation_hash": "6d320f6469d0d86f6dcc43ac387c290119d0c5baaaf3e3720f125ddeb828e8ae",
     "items": [
       {
         "item_id": "env_00490-e000",
@@ -48,16 +50,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "britannia-bread-multigrain-400",
-          "display_name": "Britannia Multigrain Bread 400g",
-          "description": "Britannia Multigrain Bread 400g. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 6200
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Best before 6 months from packaging date.",
+          "listed_price_paise": 9000
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:15:03Z",
+        "emitted_at": "2026-09-03T02:54:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "e63a97a9df70f143301be99281c8ae58bee63dc628685c7a3c5975721f4157a1"
+        "content_hash": "2b26d5afcde03808baefd407ab503a0066d958508f977206a8e4d6c4bd99bd3f"
       },
       {
         "item_id": "env_00490-e001",
@@ -65,16 +67,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "harvest-bread-brown-400",
-          "display_name": "Harvest Gold Brown Bread 400g",
-          "description": "Harvest Gold Brown Bread 400g. Best before 6 months from packaging date.",
-          "listed_price_paise": 5000
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 9600
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:15:04Z",
+        "emitted_at": "2026-09-03T02:54:04Z",
         "evidence_class": 2,
-        "prev_hash": "e63a97a9df70f143301be99281c8ae58bee63dc628685c7a3c5975721f4157a1",
-        "content_hash": "0fb997df0ab53bb6b9073b5d29b9d0971b746c85b2b45883c4157a459111387a"
+        "prev_hash": "2b26d5afcde03808baefd407ab503a0066d958508f977206a8e4d6c4bd99bd3f",
+        "content_hash": "eb23dbe61e3da46e0338bfa0910997a8e92ec0a7896d0d98f16ad09673b075f4"
       },
       {
         "item_id": "env_00490-e002",
@@ -82,144 +84,127 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "britannia-bread-brown-400",
-          "display_name": "Britannia Brown Bread 400g",
-          "description": "Britannia Brown Bread 400g. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 5200
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 10800
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:15:05Z",
+        "emitted_at": "2026-09-03T02:54:05Z",
         "evidence_class": 2,
-        "prev_hash": "0fb997df0ab53bb6b9073b5d29b9d0971b746c85b2b45883c4157a459111387a",
-        "content_hash": "2d8971fde8ea2a500357e1f8a1cb7472c6cb3541b25a3eed3922439d3ab5e3d1"
+        "prev_hash": "eb23dbe61e3da46e0338bfa0910997a8e92ec0a7896d0d98f16ad09673b075f4",
+        "content_hash": "cf49a5e5cf2802165fa7ef6a37824fdd1885ba774e2b34c886121099ae6b1421"
       },
       {
         "item_id": "env_00490-e003",
         "seq": 3,
         "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "britannia-bread-white-400",
-          "display_name": "Britannia White Bread 400g",
-          "description": "Britannia White Bread 400g. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 4500
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:15:06Z",
-        "evidence_class": 2,
-        "prev_hash": "2d8971fde8ea2a500357e1f8a1cb7472c6cb3541b25a3eed3922439d3ab5e3d1",
-        "content_hash": "3cadecce22d1890c7655f402f4fe0a69f16465d2bce6eb01b77435f0b8b3b089"
-      },
-      {
-        "item_id": "env_00490-e004",
-        "seq": 4,
-        "payload": {
           "kind": "AGENT_CART",
           "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "britannia-bread-brown-400",
+              "sku": "maggi-noodles-atta-560",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 10800
             }
           ]
         },
-        "emitted_by": "agt_932",
-        "emitted_at": "2026-09-02T18:15:12Z",
+        "emitted_by": "agt_522",
+        "emitted_at": "2026-09-03T02:54:12Z",
         "evidence_class": 1,
-        "prev_hash": "3cadecce22d1890c7655f402f4fe0a69f16465d2bce6eb01b77435f0b8b3b089",
-        "content_hash": "2ff241a86b297659fdf31f75d91e5c59c715abc40461570a67d19c2dffe73d18"
+        "prev_hash": "cf49a5e5cf2802165fa7ef6a37824fdd1885ba774e2b34c886121099ae6b1421",
+        "content_hash": "199b639747446c31d6ea42e1873139802f1fcd0c1de7a4b1f9807c0e12d79dde"
       },
       {
-        "item_id": "env_00490-e005",
-        "seq": 5,
+        "item_id": "env_00490-e004",
+        "seq": 4,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00490",
           "lines": [
             {
-              "sku": "britannia-bread-brown-400",
+              "sku": "maggi-noodles-atta-560",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 10800
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:15:20Z",
+        "emitted_at": "2026-09-03T02:54:20Z",
         "evidence_class": 2,
-        "prev_hash": "2ff241a86b297659fdf31f75d91e5c59c715abc40461570a67d19c2dffe73d18",
-        "content_hash": "7c6f3ad622b6dd8d67ad128e913ffed84020bffb7ff7f1f591aba3872e9946b5"
+        "prev_hash": "199b639747446c31d6ea42e1873139802f1fcd0c1de7a4b1f9807c0e12d79dde",
+        "content_hash": "9888f961d1b2ee207723eb139d7ace76ffa2bba45f1626782a258ff289b8d994"
       },
       {
-        "item_id": "env_00490-e006",
-        "seq": 6,
+        "item_id": "env_00490-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00490",
           "lines": [
             {
-              "sku": "britannia-bread-brown-400",
+              "sku": "maggi-noodles-atta-560",
               "quantity": 1,
-              "unit_price_paise": 5200
+              "unit_price_paise": 10800
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:29:00Z",
+        "emitted_at": "2026-09-03T03:08:00Z",
         "evidence_class": 2,
-        "prev_hash": "7c6f3ad622b6dd8d67ad128e913ffed84020bffb7ff7f1f591aba3872e9946b5",
-        "content_hash": "8acf7ec7a3923e221d2ca2fb021293c6b9c946acd646f7941b29612846d81ec3"
+        "prev_hash": "9888f961d1b2ee207723eb139d7ace76ffa2bba45f1626782a258ff289b8d994",
+        "content_hash": "82e9757a17b798f71813258106cf66312a06cb9a786265b833848fe4be0ec75b"
+      },
+      {
+        "item_id": "env_00490-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00490",
+          "amount_paise": 10800,
+          "currency": "INR",
+          "receipt": "zep_00490"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T02:54:25Z",
+        "evidence_class": 3,
+        "prev_hash": "82e9757a17b798f71813258106cf66312a06cb9a786265b833848fe4be0ec75b",
+        "content_hash": "a22ca1d578cf4b27bde294cba39e2f856e11f22a58bb7f250d453946a39e699b"
       },
       {
         "item_id": "env_00490-e007",
         "seq": 7,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00490",
-          "amount_paise": 5200,
-          "currency": "INR",
-          "receipt": "zep_00490"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:15:25Z",
-        "evidence_class": 3,
-        "prev_hash": "8acf7ec7a3923e221d2ca2fb021293c6b9c946acd646f7941b29612846d81ec3",
-        "content_hash": "47574fabf3e9247b1fb74443a99ec38ac0ef3ae3625b6cf6dc220a26a78ec6bd"
-      },
-      {
-        "item_id": "env_00490-e008",
-        "seq": 8,
-        "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00490",
           "order_id": "order_00490",
-          "amount_paise": 5200,
+          "amount_paise": 10800,
           "status": "captured",
           "block_id": "blk_00490",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:15:30Z",
+        "emitted_at": "2026-09-03T02:54:30Z",
         "evidence_class": 3,
-        "prev_hash": "47574fabf3e9247b1fb74443a99ec38ac0ef3ae3625b6cf6dc220a26a78ec6bd",
-        "content_hash": "6f09c977528b88ce2f55c7e8cd2bf4042a3eb5fc5e969d92bd6cd8e5539b8bcc"
+        "prev_hash": "a22ca1d578cf4b27bde294cba39e2f856e11f22a58bb7f250d453946a39e699b",
+        "content_hash": "2c63dc0c3d70f5f62e6bdb03c55e056b3c4e96f3237f0af7923af93b3b79b5cc"
       },
       {
-        "item_id": "env_00490-e009",
-        "seq": 9,
+        "item_id": "env_00490-e008",
+        "seq": 8,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 400g Britannia brown bread. Payment complete.",
-          "claimed_sku": "britannia-bread-brown-400",
+          "text": "Ordered 560g Maggi atta noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-atta-560",
           "claims_success": true
         },
-        "emitted_by": "agt_932",
-        "emitted_at": "2026-09-02T18:30:00Z",
+        "emitted_by": "agt_522",
+        "emitted_at": "2026-09-03T03:09:00Z",
         "evidence_class": 0,
-        "prev_hash": "6f09c977528b88ce2f55c7e8cd2bf4042a3eb5fc5e969d92bd6cd8e5539b8bcc",
-        "content_hash": "76e7b7e3aabc78c0d68d468ff185956bbe4264316081d6137220f6d76025c68e"
+        "prev_hash": "2c63dc0c3d70f5f62e6bdb03c55e056b3c4e96f3237f0af7923af93b3b79b5cc",
+        "content_hash": "f30c34c279f81ff74a1b7f3a7463392b546ef568b780b23d4c055f3d69e70dae"
       }
     ]
   },
@@ -228,9 +213,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "britannia-bread-brown-400",
-    "ordered_sku": "britannia-bread-brown-400",
-    "delivered_sku": "britannia-bread-brown-400",
+    "requested_sku": "maggi-noodles-atta-560",
+    "ordered_sku": "maggi-noodles-atta-560",
+    "delivered_sku": "maggi-noodles-atta-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

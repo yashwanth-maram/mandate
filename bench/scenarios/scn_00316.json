@@ -6,45 +6,79 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00316",
-    "created_at": "2026-09-03T00:52:00Z",
-    "expires_at": "2026-09-03T06:52:00Z",
-    "user_id": "usr_5668",
-    "agent_id": "agt_762",
+    "created_at": "2026-09-02T21:24:00Z",
+    "expires_at": "2026-09-03T03:24:00Z",
+    "user_id": "usr_2441",
+    "agent_id": "agt_319",
     "block": {
       "block_id": "blk_00316",
-      "blocked_paise": 20000,
-      "consumed_paise": 16100,
-      "blocked_at": "2026-08-14T00:52:00Z",
-      "expires_at": "2026-10-07T00:52:00Z"
+      "blocked_paise": 50000,
+      "consumed_paise": 0,
+      "blocked_at": "2026-08-28T21:24:00Z",
+      "expires_at": "2026-10-12T21:24:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 8970,
-      "max_total_paise": 8970,
+      "max_unit_price_paise": 10580,
+      "max_total_paise": 10580,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "aashirvaad",
-      "variant": "whole_wheat",
+      "brand": "fortune",
+      "variant": "gram",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg Aashirvaad atta from Zepto",
+      "text": "buy 1kg Fortune besan from Zepto, keep it under 105 rupees",
       "uncaptured_attributes": []
     },
-    "content_hash": "33fbcde08de095aa647bc2d0112e6647c85a1e9c08334e129353d4b15549f8fc",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "6ea0e40ef0519dce344ea80bfa2755a2c9c8c699a973a1b56c3305dd2201a21d",
+    "signature": "JAWAjgX1Blr3gw13qaxS9AajPO/Fv4Pt2Tn42bJ9eu+H+bcol3/D1VWW4br/pSR3enu6gSC+cwbEQbfRg82NBQ==",
+    "signer_key_id": "usr_2441:f270cd268de64e03"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00316",
-    "obligation_hash": "33fbcde08de095aa647bc2d0112e6647c85a1e9c08334e129353d4b15549f8fc",
+    "obligation_hash": "6ea0e40ef0519dce344ea80bfa2755a2c9c8c699a973a1b56c3305dd2201a21d",
     "items": [
       {
         "item_id": "env_00316-e000",
         "seq": 0,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Bestseller in this category this week.",
+          "listed_price_paise": 35500
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:24:03Z",
+        "evidence_class": 2,
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "87d22a2d6bc41dceb473e99ca3b95e3002d2b449ddf0dba9c24999d7e96e5f51"
+      },
+      {
+        "item_id": "env_00316-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 6800
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T21:24:04Z",
+        "evidence_class": 2,
+        "prev_hash": "87d22a2d6bc41dceb473e99ca3b95e3002d2b449ddf0dba9c24999d7e96e5f51",
+        "content_hash": "a6a69e07e8a19e1697686ca038fe11deab53aa18e4e3c237cd40fb271676016d"
+      },
+      {
+        "item_id": "env_00316-e002",
+        "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
@@ -54,44 +88,10 @@
           "listed_price_paise": 9200
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:52:03Z",
+        "emitted_at": "2026-09-02T21:24:05Z",
         "evidence_class": 2,
-        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "0d10752fc6aae47df915902a7cdce8013b0e1d8990613b04a2f99adc5c1a195e"
-      },
-      {
-        "item_id": "env_00316-e001",
-        "seq": 1,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "aashirvaad-flour-whole_wheat-1000",
-          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
-          "description": "Aashirvaad Whole Wheat Atta 1kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 7800
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:52:04Z",
-        "evidence_class": 2,
-        "prev_hash": "0d10752fc6aae47df915902a7cdce8013b0e1d8990613b04a2f99adc5c1a195e",
-        "content_hash": "23cf7c6ac98e877cde05784c3b4698f99a8ea0d50fcfba96d71ded4ebe42c8a4"
-      },
-      {
-        "item_id": "env_00316-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "aashirvaad-flour-multigrain-5000",
-          "display_name": "Aashirvaad Multigrain Atta 5kg",
-          "description": "Aashirvaad Multigrain Atta 5kg. Bestseller in this category this week.",
-          "listed_price_paise": 39800
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:52:05Z",
-        "evidence_class": 2,
-        "prev_hash": "23cf7c6ac98e877cde05784c3b4698f99a8ea0d50fcfba96d71ded4ebe42c8a4",
-        "content_hash": "e8da9a43598ddffbee487da5f77a5bcd4d37f324015646546a8a37dcab5a762b"
+        "prev_hash": "a6a69e07e8a19e1697686ca038fe11deab53aa18e4e3c237cd40fb271676016d",
+        "content_hash": "2ca4642431dd1d3291a8951aac7230fc70061ca2770759a9c0aa1567abdef386"
       },
       {
         "item_id": "env_00316-e003",
@@ -99,16 +99,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "aashirvaad-flour-whole_wheat-5000",
-          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
-          "description": "Aashirvaad Whole Wheat Atta 5kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 35500
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 9600
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:52:06Z",
+        "emitted_at": "2026-09-02T21:24:06Z",
         "evidence_class": 2,
-        "prev_hash": "e8da9a43598ddffbee487da5f77a5bcd4d37f324015646546a8a37dcab5a762b",
-        "content_hash": "a09e10d44c20f7602548ec97c3d3b54a02f92629a847bfb0bea18162e16eb8ed"
+        "prev_hash": "2ca4642431dd1d3291a8951aac7230fc70061ca2770759a9c0aa1567abdef386",
+        "content_hash": "debf62de003549f136bbc38f8f6ee18376023c716072fba3705a91e36b0ef66f"
       },
       {
         "item_id": "env_00316-e004",
@@ -118,17 +118,17 @@
           "merchant_id": "zepto",
           "lines": [
             {
-              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "sku": "fortune-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 9200
             }
           ]
         },
-        "emitted_by": "agt_762",
-        "emitted_at": "2026-09-03T00:52:12Z",
+        "emitted_by": "agt_319",
+        "emitted_at": "2026-09-02T21:24:12Z",
         "evidence_class": 1,
-        "prev_hash": "a09e10d44c20f7602548ec97c3d3b54a02f92629a847bfb0bea18162e16eb8ed",
-        "content_hash": "12cb681d85812b506bd09d9608ea94e41c4e709ff7e27a0cecff990495a44696"
+        "prev_hash": "debf62de003549f136bbc38f8f6ee18376023c716072fba3705a91e36b0ef66f",
+        "content_hash": "4ab020a48ab81f39ba58b9f1e7b74fa11536decbe1890f65c8e412bbd46db92d"
       },
       {
         "item_id": "env_00316-e005",
@@ -139,17 +139,17 @@
           "merchant_order_id": "zep_00316",
           "lines": [
             {
-              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "sku": "fortune-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 9200
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T00:52:20Z",
+        "emitted_at": "2026-09-02T21:24:20Z",
         "evidence_class": 2,
-        "prev_hash": "12cb681d85812b506bd09d9608ea94e41c4e709ff7e27a0cecff990495a44696",
-        "content_hash": "5763460f675f2cede6afef601b2aebbeaa784f4b51f897625bbeec02c82a048a"
+        "prev_hash": "4ab020a48ab81f39ba58b9f1e7b74fa11536decbe1890f65c8e412bbd46db92d",
+        "content_hash": "11164c8aebe9e0d0a5d90ccff0ed225a973ee8f874c8ed6e7a9be517b95facdc"
       },
       {
         "item_id": "env_00316-e006",
@@ -159,18 +159,18 @@
           "merchant_order_id": "zep_00316",
           "lines": [
             {
-              "sku": "aashirvaad-flour-whole_wheat-1000",
+              "sku": "fortune-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 9200
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:06:00Z",
+        "emitted_at": "2026-09-02T21:38:00Z",
         "evidence_class": 2,
-        "prev_hash": "5763460f675f2cede6afef601b2aebbeaa784f4b51f897625bbeec02c82a048a",
-        "content_hash": "2c94a5fff0dc809bee70c425e011c050c21fc5abca61f037c91775a0b46bb4e5"
+        "prev_hash": "11164c8aebe9e0d0a5d90ccff0ed225a973ee8f874c8ed6e7a9be517b95facdc",
+        "content_hash": "729cb6fdc2043a92f9932a704cf88adfc70a5dd5349b3595072b2823e28f3c7a"
       },
       {
         "item_id": "env_00316-e007",
@@ -178,15 +178,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00316",
-          "amount_paise": 7800,
+          "amount_paise": 9200,
           "currency": "INR",
           "receipt": "zep_00316"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:52:25Z",
+        "emitted_at": "2026-09-02T21:24:25Z",
         "evidence_class": 3,
-        "prev_hash": "2c94a5fff0dc809bee70c425e011c050c21fc5abca61f037c91775a0b46bb4e5",
-        "content_hash": "2310c22251821381af38005773e7c026956513d856c5f6ce959ed3c6e6c486ef"
+        "prev_hash": "729cb6fdc2043a92f9932a704cf88adfc70a5dd5349b3595072b2823e28f3c7a",
+        "content_hash": "4a8099f2b40740c9584325de72faeec4cc6b5fe1c4cb44051fc8df83f3d34cfa"
       },
       {
         "item_id": "env_00316-e008",
@@ -195,45 +195,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00316",
           "order_id": "order_00316",
-          "amount_paise": 7800,
+          "amount_paise": 9200,
           "status": "captured",
           "block_id": "blk_00316",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:52:30Z",
+        "emitted_at": "2026-09-03T03:54:00Z",
         "evidence_class": 3,
-        "prev_hash": "2310c22251821381af38005773e7c026956513d856c5f6ce959ed3c6e6c486ef",
-        "content_hash": "e8994c474edf51754d1ee3d60a535e15602caed26a2ca61cddbfc3253e235ef1"
+        "prev_hash": "4a8099f2b40740c9584325de72faeec4cc6b5fe1c4cb44051fc8df83f3d34cfa",
+        "content_hash": "9ad3aa591a8840cb9669b31d6af8a1140b0dabedb89cb13ffabe2bae2995708b"
       },
       {
         "item_id": "env_00316-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad atta. Payment complete.",
-          "claimed_sku": "aashirvaad-flour-whole_wheat-1000",
+          "text": "Ordered the 1kg Fortune besan you asked for. All good.",
+          "claimed_sku": "fortune-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_762",
-        "emitted_at": "2026-09-03T01:07:00Z",
+        "emitted_by": "agt_319",
+        "emitted_at": "2026-09-02T21:39:00Z",
         "evidence_class": 0,
-        "prev_hash": "e8994c474edf51754d1ee3d60a535e15602caed26a2ca61cddbfc3253e235ef1",
-        "content_hash": "400e8c08a5808dc8c0456090b4bcd9204572e6b36fd71d88cbd80fa29e6f55ce"
-      },
-      {
-        "item_id": "env_00316-e010",
-        "seq": 10,
-        "payload": {
-          "kind": "USER_DISPUTE",
-          "text": "This is not what I told the assistant to buy.",
-          "raised_at": "2026-09-03T15:52:00Z"
-        },
-        "emitted_by": "usr_5668",
-        "emitted_at": "2026-09-03T03:52:00Z",
-        "evidence_class": 0,
-        "prev_hash": "400e8c08a5808dc8c0456090b4bcd9204572e6b36fd71d88cbd80fa29e6f55ce",
-        "content_hash": "c051b9f275c942a058dadd3dc434e6bdf038ea0b4818ba164a30dc9d4af3d713"
+        "prev_hash": "9ad3aa591a8840cb9669b31d6af8a1140b0dabedb89cb13ffabe2bae2995708b",
+        "content_hash": "e184c71ea8edd00d4edbe33eba10b5e4b06c003d8762d86e65c5f080e1845e56"
       }
     ]
   },
@@ -242,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-flour-whole_wheat-1000",
-    "ordered_sku": "aashirvaad-flour-whole_wheat-1000",
-    "delivered_sku": "aashirvaad-flour-whole_wheat-1000",
+    "requested_sku": "fortune-flour-gram-1000",
+    "ordered_sku": "fortune-flour-gram-1000",
+    "delivered_sku": "fortune-flour-gram-1000",
     "is_hard_pair": false,
-    "agent_report_truthful": true,
+    "agent_report_truthful": false,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 3900,
-    "rationale": "Item was correct; the mandate was not honoured. Debit of 7800 paise exceeds the 3900 paise remaining on block blk_00316."
+    "loss_paise": 9200,
+    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
   }
 }

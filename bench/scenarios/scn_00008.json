@@ -6,43 +6,41 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00008",
-    "created_at": "2026-09-03T02:01:00Z",
-    "expires_at": "2026-09-03T08:01:00Z",
-    "user_id": "usr_1317",
-    "agent_id": "agt_867",
+    "created_at": "2026-09-03T01:31:00Z",
+    "expires_at": "2026-09-03T07:31:00Z",
+    "user_id": "usr_6582",
+    "agent_id": "agt_909",
     "block": {
       "block_id": "blk_00008",
-      "blocked_paise": 128340,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-17T02:01:00Z",
-      "expires_at": "2026-10-04T02:01:00Z"
+      "blocked_at": "2026-08-15T01:31:00Z",
+      "expires_at": "2026-10-10T01:31:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 42780,
-      "max_total_paise": 42780,
+      "category": "bread",
+      "max_unit_price_paise": 7129,
+      "max_total_paise": 7129,
       "quantity": 1,
       "merchant_allowlist": [
         "swiggy_instamart"
       ],
-      "brand": "daawat",
-      "variant": null,
-      "pack_size_g": 5000
+      "brand": "britannia",
+      "variant": "multigrain",
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "I need 5kg Daawat sona masoori rice, use Swiggy Instamart",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "buy 400g Britannia multigrain bread from Swiggy Instamart, keep it under 71 rupees",
+      "uncaptured_attributes": []
     },
-    "content_hash": "b2c3e98a7816319b307ec622fe1cf7acf64b155d6824e57ad593b041c88f26ff",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "120a496bde500e24071210d00f2355341f599664401ba654ebf29ef46320d309",
+    "signature": "PrKtUNLcRNIMRV+CbaPODnrEFxBA73Rvld8iaC7rT27XMPZVaxocGbor9tRtpZ2ELqAwi7Dvyh0PEczwwxjwCA==",
+    "signer_key_id": "usr_6582:0b0d46592168f491"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00008",
-    "obligation_hash": "b2c3e98a7816319b307ec622fe1cf7acf64b155d6824e57ad593b041c88f26ff",
+    "obligation_hash": "120a496bde500e24071210d00f2355341f599664401ba654ebf29ef46320d309",
     "items": [
       {
         "item_id": "env_00008-e000",
@@ -50,16 +48,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "sku": "india_gate-rice-brown-1000",
-          "display_name": "India Gate Brown Basmati Rice 1kg",
-          "description": "India Gate Brown Basmati Rice 1kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 11800
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5200
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:01:03Z",
+        "emitted_at": "2026-09-03T01:31:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "bce3adf44bcd1a8101186116cd5b2f0abe93d0985fd0e615cd4c78a6e62b0d02"
+        "content_hash": "1624d3f56cfe85c676a0e896e8524deb6158b3775fec3aa3952d004b1adc0b8f"
       },
       {
         "item_id": "env_00008-e001",
@@ -67,16 +65,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "sku": "india_gate-rice-sona_masoori-1000",
-          "display_name": "India Gate Sona Masoori Rice 1kg",
-          "description": "India Gate Sona Masoori Rice 1kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 7800
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 6200
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:01:04Z",
+        "emitted_at": "2026-09-03T01:31:04Z",
         "evidence_class": 2,
-        "prev_hash": "bce3adf44bcd1a8101186116cd5b2f0abe93d0985fd0e615cd4c78a6e62b0d02",
-        "content_hash": "61a5c3970aa6ae46c58f63fdebe463fb973bfa567732fa4f2867e188f39d59e9"
+        "prev_hash": "1624d3f56cfe85c676a0e896e8524deb6158b3775fec3aa3952d004b1adc0b8f",
+        "content_hash": "4f183a5dda816d573e95ac7d857cd82b9bf7076163ac301764458e9864f10bed"
       },
       {
         "item_id": "env_00008-e002",
@@ -84,16 +82,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "sku": "india_gate-rice-basmati-5000",
-          "display_name": "India Gate Classic Basmati Rice 5kg",
-          "description": "India Gate Classic Basmati Rice 5kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 64000
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 4500
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:01:05Z",
+        "emitted_at": "2026-09-03T01:31:05Z",
         "evidence_class": 2,
-        "prev_hash": "61a5c3970aa6ae46c58f63fdebe463fb973bfa567732fa4f2867e188f39d59e9",
-        "content_hash": "0d5d84e9f89cd533e380721c73bfcd5e9e5299dee86c02d2dcc970bf01e706e1"
+        "prev_hash": "4f183a5dda816d573e95ac7d857cd82b9bf7076163ac301764458e9864f10bed",
+        "content_hash": "1ddd647334a349f7753fc55386fdb4b7841e989a5fd556c3c8399beddfa4091d"
       },
       {
         "item_id": "env_00008-e003",
@@ -101,16 +99,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "swiggy_instamart",
-          "sku": "daawat-rice-sona_masoori-5000",
-          "display_name": "Daawat Sona Masoori Rice 5kg",
-          "description": "Daawat Sona Masoori Rice 5kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 37200
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 4200
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:01:06Z",
+        "emitted_at": "2026-09-03T01:31:06Z",
         "evidence_class": 2,
-        "prev_hash": "0d5d84e9f89cd533e380721c73bfcd5e9e5299dee86c02d2dcc970bf01e706e1",
-        "content_hash": "4c9b2422a6ccd147b1c08cf1c5b0e59288fa4c5384f0491416cc94e89c02bd30"
+        "prev_hash": "1ddd647334a349f7753fc55386fdb4b7841e989a5fd556c3c8399beddfa4091d",
+        "content_hash": "44c777ad48bceb6c8700fcb5596858d540aff1fd98105845dd1bb700800011cd"
       },
       {
         "item_id": "env_00008-e004",
@@ -120,17 +118,17 @@
           "merchant_id": "swiggy_instamart",
           "lines": [
             {
-              "sku": "daawat-rice-sona_masoori-5000",
+              "sku": "britannia-bread-multigrain-400",
               "quantity": 1,
-              "unit_price_paise": 37200
+              "unit_price_paise": 6200
             }
           ]
         },
-        "emitted_by": "agt_867",
-        "emitted_at": "2026-09-03T02:01:12Z",
+        "emitted_by": "agt_909",
+        "emitted_at": "2026-09-03T01:31:12Z",
         "evidence_class": 1,
-        "prev_hash": "4c9b2422a6ccd147b1c08cf1c5b0e59288fa4c5384f0491416cc94e89c02bd30",
-        "content_hash": "cac239bd915e788150ea04e8a61b5844d42b89c0a23102f42ac9a37b3c1d67bf"
+        "prev_hash": "44c777ad48bceb6c8700fcb5596858d540aff1fd98105845dd1bb700800011cd",
+        "content_hash": "833e07cb77f77cc22cf27f63f247d64f2448f50b01a3a5a6dacbda0ea1f593a1"
       },
       {
         "item_id": "env_00008-e005",
@@ -141,17 +139,17 @@
           "merchant_order_id": "zep_00008",
           "lines": [
             {
-              "sku": "daawat-rice-sona_masoori-5000",
+              "sku": "britannia-bread-multigrain-400",
               "quantity": 1,
-              "unit_price_paise": 37200
+              "unit_price_paise": 6200
             }
           ]
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:01:20Z",
+        "emitted_at": "2026-09-03T01:31:20Z",
         "evidence_class": 2,
-        "prev_hash": "cac239bd915e788150ea04e8a61b5844d42b89c0a23102f42ac9a37b3c1d67bf",
-        "content_hash": "5053a659504db5f427ff526515cb0bcf7e95fec01282894e62e5f91d1d979927"
+        "prev_hash": "833e07cb77f77cc22cf27f63f247d64f2448f50b01a3a5a6dacbda0ea1f593a1",
+        "content_hash": "349796f8ef2fc3f069c4a99ea5ed43b6f33c2291cdfd302ec9bc03e3c3a7da40"
       },
       {
         "item_id": "env_00008-e006",
@@ -161,18 +159,18 @@
           "merchant_order_id": "zep_00008",
           "lines": [
             {
-              "sku": "daawat-rice-sona_masoori-5000",
+              "sku": "britannia-bread-multigrain-400",
               "quantity": 1,
-              "unit_price_paise": 37200
+              "unit_price_paise": 6200
             }
           ],
           "delivered": true
         },
         "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:15:00Z",
+        "emitted_at": "2026-09-03T01:45:00Z",
         "evidence_class": 2,
-        "prev_hash": "5053a659504db5f427ff526515cb0bcf7e95fec01282894e62e5f91d1d979927",
-        "content_hash": "bace14d38c61566a2f69afcb1e200fd521a740a326cd54427d781b225c2dac78"
+        "prev_hash": "349796f8ef2fc3f069c4a99ea5ed43b6f33c2291cdfd302ec9bc03e3c3a7da40",
+        "content_hash": "f54b9a083af2c1e3725dc3e1f9949fe8443bc09ef3487b18a753c76f1548a378"
       },
       {
         "item_id": "env_00008-e007",
@@ -180,15 +178,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00008",
-          "amount_paise": 37200,
+          "amount_paise": 6200,
           "currency": "INR",
           "receipt": "zep_00008"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:01:25Z",
+        "emitted_at": "2026-09-03T01:31:25Z",
         "evidence_class": 3,
-        "prev_hash": "bace14d38c61566a2f69afcb1e200fd521a740a326cd54427d781b225c2dac78",
-        "content_hash": "bd411a06311e0731d7e13fdafe9c045a24938797b7ec440f202d8f1e2a13a7a8"
+        "prev_hash": "f54b9a083af2c1e3725dc3e1f9949fe8443bc09ef3487b18a753c76f1548a378",
+        "content_hash": "cf195855baeb1545052f7d407686365b1cebb45e95ea077bdd037f05456496f6"
       },
       {
         "item_id": "env_00008-e008",
@@ -197,31 +195,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00008",
           "order_id": "order_00008",
-          "amount_paise": 37200,
+          "amount_paise": 6200,
           "status": "captured",
           "block_id": "blk_00008",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:01:30Z",
+        "emitted_at": "2026-09-03T01:31:30Z",
         "evidence_class": 3,
-        "prev_hash": "bd411a06311e0731d7e13fdafe9c045a24938797b7ec440f202d8f1e2a13a7a8",
-        "content_hash": "191fdd5602f146c263f71003423f390cb14fe541950f5470de8e012decefef46"
+        "prev_hash": "cf195855baeb1545052f7d407686365b1cebb45e95ea077bdd037f05456496f6",
+        "content_hash": "730a3caa20ed17d453d427671e5b2c31015886dceeca8626344e70f2b25da0e8"
       },
       {
         "item_id": "env_00008-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Daawat sona masoori rice. Payment complete.",
-          "claimed_sku": "daawat-rice-sona_masoori-5000",
+          "text": "Ordered 400g Britannia multigrain bread. Payment complete.",
+          "claimed_sku": "britannia-bread-multigrain-400",
           "claims_success": true
         },
-        "emitted_by": "agt_867",
-        "emitted_at": "2026-09-03T02:16:00Z",
+        "emitted_by": "agt_909",
+        "emitted_at": "2026-09-03T01:46:00Z",
         "evidence_class": 0,
-        "prev_hash": "191fdd5602f146c263f71003423f390cb14fe541950f5470de8e012decefef46",
-        "content_hash": "553d4c3d51596a858d837e3a392fbafcfd43391ba17507e95b0b872c963e120d"
+        "prev_hash": "730a3caa20ed17d453d427671e5b2c31015886dceeca8626344e70f2b25da0e8",
+        "content_hash": "246af3aeb67677f648bc2089f26d30748bc65bde79fc94225fa825655b57b35c"
       }
     ]
   },
@@ -230,9 +228,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "daawat-rice-sona_masoori-5000",
-    "ordered_sku": "daawat-rice-sona_masoori-5000",
-    "delivered_sku": "daawat-rice-sona_masoori-5000",
+    "requested_sku": "britannia-bread-multigrain-400",
+    "ordered_sku": "britannia-bread-multigrain-400",
+    "delivered_sku": "britannia-bread-multigrain-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

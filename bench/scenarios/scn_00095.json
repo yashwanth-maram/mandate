@@ -6,222 +6,203 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00095",
-    "created_at": "2026-09-02T23:26:00Z",
-    "expires_at": "2026-09-03T05:26:00Z",
-    "user_id": "usr_5775",
-    "agent_id": "agt_852",
+    "created_at": "2026-09-02T23:00:00Z",
+    "expires_at": "2026-09-03T05:00:00Z",
+    "user_id": "usr_4579",
+    "agent_id": "agt_216",
     "block": {
       "block_id": "blk_00095",
-      "blocked_paise": 54510,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-13T23:26:00Z",
-      "expires_at": "2026-10-17T23:26:00Z"
+      "blocked_at": "2026-08-21T23:00:00Z",
+      "expires_at": "2026-10-10T23:00:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18170,
-      "max_total_paise": 18170,
+      "category": "noodles",
+      "max_unit_price_paise": 12419,
+      "max_total_paise": 12419,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "dhara",
-      "variant": null,
-      "pack_size_g": 1000
+      "brand": "maggi",
+      "variant": "atta",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "order 1L Dhara kachi ghani mustard oil on Zepto",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "I need 560g Maggi atta noodles, use Swiggy Instamart",
+      "uncaptured_attributes": []
     },
-    "content_hash": "9a3b3a4b89d0b8d40c2fb748c1e44d96115a6bb6bc1a1fa9122e4991dfd65787",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "c49ab5f825207bd39aca65b0a186b888a16daf184a8ff17ea0dc858efeb0d51d",
+    "signature": "RS9K0KYAeoeZTw/T+auATO1+GsDvja5l04PU8aExrVtx8cHea/oNfZMVvTkmqixx294Q2A7UJstcEERwUxaPAw==",
+    "signer_key_id": "usr_4579:f659d96023b61dd7"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00095",
-    "obligation_hash": "9a3b3a4b89d0b8d40c2fb748c1e44d96115a6bb6bc1a1fa9122e4991dfd65787",
+    "obligation_hash": "c49ab5f825207bd39aca65b0a186b888a16daf184a8ff17ea0dc858efeb0d51d",
     "items": [
       {
         "item_id": "env_00095-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "fortune-edible_oil-groundnut-1000",
-          "display_name": "Fortune Groundnut Oil 1L",
-          "description": "Fortune Groundnut Oil 1L. Best before 6 months from packaging date.",
-          "listed_price_paise": 18900
+          "merchant_id": "swiggy_instamart",
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 10800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:26:03Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:00:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "94a17e0b2d8e26663e392fbfe5cf44b833171a6e3a85082bed5264e422b17796"
+        "content_hash": "3437b96794237fdfcb6a73a4e4da05ca7d3e8d26b6464bf1e6033df763c9bc7b"
       },
       {
         "item_id": "env_00095-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "dhara-edible_oil-mustard-1000",
-          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
-          "description": "Dhara Kachi Ghani Mustard Oil 1L. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 15800
+          "merchant_id": "swiggy_instamart",
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9000
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:26:04Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:00:04Z",
         "evidence_class": 2,
-        "prev_hash": "94a17e0b2d8e26663e392fbfe5cf44b833171a6e3a85082bed5264e422b17796",
-        "content_hash": "48d1c451ce5892d8af4082e51a37251b6ef07b3004c243b0fbca55b69f3cc466"
+        "prev_hash": "3437b96794237fdfcb6a73a4e4da05ca7d3e8d26b6464bf1e6033df763c9bc7b",
+        "content_hash": "dcdcee6702185832e7a434219dcb196a115e1649c2ef7e34d796894097632b8e"
       },
       {
         "item_id": "env_00095-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "fortune-edible_oil-sunflower_refined-1000",
-          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
-          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 15200
+          "merchant_id": "swiggy_instamart",
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:26:05Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:00:05Z",
         "evidence_class": 2,
-        "prev_hash": "48d1c451ce5892d8af4082e51a37251b6ef07b3004c243b0fbca55b69f3cc466",
-        "content_hash": "b3695f7278c8ce9ca567722c5fc677f7b31cd4d944916f606850d175d971d581"
+        "prev_hash": "dcdcee6702185832e7a434219dcb196a115e1649c2ef7e34d796894097632b8e",
+        "content_hash": "9bf6fd33221256a440b54f098025b94135558f0e37fc78f42f479a5c0d35bbee"
       },
       {
         "item_id": "env_00095-e003",
         "seq": 3,
         "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "saffola-edible_oil-sunflower_refined-1000",
-          "display_name": "Saffola Gold Refined Oil 1L",
-          "description": "Saffola Gold Refined Oil 1L. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 16800
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
+          "lines": [
+            {
+              "sku": "maggi-noodles-atta-560",
+              "quantity": 1,
+              "unit_price_paise": 10800
+            }
+          ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:26:06Z",
-        "evidence_class": 2,
-        "prev_hash": "b3695f7278c8ce9ca567722c5fc677f7b31cd4d944916f606850d175d971d581",
-        "content_hash": "64bd07fc0d2f11a521ab358290ffa59469674bf53f9855b04ca6147518c84108"
+        "emitted_by": "agt_216",
+        "emitted_at": "2026-09-02T23:00:12Z",
+        "evidence_class": 1,
+        "prev_hash": "9bf6fd33221256a440b54f098025b94135558f0e37fc78f42f479a5c0d35bbee",
+        "content_hash": "a0d7d5f3dffd3f7d74e8558e5203a28dbcf74878097fb27403bd2d97118fd4c7"
       },
       {
         "item_id": "env_00095-e004",
         "seq": 4,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
+          "merchant_order_id": "zep_00095",
           "lines": [
             {
-              "sku": "dhara-edible_oil-mustard-1000",
+              "sku": "maggi-noodles-atta-560",
               "quantity": 1,
-              "unit_price_paise": 15800
+              "unit_price_paise": 10800
             }
           ]
         },
-        "emitted_by": "agt_852",
-        "emitted_at": "2026-09-02T23:26:12Z",
-        "evidence_class": 1,
-        "prev_hash": "64bd07fc0d2f11a521ab358290ffa59469674bf53f9855b04ca6147518c84108",
-        "content_hash": "e79653aaa7746b8bd38b1e51218060ec2199a2021572894357d7225181305618"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:00:20Z",
+        "evidence_class": 2,
+        "prev_hash": "a0d7d5f3dffd3f7d74e8558e5203a28dbcf74878097fb27403bd2d97118fd4c7",
+        "content_hash": "27e2fb1e3fef2f4800b74d8e254bf10102083ac22d637b196d26e3ab280cb906"
       },
       {
         "item_id": "env_00095-e005",
         "seq": 5,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00095",
           "lines": [
             {
-              "sku": "dhara-edible_oil-mustard-1000",
+              "sku": "maggi-noodles-atta-560",
               "quantity": 1,
-              "unit_price_paise": 15800
+              "unit_price_paise": 10800
             }
-          ]
+          ],
+          "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:26:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T23:14:00Z",
         "evidence_class": 2,
-        "prev_hash": "e79653aaa7746b8bd38b1e51218060ec2199a2021572894357d7225181305618",
-        "content_hash": "abf7eb860102bf2e158fcfcdb7c68d7e1116022b703a0b3b8edeefd951c21cea"
+        "prev_hash": "27e2fb1e3fef2f4800b74d8e254bf10102083ac22d637b196d26e3ab280cb906",
+        "content_hash": "fea7cad682beb8f082eb27c3ae76239bd5541e39cd3671b9935a1c3523bd4e17"
       },
       {
         "item_id": "env_00095-e006",
         "seq": 6,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00095",
-          "lines": [
-            {
-              "sku": "dhara-edible_oil-mustard-1000",
-              "quantity": 1,
-              "unit_price_paise": 15800
-            }
-          ],
-          "delivered": true
+          "kind": "PSP_ORDER",
+          "order_id": "order_00095",
+          "amount_paise": 10800,
+          "currency": "INR",
+          "receipt": "zep_00095"
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T23:40:00Z",
-        "evidence_class": 2,
-        "prev_hash": "abf7eb860102bf2e158fcfcdb7c68d7e1116022b703a0b3b8edeefd951c21cea",
-        "content_hash": "6ca7c2b35d8eaf234f9f37c64e24586ab6879dd12eced9f1f99c7d1a0c9d5b1c"
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T23:00:25Z",
+        "evidence_class": 3,
+        "prev_hash": "fea7cad682beb8f082eb27c3ae76239bd5541e39cd3671b9935a1c3523bd4e17",
+        "content_hash": "946ce904c99eb2bbf7affff648c1a0b412ae27cb716f56bbe210384de2ae60fc"
       },
       {
         "item_id": "env_00095-e007",
         "seq": 7,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00095",
-          "amount_paise": 15800,
-          "currency": "INR",
-          "receipt": "zep_00095"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:26:25Z",
-        "evidence_class": 3,
-        "prev_hash": "6ca7c2b35d8eaf234f9f37c64e24586ab6879dd12eced9f1f99c7d1a0c9d5b1c",
-        "content_hash": "64cb419834fc11b1deb868c7c928f520ac5439bf0c9bccde973a328d7b99d586"
-      },
-      {
-        "item_id": "env_00095-e008",
-        "seq": 8,
-        "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00095",
           "order_id": "order_00095",
-          "amount_paise": 15800,
+          "amount_paise": 10800,
           "status": "captured",
           "block_id": "blk_00095",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:26:30Z",
+        "emitted_at": "2026-09-02T23:00:30Z",
         "evidence_class": 3,
-        "prev_hash": "64cb419834fc11b1deb868c7c928f520ac5439bf0c9bccde973a328d7b99d586",
-        "content_hash": "01278ef5782ee3c499dbdcf49a1577c0c659081f3abefa536a172f4876495532"
+        "prev_hash": "946ce904c99eb2bbf7affff648c1a0b412ae27cb716f56bbe210384de2ae60fc",
+        "content_hash": "cc4f596ba4e7226c37a6634c88c91b5ab89c1b04fe6edaeec6caf53d2b595704"
       },
       {
-        "item_id": "env_00095-e009",
-        "seq": 9,
+        "item_id": "env_00095-e008",
+        "seq": 8,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "dhara-edible_oil-mustard-1000",
+          "text": "Ordered 560g Maggi atta noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-atta-560",
           "claims_success": true
         },
-        "emitted_by": "agt_852",
-        "emitted_at": "2026-09-02T23:41:00Z",
+        "emitted_by": "agt_216",
+        "emitted_at": "2026-09-02T23:15:00Z",
         "evidence_class": 0,
-        "prev_hash": "01278ef5782ee3c499dbdcf49a1577c0c659081f3abefa536a172f4876495532",
-        "content_hash": "6e1877226cbc69008fab2d13c5f769f06a50a1e603ea2d3304847b4f7c780897"
+        "prev_hash": "cc4f596ba4e7226c37a6634c88c91b5ab89c1b04fe6edaeec6caf53d2b595704",
+        "content_hash": "8382c9387462c845f8ca9575bca0301788f25b1bef8fbe575dd9b96c886b7bc7"
       }
     ]
   },
@@ -230,9 +211,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "dhara-edible_oil-mustard-1000",
-    "ordered_sku": "dhara-edible_oil-mustard-1000",
-    "delivered_sku": "dhara-edible_oil-mustard-1000",
+    "requested_sku": "maggi-noodles-atta-560",
+    "ordered_sku": "maggi-noodles-atta-560",
+    "delivered_sku": "maggi-noodles-atta-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

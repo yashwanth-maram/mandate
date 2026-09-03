@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00269",
-    "created_at": "2026-09-02T22:36:00Z",
-    "expires_at": "2026-09-03T04:36:00Z",
-    "user_id": "usr_9887",
-    "agent_id": "agt_689",
+    "created_at": "2026-09-02T19:47:00Z",
+    "expires_at": "2026-09-03T01:47:00Z",
+    "user_id": "usr_3850",
+    "agent_id": "agt_752",
     "block": {
       "block_id": "blk_00269",
-      "blocked_paise": 117300,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-27T22:36:00Z",
-      "expires_at": "2026-10-27T22:36:00Z"
+      "blocked_at": "2026-08-15T19:47:00Z",
+      "expires_at": "2026-10-19T19:47:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 39100,
-      "max_total_paise": 39100,
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "whole_wheat",
-      "pack_size_g": 5000
+      "brand": "mother_dairy",
+      "variant": null,
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 5kg Fortune atta from Swiggy Instamart",
-      "uncaptured_attributes": []
+      "text": "order 1L Mother Dairy full cream milk on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "0e9d7525d2a1b9027f0c6dff290ac82c66845b63f0beaef4bd85eff62c155141",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "115ad59c6755ffb861e99a0f03206739d4ab1df3149581a44d24c7ed2126f5c5",
+    "signature": "a1yPl+zUKO260qT56/pKZiWdUUAqinvnu40fvt1EZ4iijIC38NTCDADGvl9mAdvEJjXp0AOBsAyqa5WnGHwaCQ==",
+    "signer_key_id": "usr_3850:65eccb98e2b0384a"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00269",
-    "obligation_hash": "0e9d7525d2a1b9027f0c6dff290ac82c66845b63f0beaef4bd85eff62c155141",
+    "obligation_hash": "115ad59c6755ffb861e99a0f03206739d4ab1df3149581a44d24c7ed2126f5c5",
     "items": [
       {
         "item_id": "env_00269-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "aashirvaad-flour-multigrain-5000",
-          "display_name": "Aashirvaad Multigrain Atta 5kg",
-          "description": "Aashirvaad Multigrain Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 39800
+          "merchant_id": "blinkit",
+          "sku": "amul-milk-toned-1000",
+          "display_name": "Amul Taaza Toned Milk 1L",
+          "description": "Amul Taaza Toned Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6600
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:36:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:47:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "306da40627bee154c431ab8f5f54f470ccb713925458921ac8bbd9fa61064ee5"
+        "content_hash": "499062d27ee87d95c7d02c490a0f399331463d324cf7ce5227e3aae1b08fa6b5"
       },
       {
         "item_id": "env_00269-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "fortune-flour-whole_wheat-5000",
-          "display_name": "Fortune Chakki Fresh Atta 5kg",
-          "description": "Fortune Chakki Fresh Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 34000
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Bestseller in this category this week.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:36:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:47:04Z",
         "evidence_class": 2,
-        "prev_hash": "306da40627bee154c431ab8f5f54f470ccb713925458921ac8bbd9fa61064ee5",
-        "content_hash": "d29ccfff5196548b7637f6a913f73edc84af8b9aa4d0f828e6a5c29ba560af7d"
+        "prev_hash": "499062d27ee87d95c7d02c490a0f399331463d324cf7ce5227e3aae1b08fa6b5",
+        "content_hash": "e2a46bd677eca7f1b5461a49b671f2527455405e4ee0621cf116190974684cad"
       },
       {
         "item_id": "env_00269-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "fortune-flour-refined-1000",
-          "display_name": "Fortune Maida 1kg",
-          "description": "Fortune Maida 1kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 5800
+          "merchant_id": "blinkit",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 7500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:36:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:47:05Z",
         "evidence_class": 2,
-        "prev_hash": "d29ccfff5196548b7637f6a913f73edc84af8b9aa4d0f828e6a5c29ba560af7d",
-        "content_hash": "fdef43c7799c757560e0a3b3d6333d7cf1cf9436d2b904853b9a33fbffb3f4fc"
+        "prev_hash": "e2a46bd677eca7f1b5461a49b671f2527455405e4ee0621cf116190974684cad",
+        "content_hash": "01fd2657bd318d84cecccb4321e942622208f18cc20376c1aa30ed11e462b444"
       },
       {
         "item_id": "env_00269-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "aashirvaad-flour-whole_wheat-1000",
-          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
-          "description": "Aashirvaad Whole Wheat Atta 1kg. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 7800
+          "merchant_id": "blinkit",
+          "sku": "amul-milk-double_toned-1000",
+          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
+          "description": "Amul Slim n Trim Double Toned Milk 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 5900
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:36:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:47:06Z",
         "evidence_class": 2,
-        "prev_hash": "fdef43c7799c757560e0a3b3d6333d7cf1cf9436d2b904853b9a33fbffb3f4fc",
-        "content_hash": "22f54eb398331011ccee1b4a625e580c3283da2596ac8668f6ba8ba41d729ae5"
+        "prev_hash": "01fd2657bd318d84cecccb4321e942622208f18cc20376c1aa30ed11e462b444",
+        "content_hash": "3851ee2a1e802e23cdfeafcdc9322df17e2c8e48fe5c8368f655a14e92a6ff97"
       },
       {
         "item_id": "env_00269-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "fortune-flour-whole_wheat-5000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 34000
+              "unit_price_paise": 7500
             }
           ]
         },
-        "emitted_by": "agt_689",
-        "emitted_at": "2026-09-02T22:36:12Z",
+        "emitted_by": "agt_752",
+        "emitted_at": "2026-09-02T19:47:12Z",
         "evidence_class": 1,
-        "prev_hash": "22f54eb398331011ccee1b4a625e580c3283da2596ac8668f6ba8ba41d729ae5",
-        "content_hash": "40236295fb6a822cbdb6f9862ccc73898ddfdca297df8f0f5459dc6a83f3bde4"
+        "prev_hash": "3851ee2a1e802e23cdfeafcdc9322df17e2c8e48fe5c8368f655a14e92a6ff97",
+        "content_hash": "ccf6bfd11217f23b2ba34cad2b85b0b5aea60e9bd72235ef0d28fc3e0b5bac4e"
       },
       {
         "item_id": "env_00269-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00269",
           "lines": [
             {
-              "sku": "fortune-flour-whole_wheat-5000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 34000
+              "unit_price_paise": 7500
             }
           ]
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:36:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T19:47:20Z",
         "evidence_class": 2,
-        "prev_hash": "40236295fb6a822cbdb6f9862ccc73898ddfdca297df8f0f5459dc6a83f3bde4",
-        "content_hash": "dd1e454f154df559510d88d0d6ad1a8d3787f3fa9fd3265be3bd583e75a33b07"
+        "prev_hash": "ccf6bfd11217f23b2ba34cad2b85b0b5aea60e9bd72235ef0d28fc3e0b5bac4e",
+        "content_hash": "588fdb0673ea93a2cda7e99b628a38913b903082b1c959671f849f7cc98f26ac"
       },
       {
         "item_id": "env_00269-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00269",
           "lines": [
             {
-              "sku": "fortune-flour-whole_wheat-5000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 34000
+              "unit_price_paise": 7500
             }
           ],
           "delivered": true
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-02T22:50:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:01:00Z",
         "evidence_class": 2,
-        "prev_hash": "dd1e454f154df559510d88d0d6ad1a8d3787f3fa9fd3265be3bd583e75a33b07",
-        "content_hash": "0286c9c27278c555a9427fb3072d3b12c8d0b8511e6f0d5d3d0777f6cba28d78"
+        "prev_hash": "588fdb0673ea93a2cda7e99b628a38913b903082b1c959671f849f7cc98f26ac",
+        "content_hash": "62f950c08dfc622ae962609cf8bdd96fc2524694149002ff00cdea0612b76cf9"
       },
       {
         "item_id": "env_00269-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00269",
-          "amount_paise": 34000,
+          "amount_paise": 7500,
           "currency": "INR",
           "receipt": "zep_00269"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:36:25Z",
+        "emitted_at": "2026-09-02T19:47:25Z",
         "evidence_class": 3,
-        "prev_hash": "0286c9c27278c555a9427fb3072d3b12c8d0b8511e6f0d5d3d0777f6cba28d78",
-        "content_hash": "76b16aa2e1cf95d25f52076dfeff82ce6aa5fa2cc599dd61d2aee6d209ba8769"
+        "prev_hash": "62f950c08dfc622ae962609cf8bdd96fc2524694149002ff00cdea0612b76cf9",
+        "content_hash": "8b6ce3935ba39e11457d0b14cde3d9056488c56fe7cdcea2bff78c2ffd6f9876"
       },
       {
         "item_id": "env_00269-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00269",
           "order_id": "order_00269",
-          "amount_paise": 34000,
+          "amount_paise": 7500,
           "status": "captured",
           "block_id": "blk_00269",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T22:36:30Z",
+        "emitted_at": "2026-09-02T19:47:30Z",
         "evidence_class": 3,
-        "prev_hash": "76b16aa2e1cf95d25f52076dfeff82ce6aa5fa2cc599dd61d2aee6d209ba8769",
-        "content_hash": "73d7c8c6d152128b72bb847cd5076953bd51a464b54f2b5e0ed04cb697c78291"
+        "prev_hash": "8b6ce3935ba39e11457d0b14cde3d9056488c56fe7cdcea2bff78c2ffd6f9876",
+        "content_hash": "fe0f29cf5d3e2b54d431eeb18bd78fd1a22519fc057f2218de93c6e40c46d8a2"
       },
       {
         "item_id": "env_00269-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Fortune atta. Payment complete.",
-          "claimed_sku": "fortune-flour-whole_wheat-5000",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_689",
-        "emitted_at": "2026-09-02T22:51:00Z",
+        "emitted_by": "agt_752",
+        "emitted_at": "2026-09-02T20:02:00Z",
         "evidence_class": 0,
-        "prev_hash": "73d7c8c6d152128b72bb847cd5076953bd51a464b54f2b5e0ed04cb697c78291",
-        "content_hash": "f72cdaae6d2596b8ca2f3cb4bd7ea6990f56642ed57e857d09c10c7d105632f6"
+        "prev_hash": "fe0f29cf5d3e2b54d431eeb18bd78fd1a22519fc057f2218de93c6e40c46d8a2",
+        "content_hash": "24d0845dcadffd858ab03cee5d13467429727ca87447484e5453226624111ea0"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-whole_wheat-5000",
-    "ordered_sku": "fortune-flour-whole_wheat-5000",
-    "delivered_sku": "fortune-flour-whole_wheat-5000",
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -91,6 +91,7 @@ from verifiers.fulfilment import FulfilmentVerifier
 from verifiers.provenance import ProvenanceVerifier
 from verifiers.receipt import ReceiptVerifier
 from verifiers.semantic import SemanticVerifier
+from ledger.signer import verify_obligation
 
 
 class Mode(str, Enum):
@@ -203,6 +204,7 @@ class Adjudicator:
         semantic: Optional[Verifier] = None,
         deterministic: Optional[Sequence[Verifier]] = None,
         floor: EvidenceClass = PERFORMANCE_FLOOR,
+        keyring: Optional[dict[str, str]] = None,
     ) -> None:
         self.deterministic: list[Verifier] = list(
             deterministic
@@ -216,11 +218,36 @@ class Adjudicator:
         )
         self.semantic = semantic if semantic is not None else SemanticVerifier()
         self.floor = floor
+        self.keyring = keyring or {}
 
     # -- main ---------------------------------------------------------------
 
     def decide(self, vi: VerifierInput, mode: Mode = Mode.ATTRIBUTION) -> Decision:
         started = time.perf_counter()
+        
+        # An obligation that cannot be authenticated is not a contract. Nothing
+        # downstream can be trusted if the thing every verifier decides against
+        # might have been altered or issued by someone else.
+        if self.keyring and vi.obligation.signature is not None:
+            public = self.keyring.get(vi.obligation.signer_key_id or "")
+            if public is None or not verify_obligation(vi.obligation, public):
+                return Decision(
+                    scenario_id=vi.scenario_id,
+                    mode=mode,
+                    gate_verdict=GateVerdict.ABSTAIN,
+                    fault_class=FaultClass.NO_FAULT,
+                    liable_party=Party.NONE,
+                    loss_paise=0,
+                    confidence=0.0,
+                    basis_class=EvidenceClass.SELF_REPORT,
+                    cited=(),
+                    reason=(
+                        "obligation signature does not verify against the "
+                        "registered key, so there is no authenticated contract "
+                        "to adjudicate against"
+                    ),
+                )
+
         view = _gate_view(vi) if mode is Mode.GATE else vi
 
         outputs = [v.run(view) for v in self.deterministic]

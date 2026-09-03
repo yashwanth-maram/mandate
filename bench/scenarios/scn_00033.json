@@ -6,41 +6,43 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00033",
-    "created_at": "2026-09-02T18:53:00Z",
-    "expires_at": "2026-09-03T00:53:00Z",
-    "user_id": "usr_3076",
-    "agent_id": "agt_859",
+    "created_at": "2026-09-03T02:40:00Z",
+    "expires_at": "2026-09-03T08:40:00Z",
+    "user_id": "usr_4673",
+    "agent_id": "agt_943",
     "block": {
       "block_id": "blk_00033",
-      "blocked_paise": 54510,
+      "blocked_paise": 94872,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-20T18:53:00Z",
-      "expires_at": "2026-10-18T18:53:00Z"
+      "blocked_at": "2026-08-16T02:40:00Z",
+      "expires_at": "2026-10-05T02:40:00Z"
     },
     "hard": {
-      "category": "edible_oil",
-      "max_unit_price_paise": 18170,
-      "max_total_paise": 18170,
+      "category": "butter",
+      "max_unit_price_paise": 31624,
+      "max_total_paise": 31624,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "dhara",
-      "variant": "mustard",
-      "pack_size_g": 1000
+      "brand": "nandini",
+      "variant": null,
+      "pack_size_g": 500
     },
     "intent": {
-      "text": "get me 1L Dhara kachi ghani mustard oil from Zepto",
-      "uncaptured_attributes": []
+      "text": "order 500g Nandini salted butter on Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "4187d0f947f89ca4a81914885f1269fc546b1ef6d410de09358cd06dd769bde7",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "2b19b27791f477d92be269f3746ff68b81f98c036c6e6d62340061860ce2c2c9",
+    "signature": "536odCX5TEmpjtKZ6pCO5TTADJ/7RmVg1FjYdL+IHEaSpGlgu6GUjqd2un/rXSsKzUDjbGv4aGv8qS6xR32cBw==",
+    "signer_key_id": "usr_4673:8fcb535f32d8d960"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00033",
-    "obligation_hash": "4187d0f947f89ca4a81914885f1269fc546b1ef6d410de09358cd06dd769bde7",
+    "obligation_hash": "2b19b27791f477d92be269f3746ff68b81f98c036c6e6d62340061860ce2c2c9",
     "items": [
       {
         "item_id": "env_00033-e000",
@@ -48,16 +50,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "fortune-edible_oil-groundnut-1000",
-          "display_name": "Fortune Groundnut Oil 1L",
-          "description": "Fortune Groundnut Oil 1L. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 18900
+          "sku": "nandini-butter-salted-500",
+          "display_name": "Nandini Butter Salted 500g",
+          "description": "Nandini Butter Salted 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 27500
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T18:53:03Z",
+        "emitted_at": "2026-09-03T02:40:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "ce289f77895aae0ab7b10b6edf9a421413e3d9fb2364462f52a4fbce87fa9969"
+        "content_hash": "6f56df1731ef500ad665f2eb7756d3fa1b0e90ec93f2886c0e7450c2c23edaf5"
       },
       {
         "item_id": "env_00033-e001",
@@ -65,16 +67,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "dhara-edible_oil-mustard-1000",
-          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
-          "description": "Dhara Kachi Ghani Mustard Oil 1L. Best before 6 months from packaging date.",
-          "listed_price_paise": 15800
+          "sku": "amul-butter-salted-500",
+          "display_name": "Amul Butter Salted 500g",
+          "description": "Amul Butter Salted 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 28500
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T18:53:04Z",
+        "emitted_at": "2026-09-03T02:40:04Z",
         "evidence_class": 2,
-        "prev_hash": "ce289f77895aae0ab7b10b6edf9a421413e3d9fb2364462f52a4fbce87fa9969",
-        "content_hash": "8e35c5e3f24e59e1ecd9787ddb75401fd292b0793376492e7210073e878dbd7f"
+        "prev_hash": "6f56df1731ef500ad665f2eb7756d3fa1b0e90ec93f2886c0e7450c2c23edaf5",
+        "content_hash": "09b33a371fa5c28e043f5247a097e53a48e2247f6a0d0e8e0a6712abe9e96471"
       },
       {
         "item_id": "env_00033-e002",
@@ -82,16 +84,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "saffola-edible_oil-sunflower_refined-1000",
-          "display_name": "Saffola Gold Refined Oil 1L",
-          "description": "Saffola Gold Refined Oil 1L. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 16800
+          "sku": "amul-butter-unsalted-500",
+          "display_name": "Amul Unsalted Butter 500g",
+          "description": "Amul Unsalted Butter 500g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 29200
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T18:53:05Z",
+        "emitted_at": "2026-09-03T02:40:05Z",
         "evidence_class": 2,
-        "prev_hash": "8e35c5e3f24e59e1ecd9787ddb75401fd292b0793376492e7210073e878dbd7f",
-        "content_hash": "26f08dad9f67ab459184baf5e173318db2b84af2bcd31ca127185198bef877d3"
+        "prev_hash": "09b33a371fa5c28e043f5247a097e53a48e2247f6a0d0e8e0a6712abe9e96471",
+        "content_hash": "9cc7fe7dbd2d1d10197990bf2bce01665cd8a1d579a6a5aeead0dd3ed21a3112"
       },
       {
         "item_id": "env_00033-e003",
@@ -99,16 +101,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "fortune-edible_oil-mustard-1000",
-          "display_name": "Fortune Kachi Ghani Mustard Oil 1L",
-          "description": "Fortune Kachi Ghani Mustard Oil 1L. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 16500
+          "sku": "amul-butter-salted-100",
+          "display_name": "Amul Butter Salted 100g",
+          "description": "Amul Butter Salted 100g. Bestseller in this category this week.",
+          "listed_price_paise": 6200
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T18:53:06Z",
+        "emitted_at": "2026-09-03T02:40:06Z",
         "evidence_class": 2,
-        "prev_hash": "26f08dad9f67ab459184baf5e173318db2b84af2bcd31ca127185198bef877d3",
-        "content_hash": "e32501e8105f2aba9eb8e5f3da084c8ebd0baab27d519df23e7d71087d7496e8"
+        "prev_hash": "9cc7fe7dbd2d1d10197990bf2bce01665cd8a1d579a6a5aeead0dd3ed21a3112",
+        "content_hash": "c133cb9e96e40d3c159b74bcb1cba2d7c9f31e6efc58d8d31a9ed17965c89b89"
       },
       {
         "item_id": "env_00033-e004",
@@ -118,17 +120,17 @@
           "merchant_id": "zepto",
           "lines": [
             {
-              "sku": "dhara-edible_oil-mustard-1000",
+              "sku": "nandini-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 15800
+              "unit_price_paise": 27500
             }
           ]
         },
-        "emitted_by": "agt_859",
-        "emitted_at": "2026-09-02T18:53:12Z",
+        "emitted_by": "agt_943",
+        "emitted_at": "2026-09-03T02:40:12Z",
         "evidence_class": 1,
-        "prev_hash": "e32501e8105f2aba9eb8e5f3da084c8ebd0baab27d519df23e7d71087d7496e8",
-        "content_hash": "c3773b5dec4dbccc2f203fe8cc254b401b5823da49c003bdee99598b7d6f369d"
+        "prev_hash": "c133cb9e96e40d3c159b74bcb1cba2d7c9f31e6efc58d8d31a9ed17965c89b89",
+        "content_hash": "4ff7663df07134840867e241cf4220a319be2022d556ed071aba0288fd73d408"
       },
       {
         "item_id": "env_00033-e005",
@@ -139,17 +141,17 @@
           "merchant_order_id": "zep_00033",
           "lines": [
             {
-              "sku": "dhara-edible_oil-mustard-1000",
+              "sku": "nandini-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 15800
+              "unit_price_paise": 27500
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T18:53:20Z",
+        "emitted_at": "2026-09-03T02:40:20Z",
         "evidence_class": 2,
-        "prev_hash": "c3773b5dec4dbccc2f203fe8cc254b401b5823da49c003bdee99598b7d6f369d",
-        "content_hash": "bccf015c0ddb13672828a92a6ef1029f33c492a9cc851231015294d4a6f0e677"
+        "prev_hash": "4ff7663df07134840867e241cf4220a319be2022d556ed071aba0288fd73d408",
+        "content_hash": "26de31adac42cd5b27140852b40b7c86a421f4b36f1edbc163284574db4e7f78"
       },
       {
         "item_id": "env_00033-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00033",
           "lines": [
             {
-              "sku": "dhara-edible_oil-mustard-1000",
+              "sku": "nandini-butter-salted-500",
               "quantity": 1,
-              "unit_price_paise": 15800
+              "unit_price_paise": 27500
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:07:00Z",
+        "emitted_at": "2026-09-03T02:54:00Z",
         "evidence_class": 2,
-        "prev_hash": "bccf015c0ddb13672828a92a6ef1029f33c492a9cc851231015294d4a6f0e677",
-        "content_hash": "a6e9141c3f98f5f4ebd612bda72599d9bf6fa5a57fa2a4ff568b531c7ffa4e8f"
+        "prev_hash": "26de31adac42cd5b27140852b40b7c86a421f4b36f1edbc163284574db4e7f78",
+        "content_hash": "e9b4260bd555e16f336373384f5eed538ab6797c4cf35790a4143805be728876"
       },
       {
         "item_id": "env_00033-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00033",
-          "amount_paise": 15800,
+          "amount_paise": 27500,
           "currency": "INR",
           "receipt": "zep_00033"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:53:25Z",
+        "emitted_at": "2026-09-03T02:40:25Z",
         "evidence_class": 3,
-        "prev_hash": "a6e9141c3f98f5f4ebd612bda72599d9bf6fa5a57fa2a4ff568b531c7ffa4e8f",
-        "content_hash": "d03da0121caa9adb58bebdf61349730b8e280f66683b44fd25ed460f169bb798"
+        "prev_hash": "e9b4260bd555e16f336373384f5eed538ab6797c4cf35790a4143805be728876",
+        "content_hash": "f594f7dd66e27932a59b9e546899b811d870e7a6125f01707df05e42846c094b"
       },
       {
         "item_id": "env_00033-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00033",
           "order_id": "order_00033",
-          "amount_paise": 15800,
+          "amount_paise": 27500,
           "status": "captured",
           "block_id": "blk_00033",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:53:30Z",
+        "emitted_at": "2026-09-03T02:40:30Z",
         "evidence_class": 3,
-        "prev_hash": "d03da0121caa9adb58bebdf61349730b8e280f66683b44fd25ed460f169bb798",
-        "content_hash": "87d4aa55f34f252fcfc2f4e2e807d262d3179cdd89a32632eaae604aeeb4079a"
+        "prev_hash": "f594f7dd66e27932a59b9e546899b811d870e7a6125f01707df05e42846c094b",
+        "content_hash": "204df3d4447dda72d58fc0f28efc75137786322c486adfd03ea5c14a820eb5bc"
       },
       {
         "item_id": "env_00033-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Dhara kachi ghani mustard oil. Payment complete.",
-          "claimed_sku": "dhara-edible_oil-mustard-1000",
+          "text": "Ordered 500g Nandini salted butter. Payment complete.",
+          "claimed_sku": "nandini-butter-salted-500",
           "claims_success": true
         },
-        "emitted_by": "agt_859",
-        "emitted_at": "2026-09-02T19:08:00Z",
+        "emitted_by": "agt_943",
+        "emitted_at": "2026-09-03T02:55:00Z",
         "evidence_class": 0,
-        "prev_hash": "87d4aa55f34f252fcfc2f4e2e807d262d3179cdd89a32632eaae604aeeb4079a",
-        "content_hash": "d7519e454f663a423752a96ca3992365c8e624de9438dac9f54fb7a2f32bde94"
+        "prev_hash": "204df3d4447dda72d58fc0f28efc75137786322c486adfd03ea5c14a820eb5bc",
+        "content_hash": "2afe903b984dfae9b5170bb9a25da407683091f203ef4e6df225abe517edee9f"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "dhara-edible_oil-mustard-1000",
-    "ordered_sku": "dhara-edible_oil-mustard-1000",
-    "delivered_sku": "dhara-edible_oil-mustard-1000",
+    "requested_sku": "nandini-butter-salted-500",
+    "ordered_sku": "nandini-butter-salted-500",
+    "delivered_sku": "nandini-butter-salted-500",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

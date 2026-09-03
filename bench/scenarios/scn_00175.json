@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00175",
-    "created_at": "2026-09-03T02:46:00Z",
-    "expires_at": "2026-09-03T08:46:00Z",
-    "user_id": "usr_3299",
-    "agent_id": "agt_556",
+    "created_at": "2026-09-02T22:26:00Z",
+    "expires_at": "2026-09-03T04:26:00Z",
+    "user_id": "usr_3783",
+    "agent_id": "agt_727",
     "block": {
       "block_id": "blk_00175",
-      "blocked_paise": 100740,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-29T02:46:00Z",
-      "expires_at": "2026-10-08T02:46:00Z"
+      "blocked_at": "2026-08-25T22:26:00Z",
+      "expires_at": "2026-10-18T22:26:00Z"
     },
     "hard": {
-      "category": "butter",
-      "max_unit_price_paise": 33580,
-      "max_total_paise": 33580,
+      "category": "bread",
+      "max_unit_price_paise": 5750,
+      "max_total_paise": 5750,
       "quantity": 1,
       "merchant_allowlist": [
-        "blinkit"
+        "zepto"
       ],
-      "brand": "amul",
-      "variant": "unsalted",
-      "pack_size_g": 500
+      "brand": "harvest",
+      "variant": null,
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "order 500g Amul unsalted butter on Blinkit",
-      "uncaptured_attributes": []
+      "text": "I need 400g Harvest brown bread, use Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "731f3d27e084b5899b65135baa40c25cb9439b645f9acb22a785b17fb2e7d134",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "234b3ca89a56f5e8e68293dc8e5780e455449e6801bb58eaf1e5621f394ddbfe",
+    "signature": "Se5myA+0ApBcGMjhfpNEpn9qQ2B7mTganMeL5xCdTYOqm3GQmKLPHqZh4NRMUHbuEAjukHm9ZdKv5JHv3FndDg==",
+    "signer_key_id": "usr_3783:8274e15fff58fa9f"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00175",
-    "obligation_hash": "731f3d27e084b5899b65135baa40c25cb9439b645f9acb22a785b17fb2e7d134",
+    "obligation_hash": "234b3ca89a56f5e8e68293dc8e5780e455449e6801bb58eaf1e5621f394ddbfe",
     "items": [
       {
         "item_id": "env_00175-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "amul-butter-salted-500",
-          "display_name": "Amul Butter Salted 500g",
-          "description": "Amul Butter Salted 500g. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 28500
+          "merchant_id": "zepto",
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:46:03Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:26:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "ba13d9c294e4a7ac91c6216c9cbbf9faea5c01a7aa5e6dd1af749e8b432fdb96"
+        "content_hash": "5c05aeede9f20f276ee294e45bc01f26c196542e371ede63bcd6b3b38d7024c9"
       },
       {
         "item_id": "env_00175-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "nandini-butter-salted-500",
-          "display_name": "Nandini Butter Salted 500g",
-          "description": "Nandini Butter Salted 500g. Best before 6 months from packaging date.",
-          "listed_price_paise": 27500
+          "merchant_id": "zepto",
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Best before 6 months from packaging date.",
+          "listed_price_paise": 5200
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:46:04Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:26:04Z",
         "evidence_class": 2,
-        "prev_hash": "ba13d9c294e4a7ac91c6216c9cbbf9faea5c01a7aa5e6dd1af749e8b432fdb96",
-        "content_hash": "eae92f4508d545de9da9eda290d94da3f5e7aa3ca8a49ea58b1df905a422413d"
+        "prev_hash": "5c05aeede9f20f276ee294e45bc01f26c196542e371ede63bcd6b3b38d7024c9",
+        "content_hash": "80bd40ebb3e375eb54bb6e4068e330efbb750df46f2733d91d4b5b3b45c636d6"
       },
       {
         "item_id": "env_00175-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "amul-butter-unsalted-500",
-          "display_name": "Amul Unsalted Butter 500g",
-          "description": "Amul Unsalted Butter 500g. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 29200
+          "merchant_id": "zepto",
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5000
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:46:05Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:26:05Z",
         "evidence_class": 2,
-        "prev_hash": "eae92f4508d545de9da9eda290d94da3f5e7aa3ca8a49ea58b1df905a422413d",
-        "content_hash": "c909f1328a0222d06b39bad3c36eec5c96d2de6f61af1f7f70d445e5440352ee"
+        "prev_hash": "80bd40ebb3e375eb54bb6e4068e330efbb750df46f2733d91d4b5b3b45c636d6",
+        "content_hash": "ffeab75a563d15643fd1be7578888d6e1d63af5ceab3c867859646ecbfcdc1bc"
       },
       {
         "item_id": "env_00175-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "amul-butter-salted-100",
-          "display_name": "Amul Butter Salted 100g",
-          "description": "Amul Butter Salted 100g. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 6200
+          "merchant_id": "zepto",
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4500
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:46:06Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:26:06Z",
         "evidence_class": 2,
-        "prev_hash": "c909f1328a0222d06b39bad3c36eec5c96d2de6f61af1f7f70d445e5440352ee",
-        "content_hash": "9255f9ed6f0bc1227ea6d3d9854655865f879118dc6bd007513d2b3dfc664906"
+        "prev_hash": "ffeab75a563d15643fd1be7578888d6e1d63af5ceab3c867859646ecbfcdc1bc",
+        "content_hash": "90fde7c0988009f4f07ab84ce4a6fd0af66196012e287e347bc6862958f570ec"
       },
       {
         "item_id": "env_00175-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "blinkit",
+          "merchant_id": "zepto",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 5000
             }
           ]
         },
-        "emitted_by": "agt_556",
-        "emitted_at": "2026-09-03T02:46:12Z",
+        "emitted_by": "agt_727",
+        "emitted_at": "2026-09-02T22:26:12Z",
         "evidence_class": 1,
-        "prev_hash": "9255f9ed6f0bc1227ea6d3d9854655865f879118dc6bd007513d2b3dfc664906",
-        "content_hash": "415236b7a062e1c571bd70c92126ce9856cf2b584212609077758ec9deabbef0"
+        "prev_hash": "90fde7c0988009f4f07ab84ce4a6fd0af66196012e287e347bc6862958f570ec",
+        "content_hash": "89bccb373526954f0054b52c8001fc47d9edccd87c6d2cb7c511c66bf07d3d67"
       },
       {
         "item_id": "env_00175-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "blinkit",
+          "merchant_id": "zepto",
           "merchant_order_id": "zep_00175",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 5000
             }
           ]
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T02:46:20Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:26:20Z",
         "evidence_class": 2,
-        "prev_hash": "415236b7a062e1c571bd70c92126ce9856cf2b584212609077758ec9deabbef0",
-        "content_hash": "ef91cd41ba1d818d3fadf0f5c20481fbddb04f8294ad7d10a1b867726619b03d"
+        "prev_hash": "89bccb373526954f0054b52c8001fc47d9edccd87c6d2cb7c511c66bf07d3d67",
+        "content_hash": "ffdd92a14c5a0f666c2af372fbdd426f0f84ed41f1d90916beb6d239bf0bcd34"
       },
       {
         "item_id": "env_00175-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00175",
           "lines": [
             {
-              "sku": "amul-butter-unsalted-500",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 29200
+              "unit_price_paise": 5000
             }
           ],
           "delivered": true
         },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T03:00:00Z",
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:40:00Z",
         "evidence_class": 2,
-        "prev_hash": "ef91cd41ba1d818d3fadf0f5c20481fbddb04f8294ad7d10a1b867726619b03d",
-        "content_hash": "ab69c624b4b876e08f80c34aecdddf6bf466320368658a9e303f2c5d2f4bf2ca"
+        "prev_hash": "ffdd92a14c5a0f666c2af372fbdd426f0f84ed41f1d90916beb6d239bf0bcd34",
+        "content_hash": "f19017228114c63f17d11b89b6ea3663947db686e80ee2d69b5e2b4d4a417002"
       },
       {
         "item_id": "env_00175-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00175",
-          "amount_paise": 29200,
+          "amount_paise": 5000,
           "currency": "INR",
           "receipt": "zep_00175"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:46:25Z",
+        "emitted_at": "2026-09-02T22:26:25Z",
         "evidence_class": 3,
-        "prev_hash": "ab69c624b4b876e08f80c34aecdddf6bf466320368658a9e303f2c5d2f4bf2ca",
-        "content_hash": "ba74b188bac2f515625353231dda18036535752b6bc70ad5a6563f6e75fa339e"
+        "prev_hash": "f19017228114c63f17d11b89b6ea3663947db686e80ee2d69b5e2b4d4a417002",
+        "content_hash": "581ef4f7fc4b402442f47811ff0635b7dd92e2d0e180cdb837c9a11029499b3d"
       },
       {
         "item_id": "env_00175-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00175",
           "order_id": "order_00175",
-          "amount_paise": 29200,
+          "amount_paise": 5000,
           "status": "captured",
           "block_id": "blk_00175",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:46:30Z",
+        "emitted_at": "2026-09-02T22:26:30Z",
         "evidence_class": 3,
-        "prev_hash": "ba74b188bac2f515625353231dda18036535752b6bc70ad5a6563f6e75fa339e",
-        "content_hash": "33c9611c45fe0875aa33224079f0db2dcaa56b83c420305fe04fc81bb0e14758"
+        "prev_hash": "581ef4f7fc4b402442f47811ff0635b7dd92e2d0e180cdb837c9a11029499b3d",
+        "content_hash": "5e9740260662d9bf0e77343c5abc7ddac28c7dfbb7d69bdb61e991f6e5eb1c3a"
       },
       {
         "item_id": "env_00175-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 500g Amul unsalted butter. Payment complete.",
-          "claimed_sku": "amul-butter-unsalted-500",
+          "text": "Ordered 400g Harvest brown bread. Payment complete.",
+          "claimed_sku": "harvest-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_556",
-        "emitted_at": "2026-09-03T03:01:00Z",
+        "emitted_by": "agt_727",
+        "emitted_at": "2026-09-02T22:41:00Z",
         "evidence_class": 0,
-        "prev_hash": "33c9611c45fe0875aa33224079f0db2dcaa56b83c420305fe04fc81bb0e14758",
-        "content_hash": "84b01847aaf65b05aee314915b8504e0c9b5ff1ca2ebbbe9d1a36833833a0ac3"
+        "prev_hash": "5e9740260662d9bf0e77343c5abc7ddac28c7dfbb7d69bdb61e991f6e5eb1c3a",
+        "content_hash": "0eaeac7f70cb2307dd5044ddfc2767395b046daf594f8777b49fc4f5cda31c71"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-butter-unsalted-500",
-    "ordered_sku": "amul-butter-unsalted-500",
-    "delivered_sku": "amul-butter-unsalted-500",
+    "requested_sku": "harvest-bread-brown-400",
+    "ordered_sku": "harvest-bread-brown-400",
+    "delivered_sku": "harvest-bread-brown-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

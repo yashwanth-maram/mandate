@@ -6,41 +6,41 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00387",
-    "created_at": "2026-09-03T00:34:00Z",
-    "expires_at": "2026-09-03T06:34:00Z",
-    "user_id": "usr_5814",
-    "agent_id": "agt_721",
+    "created_at": "2026-09-02T22:44:00Z",
+    "expires_at": "2026-09-03T04:44:00Z",
+    "user_id": "usr_2364",
+    "agent_id": "agt_590",
     "block": {
       "block_id": "blk_00387",
-      "blocked_paise": 50000,
-      "consumed_paise": 0,
-      "blocked_at": "2026-08-28T00:34:00Z",
-      "expires_at": "2026-10-25T00:34:00Z"
+      "blocked_paise": 20000,
+      "consumed_paise": 18500,
+      "blocked_at": "2026-08-13T22:44:00Z",
+      "expires_at": "2026-10-13T22:44:00Z"
     },
     "hard": {
       "category": "salt",
-      "max_unit_price_paise": 5175,
-      "max_total_paise": 5175,
+      "max_unit_price_paise": 3449,
+      "max_total_paise": 3449,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "tata",
-      "variant": "low_sodium",
+      "brand": "aashirvaad",
+      "variant": "iodised",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "order 1kg Tata low sodium salt on Blinkit",
+      "text": "get me 1kg Aashirvaad iodised salt from Blinkit",
       "uncaptured_attributes": []
     },
-    "content_hash": "4d47c38a1bb62a0f5e6284495154d85454c197c177f24e8bbdebf34010937830",
-    "signature": null,
-    "signer_key_id": null
+    "content_hash": "502c6dec4ec77161a0912a26e7a2c0d0afa3f07201766b674462edd503420137",
+    "signature": "+QJVJHAzEN7rxrfmuU2JdP9MxqTljORqoJYMrK95heCi/vJ6KswHtX1s9n6fipXw3J1MfK5vUWGKKCYhYyQcBQ==",
+    "signer_key_id": "usr_2364:7d3ffba053d3dd23"
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00387",
-    "obligation_hash": "4d47c38a1bb62a0f5e6284495154d85454c197c177f24e8bbdebf34010937830",
+    "obligation_hash": "502c6dec4ec77161a0912a26e7a2c0d0afa3f07201766b674462edd503420137",
     "items": [
       {
         "item_id": "env_00387-e000",
@@ -48,20 +48,54 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "tata-salt-iodised-1000",
-          "display_name": "Tata Salt Iodised 1kg",
-          "description": "Tata Salt Iodised 1kg. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 2800
+          "sku": "tata-salt-rock-1000",
+          "display_name": "Tata Sampann Rock Salt 1kg",
+          "description": "Tata Sampann Rock Salt 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 5200
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:34:03Z",
+        "emitted_at": "2026-09-02T22:44:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "78de6643a0dc75d8aa4060ca5d075f68b122897fdc7759a5620753a7b542d60d"
+        "content_hash": "3ebe8d3e8a7131cbd11cfab947131319be2411bee7f0725729f4908957c8ba6d"
       },
       {
         "item_id": "env_00387-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "tata-salt-iodised-1000",
+          "display_name": "Tata Salt Iodised 1kg",
+          "description": "Tata Salt Iodised 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 2800
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:44:04Z",
+        "evidence_class": 2,
+        "prev_hash": "3ebe8d3e8a7131cbd11cfab947131319be2411bee7f0725729f4908957c8ba6d",
+        "content_hash": "6c66bc125a0138bfa97e4004d84a233f681e37dacb84aea6529a3c71ec72ba80"
+      },
+      {
+        "item_id": "env_00387-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-salt-iodised-1000",
+          "display_name": "Aashirvaad Iodised Salt 1kg",
+          "description": "Aashirvaad Iodised Salt 1kg. Best before 6 months from packaging date.",
+          "listed_price_paise": 3000
+        },
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T22:44:05Z",
+        "evidence_class": 2,
+        "prev_hash": "6c66bc125a0138bfa97e4004d84a233f681e37dacb84aea6529a3c71ec72ba80",
+        "content_hash": "82124c27422952e9e1c7429bf8395585511642e891cbd759ff9465736f078ff8"
+      },
+      {
+        "item_id": "env_00387-e003",
+        "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
@@ -71,44 +105,10 @@
           "listed_price_paise": 4500
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:34:04Z",
+        "emitted_at": "2026-09-02T22:44:06Z",
         "evidence_class": 2,
-        "prev_hash": "78de6643a0dc75d8aa4060ca5d075f68b122897fdc7759a5620753a7b542d60d",
-        "content_hash": "fa6e5aea0ee77c8bf716ed28eaf153fccdcf88fc8258573e1a2f7b002e0c6057"
-      },
-      {
-        "item_id": "env_00387-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "tata-salt-rock-1000",
-          "display_name": "Tata Sampann Rock Salt 1kg",
-          "description": "Tata Sampann Rock Salt 1kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 5200
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:34:05Z",
-        "evidence_class": 2,
-        "prev_hash": "fa6e5aea0ee77c8bf716ed28eaf153fccdcf88fc8258573e1a2f7b002e0c6057",
-        "content_hash": "8c231e9e172bb8025c3f7fa6eaaf2cf00b056f44f6c94fdd0c77752d468e73b5"
-      },
-      {
-        "item_id": "env_00387-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "aashirvaad-salt-iodised-1000",
-          "display_name": "Aashirvaad Iodised Salt 1kg",
-          "description": "Aashirvaad Iodised Salt 1kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 3000
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:34:06Z",
-        "evidence_class": 2,
-        "prev_hash": "8c231e9e172bb8025c3f7fa6eaaf2cf00b056f44f6c94fdd0c77752d468e73b5",
-        "content_hash": "480471a4baeb923a39efdcf7ff79a97a8e2b69d79bc10afd771c39179cf84438"
+        "prev_hash": "82124c27422952e9e1c7429bf8395585511642e891cbd759ff9465736f078ff8",
+        "content_hash": "b241e3af6674b6229e0cd3b80872b1f019901f567b9ee44c130921c96a9bad75"
       },
       {
         "item_id": "env_00387-e004",
@@ -118,17 +118,17 @@
           "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "tata-salt-low_sodium-1000",
+              "sku": "aashirvaad-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 4500
+              "unit_price_paise": 3000
             }
           ]
         },
-        "emitted_by": "agt_721",
-        "emitted_at": "2026-09-03T00:34:12Z",
+        "emitted_by": "agt_590",
+        "emitted_at": "2026-09-02T22:44:12Z",
         "evidence_class": 1,
-        "prev_hash": "480471a4baeb923a39efdcf7ff79a97a8e2b69d79bc10afd771c39179cf84438",
-        "content_hash": "bfc1f61819ac22958df58e8034fbc2e1c2e2fbb7349d228f4f485dd166378d83"
+        "prev_hash": "b241e3af6674b6229e0cd3b80872b1f019901f567b9ee44c130921c96a9bad75",
+        "content_hash": "026734a5b97376183b2cfba4fb6178078212f80aec80a31537ee49a8fa3912a1"
       },
       {
         "item_id": "env_00387-e005",
@@ -139,17 +139,17 @@
           "merchant_order_id": "zep_00387",
           "lines": [
             {
-              "sku": "tata-salt-low_sodium-1000",
+              "sku": "aashirvaad-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 4500
+              "unit_price_paise": 3000
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:34:20Z",
+        "emitted_at": "2026-09-02T22:44:20Z",
         "evidence_class": 2,
-        "prev_hash": "bfc1f61819ac22958df58e8034fbc2e1c2e2fbb7349d228f4f485dd166378d83",
-        "content_hash": "af4f1670b03d422ebf607dac02938433d36615a8d29ac8b959814d36b142fb87"
+        "prev_hash": "026734a5b97376183b2cfba4fb6178078212f80aec80a31537ee49a8fa3912a1",
+        "content_hash": "61369fe3e8bf8e26eea8a183f8d5baa3bfd69395353793422fd5ec7dd4025524"
       },
       {
         "item_id": "env_00387-e006",
@@ -159,18 +159,18 @@
           "merchant_order_id": "zep_00387",
           "lines": [
             {
-              "sku": "tata-salt-low_sodium-1000",
+              "sku": "aashirvaad-salt-iodised-1000",
               "quantity": 1,
-              "unit_price_paise": 4500
+              "unit_price_paise": 3000
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:48:00Z",
+        "emitted_at": "2026-09-02T22:58:00Z",
         "evidence_class": 2,
-        "prev_hash": "af4f1670b03d422ebf607dac02938433d36615a8d29ac8b959814d36b142fb87",
-        "content_hash": "5405c35e98caf4349186a6c889334ddaabacea2c3834862aeb4cd892e0855fe8"
+        "prev_hash": "61369fe3e8bf8e26eea8a183f8d5baa3bfd69395353793422fd5ec7dd4025524",
+        "content_hash": "1613e589eb2f656c1474e873f455e4154661e638dc50c91e97084323cff54296"
       },
       {
         "item_id": "env_00387-e007",
@@ -178,15 +178,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00387",
-          "amount_paise": 4500,
+          "amount_paise": 3000,
           "currency": "INR",
           "receipt": "zep_00387"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:34:25Z",
+        "emitted_at": "2026-09-02T22:44:25Z",
         "evidence_class": 3,
-        "prev_hash": "5405c35e98caf4349186a6c889334ddaabacea2c3834862aeb4cd892e0855fe8",
-        "content_hash": "1d7e868284bb64adc43160782f8b746a62a21ef97a9acbe83dcc87a1b97077ca"
+        "prev_hash": "1613e589eb2f656c1474e873f455e4154661e638dc50c91e97084323cff54296",
+        "content_hash": "eef7383a32a7def9d6992d4356a1206a9c1dc81fcc8704a59627a0968152dadd"
       },
       {
         "item_id": "env_00387-e008",
@@ -195,31 +195,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00387",
           "order_id": "order_00387",
-          "amount_paise": 4500,
+          "amount_paise": 3000,
           "status": "captured",
           "block_id": "blk_00387",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T07:04:00Z",
+        "emitted_at": "2026-09-02T22:44:30Z",
         "evidence_class": 3,
-        "prev_hash": "1d7e868284bb64adc43160782f8b746a62a21ef97a9acbe83dcc87a1b97077ca",
-        "content_hash": "8c5ea779908264e97ea1049858d46f528e4190e67666d1930abd21792a8e698f"
+        "prev_hash": "eef7383a32a7def9d6992d4356a1206a9c1dc81fcc8704a59627a0968152dadd",
+        "content_hash": "5880a2d2bf9c6b92d51ed32f7147c89ac457c38ed2de02fd43301dda2eae1129"
       },
       {
         "item_id": "env_00387-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Tata low sodium salt. Payment complete.",
-          "claimed_sku": "tata-salt-low_sodium-1000",
+          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
+          "claimed_sku": "aashirvaad-salt-iodised-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_721",
-        "emitted_at": "2026-09-03T00:49:00Z",
+        "emitted_by": "agt_590",
+        "emitted_at": "2026-09-02T22:59:00Z",
         "evidence_class": 0,
-        "prev_hash": "8c5ea779908264e97ea1049858d46f528e4190e67666d1930abd21792a8e698f",
-        "content_hash": "cc5ff486fd42a3b9cec25586b19ad22c2b7859e8ca12a8910ad3e9f138c6779c"
+        "prev_hash": "5880a2d2bf9c6b92d51ed32f7147c89ac457c38ed2de02fd43301dda2eae1129",
+        "content_hash": "34f32eaefdf0a05f74d60a56f40a714263593f20cf9d8eb8442e3dbbadd8c7c7"
       }
     ]
   },
@@ -228,14 +228,14 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "tata-salt-low_sodium-1000",
-    "ordered_sku": "tata-salt-low_sodium-1000",
-    "delivered_sku": "tata-salt-low_sodium-1000",
+    "requested_sku": "aashirvaad-salt-iodised-1000",
+    "ordered_sku": "aashirvaad-salt-iodised-1000",
+    "delivered_sku": "aashirvaad-salt-iodised-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
-    "loss_paise": 4500,
-    "rationale": "Item was correct; the mandate was not honoured. Debit fired after the obligation expired."
+    "loss_paise": 1500,
+    "rationale": "Item was correct; the mandate was not honoured. Debit of 3000 paise exceeds the 1500 paise remaining on block blk_00387."
   }
 }

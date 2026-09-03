@@ -44,12 +44,15 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import json
 import random
 import shutil
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Callable, Optional
+
+from ledger.signer import Signer
 
 from agent.catalog import (
     Product,
@@ -281,6 +284,19 @@ def _browse_trace(
 # Construction helpers
 # ---------------------------------------------------------------------------
 
+# key_id -> public key, written alongside the scenarios. A PSP verifying a
+# signature looks the key up in a registry rather than trusting one supplied
+# with the message, so the public key lives here and not in the obligation.
+KEYRING: dict[str, str] = {}
+
+
+def _signer_for(rng: random.Random, user_id: str) -> Signer:
+    """A per-user keypair, derived from the seeded PRNG so runs stay identical."""
+    raw = bytes(rng.getrandbits(8) for _ in range(32))
+    signer = Signer.from_seed_bytes(raw, user_id)
+    KEYRING[signer.key_id] = signer.public_key_b64()
+    return signer
+
 
 def _obligation(
     rng: random.Random,
@@ -317,12 +333,14 @@ def _obligation(
         uncaptured.append("brand")
 
     created = BASE_TIME + timedelta(minutes=rng.randint(0, 600))
+    user_id = f"usr_{rng.randint(1000, 9999)}"
+    signer = _signer_for(rng, user_id)
 
-    return Obligation(
+    obligation = Obligation(
         obligation_id=f"obl_{idx:05d}",
         created_at=created,
         expires_at=created + timedelta(hours=6),
-        user_id=f"usr_{rng.randint(1000, 9999)}",
+        user_id=user_id,
         agent_id=f"agt_{rng.randint(100, 999)}",
         block=ReserveBlock(
             block_id=f"blk_{idx:05d}",
@@ -345,7 +363,8 @@ def _obligation(
             text=_intent_text(rng, requested, merchant, unit_ceiling),
             uncaptured_attributes=tuple(uncaptured),
         ),
-    ).with_hash()
+    )
+    return signer.sign_obligation(obligation)
 
 
 def _line(p: Product, quantity: int = 1) -> CartLine:
@@ -922,6 +941,10 @@ def write(scenarios: ScenarioSet, out: Path) -> None:
     out.mkdir(parents=True, exist_ok=True)
     for s in scenarios.scenarios:
         s.write(out)
+        
+    (out / "_keyring.json").write_text(
+        json.dumps(KEYRING, indent=2, sort_keys=True), encoding="utf-8"
+    )
 
 
 def main() -> None:
