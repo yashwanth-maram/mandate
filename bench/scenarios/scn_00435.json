@@ -6,203 +6,222 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00435",
-    "created_at": "2026-09-03T01:17:00Z",
-    "expires_at": "2026-09-03T07:17:00Z",
-    "user_id": "usr_3756",
-    "agent_id": "agt_157",
+    "created_at": "2026-09-03T00:47:00Z",
+    "expires_at": "2026-09-03T06:47:00Z",
+    "user_id": "usr_9195",
+    "agent_id": "agt_299",
     "block": {
       "block_id": "blk_00435",
-      "blocked_paise": 50000,
+      "blocked_paise": 122475,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-31T01:17:00Z",
-      "expires_at": "2026-10-14T01:17:00Z"
+      "blocked_at": "2026-08-24T00:47:00Z",
+      "expires_at": "2026-10-27T00:47:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 10350,
-      "max_total_paise": 10350,
+      "category": "flour",
+      "max_unit_price_paise": 40825,
+      "max_total_paise": 40825,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "yippee",
-      "variant": "masala",
-      "pack_size_g": 560
+      "brand": "aashirvaad",
+      "variant": null,
+      "pack_size_g": 5000
     },
     "intent": {
-      "text": "buy 560g Yippee masala noodles from Zepto, keep it under 103 rupees",
-      "uncaptured_attributes": []
+      "text": "buy 5kg Aashirvaad atta from Swiggy Instamart, keep it under 408 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "20e536d867567b3ae825b475a9a9e4b3911cb6af25a227dfc501ff0d156779aa",
+    "content_hash": "35b31f31d10432acee6dca35a380f703aff1aa093255c4b6f4f4fc537b727172",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00435",
-    "obligation_hash": "20e536d867567b3ae825b475a9a9e4b3911cb6af25a227dfc501ff0d156779aa",
+    "obligation_hash": "35b31f31d10432acee6dca35a380f703aff1aa093255c4b6f4f4fc537b727172",
     "items": [
       {
         "item_id": "env_00435-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "maggi-noodles-atta-560",
-          "display_name": "Maggi Atta Noodles 8-pack 560g",
-          "description": "Maggi Atta Noodles 8-pack 560g. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 10800
+          "merchant_id": "swiggy_instamart",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:17:03Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:47:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8d612c0d07ee97459fdda901ffc51642b22a7ad27872ea3ae3a1be2894a88485"
+        "content_hash": "7ffa54e04d9ac1438bb5db72c054b551834ec239e76871f87e6217a52cae7e72"
       },
       {
         "item_id": "env_00435-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "maggi-noodles-masala-560",
-          "display_name": "Maggi Masala Noodles 8-pack 560g",
-          "description": "Maggi Masala Noodles 8-pack 560g. Bestseller in this category this week.",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Fresh stock, delivered in minutes.",
           "listed_price_paise": 9600
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:17:04Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:47:04Z",
         "evidence_class": 2,
-        "prev_hash": "8d612c0d07ee97459fdda901ffc51642b22a7ad27872ea3ae3a1be2894a88485",
-        "content_hash": "3c7064f9dfd9b9b9b08e463959f4576af895ac386e2d56d135f93994e45d25b1"
+        "prev_hash": "7ffa54e04d9ac1438bb5db72c054b551834ec239e76871f87e6217a52cae7e72",
+        "content_hash": "d3577a2aa691fe948ce26240132bf7572164db4a47d2f259704e0ed1316b3f33"
       },
       {
         "item_id": "env_00435-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "yippee-noodles-masala-560",
-          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
-          "description": "Yippee Magic Masala Noodles 8-pack 560g. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 9000
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-semolina-1000",
+          "display_name": "Aashirvaad Sooji Rava 1kg",
+          "description": "Aashirvaad Sooji Rava 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 6800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:17:05Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:47:05Z",
         "evidence_class": 2,
-        "prev_hash": "3c7064f9dfd9b9b9b08e463959f4576af895ac386e2d56d135f93994e45d25b1",
-        "content_hash": "782c6d62714453aa6a611bbb4c475025a3e7b999d043f751b34e182dff163941"
+        "prev_hash": "d3577a2aa691fe948ce26240132bf7572164db4a47d2f259704e0ed1316b3f33",
+        "content_hash": "759500a8480e41e98f523a79180057bb472e93214c39f1986abdb1ce6f79992d"
       },
       {
         "item_id": "env_00435-e003",
         "seq": 3,
         "payload": {
-          "kind": "AGENT_CART",
-          "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "yippee-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9000
-            }
-          ]
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "swiggy_instamart",
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 35500
         },
-        "emitted_by": "agt_157",
-        "emitted_at": "2026-09-03T01:17:12Z",
-        "evidence_class": 1,
-        "prev_hash": "782c6d62714453aa6a611bbb4c475025a3e7b999d043f751b34e182dff163941",
-        "content_hash": "92fe20a6365463ab410eadf5bc887b03303cb08f5831861aeb57b3f08fefbd08"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:47:06Z",
+        "evidence_class": 2,
+        "prev_hash": "759500a8480e41e98f523a79180057bb472e93214c39f1986abdb1ce6f79992d",
+        "content_hash": "e4ef1a8ed4214d7f3ca908bd7bd5ff4ae003c940341e488cb3c62899331cba3a"
       },
       {
         "item_id": "env_00435-e004",
         "seq": 4,
         "payload": {
-          "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
-          "merchant_order_id": "zep_00435",
+          "kind": "AGENT_CART",
+          "merchant_id": "swiggy_instamart",
           "lines": [
             {
-              "sku": "yippee-noodles-masala-560",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 9000
+              "unit_price_paise": 35500
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:17:20Z",
-        "evidence_class": 2,
-        "prev_hash": "92fe20a6365463ab410eadf5bc887b03303cb08f5831861aeb57b3f08fefbd08",
-        "content_hash": "d933c92f73619a5e4c6a4a132b3eab01c07ee0c77f7d12135d53372afae37f77"
+        "emitted_by": "agt_299",
+        "emitted_at": "2026-09-03T00:47:12Z",
+        "evidence_class": 1,
+        "prev_hash": "e4ef1a8ed4214d7f3ca908bd7bd5ff4ae003c940341e488cb3c62899331cba3a",
+        "content_hash": "b161b129ebc1f744ebca2a16c11d2b4f12a2871993c461c8e6fba1f7d228e5d0"
       },
       {
         "item_id": "env_00435-e005",
         "seq": 5,
         "payload": {
-          "kind": "MERCHANT_FULFILMENT",
+          "kind": "MERCHANT_ORDER",
+          "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00435",
           "lines": [
             {
-              "sku": "yippee-noodles-masala-560",
+              "sku": "aashirvaad-flour-whole_wheat-5000",
               "quantity": 1,
-              "unit_price_paise": 9000
+              "unit_price_paise": 35500
             }
-          ],
-          "delivered": true
+          ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T01:31:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T00:47:20Z",
         "evidence_class": 2,
-        "prev_hash": "d933c92f73619a5e4c6a4a132b3eab01c07ee0c77f7d12135d53372afae37f77",
-        "content_hash": "44ab83b2b3954f07704f8165d03966d88206a04c8a226bd5a143744a34ac4411"
+        "prev_hash": "b161b129ebc1f744ebca2a16c11d2b4f12a2871993c461c8e6fba1f7d228e5d0",
+        "content_hash": "f417947588aa8826629c2d42d62a17d6ed9b2a563ec0e6e008d6700730b35f8d"
       },
       {
         "item_id": "env_00435-e006",
         "seq": 6,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00435",
-          "amount_paise": 9000,
-          "currency": "INR",
-          "receipt": "zep_00435"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00435",
+          "lines": [
+            {
+              "sku": "aashirvaad-flour-whole_wheat-5000",
+              "quantity": 1,
+              "unit_price_paise": 35500
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:17:25Z",
-        "evidence_class": 3,
-        "prev_hash": "44ab83b2b3954f07704f8165d03966d88206a04c8a226bd5a143744a34ac4411",
-        "content_hash": "2cf98aa56fa42ea4f54e8760b517ac68f0e283b92da3a61b38461994815bc23f"
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-03T01:01:00Z",
+        "evidence_class": 2,
+        "prev_hash": "f417947588aa8826629c2d42d62a17d6ed9b2a563ec0e6e008d6700730b35f8d",
+        "content_hash": "50fcf4c6ca7d333f33eb99f786b82b79aded270ee86300a7cd7e5e44b8404ad2"
       },
       {
         "item_id": "env_00435-e007",
         "seq": 7,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00435",
+          "kind": "PSP_ORDER",
           "order_id": "order_00435",
-          "amount_paise": 9000,
-          "status": "captured",
-          "block_id": "blk_00435",
-          "method": "upi_reserve_pay"
+          "amount_paise": 35500,
+          "currency": "INR",
+          "receipt": "zep_00435"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T01:17:30Z",
+        "emitted_at": "2026-09-03T00:47:25Z",
         "evidence_class": 3,
-        "prev_hash": "2cf98aa56fa42ea4f54e8760b517ac68f0e283b92da3a61b38461994815bc23f",
-        "content_hash": "4418581ce190442e4c63ebad8424a5320367e1a1954e5264368061de7302aa25"
+        "prev_hash": "50fcf4c6ca7d333f33eb99f786b82b79aded270ee86300a7cd7e5e44b8404ad2",
+        "content_hash": "76e45b60883f7c41102920d0db7146de6dea4176a6365bb64a7ad39325e27d10"
       },
       {
         "item_id": "env_00435-e008",
         "seq": 8,
         "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00435",
+          "order_id": "order_00435",
+          "amount_paise": 35500,
+          "status": "captured",
+          "block_id": "blk_00435",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-03T00:47:30Z",
+        "evidence_class": 3,
+        "prev_hash": "76e45b60883f7c41102920d0db7146de6dea4176a6365bb64a7ad39325e27d10",
+        "content_hash": "ca589cc94c2a8e967c2f5be5c77ceb1a6ec2cc581d3f9d23b8bee6241a6311d9"
+      },
+      {
+        "item_id": "env_00435-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
-          "claimed_sku": "yippee-noodles-masala-560",
+          "text": "Ordered 5kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-5000",
           "claims_success": true
         },
-        "emitted_by": "agt_157",
-        "emitted_at": "2026-09-03T01:32:00Z",
+        "emitted_by": "agt_299",
+        "emitted_at": "2026-09-03T01:02:00Z",
         "evidence_class": 0,
-        "prev_hash": "4418581ce190442e4c63ebad8424a5320367e1a1954e5264368061de7302aa25",
-        "content_hash": "909707378cd99e0723b135cd9bee78f352e6f5f4ca11f7f06b8d94ab4e9f7240"
+        "prev_hash": "ca589cc94c2a8e967c2f5be5c77ceb1a6ec2cc581d3f9d23b8bee6241a6311d9",
+        "content_hash": "ad8d4e323890fc8a0a097daf831e1f5c664f0a23adeeec8ffe5e881eba0a7e63"
       }
     ]
   },
@@ -211,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "yippee-noodles-masala-560",
-    "ordered_sku": "yippee-noodles-masala-560",
-    "delivered_sku": "yippee-noodles-masala-560",
+    "requested_sku": "aashirvaad-flour-whole_wheat-5000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-5000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-5000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

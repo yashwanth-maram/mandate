@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00110",
-    "created_at": "2026-09-03T02:32:00Z",
-    "expires_at": "2026-09-03T08:32:00Z",
-    "user_id": "usr_3469",
-    "agent_id": "agt_453",
+    "created_at": "2026-09-02T20:26:00Z",
+    "expires_at": "2026-09-03T02:26:00Z",
+    "user_id": "usr_2120",
+    "agent_id": "agt_643",
     "block": {
       "block_id": "blk_00110",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-09-03T02:32:00Z",
-      "expires_at": "2026-10-18T02:32:00Z"
+      "blocked_at": "2026-08-15T20:26:00Z",
+      "expires_at": "2026-10-02T20:26:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 14719,
-      "max_total_paise": 14719,
+      "category": "flour",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
-        "swiggy_instamart"
+        "blinkit"
       ],
-      "brand": "daawat",
-      "variant": "basmati",
+      "brand": "aashirvaad",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1kg Daawat basmati rice from Swiggy Instamart",
-      "uncaptured_attributes": []
+      "text": "order 1kg Aashirvaad besan on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "ef453773ec001d87263d391403c3141a94bd1971a5daa0558ad7ca7a90ba946d",
+    "content_hash": "8302e2cf018e5310b2be8b1c42f8e5345404e76e0743881ebeba4dcecfafbe04",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00110",
-    "obligation_hash": "ef453773ec001d87263d391403c3141a94bd1971a5daa0558ad7ca7a90ba946d",
+    "obligation_hash": "8302e2cf018e5310b2be8b1c42f8e5345404e76e0743881ebeba4dcecfafbe04",
     "items": [
       {
         "item_id": "env_00110-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "daawat-rice-basmati-1000",
-          "display_name": "Daawat Rozana Basmati Rice 1kg",
-          "description": "Daawat Rozana Basmati Rice 1kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 12800
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-whole_wheat-5000",
+          "display_name": "Fortune Chakki Fresh Atta 5kg",
+          "description": "Fortune Chakki Fresh Atta 5kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 34000
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:32:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:26:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "f873688b7d9814d8a59f84e52ce683097b9fbddc6c142ce65db18e52f4137736"
+        "content_hash": "67b11092b1f59a4c84d73c895ed31131fb94a59011ea96f2e49f5d1baddb7c0f"
       },
       {
         "item_id": "env_00110-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "india_gate-rice-brown-1000",
-          "display_name": "India Gate Brown Basmati Rice 1kg",
-          "description": "India Gate Brown Basmati Rice 1kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 11800
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-multigrain-5000",
+          "display_name": "Aashirvaad Multigrain Atta 5kg",
+          "description": "Aashirvaad Multigrain Atta 5kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 39800
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:32:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:26:04Z",
         "evidence_class": 2,
-        "prev_hash": "f873688b7d9814d8a59f84e52ce683097b9fbddc6c142ce65db18e52f4137736",
-        "content_hash": "984440a12f9e4e822237f7d7f7f4bbfa8d65279dade4331785beccda466f03ca"
+        "prev_hash": "67b11092b1f59a4c84d73c895ed31131fb94a59011ea96f2e49f5d1baddb7c0f",
+        "content_hash": "349cd0ed9554cfde82418b0585e0ce795c67b46fe5295de82662f1cb78871c41"
       },
       {
         "item_id": "env_00110-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "india_gate-rice-basmati-1000",
-          "display_name": "India Gate Classic Basmati Rice 1kg",
-          "description": "India Gate Classic Basmati Rice 1kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 13200
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Bestseller in this category this week.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:32:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:26:05Z",
         "evidence_class": 2,
-        "prev_hash": "984440a12f9e4e822237f7d7f7f4bbfa8d65279dade4331785beccda466f03ca",
-        "content_hash": "f4e418e7b983dc82bccd23553a0ba909ee368e4c478bfa68aaa3853bb814a289"
+        "prev_hash": "349cd0ed9554cfde82418b0585e0ce795c67b46fe5295de82662f1cb78871c41",
+        "content_hash": "fa2a04ca58f365baf45f40a9ace7ee2b14fa972a9030985b7f6cb962e808954e"
       },
       {
         "item_id": "env_00110-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "swiggy_instamart",
-          "sku": "india_gate-rice-basmati-5000",
-          "display_name": "India Gate Classic Basmati Rice 5kg",
-          "description": "India Gate Classic Basmati Rice 5kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 64000
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-whole_wheat-5000",
+          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
+          "description": "Aashirvaad Whole Wheat Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 35500
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:32:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:26:06Z",
         "evidence_class": 2,
-        "prev_hash": "f4e418e7b983dc82bccd23553a0ba909ee368e4c478bfa68aaa3853bb814a289",
-        "content_hash": "7a5497fa6630eff303054748b553727ca22c3114cd6d8fcc47eb9c264875c8c3"
+        "prev_hash": "fa2a04ca58f365baf45f40a9ace7ee2b14fa972a9030985b7f6cb962e808954e",
+        "content_hash": "19d381ffc646abc4ebdaee58be9faa17d4f9ea943dcfe733dba9590a312244c5"
       },
       {
         "item_id": "env_00110-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "swiggy_instamart",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "daawat-rice-basmati-1000",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 12800
+              "unit_price_paise": 9600
             }
           ]
         },
-        "emitted_by": "agt_453",
-        "emitted_at": "2026-09-03T02:32:12Z",
+        "emitted_by": "agt_643",
+        "emitted_at": "2026-09-02T20:26:12Z",
         "evidence_class": 1,
-        "prev_hash": "7a5497fa6630eff303054748b553727ca22c3114cd6d8fcc47eb9c264875c8c3",
-        "content_hash": "12565609018b4fba0801a417e03a30a6d4a99249471c9af3f6a714221ac27e5b"
+        "prev_hash": "19d381ffc646abc4ebdaee58be9faa17d4f9ea943dcfe733dba9590a312244c5",
+        "content_hash": "c092a2dd93323a50ea292e21de2a3da53fe65c652de0f1065af96f7821f4d6d3"
       },
       {
         "item_id": "env_00110-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "swiggy_instamart",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00110",
           "lines": [
             {
-              "sku": "daawat-rice-basmati-1000",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 12800
+              "unit_price_paise": 9600
             }
           ]
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:32:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:26:20Z",
         "evidence_class": 2,
-        "prev_hash": "12565609018b4fba0801a417e03a30a6d4a99249471c9af3f6a714221ac27e5b",
-        "content_hash": "4565e4191b017c8fbd7231a9eb596d8e3c98d33c6e384bf4fea450fa13db1f1a"
+        "prev_hash": "c092a2dd93323a50ea292e21de2a3da53fe65c652de0f1065af96f7821f4d6d3",
+        "content_hash": "8045514082c1c4876514f28799a6f1e59c3b5375aa6b1cbccf3537aaea965b10"
       },
       {
         "item_id": "env_00110-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00110",
           "lines": [
             {
-              "sku": "daawat-rice-basmati-1000",
+              "sku": "aashirvaad-flour-gram-1000",
               "quantity": 1,
-              "unit_price_paise": 12800
+              "unit_price_paise": 9600
             }
           ],
           "delivered": true
         },
-        "emitted_by": "swiggy_instamart",
-        "emitted_at": "2026-09-03T02:46:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T20:40:00Z",
         "evidence_class": 2,
-        "prev_hash": "4565e4191b017c8fbd7231a9eb596d8e3c98d33c6e384bf4fea450fa13db1f1a",
-        "content_hash": "273bb90025831613d1c9b8c1f1aff677e94a864c9fa0e147e9a66ed9996c70f6"
+        "prev_hash": "8045514082c1c4876514f28799a6f1e59c3b5375aa6b1cbccf3537aaea965b10",
+        "content_hash": "6f0b9103793a8526af8c479a6c26e0b67118262f7f93e894194bd70481d24ff4"
       },
       {
         "item_id": "env_00110-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00110",
-          "amount_paise": 12800,
+          "amount_paise": 9600,
           "currency": "INR",
           "receipt": "zep_00110"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:32:25Z",
+        "emitted_at": "2026-09-02T20:26:25Z",
         "evidence_class": 3,
-        "prev_hash": "273bb90025831613d1c9b8c1f1aff677e94a864c9fa0e147e9a66ed9996c70f6",
-        "content_hash": "438530d8ca5d833685b94f3f0acdb44e8380121802cab146eccfacc48da4af16"
+        "prev_hash": "6f0b9103793a8526af8c479a6c26e0b67118262f7f93e894194bd70481d24ff4",
+        "content_hash": "4889289850daa3cd2b761290d05d25aba3c79afbec6d587d2907d43c1b9638c8"
       },
       {
         "item_id": "env_00110-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00110",
           "order_id": "order_00110",
-          "amount_paise": 12800,
+          "amount_paise": 9600,
           "status": "captured",
           "block_id": "blk_00110",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:32:30Z",
+        "emitted_at": "2026-09-02T20:26:30Z",
         "evidence_class": 3,
-        "prev_hash": "438530d8ca5d833685b94f3f0acdb44e8380121802cab146eccfacc48da4af16",
-        "content_hash": "3c3ebe3b22cf48108f1d4b14982ec91c0a57fa97ca3deef0d1d590113f425d25"
+        "prev_hash": "4889289850daa3cd2b761290d05d25aba3c79afbec6d587d2907d43c1b9638c8",
+        "content_hash": "60afeb6e91b8f1461624ee96966d64e652a3a95c6d9c0d9a849f8abbfcd9041e"
       },
       {
         "item_id": "env_00110-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Daawat basmati rice. Payment complete.",
-          "claimed_sku": "daawat-rice-basmati-1000",
+          "text": "Ordered 1kg Aashirvaad besan. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-gram-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_453",
-        "emitted_at": "2026-09-03T02:47:00Z",
+        "emitted_by": "agt_643",
+        "emitted_at": "2026-09-02T20:41:00Z",
         "evidence_class": 0,
-        "prev_hash": "3c3ebe3b22cf48108f1d4b14982ec91c0a57fa97ca3deef0d1d590113f425d25",
-        "content_hash": "0ae4ad44dd4486585c3a0ffed1384be46e95fcc4ad16d1a9416c870d1b297f73"
+        "prev_hash": "60afeb6e91b8f1461624ee96966d64e652a3a95c6d9c0d9a849f8abbfcd9041e",
+        "content_hash": "04111a815dc8eda7925664bfd986a661e1dd3515e70e69f80015e24a6e296a76"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "daawat-rice-basmati-1000",
-    "ordered_sku": "daawat-rice-basmati-1000",
-    "delivered_sku": "daawat-rice-basmati-1000",
+    "requested_sku": "aashirvaad-flour-gram-1000",
+    "ordered_sku": "aashirvaad-flour-gram-1000",
+    "delivered_sku": "aashirvaad-flour-gram-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

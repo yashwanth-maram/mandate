@@ -148,3 +148,10 @@ instrumentation rather than evidence of safety.
 Lesson: a perfect score should prompt the question "what else would have scored
 this well?" Here the answer was "a one-line function", and the benchmark could
 not tell us apart.
+
+### Entry #010 - dead API calls masqueraded as a clean deterministic baseline
+Component: eval/metrics.py, eval/runner.py
+Observed: an evaluation run on OpenRouter failed 215 consecutive model calls due to an HTTP 402 (Insufficient Credits). The `Adjudicator` handled this correctly by discarding the failures and abstaining, returning a 57% coverage deterministic baseline. But the metrics table reported this as a normal clean run, hiding the 215 internal errors entirely.
+Cause: metrics counted false clearances and abstentions but not internal verifier crashes. A run where every model call errored looked identical to a baseline run where the model was intentionally stubbed out.
+Fix: added a `verifier_errors` counter to `EvalResult` that counts outputs where `"verifier raised"` appears in the reason, and made it print a prominent warning in the table if any errors occurred.
+Lesson: crash-to-abstain is a good architecture for isolation, but if the UI aggregates the results without counting the crashes, severe failures become invisible.

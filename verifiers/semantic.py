@@ -102,17 +102,19 @@ class SemanticVerifier(Verifier):
         self,
         *,
         client: Optional[Any] = None,
+        provider: str = "anthropic",
         include_self_report: bool = False,
         model: str = DEFAULT_MODEL,
         min_confidence: float = 0.6,
     ) -> None:
         """
-        `client` is an anthropic.Anthropic instance, or None to abstain.
-        `include_self_report` is the ablation switch described in the module
-        docstring. `min_confidence` is the floor below which a decided verdict
-        is downgraded to ABSTAIN.
+        `client` is an anthropic.Anthropic or openai.OpenAI instance, or None
+        to abstain. `provider` selects the request shape: OpenRouter speaks the
+        OpenAI chat-completions API, where the system prompt is a message with
+        role "system" rather than a separate parameter.
         """
         self.client = client
+        self.provider = provider
         self.include_self_report = include_self_report
         self.model = model
         self.min_confidence = min_confidence
@@ -211,7 +213,18 @@ class SemanticVerifier(Verifier):
     # -- model call ---------------------------------------------------------
 
     def _call_model(self, prompt: str) -> dict[str, Any]:
-        """Wired in on Friday. Returns the parsed JSON object."""
+        """Dispatch to whichever API shape the client speaks."""
+        if self.provider == "openrouter":
+            response = self.client.chat.completions.create(
+                model=self.model,
+                max_tokens=300,
+                messages=[
+                    {"role": "system", "content": _SYSTEM},
+                    {"role": "user", "content": prompt},
+                ],
+            )
+            return _parse_json(response.choices[0].message.content or "")
+
         response = self.client.messages.create(
             model=self.model,
             max_tokens=300,

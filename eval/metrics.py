@@ -146,6 +146,7 @@ class EvalResult(BaseModel):
     latency_p50_ms: float
     latency_p95_ms: float
     latency_p50_deterministic_ms: float
+    verifier_errors: int = 0
 
 
 def compute(
@@ -170,7 +171,7 @@ def compute(
     confusion: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     caught = misattributed = missed = abstained_cost = 0
-    correct = abstained = false_clearances = 0
+    correct = abstained = false_clearances = verifier_errors = 0
     hard_n = hard_correct = 0
     llm_invoked = 0
     latencies: list[float] = []
@@ -187,6 +188,11 @@ def compute(
         truth = s.truth.fault_class
         totals[truth] += 1
         latencies.append(d.latency_ms)
+        
+        verifier_errors += sum(
+            1 for o in d.outputs if "verifier raised" in o.reason
+        )
+
         if d.llm_invoked:
             llm_invoked += 1
         else:
@@ -293,6 +299,7 @@ def compute(
         latency_p50_ms=_pct(latencies, 50),
         latency_p95_ms=_pct(latencies, 95),
         latency_p50_deterministic_ms=_pct(det_latencies, 50),
+        verifier_errors=verifier_errors,
     )
 
 
@@ -378,6 +385,10 @@ def render(r: EvalResult) -> str:
     add(f"overall accuracy        {r.overall_accuracy:>7.1%}")
     add(f"abstentions             {r.abstained:>7}   escalated rather than guessed")
     add(f"FALSE CLEARANCES        {r.false_clearances:>7}   faults let through as clean")
+    
+    if r.verifier_errors:
+        add(f"VERIFIER ERRORS         {r.verifier_errors:>7}   "
+            f"!! results below are NOT a clean run")
     add("")
 
     if r.hard_pair_n:

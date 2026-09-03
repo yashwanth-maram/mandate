@@ -6,21 +6,21 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00128",
-    "created_at": "2026-09-02T19:28:00Z",
-    "expires_at": "2026-09-03T01:28:00Z",
-    "user_id": "usr_8118",
-    "agent_id": "agt_218",
+    "created_at": "2026-09-02T20:59:00Z",
+    "expires_at": "2026-09-03T02:59:00Z",
+    "user_id": "usr_7199",
+    "agent_id": "agt_414",
     "block": {
       "block_id": "blk_00128",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-19T19:28:00Z",
-      "expires_at": "2026-10-21T19:28:00Z"
+      "blocked_at": "2026-08-24T20:59:00Z",
+      "expires_at": "2026-10-06T20:59:00Z"
     },
     "hard": {
       "category": "milk",
-      "max_unit_price_paise": 9100,
-      "max_total_paise": 9100,
+      "max_unit_price_paise": 10200,
+      "max_total_paise": 10200,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
@@ -30,19 +30,19 @@
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1L Amul double toned milk from Zepto",
+      "text": "order 1L Amul full cream milk on Zepto",
       "uncaptured_attributes": [
         "variant"
       ]
     },
-    "content_hash": "6685338a44574acb04b54a54066724f5b5a87eba043d8b0ac651287632c6f17b",
+    "content_hash": "76fb85c2b64bfbc61a4bc1a249f8c8a9d0010daa72d2bc5ebb89b517d15b4ab5",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00128",
-    "obligation_hash": "6685338a44574acb04b54a54066724f5b5a87eba043d8b0ac651287632c6f17b",
+    "obligation_hash": "76fb85c2b64bfbc61a4bc1a249f8c8a9d0010daa72d2bc5ebb89b517d15b4ab5",
     "items": [
       {
         "item_id": "env_00128-e000",
@@ -50,20 +50,54 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "amul-milk-toned-1000",
-          "display_name": "Amul Taaza Toned Milk 1L",
-          "description": "Amul Taaza Toned Milk 1L. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 6600
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 5700
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:28:03Z",
+        "emitted_at": "2026-09-02T20:59:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "4de2cdc27860639e726eae856fa18d06b7eae7cab71cdc15832108b3ce068c2c"
+        "content_hash": "9aec8449f001a605aa04e0b0a5a2e242cc1b312418b091020e0797312061d3ab"
       },
       {
         "item_id": "env_00128-e001",
         "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "amul-milk-toned-1000",
+          "display_name": "Amul Taaza Toned Milk 1L",
+          "description": "Amul Taaza Toned Milk 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 6600
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T20:59:04Z",
+        "evidence_class": 2,
+        "prev_hash": "9aec8449f001a605aa04e0b0a5a2e242cc1b312418b091020e0797312061d3ab",
+        "content_hash": "9717fff10b8c4ccc5a9a0f47c315806335d123ded92fbda64afb5a8ff22d05cb"
+      },
+      {
+        "item_id": "env_00128-e002",
+        "seq": 2,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 7500
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T20:59:05Z",
+        "evidence_class": 2,
+        "prev_hash": "9717fff10b8c4ccc5a9a0f47c315806335d123ded92fbda64afb5a8ff22d05cb",
+        "content_hash": "1672279e1f246edf97c78ad03c5643e74a2ec8306bbe702c59e9efb78ddc0064"
+      },
+      {
+        "item_id": "env_00128-e003",
+        "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
@@ -73,44 +107,10 @@
           "listed_price_paise": 7700
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:28:04Z",
+        "emitted_at": "2026-09-02T20:59:06Z",
         "evidence_class": 2,
-        "prev_hash": "4de2cdc27860639e726eae856fa18d06b7eae7cab71cdc15832108b3ce068c2c",
-        "content_hash": "7dd0208f75835a55709f72cd35aca6f86cba1dfc9efd13b43cc920ccfbfd3f32"
-      },
-      {
-        "item_id": "env_00128-e002",
-        "seq": 2,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-toned-1000",
-          "display_name": "Mother Dairy Toned Milk 1L",
-          "description": "Mother Dairy Toned Milk 1L. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 6400
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:28:05Z",
-        "evidence_class": 2,
-        "prev_hash": "7dd0208f75835a55709f72cd35aca6f86cba1dfc9efd13b43cc920ccfbfd3f32",
-        "content_hash": "91dca19492567184b7afa5c7e5727ac36d7a5b1834398fc906d833dbea4c4062"
-      },
-      {
-        "item_id": "env_00128-e003",
-        "seq": 3,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "amul-milk-double_toned-1000",
-          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
-          "description": "Amul Slim n Trim Double Toned Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 5900
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:28:06Z",
-        "evidence_class": 2,
-        "prev_hash": "91dca19492567184b7afa5c7e5727ac36d7a5b1834398fc906d833dbea4c4062",
-        "content_hash": "389851171fd2ae3a8d784d07901ede495bbb0b76322d8ee9b71338ba60585947"
+        "prev_hash": "1672279e1f246edf97c78ad03c5643e74a2ec8306bbe702c59e9efb78ddc0064",
+        "content_hash": "c0adfad11e73281637fd34bfd91786ea266c935aff2e807701f62d1bad6427a4"
       },
       {
         "item_id": "env_00128-e004",
@@ -126,11 +126,11 @@
             }
           ]
         },
-        "emitted_by": "agt_218",
-        "emitted_at": "2026-09-02T19:28:12Z",
+        "emitted_by": "agt_414",
+        "emitted_at": "2026-09-02T20:59:12Z",
         "evidence_class": 1,
-        "prev_hash": "389851171fd2ae3a8d784d07901ede495bbb0b76322d8ee9b71338ba60585947",
-        "content_hash": "d95bef8101addbe9977e3607731c617e7b60673962cf3d085ec3db986090647d"
+        "prev_hash": "c0adfad11e73281637fd34bfd91786ea266c935aff2e807701f62d1bad6427a4",
+        "content_hash": "66a464ae061c73975c6c0ce79d1cf2a6f27c23fec91dcb17ff95e1bb3bb20622"
       },
       {
         "item_id": "env_00128-e005",
@@ -148,10 +148,10 @@
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:28:20Z",
+        "emitted_at": "2026-09-02T20:59:20Z",
         "evidence_class": 2,
-        "prev_hash": "d95bef8101addbe9977e3607731c617e7b60673962cf3d085ec3db986090647d",
-        "content_hash": "61255c012c390cff9531a5cf89e757984abd6bd432bd9eef205597dcf7692d45"
+        "prev_hash": "66a464ae061c73975c6c0ce79d1cf2a6f27c23fec91dcb17ff95e1bb3bb20622",
+        "content_hash": "61f9d4038b6aaef10adc0fd6afdf60704ee2cc71f4f33cb8e43c70ead6ef7af8"
       },
       {
         "item_id": "env_00128-e006",
@@ -169,10 +169,10 @@
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T19:42:00Z",
+        "emitted_at": "2026-09-02T21:13:00Z",
         "evidence_class": 2,
-        "prev_hash": "61255c012c390cff9531a5cf89e757984abd6bd432bd9eef205597dcf7692d45",
-        "content_hash": "1f206ecf744d324912dc64323ce0d7b96c4c78ca2e1f58fa461148a5ddf80103"
+        "prev_hash": "61f9d4038b6aaef10adc0fd6afdf60704ee2cc71f4f33cb8e43c70ead6ef7af8",
+        "content_hash": "a2aba22db4a07ce764f5f3e13a83a907166b76c52a0f9038ce8a521fc3797492"
       },
       {
         "item_id": "env_00128-e007",
@@ -185,10 +185,10 @@
           "receipt": "zep_00128"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:28:25Z",
+        "emitted_at": "2026-09-02T20:59:25Z",
         "evidence_class": 3,
-        "prev_hash": "1f206ecf744d324912dc64323ce0d7b96c4c78ca2e1f58fa461148a5ddf80103",
-        "content_hash": "e3283d091559e787b3ded25f7ec45ac4fa072f2dddb90ad1a57eddcec64b057c"
+        "prev_hash": "a2aba22db4a07ce764f5f3e13a83a907166b76c52a0f9038ce8a521fc3797492",
+        "content_hash": "9cd29920ccb1ca103c7811ad3f5a87147bd3515adabd0a3c7170ffdcfa9c2319"
       },
       {
         "item_id": "env_00128-e008",
@@ -203,10 +203,10 @@
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T19:28:30Z",
+        "emitted_at": "2026-09-02T20:59:30Z",
         "evidence_class": 3,
-        "prev_hash": "e3283d091559e787b3ded25f7ec45ac4fa072f2dddb90ad1a57eddcec64b057c",
-        "content_hash": "9307991f0b4e3d8bd66e02332c0d7b9edf754b75dc5e7ad4d9b69c893f6ad4c2"
+        "prev_hash": "9cd29920ccb1ca103c7811ad3f5a87147bd3515adabd0a3c7170ffdcfa9c2319",
+        "content_hash": "3e8377dabb13b56e2bad627a9f7497e707183c0dcdd2fdde9550be409e1eec9d"
       },
       {
         "item_id": "env_00128-e009",
@@ -217,11 +217,25 @@
           "claimed_sku": "amul-milk-toned-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_218",
-        "emitted_at": "2026-09-02T19:43:00Z",
+        "emitted_by": "agt_414",
+        "emitted_at": "2026-09-02T21:14:00Z",
         "evidence_class": 0,
-        "prev_hash": "9307991f0b4e3d8bd66e02332c0d7b9edf754b75dc5e7ad4d9b69c893f6ad4c2",
-        "content_hash": "1cd33b9b1cb7906bd26e2302c1f81af19151b24a0f494b3ca8a3c2b229d4f6a7"
+        "prev_hash": "3e8377dabb13b56e2bad627a9f7497e707183c0dcdd2fdde9550be409e1eec9d",
+        "content_hash": "de789206db1bfc6fedbe005efe00941ecb52379931ddb6b46990dce4c74111ab"
+      },
+      {
+        "item_id": "env_00128-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "I never asked for this. I want a refund.",
+          "raised_at": "2026-09-03T05:59:00Z"
+        },
+        "emitted_by": "usr_7199",
+        "emitted_at": "2026-09-02T23:59:00Z",
+        "evidence_class": 0,
+        "prev_hash": "de789206db1bfc6fedbe005efe00941ecb52379931ddb6b46990dce4c74111ab",
+        "content_hash": "dc1d52841874aca2800c829ae8674541a43c5b76735443834626bb1c32f6ebc0"
       }
     ]
   },
@@ -230,7 +244,7 @@
     "liable_party": "AGENT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "amul-milk-double_toned-1000",
+    "requested_sku": "amul-milk-full_cream-1000",
     "ordered_sku": "amul-milk-toned-1000",
     "delivered_sku": "amul-milk-toned-1000",
     "is_hard_pair": true,
@@ -238,6 +252,6 @@
     "expected_gate_verdict": "BLOCK",
     "gate_detectable": true,
     "loss_paise": 6600,
-    "rationale": "User asked for double toned; agent ordered toned. Same brand, same pack, Rs 7.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
+    "rationale": "User asked for full cream; agent ordered toned. Same brand, same pack, Rs 11.00 apart, inside every ceiling, at an allowed merchant. The compiler left variant uncaptured, so no deterministic check fires."
   }
 }

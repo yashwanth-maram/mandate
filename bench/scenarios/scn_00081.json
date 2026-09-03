@@ -6,41 +6,43 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00081",
-    "created_at": "2026-09-03T03:23:00Z",
-    "expires_at": "2026-09-03T09:23:00Z",
-    "user_id": "usr_3587",
-    "agent_id": "agt_516",
+    "created_at": "2026-09-02T18:57:00Z",
+    "expires_at": "2026-09-03T00:57:00Z",
+    "user_id": "usr_3295",
+    "agent_id": "agt_615",
     "block": {
       "block_id": "blk_00081",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-14T03:23:00Z",
-      "expires_at": "2026-11-01T03:23:00Z"
+      "blocked_at": "2026-08-24T18:57:00Z",
+      "expires_at": "2026-10-09T18:57:00Z"
     },
     "hard": {
-      "category": "noodles",
-      "max_unit_price_paise": 10350,
-      "max_total_paise": 10350,
+      "category": "bread",
+      "max_unit_price_paise": 5979,
+      "max_total_paise": 5979,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "yippee",
-      "variant": "masala",
-      "pack_size_g": 560
+      "brand": "britannia",
+      "variant": null,
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "buy 560g Yippee masala noodles from Zepto, keep it under 103 rupees",
-      "uncaptured_attributes": []
+      "text": "I need 400g Britannia brown bread, use Zepto",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "96b2740ddbef0a0be29b1cbed35be037f8d4d302d3fa91a0d6dd17c5332ca103",
+    "content_hash": "fbb4fccbac599e1470ede56b0439cf6ce673df1c08d529639715025fce662322",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00081",
-    "obligation_hash": "96b2740ddbef0a0be29b1cbed35be037f8d4d302d3fa91a0d6dd17c5332ca103",
+    "obligation_hash": "fbb4fccbac599e1470ede56b0439cf6ce673df1c08d529639715025fce662322",
     "items": [
       {
         "item_id": "env_00081-e000",
@@ -48,16 +50,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "maggi-noodles-masala-560",
-          "display_name": "Maggi Masala Noodles 8-pack 560g",
-          "description": "Maggi Masala Noodles 8-pack 560g. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 9600
+          "sku": "britannia-bread-white-400",
+          "display_name": "Britannia White Bread 400g",
+          "description": "Britannia White Bread 400g. Bestseller in this category this week.",
+          "listed_price_paise": 4500
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:23:03Z",
+        "emitted_at": "2026-09-02T18:57:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "3c55132920824a1bdc5c2d86d857d45fb2c7dd82eac5aad2ae8798f649e79ebe"
+        "content_hash": "db92392394b5ce25c80dd2c5e788b2947d893e48a2f7485307b2d62a9affa816"
       },
       {
         "item_id": "env_00081-e001",
@@ -65,16 +67,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "yippee-noodles-masala-560",
-          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
-          "description": "Yippee Magic Masala Noodles 8-pack 560g. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 9000
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5200
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:23:04Z",
+        "emitted_at": "2026-09-02T18:57:04Z",
         "evidence_class": 2,
-        "prev_hash": "3c55132920824a1bdc5c2d86d857d45fb2c7dd82eac5aad2ae8798f649e79ebe",
-        "content_hash": "a3274c9ef32f398cfd20f2169d636c7b47be59d8da43b195d0f2e32769b02a3b"
+        "prev_hash": "db92392394b5ce25c80dd2c5e788b2947d893e48a2f7485307b2d62a9affa816",
+        "content_hash": "94c742fe873d38bd3bf61c80f456c98b76b4a3f3c6213610f220b57a9aa0c027"
       },
       {
         "item_id": "env_00081-e002",
@@ -82,127 +84,144 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "maggi-noodles-atta-560",
-          "display_name": "Maggi Atta Noodles 8-pack 560g",
-          "description": "Maggi Atta Noodles 8-pack 560g. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 10800
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 4200
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:23:05Z",
+        "emitted_at": "2026-09-02T18:57:05Z",
         "evidence_class": 2,
-        "prev_hash": "a3274c9ef32f398cfd20f2169d636c7b47be59d8da43b195d0f2e32769b02a3b",
-        "content_hash": "51cc7b2b9ad60fd519fc07d0254750203bc8efa252fcd5267663161c3ad44c7c"
+        "prev_hash": "94c742fe873d38bd3bf61c80f456c98b76b4a3f3c6213610f220b57a9aa0c027",
+        "content_hash": "23973cce5446e1498ec88f0bc9596cdcc128a0ab96785120ae479a4a28ab19bc"
       },
       {
         "item_id": "env_00081-e003",
         "seq": 3,
         "payload": {
-          "kind": "AGENT_CART",
+          "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "lines": [
-            {
-              "sku": "yippee-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9000
-            }
-          ]
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "agt_516",
-        "emitted_at": "2026-09-03T03:23:12Z",
-        "evidence_class": 1,
-        "prev_hash": "51cc7b2b9ad60fd519fc07d0254750203bc8efa252fcd5267663161c3ad44c7c",
-        "content_hash": "c76bfa18f1785465208c87112ff44c651cfa3497e31a9e8abc4a9198a8e59895"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T18:57:06Z",
+        "evidence_class": 2,
+        "prev_hash": "23973cce5446e1498ec88f0bc9596cdcc128a0ab96785120ae479a4a28ab19bc",
+        "content_hash": "70ffd7f765d7f4c12ac74b221fd1188ed12305f8c2db82e20a77c244c2f8df30"
       },
       {
         "item_id": "env_00081-e004",
         "seq": 4,
+        "payload": {
+          "kind": "AGENT_CART",
+          "merchant_id": "zepto",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ]
+        },
+        "emitted_by": "agt_615",
+        "emitted_at": "2026-09-02T18:57:12Z",
+        "evidence_class": 1,
+        "prev_hash": "70ffd7f765d7f4c12ac74b221fd1188ed12305f8c2db82e20a77c244c2f8df30",
+        "content_hash": "9bc0e3a5b3edbc05d261291722d44b5f45133eb6dc74d464dd3b8a2d95726720"
+      },
+      {
+        "item_id": "env_00081-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "zepto",
           "merchant_order_id": "zep_00081",
           "lines": [
             {
-              "sku": "yippee-noodles-masala-560",
+              "sku": "britannia-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 9000
+              "unit_price_paise": 5200
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:23:20Z",
+        "emitted_at": "2026-09-02T18:57:20Z",
         "evidence_class": 2,
-        "prev_hash": "c76bfa18f1785465208c87112ff44c651cfa3497e31a9e8abc4a9198a8e59895",
-        "content_hash": "141b6553880b2bad02c0d7e8ea5347a078819721e481da9b6499e44343689528"
-      },
-      {
-        "item_id": "env_00081-e005",
-        "seq": 5,
-        "payload": {
-          "kind": "MERCHANT_FULFILMENT",
-          "merchant_order_id": "zep_00081",
-          "lines": [
-            {
-              "sku": "yippee-noodles-masala-560",
-              "quantity": 1,
-              "unit_price_paise": 9000
-            }
-          ],
-          "delivered": true
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T03:37:00Z",
-        "evidence_class": 2,
-        "prev_hash": "141b6553880b2bad02c0d7e8ea5347a078819721e481da9b6499e44343689528",
-        "content_hash": "1da59d15385d3cba955361249dcb260308349b9c09b198d33bcfffbcb5caef52"
+        "prev_hash": "9bc0e3a5b3edbc05d261291722d44b5f45133eb6dc74d464dd3b8a2d95726720",
+        "content_hash": "a4f619d5c4cd413ca5d0014bb51fd0c07b6c8569e94f39be52bf9fb77e6b2d6b"
       },
       {
         "item_id": "env_00081-e006",
         "seq": 6,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00081",
-          "amount_paise": 9000,
-          "currency": "INR",
-          "receipt": "zep_00081"
+          "kind": "MERCHANT_FULFILMENT",
+          "merchant_order_id": "zep_00081",
+          "lines": [
+            {
+              "sku": "britannia-bread-brown-400",
+              "quantity": 1,
+              "unit_price_paise": 5200
+            }
+          ],
+          "delivered": true
         },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:23:25Z",
-        "evidence_class": 3,
-        "prev_hash": "1da59d15385d3cba955361249dcb260308349b9c09b198d33bcfffbcb5caef52",
-        "content_hash": "5c28d948759968081de3fa3ffe634a3b3aaaa12838e465266af18499b820cd9a"
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T19:11:00Z",
+        "evidence_class": 2,
+        "prev_hash": "a4f619d5c4cd413ca5d0014bb51fd0c07b6c8569e94f39be52bf9fb77e6b2d6b",
+        "content_hash": "fb576c2b7c90390357b3e57a6ce49a8a341a4eed6364cf1cd4f1eb173639423f"
       },
       {
         "item_id": "env_00081-e007",
         "seq": 7,
         "payload": {
-          "kind": "PSP_PAYMENT",
-          "payment_id": "pay_00081",
+          "kind": "PSP_ORDER",
           "order_id": "order_00081",
-          "amount_paise": 9000,
-          "status": "captured",
-          "block_id": "blk_00081",
-          "method": "upi_reserve_pay"
+          "amount_paise": 5200,
+          "currency": "INR",
+          "receipt": "zep_00081"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T03:23:30Z",
+        "emitted_at": "2026-09-02T18:57:25Z",
         "evidence_class": 3,
-        "prev_hash": "5c28d948759968081de3fa3ffe634a3b3aaaa12838e465266af18499b820cd9a",
-        "content_hash": "cfe996b297aa7770b8abcdd57895e2c536e696a35d5ed90ecd86dc884ba371a5"
+        "prev_hash": "fb576c2b7c90390357b3e57a6ce49a8a341a4eed6364cf1cd4f1eb173639423f",
+        "content_hash": "cab63e3e33949161b02ec795451031401e12df66fc3f23b029da08e429fa3c91"
       },
       {
         "item_id": "env_00081-e008",
         "seq": 8,
         "payload": {
+          "kind": "PSP_PAYMENT",
+          "payment_id": "pay_00081",
+          "order_id": "order_00081",
+          "amount_paise": 5200,
+          "status": "captured",
+          "block_id": "blk_00081",
+          "method": "upi_reserve_pay"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:57:30Z",
+        "evidence_class": 3,
+        "prev_hash": "cab63e3e33949161b02ec795451031401e12df66fc3f23b029da08e429fa3c91",
+        "content_hash": "ef48dbce28adedfd3670f05099befb0146117fd815fe60609b684606681f2a72"
+      },
+      {
+        "item_id": "env_00081-e009",
+        "seq": 9,
+        "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 560g Yippee masala noodles. Payment complete.",
-          "claimed_sku": "yippee-noodles-masala-560",
+          "text": "Ordered 400g Britannia brown bread. Payment complete.",
+          "claimed_sku": "britannia-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_516",
-        "emitted_at": "2026-09-03T03:38:00Z",
+        "emitted_by": "agt_615",
+        "emitted_at": "2026-09-02T19:12:00Z",
         "evidence_class": 0,
-        "prev_hash": "cfe996b297aa7770b8abcdd57895e2c536e696a35d5ed90ecd86dc884ba371a5",
-        "content_hash": "5ce3584076f52ccd556d032da08bbfa238ed560ddc33d1cbd086757d2d166451"
+        "prev_hash": "ef48dbce28adedfd3670f05099befb0146117fd815fe60609b684606681f2a72",
+        "content_hash": "cad8720766e17e73d4c25b9f365a334d0f261044ce46d2f176b014baaec4d3cd"
       }
     ]
   },
@@ -211,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "yippee-noodles-masala-560",
-    "ordered_sku": "yippee-noodles-masala-560",
-    "delivered_sku": "yippee-noodles-masala-560",
+    "requested_sku": "britannia-bread-brown-400",
+    "ordered_sku": "britannia-bread-brown-400",
+    "delivered_sku": "britannia-bread-brown-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

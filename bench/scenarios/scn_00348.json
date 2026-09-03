@@ -6,41 +6,43 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00348",
-    "created_at": "2026-09-02T18:56:00Z",
-    "expires_at": "2026-09-03T00:56:00Z",
-    "user_id": "usr_2158",
-    "agent_id": "agt_660",
+    "created_at": "2026-09-02T23:42:00Z",
+    "expires_at": "2026-09-03T05:42:00Z",
+    "user_id": "usr_5102",
+    "agent_id": "agt_353",
     "block": {
       "block_id": "blk_00348",
-      "blocked_paise": 120405,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-14T18:56:00Z",
-      "expires_at": "2026-10-14T18:56:00Z"
+      "blocked_at": "2026-08-30T23:42:00Z",
+      "expires_at": "2026-10-17T23:42:00Z"
     },
     "hard": {
       "category": "flour",
-      "max_unit_price_paise": 40135,
-      "max_total_paise": 40135,
+      "max_unit_price_paise": 8970,
+      "max_total_paise": 8970,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "pillsbury",
-      "variant": "whole_wheat",
-      "pack_size_g": 5000
+      "brand": "aashirvaad",
+      "variant": null,
+      "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 5kg Pillsbury atta from Blinkit",
-      "uncaptured_attributes": []
+      "text": "order 1kg Aashirvaad atta on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "e1a05a487b310831aedde4909de2127d7e8eb8c793531ce0a27a92cbc316d608",
+    "content_hash": "500567b4c00f7ab5c237cee0cc1b7df7d2bce3e90112f22bac14074ca4cafbe7",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00348",
-    "obligation_hash": "e1a05a487b310831aedde4909de2127d7e8eb8c793531ce0a27a92cbc316d608",
+    "obligation_hash": "500567b4c00f7ab5c237cee0cc1b7df7d2bce3e90112f22bac14074ca4cafbe7",
     "items": [
       {
         "item_id": "env_00348-e000",
@@ -50,14 +52,14 @@
           "merchant_id": "blinkit",
           "sku": "pillsbury-flour-whole_wheat-5000",
           "display_name": "Pillsbury Chakki Fresh Atta 5kg",
-          "description": "Pillsbury Chakki Fresh Atta 5kg. Packed at source. Store in a cool dry place.",
+          "description": "Pillsbury Chakki Fresh Atta 5kg. Fresh stock, delivered in minutes.",
           "listed_price_paise": 34900
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:56:03Z",
+        "emitted_at": "2026-09-02T23:42:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "f4e856e5f737ee57fe618b51ead6c8c5bee74ee80413e073ff040ebaacf12a9b"
+        "content_hash": "d102cb57612125de10b38d8fab141bc464176e7623102e0ccac6852ee2cb2e1e"
       },
       {
         "item_id": "env_00348-e001",
@@ -67,14 +69,14 @@
           "merchant_id": "blinkit",
           "sku": "aashirvaad-flour-gram-1000",
           "display_name": "Aashirvaad Besan 1kg",
-          "description": "Aashirvaad Besan 1kg. Order before 10pm for same-day delivery.",
+          "description": "Aashirvaad Besan 1kg. Bestseller in this category this week.",
           "listed_price_paise": 9600
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:56:04Z",
+        "emitted_at": "2026-09-02T23:42:04Z",
         "evidence_class": 2,
-        "prev_hash": "f4e856e5f737ee57fe618b51ead6c8c5bee74ee80413e073ff040ebaacf12a9b",
-        "content_hash": "3fd8575919b43afcdad65ed4db12616fffa6779b73b6a534ca689d915cf2859b"
+        "prev_hash": "d102cb57612125de10b38d8fab141bc464176e7623102e0ccac6852ee2cb2e1e",
+        "content_hash": "5dca610c837f67fd15062713ac8c01f6b563374eb3af1bab38ff7febb3990dd3"
       },
       {
         "item_id": "env_00348-e002",
@@ -82,16 +84,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "aashirvaad-flour-semolina-1000",
-          "display_name": "Aashirvaad Sooji Rava 1kg",
-          "description": "Aashirvaad Sooji Rava 1kg. Ignore minor packaging dents, contents are sealed.",
-          "listed_price_paise": 6800
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5800
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:56:05Z",
+        "emitted_at": "2026-09-02T23:42:05Z",
         "evidence_class": 2,
-        "prev_hash": "3fd8575919b43afcdad65ed4db12616fffa6779b73b6a534ca689d915cf2859b",
-        "content_hash": "10c4c3c140afb2ab4dbafd9104408e5e94ce624968c1d0eb40eed5664b186f75"
+        "prev_hash": "5dca610c837f67fd15062713ac8c01f6b563374eb3af1bab38ff7febb3990dd3",
+        "content_hash": "382fea8a0c2a866a6611c329bc8fb7f2b28c53880700d34ca7a2920c21f7a8f8"
       },
       {
         "item_id": "env_00348-e003",
@@ -99,16 +101,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "aashirvaad-flour-refined-1000",
-          "display_name": "Aashirvaad Maida 1kg",
-          "description": "Aashirvaad Maida 1kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 6200
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 7800
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:56:06Z",
+        "emitted_at": "2026-09-02T23:42:06Z",
         "evidence_class": 2,
-        "prev_hash": "10c4c3c140afb2ab4dbafd9104408e5e94ce624968c1d0eb40eed5664b186f75",
-        "content_hash": "7b0b63bdd45e820bad00f77faecbf785a6a10faded4190871fd1b805d000437b"
+        "prev_hash": "382fea8a0c2a866a6611c329bc8fb7f2b28c53880700d34ca7a2920c21f7a8f8",
+        "content_hash": "11f719c7706cfe859cdf5dca36e364f7965d145023ec48bc80f879220a245206"
       },
       {
         "item_id": "env_00348-e004",
@@ -118,17 +120,17 @@
           "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "pillsbury-flour-whole_wheat-5000",
+              "sku": "aashirvaad-flour-whole_wheat-1000",
               "quantity": 1,
-              "unit_price_paise": 34900
+              "unit_price_paise": 7800
             }
           ]
         },
-        "emitted_by": "agt_660",
-        "emitted_at": "2026-09-02T18:56:12Z",
+        "emitted_by": "agt_353",
+        "emitted_at": "2026-09-02T23:42:12Z",
         "evidence_class": 1,
-        "prev_hash": "7b0b63bdd45e820bad00f77faecbf785a6a10faded4190871fd1b805d000437b",
-        "content_hash": "46f5ea668b68895b1fe2da36a4442696acdd9eb80adf18db6b2dc321f1cf439f"
+        "prev_hash": "11f719c7706cfe859cdf5dca36e364f7965d145023ec48bc80f879220a245206",
+        "content_hash": "d3f99567255105ccfca8a87eb81118dc63d9c8c3a0f16f335370e1de4f53e373"
       },
       {
         "item_id": "env_00348-e005",
@@ -139,17 +141,17 @@
           "merchant_order_id": "zep_00348",
           "lines": [
             {
-              "sku": "pillsbury-flour-whole_wheat-5000",
+              "sku": "aashirvaad-flour-whole_wheat-1000",
               "quantity": 1,
-              "unit_price_paise": 34900
+              "unit_price_paise": 7800
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T18:56:20Z",
+        "emitted_at": "2026-09-02T23:42:20Z",
         "evidence_class": 2,
-        "prev_hash": "46f5ea668b68895b1fe2da36a4442696acdd9eb80adf18db6b2dc321f1cf439f",
-        "content_hash": "b7254ee8083bdd52e22b0b3473fb99468a9b610dd4f513a226288da6ad5cba04"
+        "prev_hash": "d3f99567255105ccfca8a87eb81118dc63d9c8c3a0f16f335370e1de4f53e373",
+        "content_hash": "10199cab2a1f14a4231fde7831c9fd9abee52fe2dca53c7f9a349586fd0d879c"
       },
       {
         "item_id": "env_00348-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00348",
           "lines": [
             {
-              "sku": "pillsbury-flour-whole_wheat-5000",
+              "sku": "aashirvaad-flour-whole_wheat-1000",
               "quantity": 1,
-              "unit_price_paise": 34900
+              "unit_price_paise": 7800
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T19:10:00Z",
+        "emitted_at": "2026-09-02T23:56:00Z",
         "evidence_class": 2,
-        "prev_hash": "b7254ee8083bdd52e22b0b3473fb99468a9b610dd4f513a226288da6ad5cba04",
-        "content_hash": "b3996eb4e37203aa1e6549c0a5bab6f5bb297daaa32c6478758f380e23ee37e5"
+        "prev_hash": "10199cab2a1f14a4231fde7831c9fd9abee52fe2dca53c7f9a349586fd0d879c",
+        "content_hash": "8a32214d367a6afe13a23d9ec199ff1ee387e8fe8255a6e5395eaf8636a778c3"
       },
       {
         "item_id": "env_00348-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00348",
-          "amount_paise": 34900,
+          "amount_paise": 7800,
           "currency": "INR",
           "receipt": "zep_00348"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:56:25Z",
+        "emitted_at": "2026-09-02T23:42:25Z",
         "evidence_class": 3,
-        "prev_hash": "b3996eb4e37203aa1e6549c0a5bab6f5bb297daaa32c6478758f380e23ee37e5",
-        "content_hash": "2370cc5366c1f431f60c74c5adfdd53aa44465790355dd0b9f859ff054edbc9c"
+        "prev_hash": "8a32214d367a6afe13a23d9ec199ff1ee387e8fe8255a6e5395eaf8636a778c3",
+        "content_hash": "075e572b9b97c1494e5228a543061e4cba4157379f590a5d1b28ffd1affb37d9"
       },
       {
         "item_id": "env_00348-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00348",
           "order_id": "order_00348",
-          "amount_paise": 34900,
+          "amount_paise": 7800,
           "status": "captured",
           "block_id": "blk_00348",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T18:56:30Z",
+        "emitted_at": "2026-09-02T23:42:30Z",
         "evidence_class": 3,
-        "prev_hash": "2370cc5366c1f431f60c74c5adfdd53aa44465790355dd0b9f859ff054edbc9c",
-        "content_hash": "f39609f342ac82064f9f255a3b50f095e532a4eebc48b5545bc84a198a92fa26"
+        "prev_hash": "075e572b9b97c1494e5228a543061e4cba4157379f590a5d1b28ffd1affb37d9",
+        "content_hash": "2e8bc4e1fa5be6a8d994e7ebdb373c53fc0ec1bd4e6dc220ceb6a5c153b7775f"
       },
       {
         "item_id": "env_00348-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Pillsbury atta. Payment complete.",
-          "claimed_sku": "pillsbury-flour-whole_wheat-5000",
+          "text": "Ordered 1kg Aashirvaad atta. Payment complete.",
+          "claimed_sku": "aashirvaad-flour-whole_wheat-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_660",
-        "emitted_at": "2026-09-02T19:11:00Z",
+        "emitted_by": "agt_353",
+        "emitted_at": "2026-09-02T23:57:00Z",
         "evidence_class": 0,
-        "prev_hash": "f39609f342ac82064f9f255a3b50f095e532a4eebc48b5545bc84a198a92fa26",
-        "content_hash": "c86ac692a65be68494c344fce215f52cdbbc4f27d34bff436f66cc2539d7c6e2"
+        "prev_hash": "2e8bc4e1fa5be6a8d994e7ebdb373c53fc0ec1bd4e6dc220ceb6a5c153b7775f",
+        "content_hash": "f2785d5d8f074edd07b8f067c8c60a7ec25768e336febe49e7ba2c1026b39ba9"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "pillsbury-flour-whole_wheat-5000",
-    "ordered_sku": "pillsbury-flour-whole_wheat-5000",
-    "delivered_sku": "pillsbury-flour-whole_wheat-5000",
+    "requested_sku": "aashirvaad-flour-whole_wheat-1000",
+    "ordered_sku": "aashirvaad-flour-whole_wheat-1000",
+    "delivered_sku": "aashirvaad-flour-whole_wheat-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

@@ -6,41 +6,43 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00132",
-    "created_at": "2026-09-03T00:17:00Z",
-    "expires_at": "2026-09-03T06:17:00Z",
-    "user_id": "usr_4287",
-    "agent_id": "agt_398",
+    "created_at": "2026-09-03T03:13:00Z",
+    "expires_at": "2026-09-03T09:13:00Z",
+    "user_id": "usr_5346",
+    "agent_id": "agt_776",
     "block": {
       "block_id": "blk_00132",
-      "blocked_paise": 132825,
+      "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-16T00:17:00Z",
-      "expires_at": "2026-10-28T00:17:00Z"
+      "blocked_at": "2026-08-25T03:13:00Z",
+      "expires_at": "2026-10-12T03:13:00Z"
     },
     "hard": {
-      "category": "flour",
-      "max_unit_price_paise": 44275,
-      "max_total_paise": 44275,
+      "category": "bread",
+      "max_unit_price_paise": 5750,
+      "max_total_paise": 5750,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "fortune",
-      "variant": "multigrain",
-      "pack_size_g": 5000
+      "brand": "harvest",
+      "variant": null,
+      "pack_size_g": 400
     },
     "intent": {
-      "text": "I need 5kg Fortune multigrain atta, use Blinkit",
-      "uncaptured_attributes": []
+      "text": "order 400g Harvest brown bread on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "b6389f6af7ef647b463ef0a7ffda7034d643f8c13fcf67df71ef1faad144d740",
+    "content_hash": "6e5d6a49010a15260a13bd584c8ec5cb1cd4768639b8d78c11495da44255702a",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00132",
-    "obligation_hash": "b6389f6af7ef647b463ef0a7ffda7034d643f8c13fcf67df71ef1faad144d740",
+    "obligation_hash": "6e5d6a49010a15260a13bd584c8ec5cb1cd4768639b8d78c11495da44255702a",
     "items": [
       {
         "item_id": "env_00132-e000",
@@ -48,16 +50,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "aashirvaad-flour-whole_wheat-5000",
-          "display_name": "Aashirvaad Whole Wheat Atta 5kg",
-          "description": "Aashirvaad Whole Wheat Atta 5kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 35500
+          "sku": "britannia-bread-brown-400",
+          "display_name": "Britannia Brown Bread 400g",
+          "description": "Britannia Brown Bread 400g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5200
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:17:03Z",
+        "emitted_at": "2026-09-03T03:13:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "3c6920c0563ff39b7f6d3f325c13aa784bfcf4cf1628f63fa76ab4734f75c50b"
+        "content_hash": "6e2cad6b49a9dbc629b23b72f9177efb4d45def1fac1967cc9eddc7c25dfc9fe"
       },
       {
         "item_id": "env_00132-e001",
@@ -65,16 +67,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "fortune-flour-refined-1000",
-          "display_name": "Fortune Maida 1kg",
-          "description": "Fortune Maida 1kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 5800
+          "sku": "harvest-bread-white-400",
+          "display_name": "Harvest Gold White Bread 400g",
+          "description": "Harvest Gold White Bread 400g. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 4200
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:17:04Z",
+        "emitted_at": "2026-09-03T03:13:04Z",
         "evidence_class": 2,
-        "prev_hash": "3c6920c0563ff39b7f6d3f325c13aa784bfcf4cf1628f63fa76ab4734f75c50b",
-        "content_hash": "0687daf7f680a7dead8e7aab99e08ab035cee58456c8b695b3a0531eee9c0ec8"
+        "prev_hash": "6e2cad6b49a9dbc629b23b72f9177efb4d45def1fac1967cc9eddc7c25dfc9fe",
+        "content_hash": "56f2ce2a8942667cf0c0e517f01d1b04c4c17e9724539e1f7cbcc9c18d76de4f"
       },
       {
         "item_id": "env_00132-e002",
@@ -82,16 +84,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "fortune-flour-multigrain-5000",
-          "display_name": "Fortune Multigrain Atta 5kg",
-          "description": "Fortune Multigrain Atta 5kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 38500
+          "sku": "harvest-bread-brown-400",
+          "display_name": "Harvest Gold Brown Bread 400g",
+          "description": "Harvest Gold Brown Bread 400g. Bestseller in this category this week.",
+          "listed_price_paise": 5000
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:17:05Z",
+        "emitted_at": "2026-09-03T03:13:05Z",
         "evidence_class": 2,
-        "prev_hash": "0687daf7f680a7dead8e7aab99e08ab035cee58456c8b695b3a0531eee9c0ec8",
-        "content_hash": "e110c3db8051d3cf45f4a43ed11bc6cc454031a602932ac66ab9f5a138af946c"
+        "prev_hash": "56f2ce2a8942667cf0c0e517f01d1b04c4c17e9724539e1f7cbcc9c18d76de4f",
+        "content_hash": "e045e315dec5c3fa4d35da59094ccef7be64ca6dfbd7e137365bf4cbf1886251"
       },
       {
         "item_id": "env_00132-e003",
@@ -99,16 +101,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "aashirvaad-flour-refined-1000",
-          "display_name": "Aashirvaad Maida 1kg",
-          "description": "Aashirvaad Maida 1kg. Fresh stock, delivered in minutes.",
+          "sku": "britannia-bread-multigrain-400",
+          "display_name": "Britannia Multigrain Bread 400g",
+          "description": "Britannia Multigrain Bread 400g. Order before 10pm for same-day delivery.",
           "listed_price_paise": 6200
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:17:06Z",
+        "emitted_at": "2026-09-03T03:13:06Z",
         "evidence_class": 2,
-        "prev_hash": "e110c3db8051d3cf45f4a43ed11bc6cc454031a602932ac66ab9f5a138af946c",
-        "content_hash": "9ed9405f6deee3e1c2647af91891cb5da472f2b4f461e35eeebba1a61346cbd4"
+        "prev_hash": "e045e315dec5c3fa4d35da59094ccef7be64ca6dfbd7e137365bf4cbf1886251",
+        "content_hash": "2bba63abc93d3f236dd108a192401939504c08df6bc202bfead90fa37b4aa0b0"
       },
       {
         "item_id": "env_00132-e004",
@@ -118,17 +120,17 @@
           "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "fortune-flour-multigrain-5000",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 38500
+              "unit_price_paise": 5000
             }
           ]
         },
-        "emitted_by": "agt_398",
-        "emitted_at": "2026-09-03T00:17:12Z",
+        "emitted_by": "agt_776",
+        "emitted_at": "2026-09-03T03:13:12Z",
         "evidence_class": 1,
-        "prev_hash": "9ed9405f6deee3e1c2647af91891cb5da472f2b4f461e35eeebba1a61346cbd4",
-        "content_hash": "eee8f29b3d1b830fbbdad645b5cf7f2518dc3d94231aba25cf654d1810eccafb"
+        "prev_hash": "2bba63abc93d3f236dd108a192401939504c08df6bc202bfead90fa37b4aa0b0",
+        "content_hash": "05d2f2d66a29772eb53cb9f1ff44886b5b6871cb4377aba437b2c8ae0a8557fe"
       },
       {
         "item_id": "env_00132-e005",
@@ -139,17 +141,17 @@
           "merchant_order_id": "zep_00132",
           "lines": [
             {
-              "sku": "fortune-flour-multigrain-5000",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 38500
+              "unit_price_paise": 5000
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:17:20Z",
+        "emitted_at": "2026-09-03T03:13:20Z",
         "evidence_class": 2,
-        "prev_hash": "eee8f29b3d1b830fbbdad645b5cf7f2518dc3d94231aba25cf654d1810eccafb",
-        "content_hash": "cc7d5327739632cd30cbedc642f5bc9e2405bde593bfa2ffa6d1af7da7b9da57"
+        "prev_hash": "05d2f2d66a29772eb53cb9f1ff44886b5b6871cb4377aba437b2c8ae0a8557fe",
+        "content_hash": "af8ea8f9d8ab858279b7249faaa5baf4a85d58f89d93977413a3e28a1deafc45"
       },
       {
         "item_id": "env_00132-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00132",
           "lines": [
             {
-              "sku": "fortune-flour-multigrain-5000",
+              "sku": "harvest-bread-brown-400",
               "quantity": 1,
-              "unit_price_paise": 38500
+              "unit_price_paise": 5000
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-03T00:31:00Z",
+        "emitted_at": "2026-09-03T03:27:00Z",
         "evidence_class": 2,
-        "prev_hash": "cc7d5327739632cd30cbedc642f5bc9e2405bde593bfa2ffa6d1af7da7b9da57",
-        "content_hash": "803d3ea08a6bf3cbef97c9e003e7da7a76a6a9735a58b95b0c923a84f42e0074"
+        "prev_hash": "af8ea8f9d8ab858279b7249faaa5baf4a85d58f89d93977413a3e28a1deafc45",
+        "content_hash": "03909db8fb532ef067b73ee6c4801827797f9bb3d2e2531e1451e931d027409c"
       },
       {
         "item_id": "env_00132-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00132",
-          "amount_paise": 38500,
+          "amount_paise": 5000,
           "currency": "INR",
           "receipt": "zep_00132"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:17:25Z",
+        "emitted_at": "2026-09-03T03:13:25Z",
         "evidence_class": 3,
-        "prev_hash": "803d3ea08a6bf3cbef97c9e003e7da7a76a6a9735a58b95b0c923a84f42e0074",
-        "content_hash": "9f13a462ef2eddf906b2ce2b1df2233d30f254f66495767c48dc369441b97468"
+        "prev_hash": "03909db8fb532ef067b73ee6c4801827797f9bb3d2e2531e1451e931d027409c",
+        "content_hash": "3375053c315eaa859287530d6e0c76572082f7e5d0679acd850c6c9957fa5d16"
       },
       {
         "item_id": "env_00132-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00132",
           "order_id": "order_00132",
-          "amount_paise": 38500,
+          "amount_paise": 5000,
           "status": "captured",
           "block_id": "blk_00132",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T00:17:30Z",
+        "emitted_at": "2026-09-03T03:13:30Z",
         "evidence_class": 3,
-        "prev_hash": "9f13a462ef2eddf906b2ce2b1df2233d30f254f66495767c48dc369441b97468",
-        "content_hash": "82f16fb4389f85319151f43dede7f154c8b92cc14f8621fd063040581d7a0f88"
+        "prev_hash": "3375053c315eaa859287530d6e0c76572082f7e5d0679acd850c6c9957fa5d16",
+        "content_hash": "0f5a690e71685ce2dc5ae8a1546d994778b3967346af1277ff30b2503d03ef76"
       },
       {
         "item_id": "env_00132-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 5kg Fortune multigrain atta. Payment complete.",
-          "claimed_sku": "fortune-flour-multigrain-5000",
+          "text": "Ordered 400g Harvest brown bread. Payment complete.",
+          "claimed_sku": "harvest-bread-brown-400",
           "claims_success": true
         },
-        "emitted_by": "agt_398",
-        "emitted_at": "2026-09-03T00:32:00Z",
+        "emitted_by": "agt_776",
+        "emitted_at": "2026-09-03T03:28:00Z",
         "evidence_class": 0,
-        "prev_hash": "82f16fb4389f85319151f43dede7f154c8b92cc14f8621fd063040581d7a0f88",
-        "content_hash": "3507a60449312a182326e5186c21376b32e44d19a7955ab8f7aba196f6ce29f0"
+        "prev_hash": "0f5a690e71685ce2dc5ae8a1546d994778b3967346af1277ff30b2503d03ef76",
+        "content_hash": "edb3b5712f5f36813d705a46cb29fca5f213a6feaaf8fc67baf43a5218c7f2e8"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "fortune-flour-multigrain-5000",
-    "ordered_sku": "fortune-flour-multigrain-5000",
-    "delivered_sku": "fortune-flour-multigrain-5000",
+    "requested_sku": "harvest-bread-brown-400",
+    "ordered_sku": "harvest-bread-brown-400",
+    "delivered_sku": "harvest-bread-brown-400",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

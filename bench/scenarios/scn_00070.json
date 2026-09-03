@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00070",
-    "created_at": "2026-09-02T20:27:00Z",
-    "expires_at": "2026-09-03T02:27:00Z",
-    "user_id": "usr_6121",
-    "agent_id": "agt_982",
+    "created_at": "2026-09-03T00:28:00Z",
+    "expires_at": "2026-09-03T06:28:00Z",
+    "user_id": "usr_7464",
+    "agent_id": "agt_938",
     "block": {
       "block_id": "blk_00070",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-23T20:27:00Z",
-      "expires_at": "2026-10-25T20:27:00Z"
+      "blocked_at": "2026-08-23T00:28:00Z",
+      "expires_at": "2026-11-02T00:28:00Z"
     },
     "hard": {
-      "category": "salt",
-      "max_unit_price_paise": 3449,
-      "max_total_paise": 3449,
+      "category": "flour",
+      "max_unit_price_paise": 6669,
+      "max_total_paise": 6669,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "aashirvaad",
-      "variant": "iodised",
+      "brand": "fortune",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "I need 1kg Aashirvaad iodised salt, use Zepto",
-      "uncaptured_attributes": []
+      "text": "order 1kg Fortune maida on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "7a17b0c3706ebd425f328b28fdc361102aacf9a1370d20439dbaba0f47472960",
+    "content_hash": "00497e22604644bd2167c1043a58f425eede7f709f6701f34264350991863c8b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00070",
-    "obligation_hash": "7a17b0c3706ebd425f328b28fdc361102aacf9a1370d20439dbaba0f47472960",
+    "obligation_hash": "00497e22604644bd2167c1043a58f425eede7f709f6701f34264350991863c8b",
     "items": [
       {
         "item_id": "env_00070-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-rock-1000",
-          "display_name": "Tata Sampann Rock Salt 1kg",
-          "description": "Tata Sampann Rock Salt 1kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 5200
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-refined-1000",
+          "display_name": "Aashirvaad Maida 1kg",
+          "description": "Aashirvaad Maida 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 6200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:27:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:28:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "8c57ed6cdfe7db6ef39fea8967ccc7e7fb81534368ade6f535501b68f912d77d"
+        "content_hash": "276fba5574def62682e3b831ba92e4783b5ce121ad2403c2d5f8dbc2c401d596"
       },
       {
         "item_id": "env_00070-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "aashirvaad-salt-iodised-1000",
-          "display_name": "Aashirvaad Iodised Salt 1kg",
-          "description": "Aashirvaad Iodised Salt 1kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 3000
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-whole_wheat-1000",
+          "display_name": "Aashirvaad Whole Wheat Atta 1kg",
+          "description": "Aashirvaad Whole Wheat Atta 1kg. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 7800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:27:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:28:04Z",
         "evidence_class": 2,
-        "prev_hash": "8c57ed6cdfe7db6ef39fea8967ccc7e7fb81534368ade6f535501b68f912d77d",
-        "content_hash": "e668ef1619d2418d6754f9de5a20efd9073d59807600d55aca4a4f55a5a8c96d"
+        "prev_hash": "276fba5574def62682e3b831ba92e4783b5ce121ad2403c2d5f8dbc2c401d596",
+        "content_hash": "7ea9453e4cf313cba65bdc1142abd2aaaffc3969cf823488e668d2dc68793c14"
       },
       {
         "item_id": "env_00070-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-low_sodium-1000",
-          "display_name": "Tata Salt Lite Low Sodium 1kg",
-          "description": "Tata Salt Lite Low Sodium 1kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 4500
+          "merchant_id": "blinkit",
+          "sku": "fortune-flour-refined-1000",
+          "display_name": "Fortune Maida 1kg",
+          "description": "Fortune Maida 1kg. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 5800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:27:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:28:05Z",
         "evidence_class": 2,
-        "prev_hash": "e668ef1619d2418d6754f9de5a20efd9073d59807600d55aca4a4f55a5a8c96d",
-        "content_hash": "44128eece52b49882d96893d9516b1f8b090e5050e83471718a62402e8abda5d"
+        "prev_hash": "7ea9453e4cf313cba65bdc1142abd2aaaffc3969cf823488e668d2dc68793c14",
+        "content_hash": "4246753e5b0e1df3c2edfeb5c23342ac000412616c48109c64151d70c46d0337"
       },
       {
         "item_id": "env_00070-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "tata-salt-iodised-1000",
-          "display_name": "Tata Salt Iodised 1kg",
-          "description": "Tata Salt Iodised 1kg. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 2800
+          "merchant_id": "blinkit",
+          "sku": "aashirvaad-flour-gram-1000",
+          "display_name": "Aashirvaad Besan 1kg",
+          "description": "Aashirvaad Besan 1kg. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 9600
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:27:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:28:06Z",
         "evidence_class": 2,
-        "prev_hash": "44128eece52b49882d96893d9516b1f8b090e5050e83471718a62402e8abda5d",
-        "content_hash": "0f14329cbf463afbcb67135b572e33883d13593886f67fd67cc37de7cf2040b4"
+        "prev_hash": "4246753e5b0e1df3c2edfeb5c23342ac000412616c48109c64151d70c46d0337",
+        "content_hash": "d27f5b0f7e626017064d7d45022e339982bfa1e9fc0d667530c8044460cb8bd7"
       },
       {
         "item_id": "env_00070-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "fortune-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 5800
             }
           ]
         },
-        "emitted_by": "agt_982",
-        "emitted_at": "2026-09-02T20:27:12Z",
+        "emitted_by": "agt_938",
+        "emitted_at": "2026-09-03T00:28:12Z",
         "evidence_class": 1,
-        "prev_hash": "0f14329cbf463afbcb67135b572e33883d13593886f67fd67cc37de7cf2040b4",
-        "content_hash": "d23d8748b9a13f933cf6cc898788ede7df89560a03dfc53716171c9154252796"
+        "prev_hash": "d27f5b0f7e626017064d7d45022e339982bfa1e9fc0d667530c8044460cb8bd7",
+        "content_hash": "08eaec1a23900c09d9524d5b0adca9ff9534a636e62fae654b9420e4e62d7338"
       },
       {
         "item_id": "env_00070-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00070",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "fortune-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 5800
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:27:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:28:20Z",
         "evidence_class": 2,
-        "prev_hash": "d23d8748b9a13f933cf6cc898788ede7df89560a03dfc53716171c9154252796",
-        "content_hash": "79b4d0ad781bd39d16c0983d67231cabf9e3f422ebfd6e73de3a151b27e8187e"
+        "prev_hash": "08eaec1a23900c09d9524d5b0adca9ff9534a636e62fae654b9420e4e62d7338",
+        "content_hash": "f4423ce2912e2d46e6d6462be80bb3f6473c62f81667bcb245981475f3f56e13"
       },
       {
         "item_id": "env_00070-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00070",
           "lines": [
             {
-              "sku": "aashirvaad-salt-iodised-1000",
+              "sku": "fortune-flour-refined-1000",
               "quantity": 1,
-              "unit_price_paise": 3000
+              "unit_price_paise": 5800
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:41:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-03T00:42:00Z",
         "evidence_class": 2,
-        "prev_hash": "79b4d0ad781bd39d16c0983d67231cabf9e3f422ebfd6e73de3a151b27e8187e",
-        "content_hash": "041886128132f7b35fc0f0e7aab67c1c5333151ffc104a604c186269d945313a"
+        "prev_hash": "f4423ce2912e2d46e6d6462be80bb3f6473c62f81667bcb245981475f3f56e13",
+        "content_hash": "878d4b5e4c6c90be57342ab9fcb9581c7071af8933ea1e220cb5e586f55c9998"
       },
       {
         "item_id": "env_00070-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00070",
-          "amount_paise": 3000,
+          "amount_paise": 5800,
           "currency": "INR",
           "receipt": "zep_00070"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:27:25Z",
+        "emitted_at": "2026-09-03T00:28:25Z",
         "evidence_class": 3,
-        "prev_hash": "041886128132f7b35fc0f0e7aab67c1c5333151ffc104a604c186269d945313a",
-        "content_hash": "b0487e84748e5a8f412fc95e92743593482948e21b6a711ea1865c050a2cf201"
+        "prev_hash": "878d4b5e4c6c90be57342ab9fcb9581c7071af8933ea1e220cb5e586f55c9998",
+        "content_hash": "956b1c3792cc3ad7ab03012a77c184f6d3115c24ee4c34aceb590806a0175991"
       },
       {
         "item_id": "env_00070-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00070",
           "order_id": "order_00070",
-          "amount_paise": 3000,
+          "amount_paise": 5800,
           "status": "captured",
           "block_id": "blk_00070",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:27:30Z",
+        "emitted_at": "2026-09-03T00:28:30Z",
         "evidence_class": 3,
-        "prev_hash": "b0487e84748e5a8f412fc95e92743593482948e21b6a711ea1865c050a2cf201",
-        "content_hash": "4e8f678a6a04e9be850326a3ba7a91a71f84cfa86c69a6dd95c6ffb7e7842ec4"
+        "prev_hash": "956b1c3792cc3ad7ab03012a77c184f6d3115c24ee4c34aceb590806a0175991",
+        "content_hash": "c91cbb7d82b083987bae0d5af8da7e433716cf817c6cdeb95841e52ee244871d"
       },
       {
         "item_id": "env_00070-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg Aashirvaad iodised salt. Payment complete.",
-          "claimed_sku": "aashirvaad-salt-iodised-1000",
+          "text": "Ordered 1kg Fortune maida. Payment complete.",
+          "claimed_sku": "fortune-flour-refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_982",
-        "emitted_at": "2026-09-02T20:42:00Z",
+        "emitted_by": "agt_938",
+        "emitted_at": "2026-09-03T00:43:00Z",
         "evidence_class": 0,
-        "prev_hash": "4e8f678a6a04e9be850326a3ba7a91a71f84cfa86c69a6dd95c6ffb7e7842ec4",
-        "content_hash": "ac78c0b053c9fb23d5f25207e27d75cfe9fa75f362fdd5881ab23f40352f0818"
+        "prev_hash": "c91cbb7d82b083987bae0d5af8da7e433716cf817c6cdeb95841e52ee244871d",
+        "content_hash": "247b8c01830755cdaf5760c368b4d6dfe2deeed6f223a888b7f7bf93ed0c1146"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "aashirvaad-salt-iodised-1000",
-    "ordered_sku": "aashirvaad-salt-iodised-1000",
-    "delivered_sku": "aashirvaad-salt-iodised-1000",
+    "requested_sku": "fortune-flour-refined-1000",
+    "ordered_sku": "fortune-flour-refined-1000",
+    "delivered_sku": "fortune-flour-refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

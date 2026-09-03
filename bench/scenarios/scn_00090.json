@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00090",
-    "created_at": "2026-09-02T20:38:00Z",
-    "expires_at": "2026-09-03T02:38:00Z",
-    "user_id": "usr_5516",
-    "agent_id": "agt_293",
+    "created_at": "2026-09-02T18:33:00Z",
+    "expires_at": "2026-09-03T00:33:00Z",
+    "user_id": "usr_3938",
+    "agent_id": "agt_970",
     "block": {
       "block_id": "blk_00090",
-      "blocked_paise": 50000,
+      "blocked_paise": 52440,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-30T20:38:00Z",
-      "expires_at": "2026-10-03T20:38:00Z"
+      "blocked_at": "2026-08-23T18:33:00Z",
+      "expires_at": "2026-10-02T18:33:00Z"
     },
     "hard": {
-      "category": "milk",
-      "max_unit_price_paise": 8625,
-      "max_total_paise": 8625,
+      "category": "edible_oil",
+      "max_unit_price_paise": 17480,
+      "max_total_paise": 17480,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "blinkit"
       ],
-      "brand": "mother_dairy",
-      "variant": "full_cream",
+      "brand": "fortune",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1L Mother Dairy full cream milk from Zepto, keep it under 86 rupees",
-      "uncaptured_attributes": []
+      "text": "order 1L Fortune refined sunflower oil on Blinkit",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "4bc1f515000507cde41a9126ad2beb1e259e80b81fb79b601387ae531cf43b84",
+    "content_hash": "cb95d86c7633b81cd5a92aa7b7bfb2ac62435b61a1ff0b1ef4b684daedf87cb0",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00090",
-    "obligation_hash": "4bc1f515000507cde41a9126ad2beb1e259e80b81fb79b601387ae531cf43b84",
+    "obligation_hash": "cb95d86c7633b81cd5a92aa7b7bfb2ac62435b61a1ff0b1ef4b684daedf87cb0",
     "items": [
       {
         "item_id": "env_00090-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-toned-1000",
-          "display_name": "Mother Dairy Toned Milk 1L",
-          "description": "Mother Dairy Toned Milk 1L. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 6400
+          "merchant_id": "blinkit",
+          "sku": "fortune-edible_oil-groundnut-1000",
+          "display_name": "Fortune Groundnut Oil 1L",
+          "description": "Fortune Groundnut Oil 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 18900
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:38:03Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:33:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "29dc7afb9fa871d94c446e63b237313d6390269e09edcc71a4c7c2d6553ce4d5"
+        "content_hash": "435922321a94cad1a3b938b9bf6d24de50275dca7a61a8be78e28bbb53ac8981"
       },
       {
         "item_id": "env_00090-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "amul-milk-full_cream-1000",
-          "display_name": "Amul Gold Full Cream Milk 1L",
-          "description": "Amul Gold Full Cream Milk 1L. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 7700
+          "merchant_id": "blinkit",
+          "sku": "dhara-edible_oil-mustard-1000",
+          "display_name": "Dhara Kachi Ghani Mustard Oil 1L",
+          "description": "Dhara Kachi Ghani Mustard Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 15800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:38:04Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:33:04Z",
         "evidence_class": 2,
-        "prev_hash": "29dc7afb9fa871d94c446e63b237313d6390269e09edcc71a4c7c2d6553ce4d5",
-        "content_hash": "38b869b6abe4c3058a61428f9cd4f6e694fcf3c8b911d33db9def4bddfdbc42b"
+        "prev_hash": "435922321a94cad1a3b938b9bf6d24de50275dca7a61a8be78e28bbb53ac8981",
+        "content_hash": "66437bc0ff88d0bb74353e1fe175359d3778a286e4120124fc53d7991cf55850"
       },
       {
         "item_id": "env_00090-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "amul-milk-double_toned-1000",
-          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
-          "description": "Amul Slim n Trim Double Toned Milk 1L. Best before 6 months from packaging date.",
-          "listed_price_paise": 5900
+          "merchant_id": "blinkit",
+          "sku": "saffola-edible_oil-sunflower_refined-1000",
+          "display_name": "Saffola Gold Refined Oil 1L",
+          "description": "Saffola Gold Refined Oil 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 16800
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:38:05Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:33:05Z",
         "evidence_class": 2,
-        "prev_hash": "38b869b6abe4c3058a61428f9cd4f6e694fcf3c8b911d33db9def4bddfdbc42b",
-        "content_hash": "3a3b45946a6b8885c80d184ec9f20493bfd95256a3b0dc39e3d49cd0e94ddce9"
+        "prev_hash": "66437bc0ff88d0bb74353e1fe175359d3778a286e4120124fc53d7991cf55850",
+        "content_hash": "0b6c849f8c4d014fe993187ceb1b8e0b6f2d5af253e0b884dad93e48ed2654db"
       },
       {
         "item_id": "env_00090-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-full_cream-1000",
-          "display_name": "Mother Dairy Full Cream Milk 1L",
-          "description": "Mother Dairy Full Cream Milk 1L. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 7500
+          "merchant_id": "blinkit",
+          "sku": "fortune-edible_oil-sunflower_refined-1000",
+          "display_name": "Fortune Sunlite Refined Sunflower Oil 1L",
+          "description": "Fortune Sunlite Refined Sunflower Oil 1L. Bestseller in this category this week.",
+          "listed_price_paise": 15200
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:38:06Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:33:06Z",
         "evidence_class": 2,
-        "prev_hash": "3a3b45946a6b8885c80d184ec9f20493bfd95256a3b0dc39e3d49cd0e94ddce9",
-        "content_hash": "7e041eee857fe9bf270552770a0a878ca8779314d42b7785b8dc83041bbf0f52"
+        "prev_hash": "0b6c849f8c4d014fe993187ceb1b8e0b6f2d5af253e0b884dad93e48ed2654db",
+        "content_hash": "8cb21a2fa6343e278019f7fc4ad783f02cccbe499bb6ca7c2bf40750e1fd3cc9"
       },
       {
         "item_id": "env_00090-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 15200
             }
           ]
         },
-        "emitted_by": "agt_293",
-        "emitted_at": "2026-09-02T20:38:12Z",
+        "emitted_by": "agt_970",
+        "emitted_at": "2026-09-02T18:33:12Z",
         "evidence_class": 1,
-        "prev_hash": "7e041eee857fe9bf270552770a0a878ca8779314d42b7785b8dc83041bbf0f52",
-        "content_hash": "d791e6db806f3f8410bc519b3ba31b88126808adc0cbc19ae44c21027f593b16"
+        "prev_hash": "8cb21a2fa6343e278019f7fc4ad783f02cccbe499bb6ca7c2bf40750e1fd3cc9",
+        "content_hash": "90aa4c1800fc1d3a6c88814278c8e8d99b2c108864973199e0a77bf6a328dd67"
       },
       {
         "item_id": "env_00090-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "blinkit",
           "merchant_order_id": "zep_00090",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 15200
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:38:20Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:33:20Z",
         "evidence_class": 2,
-        "prev_hash": "d791e6db806f3f8410bc519b3ba31b88126808adc0cbc19ae44c21027f593b16",
-        "content_hash": "98c68ccbd505119535e252b57ffa14562e0c60fe13566c10e7ef4c9f415312dc"
+        "prev_hash": "90aa4c1800fc1d3a6c88814278c8e8d99b2c108864973199e0a77bf6a328dd67",
+        "content_hash": "50f53e538738f52df448168616d7cf2beed6543af12111b0e0cbebfd4c176f84"
       },
       {
         "item_id": "env_00090-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00090",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "fortune-edible_oil-sunflower_refined-1000",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 15200
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:52:00Z",
+        "emitted_by": "blinkit",
+        "emitted_at": "2026-09-02T18:47:00Z",
         "evidence_class": 2,
-        "prev_hash": "98c68ccbd505119535e252b57ffa14562e0c60fe13566c10e7ef4c9f415312dc",
-        "content_hash": "5392b0cce7fa98fcb8ffda76bec6300a161caebfe65c2837e662c714ebfa43ba"
+        "prev_hash": "50f53e538738f52df448168616d7cf2beed6543af12111b0e0cbebfd4c176f84",
+        "content_hash": "6eb92b9015960ec18d206cec81a2850125667af7aa5353eda1244bcc464c6cc5"
       },
       {
         "item_id": "env_00090-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00090",
-          "amount_paise": 7500,
+          "amount_paise": 15200,
           "currency": "INR",
           "receipt": "zep_00090"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:38:25Z",
+        "emitted_at": "2026-09-02T18:33:25Z",
         "evidence_class": 3,
-        "prev_hash": "5392b0cce7fa98fcb8ffda76bec6300a161caebfe65c2837e662c714ebfa43ba",
-        "content_hash": "ddbd539764059e27516af1ef78851fa5f7ad4a1c5623c52e6a0ee7320998f1f7"
+        "prev_hash": "6eb92b9015960ec18d206cec81a2850125667af7aa5353eda1244bcc464c6cc5",
+        "content_hash": "bf72e4b0ecda19c38bc3fc6773130cf60d0e4d3eff6d4fcdd399e9f5e5dacc35"
       },
       {
         "item_id": "env_00090-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00090",
           "order_id": "order_00090",
-          "amount_paise": 7500,
+          "amount_paise": 15200,
           "status": "captured",
           "block_id": "blk_00090",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:38:30Z",
+        "emitted_at": "2026-09-02T18:33:30Z",
         "evidence_class": 3,
-        "prev_hash": "ddbd539764059e27516af1ef78851fa5f7ad4a1c5623c52e6a0ee7320998f1f7",
-        "content_hash": "c3f772d72cbc5431a9d9eb171f93e71ae1e14a6411a85ca693cb91c23d842b95"
+        "prev_hash": "bf72e4b0ecda19c38bc3fc6773130cf60d0e4d3eff6d4fcdd399e9f5e5dacc35",
+        "content_hash": "3562331b207a7f6132fc4bf7ba14651c96454d6b0ba0d8a8b787ad7c839e6a06"
       },
       {
         "item_id": "env_00090-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-full_cream-1000",
+          "text": "Ordered 1L Fortune refined sunflower oil. Payment complete.",
+          "claimed_sku": "fortune-edible_oil-sunflower_refined-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_293",
-        "emitted_at": "2026-09-02T20:53:00Z",
+        "emitted_by": "agt_970",
+        "emitted_at": "2026-09-02T18:48:00Z",
         "evidence_class": 0,
-        "prev_hash": "c3f772d72cbc5431a9d9eb171f93e71ae1e14a6411a85ca693cb91c23d842b95",
-        "content_hash": "85754cfdbc0e112bdd1272111a608a3152d6926af55656d6dcfe7125f36156e6"
+        "prev_hash": "3562331b207a7f6132fc4bf7ba14651c96454d6b0ba0d8a8b787ad7c839e6a06",
+        "content_hash": "7d798ec07df3d19cd3360314aa0fbd8360ebbd600a285feea8c2e60e7747d8a0"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-full_cream-1000",
-    "ordered_sku": "mother_dairy-milk-full_cream-1000",
-    "delivered_sku": "mother_dairy-milk-full_cream-1000",
+    "requested_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "ordered_sku": "fortune-edible_oil-sunflower_refined-1000",
+    "delivered_sku": "fortune-edible_oil-sunflower_refined-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

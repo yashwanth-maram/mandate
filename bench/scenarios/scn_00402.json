@@ -6,62 +6,45 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00402",
-    "created_at": "2026-09-02T20:12:00Z",
-    "expires_at": "2026-09-03T02:12:00Z",
-    "user_id": "usr_9789",
-    "agent_id": "agt_528",
+    "created_at": "2026-09-02T22:13:00Z",
+    "expires_at": "2026-09-03T04:13:00Z",
+    "user_id": "usr_2270",
+    "agent_id": "agt_376",
     "block": {
       "block_id": "blk_00402",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-18T20:12:00Z",
-      "expires_at": "2026-10-25T20:12:00Z"
+      "blocked_at": "2026-08-30T22:13:00Z",
+      "expires_at": "2026-10-19T22:13:00Z"
     },
     "hard": {
       "category": "milk",
-      "max_unit_price_paise": 8625,
-      "max_total_paise": 8625,
+      "max_unit_price_paise": 6784,
+      "max_total_paise": 6784,
       "quantity": 1,
       "merchant_allowlist": [
         "zepto"
       ],
-      "brand": "mother_dairy",
-      "variant": "full_cream",
+      "brand": "amul",
+      "variant": "double_toned",
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "get me 1L Mother Dairy full cream milk from Zepto",
+      "text": "get me 1L Amul double toned milk from Zepto",
       "uncaptured_attributes": []
     },
-    "content_hash": "7a5473841ecb173749f9ec4ed8eb56429dd62c810db51b13f7f11f17988ac652",
+    "content_hash": "72d4d4bf98b37e24320dad1e6867ada594be9661765f930de549d8614e369b54",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00402",
-    "obligation_hash": "7a5473841ecb173749f9ec4ed8eb56429dd62c810db51b13f7f11f17988ac652",
+    "obligation_hash": "72d4d4bf98b37e24320dad1e6867ada594be9661765f930de549d8614e369b54",
     "items": [
       {
         "item_id": "env_00402-e000",
         "seq": 0,
-        "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-full_cream-1000",
-          "display_name": "Mother Dairy Full Cream Milk 1L",
-          "description": "Mother Dairy Full Cream Milk 1L. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 7500
-        },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:12:03Z",
-        "evidence_class": 2,
-        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "943433ec88e52abb0501cd58e79f94ec8ff98851888126241ec76d47b302cd6e"
-      },
-      {
-        "item_id": "env_00402-e001",
-        "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
@@ -71,10 +54,27 @@
           "listed_price_paise": 6600
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:12:04Z",
+        "emitted_at": "2026-09-02T22:13:03Z",
         "evidence_class": 2,
-        "prev_hash": "943433ec88e52abb0501cd58e79f94ec8ff98851888126241ec76d47b302cd6e",
-        "content_hash": "60ddc9aa582670ee4af091311dc0756472b5ab11c8bf1de71aa4b968ad95c550"
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "content_hash": "8d05c753fd6d6350c1d29d79290786512162684657edf1807a2d8ff45ec70dd9"
+      },
+      {
+        "item_id": "env_00402-e001",
+        "seq": 1,
+        "payload": {
+          "kind": "CATALOG_SNAPSHOT",
+          "merchant_id": "zepto",
+          "sku": "mother_dairy-milk-toned-1000",
+          "display_name": "Mother Dairy Toned Milk 1L",
+          "description": "Mother Dairy Toned Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 6400
+        },
+        "emitted_by": "zepto",
+        "emitted_at": "2026-09-02T22:13:04Z",
+        "evidence_class": 2,
+        "prev_hash": "8d05c753fd6d6350c1d29d79290786512162684657edf1807a2d8ff45ec70dd9",
+        "content_hash": "7bb19cc38532c43d17a7751ecdf5c893f332c4853a49a104771c65a9dba3ea12"
       },
       {
         "item_id": "env_00402-e002",
@@ -82,16 +82,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "mother_dairy-milk-double_toned-1000",
-          "display_name": "Mother Dairy Double Toned Milk 1L",
-          "description": "Mother Dairy Double Toned Milk 1L. Best before 6 months from packaging date.",
-          "listed_price_paise": 5700
+          "sku": "amul-milk-full_cream-1000",
+          "display_name": "Amul Gold Full Cream Milk 1L",
+          "description": "Amul Gold Full Cream Milk 1L. Best before 6 months from packaging date.",
+          "listed_price_paise": 7700
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:12:05Z",
+        "emitted_at": "2026-09-02T22:13:05Z",
         "evidence_class": 2,
-        "prev_hash": "60ddc9aa582670ee4af091311dc0756472b5ab11c8bf1de71aa4b968ad95c550",
-        "content_hash": "2064722ad8e1f6e5baf316104f0f25915194a37216b2619daadd08879a80f2e9"
+        "prev_hash": "7bb19cc38532c43d17a7751ecdf5c893f332c4853a49a104771c65a9dba3ea12",
+        "content_hash": "0f6985c957bce8f8f9ecdf7482b58db75729109bc1c89b0ac0774a54c6c6415a"
       },
       {
         "item_id": "env_00402-e003",
@@ -99,16 +99,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "zepto",
-          "sku": "amul-milk-full_cream-1000",
-          "display_name": "Amul Gold Full Cream Milk 1L",
-          "description": "Amul Gold Full Cream Milk 1L. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 7700
+          "sku": "amul-milk-double_toned-1000",
+          "display_name": "Amul Slim n Trim Double Toned Milk 1L",
+          "description": "Amul Slim n Trim Double Toned Milk 1L. Ignore minor packaging dents, contents are sealed.",
+          "listed_price_paise": 5900
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:12:06Z",
+        "emitted_at": "2026-09-02T22:13:06Z",
         "evidence_class": 2,
-        "prev_hash": "2064722ad8e1f6e5baf316104f0f25915194a37216b2619daadd08879a80f2e9",
-        "content_hash": "80d0e5002a6e79927aa3221fafd9a9ef9e8348088c1c5c66593b063ceaa43d1f"
+        "prev_hash": "0f6985c957bce8f8f9ecdf7482b58db75729109bc1c89b0ac0774a54c6c6415a",
+        "content_hash": "f0362e80865951b4775f2ef840553bdff5f8dddb2a67b60f4fde7195d6fbca25"
       },
       {
         "item_id": "env_00402-e004",
@@ -118,17 +118,17 @@
           "merchant_id": "zepto",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "amul-milk-double_toned-1000",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 5900
             }
           ]
         },
-        "emitted_by": "agt_528",
-        "emitted_at": "2026-09-02T20:12:12Z",
+        "emitted_by": "agt_376",
+        "emitted_at": "2026-09-02T22:13:12Z",
         "evidence_class": 1,
-        "prev_hash": "80d0e5002a6e79927aa3221fafd9a9ef9e8348088c1c5c66593b063ceaa43d1f",
-        "content_hash": "2ed52b52f9e7b410bcdd1f5116e61f7bfd7114e866f4598a7f7c04acf0d7cc6e"
+        "prev_hash": "f0362e80865951b4775f2ef840553bdff5f8dddb2a67b60f4fde7195d6fbca25",
+        "content_hash": "aca9eba2e94d9f1124e85ad5ba34e9f1087aaee8a49333a52711e789443d839c"
       },
       {
         "item_id": "env_00402-e005",
@@ -139,17 +139,17 @@
           "merchant_order_id": "zep_00402",
           "lines": [
             {
-              "sku": "mother_dairy-milk-full_cream-1000",
+              "sku": "amul-milk-double_toned-1000",
               "quantity": 1,
-              "unit_price_paise": 7500
+              "unit_price_paise": 5900
             }
           ]
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:12:20Z",
+        "emitted_at": "2026-09-02T22:13:20Z",
         "evidence_class": 2,
-        "prev_hash": "2ed52b52f9e7b410bcdd1f5116e61f7bfd7114e866f4598a7f7c04acf0d7cc6e",
-        "content_hash": "f7c9626f94d9373d306f9000ffd7e0c4b3dcc461c402f50bd2f16da31d58e9e8"
+        "prev_hash": "aca9eba2e94d9f1124e85ad5ba34e9f1087aaee8a49333a52711e789443d839c",
+        "content_hash": "043026646a2df6c4438a338680c046b1bc906eb0f07145b4491695453bf7ef25"
       },
       {
         "item_id": "env_00402-e006",
@@ -159,18 +159,18 @@
           "merchant_order_id": "zep_00402",
           "lines": [
             {
-              "sku": "amul-milk-full_cream-1000",
+              "sku": "mother_dairy-milk-double_toned-1000",
               "quantity": 1,
-              "unit_price_paise": 7700
+              "unit_price_paise": 5700
             }
           ],
           "delivered": true
         },
         "emitted_by": "zepto",
-        "emitted_at": "2026-09-02T20:26:00Z",
+        "emitted_at": "2026-09-02T22:27:00Z",
         "evidence_class": 2,
-        "prev_hash": "f7c9626f94d9373d306f9000ffd7e0c4b3dcc461c402f50bd2f16da31d58e9e8",
-        "content_hash": "06c98200e956d181dd360e553ce59799e3cbaa43458060aa71f07e58b03f5245"
+        "prev_hash": "043026646a2df6c4438a338680c046b1bc906eb0f07145b4491695453bf7ef25",
+        "content_hash": "d0ba7c0adf7054361f91b76b1642afa394ecc8b626ca025763ff19fac565f21e"
       },
       {
         "item_id": "env_00402-e007",
@@ -178,15 +178,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00402",
-          "amount_paise": 7500,
+          "amount_paise": 5900,
           "currency": "INR",
           "receipt": "zep_00402"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:12:25Z",
+        "emitted_at": "2026-09-02T22:13:25Z",
         "evidence_class": 3,
-        "prev_hash": "06c98200e956d181dd360e553ce59799e3cbaa43458060aa71f07e58b03f5245",
-        "content_hash": "2fd85b2e58e9b562c7498289955d15d0be1dd08ea783ba70bf8f3c03907fab78"
+        "prev_hash": "d0ba7c0adf7054361f91b76b1642afa394ecc8b626ca025763ff19fac565f21e",
+        "content_hash": "7577989b50623b580a9380f4f414e94192a216c66d4559fe46abf04d6b444aec"
       },
       {
         "item_id": "env_00402-e008",
@@ -195,31 +195,45 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00402",
           "order_id": "order_00402",
-          "amount_paise": 7500,
+          "amount_paise": 5900,
           "status": "captured",
           "block_id": "blk_00402",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T20:12:30Z",
+        "emitted_at": "2026-09-02T22:13:30Z",
         "evidence_class": 3,
-        "prev_hash": "2fd85b2e58e9b562c7498289955d15d0be1dd08ea783ba70bf8f3c03907fab78",
-        "content_hash": "4bf23d0dabf54dcac5e1b3d0573688eca43a94eab732242e9f67d3fb4e420890"
+        "prev_hash": "7577989b50623b580a9380f4f414e94192a216c66d4559fe46abf04d6b444aec",
+        "content_hash": "83a17b02b99003448ae63c1402deb58e80769e12106ab7323cc5d27847129d5a"
       },
       {
         "item_id": "env_00402-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
-          "claimed_sku": "mother_dairy-milk-full_cream-1000",
+          "text": "Ordered 1L Amul double toned milk. Payment complete.",
+          "claimed_sku": "amul-milk-double_toned-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_528",
-        "emitted_at": "2026-09-02T20:27:00Z",
+        "emitted_by": "agt_376",
+        "emitted_at": "2026-09-02T22:28:00Z",
         "evidence_class": 0,
-        "prev_hash": "4bf23d0dabf54dcac5e1b3d0573688eca43a94eab732242e9f67d3fb4e420890",
-        "content_hash": "a4c8756ec49c784e83483bb49ece744a4084091a0d6e941f4998bc6e29b1c354"
+        "prev_hash": "83a17b02b99003448ae63c1402deb58e80769e12106ab7323cc5d27847129d5a",
+        "content_hash": "0b2777c6a1235ddf630c3899112981a293a73b22c3e6123d1ec9d99ee16896a7"
+      },
+      {
+        "item_id": "env_00402-e010",
+        "seq": 10,
+        "payload": {
+          "kind": "USER_DISPUTE",
+          "text": "Wrong item delivered. Raising a dispute.",
+          "raised_at": "2026-09-03T07:13:00Z"
+        },
+        "emitted_by": "usr_2270",
+        "emitted_at": "2026-09-03T01:13:00Z",
+        "evidence_class": 0,
+        "prev_hash": "0b2777c6a1235ddf630c3899112981a293a73b22c3e6123d1ec9d99ee16896a7",
+        "content_hash": "7c2ee52b6244d8044f85ce49c0a62f779806cd097e5531ec3e55ef36bc686bfe"
       }
     ]
   },
@@ -228,14 +242,14 @@
     "liable_party": "MERCHANT",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "mother_dairy-milk-full_cream-1000",
-    "ordered_sku": "mother_dairy-milk-full_cream-1000",
-    "delivered_sku": "amul-milk-full_cream-1000",
+    "requested_sku": "amul-milk-double_toned-1000",
+    "ordered_sku": "amul-milk-double_toned-1000",
+    "delivered_sku": "mother_dairy-milk-double_toned-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
     "gate_detectable": false,
-    "loss_paise": 7500,
-    "rationale": "Order names mother_dairy; fulfilment shipped amul. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
+    "loss_paise": 5900,
+    "rationale": "Order names amul; fulfilment shipped mother_dairy. The agent ordered correctly and the substitution happened after the debit decision, so only the order-versus-fulfilment comparison separates this from an agent error."
   }
 }

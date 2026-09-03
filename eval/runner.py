@@ -79,17 +79,24 @@ def build_semantic(args: argparse.Namespace) -> Verifier:
     except ImportError:
         pass
 
-    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    if not key or key.startswith("sk-ant-xxx"):
-        raise SystemExit(
-            "--live needs a real ANTHROPIC_API_KEY in .env "
-            "(found a placeholder or nothing)"
-        )
-
-    from anthropic import Anthropic
+    if args.provider == "openrouter":
+        key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+        if not key or key.startswith("sk-or-v1-xxx"):
+            raise SystemExit(
+                "--provider openrouter needs a real OPENROUTER_API_KEY in .env"
+            )
+        from openai import OpenAI
+        client = OpenAI(api_key=key, base_url="https://openrouter.ai/api/v1")
+    else:
+        key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+        if not key or key.startswith("sk-ant-xxx"):
+            raise SystemExit("--live needs a real ANTHROPIC_API_KEY in .env")
+        from anthropic import Anthropic
+        client = Anthropic(api_key=key)
 
     return SemanticVerifier(
-        client=Anthropic(api_key=key),
+        client=client,
+        provider=args.provider,
         include_self_report=args.self_report,
         model=args.model,
     )
@@ -172,6 +179,7 @@ def write_outputs(
         "n": len(scenarios),
         "live": args.live,
         "include_self_report": args.self_report,
+        "provider": args.provider if args.live else None,
         "model": args.model if args.live else None,
         "workers": args.workers,
         "scenarios_dir": str(args.scenarios),
@@ -192,6 +200,8 @@ def main() -> None:
     ap.add_argument("--self-report", action="store_true", dest="self_report",
                     help="ablation: let the semantic verifier read the agent's "
                          "self-report, so its basis falls below the floor")
+    ap.add_argument("--provider", choices=("anthropic", "openrouter"),
+                    default="anthropic")
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--limit", type=int, default=None,

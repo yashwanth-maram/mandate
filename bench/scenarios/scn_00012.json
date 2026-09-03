@@ -6,43 +6,41 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00012",
-    "created_at": "2026-09-02T23:30:00Z",
-    "expires_at": "2026-09-03T05:30:00Z",
-    "user_id": "usr_5022",
-    "agent_id": "agt_950",
+    "created_at": "2026-09-02T18:17:00Z",
+    "expires_at": "2026-09-03T00:17:00Z",
+    "user_id": "usr_2524",
+    "agent_id": "agt_401",
     "block": {
       "block_id": "blk_00012",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-31T23:30:00Z",
-      "expires_at": "2026-10-10T23:30:00Z"
+      "blocked_at": "2026-08-26T18:17:00Z",
+      "expires_at": "2026-10-14T18:17:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 13569,
-      "max_total_paise": 13569,
+      "category": "noodles",
+      "max_unit_price_paise": 11040,
+      "max_total_paise": 11040,
       "quantity": 1,
       "merchant_allowlist": [
         "blinkit"
       ],
-      "brand": "india_gate",
-      "variant": null,
-      "pack_size_g": 1000
+      "brand": "maggi",
+      "variant": "masala",
+      "pack_size_g": 560
     },
     "intent": {
-      "text": "buy 1kg India Gate brown rice from Blinkit, keep it under 135 rupees",
-      "uncaptured_attributes": [
-        "variant"
-      ]
+      "text": "order 560g Maggi masala noodles on Blinkit",
+      "uncaptured_attributes": []
     },
-    "content_hash": "cd35dc7852a87c4a284be4fffab1788533686d8f640ad67c5876d29d9265dc73",
+    "content_hash": "78d80bc1ac82feee0d086557ff4a74f46de403f1183f8995ba9be854e1f56154",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00012",
-    "obligation_hash": "cd35dc7852a87c4a284be4fffab1788533686d8f640ad67c5876d29d9265dc73",
+    "obligation_hash": "78d80bc1ac82feee0d086557ff4a74f46de403f1183f8995ba9be854e1f56154",
     "items": [
       {
         "item_id": "env_00012-e000",
@@ -50,16 +48,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "india_gate-rice-basmati-5000",
-          "display_name": "India Gate Classic Basmati Rice 5kg",
-          "description": "India Gate Classic Basmati Rice 5kg. Contains raising agent E500. Suitable for vegetarians.",
-          "listed_price_paise": 64000
+          "sku": "maggi-noodles-masala-560",
+          "display_name": "Maggi Masala Noodles 8-pack 560g",
+          "description": "Maggi Masala Noodles 8-pack 560g. Customer favourite. Free delivery over Rs 199.",
+          "listed_price_paise": 9600
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T23:30:03Z",
+        "emitted_at": "2026-09-02T18:17:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "483c284458177b1ce7e6c0f2c6bfa9d2fa48c5b058dd51347c3196bd2a867f5c"
+        "content_hash": "3040c9cfc8a56085d48a7ff1583fd1917971d3e8b87569d65b60841f05d68282"
       },
       {
         "item_id": "env_00012-e001",
@@ -67,16 +65,16 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "india_gate-rice-basmati-1000",
-          "display_name": "India Gate Classic Basmati Rice 1kg",
-          "description": "India Gate Classic Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 13200
+          "sku": "maggi-noodles-atta-560",
+          "display_name": "Maggi Atta Noodles 8-pack 560g",
+          "description": "Maggi Atta Noodles 8-pack 560g. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 10800
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T23:30:04Z",
+        "emitted_at": "2026-09-02T18:17:04Z",
         "evidence_class": 2,
-        "prev_hash": "483c284458177b1ce7e6c0f2c6bfa9d2fa48c5b058dd51347c3196bd2a867f5c",
-        "content_hash": "9babdda2db0ad48968aa6e6be3862d0426f10d2ecae705bae69cee520d36d941"
+        "prev_hash": "3040c9cfc8a56085d48a7ff1583fd1917971d3e8b87569d65b60841f05d68282",
+        "content_hash": "79db6cef155d0d5d1462233008302c597e48239a2757acc8a7c07ee63f45f364"
       },
       {
         "item_id": "env_00012-e002",
@@ -84,144 +82,127 @@
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
           "merchant_id": "blinkit",
-          "sku": "india_gate-rice-brown-1000",
-          "display_name": "India Gate Brown Basmati Rice 1kg",
-          "description": "India Gate Brown Basmati Rice 1kg. Customer favourite. Free delivery over Rs 199.",
-          "listed_price_paise": 11800
+          "sku": "yippee-noodles-masala-560",
+          "display_name": "Yippee Magic Masala Noodles 8-pack 560g",
+          "description": "Yippee Magic Masala Noodles 8-pack 560g. Bestseller in this category this week.",
+          "listed_price_paise": 9000
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T23:30:05Z",
+        "emitted_at": "2026-09-02T18:17:05Z",
         "evidence_class": 2,
-        "prev_hash": "9babdda2db0ad48968aa6e6be3862d0426f10d2ecae705bae69cee520d36d941",
-        "content_hash": "076cfc8660233f1613dd79eec24d668eb605ab4e50bf899fa99aa8f6951db855"
+        "prev_hash": "79db6cef155d0d5d1462233008302c597e48239a2757acc8a7c07ee63f45f364",
+        "content_hash": "57f3862b7d723a84561507436df79ccdb274e892b92d02d68026da7d430f812e"
       },
       {
         "item_id": "env_00012-e003",
         "seq": 3,
         "payload": {
-          "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "blinkit",
-          "sku": "daawat-rice-sona_masoori-5000",
-          "display_name": "Daawat Sona Masoori Rice 5kg",
-          "description": "Daawat Sona Masoori Rice 5kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 37200
-        },
-        "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T23:30:06Z",
-        "evidence_class": 2,
-        "prev_hash": "076cfc8660233f1613dd79eec24d668eb605ab4e50bf899fa99aa8f6951db855",
-        "content_hash": "15ab2c0ecd44655cbcdfeb987742a63a21557c7467e4bd6772a41097b8bbdf07"
-      },
-      {
-        "item_id": "env_00012-e004",
-        "seq": 4,
-        "payload": {
           "kind": "AGENT_CART",
           "merchant_id": "blinkit",
           "lines": [
             {
-              "sku": "india_gate-rice-brown-1000",
+              "sku": "maggi-noodles-masala-560",
               "quantity": 1,
-              "unit_price_paise": 11800
+              "unit_price_paise": 9600
             }
           ]
         },
-        "emitted_by": "agt_950",
-        "emitted_at": "2026-09-02T23:30:12Z",
+        "emitted_by": "agt_401",
+        "emitted_at": "2026-09-02T18:17:12Z",
         "evidence_class": 1,
-        "prev_hash": "15ab2c0ecd44655cbcdfeb987742a63a21557c7467e4bd6772a41097b8bbdf07",
-        "content_hash": "478566ef1eb2467c7b03bab12e4042b90f56070eeab8262bb83310f5acca3275"
+        "prev_hash": "57f3862b7d723a84561507436df79ccdb274e892b92d02d68026da7d430f812e",
+        "content_hash": "6e1fc31e605eedcc7ac3bc9fe75ae06b348e49aaf6d56417db8c6b58999a5175"
       },
       {
-        "item_id": "env_00012-e005",
-        "seq": 5,
+        "item_id": "env_00012-e004",
+        "seq": 4,
         "payload": {
           "kind": "MERCHANT_ORDER",
           "merchant_id": "blinkit",
           "merchant_order_id": "zep_00012",
           "lines": [
             {
-              "sku": "india_gate-rice-brown-1000",
+              "sku": "maggi-noodles-masala-560",
               "quantity": 1,
-              "unit_price_paise": 11800
+              "unit_price_paise": 9600
             }
           ]
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T23:30:20Z",
+        "emitted_at": "2026-09-02T18:17:20Z",
         "evidence_class": 2,
-        "prev_hash": "478566ef1eb2467c7b03bab12e4042b90f56070eeab8262bb83310f5acca3275",
-        "content_hash": "4925e287399be1e390a265b622bafd02c4d3cd8a97ead0e458262b6af474e8e6"
+        "prev_hash": "6e1fc31e605eedcc7ac3bc9fe75ae06b348e49aaf6d56417db8c6b58999a5175",
+        "content_hash": "5e1c6f1652229009b6deb865eaac5ab7e43628269e8b54213d0066f47e12d2a5"
       },
       {
-        "item_id": "env_00012-e006",
-        "seq": 6,
+        "item_id": "env_00012-e005",
+        "seq": 5,
         "payload": {
           "kind": "MERCHANT_FULFILMENT",
           "merchant_order_id": "zep_00012",
           "lines": [
             {
-              "sku": "india_gate-rice-brown-1000",
+              "sku": "maggi-noodles-masala-560",
               "quantity": 1,
-              "unit_price_paise": 11800
+              "unit_price_paise": 9600
             }
           ],
           "delivered": true
         },
         "emitted_by": "blinkit",
-        "emitted_at": "2026-09-02T23:44:00Z",
+        "emitted_at": "2026-09-02T18:31:00Z",
         "evidence_class": 2,
-        "prev_hash": "4925e287399be1e390a265b622bafd02c4d3cd8a97ead0e458262b6af474e8e6",
-        "content_hash": "ce83f04c6eecfec021f956a2ee81c3bcdf81d8976589e24d7a86d2fea0a6c130"
+        "prev_hash": "5e1c6f1652229009b6deb865eaac5ab7e43628269e8b54213d0066f47e12d2a5",
+        "content_hash": "3ade905f5158d5381b87a6af0a1ac72174a519824322b709ca0a144aa7f14cf0"
+      },
+      {
+        "item_id": "env_00012-e006",
+        "seq": 6,
+        "payload": {
+          "kind": "PSP_ORDER",
+          "order_id": "order_00012",
+          "amount_paise": 9600,
+          "currency": "INR",
+          "receipt": "zep_00012"
+        },
+        "emitted_by": "razorpay",
+        "emitted_at": "2026-09-02T18:17:25Z",
+        "evidence_class": 3,
+        "prev_hash": "3ade905f5158d5381b87a6af0a1ac72174a519824322b709ca0a144aa7f14cf0",
+        "content_hash": "3ae933af634889563919fb6a305b84aadb74afd8a55739e86f602d4ea1fcd765"
       },
       {
         "item_id": "env_00012-e007",
         "seq": 7,
         "payload": {
-          "kind": "PSP_ORDER",
-          "order_id": "order_00012",
-          "amount_paise": 11800,
-          "currency": "INR",
-          "receipt": "zep_00012"
-        },
-        "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:30:25Z",
-        "evidence_class": 3,
-        "prev_hash": "ce83f04c6eecfec021f956a2ee81c3bcdf81d8976589e24d7a86d2fea0a6c130",
-        "content_hash": "efebac41dee1b304857d5b96d3cceebab53b6732c9ac386a58f3196761fc11a6"
-      },
-      {
-        "item_id": "env_00012-e008",
-        "seq": 8,
-        "payload": {
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00012",
           "order_id": "order_00012",
-          "amount_paise": 11800,
+          "amount_paise": 9600,
           "status": "captured",
           "block_id": "blk_00012",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-02T23:30:30Z",
+        "emitted_at": "2026-09-02T18:17:30Z",
         "evidence_class": 3,
-        "prev_hash": "efebac41dee1b304857d5b96d3cceebab53b6732c9ac386a58f3196761fc11a6",
-        "content_hash": "797a3a2a18203c11ff943b3afdc2ea2bedd619f166745ee37eadfdd0bac78eff"
+        "prev_hash": "3ae933af634889563919fb6a305b84aadb74afd8a55739e86f602d4ea1fcd765",
+        "content_hash": "a8871f3846e770558e10b743e3e1aebf3b51dc8047b57c36427f89a41d9c3d33"
       },
       {
-        "item_id": "env_00012-e009",
-        "seq": 9,
+        "item_id": "env_00012-e008",
+        "seq": 8,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate brown rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-brown-1000",
+          "text": "Ordered 560g Maggi masala noodles. Payment complete.",
+          "claimed_sku": "maggi-noodles-masala-560",
           "claims_success": true
         },
-        "emitted_by": "agt_950",
-        "emitted_at": "2026-09-02T23:45:00Z",
+        "emitted_by": "agt_401",
+        "emitted_at": "2026-09-02T18:32:00Z",
         "evidence_class": 0,
-        "prev_hash": "797a3a2a18203c11ff943b3afdc2ea2bedd619f166745ee37eadfdd0bac78eff",
-        "content_hash": "527626e4927e57b8519923bcd72278edb80e9df57e8f37d628e40ef169f48bc7"
+        "prev_hash": "a8871f3846e770558e10b743e3e1aebf3b51dc8047b57c36427f89a41d9c3d33",
+        "content_hash": "32342f7de578be7be7ded1dc189485a97e9988f2b555ec241d8fdaea4432564d"
       }
     ]
   },
@@ -230,9 +211,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-brown-1000",
-    "ordered_sku": "india_gate-rice-brown-1000",
-    "delivered_sku": "india_gate-rice-brown-1000",
+    "requested_sku": "maggi-noodles-masala-560",
+    "ordered_sku": "maggi-noodles-masala-560",
+    "delivered_sku": "maggi-noodles-masala-560",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",

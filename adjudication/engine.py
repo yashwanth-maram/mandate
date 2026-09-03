@@ -358,6 +358,33 @@ class Adjudicator:
         strongest = min(
             view.envelope.basis_class(o.basis) for o in passes if o.basis
         )
+        # Everything cleared. If a dispute was raised anyway, the complaint
+        # contradicts a record that every competent verifier has confirmed, so
+        # it is unfounded and the loss sits with the user. Refunding here is a
+        # false positive borne by the merchant.
+        #
+        # The dispute cannot establish this on its own - it is SELF_REPORT
+        # class. What decides it is the clearance, which rests on
+        # MERCHANT_RECORD evidence or better.
+        dispute = view.envelope.first_of_kind(EvidenceKind.USER_DISPUTE)
+        if dispute is not None:
+            order = view.envelope.first_of_kind(EvidenceKind.MERCHANT_ORDER)
+            return build(
+                gate_verdict=GateVerdict.ALLOW,
+                fault_class=FaultClass.USER_REGRET,
+                liable_party=Party.USER,
+                loss_paise=order.payload.total_paise if order else 0,
+                confidence=confidence,
+                basis_class=strongest,
+                cited=cited,
+                reason=(
+                    f"a dispute was raised, but every competent verifier cleared "
+                    f"this transaction on {strongest.name} evidence. The complaint "
+                    f"contradicts the record and is SELF_REPORT class, so it "
+                    f"establishes nothing on its own"
+                ),
+            )
+
         return build(
             gate_verdict=GateVerdict.ALLOW,
             fault_class=FaultClass.NO_FAULT,

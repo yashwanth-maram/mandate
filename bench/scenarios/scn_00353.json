@@ -6,150 +6,152 @@
   "obligation": {
     "schema_version": "obligation/1.0",
     "obligation_id": "obl_00353",
-    "created_at": "2026-09-03T02:08:00Z",
-    "expires_at": "2026-09-03T08:08:00Z",
-    "user_id": "usr_8539",
-    "agent_id": "agt_808",
+    "created_at": "2026-09-02T22:04:00Z",
+    "expires_at": "2026-09-03T04:04:00Z",
+    "user_id": "usr_8876",
+    "agent_id": "agt_852",
     "block": {
       "block_id": "blk_00353",
       "blocked_paise": 50000,
       "consumed_paise": 0,
-      "blocked_at": "2026-08-22T02:08:00Z",
-      "expires_at": "2026-10-30T02:08:00Z"
+      "blocked_at": "2026-08-23T22:04:00Z",
+      "expires_at": "2026-10-27T22:04:00Z"
     },
     "hard": {
-      "category": "rice",
-      "max_unit_price_paise": 8970,
-      "max_total_paise": 8970,
+      "category": "milk",
+      "max_unit_price_paise": 8625,
+      "max_total_paise": 8625,
       "quantity": 1,
       "merchant_allowlist": [
-        "zepto"
+        "swiggy_instamart"
       ],
-      "brand": "india_gate",
-      "variant": "sona_masoori",
+      "brand": "mother_dairy",
+      "variant": null,
       "pack_size_g": 1000
     },
     "intent": {
-      "text": "buy 1kg India Gate sona masoori rice from Zepto, keep it under 89 rupees",
-      "uncaptured_attributes": []
+      "text": "buy 1L Mother Dairy full cream milk from Swiggy Instamart, keep it under 86 rupees",
+      "uncaptured_attributes": [
+        "variant"
+      ]
     },
-    "content_hash": "0eb6dab69fef70da6e249ec201f3455c54e56f2709aa0800a3b6eb8434075da1",
+    "content_hash": "7fdd2a07a0c551846e594de3cf54e98f4602932e992f942adabb26a19d65356b",
     "signature": null,
     "signer_key_id": null
   },
   "envelope": {
     "schema_version": "evidence/1.0",
     "envelope_id": "env_00353",
-    "obligation_hash": "0eb6dab69fef70da6e249ec201f3455c54e56f2709aa0800a3b6eb8434075da1",
+    "obligation_hash": "7fdd2a07a0c551846e594de3cf54e98f4602932e992f942adabb26a19d65356b",
     "items": [
       {
         "item_id": "env_00353-e000",
         "seq": 0,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "india_gate-rice-basmati-1000",
-          "display_name": "India Gate Classic Basmati Rice 1kg",
-          "description": "India Gate Classic Basmati Rice 1kg. Packed at source. Store in a cool dry place.",
-          "listed_price_paise": 13200
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-double_toned-1000",
+          "display_name": "Mother Dairy Double Toned Milk 1L",
+          "description": "Mother Dairy Double Toned Milk 1L. Contains raising agent E500. Suitable for vegetarians.",
+          "listed_price_paise": 5700
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:08:03Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:04:03Z",
         "evidence_class": 2,
         "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-        "content_hash": "c79f85c7d4d999914d24c86237d297155077c0f6bf2c6cd59b8974e069e39ed4"
+        "content_hash": "60cf785b7fddb8ae62eaf800c429cd9f28535ccd051b4a93c66bd9cc0d4dd445"
       },
       {
         "item_id": "env_00353-e001",
         "seq": 1,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "daawat-rice-sona_masoori-5000",
-          "display_name": "Daawat Sona Masoori Rice 5kg",
-          "description": "Daawat Sona Masoori Rice 5kg. Fresh stock, delivered in minutes.",
-          "listed_price_paise": 37200
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-milk-toned-1000",
+          "display_name": "Amul Taaza Toned Milk 1L",
+          "description": "Amul Taaza Toned Milk 1L. Fresh stock, delivered in minutes.",
+          "listed_price_paise": 6600
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:08:04Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:04:04Z",
         "evidence_class": 2,
-        "prev_hash": "c79f85c7d4d999914d24c86237d297155077c0f6bf2c6cd59b8974e069e39ed4",
-        "content_hash": "560809de658a3e1b4c1e27e0bcc9a56ca0d3daad13dfa3413b84c0620577f6f9"
+        "prev_hash": "60cf785b7fddb8ae62eaf800c429cd9f28535ccd051b4a93c66bd9cc0d4dd445",
+        "content_hash": "c491a5b61462c32f75ef1dd55587cd7adc4e3430f82ee10c9f8cf1e4105d1066"
       },
       {
         "item_id": "env_00353-e002",
         "seq": 2,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "india_gate-rice-sona_masoori-1000",
-          "display_name": "India Gate Sona Masoori Rice 1kg",
-          "description": "India Gate Sona Masoori Rice 1kg. Best before 6 months from packaging date.",
-          "listed_price_paise": 7800
+          "merchant_id": "swiggy_instamart",
+          "sku": "mother_dairy-milk-full_cream-1000",
+          "display_name": "Mother Dairy Full Cream Milk 1L",
+          "description": "Mother Dairy Full Cream Milk 1L. Order before 10pm for same-day delivery.",
+          "listed_price_paise": 7500
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:08:05Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:04:05Z",
         "evidence_class": 2,
-        "prev_hash": "560809de658a3e1b4c1e27e0bcc9a56ca0d3daad13dfa3413b84c0620577f6f9",
-        "content_hash": "1be78080674772a45e4df912723c32611711bd13306450ab803507c4914acd01"
+        "prev_hash": "c491a5b61462c32f75ef1dd55587cd7adc4e3430f82ee10c9f8cf1e4105d1066",
+        "content_hash": "a918aa7dfcb0b0f401380dd7c28d272367569e10d0eac58fce79c5ea47d091b4"
       },
       {
         "item_id": "env_00353-e003",
         "seq": 3,
         "payload": {
           "kind": "CATALOG_SNAPSHOT",
-          "merchant_id": "zepto",
-          "sku": "daawat-rice-basmati-1000",
-          "display_name": "Daawat Rozana Basmati Rice 1kg",
-          "description": "Daawat Rozana Basmati Rice 1kg. Order before 10pm for same-day delivery.",
-          "listed_price_paise": 12800
+          "merchant_id": "swiggy_instamart",
+          "sku": "amul-milk-full_cream-1000",
+          "display_name": "Amul Gold Full Cream Milk 1L",
+          "description": "Amul Gold Full Cream Milk 1L. Packed at source. Store in a cool dry place.",
+          "listed_price_paise": 7700
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:08:06Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:04:06Z",
         "evidence_class": 2,
-        "prev_hash": "1be78080674772a45e4df912723c32611711bd13306450ab803507c4914acd01",
-        "content_hash": "20417676fdae5a190e2b539d43f95e8752239cbfc11f414f47379b64c2118b01"
+        "prev_hash": "a918aa7dfcb0b0f401380dd7c28d272367569e10d0eac58fce79c5ea47d091b4",
+        "content_hash": "8356dc4e3c097723362b1619eb75ad2a5f8db811e7e84d802ff3bbd74e33463f"
       },
       {
         "item_id": "env_00353-e004",
         "seq": 4,
         "payload": {
           "kind": "AGENT_CART",
-          "merchant_id": "zepto",
+          "merchant_id": "swiggy_instamart",
           "lines": [
             {
-              "sku": "india_gate-rice-sona_masoori-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 7500
             }
           ]
         },
-        "emitted_by": "agt_808",
-        "emitted_at": "2026-09-03T02:08:12Z",
+        "emitted_by": "agt_852",
+        "emitted_at": "2026-09-02T22:04:12Z",
         "evidence_class": 1,
-        "prev_hash": "20417676fdae5a190e2b539d43f95e8752239cbfc11f414f47379b64c2118b01",
-        "content_hash": "dae0be786437a75405cad8d296b4a2a43f6135189826c82182b312d62a95619d"
+        "prev_hash": "8356dc4e3c097723362b1619eb75ad2a5f8db811e7e84d802ff3bbd74e33463f",
+        "content_hash": "8772d22056e07af1a6ba21c274a562067757f826c3313eddb965a87474bdd99c"
       },
       {
         "item_id": "env_00353-e005",
         "seq": 5,
         "payload": {
           "kind": "MERCHANT_ORDER",
-          "merchant_id": "zepto",
+          "merchant_id": "swiggy_instamart",
           "merchant_order_id": "zep_00353",
           "lines": [
             {
-              "sku": "india_gate-rice-sona_masoori-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 7500
             }
           ]
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:08:20Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:04:20Z",
         "evidence_class": 2,
-        "prev_hash": "dae0be786437a75405cad8d296b4a2a43f6135189826c82182b312d62a95619d",
-        "content_hash": "28c4f7c2097e917bd3aeea817f9eec4864689b9053e0bb25194b0f93becc36f1"
+        "prev_hash": "8772d22056e07af1a6ba21c274a562067757f826c3313eddb965a87474bdd99c",
+        "content_hash": "95c4b348694616c95008d663727e2e4e9b47fb49d5ff3eea3610813abaf4c22f"
       },
       {
         "item_id": "env_00353-e006",
@@ -159,18 +161,18 @@
           "merchant_order_id": "zep_00353",
           "lines": [
             {
-              "sku": "india_gate-rice-sona_masoori-1000",
+              "sku": "mother_dairy-milk-full_cream-1000",
               "quantity": 1,
-              "unit_price_paise": 7800
+              "unit_price_paise": 7500
             }
           ],
           "delivered": true
         },
-        "emitted_by": "zepto",
-        "emitted_at": "2026-09-03T02:22:00Z",
+        "emitted_by": "swiggy_instamart",
+        "emitted_at": "2026-09-02T22:18:00Z",
         "evidence_class": 2,
-        "prev_hash": "28c4f7c2097e917bd3aeea817f9eec4864689b9053e0bb25194b0f93becc36f1",
-        "content_hash": "a1e3004082104785663a1e5f56ecea63728aea4e9153c89da58851293bb89a64"
+        "prev_hash": "95c4b348694616c95008d663727e2e4e9b47fb49d5ff3eea3610813abaf4c22f",
+        "content_hash": "7477746aec4af5db1647afc9b6cd2ed33532cb15407e7456072a74dbc93e7170"
       },
       {
         "item_id": "env_00353-e007",
@@ -178,15 +180,15 @@
         "payload": {
           "kind": "PSP_ORDER",
           "order_id": "order_00353",
-          "amount_paise": 7800,
+          "amount_paise": 7500,
           "currency": "INR",
           "receipt": "zep_00353"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:08:25Z",
+        "emitted_at": "2026-09-02T22:04:25Z",
         "evidence_class": 3,
-        "prev_hash": "a1e3004082104785663a1e5f56ecea63728aea4e9153c89da58851293bb89a64",
-        "content_hash": "218870ffa93cd1ff5f619b7689ab065a2c0578b7014fb186fca7757b9714daa3"
+        "prev_hash": "7477746aec4af5db1647afc9b6cd2ed33532cb15407e7456072a74dbc93e7170",
+        "content_hash": "6bf795dcc67162866c19c34d1dd75166ec2e9608c9652ed8873adb57d4a87698"
       },
       {
         "item_id": "env_00353-e008",
@@ -195,31 +197,31 @@
           "kind": "PSP_PAYMENT",
           "payment_id": "pay_00353",
           "order_id": "order_00353",
-          "amount_paise": 7800,
+          "amount_paise": 7500,
           "status": "captured",
           "block_id": "blk_00353",
           "method": "upi_reserve_pay"
         },
         "emitted_by": "razorpay",
-        "emitted_at": "2026-09-03T02:08:30Z",
+        "emitted_at": "2026-09-02T22:04:30Z",
         "evidence_class": 3,
-        "prev_hash": "218870ffa93cd1ff5f619b7689ab065a2c0578b7014fb186fca7757b9714daa3",
-        "content_hash": "c043f6eb7f6c44a09a9952a8de05608018b9963e7da0eb8c595978f5ed395a6c"
+        "prev_hash": "6bf795dcc67162866c19c34d1dd75166ec2e9608c9652ed8873adb57d4a87698",
+        "content_hash": "c7099d2f72e6def256d468c153508257acb3f8ad5bf52a384543a5cc7f99b864"
       },
       {
         "item_id": "env_00353-e009",
         "seq": 9,
         "payload": {
           "kind": "AGENT_SELF_REPORT",
-          "text": "Ordered 1kg India Gate sona masoori rice. Payment complete.",
-          "claimed_sku": "india_gate-rice-sona_masoori-1000",
+          "text": "Ordered 1L Mother Dairy full cream milk. Payment complete.",
+          "claimed_sku": "mother_dairy-milk-full_cream-1000",
           "claims_success": true
         },
-        "emitted_by": "agt_808",
-        "emitted_at": "2026-09-03T02:23:00Z",
+        "emitted_by": "agt_852",
+        "emitted_at": "2026-09-02T22:19:00Z",
         "evidence_class": 0,
-        "prev_hash": "c043f6eb7f6c44a09a9952a8de05608018b9963e7da0eb8c595978f5ed395a6c",
-        "content_hash": "8c695f454da417e80999c4b69b0269103616529172e92986b85a0c5ca15b97b7"
+        "prev_hash": "c7099d2f72e6def256d468c153508257acb3f8ad5bf52a384543a5cc7f99b864",
+        "content_hash": "aff2e38e49863c280444117394af29fcb50f108e9eb3ef1e9e1020e4d4e78b33"
       }
     ]
   },
@@ -228,9 +230,9 @@
     "liable_party": "NONE",
     "secondary_fault": null,
     "secondary_party": null,
-    "requested_sku": "india_gate-rice-sona_masoori-1000",
-    "ordered_sku": "india_gate-rice-sona_masoori-1000",
-    "delivered_sku": "india_gate-rice-sona_masoori-1000",
+    "requested_sku": "mother_dairy-milk-full_cream-1000",
+    "ordered_sku": "mother_dairy-milk-full_cream-1000",
+    "delivered_sku": "mother_dairy-milk-full_cream-1000",
     "is_hard_pair": false,
     "agent_report_truthful": true,
     "expected_gate_verdict": "ALLOW",
