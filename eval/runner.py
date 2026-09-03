@@ -50,7 +50,7 @@ from adjudication.engine import Adjudicator, Decision, Mode
 from bench.scenario import Scenario, load_dir
 from eval.metrics import compute, render
 from verifiers.base import Verifier
-from verifiers.semantic import DEFAULT_MODEL, SemanticVerifier
+from verifiers.semantic import DEFAULT_CACHE, DEFAULT_MODEL, ResponseCache, SemanticVerifier
 
 
 DEFAULT_SCENARIOS = Path("bench/scenarios")
@@ -69,9 +69,18 @@ def git_commit() -> Optional[str]:
 
 
 def build_semantic(args: argparse.Namespace) -> Verifier:
-    """The semantic verifier, wired or stubbed."""
+    """The semantic verifier: cached, wired, or stubbed."""
+    cache = None if args.no_cache else ResponseCache(args.cache)
+
+    # A cache with no client is not a stub - it replays a live run offline,
+    # which is how a reviewer reproduces the headline numbers without a key.
     if not args.live:
-        return SemanticVerifier(include_self_report=args.self_report)
+        return SemanticVerifier(
+            include_self_report=args.self_report,
+            model=args.model,
+            cache=cache,
+            cache_only=args.cache_only,
+        )
 
     try:
         from dotenv import load_dotenv
@@ -82,9 +91,7 @@ def build_semantic(args: argparse.Namespace) -> Verifier:
     if args.provider == "openrouter":
         key = os.environ.get("OPENROUTER_API_KEY", "").strip()
         if not key or key.startswith("sk-or-v1-xxx"):
-            raise SystemExit(
-                "--provider openrouter needs a real OPENROUTER_API_KEY in .env"
-            )
+            raise SystemExit("--provider openrouter needs a real OPENROUTER_API_KEY in .env")
         from openai import OpenAI
         client = OpenAI(api_key=key, base_url="https://openrouter.ai/api/v1")
     else:
@@ -99,6 +106,7 @@ def build_semantic(args: argparse.Namespace) -> Verifier:
         provider=args.provider,
         include_self_report=args.self_report,
         model=args.model,
+        cache=cache,
     )
 
 
@@ -203,6 +211,10 @@ def main() -> None:
     ap.add_argument("--provider", choices=("anthropic", "openrouter"),
                     default="anthropic")
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--cache", type=Path, default=DEFAULT_CACHE)
+    ap.add_argument("--no-cache", action="store_true", dest="no_cache")
+    ap.add_argument("--cache-only", action="store_true", dest="cache_only",
+                    help="replay from cache; error on a miss rather than abstain")
     ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--limit", type=int, default=None,
                     help="first N scenarios only, for quick checks")
