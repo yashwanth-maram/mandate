@@ -71,7 +71,7 @@ from schemas.evidence import (
 from verifiers.base import Verifier, VerifierOutput, VerifierRole
 
 
-DEFAULT_MODEL = "claude-sonnet-5"
+DEFAULT_MODEL = "google/gemini-2.5-flash"
 DEFAULT_CACHE = Path("bench/fixtures/semantic_cache.json")
 
 _SYSTEM = """\

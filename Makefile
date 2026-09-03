@@ -7,7 +7,7 @@ eval:
 	uv run python -m eval.runner --seed 42 --model google/gemini-2.5-flash --cache-only
 
 demo:
-	uv run python -m demo.scenarios
+	uv run python -m demo.demo_scenarios
 
 test:
 	uv run pytest -q
