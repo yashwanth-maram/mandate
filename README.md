@@ -31,31 +31,31 @@ Architecture and evidence model: [`docs/architecture.md`](docs/architecture.md)
 
 ## Results
 
-500 scenarios, seed 42, `<!-- MODEL -->` as the semantic verifier. Held-out split is 30%, assigned by hash of scenario id.
+500 scenarios, seed 42, `gemini-3.1-flash-lite` as the semantic verifier. Held-out split is 30%, assigned by hash of scenario id.
 
-### Held-out (n = `__`)
+### Held-out (n = `141`)
 
 | class | n | precision | recall | F1 | abstained |
 |---|---:|---:|---:|---:|---:|
-| INTENT_MISMATCH | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| USER_REGRET | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| MERCHANT_SUBSTITUTION | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| NO_FAULT | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| CART_DRIFT \* | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| MANDATE_BREACH \* | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| DEBIT_MISMATCH \* | `__` | `_.__` | `_.__` | `_.__` | `__` |
-| INJECTION_INDUCED \* | `__` | `_.__` | `_.__` | `_.__` | `__` |
+| INTENT_MISMATCH | `22` | `1.00` | `0.91` | `0.95` | `0` |
+| USER_REGRET | `8` | `0.80` | `1.00` | `0.89` | `0` |
+| MERCHANT_SUBSTITUTION | `18` | `1.00` | `1.00` | `1.00` | `0` |
+| NO_FAULT | `29` | `1.00` | `1.00` | `1.00` | `0` |
+| CART_DRIFT \* | `22` | `1.00` | `1.00` | `1.00` | `0` |
+| MANDATE_BREACH \* | `20` | `1.00` | `1.00` | `1.00` | `0` |
+| DEBIT_MISMATCH \* | `12` | `1.00` | `1.00` | `1.00` | `0` |
+| INJECTION_INDUCED \* | `10` | `1.00` | `1.00` | `1.00` | `0` |
 
 **\* These scores are definitional, not achievements.** These classes are detected by comparing values the obligation already fixed — a price against a ceiling, a merchant against an allowlist. A constraint checker cannot miss a numeric violation it is defined to catch. **The classes that carry information are INTENT_MISMATCH, USER_REGRET and MERCHANT_SUBSTITUTION.**
 
 | | |
 |---|---:|
-| overall accuracy | `__.__%` |
-| coverage | `__.__%` |
-| accuracy on decided | `__.__%` |
-| **false clearances** — faults allowed through as clean | **`__`** |
-| **hard confusable pairs** — same brand, same pack, within ₹20 | **`__.__%`** (`__`/`__`) |
-| decided with **zero model calls** | `__.__%` |
+| overall accuracy | `98.6%` |
+| coverage | `100.0%` |
+| accuracy on decided | `98.6%` |
+| **false clearances** — faults allowed through as clean | **`0`** |
+| **hard confusable pairs** — same brand, same pack, within ₹20 | **`89.5%`** (`17`/`19`) |
+| decided with **zero model calls** | `58.2%` |
 
 Accuracy and coverage are always reported together. A system can reach any accuracy it likes by abstaining on everything difficult.
 
@@ -63,11 +63,11 @@ Accuracy and coverage are always reported together. A system can reach any accur
 
 | | |
 |---|---:|
-| caught, right party | ₹`_____` |
-| **misattributed** — charged to the wrong party | ₹`_____` |
-| missed | ₹`_____` |
-| abstained — escalated for review | ₹`_____` |
-| false blocks — clean sales stopped | ₹`_____` |
+| caught, right party | ₹`80,468.43` |
+| **misattributed** — charged to the wrong party | ₹`766.00` |
+| missed | ₹`0.00` |
+| abstained — escalated for review | ₹`0.00` |
+| false blocks — clean sales stopped | ₹`0.00` |
 
 ### Gate, pre-debit
 
@@ -75,24 +75,24 @@ Post-debit evidence is withheld: no fulfilment record, no self-report, no disput
 
 | | |
 |---|---:|
-| correct | `__` |
-| false blocks | `__` |
-| missed | `__` |
-| **gate-invisible** — fail after the debit decision | **`__` (`__.__%`)** |
+| correct | `411` |
+| false blocks | `0` |
+| missed | `12` |
+| **gate-invisible** — fail after the debit decision | **`85` (`17.0%`)** |
 
-That last row is the empirical argument for the second mode. **`__%` of failures cannot be reached by any pre-debit control**, because the evidence that identifies them does not exist yet. A firewall alone is not enough on this rail.
+That last row is the empirical argument for the second mode. **`17.0%` of failures cannot be reached by any pre-debit control**, because the evidence that identifies them does not exist yet. A firewall alone is not enough on this rail.
 
 ### The ablation: does the admissibility floor do real work?
 
-The semantic verifier can read the agent's own account of itself — *"ordered the atta you asked for"* — which is fluent, confident, and false in `__` of 500 scenarios.
+The semantic verifier can read the agent's own account of itself — *"ordered the atta you asked for"* — which is fluent, confident, and false in `215` of 500 scenarios.
 
 | | with self-report | without |
 |---|---:|---:|
-| verdicts reaching the aggregate | `__` | `__` |
-| **discarded by the floor** | **`__`** | `__` |
-| overall accuracy | `__.__%` | `__.__%` |
+| verdicts reaching the aggregate | `0` | `215` |
+| **discarded by the floor** | **`215`** | `0` |
+| overall accuracy | `57.0%` | `97.8%` |
 
-`__` verdicts rested on the agent's uncorroborated account. Every one was discarded before it could influence a decision — not because it was wrong, but because of what it rested on.
+`215` verdicts rested on the agent's uncorroborated account. Every one was discarded before it could influence a decision — not because it was wrong, but because of what it rested on.
 
 ---
 
@@ -154,7 +154,7 @@ Two rules follow, both of which took a bug to learn:
 | `provenance` | was the agent steered by catalogue content | no |
 | `semantic` | did the purchase match what the user meant | **yes** |
 
-**Four of five never call a model**, and the fifth is only invoked when nothing cheaper has settled the matter. `__%` of decisions are made with zero model calls, at a p50 of `_.__ ms`.
+**Four of five never call a model**, and the fifth is only invoked when nothing cheaper has settled the matter. `57.0%` of decisions are made with zero model calls, at a p50 of `3.83 ms`.
 
 ---
 
@@ -182,11 +182,17 @@ This confirmed that Razorpay returns `amount` as an **integer in paise** — an 
 
 ## What I found
 
-**All errors are in the harmful direction.** Every `INTENT_MISMATCH → USER_REGRET` misclassification tells a merchant that a wronged buyer is lying: the buyer is out of pocket and the complaint is on record as unfounded. The reverse error — refunding an unfounded complaint — occurred `__` times and costs a merchant a small sum. Same accuracy figure, very different harm. *(See the threshold sweep below.)*
+**All errors are in the harmful direction.** Every `INTENT_MISMATCH → USER_REGRET` misclassification tells a merchant that a wronged buyer is lying: the buyer is out of pocket and the complaint is on record as unfounded. The reverse error — refunding an unfounded complaint — occurred `0` times and costs a merchant a small sum. Same accuracy figure, very different harm. *(See the threshold sweep below.)*
 
-**The confidence floor never fired.** Across `__` escalated cases at `min_confidence = 0.6`, the model returned high confidence on everything — including every case it got wrong. The abstention mechanism did no work. That is a calibration finding, not a success.
+**The confidence floor never fired.** Across `215` escalated cases at `min_confidence = 0.6`, the model returned high confidence on everything — including every case it got wrong. The abstention mechanism did no work. That is a calibration finding, not a success.
 
-**Cost-optimal is not accuracy-optimal.** Sweeping the confidence threshold from cache: `<!-- FILL: curve summary -->`
+**Cost-optimal is not accuracy-optimal.** Sweeping the confidence threshold from cache:
+| min_confidence | coverage | accuracy | harmful | cost |
+|---|---:|---:|---:|---:|
+| 0.50 (max accuracy) | 100.0% | 97.8% | 11 | ₹766.00 |
+| 0.95 (min harm/cost) | 93.0% | 92.8% | 1 | ₹728.00 |
+
+Accuracy-optimal and harm-optimal are different points. Moving from 0.50 to 0.95 gives up 7.0% coverage but removes 10 cases where a buyer who was wronged is recorded as having complained without cause.
 
 ---
 
@@ -212,7 +218,7 @@ Stated because they are real, not to pre-empt criticism.
 
 **Deception occurs only in AGENT-fault scenarios.** An agent lies when what it did was wrong. This makes "self-report contradicts the record" a stronger signal than it would be in reality.
 
-**13 hard pairs across 26 directed swaps** for `__` INTENT_MISMATCH scenarios. Limited product diversity in the subset that carries the headline metric.
+**13 hard pairs across 26 directed swaps** for `90` INTENT_MISMATCH scenarios. Limited product diversity in the subset that carries the headline metric.
 
 **Compound faults are not modelled.** Every scenario has one fault. Real disputes have several — an agent that ordered wrongly *and* a merchant that then substituted. The schema reserves `secondary_fault`; nothing populates it.
 

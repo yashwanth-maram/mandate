@@ -67,7 +67,7 @@ flowchart LR
 
 UPI Reserve Pay uses Single Block Multi Debit: funds are blocked once and debited repeatedly as value arrives. Both modes run the same verifiers over the same evidence — the gate simply cannot see what has not happened yet.
 
-Fulfilment records, agent self-reports and user disputes are all post-debit. That is measured, not asserted: **`__%` of failures in the benchmark are unreachable by any pre-debit control.**
+Fulfilment records, agent self-reports and user disputes are all post-debit. That is measured, not asserted: **`17.0%` of failures in the benchmark are unreachable by any pre-debit control.**
 
 ## Why a strong receipt does not rescue a weak claim
 
@@ -88,7 +88,7 @@ flowchart TD
 
 The basis class is the **meet**, not the join. Consulting strong evidence alongside weak evidence does not launder the weak evidence — the weak item is still load-bearing, so the verdict is only as strong as it.
 
-This is what stops a fluent, confident model verdict built on the agent's own account of itself from reaching a decision. Measured in the ablation: **`__` verdicts discarded**, every one of them persuasive.
+This is what stops a fluent, confident model verdict built on the agent's own account of itself from reaching a decision. Measured in the ablation: **`215` verdicts discarded**, every one of them persuasive.
 
 ## Evidence classes
 
