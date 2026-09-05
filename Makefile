@@ -4,7 +4,7 @@ gen:
 	uv run python -m bench.generator --seed 42 --n 500
 
 eval:
-	uv run python -m eval.runner --seed 42 --model google/gemini-2.5-flash --cache-only
+	uv run python -m eval.runner --seed 42 --cache-only
 
 demo:
 	uv run python -m demo.scenarios
@@ -16,4 +16,4 @@ api:
 	uv run uvicorn api.main:app --reload
 
 sweep:
-	uv run python -m eval.sweep --seed 42 --model google/gemini-2.5-flash
+	uv run python -m eval.sweep --seed 42

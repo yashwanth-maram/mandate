@@ -88,7 +88,13 @@ def build_semantic(args: argparse.Namespace) -> Verifier:
     except ImportError:
         pass
 
-    if args.provider == "openrouter":
+    if args.provider == "google":
+        key = os.environ.get("GOOGLE_API_KEY", "").strip()
+        if not key:
+            raise SystemExit("--provider google needs GOOGLE_API_KEY in .env")
+        from google import genai
+        client = genai.Client(api_key=key)
+    elif args.provider == "openrouter":
         key = os.environ.get("OPENROUTER_API_KEY", "").strip()
         if not key or key.startswith("sk-or-v1-xxx"):
             raise SystemExit("--provider openrouter needs a real OPENROUTER_API_KEY in .env")
@@ -208,8 +214,8 @@ def main() -> None:
     ap.add_argument("--self-report", action="store_true", dest="self_report",
                     help="ablation: let the semantic verifier read the agent's "
                          "self-report, so its basis falls below the floor")
-    ap.add_argument("--provider", choices=("anthropic", "openrouter"),
-                    default="anthropic")
+    ap.add_argument("--provider", choices=("anthropic", "openrouter", "google"),
+                    default="google")
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--cache", type=Path, default=DEFAULT_CACHE)
     ap.add_argument("--no-cache", action="store_true", dest="no_cache")

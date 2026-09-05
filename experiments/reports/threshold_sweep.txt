@@ -1,0 +1,39 @@
+==============================================================================
+CONFIDENCE THRESHOLD SWEEP
+==============================================================================
+
+ thresh   cover     acc   abst  harmful  lenient     total cost
+------------------------------------------------------------------------------
+   0.50  100.0%   97.8%      0       11        0      Rs 766.00
+   0.55  100.0%   97.8%      0       11        0      Rs 766.00
+   0.60  100.0%   97.8%      0       11        0      Rs 766.00
+   0.65  100.0%   97.8%      0       11        0      Rs 766.00
+   0.70  100.0%   97.8%      0       11        0      Rs 766.00
+   0.75  100.0%   97.8%      0       11        0      Rs 766.00
+   0.80  100.0%   97.8%      0       11        0      Rs 766.00
+   0.85  100.0%   97.8%      0       11        0      Rs 766.00
+   0.90  100.0%   97.8%      0       11        0      Rs 766.00
+   0.95   93.0%   92.8%     35        1        0      Rs 728.00
+------------------------------------------------------------------------------
+
+OPERATING POINTS
+  maximum accuracy      threshold 0.50   97.8% accuracy, 100.0% coverage, 11 harmful
+  minimum rupee cost    threshold 0.95   Rs 728.00, 93.0% coverage, 1 harmful
+  minimum harm          threshold 0.95   1 harmful, 93.0% coverage, Rs 728.00
+
+  Accuracy-optimal and harm-optimal are different points. Moving from
+  0.50 to 0.95 gives up 7.0% coverage and removes 10 case(s) where a buyer who was
+  wronged is recorded as having complained without cause.
+
+HARM DIRECTION
+  harmful   INTENT_MISMATCH read as USER_REGRET. The agent bought the
+            wrong thing and the buyer is recorded as lying about it.
+            Buyer out of pocket, complaint on record as unfounded.
+  lenient   USER_REGRET read as INTENT_MISMATCH. An unfounded complaint
+            is refunded. Merchant loses the sale, buyer made whole.
+
+  Cost model: missed + misattributed + false blocks, plus Rs 20.00 per
+  escalation for operations time. That review figure is an assumption,
+  not a measurement - recompute with --review-cost to test another.
+
+==============================================================================

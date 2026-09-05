@@ -88,7 +88,7 @@ flowchart TD
 
 The basis class is the **meet**, not the join. Consulting strong evidence alongside weak evidence does not launder the weak evidence — the weak item is still load-bearing, so the verdict is only as strong as it.
 
-This is what stops a fluent, confident model verdict built on the agent's own account of itself from reaching a decision. Measured in the ablation: **`215` verdicts discarded**, every one of them persuasive.
+This is what stops a fluent, confident model verdict built on the agent's own account of itself from reaching a decision. Measured in the ablation: **`69` of `69` returned verdicts discarded**, every one of them persuasive.
 
 ## Evidence classes
 

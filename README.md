@@ -84,15 +84,21 @@ That last row is the empirical argument for the second mode. **`17.0%` of failur
 
 ### The ablation: does the admissibility floor do real work?
 
-The semantic verifier can read the agent's own account of itself — *"ordered the atta you asked for"* — which is fluent, confident, and false in `215` of 500 scenarios.
+The semantic verifier can read the agent's own account of itself — *"ordered the atta you asked for"* — which is fluent, confident, and false in 84 of 500 scenarios.
 
-| | with self-report | without |
-|---|---:|---:|
-| verdicts reaching the aggregate | `0` | `215` |
-| **discarded by the floor** | **`215`** | `0` |
-| overall accuracy | `57.0%` | `97.8%` |
+Running with `--self-report`, the verifier's declared basis includes a `SELF_REPORT` item, so the meet of its basis falls below the `MERCHANT_RECORD` floor.
 
-`215` verdicts rested on the agent's uncorroborated account. Every one was discarded before it could influence a decision — not because it was wrong, but because of what it rested on.
+| | measured |
+|---|---:|
+| escalations that returned a verdict | `69` |
+| **discarded by the floor** | **`69` (100%)** |
+| verdicts reaching the aggregate | `0` |
+| escalations that errored before returning | `48` |
+| overall accuracy | `57.0%` |
+
+**Every verdict that came back was discarded.** Not because it was wrong — several were correct — but because of what it rested on. Accuracy collapses to the deterministic-only baseline, which is the floor working as specified.
+
+**Incomplete run.** 48 of the ablation's escalations failed with `503 UNAVAILABLE` against the free-tier model and never returned a verdict. Those are abstentions, not discards, and are reported separately rather than folded into the discard count. The measured discard rate is 69 of 69 returned verdicts.
 
 ---
 
@@ -184,7 +190,7 @@ This confirmed that Razorpay returns `amount` as an **integer in paise** — an 
 
 **All errors are in the harmful direction.** Every `INTENT_MISMATCH → USER_REGRET` misclassification tells a merchant that a wronged buyer is lying: the buyer is out of pocket and the complaint is on record as unfounded. The reverse error — refunding an unfounded complaint — occurred `0` times and costs a merchant a small sum. Same accuracy figure, very different harm. *(See the threshold sweep below.)*
 
-**The confidence floor never fired.** Across `215` escalated cases at `min_confidence = 0.6`, the model returned high confidence on everything — including every case it got wrong. The abstention mechanism did no work. That is a calibration finding, not a success.
+**The confidence floor never fired.** At min_confidence = 0.6 the floor never fired — the model returned confidence above 0.6 on every escalation, including all 11 it got wrong. Abstentions only begin at 0.95. That is a calibration finding, not a success.
 
 **Cost-optimal is not accuracy-optimal.** Sweeping the confidence threshold from cache:
 | min_confidence | coverage | accuracy | harmful | cost |

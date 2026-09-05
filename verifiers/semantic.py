@@ -71,7 +71,7 @@ from schemas.evidence import (
 from verifiers.base import Verifier, VerifierOutput, VerifierRole
 
 
-DEFAULT_MODEL = "google/gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_CACHE = Path("bench/fixtures/semantic_cache.json")
 
 _SYSTEM = """\
@@ -252,6 +252,26 @@ class SemanticVerifier(Verifier):
 
     def _call_model(self, prompt: str) -> dict[str, Any]:
         """Dispatch to whichever API shape the client speaks."""
+        if self.provider == "google":
+            from google.genai import types
+
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=_SYSTEM,
+                    max_output_tokens=600,
+                    temperature=0.0,
+                ),
+            )
+            text = response.text
+            if not text:
+                raise ValueError(
+                    f"empty response from {self.model} "
+                    f"(finish_reason={getattr(response.candidates[0], 'finish_reason', '?')})"
+                )
+            return _parse_json(text)
+
         if self.provider == "openrouter":
             response = self.client.chat.completions.create(
                 model=self.model,
