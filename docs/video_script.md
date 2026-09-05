@@ -1,7 +1,5 @@
 # Video script — 5 minutes
 
-Numbers marked `__` get filled after Friday's runs. Do not record with any left in.
-
 **Setup**
 - Terminal at 120 columns, dark, font large enough to read on a phone
 - Recording: OBS or the built-in Windows recorder. Screen and voice together.
@@ -88,7 +86,7 @@ Narrate over it. Do not read the screen aloud — point at what matters.
 >
 > Not because it was wrong. Because of what it rested on. A verdict is worth its weakest evidence — the agent's account of its own performance can't establish that the agent performed.
 >
-> Across the benchmark, `__` verdicts were discarded this way. Every one of them persuasive.
+> Across the benchmark, 69 of 69 returned verdicts were discarded this way. Every one of them persuasive.
 
 ---
 
@@ -100,7 +98,7 @@ Narrate over it. Do not read the screen aloud — point at what matters.
 >
 > The gate allows it, and that's correct. The merchant substituted the brand *after* the debit decision.
 >
-> `__` percent of failures in the benchmark are like this: unreachable by any pre-debit control, because the evidence that identifies them doesn't exist when the money moves. That's the measured argument for having a second mode. A firewall alone is not enough on this rail.
+> 18.4 percent of failures in the benchmark are like this: unreachable by any pre-debit control, because the evidence that identifies them doesn't exist when the money moves. That's the measured argument for having a second mode. A firewall alone is not enough on this rail.
 
 ---
 
@@ -110,7 +108,7 @@ Narrate over it. Do not read the screen aloud — point at what matters.
 
 > Five hundred scenarios, ground truth by construction — labels come from canonical product state, never from a model reading a description.
 >
-> On the held-out split: `__` percent accuracy at `__` percent coverage. **Zero false clearances** — no fault was ever allowed through as clean.
+> On the held-out split: 98.6 percent accuracy at 100 percent coverage. **Zero false clearances** — no fault was ever allowed through as clean.
 
 *Point at the asterisked rows.*
 
@@ -118,13 +116,13 @@ Narrate over it. Do not read the screen aloud — point at what matters.
 
 *Point at hard pairs.*
 
-> `__` percent on hard confusable pairs. Same brand, same pack, within twenty rupees. Atta and maida. Toned and full cream. Nothing deterministic separates those.
+> 89.5 percent on hard confusable pairs. Same brand, same pack, within twenty rupees. Atta and maida. Toned and full cream. Nothing deterministic separates those.
 >
-> And `__` percent of all decisions were made with **zero model calls**.
+> And 58.2 percent of all decisions were made with **zero model calls**.
 
 *Beat.*
 
-> One more thing. Every misclassification went the same direction: telling a merchant that a buyer who was genuinely wronged was lying. The opposite error happened `__` times.
+> One more thing. Every misclassification went the same direction: telling a merchant that a buyer who was genuinely wronged was lying. The opposite error happened 0 times.
 >
 > Same accuracy number, very different harm. So the threshold sweep reports three operating points, not one — maximum accuracy, minimum cost, and minimum harm. They're different thresholds, and a payments system should choose the third.
 
@@ -175,7 +173,6 @@ make eval
 **If you're short on time, cut the two-modes section**, not the ablation and not the failures.
 
 **Pre-flight**
-- [ ] no `__` left anywhere
 - [ ] cache populated so semantic decides rather than abstains
 - [ ] terminal wide enough that no table wraps
 - [ ] `--slow` on every demo command

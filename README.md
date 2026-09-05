@@ -5,6 +5,8 @@
 Razorpay AI Buildathon 2026 — Track 02, AI Risk Manager
 Loss class: *agent-performance failure* — authorised, in-mandate, correctly fulfilled, and still wrong.
 
+Architecture and evidence model: [`docs/architecture.md`](docs/architecture.md)
+
 ---
 
 ## The problem
@@ -27,60 +29,60 @@ The gap is architectural, not an oversight. It can only be closed at the PSP-and
 
 ---
 
-Architecture and evidence model: [`docs/architecture.md`](docs/architecture.md)
-
 ## Results
 
 500 scenarios, seed 42, `gemini-3.1-flash-lite` as the semantic verifier. Held-out split is 30%, assigned by hash of scenario id.
 
-### Held-out (n = `141`)
+### Held-out (n = 141)
 
 | class | n | precision | recall | F1 | abstained |
 |---|---:|---:|---:|---:|---:|
-| INTENT_MISMATCH | `22` | `1.00` | `0.91` | `0.95` | `0` |
-| USER_REGRET | `8` | `0.80` | `1.00` | `0.89` | `0` |
-| MERCHANT_SUBSTITUTION | `18` | `1.00` | `1.00` | `1.00` | `0` |
-| NO_FAULT | `29` | `1.00` | `1.00` | `1.00` | `0` |
-| CART_DRIFT \* | `22` | `1.00` | `1.00` | `1.00` | `0` |
-| MANDATE_BREACH \* | `20` | `1.00` | `1.00` | `1.00` | `0` |
-| DEBIT_MISMATCH \* | `12` | `1.00` | `1.00` | `1.00` | `0` |
-| INJECTION_INDUCED \* | `10` | `1.00` | `1.00` | `1.00` | `0` |
+| INTENT_MISMATCH | 22 | 1.00 | 0.91 | 0.95 | 0 |
+| USER_REGRET | 8 | 0.80 | 1.00 | 0.89 | 0 |
+| MERCHANT_SUBSTITUTION | 18 | 1.00 | 1.00 | 1.00 | 0 |
+| NO_FAULT | 29 | 1.00 | 1.00 | 1.00 | 0 |
+| CART_DRIFT \* | 22 | 1.00 | 1.00 | 1.00 | 0 |
+| MANDATE_BREACH \* | 20 | 1.00 | 1.00 | 1.00 | 0 |
+| DEBIT_MISMATCH \* | 12 | 1.00 | 1.00 | 1.00 | 0 |
+| INJECTION_INDUCED \* | 10 | 1.00 | 1.00 | 1.00 | 0 |
 
 **\* These scores are definitional, not achievements.** These classes are detected by comparing values the obligation already fixed — a price against a ceiling, a merchant against an allowlist. A constraint checker cannot miss a numeric violation it is defined to catch. **The classes that carry information are INTENT_MISMATCH, USER_REGRET and MERCHANT_SUBSTITUTION.**
 
-| | |
-|---|---:|
-| overall accuracy | `98.6%` |
-| coverage | `100.0%` |
-| accuracy on decided | `98.6%` |
-| **false clearances** — faults allowed through as clean | **`0`** |
-| **hard confusable pairs** — same brand, same pack, within ₹20 | **`89.5%`** (`17`/`19`) |
-| decided with **zero model calls** | `58.2%` |
+| | held-out | full set |
+|---|---:|---:|
+| overall accuracy | **98.6%** | 97.8% |
+| coverage | 100.0% | 100.0% |
+| **false clearances** — faults allowed through as clean | **0** | **0** |
+| **hard confusable pairs** — same brand, same pack, within ₹20 | **89.5%** (17/19) | 88.1% (74/84) |
+| decided with **zero model calls** | 58.2% | 57.0% |
 
 Accuracy and coverage are always reported together. A system can reach any accuracy it likes by abstaining on everything difficult.
 
-### Cost, in rupees
+### Cost, in rupees (full set)
 
 | | |
 |---|---:|
-| caught, right party | ₹`80,468.43` |
-| **misattributed** — charged to the wrong party | ₹`766.00` |
-| missed | ₹`0.00` |
-| abstained — escalated for review | ₹`0.00` |
-| false blocks — clean sales stopped | ₹`0.00` |
+| caught, right party | ₹80,468.43 |
+| **misattributed** — charged to the wrong party | ₹766.00 |
+| missed | ₹0.00 |
+| abstained — escalated for review | ₹0.00 |
+| false blocks — clean sales stopped | ₹0.00 |
+| total exposure | ₹81,234.43 |
 
-### Gate, pre-debit
+### Gate, pre-debit (held-out, n = 141)
 
 Post-debit evidence is withheld: no fulfilment record, no self-report, no dispute. A gate that could see those is hindsight.
 
 | | |
 |---|---:|
-| correct | `411` |
-| false blocks | `0` |
-| missed | `12` |
-| **gate-invisible** — fail after the debit decision | **`85` (`17.0%`)** |
+| correct | 115 |
+| false blocks | 0 |
+| missed | 3 |
+| abstained | 23 |
+| **gate-invisible** — fail after the debit decision | **26 (18.4%)** |
+| of those, handled correctly | 20 |
 
-That last row is the empirical argument for the second mode. **`17.0%` of failures cannot be reached by any pre-debit control**, because the evidence that identifies them does not exist yet. A firewall alone is not enough on this rail.
+That last row is the empirical argument for the second mode. **18.4% of held-out failures cannot be reached by any pre-debit control** — 17.0% across the full set — because the evidence that identifies them does not exist yet. A firewall alone is not enough on this rail.
 
 ### The ablation: does the admissibility floor do real work?
 
@@ -90,11 +92,11 @@ Running with `--self-report`, the verifier's declared basis includes a `SELF_REP
 
 | | measured |
 |---|---:|
-| escalations that returned a verdict | `69` |
-| **discarded by the floor** | **`69` (100%)** |
-| verdicts reaching the aggregate | `0` |
-| escalations that errored before returning | `48` |
-| overall accuracy | `57.0%` |
+| escalations that returned a verdict | 69 |
+| **discarded by the floor** | **69 (100%)** |
+| verdicts reaching the aggregate | 0 |
+| escalations that errored before returning | 48 |
+| resulting overall accuracy | 57.0% |
 
 **Every verdict that came back was discarded.** Not because it was wrong — several were correct — but because of what it rested on. Accuracy collapses to the deterministic-only baseline, which is the floor working as specified.
 
@@ -110,14 +112,24 @@ Every figure above regenerates offline, with no API key and no cost. Model respo
 uv sync
 make gen     # 500 scenarios from seed 42, byte-identical each run
 make eval    # replays the cached run, reproduces the table above
+make test    # 37 invariant tests, 46 cases with parametrisation
 ```
 
-`make eval` uses `--cache-only`, so a cache miss is an error rather than a quietly different number.
+On Windows without `make`, run the targets directly:
+
+```bash
+uv run python -m eval.runner --seed 42 --cache-only
+uv run python -m eval.runner --seed 42 --split heldout --cache-only
+```
+
+`--cache-only` treats a cache miss as an error rather than a quietly different number.
+
+Verified from a clean clone: `uv sync`, 37 invariant tests, 46 cases with parametrisation passing, and the full result table produced with no `.env` present.
 
 To run against a live model instead:
 
 ```bash
-uv run python -m eval.runner --seed 42 --live --provider anthropic --model <id>
+uv run python -m eval.runner --seed 42 --live --provider google --workers 1
 ```
 
 ---
@@ -160,7 +172,7 @@ Two rules follow, both of which took a bug to learn:
 | `provenance` | was the agent steered by catalogue content | no |
 | `semantic` | did the purchase match what the user meant | **yes** |
 
-**Four of five never call a model**, and the fifth is only invoked when nothing cheaper has settled the matter. `57.0%` of decisions are made with zero model calls, at a p50 of `3.83 ms`.
+**Four of five never call a model**, and the fifth is only invoked when nothing cheaper has settled the matter. 57.0% of decisions are made with zero model calls, at a p50 of 1.86 ms.
 
 ---
 
@@ -170,11 +182,12 @@ Two rules follow, both of which took a bug to learn:
 
 44 SKUs across 8 categories of Indian quick commerce, with **13 hard confusable pairs** — same brand, same pack size, within ₹20. Atta and maida. Amul Taaza and Amul Gold. Iodised salt and low-sodium salt. Those pairs carry the difficulty of the whole headline class; an easy swap would produce a flattering number that measured nothing.
 
-Enforced at generation time:
+Enforced at generation time, and covered by tests:
 
 - **No label leakage.** Ground truth may not appear in verifier input. The requested SKU may appear in a deceptive self-report — that is the case the floor exists for — but never in evidence at or above the performance floor.
 - **Chains verify, obligations are signed.** Ed25519, keys derived from the seed so runs stay byte-identical. The adjudicator refuses to decide against an obligation whose signature does not verify.
 - **Labels agree with the taxonomy.** A scenario claiming `MERCHANT_SUBSTITUTION` but attributing fault to `AGENT` fails generation.
+- **Every scenario carries a browse trace.** 455 benign catalogue traces are the negative set the injection detector is scored against.
 
 ### Razorpay integration
 
@@ -188,17 +201,18 @@ This confirmed that Razorpay returns `amount` as an **integer in paise** — an 
 
 ## What I found
 
-**All errors are in the harmful direction.** Every `INTENT_MISMATCH → USER_REGRET` misclassification tells a merchant that a wronged buyer is lying: the buyer is out of pocket and the complaint is on record as unfounded. The reverse error — refunding an unfounded complaint — occurred `0` times and costs a merchant a small sum. Same accuracy figure, very different harm. *(See the threshold sweep below.)*
+**All errors are in the harmful direction.** Every misclassification on the full set was `INTENT_MISMATCH → USER_REGRET` — 11 of them — which tells a merchant that a wronged buyer is lying: the buyer is out of pocket and the complaint goes on record as unfounded. The reverse error, refunding an unfounded complaint, occurred **0 times at every threshold tested**. Same accuracy figure, very different harm.
 
-**The confidence floor never fired.** At min_confidence = 0.6 the floor never fired — the model returned confidence above 0.6 on every escalation, including all 11 it got wrong. Abstentions only begin at 0.95. That is a calibration finding, not a success.
+**The confidence floor never fired at its default.** At `min_confidence = 0.6` the model returned confidence above the threshold on every escalation, including all 11 it got wrong. Abstentions only begin at 0.95. That is a calibration finding, not a success.
 
-**Cost-optimal is not accuracy-optimal.** Sweeping the confidence threshold from cache:
+**Cost-optimal is not accuracy-optimal.**
+
 | min_confidence | coverage | accuracy | harmful | cost |
 |---|---:|---:|---:|---:|
-| 0.50 (max accuracy) | 100.0% | 97.8% | 11 | ₹766.00 |
-| 0.95 (min harm/cost) | 93.0% | 92.8% | 1 | ₹728.00 |
+| 0.50 – 0.90 | 100.0% | 97.8% | 11 | ₹766.00 |
+| 0.95 | 93.0% | 92.8% | **1** | ₹728.00 |
 
-Accuracy-optimal and harm-optimal are different points. Moving from 0.50 to 0.95 gives up 7.0% coverage but removes 10 cases where a buyer who was wronged is recorded as having complained without cause.
+Moving from 0.60 to 0.95 gives up 7.0% coverage and removes 10 cases where a buyer who was genuinely wronged is recorded as having complained without cause. **A payments system should take that trade.** Full sweep: [`experiments/reports/threshold_sweep.txt`](experiments/reports/threshold_sweep.txt).
 
 ---
 
@@ -220,15 +234,17 @@ Stated because they are real, not to pre-empt criticism.
 
 **This is an anticipatory control.** Agentic volume on UPI is currently a limited pilot and no Indian dispute data for this loss class exists. **I am not claiming measured losses.** The claim is that the gap is architectural, and this measures what a detector for it costs and how often it is wrong.
 
+**The ablation run is incomplete.** 48 of 117 escalations failed against the free-tier model and never returned a verdict. The discard rate is measured over the 69 that did.
+
 **The injection detector and its payloads share an author.** The result is a lower bound on detectability under a known attack distribution, not robustness to novel attacks. Mitigated by structural rather than literal matching, by 455 benign browse traces as a negative set, and by sanity strings the generator never produces — but not eliminated. AgentDojo-style evaluation against unseen payloads is future work.
 
 **Deception occurs only in AGENT-fault scenarios.** An agent lies when what it did was wrong. This makes "self-report contradicts the record" a stronger signal than it would be in reality.
 
-**13 hard pairs across 26 directed swaps** for `90` INTENT_MISMATCH scenarios. Limited product diversity in the subset that carries the headline metric.
+**13 hard pairs across 26 directed swaps** for 90 INTENT_MISMATCH scenarios. Limited product diversity in the subset that carries the headline metric.
 
 **Compound faults are not modelled.** Every scenario has one fault. Real disputes have several — an agent that ordered wrongly *and* a merchant that then substituted. The schema reserves `secondary_fault`; nothing populates it.
 
-**Single evaluation run.** No variance estimate across seeds or repeated model calls.
+**Single evaluation run, single model.** No variance estimate across seeds, repeated calls, or model families.
 
 **Keys sit in `.keys/`.** A demonstration, not a KMS.
 
@@ -254,8 +270,10 @@ agent/         catalogue, Razorpay test-mode integration
 verifiers/     constraint, receipt, fulfilment, provenance, semantic
 adjudication/  floor enforcement, gate view, conflict resolution
 bench/         taxonomy, generator, 500 scenarios, fixtures
-eval/          runner, metrics
+eval/          runner, metrics, threshold sweep
+demo/          live decision trace
+tests/         37 invariant tests, 46 cases with parametrisation
 experiments/   seeded run outputs
 ```
 
-Every module runs standalone — `uv run python -m verifiers.constraint` scores that verifier alone against the benchmark.
+Every module runs standalone — `uv run python -m verifiers.constraint` scores that verifier alone against the benchmark. `uv run python -m demo.scenarios --ablation --slow` shows the floor discarding a verdict in real time.
